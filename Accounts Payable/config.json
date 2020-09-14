@@ -1,0 +1,19 @@
+{
+  "defaultNamespace": "local",
+  "adapters": [
+    {
+      "type": "local",
+      "config": {
+        "root": "../engineb-entities"
+      },
+      "namespace": "local"
+    },
+    {
+      "type": "local",
+      "config": {
+        "root": "../base-files"
+      },
+      "namespace": "cdm"
+    }
+  ]
+}

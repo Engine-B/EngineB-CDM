@@ -1,0 +1,385 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AP_paymentData",
+      "hasAttributes": [
+        {
+          "name": "paymentRefNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "period",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "periodYear",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "referenceNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "referenceDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "transactionID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "paymentMethod",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "description",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "batchID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "systemID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "sourceID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "postingStatus",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLDebitAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLCreditAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "systemEntryDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "systemEntryUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "approvedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineLineNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineSourceDocumentID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAccountID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineSystemEntryDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineSystemEntryUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineApprovedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineApprovedBy",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineLastModifiedDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisAnalysisType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisAnalysisTypeDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisAnalysisID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisAnalysisIDDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisAnalysisAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineAnalysisAnalysisAmountCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisAmountCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineAnalysisAnalysisAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineSupplierID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineBusinessUnitCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxPointDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineDebitCreditIndicator",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "linePaymentLineAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "linePaymentLineAmountCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "linePaymentLineAmountCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "linePaymentAmountLocalCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "linePaymentLineAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "linePaymentAmountReporting",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "linePaymentAmountReportingCurrency",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxPercentage",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxBase",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxBaseDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxExemptionReason",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxDeclarationPeriod",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineSettlementSettlementDiscount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineSettlementSettlementAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineSettlementCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineSettlementCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineSettlementSettlementAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineSettlementSettlementDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineSettlementPaymentMechanism",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "paymentID",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

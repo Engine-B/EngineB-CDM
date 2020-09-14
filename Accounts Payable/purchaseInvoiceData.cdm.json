@@ -1,0 +1,955 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "purchaseInvoiceData",
+      "hasAttributes": [
+        {
+          "name": "invoiceID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "invoiceNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "purchaseOrderID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceDocumentReference",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "postingStatus",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "supplierID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "termsDiscountPercentage",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "termsDiscountDays",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "termsDueDays",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "supplierName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressStreetName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressAdditionalAddressDetail",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressBuilding",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressCity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressPostalCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressRegion",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressCountry",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "billingAddressAddressType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "branchStoreNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "period",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "periodYear",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "invoiceDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "invoiceType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "invoiceDueDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "systemEntryDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "systemEntryUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "approvedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "systemModifiedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "systemModifiedUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "invoiceAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceAmountCurrency",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceAmountReporting",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceReportingCurrency",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "invoiceAmountLocal",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "shipToDeliveryID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToDeliveryDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "shipToWarehouseID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToLocationID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToUCR",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToStreetName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToAdditionalAddressDetail",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToBuilding",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToCity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToPostalCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToRegion",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToCountry",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipToAddressType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromDeliveryID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromDeliveryDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "shipFromWarehouseID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromLocationID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromUCR",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromStreetName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromAdditionalAddressDetail",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromBuilding",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromCity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromPostalCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromRegion",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromCountry",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "shipFromAddressType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "paymentTerms",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "selfBillingIndicator",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "sourceID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "gLPostingDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "batchID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "systemID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "receiptNumbers",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineLineNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAccountID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineAnalysisID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineOriginatingON",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "linePurchaseOrderID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "linePurchaseOrderLineID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineOrderDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineInvoiceDueDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineSystemEntryDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineSystemEntryUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineApprovedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineApprovedBy",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineSystemModifiedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineSystemModifiedUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToDeliveryID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToDeliveryDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineShipToWarehouseID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToLocationID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToUCR",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToStreetName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToAdditionalAddressDetail",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToBuilding",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToCity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToPostalCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToRegion",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToCountry",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipToAddressType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromDeliveryID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromDeliveryDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineShipFromWarehouseID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromLocationID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromUCR",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromStreetName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromAdditionalAddressDetail",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromBuilding",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromCity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromPostalCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromRegion",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromCountry",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShipFromAddressType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineGoodsServicesID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineProductCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineProductDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineProductGroup01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineProductGroup02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineMovementReference",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineDeliveryDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineFromDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineToDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineQuantity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineInvoiceUOM",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineUOMToUOMBaseConversionFactor",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineUnitPrice",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxPointDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lineCreditNoteReference",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineCreditNoteReason",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "invoiceLineAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceLineAmountCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceLineAmountCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineInvoiceLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceLineAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "invoiceLineAmountReporting",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineReportingCurrency",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineDebitCreditIndicator",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShippingCostsAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineShippingCostsAmountCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineShippingCostsAmountCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineShippingCostsAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "tax1Type",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax2Type",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax3Type",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax1TypeDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax2TypeDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax3TypeDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax1Local",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax2Local",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "tax3Local",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLLineDebitAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLLineCreditAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLTax1DebitAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLTax1CreditAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLTax2DebitAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLTax2CreditAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLTax3DebitAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLTax3CreditAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxPercentage",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxBase",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxBaseDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxExemptionReason",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineTaxInformationTaxDeclarationPeriod",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "settlementSettlementDiscount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "settlementAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "settlementCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "settlementCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "settlementExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "settlementSettlementDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "settlementPaymentMechanism",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "purchaseInvoiceNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "purchaseInvoiceLineNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "purchaseInvoiceUniqueID",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

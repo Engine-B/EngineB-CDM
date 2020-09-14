@@ -1,0 +1,55 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AR_paymentData",
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineAnalysisAnalysisAmountLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lineCustomerID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lineLastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Receipt_ID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "paymentRefNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "receiptAmountReporting",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "receiptAmountReportingCurrency",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        }
+      ]
+    }
+  ]
+}
