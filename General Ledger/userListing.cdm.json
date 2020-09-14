@@ -1,0 +1,55 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "userListing",
+      "hasAttributes": [
+        {
+          "name": "userID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "userActiveStatus",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "userActiveModifiedDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "firstName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "title",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "department",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "roleResponsibility",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

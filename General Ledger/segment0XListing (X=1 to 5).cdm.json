@@ -1,0 +1,25 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "segment0XListing (X=1 to 5)",
+      "hasAttributes": [
+        {
+          "name": "segment0XValue",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment0XDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

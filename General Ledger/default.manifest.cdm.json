@@ -1,0 +1,254 @@
+{
+  "manifestName": "default",
+  "entities": [
+    {
+      "type": "LocalEntity",
+      "entityName": "BankAcountMasterData",
+      "entityPath": "resolved/BankAcountMasterData.cdm.json/BankAcountMasterData",
+      "dataPartitions": [
+        {
+          "name": "BankAcountMasterData-data-description",
+          "location": "local:/BankAcountMasterData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "businessUnit",
+      "entityPath": "resolved/businessUnit.cdm.json/businessUnit",
+      "dataPartitions": [
+        {
+          "name": "businessUnit-data-description",
+          "location": "local:/businessUnit/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "chartOfAccounts",
+      "entityPath": "resolved/chartOfAccounts.cdm.json/chartOfAccounts",
+      "dataPartitions": [
+        {
+          "name": "chartOfAccounts-data-description",
+          "location": "local:/chartOfAccounts/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "glDetail",
+      "entityPath": "resolved/glDetail.cdm.json/glDetail",
+      "dataPartitions": [
+        {
+          "name": "glDetail-data-description",
+          "location": "local:/glDetail/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "segment0XListing (X=1 to 5)",
+      "entityPath": "resolved/segment0XListing (X=1 to 5).cdm.json/segment0XListing (X=1 to 5)",
+      "dataPartitions": [
+        {
+          "name": "segment0XListing (X=1 to 5)-data-description",
+          "location": "local:/segment0XListing (X=1 to 5)/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "sourceListing",
+      "entityPath": "resolved/sourceListing.cdm.json/sourceListing",
+      "dataPartitions": [
+        {
+          "name": "sourceListing-data-description",
+          "location": "local:/sourceListing/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "taxTable",
+      "entityPath": "resolved/taxTable.cdm.json/taxTable",
+      "dataPartitions": [
+        {
+          "name": "taxTable-data-description",
+          "location": "local:/taxTable/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "trialBalance",
+      "entityPath": "resolved/trialBalance.cdm.json/trialBalance",
+      "dataPartitions": [
+        {
+          "name": "trialBalance-data-description",
+          "location": "local:/trialBalance/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "userListing",
+      "entityPath": "resolved/userListing.cdm.json/userListing",
+      "dataPartitions": [
+        {
+          "name": "userListing-data-description",
+          "location": "local:/userListing/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    }
+  ],
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ]
+}

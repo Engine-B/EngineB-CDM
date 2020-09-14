@@ -1,0 +1,80 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "chartOfAccounts",
+      "hasAttributes": [
+        {
+          "name": "glAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glAccountName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "accountType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "accountSubtype",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fsCaption",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glAccountDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "parentGLAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "businessUnit",
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitHierarchy1",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitHierarchy2",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitHierarchy3",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitHierarchy4",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "businessUnitHierarchy5",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}
