@@ -1,0 +1,260 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetMaster",
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "locationID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "projectID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetBarCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "manufacturerID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "supplierName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "supplierID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetGroup01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetGroup02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetClass",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetQuantityOnHand",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetOriginalCost",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetReplacementCost",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetFairValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetDepreciableBasis",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "depreciationRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetSalvageValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetNetBookValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetAccumulatedDepreciation",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetUsefulLife",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetUsefulLifeRemaining",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "currencyID",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetAcquisitiondate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetInactiveFlag",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetInServicedate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetRetirementdate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetDisposaldate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetAvailableforSaledate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaledate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetAssetAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetCIPAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetCIPFlag",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetDepreciationAccount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetAccumulatedDepreciationAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetRealisedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetType",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

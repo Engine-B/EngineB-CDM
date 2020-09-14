@@ -1,0 +1,165 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetRemovals",
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "uniqueID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "removalType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetRemovaldate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetRemovalCashProceedsAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetRemovalNonCashProceedsAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "enteredBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "entereddate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "approvedBydate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedBydate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "gLTransactionID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "acquirerID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionFees",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "GLAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "FixedAssetRemovalsId",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}
