@@ -1,0 +1,410 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "inventoryList",
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "locationID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationStreet",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationCity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationStateProvince",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationCountry",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationZipPostalCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationActiveFlag",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationParent",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationLongitude",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationLatitude",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "thirdPartyFacility",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryProductID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "defaultInventoryMethod",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "preferredSupplier",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryItemCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryBarCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "productGroup01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "productGroup02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryClass",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "defaultStockingUnitofMeasure",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "generalLedgerAssetAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "generalLedgerCostAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryHeldForSuppliers",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryHeldFor Customers",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryHeldForOthers",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "obsoleteorDamagedInventory",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "binID",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "binLocation",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "quantity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryPurchasingUOM",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryStockingUOM",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventorySellingUOM",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryCostMethod",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryCost",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "standardCost",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "averageCost",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "specificCost",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "quantityOnHandSystem",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "quantityOnHandPhysicalCount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastCountDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "inventoryListPrice",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryPurchaseYearToDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "inventorySoldYearToDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "inventoryABCCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "primarySupplier",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "primarySupplierProductCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "primaryManufacturer",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "primaryManufacturerProductCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationCurrency",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "stockAccountCommodityCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ownerID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UOMtoUOMbaseConversionFactor",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "unitPrice",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "openingStockQuantity",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "openingStockValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "closingStockQuantity",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "closingStockValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "stockCharacteristic",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "stockCharacteristicValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "writedownDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "writedownFactor",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "currentValuation",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "lastReceivedDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lastDespatchedDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "supplierID",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "countedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryProductType",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}
