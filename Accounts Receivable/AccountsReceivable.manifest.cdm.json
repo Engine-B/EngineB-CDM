@@ -1,0 +1,146 @@
+{
+  "manifestName": "default",
+  "entities": [
+    {
+      "type": "LocalEntity",
+      "entityName": "AR_paymentData",
+      "entityPath": "resolved/AR_paymentData.cdm.json/AR_paymentData",
+      "dataPartitions": [
+        {
+          "name": "AR_paymentData-data-description",
+          "location": "local:/AR_paymentData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "customerMasterData",
+      "entityPath": "resolved/customerMasterData.cdm.json/customerMasterData",
+      "dataPartitions": [
+        {
+          "name": "customerMasterData-data-description",
+          "location": "local:/customerMasterData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "goodsShippedData",
+      "entityPath": "resolved/goodsShippedData.cdm.json/goodsShippedData",
+      "dataPartitions": [
+        {
+          "name": "goodsShippedData-data-description",
+          "location": "local:/goodsShippedData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "salesInvoiceData",
+      "entityPath": "resolved/salesInvoiceData.cdm.json/salesInvoiceData",
+      "dataPartitions": [
+        {
+          "name": "salesInvoiceData-data-description",
+          "location": "local:/salesInvoiceData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "salesOrderData",
+      "entityPath": "resolved/salesOrderData.cdm.json/salesOrderData",
+      "dataPartitions": [
+        {
+          "name": "salesOrderData-data-description",
+          "location": "local:/salesOrderData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    }
+  ],
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ]
+}
