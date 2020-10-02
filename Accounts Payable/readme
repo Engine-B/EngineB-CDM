@@ -1,1 +1,11 @@
-All the files with in this Folder are the Accounts Payable JSON files which are used with in the mapping of Audit CDM
+Accounts Payable (AP) is used within the general ledger (GL) and represents the obligation to pay a short- term debt for goods or services received on credit. 
+AP is represented as a current liability within a Statement of Financial Position / Balance Sheet. 
+
+AP Entities:
+
+supplierMasterData
+purchaseInvoiceData 
+AP_PaymentData
+purchaseOrderData
+goodsReceivedData
+AR_paymentData
