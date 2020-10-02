@@ -1,0 +1,10 @@
+Accounts Receivable (AR) is used within the general ledger (GL) and represents an amount due to the company in the short  term for goods and/or services purchased on credit. 
+AR is represented as a current asset within a Statement of Financial Position / Balance Sheet. 
+
+AR Entities:
+
+customerMasterData
+salesInvoiceData
+AR_paymentData 
+salesOrderData
+goodsShippedData
