@@ -2,7 +2,7 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "cdm:/foundations.cdm.json"
+      "corpusPath": "/foundations.cdm.json"
     }
   ],
   "definitions": [
@@ -125,7 +125,7 @@
           "dataType": "string"
         },
         {
-          "name": "invoiceDate",
+          "name": "invoicedate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -135,12 +135,12 @@
           "dataType": "string"
         },
         {
-          "name": "invoiceDueDate",
+          "name": "invoiceDuedate",
           "purpose": "hasA",
           "dataType": "date"
         },
         {
-          "name": "systemEntryDateTime",
+          "name": "systemEntrydateTime",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -150,7 +150,7 @@
           "dataType": "string"
         },
         {
-          "name": "approvedDateTime",
+          "name": "approveddateTime",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -160,7 +160,7 @@
           "dataType": "decimal"
         },
         {
-          "name": "systemModifiedDateTime",
+          "name": "systemModifieddateTime",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -205,7 +205,7 @@
           "dataType": "string"
         },
         {
-          "name": "shipToDeliveryDate",
+          "name": "shipToDeliverydate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -275,7 +275,7 @@
           "dataType": "string"
         },
         {
-          "name": "shipFromDeliveryDate",
+          "name": "shipFromDeliverydate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -355,7 +355,7 @@
           "dataType": "string"
         },
         {
-          "name": "gLPostingDate",
+          "name": "gLPostingdate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -440,17 +440,17 @@
           "dataType": "string"
         },
         {
-          "name": "lineOrderDate",
+          "name": "lineOrderdate",
           "purpose": "hasA",
           "dataType": "date"
         },
         {
-          "name": "lineInvoiceDueDate",
+          "name": "lineInvoiceDuedate",
           "purpose": "hasA",
           "dataType": "date"
         },
         {
-          "name": "lineSystemEntryDateTime",
+          "name": "lineSystemEntrydateTime",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -460,7 +460,7 @@
           "dataType": "string"
         },
         {
-          "name": "lineApprovedDateTime",
+          "name": "lineApproveddateTime",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -470,7 +470,7 @@
           "dataType": "decimal"
         },
         {
-          "name": "lineSystemModifiedDateTime",
+          "name": "lineSystemModifieddateTime",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -485,7 +485,7 @@
           "dataType": "string"
         },
         {
-          "name": "lineShipToDeliveryDate",
+          "name": "lineShipToDeliverydate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -555,7 +555,7 @@
           "dataType": "string"
         },
         {
-          "name": "lineShipFromDeliveryDate",
+          "name": "lineShipFromDeliverydate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -650,17 +650,17 @@
           "dataType": "string"
         },
         {
-          "name": "lineDeliveryDate",
+          "name": "lineDeliverydate",
           "purpose": "hasA",
           "dataType": "date"
         },
         {
-          "name": "lineFromDate",
+          "name": "lineFromdate",
           "purpose": "hasA",
           "dataType": "date"
         },
         {
-          "name": "lineToDate",
+          "name": "lineTodate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -685,7 +685,7 @@
           "dataType": "string"
         },
         {
-          "name": "lineTaxPointDate",
+          "name": "lineTaxPointdate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -925,7 +925,7 @@
           "dataType": "decimal"
         },
         {
-          "name": "settlementSettlementDate",
+          "name": "settlementSettlementdate",
           "purpose": "hasA",
           "dataType": "date"
         },
@@ -941,6 +941,11 @@
         },
         {
           "name": "purchaseInvoiceLineNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Filename",
           "purpose": "hasA",
           "dataType": "string"
         },
