@@ -1,0 +1,1120 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/goodsShippedData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "goodsShippedData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "goodsShippedData",
+        "definition": "resolvedFrom/goodsShippedData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "adjustmentAmount",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/adjustmentAmount",
+            "contents": [
+              "goodsShippedData/hasAttributes/adjustmentAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "adjustmentDescription",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/adjustmentDescription",
+            "contents": [
+              "goodsShippedData/hasAttributes/adjustmentDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "adjustmentIndicator",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/adjustmentIndicator",
+            "contents": [
+              "goodsShippedData/hasAttributes/adjustmentIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedBy",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/approvedBy",
+            "contents": [
+              "goodsShippedData/hasAttributes/approvedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedDate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/approvedDate",
+            "contents": [
+              "goodsShippedData/hasAttributes/approvedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/businessUnitCode",
+            "contents": [
+              "goodsShippedData/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerAccountId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/customerAccountId",
+            "contents": [
+              "goodsShippedData/hasAttributes/customerAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "enteredBy",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/enteredBy",
+            "contents": [
+              "goodsShippedData/hasAttributes/enteredBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "enteredDate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/enteredDate",
+            "contents": [
+              "goodsShippedData/hasAttributes/enteredDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsReceivedAmount",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/goodsReceivedAmount",
+            "contents": [
+              "goodsShippedData/hasAttributes/goodsReceivedAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsReceivedExchangeRate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/goodsReceivedExchangeRate",
+            "contents": [
+              "goodsShippedData/hasAttributes/goodsReceivedExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsShippedId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/goodsShippedId",
+            "contents": [
+              "goodsShippedData/hasAttributes/goodsShippedId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedBy",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lastModifiedBy",
+            "contents": [
+              "goodsShippedData/hasAttributes/lastModifiedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedDate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lastModifiedDate",
+            "contents": [
+              "goodsShippedData/hasAttributes/lastModifiedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAdjustmentAmount",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineAdjustmentAmount",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineAdjustmentAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAdjustmentDescription",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineAdjustmentDescription",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineAdjustmentDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAmount",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineAmount",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineExchangeRate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineExchangeRate",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderAmount",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderAmount",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderExchangeRate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderExchangeRate",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderLineAmountLocal",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderLineAmountLocal",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderLineAmountLocal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderLineId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderLineId",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderLocalCurrency",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderLocalCurrency",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderLocalCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderQuantity",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderQuantity",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderUnitOfMeasure",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderUnitOfMeasure",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderUnitOfMeasure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSalesOrderUnitPrice",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineSalesOrderUnitPrice",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineSalesOrderUnitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipmentId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShipmentId",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShipmentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingDocumentLineId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingDocumentLineId",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingDocumentLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingLineAmountLocal",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingLineAmountLocal",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingLineAmountLocal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingLineAmountLocalCurrency",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingLineAmountLocalCurrency",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingLineAmountLocalCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingProductBarCode",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingProductBarCode",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingProductBarCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingProductCode",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingProductCode",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingProductCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingProductDescription",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingProductDescription",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingProductDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingProductGroup01",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingProductGroup01",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingProductGroup01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingProductGroup02",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingProductGroup02",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingProductGroup02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingProductId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingProductId",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingProductId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingQuantity",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingQuantity",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingUnitOfMeasure",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingUnitOfMeasure",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingUnitOfMeasure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingUnitPrice",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/lineShippingUnitPrice",
+            "contents": [
+              "goodsShippedData/hasAttributes/lineShippingUnitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "postingStatus",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/postingStatus",
+            "contents": [
+              "goodsShippedData/hasAttributes/postingStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "salesOrderAmount",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/salesOrderAmount",
+            "contents": [
+              "goodsShippedData/hasAttributes/salesOrderAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "salesOrderAmountLocal",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/salesOrderAmountLocal",
+            "contents": [
+              "goodsShippedData/hasAttributes/salesOrderAmountLocal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "salesOrderDate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/salesOrderDate",
+            "contents": [
+              "goodsShippedData/hasAttributes/salesOrderDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "salesOrderExchangeRate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/salesOrderExchangeRate",
+            "contents": [
+              "goodsShippedData/hasAttributes/salesOrderExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "salesOrderId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/salesOrderId",
+            "contents": [
+              "goodsShippedData/hasAttributes/salesOrderId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "salesOrderLocalCurrency",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/salesOrderLocalCurrency",
+            "contents": [
+              "goodsShippedData/hasAttributes/salesOrderLocalCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/segment01",
+            "contents": [
+              "goodsShippedData/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/segment02",
+            "contents": [
+              "goodsShippedData/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/segment03",
+            "contents": [
+              "goodsShippedData/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/segment04",
+            "contents": [
+              "goodsShippedData/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/segment05",
+            "contents": [
+              "goodsShippedData/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipmentDate",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/shipmentDate",
+            "contents": [
+              "goodsShippedData/hasAttributes/shipmentDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipmentFiscalYear",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/shipmentFiscalYear",
+            "contents": [
+              "goodsShippedData/hasAttributes/shipmentFiscalYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipmentId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/shipmentId",
+            "contents": [
+              "goodsShippedData/hasAttributes/shipmentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipmentPeriod",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/shipmentPeriod",
+            "contents": [
+              "goodsShippedData/hasAttributes/shipmentPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shippingAmountLocal",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/shippingAmountLocal",
+            "contents": [
+              "goodsShippedData/hasAttributes/shippingAmountLocal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shippingAmountLocalCurrency",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/shippingAmountLocalCurrency",
+            "contents": [
+              "goodsShippedData/hasAttributes/shippingAmountLocalCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shippingDocumentId",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "definition": "resolvedFrom/goodsShippedData/hasAttributes/shippingDocumentId",
+            "contents": [
+              "goodsShippedData/hasAttributes/shippingDocumentId"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "adjustmentAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/adjustmentAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "adjustmentDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/adjustmentDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "adjustmentIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/adjustmentIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "approvedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/approvedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "approvedDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/approvedDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "customerAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/customerAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "enteredBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/enteredBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "enteredDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/enteredDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "goodsReceivedAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/goodsReceivedAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "goodsReceivedExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/goodsReceivedExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "goodsShippedId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/goodsShippedId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastModifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lastModifiedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastModifiedDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lastModifiedDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineAdjustmentAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineAdjustmentAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineAdjustmentDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineAdjustmentDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineSalesOrderAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineSalesOrderExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineSalesOrderLineAmountLocal",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderLineAmountLocal",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSalesOrderLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderLineId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSalesOrderLocalCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderLocalCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSalesOrderQuantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderQuantity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSalesOrderUnitOfMeasure",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderUnitOfMeasure",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineSalesOrderUnitPrice",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderUnitPrice",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShipmentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShipmentId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingDocumentLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingDocumentLineId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingLineAmountLocal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingLineAmountLocal",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShippingLineAmountLocalCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingLineAmountLocalCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingProductBarCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductBarCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingProductCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingProductDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingProductGroup01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductGroup01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingProductGroup02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductGroup02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingProductId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingQuantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingQuantity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingUnitOfMeasure",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingUnitOfMeasure",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShippingUnitPrice",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingUnitPrice",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "postingStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/postingStatus",
+          "dataFormat": "String"
+        },
+        {
+          "name": "salesOrderAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "salesOrderAmountLocal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderAmountLocal",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "salesOrderDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "salesOrderExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "salesOrderId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "salesOrderLocalCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderLocalCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment03",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment04",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment05",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipmentDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "shipmentFiscalYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentFiscalYear",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipmentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipmentPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentPeriod",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shippingAmountLocal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shippingAmountLocal",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "shippingAmountLocalCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shippingAmountLocalCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shippingDocumentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shippingDocumentId",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1063 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/inventoryTransactions.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "inventoryTransactions",
+      "attributeContext": {
+        "type": "entity",
+        "name": "inventoryTransactions",
+        "definition": "resolvedFrom/inventoryTransactions",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "bookValue",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/bookValue",
+            "contents": [
+              "inventoryTransactions/hasAttributes/bookValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/businessUnitCode",
+            "contents": [
+              "inventoryTransactions/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/customerId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/customerId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryFromLocation",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryFromLocation",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryFromLocation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryglLineCreditAccountNumber",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryglLineCreditAccountNumber",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryglLineCreditAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryglLineDebitAccountNumber",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryglLineDebitAccountNumber",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryglLineDebitAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryProductId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryProductId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryProductId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventorySystemOrExternalSource",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventorySystemOrExternalSource",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventorySystemOrExternalSource"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryToLocation",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryToLocation",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryToLocation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryTransactionApprovedBy",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryTransactionApprovedBy",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryTransactionApprovedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryTransactionApprovedByDate",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryTransactionApprovedByDate",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryTransactionApprovedByDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryTransactionEnteredBy",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryTransactionEnteredBy",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryTransactionEnteredBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryTransactionEnteredDate",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryTransactionEnteredDate",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryTransactionEnteredDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryTransactionId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryTransactionId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryTransactionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryTransactionLastModifiedBy",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryTransactionLastModifiedBy",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryTransactionLastModifiedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryTransactionLastModifiedDate",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/inventoryTransactionLastModifiedDate",
+            "contents": [
+              "inventoryTransactions/hasAttributes/inventoryTransactionLastModifiedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lotNumber",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/lotNumber",
+            "contents": [
+              "inventoryTransactions/hasAttributes/lotNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "movementDocumentType",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/movementDocumentType",
+            "contents": [
+              "inventoryTransactions/hasAttributes/movementDocumentType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "movementLineNumber",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/movementLineNumber",
+            "contents": [
+              "inventoryTransactions/hasAttributes/movementLineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "movementReference",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/movementReference",
+            "contents": [
+              "inventoryTransactions/hasAttributes/movementReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "movementTaxPointDate",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/movementTaxPointDate",
+            "contents": [
+              "inventoryTransactions/hasAttributes/movementTaxPointDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/segment01",
+            "contents": [
+              "inventoryTransactions/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/segment02",
+            "contents": [
+              "inventoryTransactions/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/segment03",
+            "contents": [
+              "inventoryTransactions/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/segment04",
+            "contents": [
+              "inventoryTransactions/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/segment05",
+            "contents": [
+              "inventoryTransactions/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "serialNumber",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/serialNumber",
+            "contents": [
+              "inventoryTransactions/hasAttributes/serialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sourceLedgerTransactionAssociatedOrderId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/sourceLedgerTransactionAssociatedOrderId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/sourceLedgerTransactionAssociatedOrderId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/supplierId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/supplierId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxAmount",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxAmount",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxAmountCurrencyAmount",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxAmountCurrencyAmount",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxAmountCurrencyCode",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxAmountCurrencyCode",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxAmountExchangeRate",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxAmountExchangeRate",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxBase",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxBase",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxBase"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxBaseDescription",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxBaseDescription",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxBaseDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxCode",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxCode",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxDeclarationPeriod",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxDeclarationPeriod",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxDeclarationPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxExemptionReason",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxExemptionReason",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxExemptionReason"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxPercentage",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxPercentage",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxType",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/taxType",
+            "contents": [
+              "inventoryTransactions/hasAttributes/taxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionAssociatedDocumentId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionAssociatedDocumentId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionAssociatedDocumentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionAssociatedDocumentLineId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionAssociatedDocumentLineId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionAssociatedDocumentLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionAssociatedOrderId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionAssociatedOrderId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionAssociatedOrderId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionAssociatedOrderLineId",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionAssociatedOrderLineId",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionAssociatedOrderLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionCostAdjust",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionCostAdjust",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionCostAdjust"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionDateTime",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionDateTime",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionDescription",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionDescription",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionQuantityIssued",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionQuantityIssued",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionQuantityIssued"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionQuantityReceived",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionQuantityReceived",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionQuantityReceived"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionType",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionType",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionTypeSystem",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/transactionTypeSystem",
+            "contents": [
+              "inventoryTransactions/hasAttributes/transactionTypeSystem"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "unitOfMeasure",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/unitOfMeasure",
+            "contents": [
+              "inventoryTransactions/hasAttributes/unitOfMeasure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "unitPrice",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/unitPrice",
+            "contents": [
+              "inventoryTransactions/hasAttributes/unitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "uomToUOMPhysicalStockConversionFactor",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "definition": "resolvedFrom/inventoryTransactions/hasAttributes/uomToUOMPhysicalStockConversionFactor",
+            "contents": [
+              "inventoryTransactions/hasAttributes/uomToUOMPhysicalStockConversionFactor"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "bookValue",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/bookValue",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "customerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/customerId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryFromLocation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryFromLocation",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryglLineCreditAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryglLineCreditAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryglLineDebitAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryglLineDebitAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryProductId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryProductId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventorySystemOrExternalSource",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventorySystemOrExternalSource",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryToLocation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryToLocation",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryTransactionApprovedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionApprovedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryTransactionApprovedByDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionApprovedByDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "inventoryTransactionEnteredBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionEnteredBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryTransactionEnteredDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionEnteredDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "inventoryTransactionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryTransactionLastModifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionLastModifiedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryTransactionLastModifiedDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionLastModifiedDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lotNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/lotNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "movementDocumentType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementDocumentType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "movementLineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementLineNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "movementReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "movementTaxPointDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementTaxPointDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment03",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment04",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment05",
+          "dataFormat": "String"
+        },
+        {
+          "name": "serialNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/serialNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "sourceLedgerTransactionAssociatedOrderId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/sourceLedgerTransactionAssociatedOrderId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/supplierId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "taxAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmountCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "taxAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmountCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmountExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "taxBase",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxBase",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxBaseDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxBaseDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxDeclarationPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxDeclarationPeriod",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxExemptionReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxExemptionReason",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxPercentage",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "taxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionAssociatedDocumentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedDocumentId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionAssociatedDocumentLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedDocumentLineId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionAssociatedOrderId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedOrderId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionAssociatedOrderLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedOrderLineId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionCostAdjust",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionCostAdjust",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "transactionDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionQuantityIssued",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionQuantityIssued",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "transactionQuantityReceived",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionQuantityReceived",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "transactionType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionTypeSystem",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionTypeSystem",
+          "dataFormat": "String"
+        },
+        {
+          "name": "unitOfMeasure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/unitOfMeasure",
+          "dataFormat": "String"
+        },
+        {
+          "name": "unitPrice",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/unitPrice",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "uomToUOMPhysicalStockConversionFactor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/uomToUOMPhysicalStockConversionFactor",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

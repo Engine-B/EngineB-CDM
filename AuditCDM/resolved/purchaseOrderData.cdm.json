@@ -1,0 +1,2913 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/purchaseOrderData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "purchaseOrderData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "purchaseOrderData",
+        "definition": "resolvedFrom/purchaseOrderData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "approvedBy",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/approvedBy",
+            "contents": [
+              "purchaseOrderData/hasAttributes/approvedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedDateTime",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/approvedDateTime",
+            "contents": [
+              "purchaseOrderData/hasAttributes/approvedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "batchId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/batchId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/batchId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressAdditionalAddressDetail",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressAdditionalAddressDetail",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressAddressType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressAddressType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressBuilding",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressBuilding",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressCity",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressCity",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressCountry",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressCountry",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressNumber",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressNumber",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressPostalCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressPostalCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressRegion",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressRegion",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressStreetName",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/billingAddressStreetName",
+            "contents": [
+              "purchaseOrderData/hasAttributes/billingAddressStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "branchStoreNumber",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/branchStoreNumber",
+            "contents": [
+              "purchaseOrderData/hasAttributes/branchStoreNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/businessUnitCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glPostingDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/glPostingDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/glPostingDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedBy",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lastModifiedBy",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lastModifiedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedDateTime",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lastModifiedDateTime",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lastModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAccountId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineAccountId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineAnalysisAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineAnalysisAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineAnalysisId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineAnalysisId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineAnalysisType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineAnalysisType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineApprovedBy",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineApprovedBy",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineApprovedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineApprovedDateTime",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineApprovedDateTime",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineApprovedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineCreditNoteReason",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineCreditNoteReason",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineCreditNoteReason"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineCreditNoteReference",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineCreditNoteReference",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineCreditNoteReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDebitCreditIndicator",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineDebitCreditIndicator",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineDebitCreditIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDeliveryDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineDeliveryDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDescription",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineDescription",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineFromDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineFromDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineFromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineGoodsServicesId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineGoodsServicesId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineGoodsServicesId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineLineNumber",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineLineNumber",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineLineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineMovementReference",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineMovementReference",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineMovementReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineOrderLineAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineOrderLineAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineOrderLineAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineOrderLineAmountCurrencyAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineOrderLineAmountCurrencyAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineOrderLineAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineOrderLineAmountCurrencyCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineOrderLineAmountCurrencyCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineOrderLineAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineOrderLineAmountExchangeRate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineOrderLineAmountExchangeRate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineOrderLineAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineOrderUOM",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineOrderUOM",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineOrderUOM"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePiDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/linePiDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/linePiDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineProductCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineProductCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineProductCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineProductDescription",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineProductDescription",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineProductDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderProductGroup01",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/linePurchaseOrderProductGroup01",
+            "contents": [
+              "purchaseOrderData/hasAttributes/linePurchaseOrderProductGroup01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderProductGroup02",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/linePurchaseOrderProductGroup02",
+            "contents": [
+              "purchaseOrderData/hasAttributes/linePurchaseOrderProductGroup02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineQuantity",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineQuantity",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromAdditionalAddressDetail",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromAdditionalAddressDetail",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromAddress",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromAddress",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromAddress"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromAddressType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromAddressType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromBuilding",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromBuilding",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromCity",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromCity",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromCountry",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromCountry",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromDeliveryDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromDeliveryDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromDeliveryId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromDeliveryId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromLocationId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromLocationId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromNumber",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromNumber",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromPostalCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromPostalCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromRegion",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromRegion",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromStreetName",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromStreetName",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromUCR",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromUCR",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromWarehouseId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipFromWarehouseId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipFromWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShippingCostsAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShippingCostsAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmountCurrencyAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShippingCostsAmountCurrencyAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShippingCostsAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmountCurrencyCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShippingCostsAmountCurrencyCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShippingCostsAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmountExchangeRate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShippingCostsAmountExchangeRate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShippingCostsAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToAdditionalAddressDetail",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToAdditionalAddressDetail",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToAddress",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToAddress",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToAddress"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToAddressType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToAddressType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToBuilding",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToBuilding",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToCity",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToCity",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToCountry",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToCountry",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToDeliveryDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToDeliveryDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToDeliveryId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToDeliveryId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToLocationId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToLocationId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToNumber",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToNumber",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToPostalCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToPostalCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToRegion",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToRegion",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToStreetName",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToStreetName",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToUCR",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToUCR",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToWarehouseId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineShipToWarehouseId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineShipToWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSubsequentPi",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineSubsequentPi",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineSubsequentPi"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemEntryDateTime",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineSystemEntryDateTime",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineSystemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemEntryUser",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineSystemEntryUser",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineSystemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxBase",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxBase",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxBase"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxBaseDescription",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxBaseDescription",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxBaseDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxDeclarationPeriod",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxDeclarationPeriod",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxDeclarationPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxExemptionReason",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxExemptionReason",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxExemptionReason"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxPercentage",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxPercentage",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxInformationTaxType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxInformationTaxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxPointDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineTaxPointDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineTaxPointDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineToDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineToDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineUnitPrice",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineUnitPrice",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineUnitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineUOMToUOMBaseConversionFactor",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/lineUOMToUOMBaseConversionFactor",
+            "contents": [
+              "purchaseOrderData/hasAttributes/lineUOMToUOMBaseConversionFactor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "orderDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/orderDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/orderDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "orderDocumentReference",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/orderDocumentReference",
+            "contents": [
+              "purchaseOrderData/hasAttributes/orderDocumentReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "orderNo",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/orderNo",
+            "contents": [
+              "purchaseOrderData/hasAttributes/orderNo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "orderType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/orderType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/orderType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentTerms",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/paymentTerms",
+            "contents": [
+              "purchaseOrderData/hasAttributes/paymentTerms"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "period",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/period",
+            "contents": [
+              "purchaseOrderData/hasAttributes/period"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "periodYear",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/periodYear",
+            "contents": [
+              "purchaseOrderData/hasAttributes/periodYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "postingStatus",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/postingStatus",
+            "contents": [
+              "purchaseOrderData/hasAttributes/postingStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderAmountLocal",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/purchaseOrderAmountLocal",
+            "contents": [
+              "purchaseOrderData/hasAttributes/purchaseOrderAmountLocal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderLocalCurrency",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/purchaseOrderLocalCurrency",
+            "contents": [
+              "purchaseOrderData/hasAttributes/purchaseOrderLocalCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderRequisitionId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/purchaseOrderRequisitionId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/purchaseOrderRequisitionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderUniqueId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/purchaseOrderUniqueId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/purchaseOrderUniqueId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "receiptNumbers",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/receiptNumbers",
+            "contents": [
+              "purchaseOrderData/hasAttributes/receiptNumbers"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/segment01",
+            "contents": [
+              "purchaseOrderData/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/segment02",
+            "contents": [
+              "purchaseOrderData/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/segment03",
+            "contents": [
+              "purchaseOrderData/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/segment04",
+            "contents": [
+              "purchaseOrderData/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/segment05",
+            "contents": [
+              "purchaseOrderData/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "selfBillingIndicator",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/selfBillingIndicator",
+            "contents": [
+              "purchaseOrderData/hasAttributes/selfBillingIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/settlementAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/settlementAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementCurrencyAmount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/settlementCurrencyAmount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/settlementCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementCurrencyCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/settlementCurrencyCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/settlementCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementExchangeRate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/settlementExchangeRate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/settlementExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementPaymentMechanism",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/settlementPaymentMechanism",
+            "contents": [
+              "purchaseOrderData/hasAttributes/settlementPaymentMechanism"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementSettlementDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/settlementSettlementDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/settlementSettlementDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementSettlementDiscount",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/settlementSettlementDiscount",
+            "contents": [
+              "purchaseOrderData/hasAttributes/settlementSettlementDiscount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromAdditionalAddressDetail",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromAdditionalAddressDetail",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromAddressType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromAddressType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromBuilding",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromBuilding",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromCity",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromCity",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromCountry",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromCountry",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromDeliveryDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromDeliveryDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromDeliveryId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromDeliveryId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromLocationId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromLocationId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromNumber",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromNumber",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromPostalCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromPostalCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromRegion",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromRegion",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromStreetName",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromStreetName",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromUCR",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromUCR",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromWarehouseId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipFromWarehouseId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipFromWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToAdditionalAddressDetail",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToAdditionalAddressDetail",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToAddressType",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToAddressType",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToBuilding",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToBuilding",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToCity",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToCity",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToCountry",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToCountry",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToDeliveryDate",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToDeliveryDate",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToDeliveryId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToDeliveryId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToLocationId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToLocationId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToNumber",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToNumber",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToPostalCode",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToPostalCode",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToRegion",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToRegion",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToStreetName",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToStreetName",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToUCR",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToUCR",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToWarehouseId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/shipToWarehouseId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/shipToWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sourceId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/sourceId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/sourceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/supplierId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/supplierId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierName",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/supplierName",
+            "contents": [
+              "purchaseOrderData/hasAttributes/supplierName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryDateTime",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/systemEntryDateTime",
+            "contents": [
+              "purchaseOrderData/hasAttributes/systemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryUser",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/systemEntryUser",
+            "contents": [
+              "purchaseOrderData/hasAttributes/systemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/systemId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/systemId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionId",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "definition": "resolvedFrom/purchaseOrderData/hasAttributes/transactionId",
+            "contents": [
+              "purchaseOrderData/hasAttributes/transactionId"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "approvedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/approvedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "approvedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/approvedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "batchId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/batchId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "branchStoreNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/branchStoreNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glPostingDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/glPostingDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lastModifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lastModifiedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lastModifiedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineAnalysisAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAnalysisAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineAnalysisId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAnalysisId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineAnalysisType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAnalysisType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineApprovedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineApprovedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineApprovedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineApprovedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineCreditNoteReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineCreditNoteReason",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineCreditNoteReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineCreditNoteReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineDebitCreditIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineDebitCreditIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineFromDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineFromDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineGoodsServicesId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineGoodsServicesId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineLineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineLineNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineMovementReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineMovementReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineOrderLineAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineOrderLineAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmountCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineOrderLineAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmountCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineOrderLineAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmountExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineOrderUOM",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderUOM",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePiDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/linePiDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineProductCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineProductCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineProductDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineProductDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderProductGroup01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/linePurchaseOrderProductGroup01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderProductGroup02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/linePurchaseOrderProductGroup02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineQuantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineQuantity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromAddress",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromAddress",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineShipFromDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingCostsAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShippingCostsAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmountCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShippingCostsAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmountCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingCostsAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmountExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShipToAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToAddress",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToAddress",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineShipToDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSubsequentPi",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineSubsequentPi",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSystemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineSystemEntryDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineSystemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineSystemEntryUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxBase",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxBase",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxBaseDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxBaseDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxDeclarationPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxDeclarationPeriod",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxExemptionReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxExemptionReason",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxPercentage",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxPointDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxPointDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineToDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineToDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineUnitPrice",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineUnitPrice",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineUOMToUOMBaseConversionFactor",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineUOMToUOMBaseConversionFactor",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "orderDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "orderDocumentReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderDocumentReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "orderNo",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderNo",
+          "dataFormat": "String"
+        },
+        {
+          "name": "orderType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "paymentTerms",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/paymentTerms",
+          "dataFormat": "String"
+        },
+        {
+          "name": "period",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/period",
+          "dataFormat": "String"
+        },
+        {
+          "name": "periodYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/periodYear",
+          "dataFormat": "String"
+        },
+        {
+          "name": "postingStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/postingStatus",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseOrderAmountLocal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderAmountLocal",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "purchaseOrderLocalCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderLocalCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseOrderRequisitionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderRequisitionId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseOrderUniqueId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderUniqueId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "receiptNumbers",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/receiptNumbers",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment03",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment04",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment05",
+          "dataFormat": "String"
+        },
+        {
+          "name": "selfBillingIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/selfBillingIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "settlementAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "settlementCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "settlementCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "settlementExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "settlementPaymentMechanism",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementPaymentMechanism",
+          "dataFormat": "String"
+        },
+        {
+          "name": "settlementSettlementDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementSettlementDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "settlementSettlementDiscount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementSettlementDiscount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "shipFromAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "shipFromDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "shipToDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "sourceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/sourceId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/supplierId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/supplierName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/systemEntryDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/systemEntryUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/systemId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/transactionId",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

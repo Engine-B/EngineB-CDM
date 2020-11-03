@@ -1,0 +1,929 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/supplierMasterData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "supplierMasterData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "supplierMasterData",
+        "definition": "resolvedFrom/supplierMasterData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "accountId",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/accountId",
+            "contents": [
+              "supplierMasterData/hasAttributes/accountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "additionalAddressDetail",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/additionalAddressDetail",
+            "contents": [
+              "supplierMasterData/hasAttributes/additionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressAddressType",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressAddressType",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressBuilding",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressBuilding",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressCity",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressCity",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressCountry",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressCountry",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressNumber",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressNumber",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressPostalCode",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressPostalCode",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressRegion",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressRegion",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressStreetName",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressStreetName",
+            "contents": [
+              "supplierMasterData/hasAttributes/addressStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountName",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/bankAccountName",
+            "contents": [
+              "supplierMasterData/hasAttributes/bankAccountName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountNumber",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/bankAccountNumber",
+            "contents": [
+              "supplierMasterData/hasAttributes/bankAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountId",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/bankAccountId",
+            "contents": [
+              "supplierMasterData/hasAttributes/bankAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "companyType",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/companyType",
+            "contents": [
+              "supplierMasterData/hasAttributes/companyType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "effectiveDate",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/effectiveDate",
+            "contents": [
+              "supplierMasterData/hasAttributes/effectiveDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "email",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/email",
+            "contents": [
+              "supplierMasterData/hasAttributes/email"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "expirationDate",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/expirationDate",
+            "contents": [
+              "supplierMasterData/hasAttributes/expirationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fax",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/fax",
+            "contents": [
+              "supplierMasterData/hasAttributes/fax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "firstName",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/firstName",
+            "contents": [
+              "supplierMasterData/hasAttributes/firstName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IBANNumber",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/IBANNumber",
+            "contents": [
+              "supplierMasterData/hasAttributes/IBANNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastName",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/lastName",
+            "contents": [
+              "supplierMasterData/hasAttributes/lastName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "legalEntityIdentifier",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/legalEntityIdentifier",
+            "contents": [
+              "supplierMasterData/hasAttributes/legalEntityIdentifier"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "name",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/name",
+            "contents": [
+              "supplierMasterData/hasAttributes/name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDiscountDays",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/paymentDiscountDays",
+            "contents": [
+              "supplierMasterData/hasAttributes/paymentDiscountDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDiscountPercentage",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/paymentDiscountPercentage",
+            "contents": [
+              "supplierMasterData/hasAttributes/paymentDiscountPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDueDays",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/paymentDueDays",
+            "contents": [
+              "supplierMasterData/hasAttributes/paymentDueDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "registrationNumber",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/registrationNumber",
+            "contents": [
+              "supplierMasterData/hasAttributes/registrationNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "selfBillingIndicator",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/selfBillingIndicator",
+            "contents": [
+              "supplierMasterData/hasAttributes/selfBillingIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sortCode",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/sortCode",
+            "contents": [
+              "supplierMasterData/hasAttributes/sortCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierCreditLimit",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierCreditLimit",
+            "contents": [
+              "supplierMasterData/hasAttributes/supplierCreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierGroup",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierGroup",
+            "contents": [
+              "supplierMasterData/hasAttributes/supplierGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierId",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierId",
+            "contents": [
+              "supplierMasterData/hasAttributes/supplierId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierType",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierType",
+            "contents": [
+              "supplierMasterData/hasAttributes/supplierType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemApprovedDateTime",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemApprovedDateTime",
+            "contents": [
+              "supplierMasterData/hasAttributes/systemApprovedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemApprovedUser",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemApprovedUser",
+            "contents": [
+              "supplierMasterData/hasAttributes/systemApprovedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryDateTime",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemEntryDateTime",
+            "contents": [
+              "supplierMasterData/hasAttributes/systemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryUser",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemEntryUser",
+            "contents": [
+              "supplierMasterData/hasAttributes/systemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedDateTime",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemModifiedDateTime",
+            "contents": [
+              "supplierMasterData/hasAttributes/systemModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedUser",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemModifiedUser",
+            "contents": [
+              "supplierMasterData/hasAttributes/systemModifiedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxAuthority",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxAuthority",
+            "contents": [
+              "supplierMasterData/hasAttributes/taxAuthority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxNumber",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxNumber",
+            "contents": [
+              "supplierMasterData/hasAttributes/taxNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxRegistrationNumber",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxRegistrationNumber",
+            "contents": [
+              "supplierMasterData/hasAttributes/taxRegistrationNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxType",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxType",
+            "contents": [
+              "supplierMasterData/hasAttributes/taxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxVerificationDate",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxVerificationDate",
+            "contents": [
+              "supplierMasterData/hasAttributes/taxVerificationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "telephone",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/telephone",
+            "contents": [
+              "supplierMasterData/hasAttributes/telephone"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "title",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/title",
+            "contents": [
+              "supplierMasterData/hasAttributes/title"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionCreditLimit",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/transactionCreditLimit",
+            "contents": [
+              "supplierMasterData/hasAttributes/transactionCreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "website",
+            "parent": "supplierMasterData/attributeContext/supplierMasterData",
+            "definition": "resolvedFrom/supplierMasterData/hasAttributes/website",
+            "contents": [
+              "supplierMasterData/hasAttributes/website"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "accountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/accountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "additionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/additionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/bankAccountName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/bankAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/bankAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "companyType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/companyType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "effectiveDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/effectiveDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "email",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/email",
+          "dataFormat": "String"
+        },
+        {
+          "name": "expirationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/expirationDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "fax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/fax",
+          "dataFormat": "String"
+        },
+        {
+          "name": "firstName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/firstName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "IBANNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/IBANNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/lastName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "legalEntityIdentifier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/legalEntityIdentifier",
+          "dataFormat": "String"
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "paymentDiscountDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/paymentDiscountDays",
+          "dataFormat": "String"
+        },
+        {
+          "name": "paymentDiscountPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/paymentDiscountPercentage",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "paymentDueDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/paymentDueDays",
+          "dataFormat": "String"
+        },
+        {
+          "name": "registrationNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/registrationNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "selfBillingIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/selfBillingIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "sortCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/sortCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierCreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierCreditLimit",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierGroup",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemApprovedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemApprovedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemApprovedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemApprovedUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemEntryDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemEntryUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemModifiedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemModifiedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemModifiedUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxAuthority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxAuthority",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxRegistrationNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxRegistrationNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxVerificationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxVerificationDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "telephone",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/telephone",
+          "dataFormat": "String"
+        },
+        {
+          "name": "title",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/title",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionCreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/transactionCreditLimit",
+          "dataFormat": "String"
+        },
+        {
+          "name": "website",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/website",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

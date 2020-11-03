@@ -1,0 +1,174 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/userListing.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "userListing",
+      "attributeContext": {
+        "type": "entity",
+        "name": "userListing",
+        "definition": "resolvedFrom/userListing",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "department",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/department",
+            "contents": [
+              "userListing/hasAttributes/department"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "firstName",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/firstName",
+            "contents": [
+              "userListing/hasAttributes/firstName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastName",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/lastName",
+            "contents": [
+              "userListing/hasAttributes/lastName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "roleResponsibility",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/roleResponsibility",
+            "contents": [
+              "userListing/hasAttributes/roleResponsibility"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "title",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/title",
+            "contents": [
+              "userListing/hasAttributes/title"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "userActiveModifiedDate",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/userActiveModifiedDate",
+            "contents": [
+              "userListing/hasAttributes/userActiveModifiedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "userActiveStatus",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/userActiveStatus",
+            "contents": [
+              "userListing/hasAttributes/userActiveStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "userId",
+            "parent": "userListing/attributeContext/userListing",
+            "definition": "resolvedFrom/userListing/hasAttributes/userId",
+            "contents": [
+              "userListing/hasAttributes/userId"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "department",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/department",
+          "dataFormat": "String"
+        },
+        {
+          "name": "firstName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/firstName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/lastName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "roleResponsibility",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/roleResponsibility",
+          "dataFormat": "String"
+        },
+        {
+          "name": "title",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/title",
+          "dataFormat": "String"
+        },
+        {
+          "name": "userActiveModifiedDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/userActiveModifiedDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "userActiveStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/userActiveStatus",
+          "dataFormat": "String"
+        },
+        {
+          "name": "userId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "userListing/attributeContext/userListing/userId",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

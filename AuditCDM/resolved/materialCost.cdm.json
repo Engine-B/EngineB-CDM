@@ -1,0 +1,400 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/materialCost.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "materialCost",
+      "attributeContext": {
+        "type": "entity",
+        "name": "materialCost",
+        "definition": "resolvedFrom/materialCost",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/businessUnitCode",
+            "contents": [
+              "materialCost/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "costingType",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/costingType",
+            "contents": [
+              "materialCost/hasAttributes/costingType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryProductId",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/inventoryProductId",
+            "contents": [
+              "materialCost/hasAttributes/inventoryProductId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationId",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/locationId",
+            "contents": [
+              "materialCost/hasAttributes/locationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "materialId",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/materialId",
+            "contents": [
+              "materialCost/hasAttributes/materialId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "otherCost1",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost1",
+            "contents": [
+              "materialCost/hasAttributes/otherCost1"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "otherCost2",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost2",
+            "contents": [
+              "materialCost/hasAttributes/otherCost2"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "otherCost3",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost3",
+            "contents": [
+              "materialCost/hasAttributes/otherCost3"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "otherCost4",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost4",
+            "contents": [
+              "materialCost/hasAttributes/otherCost4"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "otherCost5",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost5",
+            "contents": [
+              "materialCost/hasAttributes/otherCost5"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/segment01",
+            "contents": [
+              "materialCost/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/segment02",
+            "contents": [
+              "materialCost/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/segment03",
+            "contents": [
+              "materialCost/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/segment04",
+            "contents": [
+              "materialCost/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/segment05",
+            "contents": [
+              "materialCost/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "stockingUnitOfMeasure",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/stockingUnitOfMeasure",
+            "contents": [
+              "materialCost/hasAttributes/stockingUnitOfMeasure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "totalCost",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/totalCost",
+            "contents": [
+              "materialCost/hasAttributes/totalCost"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "validFromDate",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/validFromDate",
+            "contents": [
+              "materialCost/hasAttributes/validFromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "validToDate",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/validToDate",
+            "contents": [
+              "materialCost/hasAttributes/validToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "valuationDate",
+            "parent": "materialCost/attributeContext/materialCost",
+            "definition": "resolvedFrom/materialCost/hasAttributes/valuationDate",
+            "contents": [
+              "materialCost/hasAttributes/valuationDate"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "costingType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/costingType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "inventoryProductId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/inventoryProductId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "locationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/locationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "materialId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/materialId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "otherCost1",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/otherCost1",
+          "dataFormat": "String"
+        },
+        {
+          "name": "otherCost2",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/otherCost2",
+          "dataFormat": "String"
+        },
+        {
+          "name": "otherCost3",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/otherCost3",
+          "dataFormat": "String"
+        },
+        {
+          "name": "otherCost4",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/otherCost4",
+          "dataFormat": "String"
+        },
+        {
+          "name": "otherCost5",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/otherCost5",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/segment01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/segment02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/segment03",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/segment04",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/segment05",
+          "dataFormat": "String"
+        },
+        {
+          "name": "stockingUnitOfMeasure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/stockingUnitOfMeasure",
+          "dataFormat": "String"
+        },
+        {
+          "name": "totalCost",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/totalCost",
+          "dataFormat": "String"
+        },
+        {
+          "name": "validFromDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/validFromDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "validToDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/validToDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "valuationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "materialCost/attributeContext/materialCost/valuationDate",
+          "dataFormat": "Date"
+        }
+      ]
+    }
+  ]
+}

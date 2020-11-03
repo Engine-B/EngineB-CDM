@@ -1,0 +1,175 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/businessUnit.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "businessUnit",
+      "attributeContext": {
+        "type": "entity",
+        "name": "businessUnit",
+        "definition": "resolvedFrom/businessUnit",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitCode",
+            "contents": [
+              "businessUnit/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitDescription",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitDescription",
+            "contents": [
+              "businessUnit/hasAttributes/businessUnitDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitHierarchy1",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy1",
+            "contents": [
+              "businessUnit/hasAttributes/businessUnitHierarchy1"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitHierarchy2",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy2",
+            "contents": [
+              "businessUnit/hasAttributes/businessUnitHierarchy2"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitHierarchy3",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy3",
+            "contents": [
+              "businessUnit/hasAttributes/businessUnitHierarchy3"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitHierarchy4",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy4",
+            "contents": [
+              "businessUnit/hasAttributes/businessUnitHierarchy4"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitHierarchy5",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy5",
+            "contents": [
+              "businessUnit/hasAttributes/businessUnitHierarchy5"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "legalEntityIdentifier",
+            "parent": "businessUnit/attributeContext/businessUnit",
+            "definition": "resolvedFrom/businessUnit/hasAttributes/legalEntityIdentifier",
+            "contents": [
+              "businessUnit/hasAttributes/legalEntityIdentifier"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitHierarchy1",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy1",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitHierarchy2",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy2",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitHierarchy3",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy3",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitHierarchy4",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy4",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitHierarchy5",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy5",
+          "dataFormat": "String"
+        },
+        {
+          "name": "legalEntityIdentifier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "businessUnit/attributeContext/businessUnit/legalEntityIdentifier",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

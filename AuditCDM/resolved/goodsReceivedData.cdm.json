@@ -1,0 +1,1101 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/goodsReceivedData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "goodsReceivedData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "goodsReceivedData",
+        "definition": "resolvedFrom/goodsReceivedData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "adjustmentAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/adjustmentAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/adjustmentAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "adjustmentDescription",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/adjustmentDescription",
+            "contents": [
+              "goodsReceivedData/hasAttributes/adjustmentDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "adjustmentIndicator",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/adjustmentIndicator",
+            "contents": [
+              "goodsReceivedData/hasAttributes/adjustmentIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedBy",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/approvedBy",
+            "contents": [
+              "goodsReceivedData/hasAttributes/approvedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedByDateTime",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/approvedByDateTime",
+            "contents": [
+              "goodsReceivedData/hasAttributes/approvedByDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/businessUnitCode",
+            "contents": [
+              "goodsReceivedData/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "enteredBy",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/enteredBy",
+            "contents": [
+              "goodsReceivedData/hasAttributes/enteredBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "enteredDateTime",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/enteredDateTime",
+            "contents": [
+              "goodsReceivedData/hasAttributes/enteredDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsReceiptUniqueId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/goodsReceiptUniqueId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/goodsReceiptUniqueId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsReceivedAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/goodsReceivedAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/goodsReceivedAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsReceivedCurrencyAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/goodsReceivedCurrencyAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/goodsReceivedCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsReceivedCurrencyCode",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/goodsReceivedCurrencyCode",
+            "contents": [
+              "goodsReceivedData/hasAttributes/goodsReceivedCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "goodsReceivedExchangeRate",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/goodsReceivedExchangeRate",
+            "contents": [
+              "goodsReceivedData/hasAttributes/goodsReceivedExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedBy",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lastModifiedBy",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lastModifiedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedDateTime",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lastModifiedDateTime",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lastModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAdjustmentAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineAdjustmentAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineAdjustmentAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAdjustmentDescription",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineAdjustmentDescription",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineAdjustmentDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineCurrencyAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineCurrencyAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineCurrencyCode",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineCurrencyCode",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineExchangeRate",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineExchangeRate",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderCurrencyAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderCurrencyAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderCurrencyCode",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderCurrencyCode",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderExchangeRate",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderExchangeRate",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderLineId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderLineId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderQuantity",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderQuantity",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderUnitofMeasure",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderUnitofMeasure",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderUnitofMeasure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderUnitPrice",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/linePurchaseOrderUnitPrice",
+            "contents": [
+              "goodsReceivedData/hasAttributes/linePurchaseOrderUnitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptDocumentLineId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptDocumentLineId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptDocumentLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptProductBarCode",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptProductBarCode",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptProductBarCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptProductDescription",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptProductDescription",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptProductDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptProductGroup01",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptProductGroup01",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptProductGroup01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptProductGroup02",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptProductGroup02",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptProductGroup02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptProductId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptProductId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptProductId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptQuantity",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptQuantity",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptUnitOfMeasure",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptUnitOfMeasure",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptUnitOfMeasure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReceiptUnitPrice",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/lineReceiptUnitPrice",
+            "contents": [
+              "goodsReceivedData/hasAttributes/lineReceiptUnitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "postingStatus",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/postingStatus",
+            "contents": [
+              "goodsReceivedData/hasAttributes/postingStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/purchaseOrderAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/purchaseOrderAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderCurrencyAmount",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/purchaseOrderCurrencyAmount",
+            "contents": [
+              "goodsReceivedData/hasAttributes/purchaseOrderCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderCurrencyCode",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/purchaseOrderCurrencyCode",
+            "contents": [
+              "goodsReceivedData/hasAttributes/purchaseOrderCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderDate",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/purchaseOrderDate",
+            "contents": [
+              "goodsReceivedData/hasAttributes/purchaseOrderDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderExchangeRate",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/purchaseOrderExchangeRate",
+            "contents": [
+              "goodsReceivedData/hasAttributes/purchaseOrderExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/purchaseOrderId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/purchaseOrderId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "receiptDate",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/receiptDate",
+            "contents": [
+              "goodsReceivedData/hasAttributes/receiptDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "receiptDocumentId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/receiptDocumentId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/receiptDocumentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "receiptFiscalYear",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/receiptFiscalYear",
+            "contents": [
+              "goodsReceivedData/hasAttributes/receiptFiscalYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "receiptId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/receiptId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/receiptId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "receiptPeriod",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/receiptPeriod",
+            "contents": [
+              "goodsReceivedData/hasAttributes/receiptPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/segment01",
+            "contents": [
+              "goodsReceivedData/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/segment02",
+            "contents": [
+              "goodsReceivedData/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/segment03",
+            "contents": [
+              "goodsReceivedData/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/segment04",
+            "contents": [
+              "goodsReceivedData/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/segment05",
+            "contents": [
+              "goodsReceivedData/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierId",
+            "parent": "goodsReceivedData/attributeContext/goodsReceivedData",
+            "definition": "resolvedFrom/goodsReceivedData/hasAttributes/supplierId",
+            "contents": [
+              "goodsReceivedData/hasAttributes/supplierId"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "adjustmentAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/adjustmentAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "adjustmentDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/adjustmentDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "adjustmentIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/adjustmentIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "approvedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/approvedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "approvedByDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/approvedByDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "enteredBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/enteredBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "enteredDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/enteredDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "goodsReceiptUniqueId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/goodsReceiptUniqueId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "goodsReceivedAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/goodsReceivedAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "goodsReceivedCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/goodsReceivedCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "goodsReceivedCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/goodsReceivedCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "goodsReceivedExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/goodsReceivedExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lastModifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lastModifiedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lastModifiedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineAdjustmentAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineAdjustmentAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineAdjustmentDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineAdjustmentDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "linePurchaseOrderAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "linePurchaseOrderCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "linePurchaseOrderCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "linePurchaseOrderLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderLineId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderQuantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderQuantity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderUnitofMeasure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderUnitofMeasure",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderUnitPrice",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/linePurchaseOrderUnitPrice",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptDocumentLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptDocumentLineId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptProductBarCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptProductBarCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptProductDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptProductDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptProductGroup01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptProductGroup01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptProductGroup02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptProductGroup02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptProductId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptProductId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptQuantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptQuantity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptUnitOfMeasure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptUnitOfMeasure",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReceiptUnitPrice",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/lineReceiptUnitPrice",
+          "dataFormat": "String"
+        },
+        {
+          "name": "postingStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/postingStatus",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseOrderAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/purchaseOrderAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "purchaseOrderCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/purchaseOrderCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "purchaseOrderCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/purchaseOrderCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseOrderDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/purchaseOrderDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "purchaseOrderExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/purchaseOrderExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "purchaseOrderId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/purchaseOrderId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "receiptDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/receiptDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "receiptDocumentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/receiptDocumentId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "receiptFiscalYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/receiptFiscalYear",
+          "dataFormat": "String"
+        },
+        {
+          "name": "receiptId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/receiptId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "receiptPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/receiptPeriod",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/segment01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/segment02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/segment03",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/segment04",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/segment05",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "goodsReceivedData/attributeContext/goodsReceivedData/supplierId",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

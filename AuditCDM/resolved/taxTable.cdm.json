@@ -1,0 +1,232 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/taxTable.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "taxTable",
+      "attributeContext": {
+        "type": "entity",
+        "name": "taxTable",
+        "definition": "resolvedFrom/taxTable",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorActiveFlag",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorActiveFlag",
+            "contents": [
+              "taxTable/hasAttributes/regulatorActiveFlag"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorCode",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorCode",
+            "contents": [
+              "taxTable/hasAttributes/regulatorCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorCountry",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorCountry",
+            "contents": [
+              "taxTable/hasAttributes/regulatorCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorDefaultAccrualglAccountNumber",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorDefaultAccrualglAccountNumber",
+            "contents": [
+              "taxTable/hasAttributes/regulatorDefaultAccrualglAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorDefaultExpenseglAccountNumber",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorDefaultExpenseglAccountNumber",
+            "contents": [
+              "taxTable/hasAttributes/regulatorDefaultExpenseglAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorDefaultPayableglAccountNumber",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorDefaultPayableglAccountNumber",
+            "contents": [
+              "taxTable/hasAttributes/regulatorDefaultPayableglAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorIdentifier",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorIdentifier",
+            "contents": [
+              "taxTable/hasAttributes/regulatorIdentifier"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorName",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorName",
+            "contents": [
+              "taxTable/hasAttributes/regulatorName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorRegion",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorRegion",
+            "contents": [
+              "taxTable/hasAttributes/regulatorRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorReportingOrganization",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorReportingOrganization",
+            "contents": [
+              "taxTable/hasAttributes/regulatorReportingOrganization"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "regulatorRole",
+            "parent": "taxTable/attributeContext/taxTable",
+            "definition": "resolvedFrom/taxTable/hasAttributes/regulatorRole",
+            "contents": [
+              "taxTable/hasAttributes/regulatorRole"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "regulatorActiveFlag",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorActiveFlag",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorDefaultAccrualglAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorDefaultAccrualglAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorDefaultExpenseglAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorDefaultExpenseglAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorDefaultPayableglAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorDefaultPayableglAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorIdentifier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorIdentifier",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorReportingOrganization",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorReportingOrganization",
+          "dataFormat": "String"
+        },
+        {
+          "name": "regulatorRole",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "taxTable/attributeContext/taxTable/regulatorRole",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

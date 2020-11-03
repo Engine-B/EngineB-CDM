@@ -1,0 +1,910 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/customerMasterData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "customerMasterData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "customerMasterData",
+        "definition": "resolvedFrom/customerMasterData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "addressAddressType",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressAddressType",
+            "contents": [
+              "customerMasterData/hasAttributes/addressAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressBuilding",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressBuilding",
+            "contents": [
+              "customerMasterData/hasAttributes/addressBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressCity",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressCity",
+            "contents": [
+              "customerMasterData/hasAttributes/addressCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressCountry",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressCountry",
+            "contents": [
+              "customerMasterData/hasAttributes/addressCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressNumber",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressNumber",
+            "contents": [
+              "customerMasterData/hasAttributes/addressNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressPostalCode",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressPostalCode",
+            "contents": [
+              "customerMasterData/hasAttributes/addressPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressRegion",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressRegion",
+            "contents": [
+              "customerMasterData/hasAttributes/addressRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressStreetName",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/addressStreetName",
+            "contents": [
+              "customerMasterData/hasAttributes/addressStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountName",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/bankAccountName",
+            "contents": [
+              "customerMasterData/hasAttributes/bankAccountName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountNumber",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/bankAccountNumber",
+            "contents": [
+              "customerMasterData/hasAttributes/bankAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountId",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/bankAccountId",
+            "contents": [
+              "customerMasterData/hasAttributes/bankAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "companyType",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/companyType",
+            "contents": [
+              "customerMasterData/hasAttributes/companyType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerAccountId",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/customerAccountId",
+            "contents": [
+              "customerMasterData/hasAttributes/customerAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerCreditLimit",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/customerCreditLimit",
+            "contents": [
+              "customerMasterData/hasAttributes/customerCreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerGroup",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/customerGroup",
+            "contents": [
+              "customerMasterData/hasAttributes/customerGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerId",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/customerId",
+            "contents": [
+              "customerMasterData/hasAttributes/customerId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerType",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/customerType",
+            "contents": [
+              "customerMasterData/hasAttributes/customerType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "effectiveDate",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/effectiveDate",
+            "contents": [
+              "customerMasterData/hasAttributes/effectiveDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "email",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/email",
+            "contents": [
+              "customerMasterData/hasAttributes/email"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "expirationDate",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/expirationDate",
+            "contents": [
+              "customerMasterData/hasAttributes/expirationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fax",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/fax",
+            "contents": [
+              "customerMasterData/hasAttributes/fax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "firstName",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/firstName",
+            "contents": [
+              "customerMasterData/hasAttributes/firstName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IBANNumber",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/IBANNumber",
+            "contents": [
+              "customerMasterData/hasAttributes/IBANNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastName",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/lastName",
+            "contents": [
+              "customerMasterData/hasAttributes/lastName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "legalEntityIdentifier",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/legalEntityIdentifier",
+            "contents": [
+              "customerMasterData/hasAttributes/legalEntityIdentifier"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "name",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/name",
+            "contents": [
+              "customerMasterData/hasAttributes/name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDiscountDays",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/paymentDiscountDays",
+            "contents": [
+              "customerMasterData/hasAttributes/paymentDiscountDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDiscountPercentage",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/paymentDiscountPercentage",
+            "contents": [
+              "customerMasterData/hasAttributes/paymentDiscountPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDueDays",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/paymentDueDays",
+            "contents": [
+              "customerMasterData/hasAttributes/paymentDueDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "registrationNumber",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/registrationNumber",
+            "contents": [
+              "customerMasterData/hasAttributes/registrationNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "selfBillingIndicator",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/selfBillingIndicator",
+            "contents": [
+              "customerMasterData/hasAttributes/selfBillingIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sortCode",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/sortCode",
+            "contents": [
+              "customerMasterData/hasAttributes/sortCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemApprovedDateTime",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/systemApprovedDateTime",
+            "contents": [
+              "customerMasterData/hasAttributes/systemApprovedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemApprovedUser",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/systemApprovedUser",
+            "contents": [
+              "customerMasterData/hasAttributes/systemApprovedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryDateTime",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/systemEntryDateTime",
+            "contents": [
+              "customerMasterData/hasAttributes/systemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryUser",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/systemEntryUser",
+            "contents": [
+              "customerMasterData/hasAttributes/systemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedDateTime",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/systemModifiedDateTime",
+            "contents": [
+              "customerMasterData/hasAttributes/systemModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedUser",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/systemModifiedUser",
+            "contents": [
+              "customerMasterData/hasAttributes/systemModifiedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxAuthority",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/taxAuthority",
+            "contents": [
+              "customerMasterData/hasAttributes/taxAuthority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxNumber",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/taxNumber",
+            "contents": [
+              "customerMasterData/hasAttributes/taxNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxRegistrationNumber",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/taxRegistrationNumber",
+            "contents": [
+              "customerMasterData/hasAttributes/taxRegistrationNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxType",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/taxType",
+            "contents": [
+              "customerMasterData/hasAttributes/taxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxVerificationDate",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/taxVerificationDate",
+            "contents": [
+              "customerMasterData/hasAttributes/taxVerificationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "telephone",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/telephone",
+            "contents": [
+              "customerMasterData/hasAttributes/telephone"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "title",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/title",
+            "contents": [
+              "customerMasterData/hasAttributes/title"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionCreditLimit",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/transactionCreditLimit",
+            "contents": [
+              "customerMasterData/hasAttributes/transactionCreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "website",
+            "parent": "customerMasterData/attributeContext/customerMasterData",
+            "definition": "resolvedFrom/customerMasterData/hasAttributes/website",
+            "contents": [
+              "customerMasterData/hasAttributes/website"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "addressAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/addressStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/bankAccountName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/bankAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/bankAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "companyType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/companyType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "customerAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/customerAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "customerCreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/customerCreditLimit",
+          "dataFormat": "String"
+        },
+        {
+          "name": "customerGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/customerGroup",
+          "dataFormat": "String"
+        },
+        {
+          "name": "customerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/customerId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "customerType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/customerType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "effectiveDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/effectiveDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "email",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/email",
+          "dataFormat": "String"
+        },
+        {
+          "name": "expirationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/expirationDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "fax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/fax",
+          "dataFormat": "String"
+        },
+        {
+          "name": "firstName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/firstName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "IBANNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/IBANNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/lastName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "legalEntityIdentifier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/legalEntityIdentifier",
+          "dataFormat": "String"
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "paymentDiscountDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/paymentDiscountDays",
+          "dataFormat": "String"
+        },
+        {
+          "name": "paymentDiscountPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/paymentDiscountPercentage",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "paymentDueDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/paymentDueDays",
+          "dataFormat": "String"
+        },
+        {
+          "name": "registrationNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/registrationNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "selfBillingIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/selfBillingIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "sortCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/sortCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemApprovedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/systemApprovedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemApprovedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/systemApprovedUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/systemEntryDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/systemEntryUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/systemModifiedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemModifiedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/systemModifiedUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxAuthority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/taxAuthority",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/taxNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxRegistrationNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/taxRegistrationNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/taxType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "taxVerificationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/taxVerificationDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "telephone",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/telephone",
+          "dataFormat": "String"
+        },
+        {
+          "name": "title",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/title",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionCreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/transactionCreditLimit",
+          "dataFormat": "String"
+        },
+        {
+          "name": "website",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "customerMasterData/attributeContext/customerMasterData/website",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

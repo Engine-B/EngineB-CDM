@@ -1,0 +1,286 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/employeeMasterData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "employeeMasterData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "employeeMasterData",
+        "definition": "resolvedFrom/employeeMasterData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "departmentCode",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/departmentCode",
+            "contents": [
+              "employeeMasterData/hasAttributes/departmentCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employeeDateOfBirth",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employeeDateOfBirth",
+            "contents": [
+              "employeeMasterData/hasAttributes/employeeDateOfBirth"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employeeFirstName",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employeeFirstName",
+            "contents": [
+              "employeeMasterData/hasAttributes/employeeFirstName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employeeId",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employeeId",
+            "contents": [
+              "employeeMasterData/hasAttributes/employeeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employeeJobTitle",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employeeJobTitle",
+            "contents": [
+              "employeeMasterData/hasAttributes/employeeJobTitle"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employeeLastName",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employeeLastName",
+            "contents": [
+              "employeeMasterData/hasAttributes/employeeLastName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employeeMiddleName",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employeeMiddleName",
+            "contents": [
+              "employeeMasterData/hasAttributes/employeeMiddleName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employeeRefCode",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employeeRefCode",
+            "contents": [
+              "employeeMasterData/hasAttributes/employeeRefCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employmentStartDate",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employmentStartDate",
+            "contents": [
+              "employeeMasterData/hasAttributes/employmentStartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employmentTerminationDate",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employmentTerminationDate",
+            "contents": [
+              "employeeMasterData/hasAttributes/employmentTerminationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employmentTypeCode",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employmentTypeCode",
+            "contents": [
+              "employeeMasterData/hasAttributes/employmentTypeCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "employmentTypeName",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/employmentTypeName",
+            "contents": [
+              "employeeMasterData/hasAttributes/employmentTypeName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "isActiveFlag",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/isActiveFlag",
+            "contents": [
+              "employeeMasterData/hasAttributes/isActiveFlag"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "userId",
+            "parent": "employeeMasterData/attributeContext/employeeMasterData",
+            "definition": "resolvedFrom/employeeMasterData/hasAttributes/userId",
+            "contents": [
+              "employeeMasterData/hasAttributes/userId"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "departmentCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/departmentCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employeeDateOfBirth",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employeeDateOfBirth",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "employeeFirstName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employeeFirstName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employeeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employeeId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employeeJobTitle",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employeeJobTitle",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employeeLastName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employeeLastName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employeeMiddleName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employeeMiddleName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employeeRefCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employeeRefCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employmentStartDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employmentStartDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "employmentTerminationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employmentTerminationDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "employmentTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employmentTypeCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "employmentTypeName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/employmentTypeName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "isActiveFlag",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/isActiveFlag",
+          "dataFormat": "String"
+        },
+        {
+          "name": "userId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "employeeMasterData/attributeContext/employeeMasterData/userId",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

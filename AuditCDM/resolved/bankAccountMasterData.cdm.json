@@ -1,0 +1,137 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/bankAccountMasterData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "bankAccountMasterData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "bankAccountMasterData",
+        "definition": "resolvedFrom/bankAccountMasterData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountId",
+            "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
+            "definition": "resolvedFrom/bankAccountMasterData/hasAttributes/bankAccountId",
+            "contents": [
+              "bankAccountMasterData/hasAttributes/bankAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountNumber",
+            "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
+            "definition": "resolvedFrom/bankAccountMasterData/hasAttributes/bankAccountNumber",
+            "contents": [
+              "bankAccountMasterData/hasAttributes/bankAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountSubType",
+            "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
+            "definition": "resolvedFrom/bankAccountMasterData/hasAttributes/bankAccountSubType",
+            "contents": [
+              "bankAccountMasterData/hasAttributes/bankAccountSubType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountType",
+            "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
+            "definition": "resolvedFrom/bankAccountMasterData/hasAttributes/bankAccountType",
+            "contents": [
+              "bankAccountMasterData/hasAttributes/bankAccountType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankSortCode",
+            "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
+            "definition": "resolvedFrom/bankAccountMasterData/hasAttributes/bankSortCode",
+            "contents": [
+              "bankAccountMasterData/hasAttributes/bankSortCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IBAN",
+            "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
+            "definition": "resolvedFrom/bankAccountMasterData/hasAttributes/IBAN",
+            "contents": [
+              "bankAccountMasterData/hasAttributes/IBAN"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "bankAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountSubType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountSubType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankAccountType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "bankSortCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankSortCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "IBAN",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/IBAN",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

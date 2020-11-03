@@ -1,0 +1,3575 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/purchaseInvoiceData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "purchaseInvoiceData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "purchaseInvoiceData",
+        "definition": "resolvedFrom/purchaseInvoiceData",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "approvedBy",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/approvedBy",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/approvedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedDateTime",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/approvedDateTime",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/approvedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "batchId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/batchId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/batchId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressAdditionalAddressDetail",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressAdditionalAddressDetail",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressAddressType",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressAddressType",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressBuilding",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressBuilding",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressCity",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressCity",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressCountry",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressCountry",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressPostalCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressPostalCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressRegion",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressRegion",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "billingAddressStreetName",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/billingAddressStreetName",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/billingAddressStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "branchStoreNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/branchStoreNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/branchStoreNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/businessUnitCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glLineCreditAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glLineCreditAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glLineCreditAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glLineDebitAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glLineDebitAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glLineDebitAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glPostingDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glPostingDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glPostingDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glTax1CreditAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glTax1CreditAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glTax1CreditAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glTax1DebitAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glTax1DebitAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glTax1DebitAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glTax2CreditAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glTax2CreditAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glTax2CreditAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glTax2DebitAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glTax2DebitAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glTax2DebitAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glTax3CreditAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glTax3CreditAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glTax3CreditAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glTax3DebitAccountNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/glTax3DebitAccountNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/glTax3DebitAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceAmountCurrency",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceAmountCurrency",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceAmountCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceAmountLocal",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceAmountLocal",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceAmountLocal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceAmountReporting",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceAmountReporting",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceAmountReporting"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceDocumentReference",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceDocumentReference",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceDocumentReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceDueDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceDueDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceDueDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceLineAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceLineAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceLineAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceLineAmountCurrencyAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceLineAmountCurrencyAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceLineAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceLineAmountCurrencyCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceLineAmountCurrencyCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceLineAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceLineAmountExchangeRate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceLineAmountExchangeRate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceLineAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceLineAmountReporting",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceLineAmountReporting",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceLineAmountReporting"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceLocalCurrency",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceLocalCurrency",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceLocalCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceNo",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceNo",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceNo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceReportingCurrency",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceReportingCurrency",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceReportingCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "invoiceType",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/invoiceType",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/invoiceType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAccountId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineAccountId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineAnalysisId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineAnalysisId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisType",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineAnalysisType",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineAnalysisType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineApprovedBy",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineApprovedBy",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineApprovedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineApprovedDateTime",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineApprovedDateTime",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineApprovedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineCreditNoteReason",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineCreditNoteReason",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineCreditNoteReason"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineCreditNoteReference",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineCreditNoteReference",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineCreditNoteReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDebitCreditIndicator",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineDebitCreditIndicator",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineDebitCreditIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDeliveryDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineDeliveryDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDescription",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineDescription",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineFromDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineFromDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineFromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineGoodsServicesId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineGoodsServicesId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineGoodsServicesId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineInvoiceDueDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineInvoiceDueDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineInvoiceDueDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineInvoiceLocalCurrency",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineInvoiceLocalCurrency",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineInvoiceLocalCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineInvoiceUOM",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineInvoiceUOM",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineInvoiceUOM"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineLineNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineLineNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineLineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineMovementReference",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineMovementReference",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineMovementReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineOrderDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineOrderDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineOrderDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineOriginatingON",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineOriginatingON",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineOriginatingON"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineProductCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineProductCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineProductCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineProductDescription",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineProductDescription",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineProductDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineProductGroup01",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineProductGroup01",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineProductGroup01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineProductGroup02",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineProductGroup02",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineProductGroup02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/linePurchaseOrderId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/linePurchaseOrderId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePurchaseOrderLineId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/linePurchaseOrderLineId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/linePurchaseOrderLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineQuantity",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineQuantity",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineReportingCurrency",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineReportingCurrency",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineReportingCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromAdditionalAddressDetail",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromAdditionalAddressDetail",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromAddressType",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromAddressType",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromBuilding",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromBuilding",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromCity",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromCity",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromCountry",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromCountry",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromDeliveryDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromDeliveryDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromDeliveryId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromDeliveryId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromLocationId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromLocationId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromPostalCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromPostalCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromRegion",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromRegion",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromStreetName",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromStreetName",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromUCR",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromUCR",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipFromWarehouseId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipFromWarehouseId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipFromWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShippingCostsAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShippingCostsAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmountCurrencyAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShippingCostsAmountCurrencyAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShippingCostsAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmountCurrencyCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShippingCostsAmountCurrencyCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShippingCostsAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShippingCostsAmountExchangeRate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShippingCostsAmountExchangeRate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShippingCostsAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToAdditionalAddressDetail",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToAdditionalAddressDetail",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToAddressType",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToAddressType",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToBuilding",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToBuilding",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToCity",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToCity",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToCountry",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToCountry",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToDeliveryDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToDeliveryDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToDeliveryId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToDeliveryId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToLocationId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToLocationId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToPostalCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToPostalCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToRegion",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToRegion",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToStreetName",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToStreetName",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToUCR",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToUCR",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineShipToWarehouseId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineShipToWarehouseId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineShipToWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemEntryDateTime",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineSystemEntryDateTime",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineSystemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemEntryUser",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineSystemEntryUser",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineSystemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemModifiedDateTime",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineSystemModifiedDateTime",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineSystemModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemModifiedUser",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineSystemModifiedUser",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineSystemModifiedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmountCurrencyAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmountCurrencyAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmountCurrencyCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmountCurrencyCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmountExchangeRate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmountExchangeRate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxBase",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxBase",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxBase"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxBaseDescription",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxBaseDescription",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxBaseDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxDeclarationPeriod",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxDeclarationPeriod",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxDeclarationPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxExemptionReason",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxExemptionReason",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxExemptionReason"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxPercentage",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxInformationTaxPercentage",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxInformationTaxPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxPointDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineTaxPointDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineTaxPointDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineToDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineToDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineUnitPrice",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineUnitPrice",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineUnitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineUOMToUOMBaseConversionFactor",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/lineUOMToUOMBaseConversionFactor",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/lineUOMToUOMBaseConversionFactor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentTerms",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/paymentTerms",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/paymentTerms"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "period",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/period",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/period"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "periodYear",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/periodYear",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/periodYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "postingStatus",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/postingStatus",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/postingStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseInvoiceLineNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/purchaseInvoiceLineNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/purchaseInvoiceLineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseInvoiceNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/purchaseInvoiceNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/purchaseInvoiceNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseInvoiceUniqueId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/purchaseInvoiceUniqueId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/purchaseInvoiceUniqueId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "purchaseOrderId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/purchaseOrderId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/purchaseOrderId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "receiptNumbers",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/receiptNumbers",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/receiptNumbers"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/segment01",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/segment02",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/segment03",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/segment04",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/segment05",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "selfBillingIndicator",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/selfBillingIndicator",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/selfBillingIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/settlementAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/settlementAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementCurrencyAmount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/settlementCurrencyAmount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/settlementCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementCurrencyCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/settlementCurrencyCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/settlementCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementExchangeRate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/settlementExchangeRate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/settlementExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementPaymentMechanism",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/settlementPaymentMechanism",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/settlementPaymentMechanism"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementSettlementDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/settlementSettlementDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/settlementSettlementDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "settlementSettlementDiscount",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/settlementSettlementDiscount",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/settlementSettlementDiscount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromAdditionalAddressDetail",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromAdditionalAddressDetail",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromAddressType",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromAddressType",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromBuilding",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromBuilding",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromCity",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromCity",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromCountry",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromCountry",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromDeliveryDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromDeliveryDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromDeliveryId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromDeliveryId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromLocationId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromLocationId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromPostalCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromPostalCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromRegion",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromRegion",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromStreetName",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromStreetName",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromUCR",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromUCR",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipFromWarehouseId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipFromWarehouseId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipFromWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToAdditionalAddressDetail",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToAdditionalAddressDetail",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToAdditionalAddressDetail"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToAddressType",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToAddressType",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToBuilding",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToBuilding",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToCity",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToCity",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToCountry",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToCountry",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToDeliveryDate",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToDeliveryDate",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToDeliveryDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToDeliveryId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToDeliveryId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToDeliveryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToLocationId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToLocationId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToLocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToNumber",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToNumber",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToPostalCode",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToPostalCode",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToRegion",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToRegion",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToStreetName",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToStreetName",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToUCR",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToUCR",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToUCR"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "shipToWarehouseId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/shipToWarehouseId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/shipToWarehouseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sourceId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/sourceId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/sourceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/supplierId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/supplierId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierName",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/supplierName",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/supplierName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryDateTime",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/systemEntryDateTime",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/systemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryUser",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/systemEntryUser",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/systemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/systemId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/systemId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedDateTime",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/systemModifiedDateTime",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/systemModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedUser",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/systemModifiedUser",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/systemModifiedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax1Local",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax1Local",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax1Local"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax1Type",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax1Type",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax1Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax1TypeDescription",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax1TypeDescription",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax1TypeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax2Local",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax2Local",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax2Local"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax2Type",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax2Type",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax2Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax2TypeDescription",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax2TypeDescription",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax2TypeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax3Local",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax3Local",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax3Local"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax3Type",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax3Type",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax3Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "tax3TypeDescription",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/tax3TypeDescription",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/tax3TypeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "termsDiscountDays",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/termsDiscountDays",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/termsDiscountDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "termsDiscountPercentage",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/termsDiscountPercentage",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/termsDiscountPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "termsDueDays",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/termsDueDays",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/termsDueDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionId",
+            "parent": "purchaseInvoiceData/attributeContext/purchaseInvoiceData",
+            "definition": "resolvedFrom/purchaseInvoiceData/hasAttributes/transactionId",
+            "contents": [
+              "purchaseInvoiceData/hasAttributes/transactionId"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "approvedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/approvedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "approvedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/approvedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "batchId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/batchId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "billingAddressStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/billingAddressStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "branchStoreNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/branchStoreNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glLineCreditAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glLineCreditAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glLineDebitAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glLineDebitAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glPostingDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glPostingDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "glTax1CreditAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glTax1CreditAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glTax1DebitAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glTax1DebitAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glTax2CreditAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glTax2CreditAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glTax2DebitAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glTax2DebitAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glTax3CreditAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glTax3CreditAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glTax3DebitAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/glTax3DebitAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "invoiceAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceAmountCurrency",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceAmountCurrency",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceAmountLocal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceAmountLocal",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceAmountReporting",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceAmountReporting",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "invoiceDocumentReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceDocumentReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "invoiceDueDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceDueDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "invoiceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "invoiceLineAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceLineAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceLineAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceLineAmountCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceLineAmountCurrencyCode",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceLineAmountCurrencyCode",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceLineAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceLineAmountExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceLineAmountReporting",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceLineAmountReporting",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "invoiceLocalCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceLocalCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "invoiceNo",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceNo",
+          "dataFormat": "String"
+        },
+        {
+          "name": "invoiceReportingCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceReportingCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "invoiceType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/invoiceType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineAnalysisId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineAnalysisId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineAnalysisType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineAnalysisType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineApprovedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineApprovedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineApprovedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineApprovedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineCreditNoteReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineCreditNoteReason",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineCreditNoteReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineCreditNoteReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineDebitCreditIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineDebitCreditIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineFromDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineFromDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineGoodsServicesId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineGoodsServicesId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineInvoiceDueDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineInvoiceDueDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineInvoiceLocalCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineInvoiceLocalCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineInvoiceUOM",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineInvoiceUOM",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineLineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineLineNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineMovementReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineMovementReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineOrderDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineOrderDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineOriginatingON",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineOriginatingON",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineProductCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineProductCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineProductDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineProductDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineProductGroup01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineProductGroup01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineProductGroup02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineProductGroup02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/linePurchaseOrderId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "linePurchaseOrderLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/linePurchaseOrderLineId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineQuantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineQuantity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineReportingCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineReportingCurrency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineShipFromDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipFromWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipFromWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingCostsAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShippingCostsAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShippingCostsAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShippingCostsAmountCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShippingCostsAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShippingCostsAmountCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShippingCostsAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShippingCostsAmountExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineShipToAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineShipToDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineShipToWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineShipToWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSystemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineSystemEntryDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineSystemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineSystemEntryUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineSystemModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineSystemModifiedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineSystemModifiedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineSystemModifiedUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxAmountCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxAmountCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxAmountExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineTaxInformationTaxBase",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxBase",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxBaseDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxBaseDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxDeclarationPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxDeclarationPeriod",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxExemptionReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxExemptionReason",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lineTaxInformationTaxPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxInformationTaxPercentage",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineTaxPointDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineTaxPointDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineToDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineToDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lineUnitPrice",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineUnitPrice",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "lineUOMToUOMBaseConversionFactor",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/lineUOMToUOMBaseConversionFactor",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "paymentTerms",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/paymentTerms",
+          "dataFormat": "String"
+        },
+        {
+          "name": "period",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/period",
+          "dataFormat": "String"
+        },
+        {
+          "name": "periodYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/periodYear",
+          "dataFormat": "String"
+        },
+        {
+          "name": "postingStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/postingStatus",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseInvoiceLineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/purchaseInvoiceLineNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseInvoiceNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/purchaseInvoiceNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseInvoiceUniqueId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/purchaseInvoiceUniqueId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "purchaseOrderId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/purchaseOrderId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "receiptNumbers",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/receiptNumbers",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/segment01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/segment02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/segment03",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/segment04",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/segment05",
+          "dataFormat": "String"
+        },
+        {
+          "name": "selfBillingIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/selfBillingIndicator",
+          "dataFormat": "String"
+        },
+        {
+          "name": "settlementAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/settlementAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "settlementCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/settlementCurrencyAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "settlementCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/settlementCurrencyCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "settlementExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/settlementExchangeRate",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "settlementPaymentMechanism",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/settlementPaymentMechanism",
+          "dataFormat": "String"
+        },
+        {
+          "name": "settlementSettlementDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/settlementSettlementDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "settlementSettlementDiscount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/settlementSettlementDiscount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "shipFromAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "shipFromDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipFromWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipFromWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToAdditionalAddressDetail",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToAdditionalAddressDetail",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToAddressType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToBuilding",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToCity",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToCountry",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToDeliveryDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToDeliveryDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "shipToDeliveryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToDeliveryId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToLocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToLocationId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToPostalCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToRegion",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToStreetName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToUCR",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToUCR",
+          "dataFormat": "String"
+        },
+        {
+          "name": "shipToWarehouseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/shipToWarehouseId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "sourceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/sourceId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/supplierId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "supplierName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/supplierName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/systemEntryDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/systemEntryUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/systemId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "systemModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/systemModifiedDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "systemModifiedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/systemModifiedUser",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax1Local",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax1Local",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax1Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax1Type",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax1TypeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax1TypeDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax2Local",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax2Local",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax2Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax2Type",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax2TypeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax2TypeDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax3Local",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax3Local",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax3Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax3Type",
+          "dataFormat": "String"
+        },
+        {
+          "name": "tax3TypeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/tax3TypeDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "termsDiscountDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/termsDiscountDays",
+          "dataFormat": "String"
+        },
+        {
+          "name": "termsDiscountPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/termsDiscountPercentage",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "termsDueDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/termsDueDays",
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "purchaseInvoiceData/attributeContext/purchaseInvoiceData/transactionId",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}

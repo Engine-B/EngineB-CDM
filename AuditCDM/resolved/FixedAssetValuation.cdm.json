@@ -1,0 +1,551 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/fixedAssetValuation.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetValuation",
+      "attributeContext": {
+        "type": "entity",
+        "name": "fixedAssetValuation",
+        "definition": "resolvedFrom/fixedAssetValuation",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "approvedBy",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/approvedBy",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/approvedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedByDate",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/approvedByDate",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/approvedByDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/businessUnitCode",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "enteredBy",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/enteredBy",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/enteredBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "enteredDateTime",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/enteredDateTime",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/enteredDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetId",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/fixedAssetId",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/fixedAssetId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetRealizedGainLossAccount",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/fixedAssetRealizedGainLossAccount",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/fixedAssetRealizedGainLossAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetRealizedGainLossAmount",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/fixedAssetRealizedGainLossAmount",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/fixedAssetRealizedGainLossAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetUnrealizedGainLossAccount",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/fixedAssetUnrealizedGainLossAccount",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/fixedAssetUnrealizedGainLossAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetUnrealizedGainLossAmount",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/fixedAssetUnrealizedGainLossAmount",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/fixedAssetUnrealizedGainLossAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glAccount",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/glAccount",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/glAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glTransactionId",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/glTransactionId",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/glTransactionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedBy",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/lastModifiedBy",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/lastModifiedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedByDate",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/lastModifiedByDate",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/lastModifiedByDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lotNumber",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/lotNumber",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/lotNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "revaluationAmount",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/revaluationAmount",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/revaluationAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "revaluationDate",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/revaluationDate",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/revaluationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "revaluationDescription",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/revaluationDescription",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/revaluationDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/segment01",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/segment02",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/segment03",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/segment04",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/segment05",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "serialNumber",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/serialNumber",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/serialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "uniqueId",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/uniqueId",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/uniqueId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "valuerDocumnetReference",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/valuerDocumnetReference",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/valuerDocumnetReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "valuerId",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/valuerId",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/valuerId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "valuerName",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "definition": "resolvedFrom/fixedAssetValuation/hasAttributes/valuerName",
+            "contents": [
+              "fixedAssetValuation/hasAttributes/valuerName"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "approvedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/approvedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "approvedByDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/approvedByDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/businessUnitCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "enteredBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/enteredBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "enteredDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/enteredDateTime",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "fixedAssetId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetRealizedGainLossAccount",
+          "dataFormat": "String"
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetRealizedGainLossAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetUnrealizedGainLossAccount",
+          "dataFormat": "String"
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetUnrealizedGainLossAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "glAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/glAccount",
+          "dataFormat": "String"
+        },
+        {
+          "name": "glTransactionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/glTransactionId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastModifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/lastModifiedBy",
+          "dataFormat": "String"
+        },
+        {
+          "name": "lastModifiedByDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/lastModifiedByDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "lotNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/lotNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "revaluationAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/revaluationAmount",
+          "dataFormat": "Decimal"
+        },
+        {
+          "name": "revaluationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/revaluationDate",
+          "dataFormat": "Date"
+        },
+        {
+          "name": "revaluationDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/revaluationDescription",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment01",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment02",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment03",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment04",
+          "dataFormat": "String"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment05",
+          "dataFormat": "String"
+        },
+        {
+          "name": "serialNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/serialNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "uniqueId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/uniqueId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "valuerDocumnetReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/valuerDocumnetReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "valuerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/valuerId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "valuerName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/valuerName",
+          "dataFormat": "String"
+        }
+      ]
+    }
+  ]
+}
