@@ -1,0 +1,160 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetDepreciation",
+      "hasAttributes": [
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "approvedByDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "depreciationEffectiveDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "depreciationForPeriod",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "depreciationRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "enteredBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "enteredDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetDepreciableBasis",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetDepreciationAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetDepreciationId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetDepreciationMethod",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetFairValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetReplacementCost",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetSalvageValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetUsefulLife",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glTransactionId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedByDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "uniqueId",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

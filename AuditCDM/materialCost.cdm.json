@@ -1,0 +1,115 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "materialCost",
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "costingType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryProductId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "locationId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "materialId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "otherCost1",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "otherCost2",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "otherCost3",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "otherCost4",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "otherCost5",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "stockingUnitOfMeasure",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "totalCost",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "validFromDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "validToDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "valuationDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        }
+      ]
+    }
+  ]
+}

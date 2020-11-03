@@ -1,0 +1,155 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetValuation",
+      "hasAttributes": [
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "approvedByDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "enteredBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "enteredDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "glAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glTransactionId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedByDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "revaluationAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "revaluationDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "revaluationDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "uniqueId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "valuerDocumnetReference",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "valuerId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "valuerName",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

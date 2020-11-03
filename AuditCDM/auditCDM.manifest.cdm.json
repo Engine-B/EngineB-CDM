@@ -1,0 +1,767 @@
+{
+  "manifestName": "default",
+  "entities": [
+    {
+      "type": "LocalEntity",
+      "entityName": "apPaymentData",
+      "entityPath": "resolved/apPaymentData.cdm.json/apPaymentData",
+      "dataPartitions": [
+        {
+          "name": "apPaymentData-data-description",
+          "location": "local:/apPaymentData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "arPaymentData",
+      "entityPath": "resolved/arPaymentData.cdm.json/arPaymentData",
+      "dataPartitions": [
+        {
+          "name": "arPaymentData-data-description",
+          "location": "local:/arPaymentData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "bankAccountMasterData",
+      "entityPath": "resolved/bankAccountMasterData.cdm.json/bankAccountMasterData",
+      "dataPartitions": [
+        {
+          "name": "bankAccountMasterData-data-description",
+          "location": "local:/bankAccountMasterData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "businessUnit",
+      "entityPath": "resolved/businessUnit.cdm.json/businessUnit",
+      "dataPartitions": [
+        {
+          "name": "businessUnit-data-description",
+          "location": "local:/businessUnit/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "chartOfAccounts",
+      "entityPath": "resolved/chartOfAccounts.cdm.json/chartOfAccounts",
+      "dataPartitions": [
+        {
+          "name": "chartOfAccounts-data-description",
+          "location": "local:/chartOfAccounts/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "customerMasterData",
+      "entityPath": "resolved/customerMasterData.cdm.json/customerMasterData",
+      "dataPartitions": [
+        {
+          "name": "customerMasterData-data-description",
+          "location": "local:/customerMasterData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "employeeMasterData",
+      "entityPath": "resolved/employeeMasterData.cdm.json/employeeMasterData",
+      "dataPartitions": [
+        {
+          "name": "employeeMasterData-data-description",
+          "location": "local:/employeeMasterData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "fixedAssetAdditions",
+      "entityPath": "resolved/fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "dataPartitions": [
+        {
+          "name": "fixedAssetAdditions-data-description",
+          "location": "local:/fixedAssetAdditions/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "fixedAssetDepreciation",
+      "entityPath": "resolved/fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "dataPartitions": [
+        {
+          "name": "fixedAssetDepreciation-data-description",
+          "location": "local:/fixedAssetDepreciation/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "fixedAssetMasterData",
+      "entityPath": "resolved/fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "dataPartitions": [
+        {
+          "name": "fixedAssetMasterData-data-description",
+          "location": "local:/fixedAssetMasterData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "fixedAssetRemovals",
+      "entityPath": "resolved/fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "dataPartitions": [
+        {
+          "name": "fixedAssetRemovals-data-description",
+          "location": "local:/fixedAssetRemovals/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "fixedAssetValuation",
+      "entityPath": "resolved/fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "dataPartitions": [
+        {
+          "name": "fixedAssetValuation-data-description",
+          "location": "local:/fixedAssetValuation/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "glDetail",
+      "entityPath": "resolved/glDetail.cdm.json/glDetail",
+      "dataPartitions": [
+        {
+          "name": "glDetail-data-description",
+          "location": "local:/glDetail/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "goodsReceivedData",
+      "entityPath": "resolved/goodsReceivedData.cdm.json/goodsReceivedData",
+      "dataPartitions": [
+        {
+          "name": "goodsReceivedData-data-description",
+          "location": "local:/goodsReceivedData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "goodsShippedData",
+      "entityPath": "resolved/goodsShippedData.cdm.json/goodsShippedData",
+      "dataPartitions": [
+        {
+          "name": "goodsShippedData-data-description",
+          "location": "local:/goodsShippedData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "inventoryList",
+      "entityPath": "resolved/inventoryList.cdm.json/inventoryList",
+      "dataPartitions": [
+        {
+          "name": "inventoryList-data-description",
+          "location": "local:/inventoryList/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "inventoryTransactions",
+      "entityPath": "resolved/inventoryTransactions.cdm.json/inventoryTransactions",
+      "dataPartitions": [
+        {
+          "name": "inventoryTransactions-data-description",
+          "location": "local:/inventoryTransactions/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "materialCost",
+      "entityPath": "resolved/materialCost.cdm.json/materialCost",
+      "dataPartitions": [
+        {
+          "name": "materialCost-data-description",
+          "location": "local:/materialCost/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "purchaseInvoiceData",
+      "entityPath": "resolved/purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "dataPartitions": [
+        {
+          "name": "purchaseInvoiceData-data-description",
+          "location": "local:/purchaseInvoiceData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "purchaseOrderData",
+      "entityPath": "resolved/purchaseOrderData.cdm.json/purchaseOrderData",
+      "dataPartitions": [
+        {
+          "name": "purchaseOrderData-data-description",
+          "location": "local:/purchaseOrderData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "salesInvoiceData",
+      "entityPath": "resolved/salesInvoiceData.cdm.json/salesInvoiceData",
+      "dataPartitions": [
+        {
+          "name": "salesInvoiceData-data-description",
+          "location": "local:/salesInvoiceData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "salesOrderData",
+      "entityPath": "resolved/salesOrderData.cdm.json/salesOrderData",
+      "dataPartitions": [
+        {
+          "name": "salesOrderData-data-description",
+          "location": "local:/salesOrderData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "segmentListing",
+      "entityPath": "resolved/segmentListing.cdm.json/segmentListing",
+      "dataPartitions": [
+        {
+          "name": "segmentListing-data-description",
+          "location": "local:/segmentListing/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "sourceListing",
+      "entityPath": "resolved/sourceListing.cdm.json/sourceListing",
+      "dataPartitions": [
+        {
+          "name": "sourceListing-data-description",
+          "location": "local:/sourceListing/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "supplierMasterData",
+      "entityPath": "resolved/supplierMasterData.cdm.json/supplierMasterData",
+      "dataPartitions": [
+        {
+          "name": "supplierMasterData-data-description",
+          "location": "local:/supplierMasterData/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "taxTable",
+      "entityPath": "resolved/taxTable.cdm.json/taxTable",
+      "dataPartitions": [
+        {
+          "name": "taxTable-data-description",
+          "location": "local:/taxTable/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "trialBalance",
+      "entityPath": "resolved/trialBalance.cdm.json/trialBalance",
+      "dataPartitions": [
+        {
+          "name": "trialBalance-data-description",
+          "location": "local:/trialBalance/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "userListing",
+      "entityPath": "resolved/userListing.cdm.json/userListing",
+      "dataPartitions": [
+        {
+          "name": "userListing-data-description",
+          "location": "local:/userListing/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ],
+          "arguments": []
+        }
+      ]
+    }
+  ],
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ]
+}

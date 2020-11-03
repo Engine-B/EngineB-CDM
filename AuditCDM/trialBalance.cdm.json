@@ -1,0 +1,110 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "trialBalance",
+      "hasAttributes": [
+        {
+          "name": "amountBeginning",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "amountBeginningLocal",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "amountBeginningReporting",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "amountCurrency",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "amountEnding",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "amountEndingLocal",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "amountEndingReporting",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "amountLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "amountReportingCurrency",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "balanceAsOfDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fiscalYear",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "period",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

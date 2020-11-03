@@ -1,0 +1,165 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetAdditions",
+      "hasAttributes": [
+        {
+          "name": "acquisitionDetails",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "additionType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "approvedByDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "enteredBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "enteredDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetAdditionDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fixedAssetAdditionId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetCost",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "fixedAssetId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "fixedAssetUniqueId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glAccount",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "glTransactionId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastModifiedByDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "placedInService",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "purchaseOrderDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "purchaseOrderId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "purchaseOrderRaisedDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "supplierId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "supplierName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "vatCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

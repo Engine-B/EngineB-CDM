@@ -1,0 +1,290 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "inventoryTransactions",
+      "hasAttributes": [
+        {
+          "name": "bookValue",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "customerId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryFromLocation",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryglLineCreditAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryglLineDebitAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryProductId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventorySystemOrExternalSource",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryToLocation",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryTransactionApprovedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryTransactionApprovedByDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "inventoryTransactionEnteredBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryTransactionEnteredDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "inventoryTransactionId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryTransactionLastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "inventoryTransactionLastModifiedDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "movementDocumentType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "movementLineNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "movementReference",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "movementTaxPointDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "sourceLedgerTransactionAssociatedOrderId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "supplierId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "taxAmountCurrencyAmount",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "taxAmountCurrencyCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxAmountExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "taxBase",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxBaseDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxDeclarationPeriod",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxExemptionReason",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxPercentage",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "taxType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionAssociatedDocumentId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionAssociatedDocumentLineId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionAssociatedOrderId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionAssociatedOrderLineId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionCostAdjust",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "transactionDescription",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionQuantityIssued",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "transactionQuantityReceived",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "transactionType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionTypeSystem",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "unitOfMeasure",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "unitPrice",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "uomToUOMPhysicalStockConversionFactor",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

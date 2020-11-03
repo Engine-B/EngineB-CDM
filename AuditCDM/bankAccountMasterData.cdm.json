@@ -1,0 +1,45 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "bankAccountMasterData",
+      "hasAttributes": [
+        {
+          "name": "bankAccountId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "bankAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "bankAccountSubType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "bankAccountType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "bankSortCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IBAN",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

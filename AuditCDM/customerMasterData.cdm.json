@@ -1,0 +1,250 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "customerMasterData",
+      "hasAttributes": [
+        {
+          "name": "addressAddressType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "addressBuilding",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "addressCity",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "addressCountry",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "addressNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "addressPostalCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "addressRegion",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "addressStreetName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "bankAccountName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "bankAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "bankAccountId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "companyType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "customerAccountId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "customerCreditLimit",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "customerGroup",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "customerId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "customerType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "effectiveDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "email",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "expirationDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "fax",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "firstName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IBANNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "lastName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "legalEntityIdentifier",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "name",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "paymentDiscountDays",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "paymentDiscountPercentage",
+          "purpose": "hasA",
+          "dataType": "decimal"
+        },
+        {
+          "name": "paymentDueDays",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "registrationNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "selfBillingIndicator",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "sortCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "systemApprovedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "systemApprovedUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "systemEntryDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "systemEntryUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "systemModifiedDateTime",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "systemModifiedUser",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxAuthority",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxRegistrationNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "taxVerificationDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "telephone",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "title",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "transactionCreditLimit",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "website",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

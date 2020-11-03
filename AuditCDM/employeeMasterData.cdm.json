@@ -1,0 +1,85 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "employeeMasterData",
+      "hasAttributes": [
+        {
+          "name": "departmentCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employeeDateOfBirth",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "employeeFirstName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employeeId",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employeeJobTitle",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employeeLastName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employeeMiddleName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employeeRefCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employmentStartDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "employmentTerminationDate",
+          "purpose": "hasA",
+          "dataType": "date"
+        },
+        {
+          "name": "employmentTypeCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "employmentTypeName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "isActiveFlag",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "userId",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}
