@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/inventoryTransactions",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "inventoryTransactions/attributeContext/inventoryTransactions/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "bookValue",
             "parent": "inventoryTransactions/attributeContext/inventoryTransactions",
@@ -520,7 +533,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/bookValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "bookValue",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "businessUnitCode",
@@ -530,7 +546,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "\"Unique code for the customer \n\"\n"
         },
         {
           "name": "customerId",
@@ -540,7 +559,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/customerId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "customerId",
+          "description": ""
         },
         {
           "name": "inventoryFromLocation",
@@ -550,7 +572,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryFromLocation",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryFromLocation",
+          "description": ""
         },
         {
           "name": "inventoryglLineCreditAccountNumber",
@@ -560,7 +585,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryglLineCreditAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryglLineCreditAccountNumber",
+          "description": ""
         },
         {
           "name": "inventoryglLineDebitAccountNumber",
@@ -570,7 +598,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryglLineDebitAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryglLineDebitAccountNumber",
+          "description": ""
         },
         {
           "name": "inventoryId",
@@ -580,7 +611,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryId",
+          "description": ""
         },
         {
           "name": "inventoryProductId",
@@ -590,7 +624,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryProductId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryProductId",
+          "description": ""
         },
         {
           "name": "inventorySystemOrExternalSource",
@@ -600,7 +637,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventorySystemOrExternalSource",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventorySystemOrExternalSource",
+          "description": ""
         },
         {
           "name": "inventoryToLocation",
@@ -610,7 +650,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryToLocation",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryToLocation",
+          "description": ""
         },
         {
           "name": "inventoryTransactionApprovedBy",
@@ -620,7 +663,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionApprovedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryTransactionApprovedBy",
+          "description": ""
         },
         {
           "name": "inventoryTransactionApprovedByDate",
@@ -629,7 +675,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionApprovedByDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "inventoryTransactionApprovedByDate",
+          "description": ""
         },
         {
           "name": "inventoryTransactionEnteredBy",
@@ -639,7 +688,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionEnteredBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryTransactionEnteredBy",
+          "description": ""
         },
         {
           "name": "inventoryTransactionEnteredDate",
@@ -648,7 +700,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionEnteredDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "inventoryTransactionEnteredDate",
+          "description": ""
         },
         {
           "name": "inventoryTransactionId",
@@ -658,7 +713,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "inventoryTransactionId",
+          "description": ""
         },
         {
           "name": "inventoryTransactionLastModifiedBy",
@@ -668,7 +726,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionLastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryTransactionLastModifiedBy",
+          "description": ""
         },
         {
           "name": "inventoryTransactionLastModifiedDate",
@@ -677,7 +738,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/inventoryTransactionLastModifiedDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "inventoryTransactionLastModifiedDate",
+          "description": ""
         },
         {
           "name": "lotNumber",
@@ -687,7 +751,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/lotNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
         },
         {
           "name": "movementDocumentType",
@@ -697,7 +764,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementDocumentType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "movementDocumentType",
+          "description": ""
         },
         {
           "name": "movementLineNumber",
@@ -707,7 +777,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementLineNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "movementLineNumber",
+          "description": ""
         },
         {
           "name": "movementReference",
@@ -717,7 +790,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementReference",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "movementReference",
+          "description": ""
         },
         {
           "name": "movementTaxPointDate",
@@ -726,7 +802,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/movementTaxPointDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "movementTaxPointDate",
+          "description": ""
         },
         {
           "name": "segment01",
@@ -736,7 +815,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -746,7 +828,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -756,7 +841,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -766,7 +854,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -776,7 +867,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "serialNumber",
@@ -786,7 +880,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/serialNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
         },
         {
           "name": "sourceLedgerTransactionAssociatedOrderId",
@@ -796,7 +893,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/sourceLedgerTransactionAssociatedOrderId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sourceLedgerTransactionAssociatedOrderId",
+          "description": ""
         },
         {
           "name": "supplierId",
@@ -806,7 +906,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/supplierId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
         },
         {
           "name": "taxAmount",
@@ -816,7 +919,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "taxAmount",
+          "description": ""
         },
         {
           "name": "taxAmountCurrencyAmount",
@@ -826,7 +932,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmountCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "taxAmountCurrencyAmount",
+          "description": ""
         },
         {
           "name": "taxAmountCurrencyCode",
@@ -836,7 +945,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmountCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxAmountCurrencyCode",
+          "description": ""
         },
         {
           "name": "taxAmountExchangeRate",
@@ -846,7 +958,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxAmountExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "taxAmountExchangeRate",
+          "description": ""
         },
         {
           "name": "taxBase",
@@ -856,7 +971,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxBase",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxBase",
+          "description": ""
         },
         {
           "name": "taxBaseDescription",
@@ -866,7 +984,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxBaseDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxBaseDescription",
+          "description": ""
         },
         {
           "name": "taxCode",
@@ -876,7 +997,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxCode",
+          "description": ""
         },
         {
           "name": "taxDeclarationPeriod",
@@ -886,7 +1010,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxDeclarationPeriod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxDeclarationPeriod",
+          "description": ""
         },
         {
           "name": "taxExemptionReason",
@@ -896,7 +1023,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxExemptionReason",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxExemptionReason",
+          "description": ""
         },
         {
           "name": "taxPercentage",
@@ -906,7 +1036,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxPercentage",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "taxPercentage",
+          "description": ""
         },
         {
           "name": "taxType",
@@ -916,7 +1049,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/taxType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxType",
+          "description": "Tax type for look-up in tables\n"
         },
         {
           "name": "transactionAssociatedDocumentId",
@@ -926,7 +1062,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedDocumentId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionAssociatedDocumentId",
+          "description": ""
         },
         {
           "name": "transactionAssociatedDocumentLineId",
@@ -936,7 +1075,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedDocumentLineId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionAssociatedDocumentLineId",
+          "description": ""
         },
         {
           "name": "transactionAssociatedOrderId",
@@ -946,7 +1088,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedOrderId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionAssociatedOrderId",
+          "description": ""
         },
         {
           "name": "transactionAssociatedOrderLineId",
@@ -956,7 +1101,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionAssociatedOrderLineId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionAssociatedOrderLineId",
+          "description": ""
         },
         {
           "name": "transactionCostAdjust",
@@ -966,7 +1114,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionCostAdjust",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionCostAdjust",
+          "description": ""
         },
         {
           "name": "transactionDateTime",
@@ -975,7 +1126,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "transactionDateTime",
+          "description": "The date and time the payment was made or credit was applied.\n"
         },
         {
           "name": "transactionDescription",
@@ -985,7 +1139,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionDescription",
+          "description": ""
         },
         {
           "name": "transactionQuantityIssued",
@@ -995,7 +1152,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionQuantityIssued",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "transactionQuantityIssued",
+          "description": ""
         },
         {
           "name": "transactionQuantityReceived",
@@ -1005,7 +1165,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionQuantityReceived",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "transactionQuantityReceived",
+          "description": ""
         },
         {
           "name": "transactionType",
@@ -1015,7 +1178,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionType",
+          "description": ""
         },
         {
           "name": "transactionTypeSystem",
@@ -1025,7 +1191,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/transactionTypeSystem",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionTypeSystem",
+          "description": ""
         },
         {
           "name": "unitOfMeasure",
@@ -1035,7 +1204,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/unitOfMeasure",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "unitOfMeasure",
+          "description": ""
         },
         {
           "name": "unitPrice",
@@ -1045,7 +1217,10 @@
             }
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/unitPrice",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "unitPrice",
+          "description": ""
         },
         {
           "name": "uomToUOMPhysicalStockConversionFactor",
@@ -1055,9 +1230,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryTransactions/attributeContext/inventoryTransactions/uomToUOMPhysicalStockConversionFactor",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "uomToUOMPhysicalStockConversionFactor",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "inventoryTransactions",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

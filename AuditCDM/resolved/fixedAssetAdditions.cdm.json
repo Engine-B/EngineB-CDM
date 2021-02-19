@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/fixedAssetAdditions",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "acquisitionDetails",
             "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
@@ -295,7 +308,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/acquisitionDetails",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "acquisitionDetails",
+          "description": ""
         },
         {
           "name": "additionType",
@@ -305,7 +321,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/additionType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "additionType",
+          "description": ""
         },
         {
           "name": "approvedBy",
@@ -315,7 +334,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/approvedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
         },
         {
           "name": "approvedByDate",
@@ -324,7 +346,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/approvedByDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedByDate",
+          "description": "Date the entry was approved.\n"
         },
         {
           "name": "businessUnitCode",
@@ -334,7 +359,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "enteredBy",
@@ -344,7 +372,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/enteredBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record.\n"
         },
         {
           "name": "enteredDate",
@@ -353,7 +384,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/enteredDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "enteredDate",
+          "description": "\"Date the order was entered into the system.\nThis is sometimes referred to as the creation\ndate. This should be a system-generated\ndate (rather than user-entered date), when\npossible. This date does not necessarily\ncorrespond with the date of the transaction\nitself.\"\n"
         },
         {
           "name": "fixedAssetAdditionDate",
@@ -362,7 +396,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetAdditionDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetAdditionDate",
+          "description": ""
         },
         {
           "name": "fixedAssetAdditionId",
@@ -372,7 +409,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetAdditionId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetAdditionId",
+          "description": ""
         },
         {
           "name": "fixedAssetCost",
@@ -382,7 +422,10 @@
             }
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetCost",
+          "description": ""
         },
         {
           "name": "fixedAssetId",
@@ -392,7 +435,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetId",
+          "description": ""
         },
         {
           "name": "fixedAssetUniqueId",
@@ -402,7 +448,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetUniqueId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUniqueId",
+          "description": ""
         },
         {
           "name": "glAccount",
@@ -412,7 +461,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/glAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAccount",
+          "description": ""
         },
         {
           "name": "glTransactionId",
@@ -422,7 +474,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/glTransactionId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glTransactionId",
+          "description": ""
         },
         {
           "name": "lastModifiedBy",
@@ -432,7 +487,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/lastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
         },
         {
           "name": "lastModifiedByDate",
@@ -441,7 +499,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/lastModifiedByDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedByDate",
+          "description": ""
         },
         {
           "name": "lotNumber",
@@ -451,7 +512,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/lotNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
         },
         {
           "name": "placedInService",
@@ -461,7 +525,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/placedInService",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "placedInService",
+          "description": ""
         },
         {
           "name": "purchaseOrderDate",
@@ -470,7 +537,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/purchaseOrderDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "purchaseOrderDate",
+          "description": "\"The date of the purchase order, regardless of\nthe date the order is entered. If no purchase\norder leave blank.\"\n"
         },
         {
           "name": "purchaseOrderId",
@@ -480,7 +550,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/purchaseOrderId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "purchaseOrderId",
+          "description": ""
         },
         {
           "name": "purchaseOrderRaisedDate",
@@ -489,7 +562,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/purchaseOrderRaisedDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "purchaseOrderRaisedDate",
+          "description": ""
         },
         {
           "name": "segment01",
@@ -499,7 +575,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -509,7 +588,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -519,7 +601,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -529,7 +614,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -539,7 +627,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "serialNumber",
@@ -549,7 +640,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/serialNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
         },
         {
           "name": "supplierId",
@@ -559,7 +653,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/supplierId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
         },
         {
           "name": "supplierName",
@@ -569,7 +666,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/supplierName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierName",
+          "description": "Name of the supplier\n"
         },
         {
           "name": "vatCode",
@@ -579,9 +679,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/vatCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "vatCode",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "fixedAssetAdditions",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

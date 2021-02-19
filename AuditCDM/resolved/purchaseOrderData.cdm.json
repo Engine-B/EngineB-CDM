@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/purchaseOrderData",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "purchaseOrderData/attributeContext/purchaseOrderData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "approvedBy",
             "parent": "purchaseOrderData/attributeContext/purchaseOrderData",
@@ -1402,7 +1415,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/approvedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
         },
         {
           "name": "approvedDateTime",
@@ -1411,7 +1427,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/approvedDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedDateTime",
+          "description": "The DateTime the entry was approved.\n"
         },
         {
           "name": "batchId",
@@ -1421,7 +1440,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/batchId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "batchId",
+          "description": "Systems generated ID for batch\n"
         },
         {
           "name": "billingAddressAdditionalAddressDetail",
@@ -1431,7 +1453,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressAdditionalAddressDetail",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressAdditionalAddressDetail",
+          "description": ""
         },
         {
           "name": "billingAddressAddressType",
@@ -1441,7 +1466,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressAddressType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressAddressType",
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)\n"
         },
         {
           "name": "billingAddressBuilding",
@@ -1451,7 +1479,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressBuilding",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressBuilding",
+          "description": ""
         },
         {
           "name": "billingAddressCity",
@@ -1461,7 +1492,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressCity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressCity",
+          "description": ""
         },
         {
           "name": "billingAddressCountry",
@@ -1471,7 +1505,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressCountry",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressCountry",
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.\n"
         },
         {
           "name": "billingAddressNumber",
@@ -1481,7 +1518,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressNumber",
+          "description": ""
         },
         {
           "name": "billingAddressPostalCode",
@@ -1491,7 +1531,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressPostalCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressPostalCode",
+          "description": ""
         },
         {
           "name": "billingAddressRegion",
@@ -1501,7 +1544,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressRegion",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressRegion",
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. \n"
         },
         {
           "name": "billingAddressStreetName",
@@ -1511,7 +1557,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/billingAddressStreetName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "billingAddressStreetName",
+          "description": ""
         },
         {
           "name": "branchStoreNumber",
@@ -1521,7 +1570,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/branchStoreNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "branchStoreNumber",
+          "description": "Branch or Storenumber, additional segregation of customer/supplier, used if not included as part of the customer/supplier id\n"
         },
         {
           "name": "businessUnitCode",
@@ -1531,7 +1583,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "glPostingDate",
@@ -1540,7 +1595,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/glPostingDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "glPostingDate",
+          "description": "Date posting to GL\n"
         },
         {
           "name": "lastModifiedBy",
@@ -1550,7 +1608,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
         },
         {
           "name": "lastModifiedDateTime",
@@ -1559,7 +1620,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lastModifiedDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedDateTime",
+          "description": "The date and time the entry was last modified before posting.\n"
         },
         {
           "name": "lineAccountId",
@@ -1569,7 +1633,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAccountId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAccountId",
+          "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department.\n"
         },
         {
           "name": "lineAnalysisAmount",
@@ -1579,7 +1646,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAnalysisAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAnalysisAmount",
+          "description": "\"Transaction monetary amount recorded \nin the functional or group currency. No \nmulticurrency translation should need to\nbe performed on this amount because \nall transactions should be recorded in a\n single currency.\"\n"
         },
         {
           "name": "lineAnalysisId",
@@ -1589,7 +1659,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAnalysisId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisId",
+          "description": "Value of the analysisID: f.i. which cost center applies\n"
         },
         {
           "name": "lineAnalysisType",
@@ -1599,7 +1672,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineAnalysisType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisType",
+          "description": "Analysis code identifier: cost center, cost unit, cost type, project, etc. Refers to the MasterFile AnalysisTypeTable\n"
         },
         {
           "name": "lineApprovedBy",
@@ -1609,7 +1685,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineApprovedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineApprovedBy",
+          "description": "\"User ID (from User_Listing file) for person\n who approved the entry.\"\n"
         },
         {
           "name": "lineApprovedDateTime",
@@ -1618,7 +1697,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineApprovedDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineApprovedDateTime",
+          "description": "The date and time the entry was approved.\n"
         },
         {
           "name": "lineCreditNoteReason",
@@ -1628,7 +1710,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineCreditNoteReason",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineCreditNoteReason",
+          "description": "Credit note reason or rationale \n"
         },
         {
           "name": "lineCreditNoteReference",
@@ -1638,7 +1723,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineCreditNoteReference",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineCreditNoteReference",
+          "description": "Credit note reference (where applicable) to original invoice \n"
         },
         {
           "name": "lineDebitCreditIndicator",
@@ -1648,7 +1736,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineDebitCreditIndicator",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineDebitCreditIndicator",
+          "description": "Indicates whether the amounts on line-level are debit or credit amounts. Entry must correspond to entry reflected in General Ledger Entry. Signing of line amounts is relative to this indicator. E.g. a return can lead to a negative amount\n"
         },
         {
           "name": "lineDeliveryDate",
@@ -1657,7 +1748,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineDeliveryDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineDeliveryDate",
+          "description": "The date of the delivery\n"
         },
         {
           "name": "lineDescription",
@@ -1667,7 +1761,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineDescription",
+          "description": "Description of Invoice Line.\n"
         },
         {
           "name": "lineFromDate",
@@ -1676,7 +1773,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineFromDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineFromDate",
+          "description": "Startdate of the deliveries\n"
         },
         {
           "name": "lineGoodsServicesId",
@@ -1686,7 +1786,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineGoodsServicesId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineGoodsServicesId",
+          "description": "Indicator showing if goods or service\n"
         },
         {
           "name": "lineLineNumber",
@@ -1696,7 +1799,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineLineNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineLineNumber",
+          "description": "Line item number of the invoice.\n"
         },
         {
           "name": "lineMovementReference",
@@ -1706,7 +1812,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineMovementReference",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineMovementReference",
+          "description": "Unique reference to the movement.\n"
         },
         {
           "name": "lineOrderLineAmount",
@@ -1716,7 +1825,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineOrderLineAmount",
+          "description": ""
         },
         {
           "name": "lineOrderLineAmountCurrencyAmount",
@@ -1726,7 +1838,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmountCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineOrderLineAmountCurrencyAmount",
+          "description": "\"Transaction monetary amount in local\n currency.\"\n"
         },
         {
           "name": "lineOrderLineAmountCurrencyCode",
@@ -1736,7 +1851,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmountCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineOrderLineAmountCurrencyCode",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding.\"\n"
         },
         {
           "name": "lineOrderLineAmountExchangeRate",
@@ -1746,7 +1864,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderLineAmountExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineOrderLineAmountExchangeRate",
+          "description": ""
         },
         {
           "name": "lineOrderUOM",
@@ -1756,7 +1877,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineOrderUOM",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineOrderUOM",
+          "description": "Purchase order line base unit of measure.\n"
         },
         {
           "name": "linePiDate",
@@ -1765,7 +1889,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/linePiDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "linePiDate",
+          "description": ""
         },
         {
           "name": "lineProductCode",
@@ -1775,7 +1902,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineProductCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineProductCode",
+          "description": "Unique identifier for each purchased product. This ID may need to be created by concatenating fields (for example, business unit, product number, year, and so on) to uniquely identify each product.\n"
         },
         {
           "name": "lineProductDescription",
@@ -1785,7 +1915,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineProductDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineProductDescription",
+          "description": "\"Product (plain English) description to \nindicate the name or other identifying\n characteristics of the product.\"\n"
         },
         {
           "name": "linePurchaseOrderProductGroup01",
@@ -1795,7 +1928,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/linePurchaseOrderProductGroup01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "linePurchaseOrderProductGroup01",
+          "description": "\"Product descriptor #1, for example, tires or\n accessories.\"\n"
         },
         {
           "name": "linePurchaseOrderProductGroup02",
@@ -1805,7 +1941,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/linePurchaseOrderProductGroup02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "linePurchaseOrderProductGroup02",
+          "description": "Product descriptor #2, for example, brand.\n"
         },
         {
           "name": "lineQuantity",
@@ -1815,7 +1954,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineQuantity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineQuantity",
+          "description": "Quantity of goods and services supplied.\n"
         },
         {
           "name": "lineShipFromAdditionalAddressDetail",
@@ -1825,7 +1967,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromAdditionalAddressDetail",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromAdditionalAddressDetail",
+          "description": ""
         },
         {
           "name": "lineShipFromAddress",
@@ -1835,7 +1980,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromAddress",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromAddress",
+          "description": ""
         },
         {
           "name": "lineShipFromAddressType",
@@ -1845,7 +1993,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromAddressType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromAddressType",
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)\n"
         },
         {
           "name": "lineShipFromBuilding",
@@ -1855,7 +2006,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromBuilding",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromBuilding",
+          "description": ""
         },
         {
           "name": "lineShipFromCity",
@@ -1865,7 +2019,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromCity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromCity",
+          "description": ""
         },
         {
           "name": "lineShipFromCountry",
@@ -1875,7 +2032,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromCountry",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromCountry",
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.\n"
         },
         {
           "name": "lineShipFromDeliveryDate",
@@ -1884,7 +2044,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromDeliveryDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineShipFromDeliveryDate",
+          "description": "Date goods are delivered\n"
         },
         {
           "name": "lineShipFromDeliveryId",
@@ -1894,7 +2057,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromDeliveryId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromDeliveryId",
+          "description": "Identification of the delivery\n"
         },
         {
           "name": "lineShipFromLocationId",
@@ -1904,7 +2070,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromLocationId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromLocationId",
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit\n"
         },
         {
           "name": "lineShipFromNumber",
@@ -1914,7 +2083,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromNumber",
+          "description": ""
         },
         {
           "name": "lineShipFromPostalCode",
@@ -1924,7 +2096,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromPostalCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromPostalCode",
+          "description": ""
         },
         {
           "name": "lineShipFromRegion",
@@ -1934,7 +2109,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromRegion",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromRegion",
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. \n"
         },
         {
           "name": "lineShipFromStreetName",
@@ -1944,7 +2122,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromStreetName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromStreetName",
+          "description": "\n"
         },
         {
           "name": "lineShipFromUCR",
@@ -1954,7 +2135,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromUCR",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromUCR",
+          "description": "Unique consignment reference number"
         },
         {
           "name": "lineShipFromWarehouseId",
@@ -1964,7 +2148,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipFromWarehouseId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipFromWarehouseId",
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit\n"
         },
         {
           "name": "lineShippingCostsAmount",
@@ -1974,7 +2161,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineShippingCostsAmount",
+          "description": "In the header's default currency.\n"
         },
         {
           "name": "lineShippingCostsAmountCurrencyAmount",
@@ -1984,7 +2174,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmountCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineShippingCostsAmountCurrencyAmount",
+          "description": "Amount in foreign currency\n"
         },
         {
           "name": "lineShippingCostsAmountCurrencyCode",
@@ -1994,7 +2187,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmountCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingCostsAmountCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.\n"
         },
         {
           "name": "lineShippingCostsAmountExchangeRate",
@@ -2004,7 +2200,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShippingCostsAmountExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineShippingCostsAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "lineShipToAdditionalAddressDetail",
@@ -2014,7 +2213,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToAdditionalAddressDetail",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToAdditionalAddressDetail",
+          "description": ""
         },
         {
           "name": "lineShipToAddress",
@@ -2024,7 +2226,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToAddress",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToAddress",
+          "description": ""
         },
         {
           "name": "lineShipToAddressType",
@@ -2034,7 +2239,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToAddressType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToAddressType",
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)\n"
         },
         {
           "name": "lineShipToBuilding",
@@ -2044,7 +2252,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToBuilding",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToBuilding",
+          "description": ""
         },
         {
           "name": "lineShipToCity",
@@ -2054,7 +2265,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToCity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToCity",
+          "description": ""
         },
         {
           "name": "lineShipToCountry",
@@ -2064,7 +2278,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToCountry",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToCountry",
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.\n"
         },
         {
           "name": "lineShipToDeliveryDate",
@@ -2073,7 +2290,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToDeliveryDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineShipToDeliveryDate",
+          "description": "Date goods are delivered\n"
         },
         {
           "name": "lineShipToDeliveryId",
@@ -2083,7 +2303,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToDeliveryId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToDeliveryId",
+          "description": "Identification of the delivery\n"
         },
         {
           "name": "lineShipToLocationId",
@@ -2093,7 +2316,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToLocationId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToLocationId",
+          "description": "Location of goods in warehouse\n"
         },
         {
           "name": "lineShipToNumber",
@@ -2103,7 +2329,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToNumber",
+          "description": ""
         },
         {
           "name": "lineShipToPostalCode",
@@ -2113,7 +2342,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToPostalCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToPostalCode",
+          "description": ""
         },
         {
           "name": "lineShipToRegion",
@@ -2123,7 +2355,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToRegion",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToRegion",
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. \n"
         },
         {
           "name": "lineShipToStreetName",
@@ -2133,7 +2368,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToStreetName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToStreetName",
+          "description": ""
         },
         {
           "name": "lineShipToUCR",
@@ -2143,7 +2381,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToUCR",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToUCR",
+          "description": "Unique consignment reference number\n"
         },
         {
           "name": "lineShipToWarehouseId",
@@ -2153,7 +2394,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineShipToWarehouseId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipToWarehouseId",
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit\n"
         },
         {
           "name": "lineSubsequentPi",
@@ -2163,7 +2407,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineSubsequentPi",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSubsequentPi",
+          "description": ""
         },
         {
           "name": "lineSystemEntryDateTime",
@@ -2172,7 +2419,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineSystemEntryDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineSystemEntryDateTime",
+          "description": "\"The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself.\"\n"
         },
         {
           "name": "lineSystemEntryUser",
@@ -2182,7 +2432,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineSystemEntryUser",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSystemEntryUser",
+          "description": "\"User_ID (from User_Listing file) for person\n who created the record.\"\n"
         },
         {
           "name": "lineTaxInformationTaxAmount",
@@ -2192,7 +2445,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxAmount",
+          "description": "In the header's default currency.\n"
         },
         {
           "name": "lineTaxInformationTaxBase",
@@ -2202,7 +2458,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxBase",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxBase",
+          "description": "The base on which the tax is calculated. This can be an amount, or a quantity, eg. Litres.\n"
         },
         {
           "name": "lineTaxInformationTaxBaseDescription",
@@ -2212,7 +2471,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxBaseDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxBaseDescription",
+          "description": "Description of the value in the TaxBase. Eg. Litres for excises on alcoholic bevarages.\n"
         },
         {
           "name": "lineTaxInformationTaxCode",
@@ -2222,7 +2484,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxCode",
+          "description": "Tax Code for lookup in tables\n"
         },
         {
           "name": "lineTaxInformationTaxDeclarationPeriod",
@@ -2232,7 +2497,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxDeclarationPeriod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxDeclarationPeriod",
+          "description": "The identification of the declaration/return in which the taxamount is reported to the Revenue body\n"
         },
         {
           "name": "lineTaxInformationTaxExemptionReason",
@@ -2242,7 +2510,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxExemptionReason",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxExemptionReason",
+          "description": "Tax exemption or reduction reason or rationale \n"
         },
         {
           "name": "lineTaxInformationTaxPercentage",
@@ -2252,7 +2523,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxPercentage",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxPercentage",
+          "description": "Tax percentage.\n"
         },
         {
           "name": "lineTaxInformationTaxType",
@@ -2262,7 +2536,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxInformationTaxType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxType",
+          "description": "Tax type for look-up in tables\n"
         },
         {
           "name": "lineTaxPointDate",
@@ -2271,7 +2548,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineTaxPointDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineTaxPointDate",
+          "description": "Tax Point date where recorded or if not recorded then the Invoice date \n"
         },
         {
           "name": "lineToDate",
@@ -2280,7 +2560,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineToDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineToDate",
+          "description": "Enddate of the deliveries\n"
         },
         {
           "name": "lineUnitPrice",
@@ -2290,7 +2573,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineUnitPrice",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineUnitPrice",
+          "description": "Unit price for the unit/group of units per UOM in the header's default currency\n"
         },
         {
           "name": "lineUOMToUOMBaseConversionFactor",
@@ -2300,7 +2586,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/lineUOMToUOMBaseConversionFactor",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineUOMToUOMBaseConversionFactor",
+          "description": "Conversion factor of the InvoiceUOM to UOM Base. Only needed when InvoiceUOM is reported and is different from the UOM Base.\n"
         },
         {
           "name": "orderDate",
@@ -2309,7 +2598,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "orderDate",
+          "description": "The date of the purchase order, regardless of the date the order is entered.\n"
         },
         {
           "name": "orderDocumentReference",
@@ -2319,7 +2611,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderDocumentReference",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "orderDocumentReference",
+          "description": "Identification number or code on the purchase order. The date of the purchase order, regardless of the date the order is entered.\n"
         },
         {
           "name": "orderNo",
@@ -2329,7 +2624,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderNo",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "orderNo",
+          "description": "Unique identifier for each purchase order. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each purchase order.\n"
         },
         {
           "name": "orderType",
@@ -2339,7 +2637,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/orderType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "orderType",
+          "description": ""
         },
         {
           "name": "paymentTerms",
@@ -2349,7 +2650,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/paymentTerms",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "paymentTerms",
+          "description": "Payments terms for this invoice\n"
         },
         {
           "name": "period",
@@ -2359,7 +2663,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/period",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "period",
+          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1‚ÄìW53 for weekly periods, M1‚ÄìM12 for monthly periods, and Q1‚ÄìQ4 for quarterly periods.\n"
         },
         {
           "name": "periodYear",
@@ -2369,7 +2676,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/periodYear",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "periodYear",
+          "description": "\"Fiscal year in which the\nPurchase_Order_Date occursâ€”YYYY for\ndelimited, CCYY-MM-DD fiscal year end\n(ISO 8601) for extensible business reporting\nlanguage global ledger taxonomy framework\n(XBRL GL).\"\n"
         },
         {
           "name": "postingStatus",
@@ -2379,7 +2689,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/postingStatus",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "postingStatus",
+          "description": "\"Status of the transaction's posting to the GL\n(for example, \"\"Posted,\"\" \"\"Not Posted\"\").\"\n"
         },
         {
           "name": "purchaseOrderAmountLocal",
@@ -2389,7 +2702,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderAmountLocal",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "purchaseOrderAmountLocal",
+          "description": "\"Transaction monetary amount in local\ncurrency.\"\n"
         },
         {
           "name": "purchaseOrderLocalCurrency",
@@ -2399,7 +2715,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderLocalCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "purchaseOrderLocalCurrency",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding.\"\n"
         },
         {
           "name": "purchaseOrderRequisitionId",
@@ -2409,7 +2728,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderRequisitionId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "purchaseOrderRequisitionId",
+          "description": "\"Identifier that is unique for each purchase\norder requisition. May require concatenation\nof multiple fields.\"\n"
         },
         {
           "name": "purchaseOrderUniqueId",
@@ -2419,7 +2741,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/purchaseOrderUniqueId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "purchaseOrderUniqueId",
+          "description": ""
         },
         {
           "name": "receiptNumbers",
@@ -2429,7 +2754,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/receiptNumbers",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "receiptNumbers",
+          "description": "The number(s) of the receipt(s) on this \"consolidated invoicerecord\". Can be a single number, a range or a list.\n"
         },
         {
           "name": "segment01",
@@ -2439,7 +2767,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -2449,7 +2780,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -2459,7 +2793,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -2469,7 +2806,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -2479,7 +2819,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "selfBillingIndicator",
@@ -2489,7 +2832,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/selfBillingIndicator",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "selfBillingIndicator",
+          "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier\n"
         },
         {
           "name": "settlementAmount",
@@ -2499,7 +2845,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "settlementAmount",
+          "description": "In the header's default currency.\n"
         },
         {
           "name": "settlementCurrencyAmount",
@@ -2509,7 +2858,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "settlementCurrencyAmount",
+          "description": "Amount in foreign currency\n"
         },
         {
           "name": "settlementCurrencyCode",
@@ -2519,7 +2871,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "settlementCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.\n"
         },
         {
           "name": "settlementExchangeRate",
@@ -2529,7 +2884,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "settlementExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "settlementPaymentMechanism",
@@ -2539,7 +2897,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementPaymentMechanism",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "settlementPaymentMechanism",
+          "description": "Payment mechanism \n"
         },
         {
           "name": "settlementSettlementDate",
@@ -2548,7 +2909,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementSettlementDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "settlementSettlementDate",
+          "description": "Date settled\n"
         },
         {
           "name": "settlementSettlementDiscount",
@@ -2558,7 +2922,10 @@
             }
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/settlementSettlementDiscount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "settlementSettlementDiscount",
+          "description": "Description Settlement / Other Discount\n"
         },
         {
           "name": "shipFromAdditionalAddressDetail",
@@ -2568,7 +2935,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromAdditionalAddressDetail",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromAdditionalAddressDetail",
+          "description": ""
         },
         {
           "name": "shipFromAddressType",
@@ -2578,7 +2948,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromAddressType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromAddressType",
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)\n"
         },
         {
           "name": "shipFromBuilding",
@@ -2588,7 +2961,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromBuilding",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromBuilding",
+          "description": ""
         },
         {
           "name": "shipFromCity",
@@ -2598,7 +2974,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromCity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromCity",
+          "description": ""
         },
         {
           "name": "shipFromCountry",
@@ -2608,7 +2987,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromCountry",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromCountry",
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.\n"
         },
         {
           "name": "shipFromDeliveryDate",
@@ -2617,7 +2999,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromDeliveryDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "shipFromDeliveryDate",
+          "description": "Date goods are delivered\n"
         },
         {
           "name": "shipFromDeliveryId",
@@ -2627,7 +3012,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromDeliveryId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromDeliveryId",
+          "description": "Identification of the delivery\n"
         },
         {
           "name": "shipFromLocationId",
@@ -2637,7 +3025,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromLocationId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromLocationId",
+          "description": "Location of goods in warehouse\n"
         },
         {
           "name": "shipFromNumber",
@@ -2647,7 +3038,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromNumber",
+          "description": ""
         },
         {
           "name": "shipFromPostalCode",
@@ -2657,7 +3051,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromPostalCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromPostalCode",
+          "description": ""
         },
         {
           "name": "shipFromRegion",
@@ -2667,7 +3064,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromRegion",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromRegion",
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. \n"
         },
         {
           "name": "shipFromStreetName",
@@ -2677,7 +3077,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromStreetName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromStreetName",
+          "description": ""
         },
         {
           "name": "shipFromUCR",
@@ -2687,7 +3090,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromUCR",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromUCR",
+          "description": "Unique consignment reference number\n"
         },
         {
           "name": "shipFromWarehouseId",
@@ -2697,7 +3103,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipFromWarehouseId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipFromWarehouseId",
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit\n"
         },
         {
           "name": "shipToAdditionalAddressDetail",
@@ -2707,7 +3116,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToAdditionalAddressDetail",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToAdditionalAddressDetail",
+          "description": ""
         },
         {
           "name": "shipToAddressType",
@@ -2717,7 +3129,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToAddressType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToAddressType",
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)\n"
         },
         {
           "name": "shipToBuilding",
@@ -2727,7 +3142,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToBuilding",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToBuilding",
+          "description": ""
         },
         {
           "name": "shipToCity",
@@ -2737,7 +3155,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToCity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToCity",
+          "description": ""
         },
         {
           "name": "shipToCountry",
@@ -2747,7 +3168,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToCountry",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToCountry",
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.\n"
         },
         {
           "name": "shipToDeliveryDate",
@@ -2756,7 +3180,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToDeliveryDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "shipToDeliveryDate",
+          "description": "Date goods are delivered\n"
         },
         {
           "name": "shipToDeliveryId",
@@ -2766,7 +3193,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToDeliveryId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToDeliveryId",
+          "description": "Identification of the delivery\n"
         },
         {
           "name": "shipToLocationId",
@@ -2776,7 +3206,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToLocationId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToLocationId",
+          "description": "Location of goods in warehouse\n"
         },
         {
           "name": "shipToNumber",
@@ -2786,7 +3219,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToNumber",
+          "description": ""
         },
         {
           "name": "shipToPostalCode",
@@ -2796,7 +3232,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToPostalCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToPostalCode",
+          "description": ""
         },
         {
           "name": "shipToRegion",
@@ -2806,7 +3245,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToRegion",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToRegion",
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. \n"
         },
         {
           "name": "shipToStreetName",
@@ -2816,7 +3258,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToStreetName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToStreetName",
+          "description": ""
         },
         {
           "name": "shipToUCR",
@@ -2826,7 +3271,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToUCR",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToUCR",
+          "description": "Unique consignment reference number\n"
         },
         {
           "name": "shipToWarehouseId",
@@ -2836,7 +3284,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/shipToWarehouseId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipToWarehouseId",
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit\n"
         },
         {
           "name": "sourceId",
@@ -2846,7 +3297,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/sourceId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sourceId",
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on).\n"
         },
         {
           "name": "supplierId",
@@ -2856,7 +3310,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/supplierId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
         },
         {
           "name": "supplierName",
@@ -2866,7 +3323,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/supplierName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierName",
+          "description": "Name of the supplier\n"
         },
         {
           "name": "systemEntryDateTime",
@@ -2875,7 +3335,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/systemEntryDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "systemEntryDateTime",
+          "description": "\"The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not\n necessarily correspond with the date of the \ntransaction itself.\"\n"
         },
         {
           "name": "systemEntryUser",
@@ -2885,7 +3348,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/systemEntryUser",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemEntryUser",
+          "description": "\"User_ID (from User_Listing file) for person\nwho created the record.\"\n"
         },
         {
           "name": "systemId",
@@ -2895,7 +3361,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/systemId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemId",
+          "description": "Unique number created by the system for the document\n"
         },
         {
           "name": "transactionId",
@@ -2905,9 +3374,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "purchaseOrderData/attributeContext/purchaseOrderData/transactionId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionId",
+          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department\n"
         }
-      ]
+      ],
+      "displayName": "purchaseOrderData",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

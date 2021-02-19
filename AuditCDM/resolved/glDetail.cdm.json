@@ -2,7 +2,7 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/glDetail.cdm.json",
+      "corpusPath": "/audit.cdm.json",
       "moniker": "resolvedFrom"
     }
   ],
@@ -14,6 +14,226 @@
         "name": "glDetail",
         "definition": "resolvedFrom/glDetail",
         "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "glDetail/attributeContext/glDetail",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "glDetail/attributeContext/glDetail/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionTypeDescription",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/transactionTypeDescription",
+            "contents": [
+              "glDetail/hasAttributes/transactionTypeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionType",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/transactionType",
+            "contents": [
+              "glDetail/hasAttributes/transactionType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "reversalReason",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/reversalReason",
+            "contents": [
+              "glDetail/hasAttributes/reversalReason"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "isNegativePostingIndicator",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/isNegativePostingIndicator",
+            "contents": [
+              "glDetail/hasAttributes/isNegativePostingIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "reversalID",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/reversalID",
+            "contents": [
+              "glDetail/hasAttributes/reversalID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "reversalType",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/reversalType",
+            "contents": [
+              "glDetail/hasAttributes/reversalType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "reversalFiscalYear",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/reversalFiscalYear",
+            "contents": [
+              "glDetail/hasAttributes/reversalFiscalYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "isInterCoFlag",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/isInterCoFlag",
+            "contents": [
+              "glDetail/hasAttributes/isInterCoFlag"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "clearingDocumentNumber",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/clearingDocumentNumber",
+            "contents": [
+              "glDetail/hasAttributes/clearingDocumentNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "clearingDate",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/clearingDate",
+            "contents": [
+              "glDetail/hasAttributes/clearingDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerNumber",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/customerNumber",
+            "contents": [
+              "glDetail/hasAttributes/customerNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "vendorNumber",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/vendorNumber",
+            "contents": [
+              "glDetail/hasAttributes/vendorNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "documentStatus",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/documentStatus",
+            "contents": [
+              "glDetail/hasAttributes/documentStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "documentDate",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/documentDate",
+            "contents": [
+              "glDetail/hasAttributes/documentDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "documentType",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/documentType",
+            "contents": [
+              "glDetail/hasAttributes/documentType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionKey",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/transactionKey",
+            "contents": [
+              "glDetail/hasAttributes/transactionKey"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "accountType",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/accountType",
+            "contents": [
+              "glDetail/hasAttributes/accountType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "referenceTransaction",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/referenceTransaction",
+            "contents": [
+              "glDetail/hasAttributes/referenceTransaction"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessTransactionCode",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/businessTransactionCode",
+            "contents": [
+              "glDetail/hasAttributes/businessTransactionCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "postingKey",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/postingKey",
+            "contents": [
+              "glDetail/hasAttributes/postingKey"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "isClearing",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/isClearing",
+            "contents": [
+              "glDetail/hasAttributes/isClearing"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "referenceSubledgerDocumentNumber",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/referenceSubledgerDocumentNumber",
+            "contents": [
+              "glDetail/hasAttributes/referenceSubledgerDocumentNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionCode",
+            "parent": "glDetail/attributeContext/glDetail",
+            "definition": "resolvedFrom/glDetail/hasAttributes/transactionCode",
+            "contents": [
+              "glDetail/hasAttributes/transactionCode"
+            ]
+          },
           {
             "type": "attributeDefinition",
             "name": "amount",
@@ -342,6 +562,312 @@
       },
       "hasAttributes": [
         {
+          "name": "transactionTypeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/transactionTypeDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionTypeDescription",
+          "description": "",
+          "maximumLength": 200
+        },
+        {
+          "name": "transactionType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/transactionType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionType",
+          "description": "",
+          "maximumLength": 10
+        },
+        {
+          "name": "reversalReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/reversalReason",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "reversalReason",
+          "description": "",
+          "maximumLength": 10
+        },
+        {
+          "name": "isNegativePostingIndicator",
+          "appliedTraits": [
+            "is.dataFormat.boolean"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/isNegativePostingIndicator",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "displayName": "isNegativePostingIndicator",
+          "description": ""
+        },
+        {
+          "name": "reversalID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/reversalID",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "reversalID",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "reversalType",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/reversalType",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "displayName": "reversalType",
+          "description": ""
+        },
+        {
+          "name": "reversalFiscalYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/reversalFiscalYear",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "reversalFiscalYear",
+          "description": "",
+          "maximumLength": 12
+        },
+        {
+          "name": "isInterCoFlag",
+          "appliedTraits": [
+            "is.dataFormat.boolean"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/isInterCoFlag",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "displayName": "isInterCoFlag",
+          "description": ""
+        },
+        {
+          "name": "clearingDocumentNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/clearingDocumentNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "clearingDocumentNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "clearingDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/clearingDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "clearingDate",
+          "description": ""
+        },
+        {
+          "name": "customerNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/customerNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "customerNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "vendorNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/vendorNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "vendorNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "documentStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/documentStatus",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "documentStatus",
+          "description": "",
+          "maximumLength": 1
+        },
+        {
+          "name": "documentDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/documentDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "documentDate",
+          "description": ""
+        },
+        {
+          "name": "documentType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/documentType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "documentType",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
+          "name": "transactionKey",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/transactionKey",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionKey",
+          "description": "",
+          "maximumLength": 4
+        },
+        {
+          "name": "accountType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/accountType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "accountType",
+          "description": "",
+          "maximumLength": 10
+        },
+        {
+          "name": "referenceTransaction",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/referenceTransaction",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "referenceTransaction",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
+          "name": "businessTransactionCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/businessTransactionCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessTransactionCode",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
+          "name": "postingKey",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/postingKey",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "postingKey",
+          "description": "",
+          "maximumLength": 4
+        },
+        {
+          "name": "isClearing",
+          "appliedTraits": [
+            "is.dataFormat.boolean"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/isClearing",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "displayName": "isClearing",
+          "description": ""
+        },
+        {
+          "name": "referenceSubledgerDocumentNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/referenceSubledgerDocumentNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "referenceSubledgerDocumentNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "transactionCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "glDetail/attributeContext/glDetail/transactionCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionCode",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
           "name": "amount",
           "appliedTraits": [
             {
@@ -349,7 +875,10 @@
             }
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/amount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "amount",
+          "description": "Transaction monetary amount recorded in the functional or group currency for the entity under audit. No multicurrency translation should need to be performed on this amount because all transactions are recorded in a single currency.\n"
         },
         {
           "name": "amountCreditDebitIndicator",
@@ -359,7 +888,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/amountCreditDebitIndicator",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "amountCreditDebitIndicator",
+          "description": "Indicates whether the amount is a credit or debit. ‚\n"
         },
         {
           "name": "amountCurrency",
@@ -369,7 +901,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/amountCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "amountCurrency",
+          "description": "The functional or group currency related to\nthe balance. See ISO 4217 coding."
         },
         {
           "name": "approvedBy",
@@ -379,7 +914,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/approvedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry."
         },
         {
           "name": "approvedDateTime",
@@ -388,7 +926,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/approvedDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedDateTime",
+          "description": "The DateTime the entry was approved"
         },
         {
           "name": "businessUnitCode",
@@ -398,7 +939,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "effectiveDate",
@@ -407,7 +951,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/effectiveDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "effectiveDate",
+          "description": "Date the customer declared active."
         },
         {
           "name": "enteredBy",
@@ -417,7 +964,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/enteredBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record."
         },
         {
           "name": "enteredDateTime",
@@ -426,7 +976,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/enteredDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "enteredDateTime",
+          "description": "The date the transaction was entered into the \nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\n date), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself."
         },
         {
           "name": "fiscalYear",
@@ -436,7 +989,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/fiscalYear",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fiscalYear",
+          "description": "Fiscal year in which Effective_Date occurs—YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL)."
         },
         {
           "name": "glAccountNumber",
@@ -446,7 +1002,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/glAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAccountNumber",
+          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
         },
         {
           "name": "jeHeaderDescription",
@@ -456,7 +1015,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/jeHeaderDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "jeHeaderDescription",
+          "description": "Description of the entire journal entry as described by the journal entry header."
         },
         {
           "name": "jeLineDescription",
@@ -466,17 +1028,21 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/jeLineDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "jeLineDescription",
+          "description": "Description of the individual line within the journal entry."
         },
         {
           "name": "journalEntryType",
           "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
+            "is.dataFormat.boolean"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/journalEntryType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "displayName": "journalEntryType",
+          "description": ""
         },
         {
           "name": "journalId",
@@ -486,7 +1052,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/journalId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "journalId",
+          "description": "Identifier that is unique for each journal entry. May require concatenation of multiple fields."
         },
         {
           "name": "journalIdLineNumber",
@@ -496,7 +1065,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/journalIdLineNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "journalIdLineNumber",
+          "description": "Identifier that is unique for each line within a journal entry."
         },
         {
           "name": "lastModifiedBy",
@@ -506,7 +1078,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/lastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
         },
         {
           "name": "lastModifiedDate",
@@ -515,7 +1090,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/lastModifiedDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedDate",
+          "description": "The date the entry was last modified before posting."
         },
         {
           "name": "localAmount",
@@ -525,7 +1103,10 @@
             }
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/localAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "localAmount",
+          "description": "Amount in the local country currency where the transaction originated."
         },
         {
           "name": "localAmountCurrency",
@@ -535,7 +1116,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/localAmountCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "localAmountCurrency",
+          "description": "The currency used for local country reporting requirements (for example, USD, EUR; see ISO 4217 coding)."
         },
         {
           "name": "period",
@@ -545,7 +1129,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/period",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "period",
+          "description": "Fiscal period in which the Effective_Date occurs.Examples include "
         },
         {
           "name": "reportingAmount",
@@ -555,7 +1142,10 @@
             }
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/reportingAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "reportingAmount",
+          "description": "The amount recorded in the currency in which a reporting entity prepares its financial statements."
         },
         {
           "name": "reportingAmountCurrency",
@@ -565,7 +1155,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/reportingAmountCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "reportingAmountCurrency",
+          "description": "The currency which a reporting entity prepares its financial statements (for example, USD, EUR; see ISO 4217 coding)."
         },
         {
           "name": "reversalIndicator",
@@ -575,7 +1168,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/reversalIndicator",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "reversalIndicator",
+          "description": ""
         },
         {
           "name": "reversalJournalId",
@@ -585,7 +1181,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/reversalJournalId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "reversalJournalId",
+          "description": "When the Reversal_Indicator=1, this identifies the Journal_ID of the entry being reversed."
         },
         {
           "name": "segment01",
@@ -595,7 +1194,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment02",
@@ -605,7 +1207,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment03",
@@ -615,7 +1220,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment04",
@@ -625,7 +1233,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment05",
@@ -635,7 +1246,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "sourceId",
@@ -645,7 +1259,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/sourceId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sourceId",
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
         },
         {
           "name": "tags",
@@ -655,7 +1272,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/tags",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "tags",
+          "description": ""
         },
         {
           "name": "taxCode",
@@ -665,7 +1285,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/taxCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxCode",
+          "description": ""
         },
         {
           "name": "transactionId",
@@ -675,7 +1298,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/transactionId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionId",
+          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
         },
         {
           "name": "userDefined1",
@@ -685,7 +1311,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/userDefined1",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "userDefined1",
+          "description": ""
         },
         {
           "name": "userDefined2",
@@ -695,9 +1324,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "glDetail/attributeContext/glDetail/userDefined2",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "userDefined2",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "glDetail",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

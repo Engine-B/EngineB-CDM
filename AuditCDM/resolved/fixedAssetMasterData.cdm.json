@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/fixedAssetMasterData",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "businessUnitCode",
             "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
@@ -286,11 +299,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
+            "name": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
             "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
-            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
             "contents": [
-              "fixedAssetMasterData/hasAttributes/fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate"
+              "fixedAssetMasterData/hasAttributes/fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate"
             ]
           },
           {
@@ -466,7 +479,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "currencyId",
@@ -476,7 +492,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/currencyId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "currencyId",
+          "description": ""
         },
         {
           "name": "depreciationRate",
@@ -486,7 +505,10 @@
             }
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/depreciationRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "depreciationRate",
+          "description": ""
         },
         {
           "name": "fixedAssetAccumulatedDepreciation",
@@ -496,7 +518,10 @@
             }
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAccumulatedDepreciation",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetAccumulatedDepreciation",
+          "description": ""
         },
         {
           "name": "fixedAssetAccumulatedDepreciationAccount",
@@ -506,7 +531,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAccumulatedDepreciationAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetAccumulatedDepreciationAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetAcquisitionDate",
@@ -515,7 +543,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAcquisitionDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetAcquisitionDate",
+          "description": ""
         },
         {
           "name": "fixedAssetAssetAccount",
@@ -525,7 +556,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAssetAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetAssetAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetAvailableforSaleDate",
@@ -534,7 +568,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAvailableforSaleDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetAvailableforSaleDate",
+          "description": ""
         },
         {
           "name": "fixedAssetBarCode",
@@ -544,7 +581,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetBarCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetBarCode",
+          "description": ""
         },
         {
           "name": "fixedAssetCIPAccount",
@@ -554,7 +594,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetCIPAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetCIPAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetCIPFlag",
@@ -564,7 +607,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetCIPFlag",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetCIPFlag",
+          "description": ""
         },
         {
           "name": "fixedAssetClass",
@@ -574,7 +620,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetClass",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetClass",
+          "description": ""
         },
         {
           "name": "fixedAssetCode",
@@ -584,7 +633,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetCode",
+          "description": ""
         },
         {
           "name": "fixedAssetDepreciableBasis",
@@ -594,7 +646,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDepreciableBasis",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDepreciableBasis",
+          "description": ""
         },
         {
           "name": "fixedAssetDepreciationAccount",
@@ -604,7 +659,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDepreciationAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDepreciationAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetDescription",
@@ -614,7 +672,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDescription",
+          "description": ""
         },
         {
           "name": "fixedAssetDisposalDate",
@@ -623,7 +684,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDisposalDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetDisposalDate",
+          "description": ""
         },
         {
           "name": "fixedAssetFairValue",
@@ -633,7 +697,10 @@
             }
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetFairValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetFairValue",
+          "description": ""
         },
         {
           "name": "fixedAssetGroup01",
@@ -643,7 +710,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetGroup01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetGroup01",
+          "description": ""
         },
         {
           "name": "fixedAssetGroup02",
@@ -653,7 +723,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetGroup02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetGroup02",
+          "description": ""
         },
         {
           "name": "fixedAssetId",
@@ -663,7 +736,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetId",
+          "description": ""
         },
         {
           "name": "fixedAssetInactiveFlag",
@@ -673,7 +749,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetInactiveFlag",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetInactiveFlag",
+          "description": ""
         },
         {
           "name": "fixedAssetInServiceDate",
@@ -682,7 +761,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetInServiceDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetInServiceDate",
+          "description": ""
         },
         {
           "name": "fixedAssetNetBookValue",
@@ -692,7 +774,10 @@
             }
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetNetBookValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetNetBookValue",
+          "description": ""
         },
         {
           "name": "fixedAssetOriginalCost",
@@ -702,7 +787,10 @@
             }
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetOriginalCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetOriginalCost",
+          "description": ""
         },
         {
           "name": "fixedAssetQuantityOnHand",
@@ -712,7 +800,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetQuantityOnHand",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetQuantityOnHand",
+          "description": ""
         },
         {
           "name": "fixedAssetRealisedGainLossAccount",
@@ -722,7 +813,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetRealisedGainLossAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetRealisedGainLossAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetReplacementCost",
@@ -732,7 +826,10 @@
             }
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetReplacementCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetReplacementCost",
+          "description": ""
         },
         {
           "name": "fixedAssetRetirementDate",
@@ -741,7 +838,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetRetirementDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetRetirementDate",
+          "description": ""
         },
         {
           "name": "fixedAssetSalvageValue",
@@ -751,16 +851,22 @@
             }
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetSalvageValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetSalvageValue",
+          "description": ""
         },
         {
-          "name": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
+          "name": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
           "appliedTraits": [
             "is.dataFormat.date",
             "means.measurement.date"
           ],
-          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
-          "dataFormat": "Date"
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+          "description": ""
         },
         {
           "name": "fixedAssetType",
@@ -770,7 +876,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetType",
+          "description": ""
         },
         {
           "name": "fixedAssetUnrealizedGainLossAccount",
@@ -780,7 +889,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetUnrealizedGainLossAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUnrealizedGainLossAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetUsefulLife",
@@ -790,7 +902,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetUsefulLife",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUsefulLife",
+          "description": ""
         },
         {
           "name": "fixedAssetUsefulLifeRemaining",
@@ -800,7 +915,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetUsefulLifeRemaining",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUsefulLifeRemaining",
+          "description": ""
         },
         {
           "name": "locationCode",
@@ -810,7 +928,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/locationCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCode",
+          "description": ""
         },
         {
           "name": "locationDescription",
@@ -820,7 +941,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/locationDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationDescription",
+          "description": ""
         },
         {
           "name": "locationId",
@@ -830,7 +954,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/locationId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationId",
+          "description": ""
         },
         {
           "name": "lotNumber",
@@ -840,7 +967,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/lotNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
         },
         {
           "name": "manufacturerId",
@@ -850,7 +980,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/manufacturerId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "manufacturerId",
+          "description": ""
         },
         {
           "name": "projectId",
@@ -860,7 +993,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/projectId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "projectId",
+          "description": ""
         },
         {
           "name": "segment01",
@@ -870,7 +1006,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -880,7 +1019,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -890,7 +1032,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -900,7 +1045,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -910,7 +1058,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "serialNumber",
@@ -920,7 +1071,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/serialNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
         },
         {
           "name": "supplierId",
@@ -930,7 +1084,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/supplierId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
         },
         {
           "name": "supplierName",
@@ -940,9 +1097,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/supplierName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierName",
+          "description": "Name of the supplier\n"
         }
-      ]
+      ],
+      "displayName": "fixedAssetMasterData",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

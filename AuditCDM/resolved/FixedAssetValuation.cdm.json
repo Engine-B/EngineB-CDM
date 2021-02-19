@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/fixedAssetValuation",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "approvedBy",
             "parent": "fixedAssetValuation/attributeContext/fixedAssetValuation",
@@ -277,7 +290,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/approvedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
         },
         {
           "name": "approvedByDate",
@@ -286,7 +302,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/approvedByDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedByDate",
+          "description": "Date the entry was approved.\n"
         },
         {
           "name": "businessUnitCode",
@@ -296,7 +315,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "enteredBy",
@@ -306,7 +328,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/enteredBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record.\n"
         },
         {
           "name": "enteredDateTime",
@@ -315,7 +340,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/enteredDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "enteredDateTime",
+          "description": "\"The date the transaction was entered into the \nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\n date), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself.\"\n"
         },
         {
           "name": "fixedAssetId",
@@ -325,7 +353,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetId",
+          "description": ""
         },
         {
           "name": "fixedAssetRealizedGainLossAccount",
@@ -335,7 +366,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetRealizedGainLossAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetRealizedGainLossAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetRealizedGainLossAmount",
@@ -345,7 +379,10 @@
             }
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetRealizedGainLossAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetRealizedGainLossAmount",
+          "description": ""
         },
         {
           "name": "fixedAssetUnrealizedGainLossAccount",
@@ -355,7 +392,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetUnrealizedGainLossAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUnrealizedGainLossAccount",
+          "description": ""
         },
         {
           "name": "fixedAssetUnrealizedGainLossAmount",
@@ -365,7 +405,10 @@
             }
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/fixedAssetUnrealizedGainLossAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetUnrealizedGainLossAmount",
+          "description": ""
         },
         {
           "name": "glAccount",
@@ -375,7 +418,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/glAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAccount",
+          "description": ""
         },
         {
           "name": "glTransactionId",
@@ -385,7 +431,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/glTransactionId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glTransactionId",
+          "description": ""
         },
         {
           "name": "lastModifiedBy",
@@ -395,7 +444,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/lastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
         },
         {
           "name": "lastModifiedByDate",
@@ -404,7 +456,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/lastModifiedByDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedByDate",
+          "description": ""
         },
         {
           "name": "lotNumber",
@@ -414,7 +469,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/lotNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
         },
         {
           "name": "revaluationAmount",
@@ -424,7 +482,10 @@
             }
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/revaluationAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "revaluationAmount",
+          "description": ""
         },
         {
           "name": "revaluationDate",
@@ -433,7 +494,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/revaluationDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "revaluationDate",
+          "description": ""
         },
         {
           "name": "revaluationDescription",
@@ -443,7 +507,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/revaluationDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "revaluationDescription",
+          "description": ""
         },
         {
           "name": "segment01",
@@ -453,7 +520,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -463,7 +533,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -473,7 +546,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -483,7 +559,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -493,7 +572,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "serialNumber",
@@ -503,7 +585,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/serialNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
         },
         {
           "name": "uniqueId",
@@ -513,7 +598,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/uniqueId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "uniqueId",
+          "description": ""
         },
         {
           "name": "valuerDocumnetReference",
@@ -523,7 +611,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/valuerDocumnetReference",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "valuerDocumnetReference",
+          "description": ""
         },
         {
           "name": "valuerId",
@@ -533,7 +624,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/valuerId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "valuerId",
+          "description": ""
         },
         {
           "name": "valuerName",
@@ -543,9 +637,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetValuation/attributeContext/fixedAssetValuation/valuerName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "valuerName",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "fixedAssetValuation",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

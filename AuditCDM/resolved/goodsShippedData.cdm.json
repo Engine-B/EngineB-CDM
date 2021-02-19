@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/goodsShippedData",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "goodsShippedData/attributeContext/goodsShippedData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "goodsShippedData/attributeContext/goodsShippedData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "adjustmentAmount",
             "parent": "goodsShippedData/attributeContext/goodsShippedData",
@@ -547,7 +560,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/adjustmentAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "adjustmentAmount",
+          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier)\"\n"
         },
         {
           "name": "adjustmentDescription",
@@ -557,7 +573,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/adjustmentDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "adjustmentDescription",
+          "description": "\"If an adjustment to the receipt, a description\nof the reason for the adjustment.\"\n"
         },
         {
           "name": "adjustmentIndicator",
@@ -567,7 +586,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/adjustmentIndicator",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "adjustmentIndicator",
+          "description": "\"\"\"0\"\" if the transaction is the original shipment\ntransaction, \"\"1\"\" if the transaction is a\nshipment adjustment.\"\n"
         },
         {
           "name": "approvedBy",
@@ -577,7 +599,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/approvedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
         },
         {
           "name": "approvedDate",
@@ -586,7 +611,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/approvedDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedDate",
+          "description": "Date the entry was approved.\n"
         },
         {
           "name": "businessUnitCode",
@@ -596,7 +624,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "customerAccountId",
@@ -606,7 +637,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/customerAccountId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "customerAccountId",
+          "description": "Identifier of the customer from whom payment is expected or to whom unused credits have been applied.\n"
         },
         {
           "name": "enteredBy",
@@ -616,7 +650,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/enteredBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record.\n"
         },
         {
           "name": "enteredDate",
@@ -625,7 +662,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/enteredDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "enteredDate",
+          "description": "\"Date the order was entered into the system.\nThis is sometimes referred to as the creation\ndate. This should be a system-generated\ndate (rather than user-entered date), when\npossible. This date does not necessarily\ncorrespond with the date of the transaction\nitself.\"\n"
         },
         {
           "name": "goodsReceivedAmount",
@@ -635,7 +675,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/goodsReceivedAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "goodsReceivedAmount",
+          "description": "\"Customer purchasing the product. Must\n match a Customer_Account_ID in the\n Customer_Master_Listing_YYYYMMDD file.\"\n"
         },
         {
           "name": "goodsReceivedExchangeRate",
@@ -645,7 +688,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/goodsReceivedExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "goodsReceivedExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "goodsShippedId",
@@ -655,7 +701,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/goodsShippedId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "goodsShippedId",
+          "description": ""
         },
         {
           "name": "lastModifiedBy",
@@ -665,7 +714,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
         },
         {
           "name": "lastModifiedDate",
@@ -674,7 +726,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lastModifiedDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedDate",
+          "description": "The date the entry was last modified before posting.\n"
         },
         {
           "name": "lineAdjustmentAmount",
@@ -684,7 +739,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineAdjustmentAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAdjustmentAmount",
+          "description": ""
         },
         {
           "name": "lineAdjustmentDescription",
@@ -694,7 +752,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineAdjustmentDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAdjustmentDescription",
+          "description": ""
         },
         {
           "name": "lineAmount",
@@ -704,7 +765,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAmount",
+          "description": "In the header's default currency.\n"
         },
         {
           "name": "lineExchangeRate",
@@ -714,7 +778,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "lineSalesOrderAmount",
@@ -724,7 +791,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSalesOrderAmount",
+          "description": "In the header's default currency.\n"
         },
         {
           "name": "lineSalesOrderExchangeRate",
@@ -734,7 +804,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSalesOrderExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "lineSalesOrderLineAmountLocal",
@@ -744,7 +817,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderLineAmountLocal",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSalesOrderLineAmountLocal",
+          "description": "\"Monetary amount for the line item in the\nsales order related to the shipping document\nline item. Recorded in the local currency. If\n no sales order, leave blank.\"\n"
         },
         {
           "name": "lineSalesOrderLineId",
@@ -754,7 +830,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderLineId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSalesOrderLineId",
+          "description": "\"Identifier for sales order line number.\nMust match Sales_Order_Line_ID used\nin\nSales_Orders_Lines_YYYYMMDD_YY\nYYMMDD file. If no sales order, leave\nblank.\"\n"
         },
         {
           "name": "lineSalesOrderLocalCurrency",
@@ -764,7 +843,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderLocalCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSalesOrderLocalCurrency",
+          "description": "\"The currency for local reporting \nrequirements. See ISO 4217 coding. If no\nsales order, leave blank.\"\n"
         },
         {
           "name": "lineSalesOrderQuantity",
@@ -774,7 +856,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderQuantity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSalesOrderQuantity",
+          "description": "\"Sales order line original quantity. If no sales\n order, leave blank.\"\n"
         },
         {
           "name": "lineSalesOrderUnitOfMeasure",
@@ -784,7 +869,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderUnitOfMeasure",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSalesOrderUnitOfMeasure",
+          "description": "\"Sales order line base unit of measure. If no\n sales order, leave blank.\"\n"
         },
         {
           "name": "lineSalesOrderUnitPrice",
@@ -794,7 +882,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineSalesOrderUnitPrice",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSalesOrderUnitPrice",
+          "description": "\"Sales order line price per unit. If no sales \norder, leave blank.\"\n"
         },
         {
           "name": "lineShipmentId",
@@ -804,7 +895,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShipmentId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShipmentId",
+          "description": "Unique identifier for each shipment. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment. Must match the Shipment_ID field in the file Shipments_Made_YYYYMMDD_YYYYMMDD.\n"
         },
         {
           "name": "lineShippingDocumentLineId",
@@ -814,7 +908,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingDocumentLineId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingDocumentLineId",
+          "description": "Reference line number on shipping document.\n"
         },
         {
           "name": "lineShippingLineAmountLocal",
@@ -824,7 +921,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingLineAmountLocal",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineShippingLineAmountLocal",
+          "description": "\"Monetary amount for the line item in the\nshipping document related to the sales order.\nRecorded in the local currency.\"\n"
         },
         {
           "name": "lineShippingLineAmountLocalCurrency",
@@ -834,7 +934,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingLineAmountLocalCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingLineAmountLocalCurrency",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding.\"\n"
         },
         {
           "name": "lineShippingProductBarCode",
@@ -844,7 +947,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductBarCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingProductBarCode",
+          "description": "UPC or other general identifier.\n"
         },
         {
           "name": "lineShippingProductCode",
@@ -854,7 +960,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingProductCode",
+          "description": "Product code appearing on the trade document\n"
         },
         {
           "name": "lineShippingProductDescription",
@@ -864,7 +973,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingProductDescription",
+          "description": "Product description (plain English) to indicate the name or other identifying characteristics of the product.\n"
         },
         {
           "name": "lineShippingProductGroup01",
@@ -874,7 +986,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductGroup01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingProductGroup01",
+          "description": "Product descriptor #1, for example, tires or accessories.\n"
         },
         {
           "name": "lineShippingProductGroup02",
@@ -884,7 +999,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductGroup02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingProductGroup02",
+          "description": "Product descriptor #2, for example, brand.\n"
         },
         {
           "name": "lineShippingProductId",
@@ -894,7 +1012,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingProductId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingProductId",
+          "description": "Identifier that is unique for each product.\n"
         },
         {
           "name": "lineShippingQuantity",
@@ -904,7 +1025,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingQuantity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineShippingQuantity",
+          "description": "Item quantity sent.\n"
         },
         {
           "name": "lineShippingUnitOfMeasure",
@@ -914,7 +1038,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingUnitOfMeasure",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineShippingUnitOfMeasure",
+          "description": "Base unit of measure.\n"
         },
         {
           "name": "lineShippingUnitPrice",
@@ -924,7 +1051,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/lineShippingUnitPrice",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineShippingUnitPrice",
+          "description": "Price per unit for item sent.\n"
         },
         {
           "name": "postingStatus",
@@ -934,7 +1064,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/postingStatus",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "postingStatus",
+          "description": "\"Status of the transaction's posting to the GL\n(for example, \"\"Posted,\"\" \"\"Not Posted\"\").\"\n"
         },
         {
           "name": "salesOrderAmount",
@@ -944,7 +1077,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "salesOrderAmount",
+          "description": "In the header's default currency.\n"
         },
         {
           "name": "salesOrderAmountLocal",
@@ -954,7 +1090,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderAmountLocal",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "salesOrderAmountLocal",
+          "description": "Sales monetary amount recorded in the local currency.\n"
         },
         {
           "name": "salesOrderDate",
@@ -963,7 +1102,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "salesOrderDate",
+          "description": "\"Date of sales order for items shipped. If no\nsales order, leave blank.\"\n"
         },
         {
           "name": "salesOrderExchangeRate",
@@ -973,7 +1115,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "salesOrderExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "salesOrderId",
@@ -983,7 +1128,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "salesOrderId",
+          "description": "\"Sales order ID for invoiced items.  Must\nmatch Sales_Order_ID in the\nSales_Orders_YYYYMMDD_YYYYMMDD\nfile. If no sales order, leave blank.\"\n"
         },
         {
           "name": "salesOrderLocalCurrency",
@@ -993,7 +1141,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/salesOrderLocalCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "salesOrderLocalCurrency",
+          "description": "The currency for local reporting requirements. See ISO 4217 coding.\n"
         },
         {
           "name": "segment01",
@@ -1003,7 +1154,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -1013,7 +1167,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -1023,7 +1180,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -1033,7 +1193,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -1043,7 +1206,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "shipmentDate",
@@ -1052,7 +1218,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "shipmentDate",
+          "description": "Date of shipment (date shipped)\n"
         },
         {
           "name": "shipmentFiscalYear",
@@ -1062,7 +1231,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentFiscalYear",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipmentFiscalYear",
+          "description": "Fiscal year in which the Shipment_Date occurs‚ÄîYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).\n"
         },
         {
           "name": "shipmentId",
@@ -1072,7 +1244,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipmentId",
+          "description": "Unique identifier for each shipment. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment.\n"
         },
         {
           "name": "shipmentPeriod",
@@ -1082,7 +1257,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shipmentPeriod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shipmentPeriod",
+          "description": "Fiscal period in which the Shapment_Date occurs. Examples include W1‚ÄìW53 for weekly periods, M1‚ÄìM12 for monthly periods, and Q1‚ÄìQ4 for quarterly periods.\n"
         },
         {
           "name": "shippingAmountLocal",
@@ -1092,7 +1270,10 @@
             }
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shippingAmountLocal",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "shippingAmountLocal",
+          "description": "\"Monetary amount for the items in the\nshipping document related to the sales order.\nRecorded in the local currency.\"\n"
         },
         {
           "name": "shippingAmountLocalCurrency",
@@ -1102,7 +1283,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shippingAmountLocalCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shippingAmountLocalCurrency",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding.\"\n"
         },
         {
           "name": "shippingDocumentId",
@@ -1112,9 +1296,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "goodsShippedData/attributeContext/goodsShippedData/shippingDocumentId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "shippingDocumentId",
+          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier).\"\n"
         }
-      ]
+      ],
+      "displayName": "goodsShippedData",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

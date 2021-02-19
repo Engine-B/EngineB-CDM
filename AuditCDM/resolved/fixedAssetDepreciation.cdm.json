@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/fixedAssetDepreciation",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "approvedBy",
             "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
@@ -286,7 +299,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/approvedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
         },
         {
           "name": "approvedByDate",
@@ -295,7 +311,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/approvedByDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedByDate",
+          "description": "Date the entry was approved.\n"
         },
         {
           "name": "businessUnitCode",
@@ -305,7 +324,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "depreciationEffectiveDate",
@@ -314,7 +336,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/depreciationEffectiveDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "depreciationEffectiveDate",
+          "description": ""
         },
         {
           "name": "depreciationForPeriod",
@@ -324,7 +349,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/depreciationForPeriod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "depreciationForPeriod",
+          "description": ""
         },
         {
           "name": "depreciationRate",
@@ -334,7 +362,10 @@
             }
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/depreciationRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "depreciationRate",
+          "description": ""
         },
         {
           "name": "enteredBy",
@@ -344,7 +375,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/enteredBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record.\n"
         },
         {
           "name": "enteredDate",
@@ -353,7 +387,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/enteredDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "enteredDate",
+          "description": "\"Date the order was entered into the system.\nThis is sometimes referred to as the creation\ndate. This should be a system-generated\ndate (rather than user-entered date), when\npossible. This date does not necessarily\ncorrespond with the date of the transaction\nitself.\"\n"
         },
         {
           "name": "fixedAssetDepreciableBasis",
@@ -363,7 +400,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciableBasis",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDepreciableBasis",
+          "description": ""
         },
         {
           "name": "fixedAssetDepreciationAmount",
@@ -373,7 +413,10 @@
             }
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciationAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetDepreciationAmount",
+          "description": ""
         },
         {
           "name": "fixedAssetDepreciationId",
@@ -383,7 +426,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciationId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDepreciationId",
+          "description": ""
         },
         {
           "name": "fixedAssetDepreciationMethod",
@@ -393,7 +439,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciationMethod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDepreciationMethod",
+          "description": ""
         },
         {
           "name": "fixedAssetFairValue",
@@ -403,7 +452,10 @@
             }
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetFairValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetFairValue",
+          "description": ""
         },
         {
           "name": "fixedAssetId",
@@ -413,7 +465,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetId",
+          "description": ""
         },
         {
           "name": "fixedAssetReplacementCost",
@@ -423,7 +478,10 @@
             }
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetReplacementCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetReplacementCost",
+          "description": ""
         },
         {
           "name": "fixedAssetSalvageValue",
@@ -433,7 +491,10 @@
             }
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetSalvageValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetSalvageValue",
+          "description": ""
         },
         {
           "name": "fixedAssetUsefulLife",
@@ -443,7 +504,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetUsefulLife",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUsefulLife",
+          "description": ""
         },
         {
           "name": "glAccount",
@@ -453,7 +517,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/glAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAccount",
+          "description": ""
         },
         {
           "name": "glTransactionId",
@@ -463,7 +530,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/glTransactionId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glTransactionId",
+          "description": ""
         },
         {
           "name": "lastModifiedBy",
@@ -473,7 +543,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/lastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
         },
         {
           "name": "lastModifiedByDate",
@@ -482,7 +555,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/lastModifiedByDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedByDate",
+          "description": ""
         },
         {
           "name": "lotNumber",
@@ -492,7 +568,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/lotNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
         },
         {
           "name": "segment01",
@@ -502,7 +581,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -512,7 +594,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -522,7 +607,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -532,7 +620,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -542,7 +633,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "serialNumber",
@@ -552,7 +646,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/serialNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
         },
         {
           "name": "uniqueId",
@@ -562,9 +659,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/uniqueId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "uniqueId",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "fixedAssetDepreciation",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

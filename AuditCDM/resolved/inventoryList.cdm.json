@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/inventoryList",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "inventoryList/attributeContext/inventoryList/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "averageCost",
             "parent": "inventoryList/attributeContext/inventoryList",
@@ -736,7 +749,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/averageCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "averageCost",
+          "description": ""
         },
         {
           "name": "binId",
@@ -746,7 +762,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/binId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "binId",
+          "description": ""
         },
         {
           "name": "binLocation",
@@ -756,7 +775,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/binLocation",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "binLocation",
+          "description": ""
         },
         {
           "name": "businessUnitCode",
@@ -766,7 +788,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "closingStockQuantity",
@@ -776,7 +801,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/closingStockQuantity",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "closingStockQuantity",
+          "description": ""
         },
         {
           "name": "closingStockValue",
@@ -786,7 +814,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/closingStockValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "closingStockValue",
+          "description": ""
         },
         {
           "name": "countedBy",
@@ -796,7 +827,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/countedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "countedBy",
+          "description": ""
         },
         {
           "name": "currentValuation",
@@ -806,7 +840,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/currentValuation",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "currentValuation",
+          "description": ""
         },
         {
           "name": "defaultInventoryMethod",
@@ -816,7 +853,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/defaultInventoryMethod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "defaultInventoryMethod",
+          "description": ""
         },
         {
           "name": "defaultStockingUnitOfMeasure",
@@ -826,7 +866,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/defaultStockingUnitOfMeasure",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "defaultStockingUnitOfMeasure",
+          "description": ""
         },
         {
           "name": "glAssetAccount",
@@ -836,7 +879,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/glAssetAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAssetAccount",
+          "description": ""
         },
         {
           "name": "glCostAccount",
@@ -846,7 +892,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/glCostAccount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glCostAccount",
+          "description": ""
         },
         {
           "name": "inventoryABCCode",
@@ -856,7 +905,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryABCCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryABCCode",
+          "description": ""
         },
         {
           "name": "inventoryBarCode",
@@ -866,7 +918,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryBarCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryBarCode",
+          "description": ""
         },
         {
           "name": "inventoryClass",
@@ -876,7 +931,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryClass",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryClass",
+          "description": ""
         },
         {
           "name": "inventoryCost",
@@ -886,7 +944,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "inventoryCost",
+          "description": ""
         },
         {
           "name": "inventoryCostMethod",
@@ -896,7 +957,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryCostMethod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryCostMethod",
+          "description": ""
         },
         {
           "name": "inventoryDescription",
@@ -906,7 +970,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryDescription",
+          "description": ""
         },
         {
           "name": "inventoryHeldForCustomers",
@@ -916,7 +983,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryHeldForCustomers",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryHeldForCustomers",
+          "description": ""
         },
         {
           "name": "inventoryHeldForOthers",
@@ -926,7 +996,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryHeldForOthers",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryHeldForOthers",
+          "description": ""
         },
         {
           "name": "inventoryHeldForSuppliers",
@@ -936,7 +1009,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryHeldForSuppliers",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryHeldForSuppliers",
+          "description": ""
         },
         {
           "name": "inventoryItemCode",
@@ -946,7 +1022,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryItemCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryItemCode",
+          "description": ""
         },
         {
           "name": "inventoryListPrice",
@@ -956,7 +1035,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryListPrice",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "inventoryListPrice",
+          "description": ""
         },
         {
           "name": "inventoryProductId",
@@ -966,7 +1048,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryProductId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "inventoryProductId",
+          "description": ""
         },
         {
           "name": "inventoryProductType",
@@ -976,7 +1061,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryProductType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryProductType",
+          "description": ""
         },
         {
           "name": "inventoryPurchaseYearToDate",
@@ -985,7 +1073,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryPurchaseYearToDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "inventoryPurchaseYearToDate",
+          "description": ""
         },
         {
           "name": "inventoryPurchasingUOM",
@@ -995,7 +1086,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryPurchasingUOM",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryPurchasingUOM",
+          "description": ""
         },
         {
           "name": "inventorySellingUOM",
@@ -1005,7 +1099,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventorySellingUOM",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventorySellingUOM",
+          "description": ""
         },
         {
           "name": "inventorySoldYearToDate",
@@ -1014,7 +1111,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventorySoldYearToDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "inventorySoldYearToDate",
+          "description": ""
         },
         {
           "name": "inventoryStockingUOM",
@@ -1024,7 +1124,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryStockingUOM",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryStockingUOM",
+          "description": ""
         },
         {
           "name": "lastCountDate",
@@ -1033,7 +1136,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/lastCountDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastCountDate",
+          "description": ""
         },
         {
           "name": "lastDespatchedDate",
@@ -1042,7 +1148,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/lastDespatchedDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastDespatchedDate",
+          "description": ""
         },
         {
           "name": "lastReceivedDate",
@@ -1051,7 +1160,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/lastReceivedDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastReceivedDate",
+          "description": ""
         },
         {
           "name": "locationActiveFlag",
@@ -1061,7 +1173,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationActiveFlag",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationActiveFlag",
+          "description": ""
         },
         {
           "name": "locationCity",
@@ -1071,7 +1186,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationCity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCity",
+          "description": ""
         },
         {
           "name": "locationCode",
@@ -1081,7 +1199,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCode",
+          "description": ""
         },
         {
           "name": "locationCountry",
@@ -1091,7 +1212,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationCountry",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCountry",
+          "description": ""
         },
         {
           "name": "locationCurrency",
@@ -1101,7 +1225,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationCurrency",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCurrency",
+          "description": ""
         },
         {
           "name": "locationDescription",
@@ -1111,7 +1238,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationDescription",
+          "description": ""
         },
         {
           "name": "locationId",
@@ -1121,7 +1251,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationId",
+          "description": ""
         },
         {
           "name": "locationLatitude",
@@ -1131,7 +1264,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationLatitude",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationLatitude",
+          "description": ""
         },
         {
           "name": "locationLongitude",
@@ -1141,7 +1277,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationLongitude",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationLongitude",
+          "description": ""
         },
         {
           "name": "locationParent",
@@ -1151,7 +1290,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationParent",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationParent",
+          "description": ""
         },
         {
           "name": "locationStateProvince",
@@ -1161,7 +1303,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationStateProvince",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationStateProvince",
+          "description": ""
         },
         {
           "name": "locationStreet",
@@ -1171,7 +1316,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationStreet",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationStreet",
+          "description": ""
         },
         {
           "name": "locationType",
@@ -1181,7 +1329,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationType",
+          "description": ""
         },
         {
           "name": "locationZipPostalCode",
@@ -1191,7 +1342,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/locationZipPostalCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationZipPostalCode",
+          "description": ""
         },
         {
           "name": "lotNumber",
@@ -1201,7 +1355,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/lotNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
         },
         {
           "name": "obsoleteorDamagedInventory",
@@ -1211,7 +1368,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/obsoleteorDamagedInventory",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "obsoleteorDamagedInventory",
+          "description": ""
         },
         {
           "name": "openingStockQuantity",
@@ -1221,7 +1381,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/openingStockQuantity",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "openingStockQuantity",
+          "description": ""
         },
         {
           "name": "openingStockValue",
@@ -1231,7 +1394,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/openingStockValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "openingStockValue",
+          "description": ""
         },
         {
           "name": "ownerId",
@@ -1241,7 +1407,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/ownerId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "ownerId",
+          "description": ""
         },
         {
           "name": "preferredSupplier",
@@ -1251,7 +1420,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/preferredSupplier",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "preferredSupplier",
+          "description": ""
         },
         {
           "name": "primaryManufacturer",
@@ -1261,7 +1433,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/primaryManufacturer",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primaryManufacturer",
+          "description": ""
         },
         {
           "name": "primaryManufacturerProductCode",
@@ -1271,7 +1446,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/primaryManufacturerProductCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primaryManufacturerProductCode",
+          "description": ""
         },
         {
           "name": "primarySupplier",
@@ -1281,7 +1459,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/primarySupplier",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primarySupplier",
+          "description": ""
         },
         {
           "name": "primarySupplierProductCode",
@@ -1291,7 +1472,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/primarySupplierProductCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primarySupplierProductCode",
+          "description": ""
         },
         {
           "name": "productGroup01",
@@ -1301,7 +1485,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/productGroup01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "productGroup01",
+          "description": ""
         },
         {
           "name": "productGroup02",
@@ -1311,7 +1498,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/productGroup02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "productGroup02",
+          "description": ""
         },
         {
           "name": "quantity",
@@ -1321,7 +1511,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/quantity",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "quantity",
+          "description": ""
         },
         {
           "name": "quantityOnHandPhysicalCount",
@@ -1331,7 +1524,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/quantityOnHandPhysicalCount",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "quantityOnHandPhysicalCount",
+          "description": ""
         },
         {
           "name": "quantityOnHandSystem",
@@ -1341,7 +1537,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/quantityOnHandSystem",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "quantityOnHandSystem",
+          "description": ""
         },
         {
           "name": "segment01",
@@ -1351,7 +1550,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -1361,7 +1563,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -1371,7 +1576,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -1381,7 +1589,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -1391,7 +1602,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "serialNumber",
@@ -1401,7 +1615,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/serialNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
         },
         {
           "name": "specificCost",
@@ -1411,7 +1628,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/specificCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "specificCost",
+          "description": ""
         },
         {
           "name": "standardCost",
@@ -1421,7 +1641,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/standardCost",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "standardCost",
+          "description": ""
         },
         {
           "name": "stockAccountCommodityCode",
@@ -1431,7 +1654,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/stockAccountCommodityCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "stockAccountCommodityCode",
+          "description": ""
         },
         {
           "name": "stockCharacteristic",
@@ -1441,7 +1667,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/stockCharacteristic",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "stockCharacteristic",
+          "description": ""
         },
         {
           "name": "stockCharacteristicValue",
@@ -1451,7 +1680,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/stockCharacteristicValue",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "stockCharacteristicValue",
+          "description": ""
         },
         {
           "name": "supplierId",
@@ -1461,7 +1693,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/supplierId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
         },
         {
           "name": "thirdPartyFacility",
@@ -1471,7 +1706,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/thirdPartyFacility",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "thirdPartyFacility",
+          "description": ""
         },
         {
           "name": "unitPrice",
@@ -1481,7 +1719,10 @@
             }
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/unitPrice",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "unitPrice",
+          "description": ""
         },
         {
           "name": "uomToUOMbaseConversionFactor",
@@ -1491,7 +1732,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/uomToUOMbaseConversionFactor",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "uomToUOMbaseConversionFactor",
+          "description": ""
         },
         {
           "name": "writeDownDescription",
@@ -1501,7 +1745,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/writeDownDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "writeDownDescription",
+          "description": ""
         },
         {
           "name": "writeDownFactor",
@@ -1511,9 +1758,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "inventoryList/attributeContext/inventoryList/writeDownFactor",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "writeDownFactor",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "inventoryList",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

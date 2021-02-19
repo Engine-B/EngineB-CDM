@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/bankAccountMasterData",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "bankAccountId",
             "parent": "bankAccountMasterData/attributeContext/bankAccountMasterData",
@@ -79,7 +92,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "bankAccountId",
+          "description": "Unambiguous identification of the account to which credit and debit entries are made."
         },
         {
           "name": "bankAccountNumber",
@@ -89,7 +105,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "bankAccountNumber",
+          "description": "The number allocated to the account by the individual’s or company’s own bank."
         },
         {
           "name": "bankAccountSubType",
@@ -99,7 +118,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountSubType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "bankAccountSubType",
+          "description": "Specifies the sub type of account (product family group)."
         },
         {
           "name": "bankAccountType",
@@ -109,7 +131,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankAccountType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "bankAccountType",
+          "description": "Specifies the type of account (personal or business)."
         },
         {
           "name": "bankSortCode",
@@ -119,7 +144,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/bankSortCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "bankSortCode",
+          "description": "The bank sort code"
         },
         {
           "name": "IBAN",
@@ -129,9 +157,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "bankAccountMasterData/attributeContext/bankAccountMasterData/IBAN",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "IBAN",
+          "description": "The International Bank Account Number"
         }
-      ]
+      ],
+      "displayName": "bankAccountMasterData",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

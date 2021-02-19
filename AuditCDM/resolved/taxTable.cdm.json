@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/taxTable",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "taxTable/attributeContext/taxTable",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "taxTable/attributeContext/taxTable/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "regulatorActiveFlag",
             "parent": "taxTable/attributeContext/taxTable",
@@ -124,7 +137,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorActiveFlag",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorActiveFlag",
+          "description": "True (Active) or False (Inactive)\n"
         },
         {
           "name": "regulatorCode",
@@ -134,7 +150,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorCode",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "regulatorCode",
+          "description": "\"A code used to refer to this regulator or\njurisdiction; used as key or cross-reference\nin files.\"\n"
         },
         {
           "name": "regulatorCountry",
@@ -144,7 +163,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorCountry",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorCountry",
+          "description": "\"Recommend ISO 3166-1 Alpha 2 or Alpha 3\nformat\"\n"
         },
         {
           "name": "regulatorDefaultAccrualglAccountNumber",
@@ -154,7 +176,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorDefaultAccrualglAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorDefaultAccrualglAccountNumber",
+          "description": "\"GL account used to reflect accruals due to\nregulator\"\n"
         },
         {
           "name": "regulatorDefaultExpenseglAccountNumber",
@@ -164,7 +189,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorDefaultExpenseglAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorDefaultExpenseglAccountNumber",
+          "description": "\"GL account used to reflect accruals due to\nregulator\"\n"
         },
         {
           "name": "regulatorDefaultPayableglAccountNumber",
@@ -174,7 +202,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorDefaultPayableglAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorDefaultPayableglAccountNumber",
+          "description": "\"GL account used to reflect accruals due to\nregulator\"\n"
         },
         {
           "name": "regulatorIdentifier",
@@ -184,7 +215,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorIdentifier",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorIdentifier",
+          "description": "\"Tax or other code assigned by Regulator for\nreporting organization to Regulator\"\n"
         },
         {
           "name": "regulatorName",
@@ -194,7 +228,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorName",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorName",
+          "description": "\"Name of regulator for whom tax is withheld\nor accrued\"\n"
         },
         {
           "name": "regulatorRegion",
@@ -204,7 +241,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorRegion",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorRegion",
+          "description": "\"Sub-region within country; in the U.S., this\nwould be state; in Canada it would be\nprovince.\"\n"
         },
         {
           "name": "regulatorReportingOrganization",
@@ -214,7 +254,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorReportingOrganization",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorReportingOrganization",
+          "description": "\"Cross-reference to\nOrganization_Location_File_YYYYMMDD\"\n"
         },
         {
           "name": "regulatorRole",
@@ -224,9 +267,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "taxTable/attributeContext/taxTable/regulatorRole",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "regulatorRole",
+          "description": "From: Federal, Regional, Local\n"
         }
-      ]
+      ],
+      "displayName": "taxTable",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

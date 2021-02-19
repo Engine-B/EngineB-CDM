@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/sourceListing",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "sourceListing/attributeContext/sourceListing/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "businessProcessMajor",
             "parent": "sourceListing/attributeContext/sourceListing",
@@ -79,7 +92,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "sourceListing/attributeContext/sourceListing/businessProcessMajor",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessProcessMajor",
+          "description": "The major class of transaction associated\nwith a business process (for example,\nsales)."
         },
         {
           "name": "businessProcessMinor",
@@ -89,7 +105,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "sourceListing/attributeContext/sourceListing/businessProcessMinor",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessProcessMinor",
+          "description": "A subprocess of the major business\nprocess (for example‚Äîorders, returns,\ndiscounts, and so on)."
         },
         {
           "name": "erpSubledgerModule",
@@ -99,7 +118,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "sourceListing/attributeContext/sourceListing/erpSubledgerModule",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "erpSubledgerModule",
+          "description": "Description of the subledger or ERP module the journal entry originated from. Should tie back to a system or significant accounting process. In some instances, may be represented by source."
         },
         {
           "name": "sourceDescription",
@@ -109,7 +131,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "sourceListing/attributeContext/sourceListing/sourceDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sourceDescription",
+          "description": "A plain English description of the source. Some of the more common journals are purchases, sales, cash receipts, cash disbursements, and general journal."
         },
         {
           "name": "sourceId",
@@ -119,7 +144,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "sourceListing/attributeContext/sourceListing/sourceId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "sourceId",
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
         },
         {
           "name": "systemManualIdentifier",
@@ -129,9 +157,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "sourceListing/attributeContext/sourceListing/systemManualIdentifier",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemManualIdentifier",
+          "description": "Define if the source creates system-generated or manually entered journal entries"
         }
-      ]
+      ],
+      "displayName": "sourceListing",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

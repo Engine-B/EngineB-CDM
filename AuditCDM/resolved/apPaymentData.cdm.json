@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/apPaymentData",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "apPaymentData/attributeContext/apPaymentData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "approvedBy",
             "parent": "apPaymentData/attributeContext/apPaymentData",
@@ -691,7 +704,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/approvedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry."
         },
         {
           "name": "approvedDateTime",
@@ -700,7 +716,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/approvedDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedDateTime",
+          "description": "The DateTime the entry was approved."
         },
         {
           "name": "batchId",
@@ -710,7 +729,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/batchId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "batchId",
+          "description": "Systems generated ID for batch"
         },
         {
           "name": "description",
@@ -720,7 +742,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/description",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "description",
+          "description": "Description of the payment."
         },
         {
           "name": "glCreditAccountNumber",
@@ -730,7 +755,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/glCreditAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glCreditAccountNumber",
+          "description": "GL account number on which the credit side of the transaction has been posted."
         },
         {
           "name": "glDebitAccountNumber",
@@ -740,7 +768,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/glDebitAccountNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glDebitAccountNumber",
+          "description": "GL account number on which the debit side of the transaction has been posted."
         },
         {
           "name": "lastModifiedBy",
@@ -750,7 +781,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lastModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
         },
         {
           "name": "lastModifiedDateTime",
@@ -759,7 +793,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lastModifiedDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedDateTime",
+          "description": "The date and time the entry was last modified before posting."
         },
         {
           "name": "lineAccountId",
@@ -769,7 +806,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAccountId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAccountId",
+          "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department."
         },
         {
           "name": "lineAnalysisAmountCurrencyAmount",
@@ -779,7 +819,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAmountCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAnalysisAmountCurrencyAmount",
+          "description": "Transaction monetary amount in local currency."
         },
         {
           "name": "lineAnalysisAnalysisAmount",
@@ -789,7 +832,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAnalysisAnalysisAmount",
+          "description": "The functional or group currency related to\nthe receipt amount. See ISO 4217 coding."
         },
         {
           "name": "lineAnalysisAnalysisAmountCurrencyCode",
@@ -799,7 +845,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisAmountCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisAmountCurrencyCode",
+          "description": "Transaction monetary amount recorded in \nthe reporting currency."
         },
         {
           "name": "lineAnalysisAnalysisAmountExchangeRate",
@@ -809,7 +858,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisAmountExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAnalysisAnalysisAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
         },
         {
           "name": "lineAnalysisAnalysisId",
@@ -819,7 +871,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisId",
+          "description": "Analysis ID: e.g. 1200-HDOF-TR (for cost center treasury in the headoffice), P-4800-123 (for project 123 in branch 4800)"
         },
         {
           "name": "lineAnalysisAnalysisIdDescription",
@@ -829,7 +884,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisIdDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisIdDescription",
+          "description": "Description of the AnalysisID: e.g. \"Headoffice-Treasury\"."
         },
         {
           "name": "lineAnalysisAnalysisType",
@@ -839,7 +897,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisType",
+          "description": "Analysis type identifier: e.g. CC (for Cost Center), DEP (for department), etc"
         },
         {
           "name": "lineAnalysisAnalysisTypeDescription",
@@ -849,7 +910,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisTypeDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisTypeDescription",
+          "description": "Description of the AnalysisType, e.g. \"Cost Center\""
         },
         {
           "name": "lineApprovedBy",
@@ -859,7 +923,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineApprovedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineApprovedBy",
+          "description": "User ID (from User_Listing file) for person\n who approved the entry."
         },
         {
           "name": "lineApprovedDateTime",
@@ -868,7 +935,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineApprovedDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineApprovedDateTime",
+          "description": "The date and time the entry was approved."
         },
         {
           "name": "lineBusinessUnitCode",
@@ -878,7 +948,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineBusinessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineBusinessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited. Must match the Business_Unit_Code in the Business_Unit_Listing file."
         },
         {
           "name": "lineDebitCreditIndicator",
@@ -888,7 +961,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineDebitCreditIndicator",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineDebitCreditIndicator",
+          "description": "Indicates whether the amounts on line-level are debit or credit amounts. Entry must correspond to entry reflected in General Ledger Entry. Signing of line amounts is relative to this indicator. E.g. a return can lead to a negative amount"
         },
         {
           "name": "lineDescription",
@@ -898,7 +974,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineDescription",
+          "description": "Description of Invoice Line."
         },
         {
           "name": "lineLastModifiedDate",
@@ -908,7 +987,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineLastModifiedDate",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineLastModifiedDate",
+          "description": "The date the entry was last modified."
         },
         {
           "name": "lineLineNumber",
@@ -918,7 +1000,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineLineNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineLineNumber",
+          "description": "Line item number of the invoice."
         },
         {
           "name": "lineModifiedBy",
@@ -928,7 +1013,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineModifiedBy",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last\nperson modifying this entry."
         },
         {
           "name": "linePaymentAmountLocalCurrencyCode",
@@ -938,7 +1026,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentAmountLocalCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "linePaymentAmountLocalCurrencyCode",
+          "description": "The currency for local reporting\nrequirements. See ISO 4217 coding."
         },
         {
           "name": "linePaymentAmountReporting",
@@ -948,7 +1039,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentAmountReporting",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentAmountReporting",
+          "description": "Transaction monetary amount recorded in\nthe reporting currency."
         },
         {
           "name": "linePaymentAmountReportingCurrency",
@@ -958,7 +1052,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentAmountReportingCurrency",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentAmountReportingCurrency",
+          "description": "The reporting currency related to the\npayment amount for nonconsolidated\nreporting. See ISO 4217 coding."
         },
         {
           "name": "linePaymentLineAmount",
@@ -968,7 +1065,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentLineAmount",
+          "description": "Transaction monetary amount recorded in\nthe functional or group currency. No \nmulticurrency translation should need to be\nperformed on this amount because all \ntransactions should be recorded in a single\n currency."
         },
         {
           "name": "linePaymentLineAmountCurrencyAmount",
@@ -978,7 +1078,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmountCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentLineAmountCurrencyAmount",
+          "description": "Transaction monetary amount in local\n currency."
         },
         {
           "name": "linePaymentLineAmountCurrencyCode",
@@ -988,7 +1091,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmountCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "linePaymentLineAmountCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
         },
         {
           "name": "linePaymentLineAmountExchangeRate",
@@ -998,7 +1104,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmountExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentLineAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
         },
         {
           "name": "lineSettlementCurrencyAmount",
@@ -1008,7 +1117,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementCurrencyAmount",
+          "description": "Amount in foreign currency"
         },
         {
           "name": "lineSettlementCurrencyCode",
@@ -1018,7 +1130,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSettlementCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
         },
         {
           "name": "lineSettlementPaymentMechanism",
@@ -1028,7 +1143,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementPaymentMechanism",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSettlementPaymentMechanism",
+          "description": "Payment mechanism "
         },
         {
           "name": "lineSettlementSettlementAmount",
@@ -1038,7 +1156,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementSettlementAmount",
+          "description": "In the header's default currency."
         },
         {
           "name": "lineSettlementSettlementAmountExchangeRate",
@@ -1048,7 +1169,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementAmountExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementSettlementAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
         },
         {
           "name": "lineSettlementSettlementDate",
@@ -1057,7 +1181,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineSettlementSettlementDate",
+          "description": "Date settled"
         },
         {
           "name": "lineSettlementSettlementDiscount",
@@ -1067,7 +1194,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementDiscount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementSettlementDiscount",
+          "description": "Description Settlement / Other Discount "
         },
         {
           "name": "lineSourceDocumentId",
@@ -1077,7 +1207,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSourceDocumentId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSourceDocumentId",
+          "description": "The source document to which the line relates"
         },
         {
           "name": "lineSupplierId",
@@ -1087,7 +1220,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSupplierId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSupplierId",
+          "description": "Identifier of the supplier to whom payment\nis due or from whom unused credits have\nbeen applied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file."
         },
         {
           "name": "lineSystemEntryDateTime",
@@ -1096,7 +1232,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSystemEntryDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineSystemEntryDateTime",
+          "description": "The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself."
         },
         {
           "name": "lineSystemEntryUser",
@@ -1106,7 +1245,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSystemEntryUser",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSystemEntryUser",
+          "description": "User_ID (from User_Listing file) for person\n who created the record."
         },
         {
           "name": "lineTaxInformationTaxAmount",
@@ -1116,7 +1258,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxAmount",
+          "description": "In the header's default currency."
         },
         {
           "name": "lineTaxInformationTaxAmountCurrencyAmount",
@@ -1126,7 +1271,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmountCurrencyAmount",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxAmountCurrencyAmount",
+          "description": "Amount in foreign currency"
         },
         {
           "name": "lineTaxInformationTaxAmountCurrencyCode",
@@ -1136,7 +1284,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmountCurrencyCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxAmountCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
         },
         {
           "name": "lineTaxInformationTaxAmountExchangeRate",
@@ -1146,7 +1297,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmountExchangeRate",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
         },
         {
           "name": "lineTaxInformationTaxBase",
@@ -1156,7 +1310,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxBase",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxBase",
+          "description": "The base on which the tax is calculated. This can be an amount, or a quantity, eg. Litres."
         },
         {
           "name": "lineTaxInformationTaxBaseDescription",
@@ -1166,7 +1323,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxBaseDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxBaseDescription",
+          "description": "Description of the value in the TaxBase. Eg. Litres for excises on alcoholic bevarages."
         },
         {
           "name": "lineTaxInformationTaxCode",
@@ -1176,7 +1336,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxCode",
+          "description": "Tax Code for lookup in tables"
         },
         {
           "name": "lineTaxInformationTaxDeclarationPeriod",
@@ -1186,7 +1349,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxDeclarationPeriod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxDeclarationPeriod",
+          "description": "The identification of the declaration/return in which the tax amount is reported to the Revenue body"
         },
         {
           "name": "lineTaxInformationTaxExemptionReason",
@@ -1196,7 +1362,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxExemptionReason",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxExemptionReason",
+          "description": "Tax exemption or reduction reason or rationale "
         },
         {
           "name": "lineTaxInformationTaxPercentage",
@@ -1206,7 +1375,10 @@
             }
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxPercentage",
-          "dataFormat": "Decimal"
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxPercentage",
+          "description": "Tax percentage."
         },
         {
           "name": "lineTaxInformationTaxType",
@@ -1216,7 +1388,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxType",
+          "description": "Tax type for look-up in tables"
         },
         {
           "name": "lineTaxPointDate",
@@ -1225,7 +1400,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxPointDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineTaxPointDate",
+          "description": "Tax Point date where recorded or if not recorded then the Invoice date "
         },
         {
           "name": "paymentId",
@@ -1235,7 +1413,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/paymentId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "paymentId",
+          "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction."
         },
         {
           "name": "paymentMethod",
@@ -1245,7 +1426,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/paymentMethod",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "paymentMethod",
+          "description": "The code value or indicator of the method by\nwhich the transaction debit or credit amount\nwas extinguished or apportioned to the debt\nby the supplier (for example, check, wire\ntransfer, cash, and so on). Must match the\nPayment_Type in the\nPayment_Type_Listing_YYYYMMDD file."
         },
         {
           "name": "paymentRefNo",
@@ -1255,7 +1439,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/paymentRefNo",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "paymentRefNo",
+          "description": "Unique identifier for each payment made. This ID may need to be created by concatenating fields (for example, supplier and payment number) to uniquely identify each transaction."
         },
         {
           "name": "period",
@@ -1265,7 +1452,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/period",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "period",
+          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1ÇƒÏW53 for weekly periods, M1ÇƒÏM12 for monthly periods, and Q1ÇƒÏQ4 for quarterly periods."
         },
         {
           "name": "periodYear",
@@ -1275,7 +1465,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/periodYear",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "periodYear",
+          "description": "Fiscal year in which the\nPurchase_Order_Date occurs‚ÄîYYYY for\ndelimited, CCYY-MM-DD fiscal year end\n(ISO 8601) for extensible business reporting\nlanguage global ledger taxonomy framework\n(XBRL GL)."
         },
         {
           "name": "postingStatus",
@@ -1285,7 +1478,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/postingStatus",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "postingStatus",
+          "description": "Status of the transaction's posting to the GL\n(for example, \"Posted,\" \"Not Posted\")."
         },
         {
           "name": "referenceDate",
@@ -1294,7 +1490,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/referenceDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "referenceDate",
+          "description": "Date on an externally generated transaction\n(for example, check date or wire transfer\ndate)."
         },
         {
           "name": "referenceNumber",
@@ -1304,7 +1503,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/referenceNumber",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "referenceNumber",
+          "description": "Identification number for an internally or\nexternally generated transaction (for\nexample, check number, wire transfer\nnumber, or original document ID)."
         },
         {
           "name": "segment01",
@@ -1314,7 +1516,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment02",
@@ -1324,7 +1529,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment03",
@@ -1334,7 +1542,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment04",
@@ -1344,7 +1555,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment05",
@@ -1354,7 +1568,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "sourceId",
@@ -1364,7 +1581,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/sourceId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sourceId",
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
         },
         {
           "name": "systemEntryDateTime",
@@ -1373,7 +1593,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/systemEntryDateTime",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "systemEntryDateTime",
+          "description": "The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not\n necessarily correspond with the date of the \ntransaction itself."
         },
         {
           "name": "systemEntryUser",
@@ -1383,7 +1606,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/systemEntryUser",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemEntryUser",
+          "description": "User_ID (from User_Listing file) for person\nwho created the record."
         },
         {
           "name": "systemId",
@@ -1393,7 +1619,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/systemId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemId",
+          "description": "Unique number created by the system for the document"
         },
         {
           "name": "transactionDate",
@@ -1402,7 +1631,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/transactionDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "transactionDate",
+          "description": "The date the payment was made or credit was applied."
         },
         {
           "name": "transactionId",
@@ -1412,9 +1644,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "apPaymentData/attributeContext/apPaymentData/transactionId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionId",
+          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
         }
-      ]
+      ],
+      "displayName": "apPaymentData",
+      "description": "lineCustomerId is missing",
+      "version": "1.0"
     }
   ]
 }

@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/segmentListing",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "segmentListing/attributeContext/segmentListing",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "segmentListing/attributeContext/segmentListing/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "segment0XDescription",
             "parent": "segmentListing/attributeContext/segmentListing",
@@ -43,7 +56,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "segmentListing/attributeContext/segmentListing/segment0XDescription",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment0XDescription",
+          "description": ""
         },
         {
           "name": "segment0XValue",
@@ -53,9 +69,15 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "segmentListing/attributeContext/segmentListing/segment0XValue",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "segment0XValue",
+          "description": "Value of Segment0X (X may equal 1 to 5)."
         }
-      ]
+      ],
+      "displayName": "segmentListing",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

@@ -2,88 +2,101 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/businessUnit.cdm.json",
+      "corpusPath": "/BusinessUnit.cdm.json",
       "moniker": "resolvedFrom"
     }
   ],
   "definitions": [
     {
-      "entityName": "businessUnit",
+      "entityName": "BusinessUnit",
       "attributeContext": {
         "type": "entity",
-        "name": "businessUnit",
-        "definition": "resolvedFrom/businessUnit",
+        "name": "BusinessUnit",
+        "definition": "resolvedFrom/BusinessUnit",
         "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "BusinessUnit/attributeContext/BusinessUnit/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
           {
             "type": "attributeDefinition",
             "name": "businessUnitCode",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitCode",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/businessUnitCode",
             "contents": [
-              "businessUnit/hasAttributes/businessUnitCode"
+              "BusinessUnit/hasAttributes/businessUnitCode"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "businessUnitDescription",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitDescription",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/businessUnitDescription",
             "contents": [
-              "businessUnit/hasAttributes/businessUnitDescription"
+              "BusinessUnit/hasAttributes/businessUnitDescription"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "businessUnitHierarchy1",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy1",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/businessUnitHierarchy1",
             "contents": [
-              "businessUnit/hasAttributes/businessUnitHierarchy1"
+              "BusinessUnit/hasAttributes/businessUnitHierarchy1"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "businessUnitHierarchy2",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy2",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/businessUnitHierarchy2",
             "contents": [
-              "businessUnit/hasAttributes/businessUnitHierarchy2"
+              "BusinessUnit/hasAttributes/businessUnitHierarchy2"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "businessUnitHierarchy3",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy3",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/businessUnitHierarchy3",
             "contents": [
-              "businessUnit/hasAttributes/businessUnitHierarchy3"
+              "BusinessUnit/hasAttributes/businessUnitHierarchy3"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "businessUnitHierarchy4",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy4",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/businessUnitHierarchy4",
             "contents": [
-              "businessUnit/hasAttributes/businessUnitHierarchy4"
+              "BusinessUnit/hasAttributes/businessUnitHierarchy4"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "businessUnitHierarchy5",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/businessUnitHierarchy5",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/businessUnitHierarchy5",
             "contents": [
-              "businessUnit/hasAttributes/businessUnitHierarchy5"
+              "BusinessUnit/hasAttributes/businessUnitHierarchy5"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "legalEntityIdentifier",
-            "parent": "businessUnit/attributeContext/businessUnit",
-            "definition": "resolvedFrom/businessUnit/hasAttributes/legalEntityIdentifier",
+            "parent": "BusinessUnit/attributeContext/BusinessUnit",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/legalEntityIdentifier",
             "contents": [
-              "businessUnit/hasAttributes/legalEntityIdentifier"
+              "BusinessUnit/hasAttributes/legalEntityIdentifier"
             ]
           }
         ]
@@ -96,8 +109,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitCode",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/businessUnitCode",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "businessUnitDescription",
@@ -106,8 +122,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitDescription",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/businessUnitDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitDescription",
+          "description": "Business unit (plain English) description to indicate the name or other identifying characteristics of the business unit"
         },
         {
           "name": "businessUnitHierarchy1",
@@ -116,8 +135,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy1",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/businessUnitHierarchy1",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitHierarchy1",
+          "description": "If a hierarchy exists in the business unit structure, use the field to capture the highest level of the hierarchy (for example, global area with values such as North America, South America, Europe, the Middle East, Africa, the Far East, and so on)."
         },
         {
           "name": "businessUnitHierarchy2",
@@ -126,8 +148,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy2",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/businessUnitHierarchy2",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitHierarchy2",
+          "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy (for example, regions with values such as East Coast, West Coast, Central-Western Europe, and so on)."
         },
         {
           "name": "businessUnitHierarchy3",
@@ -136,8 +161,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy3",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/businessUnitHierarchy3",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitHierarchy3",
+          "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy (for example, cities with values such as Los Angeles, Boston, Frankfurt, and so on)."
         },
         {
           "name": "businessUnitHierarchy4",
@@ -146,8 +174,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy4",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/businessUnitHierarchy4",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitHierarchy4",
+          "description": "If a hierarchy exists in the business unit\nstructure, use the field to capture the next\nlower level of the hierarchy."
         },
         {
           "name": "businessUnitHierarchy5",
@@ -156,8 +187,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/businessUnitHierarchy5",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/businessUnitHierarchy5",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitHierarchy5",
+          "description": "If a hierarchy exists in the business unit\nstructure, use the field to capture the next\nlower level of the hierarchy."
         },
         {
           "name": "legalEntityIdentifier",
@@ -166,10 +200,16 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "businessUnit/attributeContext/businessUnit/legalEntityIdentifier",
-          "dataFormat": "String"
+          "attributeContext": "BusinessUnit/attributeContext/BusinessUnit/legalEntityIdentifier",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "legalEntityIdentifier",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "BusinessUnit",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

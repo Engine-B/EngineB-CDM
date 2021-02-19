@@ -2,133 +2,146 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/chartOfAccounts.cdm.json",
+      "corpusPath": "/ChartOfAccounts.cdm.json",
       "moniker": "resolvedFrom"
     }
   ],
   "definitions": [
     {
-      "entityName": "chartOfAccounts",
+      "entityName": "ChartOfAccounts",
       "attributeContext": {
         "type": "entity",
-        "name": "chartOfAccounts",
-        "definition": "resolvedFrom/chartOfAccounts",
+        "name": "ChartOfAccounts",
+        "definition": "resolvedFrom/ChartOfAccounts",
         "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
           {
             "type": "attributeDefinition",
             "name": "accountSubtype",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/accountSubtype",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/accountSubtype",
             "contents": [
-              "chartOfAccounts/hasAttributes/accountSubtype"
+              "ChartOfAccounts/hasAttributes/accountSubtype"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "accountType",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/accountType",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/accountType",
             "contents": [
-              "chartOfAccounts/hasAttributes/accountType"
+              "ChartOfAccounts/hasAttributes/accountType"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "businessUnitCode",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/businessUnitCode",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/businessUnitCode",
             "contents": [
-              "chartOfAccounts/hasAttributes/businessUnitCode"
+              "ChartOfAccounts/hasAttributes/businessUnitCode"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "fsCaption",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/fsCaption",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/fsCaption",
             "contents": [
-              "chartOfAccounts/hasAttributes/fsCaption"
+              "ChartOfAccounts/hasAttributes/fsCaption"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "glAccountDescription",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/glAccountDescription",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/glAccountDescription",
             "contents": [
-              "chartOfAccounts/hasAttributes/glAccountDescription"
+              "ChartOfAccounts/hasAttributes/glAccountDescription"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "glAccountName",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/glAccountName",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/glAccountName",
             "contents": [
-              "chartOfAccounts/hasAttributes/glAccountName"
+              "ChartOfAccounts/hasAttributes/glAccountName"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "glAccountNumber",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/glAccountNumber",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/glAccountNumber",
             "contents": [
-              "chartOfAccounts/hasAttributes/glAccountNumber"
+              "ChartOfAccounts/hasAttributes/glAccountNumber"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "parentglAccountNumber",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/parentglAccountNumber",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/parentglAccountNumber",
             "contents": [
-              "chartOfAccounts/hasAttributes/parentglAccountNumber"
+              "ChartOfAccounts/hasAttributes/parentglAccountNumber"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "segment01",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/segment01",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/segment01",
             "contents": [
-              "chartOfAccounts/hasAttributes/segment01"
+              "ChartOfAccounts/hasAttributes/segment01"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "segment02",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/segment02",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/segment02",
             "contents": [
-              "chartOfAccounts/hasAttributes/segment02"
+              "ChartOfAccounts/hasAttributes/segment02"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "segment03",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/segment03",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/segment03",
             "contents": [
-              "chartOfAccounts/hasAttributes/segment03"
+              "ChartOfAccounts/hasAttributes/segment03"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "segment04",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/segment04",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/segment04",
             "contents": [
-              "chartOfAccounts/hasAttributes/segment04"
+              "ChartOfAccounts/hasAttributes/segment04"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "segment05",
-            "parent": "chartOfAccounts/attributeContext/chartOfAccounts",
-            "definition": "resolvedFrom/chartOfAccounts/hasAttributes/segment05",
+            "parent": "ChartOfAccounts/attributeContext/ChartOfAccounts",
+            "definition": "resolvedFrom/ChartOfAccounts/hasAttributes/segment05",
             "contents": [
-              "chartOfAccounts/hasAttributes/segment05"
+              "ChartOfAccounts/hasAttributes/segment05"
             ]
           }
         ]
@@ -141,8 +154,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/accountSubtype",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/accountSubtype",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "accountSubtype",
+          "description": "Grouping for lower-level categories on the financial statements. Examples include reserve account, suspense account, intercompany account, and so on."
         },
         {
           "name": "accountType",
@@ -151,8 +167,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/accountType",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/accountType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "accountType",
+          "description": "Grouping for high-level category on the financial statements. Values should be assets, liabilities, equity, revenue, expenses, and so on."
         },
         {
           "name": "businessUnitCode",
@@ -161,8 +180,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/businessUnitCode",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/businessUnitCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "fsCaption",
@@ -171,8 +193,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/fsCaption",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/fsCaption",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fsCaption",
+          "description": "Financial statement caption. Grouping\nfor the caption the GL account rolls up\nto on the financial statements (for\nexample, cash and cash equivalents,\naccounts payable, cost of sales, and so\non). Sometimes may prefer to be at the\ntrial balance level."
         },
         {
           "name": "glAccountDescription",
@@ -181,8 +206,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/glAccountDescription",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/glAccountDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAccountDescription",
+          "description": "Label or description associated with\nGL_Account_Number."
         },
         {
           "name": "glAccountName",
@@ -191,8 +219,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/glAccountName",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/glAccountName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAccountName",
+          "description": "Name for the GL account."
         },
         {
           "name": "glAccountNumber",
@@ -201,8 +232,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/glAccountNumber",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/glAccountNumber",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "glAccountNumber",
+          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
         },
         {
           "name": "parentglAccountNumber",
@@ -211,8 +245,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/parentglAccountNumber",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/parentglAccountNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "parentglAccountNumber",
+          "description": "A reference to the\nGL_Account_Number that is the parent\nin an account hierarchy. Provided to\nallow more than the predefined levels of\nhierarchy in the chart of accounts table."
         },
         {
           "name": "segment01",
@@ -221,8 +258,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/segment01",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/segment01",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment02",
@@ -231,8 +271,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/segment02",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/segment02",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment03",
@@ -241,8 +284,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/segment03",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/segment03",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment04",
@@ -251,8 +297,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/segment04",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/segment04",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         },
         {
           "name": "segment05",
@@ -261,10 +310,16 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "chartOfAccounts/attributeContext/chartOfAccounts/segment05",
-          "dataFormat": "String"
+          "attributeContext": "ChartOfAccounts/attributeContext/ChartOfAccounts/segment05",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
         }
-      ]
+      ],
+      "displayName": "ChartOfAccounts",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

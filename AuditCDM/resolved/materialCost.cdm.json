@@ -15,6 +15,19 @@
         "definition": "resolvedFrom/materialCost",
         "contents": [
           {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "materialCost/attributeContext/materialCost",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "materialCost/attributeContext/materialCost/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
             "type": "attributeDefinition",
             "name": "businessUnitCode",
             "parent": "materialCost/attributeContext/materialCost",
@@ -205,7 +218,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/businessUnitCode",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "costingType",
@@ -215,7 +231,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/costingType",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "costingType",
+          "description": ""
         },
         {
           "name": "inventoryProductId",
@@ -225,7 +244,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/inventoryProductId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryProductId",
+          "description": ""
         },
         {
           "name": "locationId",
@@ -235,7 +257,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/locationId",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationId",
+          "description": ""
         },
         {
           "name": "materialId",
@@ -245,7 +270,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/materialId",
-          "dataFormat": "String"
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "materialId",
+          "description": ""
         },
         {
           "name": "otherCost1",
@@ -255,7 +283,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/otherCost1",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "otherCost1",
+          "description": ""
         },
         {
           "name": "otherCost2",
@@ -265,7 +296,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/otherCost2",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "otherCost2",
+          "description": ""
         },
         {
           "name": "otherCost3",
@@ -275,7 +309,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/otherCost3",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "otherCost3",
+          "description": ""
         },
         {
           "name": "otherCost4",
@@ -285,7 +322,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/otherCost4",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "otherCost4",
+          "description": ""
         },
         {
           "name": "otherCost5",
@@ -295,7 +335,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/otherCost5",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "otherCost5",
+          "description": ""
         },
         {
           "name": "segment01",
@@ -305,7 +348,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/segment01",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
@@ -315,7 +361,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/segment02",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
@@ -325,7 +374,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/segment03",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
@@ -335,7 +387,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/segment04",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
@@ -345,7 +400,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/segment05",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "stockingUnitOfMeasure",
@@ -355,7 +413,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/stockingUnitOfMeasure",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "stockingUnitOfMeasure",
+          "description": ""
         },
         {
           "name": "totalCost",
@@ -365,7 +426,10 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/totalCost",
-          "dataFormat": "String"
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "totalCost",
+          "description": ""
         },
         {
           "name": "validFromDate",
@@ -374,7 +438,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/validFromDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "validFromDate",
+          "description": ""
         },
         {
           "name": "validToDate",
@@ -383,7 +450,10 @@
             "means.measurement.date"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/validToDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "validToDate",
+          "description": ""
         },
         {
           "name": "valuationDate",
@@ -392,9 +462,15 @@
             "means.measurement.date"
           ],
           "attributeContext": "materialCost/attributeContext/materialCost/valuationDate",
-          "dataFormat": "Date"
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "valuationDate",
+          "description": ""
         }
-      ]
+      ],
+      "displayName": "materialCost",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

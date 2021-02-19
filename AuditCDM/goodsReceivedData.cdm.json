@@ -2,299 +2,472 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "cdm:/foundations.cdm.json"
+      "corpusPath": "idw:/foundations.cdm.json"
     }
   ],
   "definitions": [
     {
       "entityName": "goodsReceivedData",
+      "extendsEntity": "CdmEntity",
       "hasAttributes": [
         {
           "name": "adjustmentAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "adjustmentAmount",
+          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier).\"\n"
         },
         {
           "name": "adjustmentDescription",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "adjustmentDescription",
+          "description": "\"If an adjustment to the receipt, a description\nof the reason for the adjustment.\"\n"
         },
         {
           "name": "adjustmentIndicator",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "adjustmentIndicator",
+          "description": "\"\"\"0\"\" if the transaction is the original shipment\ntransaction, \"\"1\"\" if the transaction is a\nshipment adjustment.\"\n"
         },
         {
           "name": "approvedBy",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
         },
         {
           "name": "approvedByDateTime",
           "purpose": "hasA",
-          "dataType": "date"
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "approvedByDateTime",
+          "description": "The DateTime the entry was approved.\n"
         },
         {
           "name": "businessUnitCode",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
         },
         {
           "name": "enteredBy",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record.\n"
         },
         {
           "name": "enteredDateTime",
           "purpose": "hasA",
-          "dataType": "date"
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "enteredDateTime",
+          "description": "\"The date the transaction was entered into the \nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\n date), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself.\"\n"
         },
         {
           "name": "goodsReceiptUniqueId",
-          "purpose": "hasA",
-          "dataType": "string"
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "goodsReceiptUniqueId",
+          "description": ""
         },
         {
           "name": "goodsReceivedAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "goodsReceivedAmount",
+          "description": "\"Customer purchasing the product. Must \nmatch a Customer_Account_ID in the\n Customer_Master_Listing_YYYYMMDD file.\"\n"
         },
         {
           "name": "goodsReceivedCurrencyAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "goodsReceivedCurrencyAmount",
+          "description": ""
         },
         {
           "name": "goodsReceivedCurrencyCode",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "goodsReceivedCurrencyCode",
+          "description": ""
         },
         {
           "name": "goodsReceivedExchangeRate",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "goodsReceivedExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "lastModifiedBy",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
         },
         {
           "name": "lastModifiedDateTime",
           "purpose": "hasA",
-          "dataType": "date"
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "lastModifiedDateTime",
+          "description": "The date and time the entry was last modified before posting.\n"
         },
         {
           "name": "lineAdjustmentAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineAdjustmentAmount",
+          "description": ""
         },
         {
           "name": "lineAdjustmentDescription",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineAdjustmentDescription",
+          "description": ""
         },
         {
           "name": "lineAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineAmount",
+          "description": "In the header's default currency.\n"
         },
         {
           "name": "lineCurrencyAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineCurrencyAmount",
+          "description": "\"Monetary amount for the line item in the\n receipt document related to the purchase \norder in local currency.\"\n"
         },
         {
           "name": "lineCurrencyCode",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineCurrencyCode",
+          "description": "\"The currency for local reporting\n requirements. See ISO 4217 coding.\"\n"
         },
         {
           "name": "lineExchangeRate",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
         },
         {
           "name": "linePurchaseOrderAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderAmount",
+          "description": ""
         },
         {
           "name": "linePurchaseOrderCurrencyAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderCurrencyAmount",
+          "description": "\"Monetary amount for the line item in the\npurchase order related to the receipt\nshipping document in local currency. If no\npurchase order, leave blank.\"\n"
         },
         {
           "name": "linePurchaseOrderCurrencyCode",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderCurrencyCode",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding. If no\npurchase order, leave blank.\"\n"
         },
         {
           "name": "linePurchaseOrderExchangeRate",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderExchangeRate",
+          "description": ""
         },
         {
           "name": "linePurchaseOrderLineId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderLineId",
+          "description": "\"Identifier for purchase order line number.\nMust match Purchase_Order_Line_ID\nused in\nPurchase_Orders_Lines_YYYYMMDD_\nYYYYMMDD file. If no purchase order,\nleave blank.\"\n"
         },
         {
           "name": "linePurchaseOrderQuantity",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderQuantity",
+          "description": "\"Purchase order line quantity. If no purchase \norder, leave blank.\"\n"
         },
         {
           "name": "linePurchaseOrderUnitofMeasure",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderUnitofMeasure",
+          "description": "\"Purchase order line base unit of measure. If\n no purchase order, leave blank.\"\n"
         },
         {
           "name": "linePurchaseOrderUnitPrice",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "linePurchaseOrderUnitPrice",
+          "description": "\"Purchase order line price per unit. If no \npurchase order, leave blank.\"\n"
         },
         {
           "name": "lineReceiptDocumentLineId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptDocumentLineId",
+          "description": "Reference line number on receipt document.\n"
         },
         {
           "name": "lineReceiptId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptId",
+          "description": "Unique identifier for each shipment received. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment.\n"
         },
         {
           "name": "lineReceiptProductBarCode",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptProductBarCode",
+          "description": "UPC or other general identifier.\n"
         },
         {
           "name": "lineReceiptProductDescription",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptProductDescription",
+          "description": "Product description (plain English) to indicate the name or other identifying characteristics of the product.\n"
         },
         {
           "name": "lineReceiptProductGroup01",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptProductGroup01",
+          "description": "Product descriptor #1, for example, tires or accessories.\n"
         },
         {
           "name": "lineReceiptProductGroup02",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptProductGroup02",
+          "description": "Product descriptor #2, for example, brand.\n"
         },
         {
           "name": "lineReceiptProductId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptProductId",
+          "description": "Identifier that is unique for each product.\n"
         },
         {
           "name": "lineReceiptQuantity",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptQuantity",
+          "description": "Item quantity received.\n"
         },
         {
           "name": "lineReceiptUnitOfMeasure",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptUnitOfMeasure",
+          "description": "Base unit of measure.\n"
         },
         {
           "name": "lineReceiptUnitPrice",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineReceiptUnitPrice",
+          "description": "Price per unit for item received.\n"
         },
         {
           "name": "postingStatus",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "postingStatus",
+          "description": "\"Status of the transaction's posting to the GL\n(for example, \"\"Posted,\"\" \"\"Not Posted\"\").\"\n"
         },
         {
           "name": "purchaseOrderAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "purchaseOrderAmount",
+          "description": ""
         },
         {
           "name": "purchaseOrderCurrencyAmount",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "purchaseOrderCurrencyAmount",
+          "description": "\"Transaction monetary amount in local\ncurrency. If no purchase order, leave blank.\"\n"
         },
         {
           "name": "purchaseOrderCurrencyCode",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "purchaseOrderCurrencyCode",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding. If no\npurchase order, leave blank.\"\n"
         },
         {
           "name": "purchaseOrderDate",
           "purpose": "hasA",
-          "dataType": "date"
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "purchaseOrderDate",
+          "description": ""
         },
         {
           "name": "purchaseOrderExchangeRate",
           "purpose": "hasA",
-          "dataType": "decimal"
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "purchaseOrderExchangeRate",
+          "description": ""
         },
         {
           "name": "purchaseOrderId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "purchaseOrderId",
+          "description": "\"Unique identifier for each purchase order.\nMust match Purchase_Order_ID in the\nPurchase_Orders_YYYYMMDD_YYYYMMD\nD file. If no purchase order, leave blank.\"\n"
         },
         {
           "name": "receiptDate",
           "purpose": "hasA",
-          "dataType": "date"
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "receiptDate",
+          "description": "Date of receipt (date received)\n"
         },
         {
           "name": "receiptDocumentId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "receiptDocumentId",
+          "description": "\"Reference number on receipt shipping\ndocument (company reference or logistics\ncompany identifier).\"\n"
         },
         {
           "name": "receiptFiscalYear",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "receiptFiscalYear",
+          "description": "Fiscal year in which the Receipt_Date occursâ€”YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).\n"
         },
         {
           "name": "receiptId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "receiptId",
+          "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction.\n"
         },
         {
           "name": "receiptPeriod",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "receiptPeriod",
+          "description": "Fiscal period in which the Receipt_Date occurs. Examples include W1â€“W53 for weekly periods, M1â€“M12 for monthly periods, and Q1â€“Q4 for quarterly periods.\n"
         },
         {
           "name": "segment01",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment02",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment03",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment04",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "segment05",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
         },
         {
           "name": "supplierId",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
         }
-      ]
+      ],
+      "displayName": "goodsReceivedData",
+      "description": ""
     }
   ]
 }

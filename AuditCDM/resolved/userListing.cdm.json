@@ -2,88 +2,101 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/userListing.cdm.json",
+      "corpusPath": "/UserListing.cdm.json",
       "moniker": "resolvedFrom"
     }
   ],
   "definitions": [
     {
-      "entityName": "userListing",
+      "entityName": "UserListing",
       "attributeContext": {
         "type": "entity",
-        "name": "userListing",
-        "definition": "resolvedFrom/userListing",
+        "name": "UserListing",
+        "definition": "resolvedFrom/UserListing",
         "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "UserListing/attributeContext/UserListing",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "UserListing/attributeContext/UserListing/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
           {
             "type": "attributeDefinition",
             "name": "department",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/department",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/department",
             "contents": [
-              "userListing/hasAttributes/department"
+              "UserListing/hasAttributes/department"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "firstName",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/firstName",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/firstName",
             "contents": [
-              "userListing/hasAttributes/firstName"
+              "UserListing/hasAttributes/firstName"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "lastName",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/lastName",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/lastName",
             "contents": [
-              "userListing/hasAttributes/lastName"
+              "UserListing/hasAttributes/lastName"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "roleResponsibility",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/roleResponsibility",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/roleResponsibility",
             "contents": [
-              "userListing/hasAttributes/roleResponsibility"
+              "UserListing/hasAttributes/roleResponsibility"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "title",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/title",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/title",
             "contents": [
-              "userListing/hasAttributes/title"
+              "UserListing/hasAttributes/title"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "userActiveModifiedDate",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/userActiveModifiedDate",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/userActiveModifiedDate",
             "contents": [
-              "userListing/hasAttributes/userActiveModifiedDate"
+              "UserListing/hasAttributes/userActiveModifiedDate"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "userActiveStatus",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/userActiveStatus",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/userActiveStatus",
             "contents": [
-              "userListing/hasAttributes/userActiveStatus"
+              "UserListing/hasAttributes/userActiveStatus"
             ]
           },
           {
             "type": "attributeDefinition",
             "name": "userId",
-            "parent": "userListing/attributeContext/userListing",
-            "definition": "resolvedFrom/userListing/hasAttributes/userId",
+            "parent": "UserListing/attributeContext/UserListing",
+            "definition": "resolvedFrom/UserListing/hasAttributes/userId",
             "contents": [
-              "userListing/hasAttributes/userId"
+              "UserListing/hasAttributes/userId"
             ]
           }
         ]
@@ -96,8 +109,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/department",
-          "dataFormat": "String"
+          "attributeContext": "UserListing/attributeContext/UserListing/department",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "department",
+          "description": "The department the person is part of (for example, accounting)."
         },
         {
           "name": "firstName",
@@ -106,8 +122,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/firstName",
-          "dataFormat": "String"
+          "attributeContext": "UserListing/attributeContext/UserListing/firstName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "firstName",
+          "description": "The first (given) name of the person."
         },
         {
           "name": "lastName",
@@ -116,8 +135,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/lastName",
-          "dataFormat": "String"
+          "attributeContext": "UserListing/attributeContext/UserListing/lastName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastName",
+          "description": "The last (family) name of the person."
         },
         {
           "name": "roleResponsibility",
@@ -126,8 +148,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/roleResponsibility",
-          "dataFormat": "String"
+          "attributeContext": "UserListing/attributeContext/UserListing/roleResponsibility",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "roleResponsibility",
+          "description": "The person’s functional role or primary responsibility (for example, accounts payable)."
         },
         {
           "name": "title",
@@ -136,8 +161,11 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/title",
-          "dataFormat": "String"
+          "attributeContext": "UserListing/attributeContext/UserListing/title",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "title",
+          "description": "The title of the person (for example, accounting manager)."
         },
         {
           "name": "userActiveModifiedDate",
@@ -145,18 +173,22 @@
             "is.dataFormat.date",
             "means.measurement.date"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/userActiveModifiedDate",
-          "dataFormat": "Date"
+          "attributeContext": "UserListing/attributeContext/UserListing/userActiveModifiedDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "userActiveModifiedDate",
+          "description": "The date of user activation or termination."
         },
         {
           "name": "userActiveStatus",
           "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
+            "is.dataFormat.boolean"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/userActiveStatus",
-          "dataFormat": "String"
+          "attributeContext": "UserListing/attributeContext/UserListing/userActiveStatus",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "displayName": "userActiveStatus",
+          "description": "The status of users (for identification of transactions by inactive users). The value of this field should be either “Active” or “Inactive” for flat file data; for XBRL GL, this is a Boolean, in which active is “true” and inactive is “false.”"
         },
         {
           "name": "userId",
@@ -165,10 +197,16 @@
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "userListing/attributeContext/userListing/userId",
-          "dataFormat": "String"
+          "attributeContext": "UserListing/attributeContext/UserListing/userId",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "userId",
+          "description": "A unique identifier of individuals entering transactions into the ERP system. This field is used to join information in this table to other tables based on the fields Entered_By, Last_Modified_By, and Approved_By."
         }
-      ]
+      ],
+      "displayName": "UserListing",
+      "description": "",
+      "version": "1.0"
     }
   ]
 }

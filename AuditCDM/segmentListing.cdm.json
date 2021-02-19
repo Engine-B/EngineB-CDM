@@ -2,24 +2,32 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "cdm:/foundations.cdm.json"
+      "corpusPath": "idw:/foundations.cdm.json"
     }
   ],
   "definitions": [
     {
       "entityName": "segmentListing",
+      "extendsEntity": "CdmEntity",
       "hasAttributes": [
         {
           "name": "segment0XDescription",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment0XDescription",
+          "description": ""
         },
         {
           "name": "segment0XValue",
-          "purpose": "hasA",
-          "dataType": "string"
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "segment0XValue",
+          "description": "Value of Segment0X (X may equal 1 to 5)."
         }
-      ]
+      ],
+      "displayName": "segmentListing",
+      "description": ""
     }
   ]
 }
