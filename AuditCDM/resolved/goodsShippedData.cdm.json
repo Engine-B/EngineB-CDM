@@ -563,7 +563,7 @@
           "isNullable": true,
           "dataFormat": "Decimal",
           "displayName": "adjustmentAmount",
-          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier)\"\n"
+          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier).\"\n"
         },
         {
           "name": "adjustmentDescription",

@@ -2,7 +2,7 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "idw:/foundations.cdm.json"
+      "corpusPath": "cdm:/foundations.cdm.json"
     }
   ],
   "definitions": [
@@ -16,7 +16,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "adjustmentAmount",
-          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier)\"\n"
+          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier).\"\n"
         },
         {
           "name": "adjustmentDescription",

@@ -2,7 +2,7 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/audit.cdm.json",
+      "corpusPath": "/glDetail.cdm.json",
       "moniker": "resolvedFrom"
     }
   ],
