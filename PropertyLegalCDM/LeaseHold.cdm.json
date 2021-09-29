@@ -1,0 +1,65 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LeaseHold",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LeaseId",
+          "description": ""
+        },
+        {
+          "name": "LeaseholdId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "LeaseholdId",
+          "description": ""
+        },
+        {
+          "name": "LeaseholdStartDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "LeaseholdStartDate",
+          "description": ""
+        },
+        {
+          "name": "LeaseholdEndDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "LeaseholdEndDate",
+          "description": ""
+        },
+        {
+          "name": "Lessor",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Lessor",
+          "description": ""
+        },
+        {
+          "name": "Lessee",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Lessee",
+          "description": ""
+        }
+      ],
+      "displayName": "LeaseHold",
+      "description": ""
+    }
+  ]
+}

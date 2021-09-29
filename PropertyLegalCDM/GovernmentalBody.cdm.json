@@ -1,0 +1,65 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "GovernmentalBody",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "ContractId",
+          "description": "The unique identifier of a contract"
+        },
+        {
+          "name": "TransactionId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TransactionId",
+          "description": ""
+        },
+        {
+          "name": "GovernmentalBodyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "GovernmentalBodyId",
+          "description": "The unique identifier of an Governmental Body."
+        },
+        {
+          "name": "GovBodyName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "GovBodyName",
+          "description": ""
+        },
+        {
+          "name": "GovBodyAddress",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "GovBodyAddress",
+          "description": ""
+        },
+        {
+          "name": "GovBodyURL",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "GovBodyURL",
+          "description": ""
+        }
+      ],
+      "displayName": "GovernmentalBody",
+      "description": ""
+    }
+  ]
+}

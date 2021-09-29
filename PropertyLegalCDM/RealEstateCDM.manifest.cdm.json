@@ -1,0 +1,952 @@
+{
+  "manifestName": "RealEstateCDM.manifest.cdm.json",
+  "entities": [
+    {
+      "entityName": "PropertyType",
+      "entityPath": "PropertyType.cdm.json/PropertyType",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Individual Customer Credit & Collections,Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "LeaseholdImprovementType",
+      "entityPath": "LeaseholdImprovementType.cdm.json/LeaseholdImprovementType",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "LeaseholdImprovement",
+      "entityPath": "LeaseholdImprovement.cdm.json/LeaseholdImprovement",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "Contract",
+      "entityPath": "Contract.cdm.json/Contract",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Contract"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Contract,Customer Account,Document Management,Human Resources & Payroll,Individual Customer,Individual Customer Credit & Collections,Inventory,Legal Entity Customer,Legal Entity Customer Credit & Collections,Party,Product,Property & Equipment,Purchasing,Shipping,Vendor"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "Floor",
+      "entityPath": "Floor.cdm.json/Floor",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "Building",
+      "entityPath": "Building.cdm.json/Building",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "ExtraordinaryRepairPartyRelationshipType",
+      "entityPath": "ExtraordinaryRepairPartyRelationshipType.cdm.json/ExtraordinaryRepairPartyRelationshipType",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "ExtraordinaryRepairType",
+      "entityPath": "ExtraordinaryRepairType.cdm.json/ExtraordinaryRepairType",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "ExtraordinaryRepair",
+      "entityPath": "ExtraordinaryRepair.cdm.json/ExtraordinaryRepair",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "RelatedProperty",
+      "entityPath": "RelatedProperty.cdm.json/RelatedProperty",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "PropertyLocation",
+      "entityPath": "PropertyLocation.cdm.json/PropertyLocation",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "PropertyLocationCost",
+      "entityPath": "PropertyLocationCost.cdm.json/PropertyLocationCost",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "PropertyLocationPartyContract",
+      "entityPath": "PropertyLocationPartyContract.cdm.json/PropertyLocationPartyContract",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "PropertyLocationStatus",
+      "entityPath": "PropertyLocationStatus.cdm.json/PropertyLocationStatus",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "PropertyLocationStatusType",
+      "entityPath": "PropertyLocationStatusType.cdm.json/PropertyLocationStatusType",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "PropertyLocationFunction",
+      "entityPath": "PropertyLocationFunction.cdm.json/PropertyLocationFunction",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "Property",
+      "entityPath": "Property.cdm.json/Property",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Individual Customer Credit & Collections,Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "TitleStatus",
+      "entityPath": "TitleStatus.cdm.json/TitleStatus",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Individual Customer Credit & Collections,Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "Space",
+      "entityPath": "Space.cdm.json/Space",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "SpaceClassification",
+      "entityPath": "SpaceClassification.cdm.json/SpaceClassification",
+      "type": "LocalEntity",
+      "exhibitTraits": [
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.nativeTo.businessArea"
+        },
+        {
+          "arguments": [
+            "Property & Equipment"
+          ],
+          "traitReference": "is.from.businessArea"
+        }
+      ]
+    },
+    {
+      "entityName": "Duration",
+      "entityPath": "Duration.cdm.json/Duration",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Component",
+      "entityPath": "Component.cdm.json/Component",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "SubjectType",
+      "entityPath": "SubjectType.cdm.json/SubjectType",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Address",
+      "entityPath": "Address.cdm.json/Address",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "LeaseHold",
+      "entityPath": "LeaseHold.cdm.json/LeaseHold",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "SaleInformationLandLease",
+      "entityPath": "SaleInformationLandLease.cdm.json/SaleInformationLandLease",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "LeaseholdNotices",
+      "entityPath": "LeaseholdNotices.cdm.json/LeaseholdNotices",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Unit",
+      "entityPath": "Unit.cdm.json/Unit",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "PropertyConstuctionForm",
+      "entityPath": "PropertyConstuctionForm.cdm.json/PropertyConstuctionForm",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "LeaseTerm",
+      "entityPath": "LeaseTerm.cdm.json/LeaseTerm",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "GovernmentalBody",
+      "entityPath": "GovernmentalBody.cdm.json/GovernmentalBody",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "FeatureCount",
+      "entityPath": "FeatureCount.cdm.json/FeatureCount",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Changes",
+      "entityPath": "Changes.cdm.json/Changes",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "AlterationType",
+      "entityPath": "AlterationType.cdm.json/AlterationType",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Lease",
+      "entityPath": "Lease.cdm.json/Lease",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "TitleHolding",
+      "entityPath": "TitleHolding.cdm.json/TitleHolding",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Title",
+      "entityPath": "Title.cdm.json/Title",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "TitleCharges",
+      "entityPath": "TitleCharges.cdm.json/TitleCharges",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Parking",
+      "entityPath": "Parking.cdm.json/Parking",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Information",
+      "entityPath": "Information.cdm.json/Information",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "LicenceToAlter",
+      "entityPath": "LicenceToAlter.cdm.json/LicenceToAlter",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Water",
+      "entityPath": "Water.cdm.json/Water",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "Utility",
+      "entityPath": "Utility.cdm.json/Utility",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "RegisteredProprietor",
+      "entityPath": "RegisteredProprietor.cdm.json/RegisteredProprietor",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    }
+  ],
+  "relationships": [
+    {
+      "fromEntity": "Building.cdm.json/Building",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Property.cdm.json/Property",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "ExtraordinaryRepair.cdm.json/ExtraordinaryRepair",
+      "fromEntityAttribute": "ExtraordinaryRepairTypeId",
+      "toEntity": "ExtraordinaryRepairType.cdm.json/ExtraordinaryRepairType",
+      "toEntityAttribute": "ExtraordinaryRepairTypeId"
+    },
+    {
+      "fromEntity": "ExtraordinaryRepair.cdm.json/ExtraordinaryRepair",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "Contract.cdm.json/Contract",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Floor.cdm.json/Floor",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Building.cdm.json/Building",
+      "toEntityAttribute": "PropertyId",
+      "name": "Building_Floor_92a6f734a2730846623ac83d28073ada"
+    },
+    {
+      "fromEntity": "Floor.cdm.json/Floor",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Property.cdm.json/Property",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Floor.cdm.json/Floor",
+      "fromEntityAttribute": "BuildingId",
+      "toEntity": "Building.cdm.json/Building",
+      "toEntityAttribute": "BuildingId",
+      "name": "Building_Floor_92a6f734a2730846623ac83d28073ada"
+    },
+    {
+      "fromEntity": "LeaseholdImprovement.cdm.json/LeaseholdImprovement",
+      "fromEntityAttribute": "LeaseholdImprovementTypeId",
+      "toEntity": "LeaseholdImprovementType.cdm.json/LeaseholdImprovementType",
+      "toEntityAttribute": "LeaseholdImprovementTypeId"
+    },
+    {
+      "fromEntity": "LeaseholdImprovement.cdm.json/LeaseholdImprovement",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "Contract.cdm.json/Contract",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyTypeId",
+      "toEntity": "PropertyType.cdm.json/PropertyType",
+      "toEntityAttribute": "PropertyTypeId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "TitleStatusId",
+      "toEntity": "TitleStatus.cdm.json/TitleStatus",
+      "toEntityAttribute": "TitleStatusId"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Building.cdm.json/Building",
+      "toEntityAttribute": "PropertyId",
+      "name": "Building_PropertyLocation_92a6f734a2730846623ac83d28073ada"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Floor.cdm.json/Floor",
+      "toEntityAttribute": "PropertyId",
+      "name": "Floor_PropertyLocation_4a040fd301faadacdc210338da42ea6f"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Property.cdm.json/Property",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Space.cdm.json/Space",
+      "toEntityAttribute": "PropertyId",
+      "name": "Space_PropertyLocation_e0fd5a1c76bb40ecb6acc3cc8c10cebe"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "BuildingId",
+      "toEntity": "Building.cdm.json/Building",
+      "toEntityAttribute": "BuildingId",
+      "name": "Building_PropertyLocation_92a6f734a2730846623ac83d28073ada"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "FloorId",
+      "toEntity": "Floor.cdm.json/Floor",
+      "toEntityAttribute": "FloorId",
+      "name": "Floor_PropertyLocation_4a040fd301faadacdc210338da42ea6f"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "SpaceId",
+      "toEntity": "Space.cdm.json/Space",
+      "toEntityAttribute": "SpaceId",
+      "name": "Space_PropertyLocation_e0fd5a1c76bb40ecb6acc3cc8c10cebe"
+    },
+    {
+      "fromEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "fromEntityAttribute": "PropertyLocationFunctionId",
+      "toEntity": "PropertyLocationFunction.cdm.json/PropertyLocationFunction",
+      "toEntityAttribute": "PropertyLocationFunctionId"
+    },
+    {
+      "fromEntity": "PropertyLocationCost.cdm.json/PropertyLocationCost",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "toEntityAttribute": "PropertyId",
+      "name": "PropertyLocation_PropertyLocationCost_3e7eebb509f376d82a2a77554e167ada"
+    },
+    {
+      "fromEntity": "PropertyLocationCost.cdm.json/PropertyLocationCost",
+      "fromEntityAttribute": "PropertyLocationId",
+      "toEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "toEntityAttribute": "PropertyLocationId",
+      "name": "PropertyLocation_PropertyLocationCost_3e7eebb509f376d82a2a77554e167ada"
+    },
+    {
+      "fromEntity": "PropertyLocationPartyContract.cdm.json/PropertyLocationPartyContract",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "Contract.cdm.json/Contract",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "PropertyLocationStatus.cdm.json/PropertyLocationStatus",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "toEntityAttribute": "PropertyId",
+      "name": "PropertyLocation_PropertyLocationStatus_3e7eebb509f376d82a2a77554e167ada"
+    },
+    {
+      "fromEntity": "PropertyLocationStatus.cdm.json/PropertyLocationStatus",
+      "fromEntityAttribute": "PropertyLocationId",
+      "toEntity": "PropertyLocation.cdm.json/PropertyLocation",
+      "toEntityAttribute": "PropertyLocationId",
+      "name": "PropertyLocation_PropertyLocationStatus_3e7eebb509f376d82a2a77554e167ada"
+    },
+    {
+      "fromEntity": "PropertyLocationStatus.cdm.json/PropertyLocationStatus",
+      "fromEntityAttribute": "PropertyLocationStatusId",
+      "toEntity": "PropertyLocationStatusType.cdm.json/PropertyLocationStatusType",
+      "toEntityAttribute": "PropertyLocationStatusId"
+    },
+    {
+      "fromEntity": "RelatedProperty.cdm.json/RelatedProperty",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Property.cdm.json/Property",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "RelatedProperty.cdm.json/RelatedProperty",
+      "fromEntityAttribute": "RelatedPropertyId",
+      "toEntity": "Property.cdm.json/Property",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Space.cdm.json/Space",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Floor.cdm.json/Floor",
+      "toEntityAttribute": "PropertyId",
+      "name": "Floor_Space_4a040fd301faadacdc210338da42ea6f"
+    },
+    {
+      "fromEntity": "Space.cdm.json/Space",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Property.cdm.json/Property",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Space.cdm.json/Space",
+      "fromEntityAttribute": "FloorId",
+      "toEntity": "Floor.cdm.json/Floor",
+      "toEntityAttribute": "FloorId",
+      "name": "Floor_Space_4a040fd301faadacdc210338da42ea6f"
+    },
+    {
+      "fromEntity": "Space.cdm.json/Space",
+      "fromEntityAttribute": "SpaceClassificationId",
+      "toEntity": "SpaceClassification.cdm.json/SpaceClassification",
+      "toEntityAttribute": "SpaceClassificationId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Water.cdm.json/Water",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "LicenceToAlter.cdm.json/LicenceToAlter",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "TitleId",
+      "toEntity": "Title.cdm.json/Title",
+      "toEntityAttribute": "TitleId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "RelatedProperty.cdm.json/RelatedProperty",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "UnitId",
+      "toEntity": "Unit.cdm.json/Unit",
+      "toEntityAttribute": "UnitId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Building.cdm.json/Building",
+      "toEntityAttribute": "BuildingId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "Contract.cdm.json/Contract",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Component.cdm.json/Component",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "SubjectType.cdm.json/SubjectType",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Address.cdm.json/Address",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Changes.cdm.json/Changes",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "AlterationType.cdm.json/AlterationType",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Information.cdm.json/Information",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "Utility.cdm.json/Utility",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Property.cdm.json/Property",
+      "fromEntityAttribute": "PropertyId",
+      "toEntity": "RegisteredProprietor.cdm.json/RegisteredProprietor",
+      "toEntityAttribute": "PropertyId"
+    },
+    {
+      "fromEntity": "Contract.cdm.json/Contract",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "LicenceToAlter.cdm.json/LicenceToAlter",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Contract.cdm.json/Contract",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "GovernmentalBody.cdm.json/GovernmentalBody",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Contract.cdm.json/Contract",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "PropertyConstuctionForm.cdm.json/PropertyConstuctionForm",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Contract.cdm.json/Contract",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "Lease.cdm.json/Lease",
+      "toEntityAttribute": "LeaseId"
+    },
+    {
+      "fromEntity": "Contract.cdm.json/Contract",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "Duration.cdm.json/Duration",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Contract.cdm.json/Contract",
+      "fromEntityAttribute": "ContractId",
+      "toEntity": "ExtraordinaryRepairType.cdm.json/ExtraordinaryRepairType",
+      "toEntityAttribute": "ContractId"
+    },
+    {
+      "fromEntity": "Building.cdm.json/Building",
+      "fromEntityAttribute": "BuildingId",
+      "toEntity": "Parking.cdm.json/Parking",
+      "toEntityAttribute": "BuildingId"
+    },
+    {
+      "fromEntity": "Building.cdm.json/Building",
+      "fromEntityAttribute": "BuildingId",
+      "toEntity": "Floor.cdm.json/Floor",
+      "toEntityAttribute": "BuildingId"
+    },
+    {
+      "fromEntity": "Building.cdm.json/Building",
+      "fromEntityAttribute": "BuildingId",
+      "toEntity": "FeatureCount.cdm.json/FeatureCount",
+      "toEntityAttribute": "BuildingId"
+    },
+    {
+      "fromEntity": "Building.cdm.json/Building",
+      "fromEntityAttribute": "BuildingId",
+      "toEntity": "Information.cdm.json/Information",
+      "toEntityAttribute": "BuildingId"
+    },
+    {
+      "fromEntity": "Lease.cdm.json/Lease",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "LeaseTerm.cdm.json/LeaseTerm",
+      "toEntityAttribute": "LeaseId"
+    },
+    {
+      "fromEntity": "Lease.cdm.json/Lease",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "LeaseholdNotices.cdm.json/LeaseholdNotices",
+      "toEntityAttribute": "LeaseId"
+    },
+    {
+      "fromEntity": "Lease.cdm.json/Lease",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "SaleInformationLandLease.cdm.json/SaleInformationLandLease",
+      "toEntityAttribute": "LesseeId"
+    },
+    {
+      "fromEntity": "Lease.cdm.json/Lease",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "LeaseHold.cdm.json/LeaseHold",
+      "toEntityAttribute": "LeaseId"
+    },
+    {
+      "fromEntity": "Lease.cdm.json/Lease",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "LeaseholdImprovementType.cdm.json/LeaseholdImprovementType",
+      "toEntityAttribute": "LeaseId"
+    },
+    {
+      "fromEntity": "Lease.cdm.json/Lease",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "LeaseholdImprovement.cdm.json/LeaseholdImprovement",
+      "toEntityAttribute": "LeaseId"
+    },
+    {
+      "fromEntity": "ExtraordinaryRepair.cdm.json/ExtraordinaryRepair",
+      "fromEntityAttribute": "RepairId",
+      "toEntity": "ExtraordinaryRepairPartyRelationshipType.cdm.json/ExtraordinaryRepairPartyRelationshipType",
+      "toEntityAttribute": "RepairId"
+    },
+    {
+      "fromEntity": "AlterationType.cdm.json/AlterationType",
+      "fromEntityAttribute": "RepairId",
+      "toEntity": "ExtraordinaryRepair.cdm.json/ExtraordinaryRepair",
+      "toEntityAttribute": "RepairId"
+    },
+    {
+      "fromEntity": "TitleHolding.cdm.json/TitleHolding",
+      "fromEntityAttribute": "LeaseId",
+      "toEntity": "Lease.cdm.json/Lease",
+      "toEntityAttribute": "LeaseId"
+    },
+    {
+      "fromEntity": "Title.cdm.json/Title",
+      "fromEntityAttribute": "TitleId",
+      "toEntity": "TitleHolding.cdm.json/TitleHolding",
+      "toEntityAttribute": "TitleId"
+    },
+    {
+      "fromEntity": "Title.cdm.json/Title",
+      "fromEntityAttribute": "TitleId",
+      "toEntity": "TitleStatus.cdm.json/TitleStatus",
+      "toEntityAttribute": "TitleId"
+    },
+    {
+      "fromEntity": "Title.cdm.json/Title",
+      "fromEntityAttribute": "TitleId",
+      "toEntity": "TitleCharges.cdm.json/TitleCharges",
+      "toEntityAttribute": "TitleId"
+    }
+  ],
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "schema": "",
+  "imports": [],
+  "explanation": "",
+  "subManifests": []
+}

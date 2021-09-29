@@ -1,0 +1,89 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Contract",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "LeaseId",
+          "description": ""
+        },
+        {
+          "name": "ContractId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Contract ID",
+          "description": "The unique identifier of a Contract."
+        },
+        {
+          "name": "ContractDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Contract Description",
+          "description": "The description of the contract.",
+          "maximumLength": 512
+        },
+        {
+          "name": "ContractSignedDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Contract Signed Date",
+          "description": "The date that the Contract was signed."
+        },
+        {
+          "name": "ContractEffectiveStartDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Contract Effective Start Date",
+          "description": "The date that the Contract goes into effect."
+        },
+        {
+          "name": "ContractEffectiveEndDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Contract Effective End Date",
+          "description": "The date that the Contract is terminated or expires."
+        },
+        {
+          "name": "ContractPeriodMonths",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Contract Period Months",
+          "description": "The number of months that the contract is to be in effect."
+        },
+        {
+          "name": "AutomaticRenewalIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Automatic Renewal Indicator",
+          "description": "Indicates that the Contract is to be automatically renewed upon expiration."
+        },
+        {
+          "name": "ContractTypeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Contract Type ID",
+          "description": "The unique identifier of a Contract Type."
+        }
+      ],
+      "displayName": "Contract",
+      "description": "A written agreement between two or more parties specifying the terms and conditions under which business obligations will be performed."
+    }
+  ]
+}

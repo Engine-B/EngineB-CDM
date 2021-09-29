@@ -1,0 +1,137 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Changes",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "ChangeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "ChangeId",
+          "description": ""
+        },
+        {
+          "name": "ChangeBuildingWorkTear",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "ChangeBuildingWorkTear",
+          "description": ""
+        },
+        {
+          "name": "ChangeOfUseYear",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "ChangeOfUseYear",
+          "description": ""
+        },
+        {
+          "name": "SubDivisionYear",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "SubDivisionYear",
+          "description": ""
+        },
+        {
+          "name": "ConversionYear",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "ConversionYear",
+          "description": ""
+        },
+        {
+          "name": "BusinessActivitiesYear",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "BusinessActivitiesYear",
+          "description": ""
+        },
+        {
+          "name": "GlazingReplacementYear",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "GlazingReplacementYear",
+          "description": ""
+        },
+        {
+          "name": "BuildingWorkIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "BuildingWorkIndicator",
+          "description": ""
+        },
+        {
+          "name": "OtherConsentRequestedDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "OtherConsentRequestedDescription",
+          "description": ""
+        },
+        {
+          "name": "ChangeOfUseIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "ChangeOfUseIndicator",
+          "description": ""
+        },
+        {
+          "name": "ConsentNotRequestedReason",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ConsentNotRequestedReason",
+          "description": ""
+        },
+        {
+          "name": "ConversionIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "ConversionIndicator",
+          "description": ""
+        },
+        {
+          "name": "BusinessActivitiesIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "BusinessActivitiesIndicator",
+          "description": ""
+        },
+        {
+          "name": "AttachmentId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "AttachmentId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        }
+      ],
+      "displayName": "Changes",
+      "description": ""
+    }
+  ]
+}

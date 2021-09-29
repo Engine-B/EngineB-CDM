@@ -1,0 +1,313 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Lease",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "ContraactId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "ContraactId",
+          "description": ""
+        },
+        {
+          "name": "LandloardId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LandloardId",
+          "description": ""
+        },
+        {
+          "name": "ApartmentLeaseInformation",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ApartmentLeaseInformation",
+          "description": ""
+        },
+        {
+          "name": "AvailableLeaseSpace",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "AvailableLeaseSpace",
+          "description": ""
+        },
+        {
+          "name": "ComparableLease",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ComparableLease",
+          "description": ""
+        },
+        {
+          "name": "InterestLease",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "InterestLease",
+          "description": ""
+        },
+        {
+          "name": "ComparableLeaseInformation",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ComparableLeaseInformation",
+          "description": ""
+        },
+        {
+          "name": "LandLease",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LandLease",
+          "description": ""
+        },
+        {
+          "name": "LeaseAbstract",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseAbstract",
+          "description": ""
+        },
+        {
+          "name": "LeaseCharacteristics",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseCharacteristics",
+          "description": ""
+        },
+        {
+          "name": "LeaseCharges",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "LeaseCharges",
+          "description": ""
+        },
+        {
+          "name": "LeaseConcessions",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseConcessions",
+          "description": ""
+        },
+        {
+          "name": "LeaseConfirmation",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "LeaseConfirmation",
+          "description": ""
+        },
+        {
+          "name": "LeaseContractDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseContractDescription",
+          "description": ""
+        },
+        {
+          "name": "LeaseEventOrRight",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseEventOrRight",
+          "description": ""
+        },
+        {
+          "name": "LeaseExpense",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LeaseExpense",
+          "description": ""
+        },
+        {
+          "name": "LeaseHistory",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseHistory",
+          "description": ""
+        },
+        {
+          "name": "LeaseIncome",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "LeaseIncome",
+          "description": ""
+        },
+        {
+          "name": "LeaseInformation",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseInformation",
+          "description": ""
+        },
+        {
+          "name": "LeaseResponsibility",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseResponsibility",
+          "description": ""
+        },
+        {
+          "name": "LeaseType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseType",
+          "description": ""
+        },
+        {
+          "name": "LeaseholdInformationForm",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseholdInformationForm",
+          "description": "Leasehold Information Form Send use case rendition\n"
+        },
+        {
+          "name": "LeaseholdInformationFormSend",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LeaseholdInformationFormSend",
+          "description": "Leasehold Information Form Send use case rendition\n"
+        },
+        {
+          "name": "MarketLeaseAssumptionTable",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "MarketLeaseAssumptionTable",
+          "description": ""
+        },
+        {
+          "name": "MiscellaneousTenantCovenants",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "MiscellaneousTenantCovenants",
+          "description": ""
+        },
+        {
+          "name": "GrossLeasableArea",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "GrossLeasableArea",
+          "description": ""
+        },
+        {
+          "name": "OCLease",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "OCLease",
+          "description": ""
+        },
+        {
+          "name": "TenantsLeaseGuarantee",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "TenantsLeaseGuarantee",
+          "description": "Details about the guarantee within the lease with respect to the Tenant's obligations."
+        },
+        {
+          "name": "SendLease",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SendLease",
+          "description": ""
+        },
+        {
+          "name": "SendLeaseAbstract",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SendLeaseAbstract",
+          "description": ""
+        },
+        {
+          "name": "SendLeaseContext",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SendLeaseContext",
+          "description": ""
+        },
+        {
+          "name": "LeasorId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LeasorId",
+          "description": ""
+        },
+        {
+          "name": "Leasor",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Leasor",
+          "description": ""
+        },
+        {
+          "name": "LeaseId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "LeaseId",
+          "description": "The unique identifier of a lease\n"
+        },
+        {
+          "name": "CommercialLease",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "CommercialLease",
+          "description": ""
+        },
+        {
+          "name": "ResidentialLease",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ResidentialLease",
+          "description": ""
+        },
+        {
+          "name": "ContractingOut",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ContractingOut",
+          "description": ""
+        }
+      ],
+      "displayName": "Lease",
+      "description": " A legal document which confers a right on one person (called a tenant or lessee) to possess property belonging to another person (called a landlord or lessor) to the exclusion of the owner landlord."
+    }
+  ]
+}

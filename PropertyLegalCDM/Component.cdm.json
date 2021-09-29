@@ -1,0 +1,73 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Component",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "ComponentCertification",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ComponentCertification",
+          "description": ""
+        },
+        {
+          "name": "CompanentId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "CompanentId",
+          "description": ""
+        },
+        {
+          "name": "ComponentAssetType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ComponentAssetType",
+          "description": ""
+        },
+        {
+          "name": "ComponentAssetList",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ComponentAssetList",
+          "description": ""
+        },
+        {
+          "name": "ComponentAsset",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ComponentAsset",
+          "description": ""
+        },
+        {
+          "name": "AssetId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "AssetId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        }
+      ],
+      "displayName": "Component",
+      "description": ""
+    }
+  ]
+}

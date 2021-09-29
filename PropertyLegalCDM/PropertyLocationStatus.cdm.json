@@ -1,0 +1,123 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyLocationStatus",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PeriodStartTimestamp",
+          "purpose": "identifiedBy",
+          "dataType": "dateTime",
+          "displayName": "Period Start Timestamp",
+          "description": "The period start timestamp of the property location status."
+        },
+        {
+          "name": "PeriodEndTimestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime",
+          "isNullable": true,
+          "displayName": "Period End Timestamp",
+          "description": "The period end timestamp of the property location status."
+        },
+        {
+          "name": "PropertyLocationStatusNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Location Status Note",
+          "description": "A note, comment or additional information regarding the property location status.",
+          "maximumLength": 1024
+        },
+        {
+          "entity": {
+            "entityReference": "PropertyLocation",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "PropertyLocation/(resolvedAttributes)/PropertyId"
+                ]
+              }
+            ]
+          },
+          "name": "PropertyId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "PropertyId",
+                "purpose": "identifiedBy",
+                "dataType": "integer",
+                "displayName": "Property ID",
+                "description": "The unique identifier of a Property."
+              }
+            }
+          }
+        },
+        {
+          "entity": {
+            "entityReference": "PropertyLocation",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "PropertyLocation/(resolvedAttributes)/PropertyLocationId"
+                ]
+              }
+            ]
+          },
+          "name": "PropertyLocationId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "PropertyLocationId",
+                "purpose": "identifiedBy",
+                "dataType": "integer",
+                "displayName": "Property Location ID",
+                "description": "The unique identifier of a Property Location."
+              }
+            }
+          }
+        },
+        {
+          "entity": {
+            "entityReference": "PropertyLocationStatusType",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "PropertyLocationStatusType/(resolvedAttributes)/PropertyLocationStatusId"
+                ]
+              }
+            ]
+          },
+          "name": "PropertyLocationStatusId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "PropertyLocationStatusId",
+                "purpose": "identifiedBy",
+                "dataType": "integer",
+                "displayName": "Property Location Status ID",
+                "description": "The unique identifier of a Facility Floorplan Location Status."
+              }
+            }
+          }
+        }
+      ],
+      "displayName": "Property Location Status",
+      "description": "The status of a specific Property Location."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LicenceToAlter",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "LicenceToAlterId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "LicenceToAlterId",
+          "description": ""
+        },
+        {
+          "name": "PropertyAlterationId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyAlterationId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        },
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "ContractId",
+          "description": ""
+        },
+        {
+          "name": "PropertyAterationDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PropertyAterationDescription",
+          "description": ""
+        },
+        {
+          "name": "PropertyAlterationStartTimestamp",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "PropertyAlterationStartTimestamp",
+          "description": ""
+        },
+        {
+          "name": "PropertyAlterationEndTimestamp",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "PropertyAlterationEndTimestamp",
+          "description": ""
+        },
+        {
+          "name": "PropertyAlterationEstimatedCost",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyAlterationEstimatedCost",
+          "description": ""
+        },
+        {
+          "name": "PropertyAlterationNotes",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PropertyAlterationNotes",
+          "description": ""
+        },
+        {
+          "name": "AlterationsTypeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "AlterationsTypeId",
+          "description": ""
+        },
+        {
+          "name": "LocationId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LocationId",
+          "description": ""
+        }
+      ],
+      "displayName": "LicenceToAlter",
+      "description": ""
+    }
+  ]
+}

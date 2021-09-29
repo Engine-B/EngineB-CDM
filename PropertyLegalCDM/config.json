@@ -1,0 +1,27 @@
+{
+  "defaultNamespace": "idw",
+  "adapters": [
+    {
+      "type": "adls",
+      "config": {
+        "hostname": "stdemocompanyaccount2.dfs.core.windows.net",
+        "root": "/idwrealestate/cdmschema",
+        "timeout": 600000.0,
+        "maximumTimeout": 60000.0,
+        "numberOfRetries": 3
+      },
+      "namespace": "adls"
+    },
+    {
+      "type": "adls",
+      "config": {
+        "hostname": "builtinmodels.dfs.core.windows.net",
+        "root": "/data/Retail",
+        "timeout": 600000.0,
+        "maximumTimeout": 60000.0,
+        "numberOfRetries": 3
+      },
+      "namespace": "idw"
+    }
+  ]
+}

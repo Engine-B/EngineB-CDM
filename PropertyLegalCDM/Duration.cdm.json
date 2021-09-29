@@ -1,0 +1,97 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Duration",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "DurationId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "DurationId",
+          "description": "Unique Id that describes a period of time in various units from seconds to years\n"
+        },
+        {
+          "name": "description",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "description",
+          "description": "A narrative description of this duration to be included IN ADDITION to the specific duration using the other attributes of this entity.\n"
+        },
+        {
+          "name": "years",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "years",
+          "description": "the number of complete years in this duration. When calculating an end date by adding this duration to a start date, the number of years are added first, before any other duration attributes \n"
+        },
+        {
+          "name": "months",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "months",
+          "description": "the number of  complete months in this duration. When calcylating an end date by adding this duration to a start date, the number of years are added first, then the number of months, before any other duration attributes. \n"
+        },
+        {
+          "name": "weeks",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "weeks",
+          "description": "The number of complete weeks in this duration. When calculating an end date by adding this duration to a start date, the number of years are added first, then the months, then the weeks, before any other duration attributes.\n"
+        },
+        {
+          "name": "days",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "days",
+          "description": "The number of complete days in this duration. When calculating an end date by adding this duration to a start date, the number of years are added first, then the months, then weeks, then days, then hours, before any other duration attributes. \n"
+        },
+        {
+          "name": "hours",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "hours",
+          "description": "The number of complete hours in this duration. When calculating an end date by adding this duration to a start date, the number of years are added first, then the months, then weeks, then days, then hours, before any other duration attributes. \n"
+        },
+        {
+          "name": "Minutes",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Minutes",
+          "description": "The number of complete minutes in this duration. When calculating an end date by adding this duration to a start date, the number of years are added first, then the months, then weeks, then days, then hours, then minutes, before any other duration attributes \n"
+        },
+        {
+          "name": "Seconds",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Seconds",
+          "description": "The number of complete seconds in this duration. When calculating an end date by adding this duration to a start date, the number of years are added first, then the months, then weeks, then days, then hours, then minutes and finally seconds. \n"
+        },
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "ContractId",
+          "description": ""
+        }
+      ],
+      "displayName": "Duration",
+      "description": "Unique Id that describes a period of time in various units from seconds to years."
+    }
+  ]
+}

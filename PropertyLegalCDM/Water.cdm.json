@@ -1,0 +1,73 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Water",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "WaterManagmentId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "WaterManagmentId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        },
+        {
+          "name": "ExternallyRecycledPercent",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "ExternallyRecycledPercent",
+          "description": "Percentage of recycled water used by the property, during the period. Includes externally supplied recycled water sources\n"
+        },
+        {
+          "name": "RecyclingIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "RecyclingIndicator",
+          "description": "Is there water recycling in place? Includes all recycled rain and snow water collected after falling on the building; or waste water produced from baths, sinks, showers, clothers washers, dishwashers, lavatories.\n"
+        },
+        {
+          "name": "EfficientFittingsIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "EfficientFittingsIndicator",
+          "description": "Are there any water efficient fittings in place? Includes low flow taps or showers; dual flush toilets; push or passive infrared taps.\n"
+        },
+        {
+          "name": "TotalUsageAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "TotalUsageAmount",
+          "description": "Total water usage in m3\n"
+        },
+        {
+          "name": "MeteringIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "MeteringIndicator",
+          "description": "Is there water metering in place for the whole building? Metering can allow for improved water monitoring; management and targets.\n"
+        }
+      ],
+      "displayName": "Water",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RelatedProperty",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property ID",
+          "description": "The unique identifier of a Property."
+        },
+        {
+          "name": "RelatedPropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Related Property ID",
+          "description": "The unique identifier of a Property."
+        },
+        {
+          "name": "PropertyRelationshipTypeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property Relationship Type ID",
+          "description": "The unique identifier of a Property Relationship Type."
+        },
+        {
+          "name": "PeriodStartTimestamp",
+          "purpose": "identifiedBy",
+          "dataType": "dateTime",
+          "displayName": "Period Start Timestamp",
+          "description": "The period start timestamp for which the property relationship exists."
+        },
+        {
+          "name": "PeriodEndTimestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime",
+          "isNullable": true,
+          "displayName": "Period End Timestamp",
+          "description": "The period end timestamp for which the property relationship exists."
+        },
+        {
+          "name": "PropertyRelationshipNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Relationship Note",
+          "description": "A note, comment or additional information regarding the property relationship.",
+          "maximumLength": 1024
+        }
+      ],
+      "displayName": "Related Property",
+      "description": "The relationship between two Properties."
+    }
+  ]
+}

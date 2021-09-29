@@ -1,0 +1,915 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Property",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "TitleId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "TitleId",
+          "description": ""
+        },
+        {
+          "name": "ClearHeightMinMeasure",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "ClearHeightMinMeasure",
+          "description": ""
+        },
+        {
+          "name": "ClearHeightMaxMeasure",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "ClearHeightMaxMeasure",
+          "description": ""
+        },
+        {
+          "name": "NumberOfPassengerElevators",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "NumberOfPassengerElevators",
+          "description": ""
+        },
+        {
+          "name": "NumberofFreightElevators",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "NumberofFreightElevators",
+          "description": ""
+        },
+        {
+          "name": "HeatTypeCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "HeatTypeCode",
+          "description": "\"Electric\tElectric: Fuel source is electricity.\nGas\tGas: Fuel source is natural gas.\nConvection\tConvection: Heating is provided through natural convection of heated air.\nForced Air\tForced Air: Heating is provided by forcing heated air through ducts.\"\n"
+        },
+        {
+          "name": "Zoning",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "Zoning",
+          "description": ""
+        },
+        {
+          "name": "IsSprinkleredIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "displayName": "IsSprinkleredIndicator",
+          "description": ""
+        },
+        {
+          "name": "HasRailIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "displayName": "HasRailIndicator",
+          "description": ""
+        },
+        {
+          "name": "Power",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "Power",
+          "description": ""
+        },
+        {
+          "name": "UtilitiesId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "UtilitiesId",
+          "description": "Water.Sewer.Electric.Cable.Faber\n"
+        },
+        {
+          "name": "GrossLandArea",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "GrossLandArea",
+          "description": ""
+        },
+        {
+          "name": "ConstructionStatusCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "ConstructionStatusCode",
+          "description": ""
+        },
+        {
+          "name": "OverviewHighlights",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "OverviewHighlights",
+          "description": ""
+        },
+        {
+          "name": "TotalArea",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "displayName": "TotalArea",
+          "description": ""
+        },
+        {
+          "name": "AreaOverview",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "AreaOverview",
+          "description": ""
+        },
+        {
+          "name": "AmenityCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "AmenityCode",
+          "description": "\"\nA/C\nAir lines\nBuss Ducts\nCommuter rail\nCooler\nEmpowerment zone\nFloor drains\nProcess gas\nRaised floor\nSkylights\nFenced lot\nMetal halide\nSCIF\nAirConditioner\nAlarm\nBasketballCourt\nBusinessCenter\nCableSat\nCeilingFan\nChildCare\nConcierge\nCoverPark\nDishWasher\nDisposal\nDryer\nFireplace\nFitnessCenter\nFurnished\nGarage\nGate\nHighSpeed Internet\nLargeClosets\nLaundry\nMicrowave\nNightPatrol\nPatio\nPlayGround\nPool\nRacquetball\nSauna\nSpa\nStorageSpace\nTennisCourt\nVolleyballCourt\nWasher/dryer in unit\nWD_Hookup\nWheelChair\nAtrium\nBalconies\nConcierge\tConcierge\nCourtyard\nDay care\ncleaner\tDry cleaner\nHigh speed Internet\nMail room\nMixed use\nRooftop Terrace\nTennis courts\nSubway\nOn-site management\nFood service\nConference facility\nJogging trail\"\n"
+        },
+        {
+          "name": "PropertyIntroduction",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "PropertyIntroduction",
+          "description": ""
+        },
+        {
+          "name": "UnitFeatureIncludedType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "UnitFeatureIncludedType",
+          "description": "Refrigerator: This unit type includes a refrigerator.Oven/Range: This unit type includes an oven/range.Microwave: This unit type includes a microwave.Dishwasher: This unit type includes a dishwasher.Garbage Disposal: This unit type includes a garbage disposal.Security System / Alarms: This unit type includes a security or alarm system.Security Entrance: There is a security entrance into the property.Washer and Dryer Connections: This unit type includes washer and dryer connections.Internet Access: This unit type includes Internet acess.Telephone: This unit type includes telephone acess.Cable TV: This unit type includes Cable TV acess.Fiber Optics: This unit type includes fiber optics acess.Whirlpool/Sauna: This unit type includes a whirlpool or sauna.Furnished: This unit type is furnished.Porch or Deck: This unit type has a patio, porch or deck\n"
+        },
+        {
+          "name": "UnitFeatureIncludedIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "displayName": "UnitFeatureIncludedIndicator",
+          "description": "\n"
+        },
+        {
+          "name": "RelatedPropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "RelatedPropertyId",
+          "description": ""
+        },
+        {
+          "name": "PropertyManagerParty",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "PropertyManagerParty",
+          "description": "Details of the Property Manager responsible for managing the property\n"
+        },
+        {
+          "name": "FormId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "FormId",
+          "description": ""
+        },
+        {
+          "name": "VerticalRiseCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "VerticalRiseCode",
+          "description": "\"Low-rise\tTypically up to four storeys, although definitions vary in context\nMid-rise\tTypically four to ten storeys, although definitions vary in context\nHigh-rise/Tower\tTypically more than ten storeys, although definitions vary in context\"\n"
+        },
+        {
+          "name": "Adjacency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "Adjacency",
+          "description": "Describes the nature of the physical connection between this building and surrounding buildings, for example, detached or terraced\n"
+        },
+        {
+          "name": "OccupancyPercent",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "OccupancyPercent",
+          "description": ""
+        },
+        {
+          "name": "ConstructionMethod",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "ConstructionMethod",
+          "description": "\"Newland\tSimilar to Myton (ie, based on storey height concrete panels) but with steel used for first floor ring beam, floor joists and roof trusses. Vertical panel joints left exposed externally and concrete columns may be exposed on corners and party walls. Roofs are twin pitched with a cladding of asbestos cement sheets. [2]\nOrlit\tStorey height concrete columns with main beams spanning from front to rear. Cavity built external walls comprising an outer leaf of 4' (or 2') by l'4\"\" paving stabs and an inner leaf of concrete blocks may be rendered externally. Roofs may be of flat construction (pre-cast concrete slabs finished with Asphalt and Bitumen) or pitched and tiled. [2]\nReema Hollow Panel\tStorey height large pre-cast concrete hollow panels with cast in situ concrete columns and beams. Panels have a plain or exposed aggregate finish externally. Roofs are either hipped or twin pitched with tiling. [2]\nSchindler and Hawksley SGS\tExternal cladding of brickwork concealing a structural frame of cast in situ concrete columns and ring beams, with a further beam running from front to rear. Roofs are of conventional pitched and tiled design. [2]\nStent\tStorey height 12\"\" wide pre-cast concrete T-section panels rising from concrete kerb units. Ring beam at first floor height. External finish can be either masonry paint, rough cast render or exposed aggregate. Roofs may be flat or of traditional pitched and tiled construction, possibly with hipped gable ends. [2]\nStonecrete\tPRC framework of storey height concrete posts at 2' 6\"\" intervals, located in string courses at first floor and caves level. Plain concrete panels (2 per storey height) fit between the posts to form the external cladding. Internal linings arc of 2\"\" reinforced plaster slabs. Roofs are traditionally built, hipped and tiled. [2]\nUnderdown\tPre-cast concrete slabs, 3' x 12\"\" with cast in situ concrete columns and ring beams. The wall slabs are rendered externally and plastered internally. Roofs are traditional timber framed pitched and tiled. [2]\nUnity and Butterfly\tStorey height precast concrete columns linked at first floor and eaves height by steel plate beams running front to rear. Outer leaf of 3' wide concrete Panels, inner leaf of concrete blockwork or dry lining. Pitched roof constructed of timber or concrete rafters with a covering of tiles laid on asbestos boards. [2]\nWaller\tStorey height pre-cast concrete panels carried on cast in situ Concrete columns and ring beams. Inner leaf also of Storey height concrete panels. Concrete panels and joists from first floor, with concrete beams and ceiling panels and eaves height. Pitched roof with cladding of large, through shaped concrete sections extending from eaves to ridge. [2]\nWessex\tStorey height PRC panels with concrete beams at first floor and eaves height linked by further beams running front to rear at first floor height. Corners formed by structural columns. Traditionally built pitched and tiled roof. [2]\nWinget\tExternal walk comprise 2 leaves of 3' x 9\"\" PRC panels with cast in situ piers and ring beams. Building corners formed by pre-cast quoin blocks. Walls are rendered externally and plastered internally. Traditionally built pitched and tiled roof. [2]\nWoolaway\tStructural framework of storey height PRC posts and plinths carrying inner and outer leaves of 4' x 2' aerated concrete panels, rendered externally. Traditionally built pitched and tiled roof. [2]\nArrowhead\tLightweight steel frame constructed of channel members supported by side plates. [2]\nBritish Iron and Steel Federation (BISF)\tStructural steel frame in light sections. [2]\nDorlonco\tSteel frame with metal lathing and rendering. [2]\nHawthorne Leslie\tSteel stanchions with timber and steel beams. [2]\nHoward\tSteel stanchions, lattice beams between stanchions in external walls, steel joists spanning from a spine wall to perimeter walls. [2]\"\n"
+        },
+        {
+          "name": "PropertyExceeds18mFFLIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "displayName": "PropertyExceeds18mFFLIndicator",
+          "description": "Indicates if the property exceeds 18m in height when measured from the ground to the finished floor level of the top storey (relating to fire safety codes specified in UK Building Regulations) [1]\n"
+        },
+        {
+          "name": "PropertyFrontage",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "PropertyFrontage",
+          "description": ""
+        },
+        {
+          "name": "PropertyDepth",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "PropertyDepth",
+          "description": ""
+        },
+        {
+          "name": "UnitId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "UnitId",
+          "description": ""
+        },
+        {
+          "name": "Categorization",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "Categorization",
+          "description": ""
+        },
+        {
+          "name": "ComparablePropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "ComparablePropertyId",
+          "description": ""
+        },
+        {
+          "name": "ComparableProperty",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "ComparableProperty",
+          "description": ""
+        },
+        {
+          "name": "Comment",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "Comment",
+          "description": ""
+        },
+        {
+          "name": "CompletionDateProposalSend",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "CompletionDateProposalSend",
+          "description": ""
+        },
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "ContractId",
+          "description": ""
+        },
+        {
+          "name": "CurrentContract",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "CurrentContract",
+          "description": ""
+        },
+        {
+          "name": "CurrentListing",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "CurrentListing",
+          "description": ""
+        },
+        {
+          "name": "CurrentOption",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "CurrentOption",
+          "description": ""
+        },
+        {
+          "name": "DevelopmentExposure",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "DevelopmentExposure",
+          "description": ""
+        },
+        {
+          "name": "ElectricalInstallationConditionReport",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "ElectricalInstallationConditionReport",
+          "description": ""
+        },
+        {
+          "name": "EnergyPerformanceCertification",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "EnergyPerformanceCertification",
+          "description": ""
+        },
+        {
+          "name": "FinancialTransactionSet",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "FinancialTransactionSet",
+          "description": ""
+        },
+        {
+          "name": "FinancialTransactionSummary",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "FinancialTransactionSummary",
+          "description": ""
+        },
+        {
+          "name": "ForwardStatusUpdate",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "ForwardStatusUpdate",
+          "description": ""
+        },
+        {
+          "name": "InitialTenancyApplicationOrNomination",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "InitialTenancyApplicationOrNomination",
+          "description": ""
+        },
+        {
+          "name": "JobStatusUpdate",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "JobStatusUpdate",
+          "description": ""
+        },
+        {
+          "name": "ServiceRecurrence",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "ServiceRecurrence",
+          "description": ""
+        },
+        {
+          "name": "Site",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "Site",
+          "description": ""
+        },
+        {
+          "name": "Unit",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "Unit",
+          "description": ""
+        },
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "LeaseId",
+          "description": ""
+        },
+        {
+          "name": "TitleHoldingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "TitleHoldingId",
+          "description": ""
+        },
+        {
+          "name": "TenantId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "TenantId",
+          "description": ""
+        },
+        {
+          "name": "AssetId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "AssetId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property ID",
+          "description": "The unique identifier of a Property."
+        },
+        {
+          "name": "PropertyName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Name",
+          "description": "The name of the property.",
+          "maximumLength": 128
+        },
+        {
+          "name": "PropertyDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Description",
+          "description": "A description of the property.\n\nEx:\n\n\"Spacious house is conveniently located in popular Briarcliff/Ridgefield Neighborhood - minutes to UNC/Duke, walking distance to pool and bus stop. Comfortable and flexible floor plan, guest suite with separate entrance, private backyard with hardwood trees, atrium breakfast area, screened porch, other fine features.\"",
+          "maximumLength": 512
+        },
+        {
+          "name": "PropertySize",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Size",
+          "description": "The size of the property."
+        },
+        {
+          "name": "PropertySizeUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Size UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "PropertyDevelopedAcreage",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Developed Acreage",
+          "description": "The number of acres that are allocated or assignable to productive wells or wells capable of production."
+        },
+        {
+          "name": "PropertyUndevelopedAcreage",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Undeveloped Acreage",
+          "description": "Acreage on which wells have not been drilled or completed to a point that would permit the production of commercial quantities of oil and gas regardless of whether or not the acreage contains proved reserves."
+        },
+        {
+          "name": "LocationId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Location ID",
+          "description": "The unique identifier of a Location."
+        },
+        {
+          "name": "SurveyGraphic",
+          "purpose": "hasA",
+          "dataType": "binary",
+          "isNullable": true,
+          "displayName": "Survey Graphic",
+          "description": "A drawing showing the exact legal boundaries of a property , the location of improvements, encroachments, easements, rights of ways and other p"
+        },
+        {
+          "name": "PropertyLegalDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Legal Description",
+          "description": "A property description, recognized by law that is sufficient to locate and identify the property without oral testimony.",
+          "maximumLength": 512
+        },
+        {
+          "name": "PropertyNonLegalDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Non-Legal Description",
+          "description": "The non-legal, informative description of the property.\n\nEx:\n'ALL BRICK' TRANSITIONAL BY MT. VERNON HOMES: OFFERING 1ST FLOOR MASTER SUITE W/DOUBLE WALK-IN CLOSETS, SPACIOUS FAMILY RM, SUNROOM OFF KITCHEN, FORMAL AREAS, 3 LARGE BEDROOMS & BONUS RM UP, FINISHED REC RM/3RD STORY W/ BATH & CLOSET, FULL BASEMENT PLUMBED FOR 2ND KITCHEN& BATH, STORAGE GALORE, SCREENED PORCH & DECKS OF FR & MBR, 2.5 CAR GARAGE",
+          "maximumLength": 512
+        },
+        {
+          "name": "NumberBedrooms",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Number Bedrooms",
+          "description": "The number of bedrooms in the property."
+        },
+        {
+          "name": "NumberBathrooms",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Number Bathrooms",
+          "description": "The number of bathrooms in the property."
+        },
+        {
+          "name": "Nabers",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "NABERS",
+          "description": "NABERS, the National Australian Built Environment Rating System, is an initiative by the government of Australia to measure and compare the environmental performance of Australian buildings and tenancies. There are NABERS rating tools for commercial office buildings to measure greenhouse gas emissions, energy efficiency, water efficiency, waste efficiency and indoor environment quality. There are also energy/greenhouse and water rating tools for hotels, shopping centres and data centres.\n\nNABERS uses a 6 star to help Australian building owners understand their asset impact on the environment.\n\n1 Star - Poor\n2 Stars -  Below Average\n3 Stars - Average\n4 Stars - Good\n5 Stars - Excellent\n6 Stars - Market Leading\n\nPartial stars are also awarded so that, for example, a NABERS Star Rating of 3.7 is possible and would indicate that the building is better than average but not quite at good."
+        },
+        {
+          "name": "OfficeBuildingClass",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Office Building Class",
+          "description": "Office Building Class provides a broad classification of office space. The core grades that are offered include:\nA - Highest Quality - The most prestigious building with high quality standard features, state of the art systems \nB - Average - average systems and finishes\nC - Poor - functional\nSome grading systems may include +/-, AA, AAA, or Premium to help provide further differentiations between the grades",
+          "maximumLength": 1024
+        },
+        {
+          "name": "LeedCertificationLevel",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LEED Certification Level",
+          "description": "Leadership in Energy and Environmental Design� (LEED) is a rating system that is recognized as the international mark of excellence for green building in over 160 countries. LEED recognizes that sustainability should be at the heart of all buildings in their design, construction and operation.\n\nProjects pursuing LEED certification earn points across several categories, including energy use and air quality. Based on the number of points achieved, a project then earns one of four LEED rating levels: Certified, Silver, Gold or Platinum.\n\nCertified - 40-49 points earned\nSilver - 50-59 points earned\nGold - 60-79 points earned\nPlatinum - 80+ points earned",
+          "maximumLength": 1024
+        },
+        {
+          "name": "LastAppraisalDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Last Appraisal Date",
+          "description": "The last appraisal of the property."
+        },
+        {
+          "name": "LastAppraisalMarketValueAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Last Appraisal Market Value Amount",
+          "description": "The market value as of the last appraisal date.",
+          "maximumLength": 13
+        },
+        {
+          "name": "LastAppraisalEquityAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Last Appraisal Equity Amount",
+          "description": "The difference between the market value of a property and the homeowner's outstanding mortgage balance.",
+          "maximumLength": 13
+        },
+        {
+          "name": "AskingPrice",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Asking Price",
+          "description": "The asking price of the property.",
+          "maximumLength": 13
+        },
+        {
+          "name": "AdjustedBookBasisAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Adjusted Book Basis Amount",
+          "description": "The purchase price of a property plus any capital improvements less accrued depreciation, if any, to the date of the sale.",
+          "maximumLength": 13
+        },
+        {
+          "name": "EasementsStatement",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Easements Statement",
+          "description": "A right-of-way granted to a person or company authorizing access to or over the owner's land.",
+          "maximumLength": 2048
+        },
+        {
+          "name": "EncroachmentsStatement",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Encroachments Statement",
+          "description": "An obstruction, building, or part of a building that intrudes beyond a legal boundary onto neighboring private or public land, or a building extending beyond the building line.",
+          "maximumLength": 2048
+        },
+        {
+          "name": "JudgmentsDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Judgments Description",
+          "description": "A description of existing judgment(s) against the property.\n\nJudgments are a decision made by a court of law. In judgments that require the repayment of a debt, the court may place a lien against the debtor's real property as collateral for the judgment's creditor.\n\nA lien on the property of a debtor resulting from the decree of a court.",
+          "maximumLength": 512
+        },
+        {
+          "name": "MarketableTitleIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Marketable Title Indicator",
+          "description": "A title that is free and clear of objectionable liens, clouds, or other title defects. A title which enables an owner to sell his property freely to others and which others will accept without objection."
+        },
+        {
+          "name": "NewHomeIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "New Home Indicator",
+          "description": "Indicates that the property is a new home."
+        },
+        {
+          "name": "OutstandingEncumbranceExistsIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Outstanding Encumbrance Exists Indicator",
+          "description": "Indicates that outstanding encumbrances exist upon the property."
+        },
+        {
+          "name": "OwnerOccupiedPropertyIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Owner Occupied Property Indicator",
+          "description": "\"Owner Occupied\" means the property is the owner's primary residence."
+        },
+        {
+          "name": "NonOwnerOccupantIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Non-Owner Occupant Indicator",
+          "description": "Indicates that the property is occupied by other than the owner."
+        },
+        {
+          "name": "JudgmentExistsIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Judgment Exists Indicator",
+          "description": "A decision made by a court of law. In judgments that require the repayment of a debt, the court may place a lien against the debtor's real property as collateral for the judgment's creditor.\n\nA lien on the property of a debtor resulting from the decree of a court."
+        },
+        {
+          "name": "PrimaryResidenceIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Primary Residence Indicator",
+          "description": "The residential property physically occupied by an owner as the principal home domicile."
+        },
+        {
+          "name": "NumberOfLeasedUnits",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Number Of Leased Units",
+          "description": "The number of units that may be leased.",
+          "maximumLength": 13
+        },
+        {
+          "name": "AvailableLeaseSquareFootage",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Available Lease Square Footage",
+          "description": "The square footage of available leasable space.",
+          "maximumLength": 13
+        },
+        {
+          "name": "CurrentYearLeaseIncomeAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Current Year Lease Income Amount",
+          "description": "The amount of lease income derived for the last year.",
+          "maximumLength": 13
+        },
+        {
+          "name": "NumberOfFloors",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Number Of Floors",
+          "description": "The number of floor of the commercial property."
+        },
+        {
+          "name": "FloorToAreaRatioFar",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 8
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Floor-To-Area Ratio FAR",
+          "description": "A ratio of the relationship between the total amount of floor space in a multi-story building and the base of that building. \n\nFAR's are dictated by zoning laws, in effect, stipulate the maximum number of stories a building may have.",
+          "maximumLength": 13
+        },
+        {
+          "name": "TotalFloorSpaceSqFt",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Total Floor Space Sq Ft",
+          "description": "The total floor space of the building/property base, which is used to calculate the FAR.\n\nFAR's are dictated by zoning laws, in effect, stipulate the maximum number of stories a building may have.",
+          "maximumLength": 13
+        },
+        {
+          "name": "BuildingBaseSqFt",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Building Base Sq Ft",
+          "description": "The square footage of the building/property base, which is used to calculate the FAR.\n\nFAR's are dictated by zoning laws, in effect, stipulate the maximum number of stories a building may have.",
+          "maximumLength": 13
+        },
+        {
+          "name": "CentralBusinessDistrictCbdPropertyIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Central Business District CBD Property Indicator",
+          "description": "Indicates that the property is the downtown section of a city, generally consisting of retail, office, hotel, entertainment, and government land uses with some high-density housing."
+        },
+        {
+          "name": "PropertyClearTitleIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "Property Clear Title Indicator",
+          "description": "A title that is free of liens or any legal question as to the ownership of the property."
+        },
+        {
+          "name": "PropertyTypeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Type ID",
+          "description": "The unique identifier of a Property Type."
+        },
+        {
+          "name": "OwnershipTypeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Ownership Type ID",
+          "description": "The unique identifier of an Ownership Type."
+        },
+        {
+          "name": "TitleStatusId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Title Status ID",
+          "description": "The unique identifier of a Title Status."
+        }
+      ],
+      "displayName": "Property",
+      "description": "A building or structure that a real estate mortgage loan is made upon.\n\nIt may or may not include the land around it or ground below it.\n\nIn the case of the oil and gas industry:\n\nLand which is utilized for mining or oil and gas extraction purposes.\n\nMineral estate is distinct from real estate. Mineral owners have property rights over the mineral estate and they have a right to recover the mineral from the property owned."
+    }
+  ]
+}

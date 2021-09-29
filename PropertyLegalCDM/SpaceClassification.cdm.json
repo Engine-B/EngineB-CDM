@@ -1,0 +1,43 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "SpaceClassification",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "SpaceClassificationId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Space Classification ID",
+          "description": "The unique identifier of the Space Classification."
+        },
+        {
+          "name": "SpaceClassificationName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Space Classification Name",
+          "description": "The name of the Space Classification.",
+          "maximumLength": 128
+        },
+        {
+          "name": "SpaceClassificationDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Space Classification Description",
+          "description": "The description of the Space Classification.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "Space Classification",
+      "description": "A classification of the type of space.\n\nEx:\n- Retail\n- Commercial\n- Administrative\n- Public"
+    }
+  ]
+}

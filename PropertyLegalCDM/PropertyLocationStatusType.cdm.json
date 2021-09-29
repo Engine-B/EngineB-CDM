@@ -1,0 +1,43 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyLocationStatusType",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyLocationStatusId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property Location Status ID",
+          "description": "The unique identifier of a Property Location Status."
+        },
+        {
+          "name": "PropertyLocationStatusName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Location Status Name",
+          "description": "The name of the Property Location Status.",
+          "maximumLength": 128
+        },
+        {
+          "name": "PropertyLocationStatusDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Location Status Description",
+          "description": "The description of the Property Location Status.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "Property Location Status Type",
+      "description": "The status of a specific Property Location.\n\nEx:\n- Available\n- Occupied\n- Unavailable\n- Capacity Available\n- Over Capacity"
+    }
+  ]
+}

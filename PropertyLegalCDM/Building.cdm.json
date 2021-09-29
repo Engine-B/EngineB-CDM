@@ -1,0 +1,240 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Building",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "LightingSystem",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "LightingSystem",
+          "description": ""
+        },
+        {
+          "name": "BuildingQualityClassCode",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "BuildingQualityClassCode",
+          "description": ""
+        },
+        {
+          "name": "GrossBuildingAreaMeasure",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "GrossBuildingAreaMeasure",
+          "description": ""
+        },
+        {
+          "name": "GrossBuildingArea",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "GrossBuildingArea",
+          "description": ""
+        },
+        {
+          "name": "NumberOfBuildings",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "NumberOfBuildings",
+          "description": ""
+        },
+        {
+          "name": "LandToBuildingRatioNumeric",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "LandToBuildingRatioNumeric",
+          "description": ""
+        },
+        {
+          "name": "FeatureIncluded",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "FeatureIncluded",
+          "description": ""
+        },
+        {
+          "name": "StorefrontDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "StorefrontDescription",
+          "description": "",
+          "maximumLength": 1024
+        },
+        {
+          "name": "InformationId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "InformationId",
+          "description": ""
+        },
+        {
+          "name": "NumberOfFlats",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "NumberOfFlats",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property ID",
+          "description": "The unique identifier of a Property."
+        },
+        {
+          "name": "BuildingId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Building ID",
+          "description": "The unique identifier of a Building."
+        },
+        {
+          "name": "BuildingName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Building Name",
+          "description": "The business name by which the Building is known.\n\nEx:  \"San Jose Fab #9\"",
+          "maximumLength": 128
+        },
+        {
+          "name": "BuildingGpsLongitudePosition",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 7
+                },
+                {
+                  "name": "scale",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "displayName": "Building GPS Longitude Position",
+          "description": "The building GPS position expressed in longitude.\n\nEx:\n\nGPS Coordinates (Ex= 39deg 58.589min) - seconds are converted to decimal format.",
+          "maximumLength": 7
+        },
+        {
+          "name": "BuildingGpsLatitudePosition",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 7
+                },
+                {
+                  "name": "scale",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "displayName": "Building GPS Latitude Position",
+          "description": "The building GPS position expressed in latitude.\n\nEx:\n\nGPS Coordinates (Ex= 39deg 58.589min) - seconds are converted to decimal format.",
+          "maximumLength": 7
+        },
+        {
+          "name": "BuildingHeight",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Building Height",
+          "description": "The height of the Building."
+        },
+        {
+          "name": "BuildingWidth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Building Width",
+          "description": "The width of the Building."
+        },
+        {
+          "name": "BuildingDepth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Building Depth",
+          "description": "The depth of the Building."
+        },
+        {
+          "name": "LengthWidthHeightUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Length/Width/Height UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "BuildingArea",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Building Area",
+          "description": "The depth of the Building."
+        },
+        {
+          "name": "AreaUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Area UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "Nabers",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "NABERS",
+          "description": "NABERS, the National Australian Built Environment Rating System, is an initiative by the government of Australia to measure and compare the environmental performance of Australian buildings and tenancies. There are NABERS rating tools for commercial office buildings to measure greenhouse gas emissions, energy efficiency, water efficiency, waste efficiency and indoor environment quality. There are also energy/greenhouse and water rating tools for hotels, shopping centres and data centres.\n\nNABERS uses a 6 star to help Australian building owners understand their asset impact on the environment.\n\n1 Star - Poor\n2 Stars -  Below Average\n3 Stars - Average\n4 Stars - Good\n5 Stars - Excellent\n6 Stars - Market Leading\n\nPartial stars are also awarded so that, for example, a NABERS Star Rating of 3.7 is possible and would indicate that the building is better than average but not quite at good."
+        },
+        {
+          "name": "OfficeBuildingClass",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Office Building Class",
+          "description": "Office Building Class provides a broad classification of office space. The core grades that are offered include:\nA - Highest Quality - The most prestigious building with high quality standard features, state of the art systems \nB - Average - average systems and finishes\nC - Poor - functional\nSome grading systems may include +/-, AA, AAA, or Premium to help provide further differentiations between the grades",
+          "maximumLength": 1024
+        },
+        {
+          "name": "LeedCertificationLevel",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LEED Certification Level",
+          "description": "Leadership in Energy and Environmental Design� (LEED) is a rating system that is recognized as the international mark of excellence for green building in over 160 countries. LEED recognizes that sustainability should be at the heart of all buildings in their design, construction and operation.\n\nProjects pursuing LEED certification earn points across several categories, including energy use and air quality. Based on the number of points achieved, a project then earns one of four LEED rating levels: Certified, Silver, Gold or Platinum.\n\nCertified - 40-49 points earned\nSilver - 50-59 points earned\nGold - 60-79 points earned\nPlatinum - 80+ points earned",
+          "maximumLength": 1024
+        },
+        {
+          "name": "SecurityLevelId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Security Level ID",
+          "description": "The unique identifier of the Security Level."
+        }
+      ],
+      "displayName": "Building",
+      "description": "A building of a property."
+    }
+  ]
+}

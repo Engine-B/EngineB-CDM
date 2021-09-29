@@ -1,0 +1,73 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Address",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "AddressId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "AddressId",
+          "description": ""
+        },
+        {
+          "name": "FlatNumber",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "FlatNumber",
+          "description": ""
+        },
+        {
+          "name": "BuildingNumner",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "BuildingNumner",
+          "description": ""
+        },
+        {
+          "name": "Streetnumber",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "Streetnumber",
+          "description": ""
+        },
+        {
+          "name": "PostCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PostCode",
+          "description": ""
+        },
+        {
+          "name": "BuildingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "BuildingId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        }
+      ],
+      "displayName": "Address",
+      "description": ""
+    }
+  ]
+}

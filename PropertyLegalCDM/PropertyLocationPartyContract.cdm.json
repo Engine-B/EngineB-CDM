@@ -1,0 +1,69 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyLocationPartyContract",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "AssetId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Asset ID",
+          "description": "The unique identifier of an Asset."
+        },
+        {
+          "name": "ContractId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Contract ID",
+          "description": "The unique identifier of a Contract."
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property ID",
+          "description": "The unique identifier of a Property."
+        },
+        {
+          "name": "PropertyLocationId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property Location ID",
+          "description": "The unique identifier of a Property Location."
+        },
+        {
+          "name": "PartyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Party ID",
+          "description": "The unique identifier of a Party."
+        },
+        {
+          "name": "PeriodStartDate",
+          "purpose": "identifiedBy",
+          "dataType": "date",
+          "displayName": "Period Start Date",
+          "description": "The period start date that the party had an interest in the property location."
+        },
+        {
+          "name": "AssetContractNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Asset Contract Note",
+          "description": "A note, comment or additional information regarding the asset contract.",
+          "maximumLength": 1024
+        }
+      ],
+      "displayName": "Property Location Party Contract",
+      "description": "The one or more contracts that address the associated property location party relationship and define the terms, conditions and legal relationship of parties in regard to that property location."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TitleHolding",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "TitleHoldingId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "TitleHoldingId",
+          "description": ""
+        },
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LeaseId",
+          "description": ""
+        },
+        {
+          "name": "Freehold",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Freehold",
+          "description": ""
+        },
+        {
+          "name": "TitleId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TitleId",
+          "description": ""
+        }
+      ],
+      "displayName": "TitleHolding",
+      "description": ""
+    }
+  ]
+}

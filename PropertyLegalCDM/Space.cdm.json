@@ -1,0 +1,179 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Space",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property ID",
+          "description": "The unique identifier of a Property."
+        },
+        {
+          "name": "SpaceId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Space ID",
+          "description": "The unique identifier of a Room."
+        },
+        {
+          "name": "RoomName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Room Name",
+          "description": "The name of the Room.",
+          "maximumLength": 128
+        },
+        {
+          "name": "FloorId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Floor ID",
+          "description": "The unique identifier of a Floor."
+        },
+        {
+          "name": "SpaceGpsLongitudePosition",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 7
+                },
+                {
+                  "name": "scale",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "displayName": "Space GPS Longitude Position",
+          "description": "The space GPS position expressed in longitude.\n\nEx:\n\nGPS Coordinates (Ex= 39deg 58.589min) - seconds are converted to decimal format.",
+          "maximumLength": 7
+        },
+        {
+          "name": "SpaceGpsLatitudePosition",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 7
+                },
+                {
+                  "name": "scale",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "displayName": "Space GPS Latitude Position",
+          "description": "The space GPS position expressed in latitude.\n\nEx:\n\nGPS Coordinates (Ex= 39deg 58.589min) - seconds are converted to decimal format.",
+          "maximumLength": 7
+        },
+        {
+          "name": "SpaceHeight",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Space Height",
+          "description": "The height of the Space."
+        },
+        {
+          "name": "SpaceWidth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Space Width",
+          "description": "The width of the Space."
+        },
+        {
+          "name": "SpaceDepth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Space Depth",
+          "description": "The depth of the Space."
+        },
+        {
+          "name": "LengthWidthHeightUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Length/Width/Height UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "SpaceArea",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Space Area",
+          "description": "The depth of the Space."
+        },
+        {
+          "name": "AreaUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Area UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "SecurityLevelId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Security Level ID",
+          "description": "The unique identifier of the Security Level."
+        },
+        {
+          "entity": {
+            "entityReference": "SpaceClassification",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "SpaceClassification/(resolvedAttributes)/SpaceClassificationId"
+                ]
+              }
+            ]
+          },
+          "name": "SpaceClassificationId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "SpaceClassificationId",
+                "purpose": "hasA",
+                "dataType": "integer",
+                "isNullable": true,
+                "displayName": "Space Classification ID",
+                "description": "The unique identifier of the Space Classification."
+              }
+            }
+          }
+        }
+      ],
+      "displayName": "Space",
+      "description": "A space is typically where events occur in a property."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LeaseTerm",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "LeaseTermId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "LeaseTermId",
+          "description": ""
+        },
+        {
+          "name": "AverageTermYears",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "AverageTermYears",
+          "description": ""
+        },
+        {
+          "name": "AverageRemainingYears",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "AverageRemainingYears",
+          "description": ""
+        },
+        {
+          "name": "AverageMarketLeaseTermYears",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "AverageMarketLeaseTermYears",
+          "description": ""
+        },
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LeaseId",
+          "description": ""
+        }
+      ],
+      "displayName": "LeaseTerm",
+      "description": ""
+    }
+  ]
+}

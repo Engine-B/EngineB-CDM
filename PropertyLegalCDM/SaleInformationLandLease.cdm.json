@@ -1,0 +1,65 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "SaleInformationLandLease",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "SaleInformationLandLeaseId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "SaleInformationLandLeaseId",
+          "description": ""
+        },
+        {
+          "name": "PropertyOnGroundLeaseIndicator",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PropertyOnGroundLeaseIndicator",
+          "description": ""
+        },
+        {
+          "name": "Lessor",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Lessor",
+          "description": ""
+        },
+        {
+          "name": "Lessee",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Lessee",
+          "description": ""
+        },
+        {
+          "name": "LesseeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LesseeId",
+          "description": ""
+        },
+        {
+          "name": "ExpirationDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "ExpirationDate",
+          "description": ""
+        }
+      ],
+      "displayName": "SaleInformationLandLease",
+      "description": ""
+    }
+  ]
+}

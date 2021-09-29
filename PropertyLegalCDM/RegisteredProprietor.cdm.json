@@ -1,0 +1,89 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RegisteredProprietor",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "RegisteredProprietorId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "RegisteredProprietorId",
+          "description": "The unique identifier of the registered proproetor.\n"
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": "The unique identifier of a Property.\n"
+        },
+        {
+          "name": "TransactionId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TransactionId",
+          "description": ""
+        },
+        {
+          "name": "DirectorFirstName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "DirectorFirstName",
+          "description": ""
+        },
+        {
+          "name": "DirectorLastName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "DirectorLastName",
+          "description": ""
+        },
+        {
+          "name": "CompanyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "CompanyId",
+          "description": ""
+        },
+        {
+          "name": "CompanyName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "CompanyName",
+          "description": ""
+        },
+        {
+          "name": "AddrForService",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "AddrForService",
+          "description": ""
+        },
+        {
+          "name": "CompayURL",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "CompayURL",
+          "description": ""
+        }
+      ],
+      "displayName": "RegisteredProprietor",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Parking",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "ParkingId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "ParkingId",
+          "description": ""
+        },
+        {
+          "name": "ParkingDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ParkingDescription",
+          "description": ""
+        },
+        {
+          "name": "Type",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Type",
+          "description": ""
+        },
+        {
+          "name": "LocationId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LocationId",
+          "description": ""
+        },
+        {
+          "name": "ParkingCodition",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ParkingCodition",
+          "description": ""
+        },
+        {
+          "name": "ParkingRatio",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ParkingRatio",
+          "description": ""
+        },
+        {
+          "name": "CarParkingRights",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "CarParkingRights",
+          "description": ""
+        },
+        {
+          "name": "BuildingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "BuildingId",
+          "description": ""
+        }
+      ],
+      "displayName": "Parking",
+      "description": ""
+    }
+  ]
+}

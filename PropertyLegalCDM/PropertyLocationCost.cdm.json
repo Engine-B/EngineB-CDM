@@ -1,0 +1,152 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyLocationCost",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyLocationCostStartDate",
+          "purpose": "identifiedBy",
+          "dataType": "date",
+          "displayName": "Property Location Cost Start Date",
+          "description": "The date that the cost was first allocated to the property location."
+        },
+        {
+          "name": "PropertyLocationCostEndDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Property Location Cost End Date",
+          "description": "The date that the cost was last allocated to the property location."
+        },
+        {
+          "name": "PropertyLocationCostPerUse",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Property Location Cost Per Use",
+          "description": "The cost of the property location for each use.",
+          "maximumLength": 13
+        },
+        {
+          "name": "PropertyLocationCostPerUnitOfTime",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Property Location Cost Per Unit Of Time",
+          "description": "The cost of the property location for each unit of time.",
+          "maximumLength": 13
+        },
+        {
+          "name": "UnitOfMeasureId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Unit Of Measure ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "PropertyLocationCostNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Location Cost Note",
+          "description": "A note, comment or additional information regarding the Property Location Cost.",
+          "maximumLength": 1024
+        },
+        {
+          "entity": {
+            "entityReference": "PropertyLocation",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "PropertyLocation/(resolvedAttributes)/PropertyId"
+                ]
+              }
+            ]
+          },
+          "name": "PropertyId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "PropertyId",
+                "purpose": "identifiedBy",
+                "dataType": "integer",
+                "displayName": "Property ID",
+                "description": "The unique identifier of a Property."
+              }
+            }
+          }
+        },
+        {
+          "entity": {
+            "entityReference": "PropertyLocation",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "PropertyLocation/(resolvedAttributes)/PropertyLocationId"
+                ]
+              }
+            ]
+          },
+          "name": "PropertyLocationId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "PropertyLocationId",
+                "purpose": "identifiedBy",
+                "dataType": "integer",
+                "displayName": "Property Location ID",
+                "description": "The unique identifier of a Property Location."
+              }
+            }
+          }
+        }
+      ],
+      "displayName": "Property Location Cost",
+      "description": "The cost associated with utilizing the property location."
+    }
+  ]
+}

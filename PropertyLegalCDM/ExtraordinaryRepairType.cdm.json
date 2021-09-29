@@ -1,0 +1,122 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ExtraordinaryRepairType",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "WorkOrderId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "WorkOrderId",
+          "description": "The unique identifier of a Work Order\n"
+        },
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "ContractId",
+          "description": "The unique identifier of a Contract.\n"
+        },
+        {
+          "name": "VendorId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "VendorId",
+          "description": "The unique identifier of a Vendor.\n"
+        },
+        {
+          "name": "RepairNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "RepairNote",
+          "description": "Notes, comments or additional information regarding Extraordinary Repairs.\n",
+          "maximumLength": 512
+        },
+        {
+          "name": "RepairActualCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "RepairActualCost",
+          "description": "The actual cost of the Repair.\n"
+        },
+        {
+          "name": "RepairEstimatedCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "displayName": "RepairEstimatedCost",
+          "description": "The estimated cost of the Repair.\n"
+        },
+        {
+          "name": "RepairCompletedTimestamp",
+          "purpose": "hasA",
+          "dataType": "date",
+          "displayName": "RepairCompletedTimestamp",
+          "description": "The timestamp that the Repair was completed.\n"
+        },
+        {
+          "name": "RepairStartedTimestamp",
+          "purpose": "hasA",
+          "dataType": "date",
+          "displayName": "RepairStartedTimestamp",
+          "description": "The timestamp that Repair actually was started.\n"
+        },
+        {
+          "name": "RepairPlannedTimestamp",
+          "purpose": "hasA",
+          "dataType": "date",
+          "displayName": "RepairPlannedTimestamp",
+          "description": "The timestamp that the Repair was planned to start.\n"
+        },
+        {
+          "name": "RepairDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "displayName": "RepairDescription",
+          "description": "The description of a Repair.\n",
+          "maximumLength": 512
+        },
+        {
+          "name": "AssetId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "AssetId",
+          "description": ""
+        },
+        {
+          "name": "ExtraordinaryRepairTypeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Extraordinary Repair Type ID",
+          "description": "The unique identifier of an Extraordinary Repairs Type."
+        },
+        {
+          "name": "ExtraordinaryRepairTypeName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Extraordinary Repair Type Name",
+          "description": "The name of an Extraordinary Repairs Type.",
+          "maximumLength": 128
+        },
+        {
+          "name": "ExtraordinaryRepairTypeDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Extraordinary Repair Type Description",
+          "description": "The description of an Extraordinary Repairs Type.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "ExtraordinaryRepairType",
+      "description": "A classification or categorization of types of Extraordinary Repairs based upon common characteristics or functions performed.\n\nThis would be dependent upon the type of Asset.\n\nEx:\n- Upgrade\n- Overhaul\n- Value Retrofit"
+    }
+  ]
+}

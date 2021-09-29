@@ -1,0 +1,81 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LeaseholdNotices",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "LeaseId",
+          "description": ""
+        },
+        {
+          "name": "LeaseholdNoticesId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "LeaseholdNoticesId",
+          "description": ""
+        },
+        {
+          "name": "LandlordSellingNoticeDocumentStatus",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LandlordSellingNoticeDocumentStatus",
+          "description": ""
+        },
+        {
+          "name": "OtherNoticeDocumentStatus",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "OtherNoticeDocumentStatus",
+          "description": ""
+        },
+        {
+          "name": "LandlordSellingNoticeIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "LandlordSellingNoticeIndicator",
+          "description": ""
+        },
+        {
+          "name": "OtherNoticeIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "OtherNoticeIndicator",
+          "description": ""
+        },
+        {
+          "name": "Attachment",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Attachment",
+          "description": "A file attachment (by inclusion or via a link) with associated metadata\n"
+        },
+        {
+          "name": "AttachmentId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "AttachmentId",
+          "description": ""
+        }
+      ],
+      "displayName": "LeaseholdNotices",
+      "description": ""
+    }
+  ]
+}

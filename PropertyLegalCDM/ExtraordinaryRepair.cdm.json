@@ -1,0 +1,161 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ExtraordinaryRepair",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "AlterationTypeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "AlterationTypeId",
+          "description": ""
+        },
+        {
+          "name": "RepairId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Repair ID",
+          "description": "The unique identifier of a Repair."
+        },
+        {
+          "name": "AssetId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "Asset ID",
+          "description": "The unique identifier of an Asset."
+        },
+        {
+          "name": "RepairDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Repair Description",
+          "description": "The description of a Repair.",
+          "maximumLength": 512
+        },
+        {
+          "name": "RepairPlannedTimestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime",
+          "isNullable": true,
+          "displayName": "Repair Planned Timestamp",
+          "description": "The timestamp that the Repair was planned to start."
+        },
+        {
+          "name": "RepairStartedTimestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime",
+          "isNullable": true,
+          "displayName": "Repair Started Timestamp",
+          "description": "The timestamp that Repair actually was started."
+        },
+        {
+          "name": "RepairCompletedTimestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime",
+          "isNullable": true,
+          "displayName": "Repair Completed Timestamp",
+          "description": "The timestamp that the Repair was completed."
+        },
+        {
+          "name": "RepairEstimatedCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Repair Estimated Cost",
+          "description": "The estimated cost of the Repair.",
+          "maximumLength": 13
+        },
+        {
+          "name": "RepairActualCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Repair Actual Cost",
+          "description": "The actual cost of the Repair.",
+          "maximumLength": 13
+        },
+        {
+          "name": "RepairNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Repair Note",
+          "description": "Notes, comments or additional information regarding Extraordinary Repairs.",
+          "maximumLength": 1024
+        },
+        {
+          "name": "ExtraordinaryRepairTypeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Extraordinary Repair Type ID",
+          "description": "The unique identifier of an Extraordinary Repairs Type."
+        },
+        {
+          "name": "VendorId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Vendor ID",
+          "description": "The unique identifier of a Vendor."
+        },
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Contract ID",
+          "description": "The unique identifier of a Contract."
+        },
+        {
+          "name": "WorkOrderId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Work Order ID",
+          "description": "The unique identifier of a Work Order."
+        }
+      ],
+      "displayName": "ExtraordinaryRepair",
+      "description": "Extraordinary repairs is work performed upon a fixed asset that extends the life of the fixed asset for more than one year.  \n\nExtraordinary repairs are handled differently from an accounting perspective in that they are capitalized and not expensed.   \n\nExtraordinary repairs are charged to the accumulated depreciation account and therefore increase the book value of the asset."
+    }
+  ]
+}

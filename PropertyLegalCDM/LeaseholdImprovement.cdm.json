@@ -1,0 +1,160 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LeaseholdImprovement",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "PropertyId",
+          "description": ""
+        },
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "LeaseId",
+          "description": ""
+        },
+        {
+          "name": "LeaseholdImprovementId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Leasehold Improvement ID",
+          "description": "The unique identifier of a Leasehold Improvement."
+        },
+        {
+          "name": "AssetId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "Asset ID",
+          "description": "The unique identifier of an Asset."
+        },
+        {
+          "name": "LeaseholdImprovementDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Description",
+          "description": "The description of the Leasehold Improvement Type.",
+          "maximumLength": 512
+        },
+        {
+          "name": "LeaseholdImprovementPlannedStartDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Planned Start Date",
+          "description": "The planned date of the Leasehold Improvement."
+        },
+        {
+          "name": "LeaseholdImprovementActualStartDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Actual Start Date",
+          "description": "The date that the Leasehold Improvement was actually started."
+        },
+        {
+          "name": "LeaseholdImprovementCompletedDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Completed Date",
+          "description": "The date that the Leasehold Improvement was completed."
+        },
+        {
+          "name": "LeaseholdImprovementEstimatedCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Estimated Cost",
+          "description": "The estimated cost of the Leasehold Improvement.",
+          "maximumLength": 13
+        },
+        {
+          "name": "LeaseholdImprovementActualCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 13
+                },
+                {
+                  "name": "scale",
+                  "value": 2
+                }
+              ]
+            }
+          ],
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Actual Cost",
+          "description": "The actual cost of the Leasehold Improvement.",
+          "maximumLength": 13
+        },
+        {
+          "name": "LeaseholdImprovementNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Note",
+          "description": "Notes, comments or additional information regarding the Leasehold Improvement.",
+          "maximumLength": 1024
+        },
+        {
+          "name": "LeaseholdImprovementTypeId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Type ID",
+          "description": "The unique identifier of a Leasehold Improvement Type."
+        },
+        {
+          "name": "VendorId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Vendor ID",
+          "description": "The unique identifier of a Vendor."
+        },
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Contract ID",
+          "description": "The unique identifier of a Contract."
+        }
+      ],
+      "displayName": "LeaseholdImprovement",
+      "description": "The upgrading or improvement of a leased asset or leased property.\n\nThese improvements revert to the lessor at the expiration of the lease term.\n\nImprovements are charged to the leasehold improvement account and are amortized to the expense account over the shorter of the life of the improvement or the remaining lease term.\n\nIf there is a lease renewal option and the prospect of renewal is unpredictable, the amortization period should be the original lease term.\n\nThe amortization expense on a leasehold improvement is not tax deductible and are considered intangible assets."
+    }
+  ]
+}

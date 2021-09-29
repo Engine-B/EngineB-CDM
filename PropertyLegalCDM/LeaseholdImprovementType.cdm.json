@@ -1,0 +1,57 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LeaseholdImprovementType",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "PropertyId",
+          "description": ""
+        },
+        {
+          "name": "LeaseId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "LeaseId",
+          "description": ""
+        },
+        {
+          "name": "LeaseholdImprovementTypeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Leasehold Improvement Type ID",
+          "description": "The unique identifier of a Leasehold Improvement Type."
+        },
+        {
+          "name": "LeaseholdImprovementTypeName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Type Name",
+          "description": "The name of a Leasehold Improvement Type.",
+          "maximumLength": 128
+        },
+        {
+          "name": "LeaseholdImprovementTypeDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Leasehold Improvement Type Description",
+          "description": "The description of a Leasehold Improvement Type.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "LeaseholdImprovementType",
+      "description": "A categorization of Leasehold Improvements based upon common characteristics of improvements.\n\nExamples:\n\n-  Plumbing\n-  Lighting\n-  Exterior\n-  Interior\n-  Structural\n-  Roofing"
+    }
+  ]
+}

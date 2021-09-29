@@ -1,0 +1,345 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Information",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "InformationId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "InformationId",
+          "description": ""
+        },
+        {
+          "name": "PropertyStorefrontDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PropertyStorefrontDescription",
+          "description": ""
+        },
+        {
+          "name": "NumberOfBedrooms",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfBedrooms",
+          "description": ""
+        },
+        {
+          "name": "NumberOfBathrooms",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfBathrooms",
+          "description": ""
+        },
+        {
+          "name": "NumberOfRooms",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfRooms",
+          "description": ""
+        },
+        {
+          "name": "VehicleStorage",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "VehicleStorage",
+          "description": ""
+        },
+        {
+          "name": "ParkingInformation",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ParkingInformation",
+          "description": ""
+        },
+        {
+          "name": "ParkingSpaces",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "ParkingSpaces",
+          "description": ""
+        },
+        {
+          "name": "RequestData",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "RequestData",
+          "description": "Information about what data is being requested by the Investment Manager.\n"
+        },
+        {
+          "name": "PropertyLandUsageInformation",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PropertyLandUsageInformation",
+          "description": "Although specified as a date, the day and month may be ignored. However, if a more specific build date is known and required by context, month and/or day of month may be included.\n"
+        },
+        {
+          "name": "RenovationDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "RenovationDate",
+          "description": ""
+        },
+        {
+          "name": "EffectiveAgeNumeric",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "EffectiveAgeNumeric",
+          "description": ""
+        },
+        {
+          "name": "Codition",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Codition",
+          "description": "The item being studied is rated at between 81% and 100% of the maximum possible rating for all similar items in the sample. Good: The item being studied is rated at between 61% and 80% of the maximum possible rating for all similar items in the sample.Average: The item being studied is rated at between 41% and 60% of the maximum possible rating for all similar items in the sample.Fair: The item being studied is rated at between 21% and 40% of the maximum possible rating for all similar items in the sample.Poor: The item being studied is rated at between 1% and 20% of the maximum possible rating for all similar items in the sample.\n"
+        },
+        {
+          "name": "SubFloorType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SubFloorType",
+          "description": "A Building Material not otherwise classified.Asphalt Shingles: A type of composite roofing material manufactured in modular sizes and composed of a paper-based core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Brick: Modular unit typically made from clay material.Ceramic: A vitrius clay product often with a glazed surface finish.Carpet: A woven fiber product often used as a floor covering.Concrete CIP: Construction material typically composed of cement, aggregate and water. Cast In Place indicates material is delivered to the site and placed.Composition Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer.Concrete Block: Modular product typically made from formed and cured cement and aggregate material.Concrete Tilt-Up: Pre-Cast Concrete product installed using Tilt-Up method.Fiberglass Shingle: A type of composite roofing material manufactured in modular sizes and composed of a fiberglass core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Glass product.Marble: An elemental stone material characterized by streaks of color embeded in the monolithic matrix.Rubber Membrane: A loose-laid roofing system generally composed of a continuous elastomeric roof membrane over various substrates and typically having a river stone ballast covering.Steel product.Stone: Non-specific stone-based materials.Tar & Gravel Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer and having a crushed stone top layer.Vinyl Tile.Wood: Non-specific wood material.Wood Shake: A type of wood roofing material with one split face and one smooth face.\n"
+        },
+        {
+          "name": "FloorCovering",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "FloorCovering",
+          "description": "A Building Material not otherwise classified.Asphalt Shingles: A type of composite roofing material manufactured in modular sizes and composed of a paper-based core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Brick: Modular unit typically made from clay material.Ceramic: A vitrius clay product often with a glazed surface finish.Carpet: A woven fiber product often used as a floor covering.Concrete CIP: Construction material typically composed of cement, aggregate and water. Cast In Place indicates material is delivered to the site and placed.Composition Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer.Concrete Block: Modular product typically made from formed and cured cement and aggregate material.Concrete Tilt-Up: Pre-Cast Concrete product installed using Tilt-Up method.Fiberglass Shingle: A type of composite roofing material manufactured in modular sizes and composed of a fiberglass core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Glass product.Marble: An elemental stone material characterized by streaks of color embeded in the monolithic matrix.Rubber Membrane: A loose-laid roofing system generally composed of a continuous elastomeric roof membrane over various substrates and typically having a river stone ballast covering.Steel product.Stone: Non-specific stone-based materials.Tar & Gravel Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer and having a crushed stone top layer.Vinyl Tile.Wood: Non-specific wood material.Wood Shake: A type of wood roofing material with one split face and one smooth face.\n"
+        },
+        {
+          "name": "ExteriorWalls",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ExteriorWalls",
+          "description": " A Building Material not otherwise classified.Asphalt Shingles: A type of composite roofing material manufactured in modular sizes and composed of a paper-based core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Brick: Modular unit typically made from clay material.Ceramic: A vitrius clay product often with a glazed surface finish.Carpet: A woven fiber product often used as a floor covering.Concrete CIP: Construction material typically composed of cement, aggregate and water. Cast In Place indicates material is delivered to the site and placed.Composition Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer.Concrete Block: Modular product typically made from formed and cured cement and aggregate material.Concrete Tilt-Up: Pre-Cast Concrete product installed using Tilt-Up method.Fiberglass Shingle: A type of composite roofing material manufactured in modular sizes and composed of a fiberglass core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Glass product.Marble: An elemental stone material characterized by streaks of color embeded in the monolithic matrix.Rubber Membrane: A loose-laid roofing system generally composed of a continuous elastomeric roof membrane over various substrates and typically having a river stone ballast covering.Steel product.Stone: Non-specific stone-based materials.Tar & Gravel Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer and having a crushed stone top layer.Vinyl Tile.Wood: Non-specific wood material.Wood Shake: A type of wood roofing material with one split face and one smooth face.\n"
+        },
+        {
+          "name": "RoofType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "RoofType",
+          "description": "A type of roof shape or configuration not otherwise classified.Arched: The roof is rounded or a shallow barrel-shape.Flat: The roof is either dead-flat or sloped less than 1 inch vertically for each 12 inches horizontally.Gable: The roof consists of two sloping planes that meet at the ridge (peak). The planes are supported at their ends by triangular, upward extensions of walls known as gables.Hip: The roof has four pitched sides. The line where two slopes of a roof meet is called a hip.Mansard: The roof has a flat top and two slopes to all four sides; the lower one being steeper than the upper.Sawtooth: The roof form is a succession of vertical and sloped surfaces forming a shape like the tooth of a saw.Barrel Shell: The roof is highly arched or shaped like a half-barrel oriented horizontally.Folded Plate: The roof is a series of connected flat planes resembling a folded sheet of paper.Gambrel: The roof has a peaked top and two slopes on each of two sides; the lower one being steeper than the upper. End walls of the roof are vertical.Domes: The roof is curved on all sides similar to an upside down bowl.\n"
+        },
+        {
+          "name": "RoofCover",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "RoofCover",
+          "description": "A Building Material not otherwise classified.Asphalt Shingles: A type of composite roofing material manufactured in modular sizes and composed of a paper-based core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Brick: Modular unit typically made from clay material.Ceramic: A vitrius clay product often with a glazed surface finish.Carpet: A woven fiber product often used as a floor covering.Concrete CIP: Construction material typically composed of cement, aggregate and water. Cast In Place indicates material is delivered to the site and placed.Composition Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer.Concrete Block: Modular product typically made from formed and cured cement and aggregate material.Concrete Tilt-Up: Pre-Cast Concrete product installed using Tilt-Up method.Fiberglass Shingle: A type of composite roofing material manufactured in modular sizes and composed of a fiberglass core sheet, asphaltic coating and a fine stone or synthetic weather surface coating.Glass product.Marble: An elemental stone material characterized by streaks of color embeded in the monolithic matrix.Rubber Membrane: A loose-laid roofing system generally composed of a continuous elastomeric roof membrane over various substrates and typically having a river stone ballast covering.Steel product.Stone: Non-specific stone-based materials.Tar & Gravel Roofing: A roofing assembly typically composed of layers of sheet material saturated with an asphaltic binder/sealer and having a crushed stone top layer.Vinyl Tile.Wood: Non-specific wood material.Wood Shake: A type of wood roofing material with one split face and one smooth face.\n"
+        },
+        {
+          "name": "PlumbingCondition",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PlumbingCondition",
+          "description": "The item being studied is rated at between 81% and 100% of the maximum possible rating for all similar items in the sample. Good: The item being studied is rated at between 61% and 80% of the maximum possible rating for all similar items in the sample.Average: The item being studied is rated at between 41% and 60% of the maximum possible rating for all similar items in the sample.Fair: The item being studied is rated at between 21% and 40% of the maximum possible rating for all similar items in the sample.Poor: The item being studied is rated at between 1% and 20% of the maximum possible rating for all similar items in the sample."
+        },
+        {
+          "name": "HeatingType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "HeatingType",
+          "description": "Heating Type not otherwise classified.None: No Heating System is present.Gas: Heating System is fueled by Natural Gas, Propane, or similar volatile gas.Gravity: Heating System depends on natural convection (hot air rises and cool air falls) to condition a space.Hot Water: Heating System uses heated water distributed through piping and radiators to condition a space.Electric: Heating System uses electric resistance as heating source.Solar: Heating System uses solar thermal collectors to heat air or a fluid which is then used to condition a space.Space Heaters: Heating is provided by individual, room-sized or personal heaters. Typically these are electric resistance or gas fired.Steam: Heating System creates steam which is distributed through piping and radiators to condition a space.Radiant Heaters: Any type of heating system which uses a heated surface to deliver warmth directly to a cooler surface.\n"
+        },
+        {
+          "name": "CoolingType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "CoolingType",
+          "description": "A Cooling Type that is not otherwise classified.Air Curtains: Property uses a stream of high-velocity temperature-controlled air which is directed downward across an opening to prevent the transfer of heat across the opening, and permit air-conditioning of a space with an open entrance.Central: Ambient air cooling for the property is provided by a central unit and a distribution system.Engineered Cooling: Property uses refrigeration and/or absorbtion chillers and distribution equipment designed to cool the interior.Evaporative Coolers: Property uses simple equipment that passes air over water to provide a cooling effect.None: Property does not have a system providing ambient air cooling.Package Units: Property uses one or more self-contained air conditioning units sized for a specific quantity of cooling. The number of units is relative to the space to be conditioned. Package units typically are located on the ground or on a roof directly adjacent to the conditioned space.Window Units: Property uses one or more self-contained air conditioning units mounted in window openings.\n"
+        },
+        {
+          "name": "ElectricalType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ElectricalType",
+          "description": "Excellent: The item being studied is rated at between 81% and 100% of the maximum possible rating for all similar items in the sample.Good: The item being studied is rated at between 61% and 80% of the maximum possible rating for all similar items in the sample.Average: The item being studied is rated at between 41% and 60% of the maximum possible rating for all similar items in the sample.Fair: The item being studied is rated at between 21% and 40% of the maximum possible rating for all similar items in the sample.Poor: The item being studied is rated at between 1% and 20% of the maximum possible rating for all similar items in the sample.\n"
+        },
+        {
+          "name": "FireSprinklerType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "FireSprinklerType",
+          "description": "Wet-Pipe System.Combination Wet-Pipe and Dry-Pipe System.Combination Wet-Pipe and Deluge System.Combination Wet-Pipe and Preaction System.Combination Wet-Pipe and Early Suppression Fast Response.Dry-Pipe Systems\n"
+        },
+        {
+          "name": "BuildingHeightClass",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "BuildingHeightClass",
+          "description": "High Rise: A building with four or more stories above ground level, typically elevator-served.Low Rise: A building with fewer than four stories above ground level, may or may not be elevator-served.Single Story: A building having a single story above ground level.\n"
+        },
+        {
+          "name": "ConstructionQuality",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ConstructionQuality",
+          "description": "Excellent: The item being studied is rated at between 81% and 100% of the maximum possible rating for all similar items in the sample. Good: The item being studied is rated at between 61% and 80% of the maximum possible rating for all similar items in the sample.Average: The item being studied is rated at between 41% and 60% of the maximum possible rating for all similar items in the sample.Fair: The item being studied is rated at between 21% and 40% of the maximum possible rating for all similar items in the sample.Poor: The item being studied is rated at between 1% and 20% of the maximum possible rating for all similar items in the sample.\n"
+        },
+        {
+          "name": "ConstructionClass",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ConstructionClass",
+          "description": ""
+        },
+        {
+          "name": "LastRefurbishmentDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "LastRefurbishmentDate",
+          "description": "The year in which the last major refurbishment of the building was completed or the planned year of completion of the refurbishment.\n"
+        },
+        {
+          "name": "PlanningRestrictions",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PlanningRestrictions",
+          "description": "Category of restrictive planning against the site on which the property is located.\n"
+        },
+        {
+          "name": "ConstructionDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "ConstructionDate",
+          "description": "Date on which construction of the property was completed. The date on which construction reached 'practical completion'\n"
+        },
+        {
+          "name": "InspectionDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "InspectionDate",
+          "description": "Year of latest building inspection\n"
+        },
+        {
+          "name": "IsUnderConstructionIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "IsUnderConstructionIndicator",
+          "description": ""
+        },
+        {
+          "name": "NumberOfSeparateBuildings",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfSeparateBuildings",
+          "description": ""
+        },
+        {
+          "name": "StructuralInformation",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "StructuralInformation",
+          "description": "\"Ceiling Height Measure.Column Spacing Width Measure.Column Spacing Depth Measure.First Floor Perimeter Measure.Floor Thickness Measure.Basement Size Measure.Typical Bay Dimension\t\"\n"
+        },
+        {
+          "name": "ValueSourceType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "ValueSourceType",
+          "description": "Actual: The value is based on an observation, measurement or verified record.Estimated: The value is derived from indirect evidence, abstraction or extrapolation.\n"
+        },
+        {
+          "name": "NumberOfSublevels",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfSublevels",
+          "description": ""
+        },
+        {
+          "name": "NumberOfStories",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfStories",
+          "description": ""
+        },
+        {
+          "name": "Header",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Header",
+          "description": ""
+        },
+        {
+          "name": "YearBuiltDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "YearBuiltDate",
+          "description": "Although specified as a date, the day and month may be ignored. However, if a more specific build date is known and required by context, month and/or day of month may be included.\n"
+        },
+        {
+          "name": "BuildingDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "BuildingDescription",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        },
+        {
+          "name": "BuildingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "BuildingId",
+          "description": ""
+        }
+      ],
+      "displayName": "Information",
+      "description": ""
+    }
+  ]
+}

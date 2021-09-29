@@ -1,0 +1,74 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AlterationType",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "AlterationTypeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "AlterationTypeId",
+          "description": ""
+        },
+        {
+          "name": "Alterations",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Alterations",
+          "description": " Describes provisions in a lease relating to the tenant's ability to alter the premises demised (i.e. leased to it).\n"
+        },
+        {
+          "name": "AlterationTypeName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "AlterationTypeName",
+          "description": "The name of an Alteration Type.\n",
+          "maximumLength": 128
+        },
+        {
+          "name": "AlterationTypeDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "AlterationTypeDescription",
+          "description": "The description of an Alteration Type.\n",
+          "maximumLength": 512
+        },
+        {
+          "name": "YearLastRenovatedDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "YearLastRenovatedDate",
+          "description": ""
+        },
+        {
+          "name": "RepairId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "RepairId",
+          "description": "The unique identifier of a Repair.\n"
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "PropertyId",
+          "description": ""
+        }
+      ],
+      "displayName": "AlterationType",
+      "description": ""
+    }
+  ]
+}

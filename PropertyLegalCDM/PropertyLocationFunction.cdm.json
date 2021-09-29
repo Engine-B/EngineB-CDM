@@ -1,0 +1,43 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyLocationFunction",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyLocationFunctionId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property Location Function ID",
+          "description": "The identifier of the Property Location Function."
+        },
+        {
+          "name": "PropertyLocationFunctionName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Location Function Name",
+          "description": "The name of the Property Location Function.",
+          "maximumLength": 128
+        },
+        {
+          "name": "PropertyLocationFunctionDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Location Function Description",
+          "description": "The description of the Property Location Function.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "Property Location Function",
+      "description": "A description of the function performed by the associated Property Location.\n\nEx:\n- Retail Space\n- Commercial Space\n- Public\n- Administrative\n- Loading Dock\n- Information Desk"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyType",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyTypeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property Type ID",
+          "description": "The unique identifier of a Property Type."
+        },
+        {
+          "name": "PropertyTypeName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Type Name",
+          "description": "The name of a Property Type.",
+          "maximumLength": 128
+        },
+        {
+          "name": "PropertyTypeDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Type Description",
+          "description": "The description of a Property Type.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "Property Type",
+      "description": "The physical characteristics describing the associated property.\n\nEx:\nCOMMERCIAL\nReal estate zoned for business or industrial use.\n\nCONDOMINIUM\nIndividual ownership of a dwelling unit and an individual interest in the common areas and facilities, which serve the multi-unit project.\n\nCONDOMINIUM CONVERSION\nChanging the ownership of an existing building (usually a rental project) to the condominium form of ownership.\n\nCONDOMINIUM HOTEL\nA condominium project that has rental or registration desks, short-term occupancy, food and telephone services, and daily cleaning services and that is operated as a commercial hotel even though the units are individually owned.\n\nCO-OP\nA person, corporation, partnership, or other legal entity capable of holding or owning any interest in real property who owns all or an interest in an apartment, townhouse, or cottage, subject to a Horizontal Property Regime.\n\nCOOPERATIVE\nA type of multiple ownership in which the residents of a multiunit housing complex own shares in the cooperative corporation that owns the property, giving each resident the right to occupy a specific apartment or unit.\n\nFARM\nFarm includes a facility that packs or holds food if all food is grown or raised on that farm or consumed on that farm; and manufactures/processes food, if all of the food used in such activities is consumed on that farm or another farm under the same ownership\n\nLOT\nAny lot, parcel, tract of land, or combination thereof, shown on a plat of record or recorded by metes and bounds that is occupied or intended for occupancy by a use permitted in this Declaration of Reservations.\n\nMOBILE HOME\nA dwelling unit, factory built and factory assembled, designed for conveyance, after fabrication, on streets and highways on its own wheels or on a flatbed or other trailers, and arriving at the site where it is to be occupied as a dwelling unit complete and ready for occupancy except for minor and incidental unpacking and assembly operations such as locating on jacks or other foundations, or connection to utilities.\n\nMULTI-FAMILY\nA dwelling that is designed to house more than four families, such as a high-rise apartment complex.\n\nSINGLE FAMILY\nA building designed for occupancy by a single family.\n\nTOWNHOUSE\nA dwelling unit occupying all or part of a floor or floors in a building of one or more floors or stories but not the entire building, except in those condominium projects in which one of several buildings may contain only one townhouse."
+    }
+  ]
+}

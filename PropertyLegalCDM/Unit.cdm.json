@@ -1,0 +1,73 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Unit",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "Unit",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Unit",
+          "description": " Links the Lease to a Unit. The unit that this lease relates to\n"
+        },
+        {
+          "name": "UnitId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "UnitId",
+          "description": ""
+        },
+        {
+          "name": "NumberOfLettableUnits",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfLettableUnits",
+          "description": ""
+        },
+        {
+          "name": "NumberOfVacantUnits",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfVacantUnits",
+          "description": ""
+        },
+        {
+          "name": "NumberOfUnits",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfUnits",
+          "description": ""
+        },
+        {
+          "name": "NumberOfSocialResidentialUnits",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfSocialResidentialUnits",
+          "description": ""
+        },
+        {
+          "name": "NumberOfResidentialLetUnits",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberOfResidentialLetUnits",
+          "description": ""
+        }
+      ],
+      "displayName": "Unit",
+      "description": ""
+    }
+  ]
+}

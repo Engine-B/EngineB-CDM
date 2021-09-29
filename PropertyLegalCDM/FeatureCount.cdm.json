@@ -1,0 +1,105 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FeatureCount",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "FeatureCountId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "FeatureCountId",
+          "description": ""
+        },
+        {
+          "name": "OutdoorTennisCourts",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "OutdoorTennisCourts",
+          "description": "Outdoor Tennis Courts: Indicate the number of indoor tennis courts on the property.\n"
+        },
+        {
+          "name": "IndoorTennisCourts",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "IndoorTennisCourts",
+          "description": "Indoor Tennis Courts: Indicate the number of outdoor tennis courts on the property.\n"
+        },
+        {
+          "name": "NumberofBays",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberofBays",
+          "description": "Number of Bays : Enter the number of bays in the propoerty\n"
+        },
+        {
+          "name": "NoOfFloorsOccupiedByFullFloorTenants",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NoOfFloorsOccupiedByFullFloorTenants",
+          "description": "No. of Floors Occupied By Full-Floor Tenants: Enter the number of bays in the propoerty\n"
+        },
+        {
+          "name": "NumberofLicensedBeds",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberofLicensedBeds",
+          "description": "Number of Licensed Beds: Enter the number of licensed beds in the property.\n"
+        },
+        {
+          "name": "NumberofMedicaidBeds",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberofMedicaidBeds",
+          "description": "Number of Medicaid Beds: Enter the number of Medicaid beds in the property.\n"
+        },
+        {
+          "name": "NumberofMedicareBeds",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberofMedicareBeds",
+          "description": "Number of Medicare Beds: Enter the number of Medicare beds in the property.\n"
+        },
+        {
+          "name": "NumberofPrivatePayBeds",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberofPrivatePayBeds",
+          "description": "Number of Private-Pay Beds: Enter the number of Private-Pay beds in the property.\n"
+        },
+        {
+          "name": "NumberofOtherBeds",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "NumberofOtherBeds",
+          "description": "Number of Other Beds: Enter the number of other beds in the property.\n"
+        },
+        {
+          "name": "BuildingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "BuildingId",
+          "description": ""
+        }
+      ],
+      "displayName": "FeatureCount",
+      "description": ""
+    }
+  ]
+}

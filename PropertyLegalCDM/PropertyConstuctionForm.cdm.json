@@ -1,0 +1,49 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyConstuctionForm",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "FormId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "FormId",
+          "description": ""
+        },
+        {
+          "name": "PhysicalFormType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "PhysicalFormType",
+          "description": "\"Other\tThe form of the property construction is not one of those specified.\nBlock\tThe property is a block comprising multiple units intended for separate occupancy by multiple tenants or owners\nResidential block\tA block of multiple residential units (including predominantly residential mixed use blocks with commercial use on the ground or lower floors).\nCommercial block\tA block of multiple commercial units (typically offices)\nDiscrete building\tA discrete building with its own private entrance that is or was originially intended for occupancy by one tenant or owner, i.e. it was not built with the intention of multiple tenants or owners, even if it has now been divded for this use\nHouse\tA multi-storey dwelling designed for occupancy by one family group\nDivided house\tA multi-storey dwelling designed for occupancy by one family group but that has subsequently been converted to accommodate multiple family groups\nBungalow\tA low dwelling designed for occupancy by one family group and having only one storey, or upper rooms set into the roof space\nDormer bungalow\tA low dwelling designed for occupancy by one family group with upper rooms set into the roof space and dormer windows\nWarehouse/store\tA structure who primary purpose is for temporary or permanent storage. This may include distribution warehouses, barns etc.\nIndustrial\tA property for industrial purposes, including manufacturing, processing and generating.\nOffice\tAn office building for the sole occupancy of one tenant or owner\nRetail\tA retail building occupied by one or more retail tenants or owners\nAncilliary\tA secondary building with its own entrance and no entrance from the main bulding, typically detached from the main building and providing some supporting purpose to the main building or buildings on the same site.\nGarage\tA garage designed as a place to keep one or more cars\nBoiler house\tA building containing the boiler and associated plant\nWorkshop\tA workshop.\nFuel store\tA building for storing fuel, e.g. a wood or coal shed.\"\n"
+        },
+        {
+          "name": "ContractId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "ContractId",
+          "description": "The unique identifier of a contract\n"
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        }
+      ],
+      "displayName": "PropertyConstuctionForm",
+      "description": ""
+    }
+  ]
+}

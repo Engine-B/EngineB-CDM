@@ -1,0 +1,186 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Floor",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "MaximumFloorArea",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "MaximumFloorArea",
+          "description": ""
+        },
+        {
+          "name": "MinimumFloorArea",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "MinimumFloorArea",
+          "description": ""
+        },
+        {
+          "name": "NumberOfBasementLevels",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "NumberOfBasementLevels",
+          "description": "Number of basement levels"
+        },
+        {
+          "name": "NumberOfUpperFloors",
+          "purpose": "hasA",
+          "dataType": "double",
+          "displayName": "NumberOfUpperFloors",
+          "description": "Number of upper floors"
+        },
+        {
+          "name": "AssetId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "AssetId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property ID",
+          "description": "The unique identifier of a Property."
+        },
+        {
+          "name": "FloorId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Floor ID",
+          "description": "The unique identifier of a Floor."
+        },
+        {
+          "name": "FloorName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Floor Name",
+          "description": "The name of the Floor.",
+          "maximumLength": 128
+        },
+        {
+          "name": "BuildingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Building ID",
+          "description": "The unique identifier of a Building."
+        },
+        {
+          "name": "FloorGpsLongitudePosition",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 7
+                },
+                {
+                  "name": "scale",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "displayName": "Floor GPS Longitude Position",
+          "description": "The floor GPS position expressed in longitude.\n\nEx:\n\nGPS Coordinates (Ex= 39deg 58.589min) - seconds are converted to decimal format.",
+          "maximumLength": 7
+        },
+        {
+          "name": "FloorGpsLatitudePosition",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": 7
+                },
+                {
+                  "name": "scale",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "displayName": "Floor GPS Latitude Position",
+          "description": "The floor GPS position expressed in latitude.\n\nEx:\n\nGPS Coordinates (Ex= 39deg 58.589min) - seconds are converted to decimal format.",
+          "maximumLength": 7
+        },
+        {
+          "name": "FloorHeight",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Floor Height",
+          "description": "The height of the Floor."
+        },
+        {
+          "name": "FloorWidth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Floor Width",
+          "description": "The width of the Floor."
+        },
+        {
+          "name": "FloorDepth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Floor Depth",
+          "description": "The depth of the Floor."
+        },
+        {
+          "name": "LengthWidthHeightUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Length/Width/Height UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "FloorArea",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Floor Area",
+          "description": "The depth of the Floor."
+        },
+        {
+          "name": "AreaUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Area UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "SecurityLevelId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Security Level ID",
+          "description": "The unique identifier of the Security Level."
+        }
+      ],
+      "displayName": "Floor",
+      "description": "A major subdivision of a property location consisting of spaces.\n\nFloors are usually numbered or similarly identified and that identification is made part of location identifiers."
+    }
+  ]
+}

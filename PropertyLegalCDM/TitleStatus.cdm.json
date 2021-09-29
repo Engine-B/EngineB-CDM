@@ -1,0 +1,50 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TitleStatus",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "TitleId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "TitleId",
+          "description": ""
+        },
+        {
+          "name": "TitleStatusId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Title Status ID",
+          "description": "The unique identifier of a Title Status."
+        },
+        {
+          "name": "TitleStatusName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Title Status Name",
+          "description": "The name of a Title Status.",
+          "maximumLength": 128
+        },
+        {
+          "name": "TitleStatusDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Title Status Description",
+          "description": "The description of a Title Status.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "TitleStatus",
+      "description": "The status of the property title.\n\nEx:\n- Clear\n- Clouded\n- Unknown"
+    }
+  ]
+}

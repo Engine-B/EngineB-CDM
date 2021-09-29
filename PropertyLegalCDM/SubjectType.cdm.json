@@ -1,0 +1,65 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "SubjectType",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "SubjectTypeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "SubjectTypeId",
+          "description": ""
+        },
+        {
+          "name": "SubjectTypePropertyPerUnitOfMeasure",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SubjectTypePropertyPerUnitOfMeasure",
+          "description": ""
+        },
+        {
+          "name": "SubjectTypeProperty",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SubjectTypeProperty",
+          "description": ""
+        },
+        {
+          "name": "SubjectPropertyTitleNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SubjectPropertyTitleNumber",
+          "description": ""
+        },
+        {
+          "name": "SubjectProperty",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "SubjectProperty",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        }
+      ],
+      "displayName": "SubjectType",
+      "description": ""
+    }
+  ]
+}

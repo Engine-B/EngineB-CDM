@@ -1,0 +1,106 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Title",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "TitleNumber",
+          "purpose": "hasA",
+          "dataType": "double",
+          "isNullable": true,
+          "displayName": "TitleNumber",
+          "description": ""
+        },
+        {
+          "name": "TitleId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "TitleId",
+          "description": ""
+        },
+        {
+          "name": "TitleEditionDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "TitleEditionDate",
+          "description": ""
+        },
+        {
+          "name": "Description",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Description",
+          "description": "A narrative description of this Title.\n",
+          "maximumLength": 1024
+        },
+        {
+          "name": "TitleIssueDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "TitleIssueDate",
+          "description": ""
+        },
+        {
+          "name": "RegisterdProprietorId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "RegisterdProprietorId",
+          "description": ""
+        },
+        {
+          "name": "BeneficialInterests",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "BeneficialInterests",
+          "description": ""
+        },
+        {
+          "name": "TitleHoldingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TitleHoldingId",
+          "description": ""
+        },
+        {
+          "name": "TitleHolding",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "TitleHolding",
+          "description": ""
+        },
+        {
+          "name": "TitleStatusId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TitleStatusId",
+          "description": ""
+        },
+        {
+          "name": "TitleChargesId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TitleChargesId",
+          "description": ""
+        }
+      ],
+      "displayName": "Title",
+      "description": ""
+    }
+  ]
+}

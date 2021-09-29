@@ -1,0 +1,49 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TitleCharges",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "TitleChargesId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "TitleChargesId",
+          "description": ""
+        },
+        {
+          "name": "TitleId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TitleId",
+          "description": ""
+        },
+        {
+          "name": "Mortgages",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Mortgages",
+          "description": ""
+        },
+        {
+          "name": "LImitingInterests",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "LImitingInterests",
+          "description": ""
+        }
+      ],
+      "displayName": "TitleCharges",
+      "description": ""
+    }
+  ]
+}

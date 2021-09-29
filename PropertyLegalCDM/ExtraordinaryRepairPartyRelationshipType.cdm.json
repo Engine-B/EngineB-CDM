@@ -1,0 +1,50 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ExtraordinaryRepairPartyRelationshipType",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "RepairId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "displayName": "RepairId",
+          "description": "The unique identifier of a Repair.\n"
+        },
+        {
+          "name": "ExtraordinaryRepairPartyRelationshipTypeId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Extraordinary Repair Party Relationship Type ID",
+          "description": "The unique identifier of a extraordinary repair party relationship type."
+        },
+        {
+          "name": "ExtraordinaryRepairPartyRelationshipTypeName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Extraordinary Repair Party Relationship Type Name",
+          "description": "The name of a extraordinary repair party relationship type.",
+          "maximumLength": 128
+        },
+        {
+          "name": "ExtraordinaryRepairPartyRelationshipTypeDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Extraordinary Repair Party Relationship Type Description",
+          "description": "The description of a extraordinary repair party relationship type.",
+          "maximumLength": 512
+        }
+      ],
+      "displayName": "ExtraordinaryRepairPartyRelationshipType",
+      "description": "The nature of the relationship between a party and the associated component extraordinary repair.\n\nEx:\n- Requested-by Party\n- Authorized-by Party\n- Performed-by Party\n- Billed-by Party\n- Billed-to Party"
+    }
+  ]
+}

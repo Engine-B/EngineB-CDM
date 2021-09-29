@@ -1,0 +1,73 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Utility",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "UtilityId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "UtilityId",
+          "description": ""
+        },
+        {
+          "name": "PropertyId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "PropertyId",
+          "description": ""
+        },
+        {
+          "name": "TransactionId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "TransactionId",
+          "description": ""
+        },
+        {
+          "name": "UtilityName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "UtilityName",
+          "description": ""
+        },
+        {
+          "name": "UtilityType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "UtilityType",
+          "description": ""
+        },
+        {
+          "name": "UtilityAddress",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "UtilityAddress",
+          "description": ""
+        },
+        {
+          "name": "UtilityURL",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "UtilityURL",
+          "description": ""
+        }
+      ],
+      "displayName": "Utility",
+      "description": ""
+    }
+  ]
+}

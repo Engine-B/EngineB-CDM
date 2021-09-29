@@ -1,0 +1,189 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "_allImports.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PropertyLocation",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "PropertyLocationId",
+          "purpose": "identifiedBy",
+          "dataType": "integer",
+          "displayName": "Property Location ID",
+          "description": "The unique identifier of a Property Location."
+        },
+        {
+          "name": "BuildingId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Building ID",
+          "description": "The unique identifier of a Building."
+        },
+        {
+          "name": "FloorId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Floor ID",
+          "description": "The unique identifier of a Floor."
+        },
+        {
+          "name": "PropertyLocationMaximumCapacity",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Location Maximum Capacity",
+          "description": "The maximum number of individuals that may occupy the Property Location at any given time."
+        },
+        {
+          "name": "PropertyLocationHeight",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Location Height",
+          "description": "The height of the Property Location."
+        },
+        {
+          "name": "PropertyLocationWidth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Location Width",
+          "description": "The width of the Property Location."
+        },
+        {
+          "name": "PropertyLocationDepth",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Location Depth",
+          "description": "The depth of the Property Location."
+        },
+        {
+          "name": "LengthWidthHeightUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Length/Width/Height UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "PropertyLocationArea",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Property Location Area",
+          "description": "The depth of the Property Location."
+        },
+        {
+          "name": "AreaUomId",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "Area UOM ID",
+          "description": "The unique identifier of a Unit Of Measure."
+        },
+        {
+          "name": "PropertyLocationNote",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "Property Location Note",
+          "description": "A note, comment or additional information regarding the property location.",
+          "maximumLength": 1024
+        },
+        {
+          "entity": {
+            "entityReference": "Space",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "Space/(resolvedAttributes)/PropertyId"
+                ]
+              }
+            ]
+          },
+          "name": "PropertyId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "PropertyId",
+                "purpose": "identifiedBy",
+                "dataType": "integer",
+                "displayName": "Property ID",
+                "description": "The unique identifier of a Property."
+              }
+            }
+          }
+        },
+        {
+          "entity": {
+            "entityReference": "Space",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "Space/(resolvedAttributes)/SpaceId"
+                ]
+              }
+            ]
+          },
+          "name": "SpaceId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "SpaceId",
+                "purpose": "hasA",
+                "dataType": "integer",
+                "isNullable": true,
+                "displayName": "Space ID",
+                "description": "The unique identifier of a Room."
+              }
+            }
+          }
+        },
+        {
+          "entity": {
+            "entityReference": "PropertyLocationFunction",
+            "appliedTraits": [
+              {
+                "traitReference": "is.identifiedBy",
+                "arguments": [
+                  "PropertyLocationFunction/(resolvedAttributes)/PropertyLocationFunctionId"
+                ]
+              }
+            ]
+          },
+          "name": "PropertyLocationFunctionId",
+          "resolutionGuidance": {
+            "renameFormat": "{m}",
+            "entityByReference": {
+              "allowReference": true,
+              "foreignKeyAttribute": {
+                "name": "PropertyLocationFunctionId",
+                "purpose": "hasA",
+                "dataType": "integer",
+                "isNullable": true,
+                "displayName": "Property Location Function ID",
+                "description": "The identifier of the Property Location Function."
+              }
+            }
+          }
+        }
+      ],
+      "displayName": "Property Location (Floorplan)",
+      "description": "A location within a property."
+    }
+  ]
+}

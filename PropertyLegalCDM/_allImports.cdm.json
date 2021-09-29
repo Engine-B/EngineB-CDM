@@ -1,0 +1,140 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/foundations.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyType.cdm.json"
+    },
+    {
+      "corpusPath": "LeaseholdImprovementType.cdm.json"
+    },
+    {
+      "corpusPath": "LeaseholdImprovement.cdm.json"
+    },
+    {
+      "corpusPath": "Contract.cdm.json"
+    },
+    {
+      "corpusPath": "Floor.cdm.json"
+    },
+    {
+      "corpusPath": "Building.cdm.json"
+    },
+    {
+      "corpusPath": "ExtraordinaryRepairPartyRelationshipType.cdm.json"
+    },
+    {
+      "corpusPath": "ExtraordinaryRepairType.cdm.json"
+    },
+    {
+      "corpusPath": "ExtraordinaryRepair.cdm.json"
+    },
+    {
+      "corpusPath": "RelatedProperty.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyLocation.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyLocationCost.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyLocationPartyContract.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyLocationStatus.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyLocationStatusType.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyLocationFunction.cdm.json"
+    },
+    {
+      "corpusPath": "Property.cdm.json"
+    },
+    {
+      "corpusPath": "TitleStatus.cdm.json"
+    },
+    {
+      "corpusPath": "Space.cdm.json"
+    },
+    {
+      "corpusPath": "SpaceClassification.cdm.json"
+    },
+    {
+      "corpusPath": "Duration.cdm.json"
+    },
+    {
+      "corpusPath": "Component.cdm.json"
+    },
+    {
+      "corpusPath": "SubjectType.cdm.json"
+    },
+    {
+      "corpusPath": "Address.cdm.json"
+    },
+    {
+      "corpusPath": "LeaseHold.cdm.json"
+    },
+    {
+      "corpusPath": "SaleInformationLandLease.cdm.json"
+    },
+    {
+      "corpusPath": "LeaseholdNotices.cdm.json"
+    },
+    {
+      "corpusPath": "Unit.cdm.json"
+    },
+    {
+      "corpusPath": "PropertyConstuctionForm.cdm.json"
+    },
+    {
+      "corpusPath": "LeaseTerm.cdm.json"
+    },
+    {
+      "corpusPath": "GovernmentalBody.cdm.json"
+    },
+    {
+      "corpusPath": "FeatureCount.cdm.json"
+    },
+    {
+      "corpusPath": "Changes.cdm.json"
+    },
+    {
+      "corpusPath": "AlterationType.cdm.json"
+    },
+    {
+      "corpusPath": "Lease.cdm.json"
+    },
+    {
+      "corpusPath": "TitleHolding.cdm.json"
+    },
+    {
+      "corpusPath": "Title.cdm.json"
+    },
+    {
+      "corpusPath": "TitleCharges.cdm.json"
+    },
+    {
+      "corpusPath": "Parking.cdm.json"
+    },
+    {
+      "corpusPath": "Information.cdm.json"
+    },
+    {
+      "corpusPath": "LicenceToAlter.cdm.json"
+    },
+    {
+      "corpusPath": "Water.cdm.json"
+    },
+    {
+      "corpusPath": "Utility.cdm.json"
+    },
+    {
+      "corpusPath": "RegisteredProprietor.cdm.json"
+    }
+  ]
+}
