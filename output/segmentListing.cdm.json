@@ -1,0 +1,34 @@
+{
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
+        {
+            "corpusPath": "_allImports.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "segmentListing",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "segment0XDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment0XDescription",
+                        "decimalPlaces": null,
+                        "description": "Segment description to indicate the name or"
+                    },
+                    {
+                        "name": "segment0XValue",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "segment0XValue",
+                        "decimalPlaces": null,
+                        "description": "Value of Segment0X (X may equal 1 to 5)."
+                    }
+                ]
+            ]
+        }
+    ]
+}

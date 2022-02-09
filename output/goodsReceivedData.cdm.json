@@ -1,0 +1,474 @@
+{
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
+        {
+            "corpusPath": "_allImports.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "goodsReceivedData",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "adjustmentAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "adjustmentAmount",
+                        "decimalPlaces": 5,
+                        "description": "Reference number on shipping document\r\n(company reference or logistics company\r\nidentifier)."
+                    },
+                    {
+                        "name": "adjustmentDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "adjustmentDescription",
+                        "decimalPlaces": null,
+                        "description": "If an adjustment to the receipt, a description\r\nof the reason for the adjustment."
+                    },
+                    {
+                        "name": "adjustmentIndicator",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "adjustmentIndicator",
+                        "decimalPlaces": null,
+                        "description": "\"0\" if the transaction is the original shipment\r\ntransaction, \"1\" if the transaction is a\r\nshipment adjustment."
+                    },
+                    {
+                        "name": "approvedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "approvedBy",
+                        "decimalPlaces": null,
+                        "description": "User ID (from User_Listing file) for person who approved the entry."
+                    },
+                    {
+                        "name": "approvedByDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "approvedByDateTime",
+                        "decimalPlaces": null,
+                        "description": "The DateTime the entry was approved."
+                    },
+                    {
+                        "name": "businessUnitCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessUnitCode",
+                        "decimalPlaces": null,
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                    },
+                    {
+                        "name": "enteredBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "enteredBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for person who created the record."
+                    },
+                    {
+                        "name": "enteredDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "enteredDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself."
+                    },
+                    {
+                        "name": "goodsReceiptUniqueId",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "goodsReceiptUniqueId",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "goodsReceivedAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "goodsReceivedAmount",
+                        "decimalPlaces": 5,
+                        "description": "Customer purchasing the product. Must \r\nmatch a Customer_Account_ID in the\r\n Customer_Master_Listing_YYYYMMDD file."
+                    },
+                    {
+                        "name": "goodsReceivedCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "goodsReceivedCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "goodsReceivedCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "goodsReceivedCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "goodsReceivedExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "goodsReceivedExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+                    },
+                    {
+                        "name": "lastModifiedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for the last person modifying this entry."
+                    },
+                    {
+                        "name": "lastModifiedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date and time the entry was last modified before posting."
+                    },
+                    {
+                        "name": "lineAdjustmentAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineAdjustmentAmount",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "lineAdjustmentDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineAdjustmentDescription",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "lineAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineAmount",
+                        "decimalPlaces": 5,
+                        "description": "In the header's default currency."
+                    },
+                    {
+                        "name": "lineCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": "Monetary amount for the line item in the\r\n receipt document related to the purchase \r\norder in local currency."
+                    },
+                    {
+                        "name": "lineCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "The currency for local reporting\r\n requirements. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "lineExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+                    },
+                    {
+                        "name": "linePurchaseOrderAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderAmount",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "linePurchaseOrderCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": "Monetary amount for the line item in the\r\npurchase order related to the receipt\r\nshipping document in local currency. If no\r\npurchase order, leave blank."
+                    },
+                    {
+                        "name": "linePurchaseOrderCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding. If no\r\npurchase order, leave blank."
+                    },
+                    {
+                        "name": "linePurchaseOrderExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "linePurchaseOrderLineId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderLineId",
+                        "decimalPlaces": null,
+                        "description": "Identifier for purchase order line number.\r\nMust match Purchase_Order_Line_ID\r\nused in\r\nPurchase_Orders_Lines_YYYYMMDD_\r\nYYYYMMDD file. If no purchase order,\r\nleave blank."
+                    },
+                    {
+                        "name": "linePurchaseOrderQuantity",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderQuantity",
+                        "decimalPlaces": null,
+                        "description": "Purchase order line quantity. If no purchase \r\norder, leave blank."
+                    },
+                    {
+                        "name": "linePurchaseOrderUnitofMeasure",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderUnitofMeasure",
+                        "decimalPlaces": null,
+                        "description": "Purchase order line base unit of measure. If\r\n no purchase order, leave blank."
+                    },
+                    {
+                        "name": "linePurchaseOrderUnitPrice",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "linePurchaseOrderUnitPrice",
+                        "decimalPlaces": null,
+                        "description": "Purchase order line price per unit. If no \r\npurchase order, leave blank."
+                    },
+                    {
+                        "name": "lineReceiptDocumentLineId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptDocumentLineId",
+                        "decimalPlaces": null,
+                        "description": "Reference line number on receipt document."
+                    },
+                    {
+                        "name": "lineReceiptId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptId",
+                        "decimalPlaces": null,
+                        "description": "Unique identifier for each shipment received. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment."
+                    },
+                    {
+                        "name": "lineReceiptProductBarCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptProductBarCode",
+                        "decimalPlaces": null,
+                        "description": "UPC or other general identifier."
+                    },
+                    {
+                        "name": "lineReceiptProductDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptProductDescription",
+                        "decimalPlaces": null,
+                        "description": "Product description (plain English) to indicate the name or other identifying characteristics of the product."
+                    },
+                    {
+                        "name": "lineReceiptProductGroup01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptProductGroup01",
+                        "decimalPlaces": null,
+                        "description": "Product descriptor #1, for example, tires or accessories."
+                    },
+                    {
+                        "name": "lineReceiptProductGroup02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptProductGroup02",
+                        "decimalPlaces": null,
+                        "description": "Product descriptor #2, for example, brand."
+                    },
+                    {
+                        "name": "lineReceiptProductId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptProductId",
+                        "decimalPlaces": null,
+                        "description": "Identifier that is unique for each product."
+                    },
+                    {
+                        "name": "lineReceiptQuantity",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptQuantity",
+                        "decimalPlaces": null,
+                        "description": "Item quantity received."
+                    },
+                    {
+                        "name": "lineReceiptUnitOfMeasure",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptUnitOfMeasure",
+                        "decimalPlaces": null,
+                        "description": "Base unit of measure."
+                    },
+                    {
+                        "name": "lineReceiptUnitPrice",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineReceiptUnitPrice",
+                        "decimalPlaces": null,
+                        "description": "Price per unit for item received."
+                    },
+                    {
+                        "name": "postingStatus",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "postingStatus",
+                        "decimalPlaces": null,
+                        "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\")."
+                    },
+                    {
+                        "name": "purchaseOrderAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "purchaseOrderAmount",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "purchaseOrderCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "purchaseOrderCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount in local\r\ncurrency. If no purchase order, leave blank."
+                    },
+                    {
+                        "name": "purchaseOrderCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "purchaseOrderCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding. If no\r\npurchase order, leave blank."
+                    },
+                    {
+                        "name": "purchaseOrderDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "purchaseOrderDate",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "purchaseOrderExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "purchaseOrderExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "purchaseOrderId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "purchaseOrderId",
+                        "decimalPlaces": null,
+                        "description": "Unique identifier for each purchase order.\r\nMust match Purchase_Order_ID in the\r\nPurchase_Orders_YYYYMMDD_YYYYMMD\r\nD file. If no purchase order, leave blank."
+                    },
+                    {
+                        "name": "receiptDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "receiptDate",
+                        "decimalPlaces": null,
+                        "description": "Date of receipt (date received)"
+                    },
+                    {
+                        "name": "receiptDocumentId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "receiptDocumentId",
+                        "decimalPlaces": null,
+                        "description": "Reference number on receipt shipping\r\ndocument (company reference or logistics\r\ncompany identifier)."
+                    },
+                    {
+                        "name": "receiptFiscalYear",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "receiptFiscalYear",
+                        "decimalPlaces": null,
+                        "description": "Fiscal year in which the Receipt_Date occurs\u2014YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL)."
+                    },
+                    {
+                        "name": "receiptId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "receiptId",
+                        "decimalPlaces": null,
+                        "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction."
+                    },
+                    {
+                        "name": "receiptPeriod",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "receiptPeriod",
+                        "decimalPlaces": null,
+                        "description": "Fiscal period in which the Receipt_Date occurs. Examples include W1\u2013W53 for weekly periods, M1\u2013M12 for monthly periods, and Q1\u2013Q4 for quarterly periods."
+                    },
+                    {
+                        "name": "segment01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment01",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment02",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment03",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment03",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment04",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment04",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment05",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment05",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "supplierId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "supplierId",
+                        "decimalPlaces": null,
+                        "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
+                    }
+                ]
+            ]
+        }
+    ]
+}

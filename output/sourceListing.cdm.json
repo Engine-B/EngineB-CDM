@@ -1,0 +1,66 @@
+{
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
+        {
+            "corpusPath": "_allImports.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "sourceListing",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "businessProcessMajor",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessProcessMajor",
+                        "decimalPlaces": null,
+                        "description": "The major class of transaction associated\r\nwith a business process (for example,\r\nsales)."
+                    },
+                    {
+                        "name": "businessProcessMinor",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessProcessMinor",
+                        "decimalPlaces": null,
+                        "description": "A subprocess of the major business\r\nprocess (for example\ufffd\ufffd\ufffdorders, returns,\r\ndiscounts, and so on)."
+                    },
+                    {
+                        "name": "erpSubledgerModule",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "erpSubledgerModule",
+                        "decimalPlaces": null,
+                        "description": "Description of the subledger or ERP module the journal entry originated from. Should tie back to a system or significant accounting process. In some instances, may be represented by source."
+                    },
+                    {
+                        "name": "sourceDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "sourceDescription",
+                        "decimalPlaces": null,
+                        "description": "A plain English description of the source. Some of the more common journals are purchases, sales, cash receipts, cash disbursements, and general journal."
+                    },
+                    {
+                        "name": "sourceId",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "sourceId",
+                        "decimalPlaces": null,
+                        "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
+                    },
+                    {
+                        "name": "systemManualIdentifier",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "systemManualIdentifier",
+                        "decimalPlaces": null,
+                        "description": "Define if the source creates system-generated or manually entered journal entries. Provide an \ufffd\ufffd\ufffdS\ufffd\ufffd\ufffd or \ufffd\ufffd\ufffdM\ufffd\ufffd\ufffd for the value."
+                    }
+                ]
+            ]
+        }
+    ]
+}

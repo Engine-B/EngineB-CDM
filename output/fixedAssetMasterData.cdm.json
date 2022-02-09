@@ -1,0 +1,410 @@
+{
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
+        {
+            "corpusPath": "_allImports.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "fixedAssetMasterData",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "businessUnitCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessUnitCode",
+                        "decimalPlaces": null,
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                    },
+                    {
+                        "name": "currencyId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "currencyId",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "depreciationRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "depreciationRate",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetAccumulatedDepreciation",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetAccumulatedDepreciation",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetAccumulatedDepreciationAccount",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetAccumulatedDepreciationAccount",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetAcquisitionDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetAcquisitionDate",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetAssetAccount",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetAssetAccount",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetAvailableforSaleDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetAvailableforSaleDate",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetBarCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetBarCode",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetCIPAccount",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetCIPAccount",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetCIPFlag",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetCIPFlag",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetClass",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetClass",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetCode",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetDepreciableBasis",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetDepreciableBasis",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetDepreciationAccount",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetDepreciationAccount",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetDescription",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetDisposalDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetDisposalDate",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetFairValue",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetFairValue",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetGroup01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetGroup01",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetGroup02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetGroup02",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetId",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "fixedAssetId",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetInactiveFlag",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetInactiveFlag",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetInServiceDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetInServiceDate",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetNetBookValue",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetNetBookValue",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetOriginalCost",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetOriginalCost",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetQuantityOnHand",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetQuantityOnHand",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetRealisedGainLossAccount",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetRealisedGainLossAccount",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetReplacementCost",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetReplacementCost",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetRetirementDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetRetirementDate",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetSalvageValue",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetSalvageValue",
+                        "decimalPlaces": 5,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetType",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetUnrealizedGainLossAccount",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetUnrealizedGainLossAccount",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetUsefulLife",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetUsefulLife",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "fixedAssetUsefulLifeRemaining",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fixedAssetUsefulLifeRemaining",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "locationCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "locationCode",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "locationDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "locationDescription",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "locationId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "locationId",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "lotNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lotNumber",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "manufacturerId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "manufacturerId",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "projectId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "projectId",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "segment01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment01",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment02",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment03",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment03",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment04",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment04",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment05",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment05",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "serialNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "serialNumber",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "supplierId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "supplierId",
+                        "decimalPlaces": null,
+                        "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
+                    },
+                    {
+                        "name": "supplierName",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "supplierName",
+                        "decimalPlaces": null,
+                        "description": "Name of the supplier"
+                    }
+                ]
+            ]
+        }
+    ]
+}

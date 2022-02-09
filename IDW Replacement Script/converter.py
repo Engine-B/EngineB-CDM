@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 
-df = pd.read_csv("./EnginebAuditCDMv1.8 + Descriptions.csv")
+df = pd.read_csv("./EngineBAuditCDMv1.9.csv")
 df = df.rename(columns={
     "enginebAttribute": "name",
     "MS_DataType": "dataType",
@@ -35,5 +35,5 @@ for name, group in df_grouped:
         ]
     }
     
-    with open(f"output/{name}.cdm.json", "w") as outfile:
+    with open(f"./output/{name}.cdm.json", "w") as outfile:
         json.dump(json_object, outfile, indent=4)

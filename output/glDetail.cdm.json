@@ -1,0 +1,306 @@
+{
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
+        {
+            "corpusPath": "_allImports.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "glDetail",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "amount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amount",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount recorded in the functional or group currency for the entity under audit. No multicurrency translation should need to be performed on this amount because all transactions are recorded in a single currency."
+                    },
+                    {
+                        "name": "amountCreditDebitIndicator",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "amountCreditDebitIndicator",
+                        "decimalPlaces": null,
+                        "description": "Indicates whether the amount is a credit or debit. \ufffd\ufffd\ufffdC\ufffd\ufffd\ufffd=credit; \ufffd\ufffd\ufffdD\ufffd\ufffd\ufffd=debit."
+                    },
+                    {
+                        "name": "amountCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "amountCurrency",
+                        "decimalPlaces": null,
+                        "description": "The functional or group currency related to\r\nthe balance. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "approvedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "approvedBy",
+                        "decimalPlaces": null,
+                        "description": "User ID (from User_Listing file) for person who approved the entry."
+                    },
+                    {
+                        "name": "approvedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "approvedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The DateTime the entry was approved."
+                    },
+                    {
+                        "name": "businessUnitCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessUnitCode",
+                        "decimalPlaces": null,
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                    },
+                    {
+                        "name": "effectiveDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "effectiveDate",
+                        "decimalPlaces": null,
+                        "description": "Date the customer declared active."
+                    },
+                    {
+                        "name": "enteredBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "enteredBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for person who created the record."
+                    },
+                    {
+                        "name": "enteredDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "enteredDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself."
+                    },
+                    {
+                        "name": "fiscalYear",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fiscalYear",
+                        "decimalPlaces": null,
+                        "description": "Fiscal year in which Effective_Date occurs\ufffdYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL)."
+                    },
+                    {
+                        "name": "glAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "glAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
+                    },
+                    {
+                        "name": "jeHeaderDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "jeHeaderDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of the entire journal entry as described by the journal entry header."
+                    },
+                    {
+                        "name": "jeLineDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "jeLineDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of the individual line within the journal entry."
+                    },
+                    {
+                        "name": "journalEntryType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "journalEntryType",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "journalId",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "journalId",
+                        "decimalPlaces": null,
+                        "description": "Identifier that is unique for each journal entry. May require concatenation of multiple fields."
+                    },
+                    {
+                        "name": "journalIdLineNumber",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "journalIdLineNumber",
+                        "decimalPlaces": null,
+                        "description": "Identifier that is unique for each line within a journal entry."
+                    },
+                    {
+                        "name": "lastModifiedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for the last person modifying this entry."
+                    },
+                    {
+                        "name": "lastModifiedDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedDate",
+                        "decimalPlaces": null,
+                        "description": "The date the entry was last modified before posting."
+                    },
+                    {
+                        "name": "localAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "localAmount",
+                        "decimalPlaces": 5,
+                        "description": "Amount in the local country currency where the transaction originated."
+                    },
+                    {
+                        "name": "localAmountCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "localAmountCurrency",
+                        "decimalPlaces": null,
+                        "description": "The currency used for local country reporting requirements (for example, USD, EUR; see ISO 4217 coding)."
+                    },
+                    {
+                        "name": "period",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "period",
+                        "decimalPlaces": null,
+                        "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods."
+                    },
+                    {
+                        "name": "reportingAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "reportingAmount",
+                        "decimalPlaces": 5,
+                        "description": "The amount recorded in the currency in which a reporting entity prepares its financial statements."
+                    },
+                    {
+                        "name": "reportingAmountCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "reportingAmountCurrency",
+                        "decimalPlaces": null,
+                        "description": "The currency which a reporting entity prepares its financial statements (for example, USD, EUR; see ISO 4217 coding)."
+                    },
+                    {
+                        "name": "reversalIndicator",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "reversalIndicator",
+                        "decimalPlaces": null,
+                        "description": "Indicates whether this entry is a reversal or to be reversed. \ufffd\ufffd\ufffd1\ufffd\ufffd\ufffd=entry is a reversal, \ufffd\ufffd\ufffd2\ufffd\ufffd\ufffd=entry is to be reversed, and empty (\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd)=none of the above or system generated indicators. For XBRL GL, this is a Boolean, in which \ufffd\ufffd\ufffdtrue\ufffd\ufffd\ufffd indicates it is to be reversed; \ufffd\ufffd\ufffdfalse\ufffd\ufffd\ufffd with provision of a reversingDate indicates the entry is a reversal."
+                    },
+                    {
+                        "name": "reversalJournalId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "reversalJournalId",
+                        "decimalPlaces": null,
+                        "description": "When the Reversal_Indicator=1, this identifies the Journal_ID of the entry being reversed."
+                    },
+                    {
+                        "name": "segment01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment01",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment02",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment03",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment03",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment04",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment04",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment05",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment05",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "sourceId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "sourceId",
+                        "decimalPlaces": null,
+                        "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
+                    },
+                    {
+                        "name": "tags",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "tags",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "taxCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "taxCode",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "transactionId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "transactionId",
+                        "decimalPlaces": null,
+                        "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
+                    },
+                    {
+                        "name": "userDefined1",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "userDefined1",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "userDefined2",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "userDefined2",
+                        "decimalPlaces": null,
+                        "description": null
+                    }
+                ]
+            ]
+        }
+    ]
+}

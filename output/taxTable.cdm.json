@@ -1,0 +1,106 @@
+{
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
+        {
+            "corpusPath": "_allImports.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "taxTable",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "regulatorActiveFlag",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorActiveFlag",
+                        "decimalPlaces": null,
+                        "description": "True (Active) or False (Inactive)"
+                    },
+                    {
+                        "name": "regulatorCode",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "regulatorCode",
+                        "decimalPlaces": null,
+                        "description": "A code used to refer to this regulator or\r\njurisdiction; used as key or cross-reference\r\nin files."
+                    },
+                    {
+                        "name": "regulatorCountry",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorCountry",
+                        "decimalPlaces": null,
+                        "description": "Recommend ISO 3166-1 Alpha 2 or Alpha 3\r\nformat"
+                    },
+                    {
+                        "name": "regulatorDefaultAccrualglAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorDefaultAccrualglAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "GL account used to reflect accruals due to\r\nregulator"
+                    },
+                    {
+                        "name": "regulatorDefaultExpenseglAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorDefaultExpenseglAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "GL account used to reflect accruals due to\r\nregulator"
+                    },
+                    {
+                        "name": "regulatorDefaultPayableglAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorDefaultPayableglAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "GL account used to reflect accruals due to\r\nregulator"
+                    },
+                    {
+                        "name": "regulatorIdentifier",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorIdentifier",
+                        "decimalPlaces": null,
+                        "description": "Tax or other code assigned by Regulator for\r\nreporting organization to Regulator"
+                    },
+                    {
+                        "name": "regulatorName",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorName",
+                        "decimalPlaces": null,
+                        "description": "Name of regulator for whom tax is withheld\r\nor accrued"
+                    },
+                    {
+                        "name": "regulatorRegion",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorRegion",
+                        "decimalPlaces": null,
+                        "description": "Sub-region within country; in the U.S., this\r\nwould be state; in Canada it would be\r\nprovince."
+                    },
+                    {
+                        "name": "regulatorReportingOrganization",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorReportingOrganization",
+                        "decimalPlaces": null,
+                        "description": "Cross-reference to\r\nOrganization_Location_File_YYYYMMDD"
+                    },
+                    {
+                        "name": "regulatorRole",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "regulatorRole",
+                        "decimalPlaces": null,
+                        "description": "From: Federal, Regional, Local"
+                    }
+                ]
+            ]
+        }
+    ]
+}
