@@ -1,1338 +1,306 @@
 {
-  "jsonSchemaSemanticVersion": "1.0.0",
-  "imports": [
-    {
-      "corpusPath": "/glDetail.cdm.json",
-      "moniker": "resolvedFrom"
-    }
-  ],
-  "definitions": [
-    {
-      "entityName": "glDetail",
-      "attributeContext": {
-        "type": "entity",
-        "name": "glDetail",
-        "definition": "resolvedFrom/glDetail",
-        "contents": [
-          {
-            "type": "entityReferenceExtends",
-            "name": "extends",
-            "parent": "glDetail/attributeContext/glDetail",
-            "contents": [
-              {
-                "type": "entity",
-                "name": "CdmEntity",
-                "parent": "glDetail/attributeContext/glDetail/extends",
-                "definition": "resolvedFrom/CdmEntity"
-              }
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "transactionTypeDescription",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/transactionTypeDescription",
-            "contents": [
-              "glDetail/hasAttributes/transactionTypeDescription"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "transactionType",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/transactionType",
-            "contents": [
-              "glDetail/hasAttributes/transactionType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reversalReason",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reversalReason",
-            "contents": [
-              "glDetail/hasAttributes/reversalReason"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "isNegativePostingIndicator",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/isNegativePostingIndicator",
-            "contents": [
-              "glDetail/hasAttributes/isNegativePostingIndicator"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reversalID",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reversalID",
-            "contents": [
-              "glDetail/hasAttributes/reversalID"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reversalType",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reversalType",
-            "contents": [
-              "glDetail/hasAttributes/reversalType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reversalFiscalYear",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reversalFiscalYear",
-            "contents": [
-              "glDetail/hasAttributes/reversalFiscalYear"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "isInterCoFlag",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/isInterCoFlag",
-            "contents": [
-              "glDetail/hasAttributes/isInterCoFlag"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "clearingDocumentNumber",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/clearingDocumentNumber",
-            "contents": [
-              "glDetail/hasAttributes/clearingDocumentNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "clearingDate",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/clearingDate",
-            "contents": [
-              "glDetail/hasAttributes/clearingDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "customerNumber",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/customerNumber",
-            "contents": [
-              "glDetail/hasAttributes/customerNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "vendorNumber",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/vendorNumber",
-            "contents": [
-              "glDetail/hasAttributes/vendorNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "documentStatus",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/documentStatus",
-            "contents": [
-              "glDetail/hasAttributes/documentStatus"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "documentDate",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/documentDate",
-            "contents": [
-              "glDetail/hasAttributes/documentDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "documentType",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/documentType",
-            "contents": [
-              "glDetail/hasAttributes/documentType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "transactionKey",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/transactionKey",
-            "contents": [
-              "glDetail/hasAttributes/transactionKey"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "accountType",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/accountType",
-            "contents": [
-              "glDetail/hasAttributes/accountType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "referenceTransaction",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/referenceTransaction",
-            "contents": [
-              "glDetail/hasAttributes/referenceTransaction"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "businessTransactionCode",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/businessTransactionCode",
-            "contents": [
-              "glDetail/hasAttributes/businessTransactionCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "postingKey",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/postingKey",
-            "contents": [
-              "glDetail/hasAttributes/postingKey"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "isClearing",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/isClearing",
-            "contents": [
-              "glDetail/hasAttributes/isClearing"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "referenceSubledgerDocumentNumber",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/referenceSubledgerDocumentNumber",
-            "contents": [
-              "glDetail/hasAttributes/referenceSubledgerDocumentNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "transactionCode",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/transactionCode",
-            "contents": [
-              "glDetail/hasAttributes/transactionCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amount",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/amount",
-            "contents": [
-              "glDetail/hasAttributes/amount"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountCreditDebitIndicator",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/amountCreditDebitIndicator",
-            "contents": [
-              "glDetail/hasAttributes/amountCreditDebitIndicator"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountCurrency",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/amountCurrency",
-            "contents": [
-              "glDetail/hasAttributes/amountCurrency"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "approvedBy",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/approvedBy",
-            "contents": [
-              "glDetail/hasAttributes/approvedBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "approvedDateTime",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/approvedDateTime",
-            "contents": [
-              "glDetail/hasAttributes/approvedDateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "businessUnitCode",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/businessUnitCode",
-            "contents": [
-              "glDetail/hasAttributes/businessUnitCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "effectiveDate",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/effectiveDate",
-            "contents": [
-              "glDetail/hasAttributes/effectiveDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "enteredBy",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/enteredBy",
-            "contents": [
-              "glDetail/hasAttributes/enteredBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "enteredDateTime",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/enteredDateTime",
-            "contents": [
-              "glDetail/hasAttributes/enteredDateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fiscalYear",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/fiscalYear",
-            "contents": [
-              "glDetail/hasAttributes/fiscalYear"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "glAccountNumber",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/glAccountNumber",
-            "contents": [
-              "glDetail/hasAttributes/glAccountNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "jeHeaderDescription",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/jeHeaderDescription",
-            "contents": [
-              "glDetail/hasAttributes/jeHeaderDescription"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "jeLineDescription",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/jeLineDescription",
-            "contents": [
-              "glDetail/hasAttributes/jeLineDescription"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "journalEntryType",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/journalEntryType",
-            "contents": [
-              "glDetail/hasAttributes/journalEntryType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "journalId",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/journalId",
-            "contents": [
-              "glDetail/hasAttributes/journalId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "journalIdLineNumber",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/journalIdLineNumber",
-            "contents": [
-              "glDetail/hasAttributes/journalIdLineNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lastModifiedBy",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/lastModifiedBy",
-            "contents": [
-              "glDetail/hasAttributes/lastModifiedBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lastModifiedDate",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/lastModifiedDate",
-            "contents": [
-              "glDetail/hasAttributes/lastModifiedDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "localAmount",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/localAmount",
-            "contents": [
-              "glDetail/hasAttributes/localAmount"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "localAmountCurrency",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/localAmountCurrency",
-            "contents": [
-              "glDetail/hasAttributes/localAmountCurrency"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "period",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/period",
-            "contents": [
-              "glDetail/hasAttributes/period"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reportingAmount",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reportingAmount",
-            "contents": [
-              "glDetail/hasAttributes/reportingAmount"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reportingAmountCurrency",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reportingAmountCurrency",
-            "contents": [
-              "glDetail/hasAttributes/reportingAmountCurrency"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reversalIndicator",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reversalIndicator",
-            "contents": [
-              "glDetail/hasAttributes/reversalIndicator"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "reversalJournalId",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/reversalJournalId",
-            "contents": [
-              "glDetail/hasAttributes/reversalJournalId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment01",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/segment01",
-            "contents": [
-              "glDetail/hasAttributes/segment01"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment02",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/segment02",
-            "contents": [
-              "glDetail/hasAttributes/segment02"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment03",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/segment03",
-            "contents": [
-              "glDetail/hasAttributes/segment03"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment04",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/segment04",
-            "contents": [
-              "glDetail/hasAttributes/segment04"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment05",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/segment05",
-            "contents": [
-              "glDetail/hasAttributes/segment05"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "sourceId",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/sourceId",
-            "contents": [
-              "glDetail/hasAttributes/sourceId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "tags",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/tags",
-            "contents": [
-              "glDetail/hasAttributes/tags"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "taxCode",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/taxCode",
-            "contents": [
-              "glDetail/hasAttributes/taxCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "transactionId",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/transactionId",
-            "contents": [
-              "glDetail/hasAttributes/transactionId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "userDefined1",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/userDefined1",
-            "contents": [
-              "glDetail/hasAttributes/userDefined1"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "userDefined2",
-            "parent": "glDetail/attributeContext/glDetail",
-            "definition": "resolvedFrom/glDetail/hasAttributes/userDefined2",
-            "contents": [
-              "glDetail/hasAttributes/userDefined2"
-            ]
-          }
-        ]
-      },
-      "hasAttributes": [
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
         {
-          "name": "transactionTypeDescription",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/transactionTypeDescription",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "transactionTypeDescription",
-          "description": "",
-          "maximumLength": 200
-        },
-        {
-          "name": "transactionType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/transactionType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "transactionType",
-          "description": "",
-          "maximumLength": 10
-        },
-        {
-          "name": "reversalReason",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reversalReason",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "reversalReason",
-          "description": "",
-          "maximumLength": 10
-        },
-        {
-          "name": "isNegativePostingIndicator",
-          "appliedTraits": [
-            "is.dataFormat.boolean"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/isNegativePostingIndicator",
-          "isNullable": true,
-          "dataFormat": "Boolean",
-          "displayName": "isNegativePostingIndicator",
-          "description": ""
-        },
-        {
-          "name": "reversalID",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reversalID",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "reversalID",
-          "description": "",
-          "maximumLength": 100
-        },
-        {
-          "name": "reversalType",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reversalType",
-          "isNullable": true,
-          "dataFormat": "Int32",
-          "displayName": "reversalType",
-          "description": ""
-        },
-        {
-          "name": "reversalFiscalYear",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reversalFiscalYear",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "reversalFiscalYear",
-          "description": "",
-          "maximumLength": 12
-        },
-        {
-          "name": "isInterCoFlag",
-          "appliedTraits": [
-            "is.dataFormat.boolean"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/isInterCoFlag",
-          "isNullable": true,
-          "dataFormat": "Boolean",
-          "displayName": "isInterCoFlag",
-          "description": ""
-        },
-        {
-          "name": "clearingDocumentNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/clearingDocumentNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "clearingDocumentNumber",
-          "description": "",
-          "maximumLength": 100
-        },
-        {
-          "name": "clearingDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/clearingDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "clearingDate",
-          "description": ""
-        },
-        {
-          "name": "customerNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/customerNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "customerNumber",
-          "description": "",
-          "maximumLength": 100
-        },
-        {
-          "name": "vendorNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/vendorNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "vendorNumber",
-          "description": "",
-          "maximumLength": 100
-        },
-        {
-          "name": "documentStatus",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/documentStatus",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "documentStatus",
-          "description": "",
-          "maximumLength": 1
-        },
-        {
-          "name": "documentDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/documentDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "documentDate",
-          "description": ""
-        },
-        {
-          "name": "documentType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/documentType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "documentType",
-          "description": "",
-          "maximumLength": 50
-        },
-        {
-          "name": "transactionKey",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/transactionKey",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "transactionKey",
-          "description": "",
-          "maximumLength": 4
-        },
-        {
-          "name": "accountType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/accountType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "accountType",
-          "description": "",
-          "maximumLength": 10
-        },
-        {
-          "name": "referenceTransaction",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/referenceTransaction",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "referenceTransaction",
-          "description": "",
-          "maximumLength": 50
-        },
-        {
-          "name": "businessTransactionCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/businessTransactionCode",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "businessTransactionCode",
-          "description": "",
-          "maximumLength": 50
-        },
-        {
-          "name": "postingKey",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/postingKey",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "postingKey",
-          "description": "",
-          "maximumLength": 4
-        },
-        {
-          "name": "isClearing",
-          "appliedTraits": [
-            "is.dataFormat.boolean"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/isClearing",
-          "isNullable": true,
-          "dataFormat": "Boolean",
-          "displayName": "isClearing",
-          "description": ""
-        },
-        {
-          "name": "referenceSubledgerDocumentNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/referenceSubledgerDocumentNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "referenceSubledgerDocumentNumber",
-          "description": "",
-          "maximumLength": 100
-        },
-        {
-          "name": "transactionCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/transactionCode",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "transactionCode",
-          "description": "",
-          "maximumLength": 50
-        },
-        {
-          "name": "amount",
-          "appliedTraits": [
-            {
-              "traitReference": "is.dataFormat.numeric.shaped"
-            }
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/amount",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "amount",
-          "description": "Transaction monetary amount recorded in the functional or group currency for the entity under audit. No multicurrency translation should need to be performed on this amount because all transactions are recorded in a single currency.\n"
-        },
-        {
-          "name": "amountCreditDebitIndicator",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/amountCreditDebitIndicator",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "amountCreditDebitIndicator",
-          "description": "Indicates whether the amount is a credit or debit. ‚\n"
-        },
-        {
-          "name": "amountCurrency",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/amountCurrency",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "amountCurrency",
-          "description": "The functional or group currency related to\nthe balance. See ISO 4217 coding."
-        },
-        {
-          "name": "approvedBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/approvedBy",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry."
-        },
-        {
-          "name": "approvedDateTime",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/approvedDateTime",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "approvedDateTime",
-          "description": "The DateTime the entry was approved"
-        },
-        {
-          "name": "businessUnitCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/businessUnitCode",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
-        },
-        {
-          "name": "effectiveDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/effectiveDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "effectiveDate",
-          "description": "Date the customer declared active."
-        },
-        {
-          "name": "enteredBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/enteredBy",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "enteredBy",
-          "description": "User_ID (from User_Listing file) for person who created the record."
-        },
-        {
-          "name": "enteredDateTime",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/enteredDateTime",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "enteredDateTime",
-          "description": "The date the transaction was entered into the \nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\n date), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself."
-        },
-        {
-          "name": "fiscalYear",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/fiscalYear",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fiscalYear",
-          "description": "Fiscal year in which Effective_Date occurs—YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL)."
-        },
-        {
-          "name": "glAccountNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/glAccountNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "glAccountNumber",
-          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
-        },
-        {
-          "name": "jeHeaderDescription",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/jeHeaderDescription",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "jeHeaderDescription",
-          "description": "Description of the entire journal entry as described by the journal entry header."
-        },
-        {
-          "name": "jeLineDescription",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/jeLineDescription",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "jeLineDescription",
-          "description": "Description of the individual line within the journal entry."
-        },
-        {
-          "name": "journalEntryType",
-          "appliedTraits": [
-            "is.dataFormat.boolean"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/journalEntryType",
-          "isNullable": true,
-          "dataFormat": "Boolean",
-          "displayName": "journalEntryType",
-          "description": ""
-        },
-        {
-          "name": "journalId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/journalId",
-          "isPrimaryKey": true,
-          "dataFormat": "String",
-          "displayName": "journalId",
-          "description": "Identifier that is unique for each journal entry. May require concatenation of multiple fields."
-        },
-        {
-          "name": "journalIdLineNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/journalIdLineNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "journalIdLineNumber",
-          "description": "Identifier that is unique for each line within a journal entry."
-        },
-        {
-          "name": "lastModifiedBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/lastModifiedBy",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "lastModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
-        },
-        {
-          "name": "lastModifiedDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/lastModifiedDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "lastModifiedDate",
-          "description": "The date the entry was last modified before posting."
-        },
-        {
-          "name": "localAmount",
-          "appliedTraits": [
-            {
-              "traitReference": "is.dataFormat.numeric.shaped"
-            }
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/localAmount",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "localAmount",
-          "description": "Amount in the local country currency where the transaction originated."
-        },
-        {
-          "name": "localAmountCurrency",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/localAmountCurrency",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "localAmountCurrency",
-          "description": "The currency used for local country reporting requirements (for example, USD, EUR; see ISO 4217 coding)."
-        },
-        {
-          "name": "period",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/period",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "period",
-          "description": "Fiscal period in which the Effective_Date occurs.Examples include "
-        },
-        {
-          "name": "reportingAmount",
-          "appliedTraits": [
-            {
-              "traitReference": "is.dataFormat.numeric.shaped"
-            }
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reportingAmount",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "reportingAmount",
-          "description": "The amount recorded in the currency in which a reporting entity prepares its financial statements."
-        },
-        {
-          "name": "reportingAmountCurrency",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reportingAmountCurrency",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "reportingAmountCurrency",
-          "description": "The currency which a reporting entity prepares its financial statements (for example, USD, EUR; see ISO 4217 coding)."
-        },
-        {
-          "name": "reversalIndicator",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reversalIndicator",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "reversalIndicator",
-          "description": ""
-        },
-        {
-          "name": "reversalJournalId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/reversalJournalId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "reversalJournalId",
-          "description": "When the Reversal_Indicator=1, this identifies the Journal_ID of the entry being reversed."
-        },
-        {
-          "name": "segment01",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/segment01",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "segment01",
-          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
-        },
-        {
-          "name": "segment02",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/segment02",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "segment02",
-          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
-        },
-        {
-          "name": "segment03",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/segment03",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "segment03",
-          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
-        },
-        {
-          "name": "segment04",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/segment04",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "segment04",
-          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
-        },
-        {
-          "name": "segment05",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/segment05",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "segment05",
-          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
-        },
-        {
-          "name": "sourceId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/sourceId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "sourceId",
-          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
-        },
-        {
-          "name": "tags",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/tags",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "tags",
-          "description": ""
-        },
-        {
-          "name": "taxCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/taxCode",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "taxCode",
-          "description": ""
-        },
-        {
-          "name": "transactionId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/transactionId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "transactionId",
-          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
-        },
-        {
-          "name": "userDefined1",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/userDefined1",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "userDefined1",
-          "description": ""
-        },
-        {
-          "name": "userDefined2",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "glDetail/attributeContext/glDetail/userDefined2",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "userDefined2",
-          "description": ""
+            "corpusPath": "_allImports.cdm.json"
         }
-      ],
-      "displayName": "glDetail",
-      "description": "",
-      "version": "1.0"
-    }
-  ]
+    ],
+    "definitions": [
+        {
+            "entityName": "glDetail",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "amount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amount",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount recorded in the functional or group currency for the entity under audit. No multicurrency translation should need to be performed on this amount because all transactions are recorded in a single currency."
+                    },
+                    {
+                        "name": "amountCreditDebitIndicator",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "amountCreditDebitIndicator",
+                        "decimalPlaces": null,
+                        "description": "Indicates whether the amount is a credit or debit. \ufffd\ufffd\ufffdC\ufffd\ufffd\ufffd=credit; \ufffd\ufffd\ufffdD\ufffd\ufffd\ufffd=debit."
+                    },
+                    {
+                        "name": "amountCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "amountCurrency",
+                        "decimalPlaces": null,
+                        "description": "The functional or group currency related to\r\nthe balance. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "approvedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "approvedBy",
+                        "decimalPlaces": null,
+                        "description": "User ID (from User_Listing file) for person who approved the entry."
+                    },
+                    {
+                        "name": "approvedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "approvedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The DateTime the entry was approved."
+                    },
+                    {
+                        "name": "businessUnitCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessUnitCode",
+                        "decimalPlaces": null,
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                    },
+                    {
+                        "name": "effectiveDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "effectiveDate",
+                        "decimalPlaces": null,
+                        "description": "Date the customer declared active."
+                    },
+                    {
+                        "name": "enteredBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "enteredBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for person who created the record."
+                    },
+                    {
+                        "name": "enteredDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "enteredDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself."
+                    },
+                    {
+                        "name": "fiscalYear",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fiscalYear",
+                        "decimalPlaces": null,
+                        "description": "Fiscal year in which Effective_Date occurs\ufffdYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL)."
+                    },
+                    {
+                        "name": "glAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "glAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
+                    },
+                    {
+                        "name": "jeHeaderDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "jeHeaderDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of the entire journal entry as described by the journal entry header."
+                    },
+                    {
+                        "name": "jeLineDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "jeLineDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of the individual line within the journal entry."
+                    },
+                    {
+                        "name": "journalEntryType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "journalEntryType",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "journalId",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "journalId",
+                        "decimalPlaces": null,
+                        "description": "Identifier that is unique for each journal entry. May require concatenation of multiple fields."
+                    },
+                    {
+                        "name": "journalIdLineNumber",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "journalIdLineNumber",
+                        "decimalPlaces": null,
+                        "description": "Identifier that is unique for each line within a journal entry."
+                    },
+                    {
+                        "name": "lastModifiedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for the last person modifying this entry."
+                    },
+                    {
+                        "name": "lastModifiedDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedDate",
+                        "decimalPlaces": null,
+                        "description": "The date the entry was last modified before posting."
+                    },
+                    {
+                        "name": "localAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "localAmount",
+                        "decimalPlaces": 5,
+                        "description": "Amount in the local country currency where the transaction originated."
+                    },
+                    {
+                        "name": "localAmountCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "localAmountCurrency",
+                        "decimalPlaces": null,
+                        "description": "The currency used for local country reporting requirements (for example, USD, EUR; see ISO 4217 coding)."
+                    },
+                    {
+                        "name": "period",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "period",
+                        "decimalPlaces": null,
+                        "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods."
+                    },
+                    {
+                        "name": "reportingAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "reportingAmount",
+                        "decimalPlaces": 5,
+                        "description": "The amount recorded in the currency in which a reporting entity prepares its financial statements."
+                    },
+                    {
+                        "name": "reportingAmountCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "reportingAmountCurrency",
+                        "decimalPlaces": null,
+                        "description": "The currency which a reporting entity prepares its financial statements (for example, USD, EUR; see ISO 4217 coding)."
+                    },
+                    {
+                        "name": "reversalIndicator",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "reversalIndicator",
+                        "decimalPlaces": null,
+                        "description": "Indicates whether this entry is a reversal or to be reversed. \ufffd\ufffd\ufffd1\ufffd\ufffd\ufffd=entry is a reversal, \ufffd\ufffd\ufffd2\ufffd\ufffd\ufffd=entry is to be reversed, and empty (\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd)=none of the above or system generated indicators. For XBRL GL, this is a Boolean, in which \ufffd\ufffd\ufffdtrue\ufffd\ufffd\ufffd indicates it is to be reversed; \ufffd\ufffd\ufffdfalse\ufffd\ufffd\ufffd with provision of a reversingDate indicates the entry is a reversal."
+                    },
+                    {
+                        "name": "reversalJournalId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "reversalJournalId",
+                        "decimalPlaces": null,
+                        "description": "When the Reversal_Indicator=1, this identifies the Journal_ID of the entry being reversed."
+                    },
+                    {
+                        "name": "segment01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment01",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment02",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment03",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment03",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment04",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment04",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment05",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment05",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "sourceId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "sourceId",
+                        "decimalPlaces": null,
+                        "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
+                    },
+                    {
+                        "name": "tags",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "tags",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "taxCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "taxCode",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "transactionId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "transactionId",
+                        "decimalPlaces": null,
+                        "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
+                    },
+                    {
+                        "name": "userDefined1",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "userDefined1",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "userDefined2",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "userDefined2",
+                        "decimalPlaces": null,
+                        "description": null
+                    }
+                ]
+            ]
+        }
+    ]
 }
