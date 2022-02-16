@@ -1,169 +1,170 @@
 {
-  "jsonSchemaSemanticVersion": "1.0.0",
-  "imports": [
-    {
-      "corpusPath": "cdm:/foundations.cdm.json"
-    }
-  ],
-  "definitions": [
-    {
-      "entityName": "trialBalance",
-      "extendsEntity": "CdmEntity",
-      "hasAttributes": [
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
         {
-          "name": "amountBeginning",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "amountBeginning",
-          "description": "\"Period beginning balance amount (that is,\nthe ending balance from the prior period)\nrecorded in the functional or group currency.\nNo multicurrency translation should need to\nbe performed on this amount because all\nare recorded in a single currency.\"\n"
-        },
-        {
-          "name": "amountBeginningLocal",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "amountBeginningLocal",
-          "description": "\"Period beginning balance amount in the\nlocal country currency for multicurrency\ntracking.\"\n"
-        },
-        {
-          "name": "amountBeginningReporting",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "amountBeginningReporting",
-          "description": "\"Period beginning balance amount in\nreporting currency used for statutory\nreporting.\"\n"
-        },
-        {
-          "name": "amountCurrency",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "amountCurrency",
-          "description": "\"The functional or group currency related to\nthe balance. See ISO 4217 coding.\"\n"
-        },
-        {
-          "name": "amountEnding",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "amountEnding",
-          "description": "\"Period ending balance amount recorded in\nthe functional or group currency. No\nmulticurrency translation should need to be\nperformed on this amount because all are\nrecorded in a single currency.\"\n"
-        },
-        {
-          "name": "amountEndingLocal",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "amountEndingLocal",
-          "description": "\"Period ending balance amount in the local\ncountry currency for multicurrency tracking.\"\n"
-        },
-        {
-          "name": "amountEndingReporting",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "amountEndingReporting",
-          "description": "\"Period ending balance amount in reporting\ncurrency used for statutory reporting.\"\n"
-        },
-        {
-          "name": "amountLocalCurrency",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "amountLocalCurrency",
-          "description": "\"The currency used for local country\nreporting requirements. See ISO 4217\ncoding.\"\n"
-        },
-        {
-          "name": "amountReportingCurrency",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "amountReportingCurrency",
-          "description": "\"The currency used for nonconsolidated\nreporting as opposed to functional or\nconsolidated reporting or local or actual\namounts. See ISO 4217 coding.\"\n"
-        },
-        {
-          "name": "balanceAsOfDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "balanceAsOfDate",
-          "description": "Date of the provided balance, not when the Trial_Balance file was created (for example, 20141231 if year-end balance, even if the report was run on 20150122).\n"
-        },
-        {
-          "name": "businessUnitCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
-        },
-        {
-          "name": "fiscalYear",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "fiscalYear",
-          "description": "Fiscal year in which Effective_Date occurs—YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL).\n"
-        },
-        {
-          "name": "glAccountNumber",
-          "purpose": "identifiedBy",
-          "dataType": "string",
-          "displayName": "glAccountNumber",
-          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files.\n"
-        },
-        {
-          "name": "period",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "period",
-          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1‚ÄìW53 for weekly periods, M1‚ÄìM12 for monthly periods, and Q1‚ÄìQ4 for quarterly periods.\n"
-        },
-        {
-          "name": "segment01",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment01",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment02",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment02",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment03",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment03",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment04",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment04",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment05",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment05",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+            "corpusPath": "_allImports.cdm.json"
         }
-      ],
-      "displayName": "trialBalance",
-      "description": ""
-    }
-  ]
+    ],
+    "definitions": [
+        {
+            "entityName": "trialBalance",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "amountBeginning",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amountBeginning",
+                        "decimalPlaces": 5,
+                        "description": "Period beginning balance amount (that is,\r\nthe ending balance from the prior period)\r\nrecorded in the functional or group currency.\r\nNo multicurrency translation should need to\r\nbe performed on this amount because all\r\nare recorded in a single currency."
+                    },
+                    {
+                        "name": "amountBeginningLocal",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amountBeginningLocal",
+                        "decimalPlaces": 5,
+                        "description": "Period beginning balance amount in the\r\nlocal country currency for multicurrency\r\ntracking."
+                    },
+                    {
+                        "name": "amountBeginningReporting",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amountBeginningReporting",
+                        "decimalPlaces": 5,
+                        "description": "Period beginning balance amount in\r\nreporting currency used for statutory\r\nreporting."
+                    },
+                    {
+                        "name": "amountCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "amountCurrency",
+                        "decimalPlaces": null,
+                        "description": "The functional or group currency related to\r\nthe balance. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "amountEnding",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amountEnding",
+                        "decimalPlaces": 5,
+                        "description": "Period ending balance amount recorded in\r\nthe functional or group currency. No\r\nmulticurrency translation should need to be\r\nperformed on this amount because all are\r\nrecorded in a single currency."
+                    },
+                    {
+                        "name": "amountEndingLocal",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amountEndingLocal",
+                        "decimalPlaces": 5,
+                        "description": "Period ending balance amount in the local\r\ncountry currency for multicurrency tracking."
+                    },
+                    {
+                        "name": "amountEndingReporting",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "amountEndingReporting",
+                        "decimalPlaces": 5,
+                        "description": "Period ending balance amount in reporting\r\ncurrency used for statutory reporting."
+                    },
+                    {
+                        "name": "amountLocalCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "amountLocalCurrency",
+                        "decimalPlaces": null,
+                        "description": "The currency used for local country\r\nreporting requirements. See ISO 4217\r\ncoding."
+                    },
+                    {
+                        "name": "amountReportingCurrency",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "amountReportingCurrency",
+                        "decimalPlaces": null,
+                        "description": "The currency used for nonconsolidated\r\nreporting as opposed to functional or\r\nconsolidated reporting or local or actual\r\namounts. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "balanceAsOfDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "balanceAsOfDate",
+                        "decimalPlaces": null,
+                        "description": "Date of the provided balance, not when the Trial_Balance file was created (for example, 20141231 if year-end balance, even if the report was run on 20150122)."
+                    },
+                    {
+                        "name": "businessUnitCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessUnitCode",
+                        "decimalPlaces": null,
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                    },
+                    {
+                        "name": "fiscalYear",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fiscalYear",
+                        "decimalPlaces": null,
+                        "description": "Fiscal year in which Effective_Date occurs\ufffdYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL)."
+                    },
+                    {
+                        "name": "glAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "glAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
+                    },
+                    {
+                        "name": "period",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "period",
+                        "decimalPlaces": null,
+                        "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods."
+                    },
+                    {
+                        "name": "segment01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment01",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment02",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment03",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment03",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment04",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment04",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment05",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment05",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    }
+                ]
+            ]
+        }
+    ]
 }

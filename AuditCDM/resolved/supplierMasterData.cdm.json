@@ -1,1067 +1,402 @@
 {
-  "jsonSchemaSemanticVersion": "1.0.0",
-  "imports": [
-    {
-      "corpusPath": "/supplierMasterData.cdm.json",
-      "moniker": "resolvedFrom"
-    }
-  ],
-  "definitions": [
-    {
-      "entityName": "supplierMasterData",
-      "attributeContext": {
-        "type": "entity",
-        "name": "supplierMasterData",
-        "definition": "resolvedFrom/supplierMasterData",
-        "contents": [
-          {
-            "type": "entityReferenceExtends",
-            "name": "extends",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "contents": [
-              {
-                "type": "entity",
-                "name": "CdmEntity",
-                "parent": "supplierMasterData/attributeContext/supplierMasterData/extends",
-                "definition": "resolvedFrom/CdmEntity"
-              }
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "accountId",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/accountId",
-            "contents": [
-              "supplierMasterData/hasAttributes/accountId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "additionalAddressDetail",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/additionalAddressDetail",
-            "contents": [
-              "supplierMasterData/hasAttributes/additionalAddressDetail"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressAddressType",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressAddressType",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressAddressType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressBuilding",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressBuilding",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressBuilding"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressCity",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressCity",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressCity"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressCountry",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressCountry",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressCountry"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressNumber",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressNumber",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressPostalCode",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressPostalCode",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressPostalCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressRegion",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressRegion",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressRegion"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "addressStreetName",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/addressStreetName",
-            "contents": [
-              "supplierMasterData/hasAttributes/addressStreetName"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "bankAccountName",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/bankAccountName",
-            "contents": [
-              "supplierMasterData/hasAttributes/bankAccountName"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "bankAccountNumber",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/bankAccountNumber",
-            "contents": [
-              "supplierMasterData/hasAttributes/bankAccountNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "bankAccountId",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/bankAccountId",
-            "contents": [
-              "supplierMasterData/hasAttributes/bankAccountId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "companyType",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/companyType",
-            "contents": [
-              "supplierMasterData/hasAttributes/companyType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "effectiveDate",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/effectiveDate",
-            "contents": [
-              "supplierMasterData/hasAttributes/effectiveDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "email",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/email",
-            "contents": [
-              "supplierMasterData/hasAttributes/email"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "expirationDate",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/expirationDate",
-            "contents": [
-              "supplierMasterData/hasAttributes/expirationDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fax",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/fax",
-            "contents": [
-              "supplierMasterData/hasAttributes/fax"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "firstName",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/firstName",
-            "contents": [
-              "supplierMasterData/hasAttributes/firstName"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "IBANNumber",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/IBANNumber",
-            "contents": [
-              "supplierMasterData/hasAttributes/IBANNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lastName",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/lastName",
-            "contents": [
-              "supplierMasterData/hasAttributes/lastName"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "name",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/name",
-            "contents": [
-              "supplierMasterData/hasAttributes/name"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "paymentDiscountDays",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/paymentDiscountDays",
-            "contents": [
-              "supplierMasterData/hasAttributes/paymentDiscountDays"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "paymentDiscountPercentage",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/paymentDiscountPercentage",
-            "contents": [
-              "supplierMasterData/hasAttributes/paymentDiscountPercentage"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "paymentDueDays",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/paymentDueDays",
-            "contents": [
-              "supplierMasterData/hasAttributes/paymentDueDays"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "registrationNumber",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/registrationNumber",
-            "contents": [
-              "supplierMasterData/hasAttributes/registrationNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "selfBillingIndicator",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/selfBillingIndicator",
-            "contents": [
-              "supplierMasterData/hasAttributes/selfBillingIndicator"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "sortCode",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/sortCode",
-            "contents": [
-              "supplierMasterData/hasAttributes/sortCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "supplierCreditLimit",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierCreditLimit",
-            "contents": [
-              "supplierMasterData/hasAttributes/supplierCreditLimit"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "supplierGroup",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierGroup",
-            "contents": [
-              "supplierMasterData/hasAttributes/supplierGroup"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "supplierId",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierId",
-            "contents": [
-              "supplierMasterData/hasAttributes/supplierId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "supplierType",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/supplierType",
-            "contents": [
-              "supplierMasterData/hasAttributes/supplierType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "systemApprovedDateTime",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemApprovedDateTime",
-            "contents": [
-              "supplierMasterData/hasAttributes/systemApprovedDateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "systemApprovedUser",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemApprovedUser",
-            "contents": [
-              "supplierMasterData/hasAttributes/systemApprovedUser"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "systemEntryDateTime",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemEntryDateTime",
-            "contents": [
-              "supplierMasterData/hasAttributes/systemEntryDateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "systemEntryUser",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemEntryUser",
-            "contents": [
-              "supplierMasterData/hasAttributes/systemEntryUser"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "systemModifiedDateTime",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemModifiedDateTime",
-            "contents": [
-              "supplierMasterData/hasAttributes/systemModifiedDateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "systemModifiedUser",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/systemModifiedUser",
-            "contents": [
-              "supplierMasterData/hasAttributes/systemModifiedUser"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "taxAuthority",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxAuthority",
-            "contents": [
-              "supplierMasterData/hasAttributes/taxAuthority"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "taxNumber",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxNumber",
-            "contents": [
-              "supplierMasterData/hasAttributes/taxNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "taxRegistrationNumber",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxRegistrationNumber",
-            "contents": [
-              "supplierMasterData/hasAttributes/taxRegistrationNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "taxType",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxType",
-            "contents": [
-              "supplierMasterData/hasAttributes/taxType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "taxVerificationDate",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/taxVerificationDate",
-            "contents": [
-              "supplierMasterData/hasAttributes/taxVerificationDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "telephone",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/telephone",
-            "contents": [
-              "supplierMasterData/hasAttributes/telephone"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "title",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/title",
-            "contents": [
-              "supplierMasterData/hasAttributes/title"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "transactionCreditLimit",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/transactionCreditLimit",
-            "contents": [
-              "supplierMasterData/hasAttributes/transactionCreditLimit"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "website",
-            "parent": "supplierMasterData/attributeContext/supplierMasterData",
-            "definition": "resolvedFrom/supplierMasterData/hasAttributes/website",
-            "contents": [
-              "supplierMasterData/hasAttributes/website"
-            ]
-          }
-        ]
-      },
-      "hasAttributes": [
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
         {
-          "name": "accountId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/accountId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "accountId",
-          "description": "General Ledger Account code for this supplier. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department."
-        },
-        {
-          "name": "additionalAddressDetail",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/additionalAddressDetail",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "additionalAddressDetail",
-          "description": ""
-        },
-        {
-          "name": "addressAddressType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressAddressType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressAddressType",
-          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
-        },
-        {
-          "name": "addressBuilding",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressBuilding",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressBuilding",
-          "description": "The physical street address line 2 of the supplier."
-        },
-        {
-          "name": "addressCity",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressCity",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressCity",
-          "description": "The physical city where the customer is located."
-        },
-        {
-          "name": "addressCountry",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressCountry",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressCountry",
-          "description": "The country code where the supplier is\nphysically located. Recommend ISO 3166-1\nAlpha 2 or ISO 3166-1 Alpha 3 format (XX or\nXXX)."
-        },
-        {
-          "name": "addressNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressNumber",
-          "description": "The physical street address line 1 of the supplier."
-        },
-        {
-          "name": "addressPostalCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressPostalCode",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressPostalCode",
-          "description": "The zip code of the city where the customer is physically located."
-        },
-        {
-          "name": "addressRegion",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressRegion",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressRegion",
-          "description": "The physical state or province where the customer is located. Recommend ISO 3166-2."
-        },
-        {
-          "name": "addressStreetName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/addressStreetName",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "addressStreetName",
-          "description": "The physical Street where the customer is located."
-        },
-        {
-          "name": "bankAccountName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/bankAccountName",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "bankAccountName",
-          "description": "Unambiguous identification of the account to which credit and debit entries are made."
-        },
-        {
-          "name": "bankAccountNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/bankAccountNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "bankAccountNumber",
-          "description": "The name of the individual or company holding the bank account."
-        },
-        {
-          "name": "bankAccountId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/bankAccountId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "bankAccountId",
-          "description": "The number allocated to the account by the individualís or companyís own bank."
-        },
-        {
-          "name": "companyType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/companyType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "companyType",
-          "description": ""
-        },
-        {
-          "name": "effectiveDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/effectiveDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "effectiveDate",
-          "description": "Date the customer declared active."
-        },
-        {
-          "name": "email",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/email",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "email",
-          "description": "Email address of the primary contact."
-        },
-        {
-          "name": "expirationDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/expirationDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "expirationDate",
-          "description": "Date the customer was declared inactive."
-        },
-        {
-          "name": "fax",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/fax",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fax",
-          "description": ""
-        },
-        {
-          "name": "firstName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/firstName",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "firstName",
-          "description": "The first (given) name of the person."
-        },
-        {
-          "name": "IBANNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/IBANNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "IBANNumber",
-          "description": "International Bank Account Number, ISO 13616"
-        },
-        {
-          "name": "lastName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/lastName",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "lastName",
-          "description": "The last (family) name of the person."
-        },
-        {
-          "name": "name",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/name",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "name",
-          "description": "The name of the supplier."
-        },
-        {
-          "name": "paymentDiscountDays",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/paymentDiscountDays",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "paymentDiscountDays",
-          "description": "The number of days from the invoice date\nthe supplier allows to take advantage of\ndiscounted terms. Terms are represented as\ndigits with no decimal places (for example,\nnnn)."
-        },
-        {
-          "name": "paymentDiscountPercentage",
-          "appliedTraits": [
-            {
-              "traitReference": "is.dataFormat.numeric.shaped"
-            }
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/paymentDiscountPercentage",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "paymentDiscountPercentage",
-          "description": "The discount percentage the supplier may\nprovide if an invoice is paid before a certain\nnumber of days. In the flat file, terms are\nrepresented as digits to one decimal place\n(for example, 10% would be represented as\n10.0). In extensible business reporting\nlanguage global ledger taxonomy framework\n(XBRL GL), the three fields\nTerms_Discount_Percentage,\nTerms_Discount_Days and\nTerms_Due_Days would be entered in the\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\n30 for 2% discount if paid within 10 days,\nwith the net due in 30 days."
-        },
-        {
-          "name": "paymentDueDays",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/paymentDueDays",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "paymentDueDays",
-          "description": "The number of days allowed to meet the\nobligation before an invoice becomes\noverdue."
-        },
-        {
-          "name": "registrationNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/registrationNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "registrationNumber",
-          "description": "Date on an externally generated transaction\n(for example, check date or wire transfer\ndate)."
-        },
-        {
-          "name": "selfBillingIndicator",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/selfBillingIndicator",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "selfBillingIndicator",
-          "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier"
-        },
-        {
-          "name": "sortCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/sortCode",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "sortCode",
-          "description": "Identifier for the bank branch at which the account is held. May be needed to uniquely identify the account."
-        },
-        {
-          "name": "supplierCreditLimit",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierCreditLimit",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "supplierCreditLimit",
-          "description": "The credit limit for the total outstanding\nbalance approved for the supplier."
-        },
-        {
-          "name": "supplierGroup",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierGroup",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "supplierGroup",
-          "description": "If the organization segments suppliers into groups, the group to which this supplier is assigned."
-        },
-        {
-          "name": "supplierId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierId",
-          "isPrimaryKey": true,
-          "dataFormat": "String",
-          "displayName": "supplierId",
-          "description": "Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file."
-        },
-        {
-          "name": "supplierType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/supplierType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "supplierType",
-          "description": ""
-        },
-        {
-          "name": "systemApprovedDateTime",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemApprovedDateTime",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "systemApprovedDateTime",
-          "description": "The date  and time the entry was approved."
-        },
-        {
-          "name": "systemApprovedUser",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemApprovedUser",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "systemApprovedUser",
-          "description": "User ID (from User_Listing file) for person\nwho approved the entry."
-        },
-        {
-          "name": "systemEntryDateTime",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemEntryDateTime",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "systemEntryDateTime",
-          "description": "The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not\n necessarily correspond with the date of the \ntransaction itself."
-        },
-        {
-          "name": "systemEntryUser",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemEntryUser",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "systemEntryUser",
-          "description": "User_ID (from User_Listing file) for person\nwho created the record."
-        },
-        {
-          "name": "systemModifiedDateTime",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemModifiedDateTime",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "systemModifiedDateTime",
-          "description": "The date and time the entry was last modified."
-        },
-        {
-          "name": "systemModifiedUser",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/systemModifiedUser",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "systemModifiedUser",
-          "description": "User_ID (from User_Listing file) for the last\nperson modifying this entry."
-        },
-        {
-          "name": "taxAuthority",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxAuthority",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "taxAuthority",
-          "description": "Identification of the Revenue Body to which this TaxType refers."
-        },
-        {
-          "name": "taxNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "taxNumber",
-          "description": "The supplier's tax identification number."
-        },
-        {
-          "name": "taxRegistrationNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxRegistrationNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "taxRegistrationNumber",
-          "description": "Unique number issued by a Revenue Body for use by the company."
-        },
-        {
-          "name": "taxType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "taxType",
-          "description": "Tax type for look-up in tables"
-        },
-        {
-          "name": "taxVerificationDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/taxVerificationDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "taxVerificationDate",
-          "description": "The date that the tax registration details referred to above were last checked."
-        },
-        {
-          "name": "telephone",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/telephone",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "telephone",
-          "description": "Phone number of the primary contact at the\nsupplier."
-        },
-        {
-          "name": "title",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/title",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "title",
-          "description": "The title of the person (for example, accounting manager)."
-        },
-        {
-          "name": "transactionCreditLimit",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/transactionCreditLimit",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "transactionCreditLimit",
-          "description": "The per invoice credit limit established with\nthis supplier."
-        },
-        {
-          "name": "website",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "supplierMasterData/attributeContext/supplierMasterData/website",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "website",
-          "description": ""
+            "corpusPath": "_allImports.cdm.json"
         }
-      ],
-      "displayName": "supplierMasterData",
-      "description": "",
-      "version": "1.0"
-    }
-  ]
+    ],
+    "definitions": [
+        {
+            "entityName": "supplierMasterData",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "accountId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "accountId",
+                        "decimalPlaces": null,
+                        "description": "General Ledger Account code for this supplier. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department."
+                    },
+                    {
+                        "name": "additionalAddressDetail",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "additionalAddressDetail",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "addressAddressType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressAddressType",
+                        "decimalPlaces": null,
+                        "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
+                    },
+                    {
+                        "name": "addressBuilding",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressBuilding",
+                        "decimalPlaces": null,
+                        "description": "The physical street address line 2 of the supplier."
+                    },
+                    {
+                        "name": "addressCity",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressCity",
+                        "decimalPlaces": null,
+                        "description": "The physical city where the customer is located."
+                    },
+                    {
+                        "name": "addressCountry",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressCountry",
+                        "decimalPlaces": null,
+                        "description": "The country code where the supplier is\r\nphysically located. Recommend ISO 3166-1\r\nAlpha 2 or ISO 3166-1 Alpha 3 format (XX or\r\nXXX)."
+                    },
+                    {
+                        "name": "addressNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressNumber",
+                        "decimalPlaces": null,
+                        "description": "The physical street address line 1 of the supplier."
+                    },
+                    {
+                        "name": "addressPostalCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressPostalCode",
+                        "decimalPlaces": null,
+                        "description": "The zip code of the city where the customer is physically located."
+                    },
+                    {
+                        "name": "addressRegion",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressRegion",
+                        "decimalPlaces": null,
+                        "description": "The physical state or province where the customer is located. Recommend ISO 3166-2."
+                    },
+                    {
+                        "name": "addressStreetName",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "addressStreetName",
+                        "decimalPlaces": null,
+                        "description": "The physical Street where the customer is located."
+                    },
+                    {
+                        "name": "bankAccountId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "bankAccountId",
+                        "decimalPlaces": null,
+                        "description": "Unambiguous identification of the account to which credit and debit entries are made."
+                    },
+                    {
+                        "name": "bankAccountName",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "bankAccountName",
+                        "decimalPlaces": null,
+                        "description": "The name of the individual or company holding the bank account."
+                    },
+                    {
+                        "name": "bankAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "bankAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "The number allocated to the account by the individual\ufffds or company\ufffds own bank."
+                    },
+                    {
+                        "name": "companyType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "companyType",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "effectiveDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "effectiveDate",
+                        "decimalPlaces": null,
+                        "description": "Date the customer declared active."
+                    },
+                    {
+                        "name": "email",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "email",
+                        "decimalPlaces": null,
+                        "description": "Email address of the primary contact."
+                    },
+                    {
+                        "name": "expirationDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "expirationDate",
+                        "decimalPlaces": null,
+                        "description": "Date the customer was declared inactive."
+                    },
+                    {
+                        "name": "fax",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "fax",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "firstName",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "firstName",
+                        "decimalPlaces": null,
+                        "description": "The first (given) name of the person."
+                    },
+                    {
+                        "name": "IBANNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "IBANNumber",
+                        "decimalPlaces": null,
+                        "description": "International Bank Account Number, ISO 13616"
+                    },
+                    {
+                        "name": "lastName",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lastName",
+                        "decimalPlaces": null,
+                        "description": "The last (family) name of the person."
+                    },
+                    {
+                        "name": "legalEntityIdentifier",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "legalEntityIdentifier",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "name",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "name",
+                        "decimalPlaces": null,
+                        "description": "The name of the supplier."
+                    },
+                    {
+                        "name": "paymentDiscountDays",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "paymentDiscountDays",
+                        "decimalPlaces": null,
+                        "description": "The number of days from the invoice date\r\nthe supplier allows to take advantage of\r\ndiscounted terms. Terms are represented as\r\ndigits with no decimal places (for example,\r\nnnn)."
+                    },
+                    {
+                        "name": "paymentDiscountPercentage",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "paymentDiscountPercentage",
+                        "decimalPlaces": 5,
+                        "description": "The discount percentage the supplier may\r\nprovide if an invoice is paid before a certain\r\nnumber of days. In the flat file, terms are\r\nrepresented as digits to one decimal place\r\n(for example, 10% would be represented as\r\n10.0). In extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL), the three fields\r\nTerms_Discount_Percentage,\r\nTerms_Discount_Days and\r\nTerms_Due_Days would be entered in the\r\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\r\n30 for 2% discount if paid within 10 days,\r\nwith the net due in 30 days."
+                    },
+                    {
+                        "name": "paymentDueDays",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "paymentDueDays",
+                        "decimalPlaces": null,
+                        "description": "The number of days allowed to meet the\r\nobligation before an invoice becomes\r\noverdue."
+                    },
+                    {
+                        "name": "registrationNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "registrationNumber",
+                        "decimalPlaces": null,
+                        "description": "Date on an externally generated transaction\r\n(for example, check date or wire transfer\r\ndate)."
+                    },
+                    {
+                        "name": "selfBillingIndicator",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "selfBillingIndicator",
+                        "decimalPlaces": null,
+                        "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier"
+                    },
+                    {
+                        "name": "sortCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "sortCode",
+                        "decimalPlaces": null,
+                        "description": "Identifier for the bank branch at which the account is held. May be needed to uniquely identify the account."
+                    },
+                    {
+                        "name": "supplierCreditLimit",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "supplierCreditLimit",
+                        "decimalPlaces": null,
+                        "description": "The credit limit for the total outstanding\r\nbalance approved for the supplier."
+                    },
+                    {
+                        "name": "supplierGroup",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "supplierGroup",
+                        "decimalPlaces": null,
+                        "description": "If the organization segments suppliers into groups, the group to which this supplier is assigned."
+                    },
+                    {
+                        "name": "supplierId",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "supplierId",
+                        "decimalPlaces": null,
+                        "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
+                    },
+                    {
+                        "name": "supplierType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "supplierType",
+                        "decimalPlaces": null,
+                        "description": null
+                    },
+                    {
+                        "name": "systemApprovedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "systemApprovedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date  and time the entry was approved."
+                    },
+                    {
+                        "name": "systemApprovedUser",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "systemApprovedUser",
+                        "decimalPlaces": null,
+                        "description": "User ID (from User_Listing file) for person\r\nwho approved the entry."
+                    },
+                    {
+                        "name": "systemEntryDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "systemEntryDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself."
+                    },
+                    {
+                        "name": "systemEntryUser",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "systemEntryUser",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for person\r\nwho created the record."
+                    },
+                    {
+                        "name": "systemModifiedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "systemModifiedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date and time the entry was last modified."
+                    },
+                    {
+                        "name": "systemModifiedUser",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "systemModifiedUser",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry."
+                    },
+                    {
+                        "name": "taxAuthority",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "taxAuthority",
+                        "decimalPlaces": null,
+                        "description": "Identification of the Revenue Body to which this TaxType refers."
+                    },
+                    {
+                        "name": "taxNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "taxNumber",
+                        "decimalPlaces": null,
+                        "description": "The supplier's tax identification number."
+                    },
+                    {
+                        "name": "taxRegistrationNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "taxRegistrationNumber",
+                        "decimalPlaces": null,
+                        "description": "Unique number issued by a Revenue Body for use by the company."
+                    },
+                    {
+                        "name": "taxType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "taxType",
+                        "decimalPlaces": null,
+                        "description": "Tax type for look-up in tables"
+                    },
+                    {
+                        "name": "taxVerificationDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "taxVerificationDate",
+                        "decimalPlaces": null,
+                        "description": "The date that the tax registration details referred to above were last checked."
+                    },
+                    {
+                        "name": "telephone",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "telephone",
+                        "decimalPlaces": null,
+                        "description": "Phone number of the primary contact at the\r\nsupplier."
+                    },
+                    {
+                        "name": "title",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "title",
+                        "decimalPlaces": null,
+                        "description": "The title of the person (for example, accounting manager)."
+                    },
+                    {
+                        "name": "transactionCreditLimit",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "transactionCreditLimit",
+                        "decimalPlaces": null,
+                        "description": "The per invoice credit limit established with\r\nthis supplier."
+                    },
+                    {
+                        "name": "website",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "website",
+                        "decimalPlaces": null,
+                        "description": null
+                    }
+                ]
+            ]
+        }
+    ]
 }

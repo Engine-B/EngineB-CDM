@@ -1,665 +1,666 @@
 {
-  "jsonSchemaSemanticVersion": "1.0.0",
-  "imports": [
-    {
-      "corpusPath": "cdm:/foundations.cdm.json"
-    }
-  ],
-  "definitions": [
-    {
-      "entityName": "arPaymentData",
-      "extendsEntity": "CdmEntity",
-      "hasAttributes": [
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
         {
-          "name": "approvedBy",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
-        },
-        {
-          "name": "approvedDateTime",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "approvedDateTime",
-          "description": "The DateTime the entry was approved.\n"
-        },
-        {
-          "name": "batchId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "batchId",
-          "description": "Systems generated ID for batch\n"
-        },
-        {
-          "name": "businessUnitCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
-        },
-        {
-          "name": "description",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "description",
-          "description": "Description of the payment.\n"
-        },
-        {
-          "name": "glCreditAccountNumber",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "glCreditAccountNumber",
-          "description": "\"GL account number on which the credit side \nof the transaction has been posted.\"\n"
-        },
-        {
-          "name": "glDebitAccountNumber",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "glDebitAccountNumber",
-          "description": "\"GL account number on which the debit \nside of the transaction has been posted.\"\n"
-        },
-        {
-          "name": "lastModifiedBy",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lastModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
-        },
-        {
-          "name": "lastModifiedDateTime",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "lastModifiedDateTime",
-          "description": "The date and time the entry was last modified before posting.\n"
-        },
-        {
-          "name": "lineAccountId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineAccountId",
-          "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department.\n"
-        },
-        {
-          "name": "lineAnalysisAmountCurrencyAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineAnalysisAmountCurrencyAmount",
-          "description": "\"Transaction monetary amount in loca l\ncurrency.\"\n"
-        },
-        {
-          "name": "lineAnalysisAnalysisAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineAnalysisAnalysisAmount",
-          "description": "\"The functional or group currency related to\nthe receipt amount. See ISO 4217 coding.\"\n"
-        },
-        {
-          "name": "lineAnalysisAnalysisAmountCurrencyCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineAnalysisAnalysisAmountCurrencyCode",
-          "description": "\"Transaction monetary amount recorded in\n the reporting currency.\"\n"
-        },
-        {
-          "name": "lineAnalysisAnalysisAmountExchangeRate",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineAnalysisAnalysisAmountExchangeRate",
-          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
-        },
-        {
-          "name": "lineAnalysisAnalysisAmountLocalCurrency",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineAnalysisAnalysisAmountLocalCurrency",
-          "description": "\"The currency for local reporting\n requirements. See ISO 4217 coding.\"\n"
-        },
-        {
-          "name": "lineAnalysisAnalysisId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineAnalysisAnalysisId",
-          "description": "Analysis ID: e.g. 1200-HDOF-TR (for cost center treasury in the headoffice), P-4800-123 (for project 123 in branch 4800)\n"
-        },
-        {
-          "name": "lineAnalysisAnalysisIdDescription",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineAnalysisAnalysisIdDescription",
-          "description": "Description of the AnalysisID: e.g. \"Headoffice-Treasury\".\n"
-        },
-        {
-          "name": "lineAnalysisAnalysisType",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineAnalysisAnalysisType",
-          "description": "Analysis type identifier: e.g. CC (for Cost Center), DEP (for department), etc\n"
-        },
-        {
-          "name": "lineAnlaysisTypeDescription",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineAnlaysisTypeDescription",
-          "description": "Description of the AnalysisType, e.g. \"Cost Center\"\n"
-        },
-        {
-          "name": "lineApprovedBy",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineApprovedBy",
-          "description": "\"User ID (from User_Listing file) for person\n who approved the entry.\"\n"
-        },
-        {
-          "name": "lineApprovedDateTime",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "lineApprovedDateTime",
-          "description": "The date and time the entry was approved.\n"
-        },
-        {
-          "name": "lineBusinessUnitCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineBusinessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited. Must match the Business_Unit_Code in the Business_Unit_Listing file.\n"
-        },
-        {
-          "name": "lineCustomerId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineCustomerId",
-          "description": "Unique code for the customer \n"
-        },
-        {
-          "name": "lineDebitCreditIndicator",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineDebitCreditIndicator",
-          "description": "Indicates whether the amounts on line-level are debit or credit amounts. Entry must correspond to entry reflected in General Ledger Entry. Signing of line amounts is relative to this indicator. E.g. a return can lead to a negative amount\n"
-        },
-        {
-          "name": "lineDescription",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineDescription",
-          "description": "Description of Invoice Line.\n"
-        },
-        {
-          "name": "lineLastModifiedBy",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineLastModifiedBy",
-          "description": "\"User_ID (from User_Listing file) for the last\nperson modifying this entry.\"\n"
-        },
-        {
-          "name": "lineLastModifiedDateTime",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "lineLastModifiedDateTime",
-          "description": "The date and time the entry was last modified.\n"
-        },
-        {
-          "name": "lineLineNumber",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineLineNumber",
-          "description": "Line item number of the invoice.\n"
-        },
-        {
-          "name": "linePaymentAmountLocalCurrencyCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "linePaymentAmountLocalCurrencyCode",
-          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding.\"\n"
-        },
-        {
-          "name": "linePaymentAmountReporting",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "linePaymentAmountReporting",
-          "description": "\"Transaction monetary amount recorded in\nthe reporting currency.\"\n"
-        },
-        {
-          "name": "linePaymentAmountReportingCurrency",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "linePaymentAmountReportingCurrency",
-          "description": "\"The reporting currency related to the\npayment amount for nonconsolidated\nreporting. See ISO 4217 coding.\"\n"
-        },
-        {
-          "name": "linePaymentLineAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "linePaymentLineAmount",
-          "description": "\"Transaction monetary amount recorded in\nthe functional or group currency. No \nmulticurrency translation should need to be\nperformed on this amount because all \ntransactions should be recorded in a single\n currency.\"\n"
-        },
-        {
-          "name": "linePaymentLineAmountCurrencyAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "linePaymentLineAmountCurrencyAmount",
-          "description": "\"Transaction monetary amount in local\n currency.\"\n"
-        },
-        {
-          "name": "linePaymentLineAmountCurrencyCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "linePaymentLineAmountCurrencyCode",
-          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.\n"
-        },
-        {
-          "name": "linePaymentLineAmountExchangeRate",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "linePaymentLineAmountExchangeRate",
-          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
-        },
-        {
-          "name": "lineSettlementCurrencyAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineSettlementCurrencyAmount",
-          "description": "Amount in foreign currency\n"
-        },
-        {
-          "name": "lineSettlementCurrencyCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineSettlementCurrencyCode",
-          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.\n"
-        },
-        {
-          "name": "lineSettlementPaymentMechanism",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineSettlementPaymentMechanism",
-          "description": "Payment mechanism \n"
-        },
-        {
-          "name": "lineSettlementSettlementAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineSettlementSettlementAmount",
-          "description": "In the header's default currency.\n"
-        },
-        {
-          "name": "lineSettlementSettlementAmountExchangeRate",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineSettlementSettlementAmountExchangeRate",
-          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
-        },
-        {
-          "name": "lineSettlementSettlementDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "lineSettlementSettlementDate",
-          "description": "Date settled\n"
-        },
-        {
-          "name": "lineSettlementSettlementDiscount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineSettlementSettlementDiscount",
-          "description": "Description Settlement / Other Discount \n"
-        },
-        {
-          "name": "lineSourceDocumentId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineSourceDocumentId",
-          "description": "The source document to which the line relates\n"
-        },
-        {
-          "name": "lineSupplierId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineSupplierId",
-          "description": "\"Identifier of the supplier to whom payment\nis due or from whom unused credits have\nbeen applied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
-        },
-        {
-          "name": "lineSystemEntryDateTime",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "lineSystemEntryDateTime",
-          "description": "\"The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself.\"\n"
-        },
-        {
-          "name": "lineSystemEntryUser",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineSystemEntryUser",
-          "description": "\"User_ID (from User_Listing file) for person\n who created the record.\"\n"
-        },
-        {
-          "name": "lineTaxInformationTaxAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxAmount",
-          "description": "In the header's default currency.\n"
-        },
-        {
-          "name": "lineTaxInformationTaxAmountCurrencyAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxAmountCurrencyAmount",
-          "description": "Amount in foreign currency\n"
-        },
-        {
-          "name": "lineTaxInformationTaxAmountCurrencyCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxAmountCurrencyCode",
-          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.\n"
-        },
-        {
-          "name": "lineTaxInformationTaxAmountExchangeRate",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxAmountExchangeRate",
-          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
-        },
-        {
-          "name": "lineTaxInformationTaxBase",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxBase",
-          "description": "The base on which the tax is calculated. This can be an amount, or a quantity, eg. Litres.\n"
-        },
-        {
-          "name": "lineTaxInformationTaxBaseDescription",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxBaseDescription",
-          "description": "Description of the value in the TaxBase. Eg. Litres for excises on alcoholic bevarages.\n"
-        },
-        {
-          "name": "lineTaxInformationTaxCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxCode",
-          "description": "Tax Code for lookup in tables\n"
-        },
-        {
-          "name": "lineTaxInformationTaxDeclarationPeriod",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxDeclarationPeriod",
-          "description": "The identification of the declaration/return in which the taxamount is reported to the Revenue body\n"
-        },
-        {
-          "name": "lineTaxInformationTaxExemptionReason",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxExemptionReason",
-          "description": "Tax exemption or reduction reason or rationale \n"
-        },
-        {
-          "name": "lineTaxInformationTaxPercentage",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxPercentage",
-          "description": "Tax percentage.\n"
-        },
-        {
-          "name": "lineTaxInformationTaxType",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lineTaxInformationTaxType",
-          "description": "Tax type for look-up in tables\n"
-        },
-        {
-          "name": "lineTaxPointDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "lineTaxPointDate",
-          "description": "Tax Point date where recorded or if not recorded then the Invoice date \n"
-        },
-        {
-          "name": "paymentId",
-          "purpose": "identifiedBy",
-          "dataType": "string",
-          "displayName": "paymentId",
-          "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction.\n"
-        },
-        {
-          "name": "paymentMethod",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "paymentMethod",
-          "description": "\"The code value or indicator of the method by\nwhich the transaction debit or credit amount\nwas extinguished or apportioned to the debt\nby the supplier (for example, check, wire\ntransfer, cash, and so on). Must match the\nPayment_Type in the\nPayment_Type_Listing_YYYYMMDD file.\"\n"
-        },
-        {
-          "name": "paymentRefDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "paymentRefDate",
-          "description": "\"Date on an externally generated transaction\n(for example, check date or wire transfer\ndate).\"\n"
-        },
-        {
-          "name": "paymentRefNo",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "paymentRefNo",
-          "description": "Unique identifier for each payment made. This ID may need to be created by concatenating fields (for example, supplier and payment number) to uniquely identify each transaction.\n"
-        },
-        {
-          "name": "period",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "period",
-          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1‚ÄìW53 for weekly periods, M1‚ÄìM12 for monthly periods, and Q1‚ÄìQ4 for quarterly periods.\n"
-        },
-        {
-          "name": "periodYear",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "periodYear",
-          "description": "\"Fiscal year in which the\nPurchase_Order_Date occursâ€”YYYY for\ndelimited, CCYY-MM-DD fiscal year end\n(ISO 8601) for extensible business reporting\nlanguage global ledger taxonomy framework\n(XBRL GL).\"\n"
-        },
-        {
-          "name": "postingStatus",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "postingStatus",
-          "description": "\"Status of the transaction's posting to the GL\n(for example, \"\"Posted,\"\" \"\"Not Posted\"\").\"\n"
-        },
-        {
-          "name": "receiptId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "receiptId",
-          "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction.\n"
-        },
-        {
-          "name": "receiptAmountReporting",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "receiptAmountReporting",
-          "description": "\n\"Transaction monetary amount recorded in\nthe reporting currency.\"\n"
-        },
-        {
-          "name": "receiptAmountReportingCurrency",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "receiptAmountReportingCurrency",
-          "description": "\"The reporting currency related to the receipt\namount for nonconsolidated reporting. See\nISO 4217 coding.\"\n"
-        },
-        {
-          "name": "referenceDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "referenceDate",
-          "description": "\"Date on an externally generated transaction\n(for example, check date or wire transfer\ndate).\"\n"
-        },
-        {
-          "name": "referenceNumber",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "referenceNumber",
-          "description": "\"Identification number for an internally or\nexternally generated transaction (for\nexample, check number, wire transfer\nnumber, or original document ID).\"\n"
-        },
-        {
-          "name": "segment01",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment01",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment02",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment02",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment03",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment03",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment04",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment04",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment05",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment05",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "sourceId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "sourceId",
-          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on).\n"
-        },
-        {
-          "name": "systemEntryDateTime",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "systemEntryDateTime",
-          "description": "\"The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not\n necessarily correspond with the date of the \ntransaction itself.\"\n"
-        },
-        {
-          "name": "systemEntryUser",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "systemEntryUser",
-          "description": "\"User_ID (from User_Listing file) for person\nwho created the record.\"\n"
-        },
-        {
-          "name": "systemId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "systemId",
-          "description": "Unique number created by the system for the document\n"
-        },
-        {
-          "name": "transactionDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "transactionDate",
-          "description": "The date the payment was made or credit was applied.\n"
-        },
-        {
-          "name": "transactionId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "transactionId",
-          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department\n"
+            "corpusPath": "_allImports.cdm.json"
         }
-      ],
-      "displayName": "arPaymentData",
-      "description": ""
-    }
-  ]
+    ],
+    "definitions": [
+        {
+            "entityName": "arPaymentData",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "approvedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "approvedBy",
+                        "decimalPlaces": null,
+                        "description": "User ID (from User_Listing file) for person who approved the entry."
+                    },
+                    {
+                        "name": "approvedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "approvedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The DateTime the entry was approved."
+                    },
+                    {
+                        "name": "batchId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "batchId",
+                        "decimalPlaces": null,
+                        "description": "Systems generated ID for batch"
+                    },
+                    {
+                        "name": "businessUnitCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "businessUnitCode",
+                        "decimalPlaces": null,
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                    },
+                    {
+                        "name": "description",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "description",
+                        "decimalPlaces": null,
+                        "description": "Description of the payment."
+                    },
+                    {
+                        "name": "glCreditAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "glCreditAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "GL account number on which the credit side \r\nof the transaction has been posted."
+                    },
+                    {
+                        "name": "glDebitAccountNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "glDebitAccountNumber",
+                        "decimalPlaces": null,
+                        "description": "GL account number on which the debit \r\nside of the transaction has been posted."
+                    },
+                    {
+                        "name": "lastModifiedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for the last person modifying this entry."
+                    },
+                    {
+                        "name": "lastModifiedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lastModifiedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date and time the entry was last modified before posting."
+                    },
+                    {
+                        "name": "lineAccountId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineAccountId",
+                        "decimalPlaces": null,
+                        "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department."
+                    },
+                    {
+                        "name": "lineAnalysisAmountCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAmountCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount in loca l\r\ncurrency."
+                    },
+                    {
+                        "name": "lineAnalysisAnalysisAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAnalysisAmount",
+                        "decimalPlaces": 5,
+                        "description": "The functional or group currency related to\r\nthe receipt amount. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "lineAnalysisAnalysisAmountCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAnalysisAmountCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "Transaction monetary amount recorded in\r\n the reporting currency."
+                    },
+                    {
+                        "name": "lineAnalysisAnalysisAmountExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAnalysisAmountExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+                    },
+                    {
+                        "name": "lineAnalysisAnalysisAmountLocalCurrency",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAnalysisAmountLocalCurrency",
+                        "decimalPlaces": 5,
+                        "description": "The currency for local reporting\r\n requirements. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "lineAnalysisAnalysisId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAnalysisId",
+                        "decimalPlaces": null,
+                        "description": "Analysis ID: e.g. 1200-HDOF-TR (for cost center treasury in the headoffice), P-4800-123 (for project 123 in branch 4800)"
+                    },
+                    {
+                        "name": "lineAnalysisAnalysisIdDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAnalysisIdDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of the AnalysisID: e.g. \"Headoffice-Treasury\"."
+                    },
+                    {
+                        "name": "lineAnalysisAnalysisType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineAnalysisAnalysisType",
+                        "decimalPlaces": null,
+                        "description": "Analysis type identifier: e.g. CC (for Cost Center), DEP (for department), etc"
+                    },
+                    {
+                        "name": "lineAnlaysisTypeDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineAnlaysisTypeDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of the AnalysisType, e.g. \"Cost Center\""
+                    },
+                    {
+                        "name": "lineApprovedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineApprovedBy",
+                        "decimalPlaces": null,
+                        "description": "User ID (from User_Listing file) for person\r\n who approved the entry."
+                    },
+                    {
+                        "name": "lineApprovedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lineApprovedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date and time the entry was approved."
+                    },
+                    {
+                        "name": "lineBusinessUnitCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineBusinessUnitCode",
+                        "decimalPlaces": null,
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited. Must match the Business_Unit_Code in the Business_Unit_Listing file."
+                    },
+                    {
+                        "name": "lineCustomerId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineCustomerId",
+                        "decimalPlaces": null,
+                        "description": "Unique code for the customer "
+                    },
+                    {
+                        "name": "lineDebitCreditIndicator",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineDebitCreditIndicator",
+                        "decimalPlaces": null,
+                        "description": "Indicates whether the amounts on line-level are debit or credit amounts. Entry must correspond to entry reflected in General Ledger Entry. Signing of line amounts is relative to this indicator. E.g. a return can lead to a negative amount"
+                    },
+                    {
+                        "name": "lineDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of Invoice Line."
+                    },
+                    {
+                        "name": "lineLastModifiedBy",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineLastModifiedBy",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry."
+                    },
+                    {
+                        "name": "lineLastModifiedDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lineLastModifiedDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date and time the entry was last modified."
+                    },
+                    {
+                        "name": "lineLineNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineLineNumber",
+                        "decimalPlaces": null,
+                        "description": "Line item number of the invoice."
+                    },
+                    {
+                        "name": "linePaymentAmountLocalCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "linePaymentAmountLocalCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "linePaymentAmountReporting",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePaymentAmountReporting",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount recorded in\r\nthe reporting currency."
+                    },
+                    {
+                        "name": "linePaymentAmountReportingCurrency",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePaymentAmountReportingCurrency",
+                        "decimalPlaces": 5,
+                        "description": "The reporting currency related to the\r\npayment amount for nonconsolidated\r\nreporting. See ISO 4217 coding."
+                    },
+                    {
+                        "name": "linePaymentLineAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePaymentLineAmount",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount recorded in\r\nthe functional or group currency. No \r\nmulticurrency translation should need to be\r\nperformed on this amount because all \r\ntransactions should be recorded in a single\r\n currency."
+                    },
+                    {
+                        "name": "linePaymentLineAmountCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePaymentLineAmountCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount in local\r\n currency."
+                    },
+                    {
+                        "name": "linePaymentLineAmountCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "linePaymentLineAmountCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
+                    },
+                    {
+                        "name": "linePaymentLineAmountExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "linePaymentLineAmountExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+                    },
+                    {
+                        "name": "lineSettlementCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineSettlementCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": "Amount in foreign currency"
+                    },
+                    {
+                        "name": "lineSettlementCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineSettlementCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
+                    },
+                    {
+                        "name": "lineSettlementPaymentMechanism",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineSettlementPaymentMechanism",
+                        "decimalPlaces": null,
+                        "description": "Payment mechanism "
+                    },
+                    {
+                        "name": "lineSettlementSettlementAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineSettlementSettlementAmount",
+                        "decimalPlaces": 5,
+                        "description": "In the header's default currency."
+                    },
+                    {
+                        "name": "lineSettlementSettlementAmountExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineSettlementSettlementAmountExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+                    },
+                    {
+                        "name": "lineSettlementSettlementDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lineSettlementSettlementDate",
+                        "decimalPlaces": null,
+                        "description": "Date settled"
+                    },
+                    {
+                        "name": "lineSettlementSettlementDiscount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineSettlementSettlementDiscount",
+                        "decimalPlaces": 5,
+                        "description": "Description Settlement / Other Discount "
+                    },
+                    {
+                        "name": "lineSourceDocumentId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineSourceDocumentId",
+                        "decimalPlaces": null,
+                        "description": "The source document to which the line relates"
+                    },
+                    {
+                        "name": "lineSupplierId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineSupplierId",
+                        "decimalPlaces": null,
+                        "description": "Identifier of the supplier to whom payment\r\nis due or from whom unused credits have\r\nbeen applied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
+                    },
+                    {
+                        "name": "lineSystemEntryDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lineSystemEntryDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself."
+                    },
+                    {
+                        "name": "lineSystemEntryUser",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineSystemEntryUser",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for person\r\n who created the record."
+                    },
+                    {
+                        "name": "lineTaxInformationTaxAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxAmount",
+                        "decimalPlaces": 5,
+                        "description": "In the header's default currency."
+                    },
+                    {
+                        "name": "lineTaxInformationTaxAmountCurrencyAmount",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxAmountCurrencyAmount",
+                        "decimalPlaces": 5,
+                        "description": "Amount in foreign currency"
+                    },
+                    {
+                        "name": "lineTaxInformationTaxAmountCurrencyCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxAmountCurrencyCode",
+                        "decimalPlaces": null,
+                        "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
+                    },
+                    {
+                        "name": "lineTaxInformationTaxAmountExchangeRate",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxAmountExchangeRate",
+                        "decimalPlaces": 5,
+                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+                    },
+                    {
+                        "name": "lineTaxInformationTaxBase",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxBase",
+                        "decimalPlaces": null,
+                        "description": "The base on which the tax is calculated. This can be an amount, or a quantity, eg. Litres."
+                    },
+                    {
+                        "name": "lineTaxInformationTaxBaseDescription",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxBaseDescription",
+                        "decimalPlaces": null,
+                        "description": "Description of the value in the TaxBase. Eg. Litres for excises on alcoholic bevarages."
+                    },
+                    {
+                        "name": "lineTaxInformationTaxCode",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxCode",
+                        "decimalPlaces": null,
+                        "description": "Tax Code for lookup in tables"
+                    },
+                    {
+                        "name": "lineTaxInformationTaxDeclarationPeriod",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxDeclarationPeriod",
+                        "decimalPlaces": null,
+                        "description": "The identification of the declaration/return in which the taxamount is reported to the Revenue body"
+                    },
+                    {
+                        "name": "lineTaxInformationTaxExemptionReason",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxExemptionReason",
+                        "decimalPlaces": null,
+                        "description": "Tax exemption or reduction reason or rationale "
+                    },
+                    {
+                        "name": "lineTaxInformationTaxPercentage",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxPercentage",
+                        "decimalPlaces": 5,
+                        "description": "Tax percentage."
+                    },
+                    {
+                        "name": "lineTaxInformationTaxType",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "lineTaxInformationTaxType",
+                        "decimalPlaces": null,
+                        "description": "Tax type for look-up in tables"
+                    },
+                    {
+                        "name": "lineTaxPointDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "lineTaxPointDate",
+                        "decimalPlaces": null,
+                        "description": "Tax Point date where recorded or if not recorded then the Invoice date "
+                    },
+                    {
+                        "name": "paymentId",
+                        "dataType": "string",
+                        "isNullable": "false",
+                        "displayName": "paymentId",
+                        "decimalPlaces": null,
+                        "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction."
+                    },
+                    {
+                        "name": "paymentMethod",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "paymentMethod",
+                        "decimalPlaces": null,
+                        "description": "The code value or indicator of the method by\r\nwhich the transaction debit or credit amount\r\nwas extinguished or apportioned to the debt\r\nby the supplier (for example, check, wire\r\ntransfer, cash, and so on). Must match the\r\nPayment_Type in the\r\nPayment_Type_Listing_YYYYMMDD file."
+                    },
+                    {
+                        "name": "paymentRefDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "paymentRefDate",
+                        "decimalPlaces": null,
+                        "description": "Date on an externally generated transaction\r\n(for example, check date or wire transfer\r\ndate)."
+                    },
+                    {
+                        "name": "paymentRefNo",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "paymentRefNo",
+                        "decimalPlaces": null,
+                        "description": "Unique identifier for each payment made. This ID may need to be created by concatenating fields (for example, supplier and payment number) to uniquely identify each transaction."
+                    },
+                    {
+                        "name": "period",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "period",
+                        "decimalPlaces": null,
+                        "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods."
+                    },
+                    {
+                        "name": "periodYear",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "periodYear",
+                        "decimalPlaces": null,
+                        "description": "Fiscal year in which the\r\nPurchase_Order_Date occurs\u2014YYYY for\r\ndelimited, CCYY-MM-DD fiscal year end\r\n(ISO 8601) for extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL)."
+                    },
+                    {
+                        "name": "postingStatus",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "postingStatus",
+                        "decimalPlaces": null,
+                        "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\")."
+                    },
+                    {
+                        "name": "receiptAmountReporting",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "receiptAmountReporting",
+                        "decimalPlaces": 5,
+                        "description": "Transaction monetary amount recorded in\r\nthe reporting currency."
+                    },
+                    {
+                        "name": "receiptAmountReportingCurrency",
+                        "dataType": "decimal",
+                        "isNullable": "true",
+                        "displayName": "receiptAmountReportingCurrency",
+                        "decimalPlaces": 5,
+                        "description": "The reporting currency related to the receipt\r\namount for nonconsolidated reporting. See\r\nISO 4217 coding."
+                    },
+                    {
+                        "name": "receiptId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "receiptId",
+                        "decimalPlaces": null,
+                        "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction."
+                    },
+                    {
+                        "name": "referenceDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "referenceDate",
+                        "decimalPlaces": null,
+                        "description": "Date on an externally generated transaction\r\n(for example, check date or wire transfer\r\ndate)."
+                    },
+                    {
+                        "name": "referenceNumber",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "referenceNumber",
+                        "decimalPlaces": null,
+                        "description": "Identification number for an internally or\r\nexternally generated transaction (for\r\nexample, check number, wire transfer\r\nnumber, or original document ID)."
+                    },
+                    {
+                        "name": "segment01",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment01",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment02",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment02",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment03",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment03",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment04",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment04",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "segment05",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "segment05",
+                        "decimalPlaces": null,
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
+                    },
+                    {
+                        "name": "sourceId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "sourceId",
+                        "decimalPlaces": null,
+                        "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
+                    },
+                    {
+                        "name": "systemEntryDateTime",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "systemEntryDateTime",
+                        "decimalPlaces": null,
+                        "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself."
+                    },
+                    {
+                        "name": "systemEntryUser",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "systemEntryUser",
+                        "decimalPlaces": null,
+                        "description": "User_ID (from User_Listing file) for person\r\nwho created the record."
+                    },
+                    {
+                        "name": "systemId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "systemId",
+                        "decimalPlaces": null,
+                        "description": "Unique number created by the system for the document"
+                    },
+                    {
+                        "name": "transactionDate",
+                        "dataType": "date",
+                        "isNullable": "true",
+                        "displayName": "transactionDate",
+                        "decimalPlaces": null,
+                        "description": "The date the payment was made or credit was applied."
+                    },
+                    {
+                        "name": "transactionId",
+                        "dataType": "string",
+                        "isNullable": "true",
+                        "displayName": "transactionId",
+                        "decimalPlaces": null,
+                        "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
+                    }
+                ]
+            ]
+        }
+    ]
 }
