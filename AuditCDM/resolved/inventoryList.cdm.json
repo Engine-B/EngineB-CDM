@@ -1,650 +1,1772 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
-        {
-            "corpusPath": "_allImports.cdm.json"
-        }
-    ],
-    "definitions": [
-        {
-            "entityName": "inventoryList",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                [
-                    {
-                        "name": "averageCost",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "averageCost",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "binId",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "binId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "binLocation",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "binLocation",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "businessUnitCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "businessUnitCode",
-                        "decimalPlaces": null,
-                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
-                    },
-                    {
-                        "name": "closingStockQuantity",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "closingStockQuantity",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "closingStockValue",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "closingStockValue",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "countedBy",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "countedBy",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "currentValuation",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "currentValuation",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "defaultInventoryMethod",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "defaultInventoryMethod",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "defaultStockingUnitOfMeasure",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "defaultStockingUnitOfMeasure",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "glAssetAccount",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "glAssetAccount",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "glCostAccount",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "glCostAccount",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryABCCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryABCCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryBarCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryBarCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryClass",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryClass",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryCost",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "inventoryCost",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryCostMethod",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryCostMethod",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryDescription",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryDescription",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryHeldForCustomers",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryHeldForCustomers",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryHeldForOthers",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryHeldForOthers",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryHeldForSuppliers",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryHeldForSuppliers",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryItemCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryItemCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryListPrice",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "inventoryListPrice",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryProductId",
-                        "dataType": "string",
-                        "isNullable": "false",
-                        "displayName": "inventoryProductId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryProductType",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryProductType",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryPurchaseYearToDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "inventoryPurchaseYearToDate",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryPurchasingUOM",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryPurchasingUOM",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventorySellingUOM",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventorySellingUOM",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventorySoldYearToDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "inventorySoldYearToDate",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "inventoryStockingUOM",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "inventoryStockingUOM",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "lastCountDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "lastCountDate",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "lastDespatchedDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "lastDespatchedDate",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "lastReceivedDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "lastReceivedDate",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationActiveFlag",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationActiveFlag",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationCity",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationCity",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationCountry",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationCountry",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationCurrency",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationCurrency",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationDescription",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationDescription",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationId",
-                        "dataType": "string",
-                        "isNullable": "false",
-                        "displayName": "locationId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationLatitude",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationLatitude",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationLongitude",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationLongitude",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationParent",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationParent",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationStateProvince",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationStateProvince",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationStreet",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationStreet",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationType",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationType",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "locationZipPostalCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "locationZipPostalCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "lotNumber",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "lotNumber",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "obsoleteorDamagedInventory",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "obsoleteorDamagedInventory",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "openingStockQuantity",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "openingStockQuantity",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "openingStockValue",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "openingStockValue",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "ownerId",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "ownerId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "preferredSupplier",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "preferredSupplier",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "primaryManufacturer",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "primaryManufacturer",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "primaryManufacturerProductCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "primaryManufacturerProductCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "primarySupplier",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "primarySupplier",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "primarySupplierProductCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "primarySupplierProductCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "productGroup01",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "productGroup01",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "productGroup02",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "productGroup02",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "quantity",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "quantity",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "quantityOnHandPhysicalCount",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "quantityOnHandPhysicalCount",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "quantityOnHandSystem",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "quantityOnHandSystem",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "segment01",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment01",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment02",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment02",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment03",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment03",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment04",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment04",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment05",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment05",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "serialNumber",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "serialNumber",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "specificCost",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "specificCost",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "standardCost",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "standardCost",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "stockAccountCommodityCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "stockAccountCommodityCode",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "stockCharacteristic",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "stockCharacteristic",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "stockCharacteristicValue",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "stockCharacteristicValue",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "supplierId",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "supplierId",
-                        "decimalPlaces": null,
-                        "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
-                    },
-                    {
-                        "name": "thirdPartyFacility",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "thirdPartyFacility",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "unitPrice",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "unitPrice",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "uomToUOMbaseConversionFactor",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "uomToUOMbaseConversionFactor",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "writeDownDescription",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "writeDownDescription",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "writeDownFactor",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "writeDownFactor",
-                        "decimalPlaces": null,
-                        "description": null
-                    }
-                ]
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/inventoryList.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "inventoryList",
+      "attributeContext": {
+        "type": "entity",
+        "name": "inventoryList",
+        "definition": "resolvedFrom/inventoryList",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "inventoryList/attributeContext/inventoryList/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
             ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "averageCost",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/averageCost",
+            "contents": [
+              "inventoryList/hasAttributes/averageCost"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "binId",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/binId",
+            "contents": [
+              "inventoryList/hasAttributes/binId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "binLocation",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/binLocation",
+            "contents": [
+              "inventoryList/hasAttributes/binLocation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/businessUnitCode",
+            "contents": [
+              "inventoryList/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "closingStockQuantity",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/closingStockQuantity",
+            "contents": [
+              "inventoryList/hasAttributes/closingStockQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "closingStockValue",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/closingStockValue",
+            "contents": [
+              "inventoryList/hasAttributes/closingStockValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "countedBy",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/countedBy",
+            "contents": [
+              "inventoryList/hasAttributes/countedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "currentValuation",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/currentValuation",
+            "contents": [
+              "inventoryList/hasAttributes/currentValuation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "defaultInventoryMethod",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/defaultInventoryMethod",
+            "contents": [
+              "inventoryList/hasAttributes/defaultInventoryMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "defaultStockingUnitOfMeasure",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/defaultStockingUnitOfMeasure",
+            "contents": [
+              "inventoryList/hasAttributes/defaultStockingUnitOfMeasure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glAssetAccount",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/glAssetAccount",
+            "contents": [
+              "inventoryList/hasAttributes/glAssetAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glCostAccount",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/glCostAccount",
+            "contents": [
+              "inventoryList/hasAttributes/glCostAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryABCCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryABCCode",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryABCCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryBarCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryBarCode",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryBarCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryClass",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryClass",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryClass"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryCost",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryCost",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryCost"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryCostMethod",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryCostMethod",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryCostMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryDescription",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryDescription",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryHeldForCustomers",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryHeldForCustomers",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryHeldForCustomers"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryHeldForOthers",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryHeldForOthers",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryHeldForOthers"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryHeldForSuppliers",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryHeldForSuppliers",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryHeldForSuppliers"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryItemCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryItemCode",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryItemCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryListPrice",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryListPrice",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryListPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryProductId",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryProductId",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryProductId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryProductType",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryProductType",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryProductType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryPurchaseYearToDate",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryPurchaseYearToDate",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryPurchaseYearToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryPurchasingUOM",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryPurchasingUOM",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryPurchasingUOM"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventorySellingUOM",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventorySellingUOM",
+            "contents": [
+              "inventoryList/hasAttributes/inventorySellingUOM"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventorySoldYearToDate",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventorySoldYearToDate",
+            "contents": [
+              "inventoryList/hasAttributes/inventorySoldYearToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "inventoryStockingUOM",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/inventoryStockingUOM",
+            "contents": [
+              "inventoryList/hasAttributes/inventoryStockingUOM"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastCountDate",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/lastCountDate",
+            "contents": [
+              "inventoryList/hasAttributes/lastCountDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastDespatchedDate",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/lastDespatchedDate",
+            "contents": [
+              "inventoryList/hasAttributes/lastDespatchedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastReceivedDate",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/lastReceivedDate",
+            "contents": [
+              "inventoryList/hasAttributes/lastReceivedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationActiveFlag",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationActiveFlag",
+            "contents": [
+              "inventoryList/hasAttributes/locationActiveFlag"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationCity",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationCity",
+            "contents": [
+              "inventoryList/hasAttributes/locationCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationCode",
+            "contents": [
+              "inventoryList/hasAttributes/locationCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationCountry",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationCountry",
+            "contents": [
+              "inventoryList/hasAttributes/locationCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationCurrency",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationCurrency",
+            "contents": [
+              "inventoryList/hasAttributes/locationCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationDescription",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationDescription",
+            "contents": [
+              "inventoryList/hasAttributes/locationDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationId",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationId",
+            "contents": [
+              "inventoryList/hasAttributes/locationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationLatitude",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationLatitude",
+            "contents": [
+              "inventoryList/hasAttributes/locationLatitude"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationLongitude",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationLongitude",
+            "contents": [
+              "inventoryList/hasAttributes/locationLongitude"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationParent",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationParent",
+            "contents": [
+              "inventoryList/hasAttributes/locationParent"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationStateProvince",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationStateProvince",
+            "contents": [
+              "inventoryList/hasAttributes/locationStateProvince"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationStreet",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationStreet",
+            "contents": [
+              "inventoryList/hasAttributes/locationStreet"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationType",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationType",
+            "contents": [
+              "inventoryList/hasAttributes/locationType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationZipPostalCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/locationZipPostalCode",
+            "contents": [
+              "inventoryList/hasAttributes/locationZipPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lotNumber",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/lotNumber",
+            "contents": [
+              "inventoryList/hasAttributes/lotNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "obsoleteorDamagedInventory",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/obsoleteorDamagedInventory",
+            "contents": [
+              "inventoryList/hasAttributes/obsoleteorDamagedInventory"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "openingStockQuantity",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/openingStockQuantity",
+            "contents": [
+              "inventoryList/hasAttributes/openingStockQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "openingStockValue",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/openingStockValue",
+            "contents": [
+              "inventoryList/hasAttributes/openingStockValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ownerId",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/ownerId",
+            "contents": [
+              "inventoryList/hasAttributes/ownerId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "preferredSupplier",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/preferredSupplier",
+            "contents": [
+              "inventoryList/hasAttributes/preferredSupplier"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "primaryManufacturer",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/primaryManufacturer",
+            "contents": [
+              "inventoryList/hasAttributes/primaryManufacturer"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "primaryManufacturerProductCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/primaryManufacturerProductCode",
+            "contents": [
+              "inventoryList/hasAttributes/primaryManufacturerProductCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "primarySupplier",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/primarySupplier",
+            "contents": [
+              "inventoryList/hasAttributes/primarySupplier"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "primarySupplierProductCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/primarySupplierProductCode",
+            "contents": [
+              "inventoryList/hasAttributes/primarySupplierProductCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "productGroup01",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/productGroup01",
+            "contents": [
+              "inventoryList/hasAttributes/productGroup01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "productGroup02",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/productGroup02",
+            "contents": [
+              "inventoryList/hasAttributes/productGroup02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "quantity",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/quantity",
+            "contents": [
+              "inventoryList/hasAttributes/quantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "quantityOnHandPhysicalCount",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/quantityOnHandPhysicalCount",
+            "contents": [
+              "inventoryList/hasAttributes/quantityOnHandPhysicalCount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "quantityOnHandSystem",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/quantityOnHandSystem",
+            "contents": [
+              "inventoryList/hasAttributes/quantityOnHandSystem"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/segment01",
+            "contents": [
+              "inventoryList/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/segment02",
+            "contents": [
+              "inventoryList/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/segment03",
+            "contents": [
+              "inventoryList/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/segment04",
+            "contents": [
+              "inventoryList/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/segment05",
+            "contents": [
+              "inventoryList/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "serialNumber",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/serialNumber",
+            "contents": [
+              "inventoryList/hasAttributes/serialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "specificCost",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/specificCost",
+            "contents": [
+              "inventoryList/hasAttributes/specificCost"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "standardCost",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/standardCost",
+            "contents": [
+              "inventoryList/hasAttributes/standardCost"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "stockAccountCommodityCode",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/stockAccountCommodityCode",
+            "contents": [
+              "inventoryList/hasAttributes/stockAccountCommodityCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "stockCharacteristic",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/stockCharacteristic",
+            "contents": [
+              "inventoryList/hasAttributes/stockCharacteristic"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "stockCharacteristicValue",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/stockCharacteristicValue",
+            "contents": [
+              "inventoryList/hasAttributes/stockCharacteristicValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierId",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/supplierId",
+            "contents": [
+              "inventoryList/hasAttributes/supplierId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "thirdPartyFacility",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/thirdPartyFacility",
+            "contents": [
+              "inventoryList/hasAttributes/thirdPartyFacility"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "unitPrice",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/unitPrice",
+            "contents": [
+              "inventoryList/hasAttributes/unitPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "uomToUOMbaseConversionFactor",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/uomToUOMbaseConversionFactor",
+            "contents": [
+              "inventoryList/hasAttributes/uomToUOMbaseConversionFactor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "writeDownDescription",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/writeDownDescription",
+            "contents": [
+              "inventoryList/hasAttributes/writeDownDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "writeDownFactor",
+            "parent": "inventoryList/attributeContext/inventoryList",
+            "definition": "resolvedFrom/inventoryList/hasAttributes/writeDownFactor",
+            "contents": [
+              "inventoryList/hasAttributes/writeDownFactor"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "averageCost",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/averageCost",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "averageCost",
+          "description": ""
+        },
+        {
+          "name": "binId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/binId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "binId",
+          "description": ""
+        },
+        {
+          "name": "binLocation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/binLocation",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "binLocation",
+          "description": ""
+        },
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/businessUnitCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+        },
+        {
+          "name": "closingStockQuantity",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/closingStockQuantity",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "closingStockQuantity",
+          "description": ""
+        },
+        {
+          "name": "closingStockValue",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/closingStockValue",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "closingStockValue",
+          "description": ""
+        },
+        {
+          "name": "countedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/countedBy",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "countedBy",
+          "description": ""
+        },
+        {
+          "name": "currentValuation",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/currentValuation",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "currentValuation",
+          "description": ""
+        },
+        {
+          "name": "defaultInventoryMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/defaultInventoryMethod",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "defaultInventoryMethod",
+          "description": ""
+        },
+        {
+          "name": "defaultStockingUnitOfMeasure",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/defaultStockingUnitOfMeasure",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "defaultStockingUnitOfMeasure",
+          "description": ""
+        },
+        {
+          "name": "glAssetAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/glAssetAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glAssetAccount",
+          "description": ""
+        },
+        {
+          "name": "glCostAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/glCostAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glCostAccount",
+          "description": ""
+        },
+        {
+          "name": "inventoryABCCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryABCCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryABCCode",
+          "description": ""
+        },
+        {
+          "name": "inventoryBarCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryBarCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryBarCode",
+          "description": ""
+        },
+        {
+          "name": "inventoryClass",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryClass",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryClass",
+          "description": ""
+        },
+        {
+          "name": "inventoryCost",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryCost",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "inventoryCost",
+          "description": ""
+        },
+        {
+          "name": "inventoryCostMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryCostMethod",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryCostMethod",
+          "description": ""
+        },
+        {
+          "name": "inventoryDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryDescription",
+          "description": ""
+        },
+        {
+          "name": "inventoryHeldForCustomers",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryHeldForCustomers",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryHeldForCustomers",
+          "description": ""
+        },
+        {
+          "name": "inventoryHeldForOthers",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryHeldForOthers",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryHeldForOthers",
+          "description": ""
+        },
+        {
+          "name": "inventoryHeldForSuppliers",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryHeldForSuppliers",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryHeldForSuppliers",
+          "description": ""
+        },
+        {
+          "name": "inventoryItemCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryItemCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryItemCode",
+          "description": ""
+        },
+        {
+          "name": "inventoryListPrice",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryListPrice",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "inventoryListPrice",
+          "description": ""
+        },
+        {
+          "name": "inventoryProductId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryProductId",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "inventoryProductId",
+          "description": ""
+        },
+        {
+          "name": "inventoryProductType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryProductType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryProductType",
+          "description": ""
+        },
+        {
+          "name": "inventoryPurchaseYearToDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryPurchaseYearToDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "inventoryPurchaseYearToDate",
+          "description": ""
+        },
+        {
+          "name": "inventoryPurchasingUOM",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryPurchasingUOM",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryPurchasingUOM",
+          "description": ""
+        },
+        {
+          "name": "inventorySellingUOM",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventorySellingUOM",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventorySellingUOM",
+          "description": ""
+        },
+        {
+          "name": "inventorySoldYearToDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventorySoldYearToDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "inventorySoldYearToDate",
+          "description": ""
+        },
+        {
+          "name": "inventoryStockingUOM",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/inventoryStockingUOM",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "inventoryStockingUOM",
+          "description": ""
+        },
+        {
+          "name": "lastCountDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/lastCountDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastCountDate",
+          "description": ""
+        },
+        {
+          "name": "lastDespatchedDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/lastDespatchedDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastDespatchedDate",
+          "description": ""
+        },
+        {
+          "name": "lastReceivedDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/lastReceivedDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastReceivedDate",
+          "description": ""
+        },
+        {
+          "name": "locationActiveFlag",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationActiveFlag",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationActiveFlag",
+          "description": ""
+        },
+        {
+          "name": "locationCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationCity",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCity",
+          "description": ""
+        },
+        {
+          "name": "locationCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCode",
+          "description": ""
+        },
+        {
+          "name": "locationCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationCountry",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCountry",
+          "description": ""
+        },
+        {
+          "name": "locationCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationCurrency",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCurrency",
+          "description": ""
+        },
+        {
+          "name": "locationDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationDescription",
+          "description": ""
+        },
+        {
+          "name": "locationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationId",
+          "description": ""
+        },
+        {
+          "name": "locationLatitude",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationLatitude",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationLatitude",
+          "description": ""
+        },
+        {
+          "name": "locationLongitude",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationLongitude",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationLongitude",
+          "description": ""
+        },
+        {
+          "name": "locationParent",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationParent",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationParent",
+          "description": ""
+        },
+        {
+          "name": "locationStateProvince",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationStateProvince",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationStateProvince",
+          "description": ""
+        },
+        {
+          "name": "locationStreet",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationStreet",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationStreet",
+          "description": ""
+        },
+        {
+          "name": "locationType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationType",
+          "description": ""
+        },
+        {
+          "name": "locationZipPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/locationZipPostalCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationZipPostalCode",
+          "description": ""
+        },
+        {
+          "name": "lotNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/lotNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
+        },
+        {
+          "name": "obsoleteorDamagedInventory",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/obsoleteorDamagedInventory",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "obsoleteorDamagedInventory",
+          "description": ""
+        },
+        {
+          "name": "openingStockQuantity",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/openingStockQuantity",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "openingStockQuantity",
+          "description": ""
+        },
+        {
+          "name": "openingStockValue",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/openingStockValue",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "openingStockValue",
+          "description": ""
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/ownerId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "ownerId",
+          "description": ""
+        },
+        {
+          "name": "preferredSupplier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/preferredSupplier",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "preferredSupplier",
+          "description": ""
+        },
+        {
+          "name": "primaryManufacturer",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/primaryManufacturer",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primaryManufacturer",
+          "description": ""
+        },
+        {
+          "name": "primaryManufacturerProductCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/primaryManufacturerProductCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primaryManufacturerProductCode",
+          "description": ""
+        },
+        {
+          "name": "primarySupplier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/primarySupplier",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primarySupplier",
+          "description": ""
+        },
+        {
+          "name": "primarySupplierProductCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/primarySupplierProductCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "primarySupplierProductCode",
+          "description": ""
+        },
+        {
+          "name": "productGroup01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/productGroup01",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "productGroup01",
+          "description": ""
+        },
+        {
+          "name": "productGroup02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/productGroup02",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "productGroup02",
+          "description": ""
+        },
+        {
+          "name": "quantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/quantity",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "quantity",
+          "description": ""
+        },
+        {
+          "name": "quantityOnHandPhysicalCount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/quantityOnHandPhysicalCount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "quantityOnHandPhysicalCount",
+          "description": ""
+        },
+        {
+          "name": "quantityOnHandSystem",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/quantityOnHandSystem",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "quantityOnHandSystem",
+          "description": ""
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/segment01",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/segment02",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/segment03",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/segment04",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/segment05",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "serialNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/serialNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
+        },
+        {
+          "name": "specificCost",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/specificCost",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "specificCost",
+          "description": ""
+        },
+        {
+          "name": "standardCost",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/standardCost",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "standardCost",
+          "description": ""
+        },
+        {
+          "name": "stockAccountCommodityCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/stockAccountCommodityCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "stockAccountCommodityCode",
+          "description": ""
+        },
+        {
+          "name": "stockCharacteristic",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/stockCharacteristic",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "stockCharacteristic",
+          "description": ""
+        },
+        {
+          "name": "stockCharacteristicValue",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/stockCharacteristicValue",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "stockCharacteristicValue",
+          "description": ""
+        },
+        {
+          "name": "supplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/supplierId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
+        },
+        {
+          "name": "thirdPartyFacility",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/thirdPartyFacility",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "thirdPartyFacility",
+          "description": ""
+        },
+        {
+          "name": "unitPrice",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/unitPrice",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "unitPrice",
+          "description": ""
+        },
+        {
+          "name": "uomToUOMbaseConversionFactor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/uomToUOMbaseConversionFactor",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "uomToUOMbaseConversionFactor",
+          "description": ""
+        },
+        {
+          "name": "writeDownDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/writeDownDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "writeDownDescription",
+          "description": ""
+        },
+        {
+          "name": "writeDownFactor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "inventoryList/attributeContext/inventoryList/writeDownFactor",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "writeDownFactor",
+          "description": ""
         }
-    ]
+      ],
+      "displayName": "inventoryList",
+      "description": "",
+      "version": "1.0"
+    }
+  ]
 }

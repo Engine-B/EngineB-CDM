@@ -1,1638 +1,1779 @@
 {
-    "manifestName": "AuditCDM",
-    "entities": [
-        {
-            "entityName": "apPaymentData",
-            "entityPath": "resolved/apPaymentData.cdm.json/apPaymentData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "arPaymentData",
-            "entityPath": "resolved/arPaymentData.cdm.json/arPaymentData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "bankAccountMasterData",
-            "entityPath": "resolved/bankAccountMasterData.cdm.json/bankAccountMasterData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "businessUnit",
-            "entityPath": "resolved/businessUnit.cdm.json/businessUnit",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "chartOfAccounts",
-            "entityPath": "resolved/chartOfAccounts.cdm.json/chartOfAccounts",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "customerMasterData",
-            "entityPath": "resolved/customerMasterData.cdm.json/customerMasterData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "employeeMasterData",
-            "entityPath": "resolved/employeeMasterData.cdm.json/employeeMasterData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "fixedAssetAdditions",
-            "entityPath": "resolved/fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "fixedAssetDepreciation",
-            "entityPath": "resolved/fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "fixedAssetMasterData",
-            "entityPath": "resolved/fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "fixedAssetRemovals",
-            "entityPath": "resolved/fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "fixedAssetValuation",
-            "entityPath": "resolved/fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "glDetail",
-            "entityPath": "resolved/glDetail.cdm.json/glDetail",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "goodsReceivedData",
-            "entityPath": "resolved/goodsReceivedData.cdm.json/goodsReceivedData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "goodsShippedData",
-            "entityPath": "resolved/goodsShippedData.cdm.json/goodsShippedData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "inventoryList",
-            "entityPath": "resolved/inventoryList.cdm.json/inventoryList",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "inventoryTransactions",
-            "entityPath": "resolved/inventoryTransactions.cdm.json/inventoryTransactions",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "materialCost",
-            "entityPath": "resolved/materialCost.cdm.json/materialCost",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "purchaseInvoiceData",
-            "entityPath": "resolved/purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "purchaseOrderData",
-            "entityPath": "resolved/purchaseOrderData.cdm.json/purchaseOrderData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "salesInvoiceData",
-            "entityPath": "resolved/salesInvoiceData.cdm.json/salesInvoiceData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "salesOrderData",
-            "entityPath": "resolved/salesOrderData.cdm.json/salesOrderData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "segmentListing",
-            "entityPath": "resolved/segmentListing.cdm.json/segmentListing",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "sourceListing",
-            "entityPath": "resolved/sourceListing.cdm.json/sourceListing",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "supplierMasterData",
-            "entityPath": "resolved/supplierMasterData.cdm.json/supplierMasterData",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "taxTable",
-            "entityPath": "resolved/taxTable.cdm.json/taxTable",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "trialBalance",
-            "entityPath": "resolved/trialBalance.cdm.json/trialBalance",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        },
-        {
-            "entityName": "userListing",
-            "entityPath": "resolved/userListing.cdm.json/userListing",
-            "type": "LocalEntity",
-            "exhibitTraits": []
-        }
-    ],
-    "relationships": [
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "glCreditAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "glDebitAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "lineApprovedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "lineBusinessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "lineModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "lineSupplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "lineSystemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "apPaymentData.cdm.json/apPaymentData",
-            "fromEntityAttribute": "sourceId",
-            "toEntity": "sourceListing",
-            "toEntityAttribute": "sourceId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "glCreditAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "glDebitAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "lineApprovedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "lineBusinessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "lineCustomerId",
-            "toEntity": "customerMasterData",
-            "toEntityAttribute": "customerId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "lineLastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "lineSupplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "lineSystemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "sourceId",
-            "toEntity": "sourceListing",
-            "toEntityAttribute": "sourceId"
-        },
-        {
-            "fromEntity": "arPaymentData.cdm.json/arPaymentData",
-            "fromEntityAttribute": "systemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "chartOfAccounts.cdm.json/chartOfAccounts",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "chartOfAccounts.cdm.json/chartOfAccounts",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "chartOfAccounts.cdm.json/chartOfAccounts",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "chartOfAccounts.cdm.json/chartOfAccounts",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "chartOfAccounts.cdm.json/chartOfAccounts",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "chartOfAccounts.cdm.json/chartOfAccounts",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "customerMasterData.cdm.json/customerMasterData",
-            "fromEntityAttribute": "bankAccountId",
-            "toEntity": "bankAccountMasterData",
-            "toEntityAttribute": "bankAccountId"
-        },
-        {
-            "fromEntity": "customerMasterData.cdm.json/customerMasterData",
-            "fromEntityAttribute": "systemApprovedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "customerMasterData.cdm.json/customerMasterData",
-            "fromEntityAttribute": "systemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "customerMasterData.cdm.json/customerMasterData",
-            "fromEntityAttribute": "systemModifiedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "employeeMasterData.cdm.json/employeeMasterData",
-            "fromEntityAttribute": "userId",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "enteredBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "glAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "glTransactionId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "transactionId"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "enteredBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "glAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "glTransactionId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "transactionId"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "fixedAssetAccumulatedDepreciationAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "fixedAssetDepreciationAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "fixedAssetRealisedGainLossAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "fixedAssetUnrealizedGainLossAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "enteredBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "fixedAssetRealizedGainLossAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "fixedAssetUnrealizedGainLossAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "glAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "glTransactionId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "transactionId"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "enteredBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "fixedAssetId",
-            "toEntity": "fixedAssetMasterData",
-            "toEntityAttribute": "fixedAssetId"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "fixedAssetRealizedGainLossAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "fixedAssetUnrealizedGainLossAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "glAccount",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "glTransactionId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "transactionId"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "enteredBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "glAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "reversalJournalId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "JournalId"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "sourceId",
-            "toEntity": "sourceListing",
-            "toEntityAttribute": "sourceIdId"
-        },
-        {
-            "fromEntity": "glDetail.cdm.json/glDetail",
-            "fromEntityAttribute": "taxCode",
-            "toEntity": "taxTable",
-            "toEntityAttribute": "regulatorCode"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "enteredBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "purchaseOrderId",
-            "toEntity": "purchaseOrderData",
-            "toEntityAttribute": "purchaseOrderUniqueId"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "enteredBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "salesOrderId",
-            "toEntity": "salesOrderData",
-            "toEntityAttribute": "salesOrderId"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryList.cdm.json/inventoryList",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "inventoryList.cdm.json/inventoryList",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryList.cdm.json/inventoryList",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryList.cdm.json/inventoryList",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryList.cdm.json/inventoryList",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryList.cdm.json/inventoryList",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryList.cdm.json/inventoryList",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "customerId",
-            "toEntity": "customerMasterData",
-            "toEntityAttribute": "customerId"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "inventoryglLineCreditAccountNumber",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "inventoryglLineDebitAccountNumber",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "inventoryProductId",
-            "toEntity": "inventoryList",
-            "toEntityAttribute": "inventoryProductId"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
-            "fromEntityAttribute": "taxCode",
-            "toEntity": "taxTable",
-            "toEntityAttribute": "regulatorCode"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "inventoryProductId",
-            "toEntity": "inventoryList",
-            "toEntityAttribute": "inventoryProductId"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "locationId",
-            "toEntity": "inventoryList",
-            "toEntityAttribute": "locationId"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "materialCost.cdm.json/materialCost",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glLineCreditAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glLineDebitAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glTax1CreditAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glTax1DebitAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glTax2CreditAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glTax2DebitAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glTax3CreditAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "glTax3DebitAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "lineApprovedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "lineSystemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "lineSystemModifiedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "purchaseOrderId",
-            "toEntity": "purchaseOrderData",
-            "toEntityAttribute": "purchaseOrderUniqueId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "sourceId",
-            "toEntity": "sourceListing",
-            "toEntityAttribute": "sourceId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "systemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "systemModifiedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
-            "fromEntityAttribute": "transactionId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "transactionId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "lineAccountId",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "lineApprovedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "lineSystemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "sourceId",
-            "toEntity": "sourceListing",
-            "toEntityAttribute": "sourceId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "systemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
-            "fromEntityAttribute": "transactionId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "transactionId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "customerInfoCustomerId",
-            "toEntity": "customerMasterData",
-            "toEntityAttribute": "customerId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "lineApprovedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "lineSystemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "lineSystemModifiedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "sourceId",
-            "toEntity": "sourceListing",
-            "toEntityAttribute": "sourceId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "systemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "systemModifiedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
-            "fromEntityAttribute": "transactionId",
-            "toEntity": "glDetail",
-            "toEntityAttribute": "transactionId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "approvedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "customerId",
-            "toEntity": "customerMasterData",
-            "toEntityAttribute": "customerId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "lastModifiedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "lineApprovedBy",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "lineSystemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "sourceId",
-            "toEntity": "sourceListing",
-            "toEntityAttribute": "sourceId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "supplierId",
-            "toEntity": "supplierMasterData",
-            "toEntityAttribute": "supplierId"
-        },
-        {
-            "fromEntity": "salesOrderData.cdm.json/salesOrderData",
-            "fromEntityAttribute": "systemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "supplierMasterData.cdm.json/supplierMasterData",
-            "fromEntityAttribute": "bankAccountId",
-            "toEntity": "bankAccountMasterData",
-            "toEntityAttribute": "bankAccountId"
-        },
-        {
-            "fromEntity": "supplierMasterData.cdm.json/supplierMasterData",
-            "fromEntityAttribute": "systemApprovedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "supplierMasterData.cdm.json/supplierMasterData",
-            "fromEntityAttribute": "systemEntryUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "supplierMasterData.cdm.json/supplierMasterData",
-            "fromEntityAttribute": "systemModifiedUser",
-            "toEntity": "userListing",
-            "toEntityAttribute": "userId"
-        },
-        {
-            "fromEntity": "trialBalance.cdm.json/trialBalance",
-            "fromEntityAttribute": "businessUnitCode",
-            "toEntity": "businessUnit",
-            "toEntityAttribute": "businessUnitCode"
-        },
-        {
-            "fromEntity": "trialBalance.cdm.json/trialBalance",
-            "fromEntityAttribute": "glAccountNumber",
-            "toEntity": "chartOfAccounts",
-            "toEntityAttribute": "glAccountNumber"
-        },
-        {
-            "fromEntity": "trialBalance.cdm.json/trialBalance",
-            "fromEntityAttribute": "segment01",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "trialBalance.cdm.json/trialBalance",
-            "fromEntityAttribute": "segment02",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "trialBalance.cdm.json/trialBalance",
-            "fromEntityAttribute": "segment03",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "trialBalance.cdm.json/trialBalance",
-            "fromEntityAttribute": "segment04",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        },
-        {
-            "fromEntity": "trialBalance.cdm.json/trialBalance",
-            "fromEntityAttribute": "segment05",
-            "toEntity": "segmentListing",
-            "toEntityAttribute": "segment0XValue"
-        }
-    ],
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "schema": "",
-    "imports": [],
-    "explanation": "",
-    "subManifests": []
+  "manifestName": "AuditCDM",
+  "entities": [
+    {
+      "entityName": "UserListing",
+      "entityPath": "resolved/UserListing.cdm.json/UserListing",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "CustomerMasterData",
+      "entityPath": "resolved/CustomerMasterData.cdm.json/CustomerMasterData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "sourceListing",
+      "entityPath": "resolved/sourceListing.cdm.json/sourceListing",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "segmentListing",
+      "entityPath": "resolved/segmentListing.cdm.json/segmentListing",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "taxTable",
+      "entityPath": "resolved/taxTable.cdm.json/taxTable",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "apPaymentData",
+      "entityPath": "resolved/apPaymentData.cdm.json/apPaymentData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "arPaymentData",
+      "entityPath": "resolved/arPaymentData.cdm.json/arPaymentData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "bankAccountMasterData",
+      "entityPath": "resolved/bankAccountMasterData.cdm.json/bankAccountMasterData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "ChartOfAccounts",
+      "entityPath": "resolved/ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "employeeMasterData",
+      "entityPath": "resolved/employeeMasterData.cdm.json/employeeMasterData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "fixedAssetAdditions",
+      "entityPath": "resolved/fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "fixedAssetDepreciation",
+      "entityPath": "resolved/fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "fixedAssetMasterData",
+      "entityPath": "resolved/fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "fixedAssetRemovals",
+      "entityPath": "resolved/fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "fixedAssetValuation",
+      "entityPath": "resolved/fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "glDetail",
+      "entityPath": "resolved/glDetail.cdm.json/glDetail",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "goodsReceivedData",
+      "entityPath": "resolved/goodsReceivedData.cdm.json/goodsReceivedData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "goodsShippedData",
+      "entityPath": "resolved/goodsShippedData.cdm.json/goodsShippedData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "inventoryList",
+      "entityPath": "resolved/inventoryList.cdm.json/inventoryList",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "inventoryTransactions",
+      "entityPath": "resolved/inventoryTransactions.cdm.json/inventoryTransactions",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "materialCost",
+      "entityPath": "resolved/materialCost.cdm.json/materialCost",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "purchaseInvoiceData",
+      "entityPath": "resolved/purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "purchaseOrderData",
+      "entityPath": "resolved/purchaseOrderData.cdm.json/purchaseOrderData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "salesInvoiceData",
+      "entityPath": "resolved/salesInvoiceData.cdm.json/salesInvoiceData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "salesOrderData",
+      "entityPath": "resolved/salesOrderData.cdm.json/salesOrderData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "supplierMasterData",
+      "entityPath": "resolved/supplierMasterData.cdm.json/supplierMasterData",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "trialBalance",
+      "entityPath": "resolved/trialBalance.cdm.json/trialBalance",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    },
+    {
+      "entityName": "BusinessUnit",
+      "entityPath": "resolved/BusinessUnit.cdm.json/BusinessUnit",
+      "type": "LocalEntity",
+      "exhibitTraits": []
+    }
+  ],
+  "relationships": [
+    {
+      "fromEntity": "trialBalance.cdm.json/trialBalance",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "trialBalance.cdm.json/trialBalance",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "trialBalance_segmentListing_1006882034"
+    },
+    {
+      "fromEntity": "trialBalance.cdm.json/trialBalance",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "trialBalance_segmentListing_1006882034"
+    },
+    {
+      "fromEntity": "trialBalance.cdm.json/trialBalance",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "trialBalance_segmentListing_1006882034"
+    },
+    {
+      "fromEntity": "trialBalance.cdm.json/trialBalance",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "trialBalance_segmentListing_1006882034"
+    },
+    {
+      "fromEntity": "trialBalance.cdm.json/trialBalance",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "trialBalance_segmentListing_1006882034"
+    },
+    {
+      "fromEntity": "trialBalance.cdm.json/trialBalance",
+      "fromEntityAttribute": "glAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "lineBusinessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode",
+      "name": "arPaymentData_BusinessUnit_1522255165"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode",
+      "name": "arPaymentData_BusinessUnit_1522255165"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "lineSupplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "glCreditAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "arPaymentData_ChartOfAccounts_-543806985"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "glDebitAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "arPaymentData_ChartOfAccounts_-543806985"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "lineLastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "arPaymentData_segmentListing_239784835"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "arPaymentData_segmentListing_239784835"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "arPaymentData_segmentListing_239784835"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "arPaymentData_segmentListing_239784835"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "arPaymentData_segmentListing_239784835"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "lineApprovedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "arPaymentData_UserListing_573780897"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "lineSystemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "arPaymentData_UserListing_573780897"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "arPaymentData_UserListing_573780897"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "arPaymentData_UserListing_573780897"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "systemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "arPaymentData_UserListing_573780897"
+    },
+    {
+      "fromEntity": "arPaymentData.cdm.json/arPaymentData",
+      "fromEntityAttribute": "sourceId",
+      "toEntity": "sourceListing.cdm.json/sourceListing",
+      "toEntityAttribute": "sourceId"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "glTransactionId",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "glAccountNumber"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "glAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetAdditions_segmentListing_-585049831"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetAdditions_segmentListing_-585049831"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetAdditions_segmentListing_-585049831"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetAdditions_segmentListing_-585049831"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetAdditions_segmentListing_-585049831"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetAdditions_UserListing_-716602283"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetAdditions_UserListing_-716602283"
+    },
+    {
+      "fromEntity": "fixedAssetAdditions.cdm.json/fixedAssetAdditions",
+      "fromEntityAttribute": "enteredBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetAdditions_UserListing_-716602283"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "fixedAssetId",
+      "toEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "toEntityAttribute": "fixedAssetId"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "fixedAssetId",
+      "toEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "toEntityAttribute": "fixedAssetId"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetMasterData_segmentListing_1987328991"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetMasterData_segmentListing_1987328991"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetMasterData_segmentListing_1987328991"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetMasterData_segmentListing_1987328991"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetMasterData_segmentListing_1987328991"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "fixedAssetRealisedGainLossAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetMasterData_ChartOfAccounts_-1282747700"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "fixedAssetUnrealizedGainLossAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetMasterData_ChartOfAccounts_-1282747700"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "fixedAssetAccumulatedDepreciationAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetMasterData_ChartOfAccounts_-1282747700"
+    },
+    {
+      "fromEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "fromEntityAttribute": "fixedAssetDepreciationAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetMasterData_ChartOfAccounts_-1282747700"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "purchaseOrderId",
+      "toEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "toEntityAttribute": "purchaseOrderUniqueId"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsReceivedData_segmentListing_472501554"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsReceivedData_segmentListing_472501554"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsReceivedData_segmentListing_472501554"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsReceivedData_segmentListing_472501554"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsReceivedData_segmentListing_472501554"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "goodsReceivedData_UserListing_777881011"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "goodsReceivedData_UserListing_777881011"
+    },
+    {
+      "fromEntity": "goodsReceivedData.cdm.json/goodsReceivedData",
+      "fromEntityAttribute": "enteredBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "goodsReceivedData_UserListing_777881011"
+    },
+    {
+      "fromEntity": "inventoryList.cdm.json/inventoryList",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "inventoryList.cdm.json/inventoryList",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "inventoryList.cdm.json/inventoryList",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryList_segmentListing_1806936285"
+    },
+    {
+      "fromEntity": "inventoryList.cdm.json/inventoryList",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryList_segmentListing_1806936285"
+    },
+    {
+      "fromEntity": "inventoryList.cdm.json/inventoryList",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryList_segmentListing_1806936285"
+    },
+    {
+      "fromEntity": "inventoryList.cdm.json/inventoryList",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryList_segmentListing_1806936285"
+    },
+    {
+      "fromEntity": "inventoryList.cdm.json/inventoryList",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryList_segmentListing_1806936285"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "customerId",
+      "toEntity": "CustomerMasterData.cdm.json/CustomerMasterData",
+      "toEntityAttribute": "customerId"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "taxCode",
+      "toEntity": "taxTable.cdm.json/taxTable",
+      "toEntityAttribute": "regulatorCode"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryTransactions_segmentListing_-1089929992"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryTransactions_segmentListing_-1089929992"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryTransactions_segmentListing_-1089929992"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryTransactions_segmentListing_-1089929992"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "inventoryTransactions_segmentListing_-1089929992"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "inventoryglLineCreditAccountNumber",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "inventoryTransactions_glDetail_-285065111"
+    },
+    {
+      "fromEntity": "inventoryTransactions.cdm.json/inventoryTransactions",
+      "fromEntityAttribute": "inventoryglLineDebitAccountNumber",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "inventoryTransactions_glDetail_-285065111"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glTax3DebitAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glTax3CreditAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glTax2DebitAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glTax2CreditAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glTax1CreditAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glTax1DebitAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glLineCreditAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "glLineDebitAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "purchaseInvoiceData_ChartOfAccounts_316251665"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseInvoiceData_segmentListing_1854116880"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseInvoiceData_segmentListing_1854116880"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseInvoiceData_segmentListing_1854116880"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseInvoiceData_segmentListing_1854116880"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseInvoiceData_segmentListing_1854116880"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "transactionId",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "transactionId"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "lineSystemModifiedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseInvoiceData_UserListing_1082415320"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "lineApprovedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseInvoiceData_UserListing_1082415320"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "lineSystemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseInvoiceData_UserListing_1082415320"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "systemModifiedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseInvoiceData_UserListing_1082415320"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseInvoiceData_UserListing_1082415320"
+    },
+    {
+      "fromEntity": "purchaseInvoiceData.cdm.json/purchaseInvoiceData",
+      "fromEntityAttribute": "systemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseInvoiceData_UserListing_1082415320"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseOrderData_segmentListing_1933302435"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseOrderData_segmentListing_1933302435"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseOrderData_segmentListing_1933302435"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseOrderData_segmentListing_1933302435"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "purchaseOrderData_segmentListing_1933302435"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "transactionId",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "transactionId"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "sourceId",
+      "toEntity": "sourceListing.cdm.json/sourceListing",
+      "toEntityAttribute": "sourceId"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "lineApprovedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseOrderData_UserListing_-1504724664"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "lineSystemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseOrderData_UserListing_-1504724664"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseOrderData_UserListing_-1504724664"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseOrderData_UserListing_-1504724664"
+    },
+    {
+      "fromEntity": "purchaseOrderData.cdm.json/purchaseOrderData",
+      "fromEntityAttribute": "systemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "purchaseOrderData_UserListing_-1504724664"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "supplierId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "supplierId"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "sourceId",
+      "toEntity": "sourceListing.cdm.json/sourceListing",
+      "toEntityAttribute": "sourceId"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesOrderData_segmentListing_-1021804269"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesOrderData_segmentListing_-1021804269"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesOrderData_segmentListing_-1021804269"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesOrderData_segmentListing_-1021804269"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesOrderData_segmentListing_-1021804269"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "customerId",
+      "toEntity": "CustomerMasterData.cdm.json/CustomerMasterData",
+      "toEntityAttribute": "customerId"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "lineApprovedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesOrderData_UserListing_-535626739"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "lineSystemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesOrderData_UserListing_-535626739"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesOrderData_UserListing_-535626739"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesOrderData_UserListing_-535626739"
+    },
+    {
+      "fromEntity": "salesOrderData.cdm.json/salesOrderData",
+      "fromEntityAttribute": "systemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesOrderData_UserListing_-535626739"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "salesOrderId",
+      "toEntity": "salesOrderData.cdm.json/salesOrderData",
+      "toEntityAttribute": "salesOrderId"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsShippedData_segmentListing_-884556197"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsShippedData_segmentListing_-884556197"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsShippedData_segmentListing_-884556197"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsShippedData_segmentListing_-884556197"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "goodsShippedData_segmentListing_-884556197"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "goodsShippedData_UserListing_79002715"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "goodsShippedData_UserListing_79002715"
+    },
+    {
+      "fromEntity": "goodsShippedData.cdm.json/goodsShippedData",
+      "fromEntityAttribute": "enteredBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "goodsShippedData_UserListing_79002715"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesInvoiceData_segmentListing_170749230"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesInvoiceData_segmentListing_170749230"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesInvoiceData_segmentListing_170749230"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesInvoiceData_segmentListing_170749230"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "salesInvoiceData_segmentListing_170749230"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "transactionId",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "transactionId"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "sourceId",
+      "toEntity": "sourceListing.cdm.json/sourceListing",
+      "toEntityAttribute": "sourceId"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "lineSystemModifiedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesInvoiceData_UserListing_-2010159400"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "lineApprovedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesInvoiceData_UserListing_-2010159400"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "lineSystemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesInvoiceData_UserListing_-2010159400"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "systemModifiedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesInvoiceData_UserListing_-2010159400"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesInvoiceData_UserListing_-2010159400"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "systemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "salesInvoiceData_UserListing_-2010159400"
+    },
+    {
+      "fromEntity": "salesInvoiceData.cdm.json/salesInvoiceData",
+      "fromEntityAttribute": "customerInfoCustomerId",
+      "toEntity": "CustomerMasterData.cdm.json/CustomerMasterData",
+      "toEntityAttribute": "customerId"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "locationId",
+      "toEntity": "inventoryList.cdm.json/inventoryList",
+      "toEntityAttribute": "locationId",
+      "name": "materialCost_inventoryList_2027027118"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "inventoryProductId",
+      "toEntity": "inventoryList.cdm.json/inventoryList",
+      "toEntityAttribute": "inventoryProductId",
+      "name": "materialCost_inventoryList_2027027118"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "materialCost_segmentListing_-113359031"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "materialCost_segmentListing_-113359031"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "materialCost_segmentListing_-113359031"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "materialCost_segmentListing_-113359031"
+    },
+    {
+      "fromEntity": "materialCost.cdm.json/materialCost",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "materialCost_segmentListing_-113359031"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "taxCode",
+      "toEntity": "taxTable.cdm.json/taxTable",
+      "toEntityAttribute": "regulatorCode"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "glDetail_segmentListing_711840818"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "glDetail_segmentListing_711840818"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "glDetail_segmentListing_711840818"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "glDetail_segmentListing_711840818"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "glDetail_segmentListing_711840818"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "sourceId",
+      "toEntity": "sourceListing.cdm.json/sourceListing",
+      "toEntityAttribute": "sourceId"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "glDetail_UserListing_-1329714907"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "glDetail_UserListing_-1329714907"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "enteredBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "glDetail_UserListing_-1329714907"
+    },
+    {
+      "fromEntity": "glDetail.cdm.json/glDetail",
+      "fromEntityAttribute": "glAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "glTransactionId",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "journalId"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "glAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetDepreciation_segmentListing_-1234334032"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetDepreciation_segmentListing_-1234334032"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetDepreciation_segmentListing_-1234334032"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetDepreciation_segmentListing_-1234334032"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetDepreciation_segmentListing_-1234334032"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetDepreciation_UserListing_749448628"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetDepreciation_UserListing_749448628"
+    },
+    {
+      "fromEntity": "fixedAssetDepreciation.cdm.json/fixedAssetDepreciation",
+      "fromEntityAttribute": "enteredBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetDepreciation_UserListing_749448628"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "glTransactionId",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "transactionId"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetRemovals_segmentListing_1689698211"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetRemovals_segmentListing_1689698211"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetRemovals_segmentListing_1689698211"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetRemovals_segmentListing_1689698211"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetRemovals_segmentListing_1689698211"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetRemovals_UserListing_914167236"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetRemovals_UserListing_914167236"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "enteredBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetRemovals_UserListing_914167236"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "fixedAssetRealizedGainLossAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetRemovals_ChartOfAccounts_-1519305458"
+    },
+    {
+      "fromEntity": "fixedAssetRemovals.cdm.json/fixedAssetRemovals",
+      "fromEntityAttribute": "fixedAssetUnrealizedGainLossAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetRemovals_ChartOfAccounts_-1519305458"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "glTransactionId",
+      "toEntity": "glDetail.cdm.json/glDetail",
+      "toEntityAttribute": "journalId"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetValuation_segmentListing_496380590"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetValuation_segmentListing_496380590"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetValuation_segmentListing_496380590"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetValuation_segmentListing_496380590"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "fixedAssetValuation_segmentListing_496380590"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "glAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "lastModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetValuation_UserListing_-877740667"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "approvedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetValuation_UserListing_-877740667"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "enteredBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "fixedAssetValuation_UserListing_-877740667"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "fixedAssetRealizedGainLossAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetValuation_ChartOfAccounts_279737450"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "fixedAssetUnrealizedGainLossAccount",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "fixedAssetValuation_ChartOfAccounts_279737450"
+    },
+    {
+      "fromEntity": "fixedAssetValuation.cdm.json/fixedAssetValuation",
+      "fromEntityAttribute": "fixedAssetId",
+      "toEntity": "fixedAssetMasterData.cdm.json/fixedAssetMasterData",
+      "toEntityAttribute": "fixedAssetId"
+    },
+    {
+      "fromEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "fromEntityAttribute": "businessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "ChartOfAccounts_segmentListing_-2075397345"
+    },
+    {
+      "fromEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "ChartOfAccounts_segmentListing_-2075397345"
+    },
+    {
+      "fromEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "ChartOfAccounts_segmentListing_-2075397345"
+    },
+    {
+      "fromEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "ChartOfAccounts_segmentListing_-2075397345"
+    },
+    {
+      "fromEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "ChartOfAccounts_segmentListing_-2075397345"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "lineBusinessUnitCode",
+      "toEntity": "BusinessUnit.cdm.json/BusinessUnit",
+      "toEntityAttribute": "businessUnitCode"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "glDebitAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "apPaymentData_ChartOfAccounts_-806157034"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "glCreditAccountNumber",
+      "toEntity": "ChartOfAccounts.cdm.json/ChartOfAccounts",
+      "toEntityAttribute": "glAccountNumber",
+      "name": "apPaymentData_ChartOfAccounts_-806157034"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "segment05",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "apPaymentData_segmentListing_1603908703"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "segment04",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "apPaymentData_segmentListing_1603908703"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "segment03",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "apPaymentData_segmentListing_1603908703"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "segment02",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "apPaymentData_segmentListing_1603908703"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "segment01",
+      "toEntity": "segmentListing.cdm.json/segmentListing",
+      "toEntityAttribute": "segment0XValue",
+      "name": "apPaymentData_segmentListing_1603908703"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "lineModifiedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "apPaymentData_UserListing_-1059752712"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "lineApprovedBy",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "apPaymentData_UserListing_-1059752712"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "lineSystemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "apPaymentData_UserListing_-1059752712"
+    },
+    {
+      "fromEntity": "apPaymentData.cdm.json/apPaymentData",
+      "fromEntityAttribute": "sourceId",
+      "toEntity": "sourceListing.cdm.json/sourceListing",
+      "toEntityAttribute": "sourceId"
+    },
+    {
+      "fromEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "fromEntityAttribute": "systemModifiedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId"
+    },
+    {
+      "fromEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "fromEntityAttribute": "systemApprovedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "supplierMasterData_UserListing_1979999680"
+    },
+    {
+      "fromEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "fromEntityAttribute": "systemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "supplierMasterData_UserListing_1979999680"
+    },
+    {
+      "fromEntity": "bankAccountMasterData.cdm.json/bankAccountMasterData",
+      "fromEntityAttribute": "bankAccountId",
+      "toEntity": "supplierMasterData.cdm.json/supplierMasterData",
+      "toEntityAttribute": "bankAccountId"
+    },
+    {
+      "fromEntity": "bankAccountMasterData.cdm.json/bankAccountMasterData",
+      "fromEntityAttribute": "bankAccountId",
+      "toEntity": "CustomerMasterData.cdm.json/CustomerMasterData",
+      "toEntityAttribute": "bankAccountId"
+    },
+    {
+      "fromEntity": "employeeMasterData.cdm.json/employeeMasterData",
+      "fromEntityAttribute": "userId",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId"
+    },
+    {
+      "fromEntity": "CustomerMasterData.cdm.json/CustomerMasterData",
+      "fromEntityAttribute": "systemModifiedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "CustomerMasterData_UserListing_-2133758686"
+    },
+    {
+      "fromEntity": "CustomerMasterData.cdm.json/CustomerMasterData",
+      "fromEntityAttribute": "systemApprovedUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "CustomerMasterData_UserListing_-2133758686"
+    },
+    {
+      "fromEntity": "CustomerMasterData.cdm.json/CustomerMasterData",
+      "fromEntityAttribute": "systemEntryUser",
+      "toEntity": "UserListing.cdm.json/UserListing",
+      "toEntityAttribute": "userId",
+      "name": "CustomerMasterData_UserListing_-2133758686"
+    }
+  ],
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "schema": "",
+  "imports": [],
+  "explanation": "",
+  "subManifests": []
 }

@@ -1,34 +1,83 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
-        {
-            "corpusPath": "_allImports.cdm.json"
-        }
-    ],
-    "definitions": [
-        {
-            "entityName": "segmentListing",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                [
-                    {
-                        "name": "segment0XDescription",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment0XDescription",
-                        "decimalPlaces": null,
-                        "description": "Segment description to indicate the name or"
-                    },
-                    {
-                        "name": "segment0XValue",
-                        "dataType": "string",
-                        "isNullable": "false",
-                        "displayName": "segment0XValue",
-                        "decimalPlaces": null,
-                        "description": "Value of Segment0X (X may equal 1 to 5)."
-                    }
-                ]
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/segmentListing.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "segmentListing",
+      "attributeContext": {
+        "type": "entity",
+        "name": "segmentListing",
+        "definition": "resolvedFrom/segmentListing",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "segmentListing/attributeContext/segmentListing",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "segmentListing/attributeContext/segmentListing/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
             ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment0XDescription",
+            "parent": "segmentListing/attributeContext/segmentListing",
+            "definition": "resolvedFrom/segmentListing/hasAttributes/segment0XDescription",
+            "contents": [
+              "segmentListing/hasAttributes/segment0XDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment0XValue",
+            "parent": "segmentListing/attributeContext/segmentListing",
+            "definition": "resolvedFrom/segmentListing/hasAttributes/segment0XValue",
+            "contents": [
+              "segmentListing/hasAttributes/segment0XValue"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "segment0XDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "segmentListing/attributeContext/segmentListing/segment0XDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment0XDescription",
+          "description": ""
+        },
+        {
+          "name": "segment0XValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "segmentListing/attributeContext/segmentListing/segment0XValue",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "segment0XValue",
+          "description": "Value of Segment0X (X may equal 1 to 5)."
         }
-    ]
+      ],
+      "displayName": "segmentListing",
+      "description": "",
+      "version": "1.0"
+    }
+  ]
 }

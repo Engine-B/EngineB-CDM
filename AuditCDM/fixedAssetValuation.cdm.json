@@ -1,242 +1,241 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetValuation",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
         {
-            "corpusPath": "_allImports.cdm.json"
-        }
-    ],
-    "definitions": [
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
+        },
         {
-            "entityName": "fixedAssetValuation",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                [
-                    {
-                        "name": "approvedBy",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "approvedBy",
-                        "decimalPlaces": null,
-                        "description": "User ID (from User_Listing file) for person who approved the entry."
-                    },
-                    {
-                        "name": "approvedByDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "approvedByDate",
-                        "decimalPlaces": null,
-                        "description": "Date the entry was approved."
-                    },
-                    {
-                        "name": "businessUnitCode",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "businessUnitCode",
-                        "decimalPlaces": null,
-                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
-                    },
-                    {
-                        "name": "enteredBy",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "enteredBy",
-                        "decimalPlaces": null,
-                        "description": "User_ID (from User_Listing file) for person who created the record."
-                    },
-                    {
-                        "name": "enteredDateTime",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "enteredDateTime",
-                        "decimalPlaces": null,
-                        "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself."
-                    },
-                    {
-                        "name": "fixedAssetId",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "fixedAssetId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "fixedAssetRealizedGainLossAccount",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "fixedAssetRealizedGainLossAccount",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "fixedAssetRealizedGainLossAmount",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "fixedAssetRealizedGainLossAmount",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "fixedAssetUnrealizedGainLossAccount",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "fixedAssetUnrealizedGainLossAccount",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "fixedAssetUnrealizedGainLossAmount",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "fixedAssetUnrealizedGainLossAmount",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "glAccount",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "glAccount",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "glTransactionId",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "glTransactionId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "lastModifiedBy",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "lastModifiedBy",
-                        "decimalPlaces": null,
-                        "description": "User_ID (from User_Listing file) for the last person modifying this entry."
-                    },
-                    {
-                        "name": "lastModifiedByDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "lastModifiedByDate",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "lotNumber",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "lotNumber",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "revaluationAmount",
-                        "dataType": "decimal",
-                        "isNullable": "true",
-                        "displayName": "revaluationAmount",
-                        "decimalPlaces": 5,
-                        "description": null
-                    },
-                    {
-                        "name": "revaluationDate",
-                        "dataType": "date",
-                        "isNullable": "true",
-                        "displayName": "revaluationDate",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "revaluationDescription",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "revaluationDescription",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "segment01",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment01",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment02",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment02",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment03",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment03",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment04",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment04",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "segment05",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "segment05",
-                        "decimalPlaces": null,
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
-                    },
-                    {
-                        "name": "serialNumber",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "serialNumber",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "uniqueId",
-                        "dataType": "string",
-                        "isNullable": "false",
-                        "displayName": "uniqueId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "valuerDocumnetReference",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "valuerDocumnetReference",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "valuerId",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "valuerId",
-                        "decimalPlaces": null,
-                        "description": null
-                    },
-                    {
-                        "name": "valuerName",
-                        "dataType": "string",
-                        "isNullable": "true",
-                        "displayName": "valuerName",
-                        "decimalPlaces": null,
-                        "description": null
-                    }
-                ]
-            ]
+          "name": "approvedByDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "approvedByDate",
+          "description": "Date the entry was approved.\n"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+        },
+        {
+          "name": "enteredBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record.\n"
+        },
+        {
+          "name": "enteredDateTime",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "enteredDateTime",
+          "description": "\"The date the transaction was entered into the \nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\n date), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself.\"\n"
+        },
+        {
+          "name": "fixedAssetId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetId",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetRealizedGainLossAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetRealizedGainLossAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetRealizedGainLossAmount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetUnrealizedGainLossAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetUnrealizedGainLossAmount",
+          "description": ""
+        },
+        {
+          "name": "glAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "glAccount",
+          "description": ""
+        },
+        {
+          "name": "glTransactionId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "glTransactionId",
+          "description": ""
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
+        },
+        {
+          "name": "lastModifiedByDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "lastModifiedByDate",
+          "description": ""
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lotNumber",
+          "description": ""
+        },
+        {
+          "name": "revaluationAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "revaluationAmount",
+          "description": ""
+        },
+        {
+          "name": "revaluationDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "revaluationDate",
+          "description": ""
+        },
+        {
+          "name": "revaluationDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "revaluationDescription",
+          "description": ""
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "serialNumber",
+          "description": ""
+        },
+        {
+          "name": "uniqueId",
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "uniqueId",
+          "description": ""
+        },
+        {
+          "name": "valuerDocumnetReference",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "valuerDocumnetReference",
+          "description": ""
+        },
+        {
+          "name": "valuerId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "valuerId",
+          "description": ""
+        },
+        {
+          "name": "valuerName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "valuerName",
+          "description": ""
         }
-    ]
+      ],
+      "displayName": "fixedAssetValuation",
+      "description": ""
+    }
+  ]
 }
