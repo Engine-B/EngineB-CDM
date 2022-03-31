@@ -1,545 +1,409 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetMasterData",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
         {
-            "corpusPath": "cdm:/foundations.cdm.json"
-        }
-    ],
-    "definitions": [
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+        },
         {
-            "entityName": "fixedAssetMasterData",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                [
-                    {
-                        "name": "businessUnitCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "businessUnitCode",
-                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "currencyId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "currencyId",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "depreciationRate",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "depreciationRate",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "fixedAssetAccumulatedDepreciation",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "fixedAssetAccumulatedDepreciation",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "fixedAssetAccumulatedDepreciationAccount",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetAccumulatedDepreciationAccount",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetAcquisitionDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "fixedAssetAcquisitionDate",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetAssetAccount",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetAssetAccount",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetAvailableforSaleDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "fixedAssetAvailableforSaleDate",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetBarCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetBarCode",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetCIPAccount",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetCIPAccount",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetCIPFlag",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetCIPFlag",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetClass",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetClass",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetCode",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetDepreciableBasis",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetDepreciableBasis",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetDepreciationAccount",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetDepreciationAccount",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetDescription",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetDescription",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetDisposalDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "fixedAssetDisposalDate",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetFairValue",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "fixedAssetFairValue",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "fixedAssetGroup01",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetGroup01",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetGroup02",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetGroup02",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": false,
-                        "displayName": "fixedAssetId",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetInactiveFlag",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetInactiveFlag",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetInServiceDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "fixedAssetInServiceDate",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetNetBookValue",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "fixedAssetNetBookValue",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "fixedAssetOriginalCost",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "fixedAssetOriginalCost",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "fixedAssetQuantityOnHand",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetQuantityOnHand",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetRealisedGainLossAccount",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetRealisedGainLossAccount",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetReplacementCost",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "fixedAssetReplacementCost",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "fixedAssetRetirementDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "fixedAssetRetirementDate",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetSalvageValue",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "fixedAssetSalvageValue",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetType",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetType",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetUnrealizedGainLossAccount",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetUnrealizedGainLossAccount",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetUsefulLife",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetUsefulLife",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fixedAssetUsefulLifeRemaining",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fixedAssetUsefulLifeRemaining",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "locationCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "locationCode",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "locationDescription",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "locationDescription",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "locationId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "locationId",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lotNumber",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lotNumber",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "manufacturerId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "manufacturerId",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "projectId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "projectId",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment01",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment01",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment02",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment02",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment03",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment03",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment04",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment04",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment05",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment05",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "serialNumber",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "serialNumber",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "supplierId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "supplierId",
-                        "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "supplierName",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "supplierName",
-                        "description": "Name of the supplier",
-                        "appliedTraits": null
-                    }
-                ]
-            ]
+          "name": "currencyId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "currencyId",
+          "description": ""
+        },
+        {
+          "name": "depreciationRate",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "depreciationRate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAccumulatedDepreciation",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetAccumulatedDepreciation",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAccumulatedDepreciationAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetAccumulatedDepreciationAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAcquisitionDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "fixedAssetAcquisitionDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAssetAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetAssetAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAvailableforSaleDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "fixedAssetAvailableforSaleDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetBarCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetBarCode",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetCIPAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetCIPAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetCIPFlag",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetCIPFlag",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetClass",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetClass",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetCode",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDepreciableBasis",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetDepreciableBasis",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDepreciationAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetDepreciationAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetDescription",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDisposalDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "fixedAssetDisposalDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetFairValue",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetFairValue",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetGroup01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetGroup01",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetGroup02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetGroup02",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetId",
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "fixedAssetId",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetInactiveFlag",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetInactiveFlag",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetInServiceDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "fixedAssetInServiceDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetNetBookValue",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetNetBookValue",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetOriginalCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetOriginalCost",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetQuantityOnHand",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetQuantityOnHand",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetRealisedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetRealisedGainLossAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetReplacementCost",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetReplacementCost",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetRetirementDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "fixedAssetRetirementDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetSalvageValue",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "fixedAssetSalvageValue",
+          "description": ""
+        },
+        {
+          "name": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetType",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAccount",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetUnrealizedGainLossAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUsefulLife",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetUsefulLife",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUsefulLifeRemaining",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fixedAssetUsefulLifeRemaining",
+          "description": ""
+        },
+        {
+          "name": "locationCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "locationCode",
+          "description": ""
+        },
+        {
+          "name": "locationDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "locationDescription",
+          "description": ""
+        },
+        {
+          "name": "locationId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "locationId",
+          "description": ""
+        },
+        {
+          "name": "lotNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lotNumber",
+          "description": ""
+        },
+        {
+          "name": "manufacturerId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "manufacturerId",
+          "description": ""
+        },
+        {
+          "name": "projectId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "projectId",
+          "description": ""
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "serialNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "serialNumber",
+          "description": ""
+        },
+        {
+          "name": "supplierId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
+        },
+        {
+          "name": "supplierName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "supplierName",
+          "description": "Name of the supplier\n"
         }
-    ],
-    "displayName": "fixedAssetMasterData",
-    "description": ""
+      ],
+      "displayName": "fixedAssetMasterData",
+      "description": ""
+    }
+  ]
 }

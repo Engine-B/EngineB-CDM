@@ -1,746 +1,481 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "goodsShippedData",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
         {
-            "corpusPath": "cdm:/foundations.cdm.json"
-        }
-    ],
-    "definitions": [
+          "name": "adjustmentAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "adjustmentAmount",
+          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier).\"\n"
+        },
         {
-            "entityName": "goodsShippedData",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                [
-                    {
-                        "name": "adjustmentAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "adjustmentAmount",
-                        "description": "Reference number on shipping document\r\n(company reference or logistics company\r\nidentifier).",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "adjustmentDescription",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "adjustmentDescription",
-                        "description": "If an adjustment to the receipt, a description\r\nof the reason for the adjustment.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "adjustmentIndicator",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "adjustmentIndicator",
-                        "description": "\"0\" if the transaction is the original shipment\r\ntransaction, \"1\" if the transaction is a\r\nshipment adjustment.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "approvedBy",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "approvedBy",
-                        "description": "User ID (from User_Listing file) for person who approved the entry.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "approvedDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "approvedDate",
-                        "description": "Date the entry was approved.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "businessUnitCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "businessUnitCode",
-                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "customerAccountId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "customerAccountId",
-                        "description": "Identifier of the customer from whom payment is expected or to whom unused credits have been applied.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "enteredBy",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "enteredBy",
-                        "description": "User_ID (from User_Listing file) for person who created the record.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "enteredDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "enteredDate",
-                        "description": "Date the order was entered into the system.\r\nThis is sometimes referred to as the creation\r\ndate. This should be a system-generated\r\ndate (rather than user-entered date), when\r\npossible. This date does not necessarily\r\ncorrespond with the date of the transaction\r\nitself.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "goodsReceivedAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "goodsReceivedAmount",
-                        "description": "Customer purchasing the product. Must\r\n match a Customer_Account_ID in the\r\n Customer_Master_Listing_YYYYMMDD file.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "goodsReceivedExchangeRate",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "goodsReceivedExchangeRate",
-                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount ",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "goodsShippedId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": false,
-                        "displayName": "goodsShippedId",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lastModifiedBy",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lastModifiedBy",
-                        "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lastModifiedDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "lastModifiedDate",
-                        "description": "The date the entry was last modified before posting.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineAdjustmentAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineAdjustmentAmount",
-                        "description": null,
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineAdjustmentDescription",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineAdjustmentDescription",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineAmount",
-                        "description": "In the header's default currency.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineExchangeRate",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineExchangeRate",
-                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount ",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineSalesOrderAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderAmount",
-                        "description": "In the header's default currency.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineSalesOrderExchangeRate",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderExchangeRate",
-                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount ",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineSalesOrderLineAmountLocal",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderLineAmountLocal",
-                        "description": "Monetary amount for the line item in the\r\nsales order related to the shipping document\r\nline item. Recorded in the local currency. If\r\n no sales order, leave blank.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineSalesOrderLineId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderLineId",
-                        "description": "Identifier for sales order line number.\r\nMust match Sales_Order_Line_ID used\r\nin\r\nSales_Orders_Lines_YYYYMMDD_YY\r\nYYMMDD file. If no sales order, leave\r\nblank.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineSalesOrderLocalCurrency",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderLocalCurrency",
-                        "description": "The currency for local reporting \r\nrequirements. See ISO 4217 coding. If no\r\nsales order, leave blank.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineSalesOrderQuantity",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderQuantity",
-                        "description": "Sales order line original quantity. If no sales\r\n order, leave blank.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineSalesOrderUnitOfMeasure",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderUnitOfMeasure",
-                        "description": "Sales order line base unit of measure. If no\r\n sales order, leave blank.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineSalesOrderUnitPrice",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineSalesOrderUnitPrice",
-                        "description": "Sales order line price per unit. If no sales \r\norder, leave blank.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineShipmentId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShipmentId",
-                        "description": "Unique identifier for each shipment. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment. Must match the Shipment_ID field in the file Shipments_Made_YYYYMMDD_YYYYMMDD.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingDocumentLineId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingDocumentLineId",
-                        "description": "Reference line number on shipping document.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingLineAmountLocal",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineShippingLineAmountLocal",
-                        "description": "Monetary amount for the line item in the\r\nshipping document related to the sales order.\r\nRecorded in the local currency.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineShippingLineAmountLocalCurrency",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingLineAmountLocalCurrency",
-                        "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingProductBarCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingProductBarCode",
-                        "description": "UPC or other general identifier.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingProductCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingProductCode",
-                        "description": "Product code appearing on the trade document",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingProductDescription",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingProductDescription",
-                        "description": "Product description (plain English) to indicate the name or other identifying characteristics of the product.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingProductGroup01",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingProductGroup01",
-                        "description": "Product descriptor #1, for example, tires or accessories.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingProductGroup02",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingProductGroup02",
-                        "description": "Product descriptor #2, for example, brand.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingProductId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingProductId",
-                        "description": "Identifier that is unique for each product.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingQuantity",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lineShippingQuantity",
-                        "description": "Item quantity sent.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lineShippingUnitOfMeasure",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineShippingUnitOfMeasure",
-                        "description": "Base unit of measure.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "lineShippingUnitPrice",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "lineShippingUnitPrice",
-                        "description": "Price per unit for item sent.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "postingStatus",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "postingStatus",
-                        "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\").",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "salesOrderAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "salesOrderAmount",
-                        "description": "In the header's default currency.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "salesOrderAmountLocal",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "salesOrderAmountLocal",
-                        "description": "Sales monetary amount recorded in the local currency.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "salesOrderDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "salesOrderDate",
-                        "description": "Date of sales order for items shipped. If no\r\nsales order, leave blank.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "salesOrderExchangeRate",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "salesOrderExchangeRate",
-                        "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount ",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "salesOrderId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "salesOrderId",
-                        "description": "Sales order ID for invoiced items.  Must\r\nmatch Sales_Order_ID in the\r\nSales_Orders_YYYYMMDD_YYYYMMDD\r\nfile. If no sales order, leave blank.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "salesOrderLocalCurrency",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "salesOrderLocalCurrency",
-                        "description": "The currency for local reporting requirements. See ISO 4217 coding.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment01",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment01",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment02",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment02",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment03",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment03",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment04",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment04",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment05",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment05",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "shipmentDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "shipmentDate",
-                        "description": "Date of shipment (date shipped)",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "shipmentFiscalYear",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "shipmentFiscalYear",
-                        "description": "Fiscal year in which the Shipment_Date occurs\ufffd\ufffd\ufffdYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "shipmentId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "shipmentId",
-                        "description": "Unique identifier for each shipment. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "shipmentPeriod",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "shipmentPeriod",
-                        "description": "Fiscal period in which the Shapment_Date occurs. Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "shippingAmountLocal",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "shippingAmountLocal",
-                        "description": "Monetary amount for the items in the\r\nshipping document related to the sales order.\r\nRecorded in the local currency.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "shippingAmountLocalCurrency",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "shippingAmountLocalCurrency",
-                        "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "shippingDocumentId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "shippingDocumentId",
-                        "description": "Reference number on shipping document\r\n(company reference or logistics company\r\nidentifier).",
-                        "appliedTraits": null
-                    }
-                ]
-            ]
+          "name": "adjustmentDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "adjustmentDescription",
+          "description": "\"If an adjustment to the receipt, a description\nof the reason for the adjustment.\"\n"
+        },
+        {
+          "name": "adjustmentIndicator",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "adjustmentIndicator",
+          "description": "\"\"\"0\"\" if the transaction is the original shipment\ntransaction, \"\"1\"\" if the transaction is a\nshipment adjustment.\"\n"
+        },
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
+        },
+        {
+          "name": "approvedDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "approvedDate",
+          "description": "Date the entry was approved.\n"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+        },
+        {
+          "name": "customerAccountId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "customerAccountId",
+          "description": "Identifier of the customer from whom payment is expected or to whom unused credits have been applied.\n"
+        },
+        {
+          "name": "enteredBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record.\n"
+        },
+        {
+          "name": "enteredDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "enteredDate",
+          "description": "\"Date the order was entered into the system.\nThis is sometimes referred to as the creation\ndate. This should be a system-generated\ndate (rather than user-entered date), when\npossible. This date does not necessarily\ncorrespond with the date of the transaction\nitself.\"\n"
+        },
+        {
+          "name": "goodsReceivedAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "goodsReceivedAmount",
+          "description": "\"Customer purchasing the product. Must\n match a Customer_Account_ID in the\n Customer_Master_Listing_YYYYMMDD file.\"\n"
+        },
+        {
+          "name": "goodsReceivedExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "goodsReceivedExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
+        },
+        {
+          "name": "goodsShippedId",
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "goodsShippedId",
+          "description": ""
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
+        },
+        {
+          "name": "lastModifiedDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "lastModifiedDate",
+          "description": "The date the entry was last modified before posting.\n"
+        },
+        {
+          "name": "lineAdjustmentAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineAdjustmentAmount",
+          "description": ""
+        },
+        {
+          "name": "lineAdjustmentDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineAdjustmentDescription",
+          "description": ""
+        },
+        {
+          "name": "lineAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineAmount",
+          "description": "In the header's default currency.\n"
+        },
+        {
+          "name": "lineExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
+        },
+        {
+          "name": "lineSalesOrderAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineSalesOrderAmount",
+          "description": "In the header's default currency.\n"
+        },
+        {
+          "name": "lineSalesOrderExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineSalesOrderExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
+        },
+        {
+          "name": "lineSalesOrderLineAmountLocal",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineSalesOrderLineAmountLocal",
+          "description": "\"Monetary amount for the line item in the\nsales order related to the shipping document\nline item. Recorded in the local currency. If\n no sales order, leave blank.\"\n"
+        },
+        {
+          "name": "lineSalesOrderLineId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineSalesOrderLineId",
+          "description": "\"Identifier for sales order line number.\nMust match Sales_Order_Line_ID used\nin\nSales_Orders_Lines_YYYYMMDD_YY\nYYMMDD file. If no sales order, leave\nblank.\"\n"
+        },
+        {
+          "name": "lineSalesOrderLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineSalesOrderLocalCurrency",
+          "description": "\"The currency for local reporting \nrequirements. See ISO 4217 coding. If no\nsales order, leave blank.\"\n"
+        },
+        {
+          "name": "lineSalesOrderQuantity",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineSalesOrderQuantity",
+          "description": "\"Sales order line original quantity. If no sales\n order, leave blank.\"\n"
+        },
+        {
+          "name": "lineSalesOrderUnitOfMeasure",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineSalesOrderUnitOfMeasure",
+          "description": "\"Sales order line base unit of measure. If no\n sales order, leave blank.\"\n"
+        },
+        {
+          "name": "lineSalesOrderUnitPrice",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineSalesOrderUnitPrice",
+          "description": "\"Sales order line price per unit. If no sales \norder, leave blank.\"\n"
+        },
+        {
+          "name": "lineShipmentId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShipmentId",
+          "description": "Unique identifier for each shipment. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment. Must match the Shipment_ID field in the file Shipments_Made_YYYYMMDD_YYYYMMDD.\n"
+        },
+        {
+          "name": "lineShippingDocumentLineId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingDocumentLineId",
+          "description": "Reference line number on shipping document.\n"
+        },
+        {
+          "name": "lineShippingLineAmountLocal",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineShippingLineAmountLocal",
+          "description": "\"Monetary amount for the line item in the\nshipping document related to the sales order.\nRecorded in the local currency.\"\n"
+        },
+        {
+          "name": "lineShippingLineAmountLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingLineAmountLocalCurrency",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding.\"\n"
+        },
+        {
+          "name": "lineShippingProductBarCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingProductBarCode",
+          "description": "UPC or other general identifier.\n"
+        },
+        {
+          "name": "lineShippingProductCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingProductCode",
+          "description": "Product code appearing on the trade document\n"
+        },
+        {
+          "name": "lineShippingProductDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingProductDescription",
+          "description": "Product description (plain English) to indicate the name or other identifying characteristics of the product.\n"
+        },
+        {
+          "name": "lineShippingProductGroup01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingProductGroup01",
+          "description": "Product descriptor #1, for example, tires or accessories.\n"
+        },
+        {
+          "name": "lineShippingProductGroup02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingProductGroup02",
+          "description": "Product descriptor #2, for example, brand.\n"
+        },
+        {
+          "name": "lineShippingProductId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingProductId",
+          "description": "Identifier that is unique for each product.\n"
+        },
+        {
+          "name": "lineShippingQuantity",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lineShippingQuantity",
+          "description": "Item quantity sent.\n"
+        },
+        {
+          "name": "lineShippingUnitOfMeasure",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineShippingUnitOfMeasure",
+          "description": "Base unit of measure.\n"
+        },
+        {
+          "name": "lineShippingUnitPrice",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "lineShippingUnitPrice",
+          "description": "Price per unit for item sent.\n"
+        },
+        {
+          "name": "postingStatus",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "postingStatus",
+          "description": "\"Status of the transaction's posting to the GL\n(for example, \"\"Posted,\"\" \"\"Not Posted\"\").\"\n"
+        },
+        {
+          "name": "salesOrderAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "salesOrderAmount",
+          "description": "In the header's default currency.\n"
+        },
+        {
+          "name": "salesOrderAmountLocal",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "salesOrderAmountLocal",
+          "description": "Sales monetary amount recorded in the local currency.\n"
+        },
+        {
+          "name": "salesOrderDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "salesOrderDate",
+          "description": "\"Date of sales order for items shipped. If no\nsales order, leave blank.\"\n"
+        },
+        {
+          "name": "salesOrderExchangeRate",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "salesOrderExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount \n"
+        },
+        {
+          "name": "salesOrderId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "salesOrderId",
+          "description": "\"Sales order ID for invoiced items.  Must\nmatch Sales_Order_ID in the\nSales_Orders_YYYYMMDD_YYYYMMDD\nfile. If no sales order, leave blank.\"\n"
+        },
+        {
+          "name": "salesOrderLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "salesOrderLocalCurrency",
+          "description": "The currency for local reporting requirements. See ISO 4217 coding.\n"
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "shipmentDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "shipmentDate",
+          "description": "Date of shipment (date shipped)\n"
+        },
+        {
+          "name": "shipmentFiscalYear",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "shipmentFiscalYear",
+          "description": "Fiscal year in which the Shipment_Date occurs‚ÄîYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).\n"
+        },
+        {
+          "name": "shipmentId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "shipmentId",
+          "description": "Unique identifier for each shipment. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment.\n"
+        },
+        {
+          "name": "shipmentPeriod",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "shipmentPeriod",
+          "description": "Fiscal period in which the Shapment_Date occurs. Examples include W1‚ÄìW53 for weekly periods, M1‚ÄìM12 for monthly periods, and Q1‚ÄìQ4 for quarterly periods.\n"
+        },
+        {
+          "name": "shippingAmountLocal",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "shippingAmountLocal",
+          "description": "\"Monetary amount for the items in the\nshipping document related to the sales order.\nRecorded in the local currency.\"\n"
+        },
+        {
+          "name": "shippingAmountLocalCurrency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "shippingAmountLocalCurrency",
+          "description": "\"The currency for local reporting\nrequirements. See ISO 4217 coding.\"\n"
+        },
+        {
+          "name": "shippingDocumentId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "shippingDocumentId",
+          "description": "\"Reference number on shipping document\n(company reference or logistics company\nidentifier).\"\n"
         }
-    ],
-    "displayName": "goodsShippedData",
-    "description": ""
+      ],
+      "displayName": "goodsShippedData",
+      "description": ""
+    }
+  ]
 }

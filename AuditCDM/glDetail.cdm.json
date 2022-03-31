@@ -1,380 +1,506 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "glDetail",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
         {
-            "corpusPath": "cdm:/foundations.cdm.json"
-        }
-    ],
-    "definitions": [
+          "name": "transactionTypeDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "transactionTypeDescription",
+          "description": "",
+          "maximumLength": 200
+        },
         {
-            "entityName": "glDetail",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                [
-                    {
-                        "name": "amount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "amount",
-                        "description": "Transaction monetary amount recorded in the functional or group currency for the entity under audit. No multicurrency translation should need to be performed on this amount because all transactions are recorded in a single currency.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "amountCreditDebitIndicator",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "amountCreditDebitIndicator",
-                        "description": "Indicates whether the amount is a credit or debit. \ufffd\ufffd\ufffdC\ufffd\ufffd\ufffd=credit; \ufffd\ufffd\ufffdD\ufffd\ufffd\ufffd=debit.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "amountCurrency",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "amountCurrency",
-                        "description": "The functional or group currency related to\r\nthe balance. See ISO 4217 coding.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "approvedBy",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "approvedBy",
-                        "description": "User ID (from User_Listing file) for person who approved the entry.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "approvedDateTime",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "approvedDateTime",
-                        "description": "The DateTime the entry was approved.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "businessUnitCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "businessUnitCode",
-                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "effectiveDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "effectiveDate",
-                        "description": "Date the customer declared active.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "enteredBy",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "enteredBy",
-                        "description": "User_ID (from User_Listing file) for person who created the record.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "enteredDateTime",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "enteredDateTime",
-                        "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "fiscalYear",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "fiscalYear",
-                        "description": "Fiscal year in which Effective_Date occurs\ufffdYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL).",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "glAccountNumber",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "glAccountNumber",
-                        "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "jeHeaderDescription",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "jeHeaderDescription",
-                        "description": "Description of the entire journal entry as described by the journal entry header.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "jeLineDescription",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "jeLineDescription",
-                        "description": "Description of the individual line within the journal entry.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "journalEntryType",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "journalEntryType",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "journalId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": false,
-                        "displayName": "journalId",
-                        "description": "Identifier that is unique for each journal entry. May require concatenation of multiple fields.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "journalIdLineNumber",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": false,
-                        "displayName": "journalIdLineNumber",
-                        "description": "Identifier that is unique for each line within a journal entry.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lastModifiedBy",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "lastModifiedBy",
-                        "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "lastModifiedDate",
-                        "purpose": "hasA",
-                        "dataType": "date",
-                        "isNullable": true,
-                        "displayName": "lastModifiedDate",
-                        "description": "The date the entry was last modified before posting.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "localAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "localAmount",
-                        "description": "Amount in the local country currency where the transaction originated.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "localAmountCurrency",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "localAmountCurrency",
-                        "description": "The currency used for local country reporting requirements (for example, USD, EUR; see ISO 4217 coding).",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "period",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "period",
-                        "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "reportingAmount",
-                        "purpose": "hasA",
-                        "dataType": "decimal",
-                        "isNullable": true,
-                        "displayName": "reportingAmount",
-                        "description": "The amount recorded in the currency in which a reporting entity prepares its financial statements.",
-                        "appliedTraits": {
-                            "traitReference": "is.dataFormat.numeric.shaped",
-                            "arguments": [
-                                {
-                                    "name": "precision",
-                                    "value": "19"
-                                },
-                                {
-                                    "name": "scale",
-                                    "value": "5"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "reportingAmountCurrency",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "reportingAmountCurrency",
-                        "description": "The currency which a reporting entity prepares its financial statements (for example, USD, EUR; see ISO 4217 coding).",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "reversalIndicator",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "reversalIndicator",
-                        "description": "Indicates whether this entry is a reversal or to be reversed. \ufffd\ufffd\ufffd1\ufffd\ufffd\ufffd=entry is a reversal, \ufffd\ufffd\ufffd2\ufffd\ufffd\ufffd=entry is to be reversed, and empty (\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd)=none of the above or system generated indicators. For XBRL GL, this is a Boolean, in which \ufffd\ufffd\ufffdtrue\ufffd\ufffd\ufffd indicates it is to be reversed; \ufffd\ufffd\ufffdfalse\ufffd\ufffd\ufffd with provision of a reversingDate indicates the entry is a reversal.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "reversalJournalId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "reversalJournalId",
-                        "description": "When the Reversal_Indicator=1, this identifies the Journal_ID of the entry being reversed.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment01",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment01",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment02",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment02",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment03",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment03",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment04",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment04",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "segment05",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "segment05",
-                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "sourceId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "sourceId",
-                        "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on).",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "tags",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "tags",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "taxCode",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "taxCode",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "transactionId",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "transactionId",
-                        "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department",
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "userDefined1",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "userDefined1",
-                        "description": null,
-                        "appliedTraits": null
-                    },
-                    {
-                        "name": "userDefined2",
-                        "purpose": "hasA",
-                        "dataType": "string",
-                        "isNullable": true,
-                        "displayName": "userDefined2",
-                        "description": null,
-                        "appliedTraits": null
-                    }
-                ]
-            ]
+          "name": "transactionType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "transactionType",
+          "description": "",
+          "maximumLength": 10
+        },
+        {
+          "name": "reversalReason",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "reversalReason",
+          "description": "",
+          "maximumLength": 10
+        },
+        {
+          "name": "isNegativePostingIndicator",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "isNegativePostingIndicator",
+          "description": ""
+        },
+        {
+          "name": "reversalID",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "reversalID",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "reversalType",
+          "purpose": "hasA",
+          "dataType": "integer",
+          "isNullable": true,
+          "displayName": "reversalType",
+          "description": ""
+        },
+        {
+          "name": "reversalFiscalYear",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "reversalFiscalYear",
+          "description": "",
+          "maximumLength": 12
+        },
+        {
+          "name": "isInterCoFlag",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "isInterCoFlag",
+          "description": ""
+        },
+        {
+          "name": "clearingDocumentNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "clearingDocumentNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "clearingDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "clearingDate",
+          "description": ""
+        },
+        {
+          "name": "customerNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "customerNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "vendorNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "vendorNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "documentStatus",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "documentStatus",
+          "description": "",
+          "maximumLength": 1
+        },
+        {
+          "name": "documentDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "documentDate",
+          "description": ""
+        },
+        {
+          "name": "documentType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "documentType",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
+          "name": "transactionKey",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "transactionKey",
+          "description": "",
+          "maximumLength": 4
+        },
+        {
+          "name": "accountType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "accountType",
+          "description": "",
+          "maximumLength": 10
+        },
+        {
+          "name": "referenceTransaction",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "referenceTransaction",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
+          "name": "businessTransactionCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessTransactionCode",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
+          "name": "postingKey",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "postingKey",
+          "description": "",
+          "maximumLength": 4
+        },
+        {
+          "name": "isClearing",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "isClearing",
+          "description": ""
+        },
+        {
+          "name": "referenceSubledgerDocumentNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "referenceSubledgerDocumentNumber",
+          "description": "",
+          "maximumLength": 100
+        },
+        {
+          "name": "transactionCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "transactionCode",
+          "description": "",
+          "maximumLength": 50
+        },
+        {
+          "name": "amount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "amount",
+          "description": "Transaction monetary amount recorded in the functional or group currency for the entity under audit. No multicurrency translation should need to be performed on this amount because all transactions are recorded in a single currency.\n"
+        },
+        {
+          "name": "amountCreditDebitIndicator",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "amountCreditDebitIndicator",
+          "description": "Indicates whether the amount is a credit or debit. ‚\n"
+        },
+        {
+          "name": "amountCurrency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "amountCurrency",
+          "description": "The functional or group currency related to\nthe balance. See ISO 4217 coding."
+        },
+        {
+          "name": "approvedBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry."
+        },
+        {
+          "name": "approvedDateTime",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "approvedDateTime",
+          "description": "The DateTime the entry was approved"
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+        },
+        {
+          "name": "effectiveDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "effectiveDate",
+          "description": "Date the customer declared active."
+        },
+        {
+          "name": "enteredBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "enteredBy",
+          "description": "User_ID (from User_Listing file) for person who created the record."
+        },
+        {
+          "name": "enteredDateTime",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "enteredDateTime",
+          "description": "The date the transaction was entered into the \nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\n date), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself."
+        },
+        {
+          "name": "fiscalYear",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fiscalYear",
+          "description": "Fiscal year in which Effective_Date occurs—YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL)."
+        },
+        {
+          "name": "glAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "glAccountNumber",
+          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
+        },
+        {
+          "name": "jeHeaderDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "jeHeaderDescription",
+          "description": "Description of the entire journal entry as described by the journal entry header."
+        },
+        {
+          "name": "jeLineDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "jeLineDescription",
+          "description": "Description of the individual line within the journal entry."
+        },
+        {
+          "name": "journalEntryType",
+          "purpose": "hasA",
+          "dataType": "boolean",
+          "isNullable": true,
+          "displayName": "journalEntryType",
+          "description": ""
+        },
+        {
+          "name": "journalId",
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "journalId",
+          "description": "Identifier that is unique for each journal entry. May require concatenation of multiple fields."
+        },
+        {
+          "name": "journalIdLineNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "journalIdLineNumber",
+          "description": "Identifier that is unique for each line within a journal entry."
+        },
+        {
+          "name": "lastModifiedBy",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
+        },
+        {
+          "name": "lastModifiedDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "lastModifiedDate",
+          "description": "The date the entry was last modified before posting."
+        },
+        {
+          "name": "localAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "localAmount",
+          "description": "Amount in the local country currency where the transaction originated."
+        },
+        {
+          "name": "localAmountCurrency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "localAmountCurrency",
+          "description": "The currency used for local country reporting requirements (for example, USD, EUR; see ISO 4217 coding)."
+        },
+        {
+          "name": "period",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "period",
+          "description": "Fiscal period in which the Effective_Date occurs.Examples include "
+        },
+        {
+          "name": "reportingAmount",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "reportingAmount",
+          "description": "The amount recorded in the currency in which a reporting entity prepares its financial statements."
+        },
+        {
+          "name": "reportingAmountCurrency",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "reportingAmountCurrency",
+          "description": "The currency which a reporting entity prepares its financial statements (for example, USD, EUR; see ISO 4217 coding)."
+        },
+        {
+          "name": "reversalIndicator",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "reversalIndicator",
+          "description": ""
+        },
+        {
+          "name": "reversalJournalId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "reversalJournalId",
+          "description": "When the Reversal_Indicator=1, this identifies the Journal_ID of the entry being reversed."
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment01",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment02",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment03",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment04",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment05",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "sourceId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "sourceId",
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
+        },
+        {
+          "name": "tags",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "tags",
+          "description": ""
+        },
+        {
+          "name": "taxCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "taxCode",
+          "description": ""
+        },
+        {
+          "name": "transactionId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "transactionId",
+          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
+        },
+        {
+          "name": "userDefined1",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "userDefined1",
+          "description": ""
+        },
+        {
+          "name": "userDefined2",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "userDefined2",
+          "description": ""
         }
-    ],
-    "displayName": "glDetail",
-    "description": ""
+      ],
+      "displayName": "glDetail",
+      "description": ""
+    }
+  ]
 }
