@@ -1,81 +1,90 @@
 {
-  "jsonSchemaSemanticVersion": "1.0.0",
-  "imports": [
-    {
-      "corpusPath": "cdm:/foundations.cdm.json"
-    }
-  ],
-  "definitions": [
-    {
-      "entityName": "BusinessUnit",
-      "extendsEntity": "CdmEntity",
-      "hasAttributes": [
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
         {
-          "name": "businessUnitCode",
-          "purpose": "identifiedBy",
-          "dataType": "string",
-          "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
-        },
-        {
-          "name": "businessUnitDescription",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitDescription",
-          "description": "Business unit (plain English) description to indicate the name or other identifying characteristics of the business unit"
-        },
-        {
-          "name": "businessUnitHierarchy1",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitHierarchy1",
-          "description": "If a hierarchy exists in the business unit structure, use the field to capture the highest level of the hierarchy (for example, global area with values such as North America, South America, Europe, the Middle East, Africa, the Far East, and so on)."
-        },
-        {
-          "name": "businessUnitHierarchy2",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitHierarchy2",
-          "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy (for example, regions with values such as East Coast, West Coast, Central-Western Europe, and so on)."
-        },
-        {
-          "name": "businessUnitHierarchy3",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitHierarchy3",
-          "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy (for example, cities with values such as Los Angeles, Boston, Frankfurt, and so on)."
-        },
-        {
-          "name": "businessUnitHierarchy4",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitHierarchy4",
-          "description": "If a hierarchy exists in the business unit\nstructure, use the field to capture the next\nlower level of the hierarchy."
-        },
-        {
-          "name": "businessUnitHierarchy5",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitHierarchy5",
-          "description": "If a hierarchy exists in the business unit\nstructure, use the field to capture the next\nlower level of the hierarchy."
-        },
-        {
-          "name": "legalEntityIdentifier",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "legalEntityIdentifier",
-          "description": ""
+            "corpusPath": "_allImports.cdm.json"
         }
-      ],
-      "displayName": "BusinessUnit",
-      "description": ""
-    }
-  ]
+    ],
+    "definitions": [
+        {
+            "entityName": "businessUnit",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "businessUnitCode",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": false,
+                        "displayName": "businessUnitCode",
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "businessUnitDescription",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitDescription",
+                        "description": "Business unit (plain English) description to indicate the name or other identifying characteristics of the business unit.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "businessUnitHierarchy1",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitHierarchy1",
+                        "description": "If a hierarchy exists in the business unit structure, use the field to capture the highest level of the hierarchy (for example, global area with values such as North America, South America, Europe, the Middle East, Africa, the Far East, and so on).",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "businessUnitHierarchy2",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitHierarchy2",
+                        "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy (for example, regions with values such as East Coast, West Coast, Central-Western Europe, and so on).",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "businessUnitHierarchy3",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitHierarchy3",
+                        "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy (for example, cities with values such as Los Angeles, Boston, Frankfurt, and so on).",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "businessUnitHierarchy4",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitHierarchy4",
+                        "description": "If a hierarchy exists in the business unit\r\nstructure, use the field to capture the next\r\nlower level of the hierarchy.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "businessUnitHierarchy5",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitHierarchy5",
+                        "description": "If a hierarchy exists in the business unit\r\nstructure, use the field to capture the next\r\nlower level of the hierarchy.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "legalEntityIdentifier",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "legalEntityIdentifier",
+                        "description": null,
+                        "appliedTraits": null
+                    }
+                ]
+            ]
+        }
+    ]
 }

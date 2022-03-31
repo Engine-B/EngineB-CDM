@@ -1,241 +1,306 @@
 {
-  "jsonSchemaSemanticVersion": "1.0.0",
-  "imports": [
-    {
-      "corpusPath": "cdm:/foundations.cdm.json"
-    }
-  ],
-  "definitions": [
-    {
-      "entityName": "fixedAssetValuation",
-      "extendsEntity": "CdmEntity",
-      "hasAttributes": [
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
         {
-          "name": "approvedBy",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
-        },
-        {
-          "name": "approvedByDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "approvedByDate",
-          "description": "Date the entry was approved.\n"
-        },
-        {
-          "name": "businessUnitCode",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
-        },
-        {
-          "name": "enteredBy",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "enteredBy",
-          "description": "User_ID (from User_Listing file) for person who created the record.\n"
-        },
-        {
-          "name": "enteredDateTime",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "enteredDateTime",
-          "description": "\"The date the transaction was entered into the \nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\n date), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself.\"\n"
-        },
-        {
-          "name": "fixedAssetId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "fixedAssetId",
-          "description": ""
-        },
-        {
-          "name": "fixedAssetRealizedGainLossAccount",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "fixedAssetRealizedGainLossAccount",
-          "description": ""
-        },
-        {
-          "name": "fixedAssetRealizedGainLossAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "fixedAssetRealizedGainLossAmount",
-          "description": ""
-        },
-        {
-          "name": "fixedAssetUnrealizedGainLossAccount",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "fixedAssetUnrealizedGainLossAccount",
-          "description": ""
-        },
-        {
-          "name": "fixedAssetUnrealizedGainLossAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "fixedAssetUnrealizedGainLossAmount",
-          "description": ""
-        },
-        {
-          "name": "glAccount",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "glAccount",
-          "description": ""
-        },
-        {
-          "name": "glTransactionId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "glTransactionId",
-          "description": ""
-        },
-        {
-          "name": "lastModifiedBy",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lastModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
-        },
-        {
-          "name": "lastModifiedByDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "lastModifiedByDate",
-          "description": ""
-        },
-        {
-          "name": "lotNumber",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "lotNumber",
-          "description": ""
-        },
-        {
-          "name": "revaluationAmount",
-          "purpose": "hasA",
-          "dataType": "decimal",
-          "isNullable": true,
-          "displayName": "revaluationAmount",
-          "description": ""
-        },
-        {
-          "name": "revaluationDate",
-          "purpose": "hasA",
-          "dataType": "date",
-          "isNullable": true,
-          "displayName": "revaluationDate",
-          "description": ""
-        },
-        {
-          "name": "revaluationDescription",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "revaluationDescription",
-          "description": ""
-        },
-        {
-          "name": "segment01",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment01",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment02",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment02",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment03",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment03",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment04",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment04",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "segment05",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "segment05",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
-        },
-        {
-          "name": "serialNumber",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "serialNumber",
-          "description": ""
-        },
-        {
-          "name": "uniqueId",
-          "purpose": "identifiedBy",
-          "dataType": "string",
-          "displayName": "uniqueId",
-          "description": ""
-        },
-        {
-          "name": "valuerDocumnetReference",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "valuerDocumnetReference",
-          "description": ""
-        },
-        {
-          "name": "valuerId",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "valuerId",
-          "description": ""
-        },
-        {
-          "name": "valuerName",
-          "purpose": "hasA",
-          "dataType": "string",
-          "isNullable": true,
-          "displayName": "valuerName",
-          "description": ""
+            "corpusPath": "_allImports.cdm.json"
         }
-      ],
-      "displayName": "fixedAssetValuation",
-      "description": ""
-    }
-  ]
+    ],
+    "definitions": [
+        {
+            "entityName": "fixedAssetValuation",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "approvedBy",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "approvedBy",
+                        "description": "User ID (from User_Listing file) for person who approved the entry.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "approvedByDate",
+                        "purpose": "hasA",
+                        "dataType": "date",
+                        "isNullable": true,
+                        "displayName": "approvedByDate",
+                        "description": "Date the entry was approved.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "businessUnitCode",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitCode",
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "enteredBy",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "enteredBy",
+                        "description": "User_ID (from User_Listing file) for person who created the record.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "enteredDateTime",
+                        "purpose": "hasA",
+                        "dataType": "date",
+                        "isNullable": true,
+                        "displayName": "enteredDateTime",
+                        "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "fixedAssetId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetId",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "fixedAssetRealizedGainLossAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetRealizedGainLossAccount",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "fixedAssetRealizedGainLossAmount",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetRealizedGainLossAmount",
+                        "description": null,
+                        "appliedTraits": {
+                            "traitReference": "is.dataFormat.numeric.shaped",
+                            "arguments": [
+                                {
+                                    "name": "precision",
+                                    "value": "19"
+                                },
+                                {
+                                    "name": "scale",
+                                    "value": "5"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fixedAssetUnrealizedGainLossAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetUnrealizedGainLossAccount",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "fixedAssetUnrealizedGainLossAmount",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetUnrealizedGainLossAmount",
+                        "description": null,
+                        "appliedTraits": {
+                            "traitReference": "is.dataFormat.numeric.shaped",
+                            "arguments": [
+                                {
+                                    "name": "precision",
+                                    "value": "19"
+                                },
+                                {
+                                    "name": "scale",
+                                    "value": "5"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "glAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "glAccount",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "glTransactionId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "glTransactionId",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "lastModifiedBy",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "lastModifiedBy",
+                        "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "lastModifiedByDate",
+                        "purpose": "hasA",
+                        "dataType": "date",
+                        "isNullable": true,
+                        "displayName": "lastModifiedByDate",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "lotNumber",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "lotNumber",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "revaluationAmount",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "revaluationAmount",
+                        "description": null,
+                        "appliedTraits": {
+                            "traitReference": "is.dataFormat.numeric.shaped",
+                            "arguments": [
+                                {
+                                    "name": "precision",
+                                    "value": "19"
+                                },
+                                {
+                                    "name": "scale",
+                                    "value": "5"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "revaluationDate",
+                        "purpose": "hasA",
+                        "dataType": "date",
+                        "isNullable": true,
+                        "displayName": "revaluationDate",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "revaluationDescription",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "revaluationDescription",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "segment01",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment01",
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "segment02",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment02",
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "segment03",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment03",
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "segment04",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment04",
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "segment05",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment05",
+                        "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "serialNumber",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "serialNumber",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "uniqueId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": false,
+                        "displayName": "uniqueId",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "valuerDocumnetReference",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "valuerDocumnetReference",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "valuerId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "valuerId",
+                        "description": null,
+                        "appliedTraits": null
+                    },
+                    {
+                        "name": "valuerName",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "valuerName",
+                        "description": null,
+                        "appliedTraits": null
+                    }
+                ]
+            ]
+        }
+    ]
 }
