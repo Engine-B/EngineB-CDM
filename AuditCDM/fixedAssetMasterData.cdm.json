@@ -2,7 +2,7 @@
     "jsonSchemaSemanticVersion": "1.0.0",
     "imports": [
         {
-            "corpusPath": "_allImports.cdm.json"
+            "corpusPath": "cdm:/foundations.cdm.json"
         }
     ],
     "definitions": [
@@ -539,5 +539,7 @@
                 ]
             ]
         }
-    ]
+    ],
+    "displayName": "fixedAssetMasterData",
+    "description": ""
 }
