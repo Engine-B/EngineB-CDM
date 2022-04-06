@@ -127,7 +127,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glLineCreditAccountNumber",
-          "description": "GL account number on which the credit\r\n side of the transaction has been posted.",
+          "description": "GL account number on which the credit  side of the transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -135,7 +135,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glLineDebitAccountNumber",
-          "description": "GL account number on which the debit \r\nside of the transaction has been posted.",
+          "description": "GL account number on which the debit  side of the transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -151,7 +151,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax1CreditAccountNumber",
-          "description": "GL account number on which the credit\r\nside of the Tax1 transaction has been\r\nposted.",
+          "description": "GL account number on which the credit side of the Tax1 transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -159,7 +159,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax1DebitAccountNumber",
-          "description": "GL account number on which the debit\r\nside of the Tax1 transaction has been\r\nposted.",
+          "description": "GL account number on which the debit side of the Tax1 transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -167,7 +167,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax2CreditAccountNumber",
-          "description": "GL account number on which the credit\r\nside of the Tax2 transaction has been\r\nposted.",
+          "description": "GL account number on which the credit side of the Tax2 transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -175,7 +175,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax2DebitAccountNumber",
-          "description": "GL account number on which the debit\r\nside of the Tax2 transaction has been\r\nposted.",
+          "description": "GL account number on which the debit side of the Tax2 transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -183,7 +183,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax3CreditAccountNumber",
-          "description": "GL account number on which the credit\r\nside of the Tax3 transaction has been\r\nposted.",
+          "description": "GL account number on which the credit side of the Tax3 transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -191,7 +191,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax3DebitAccountNumber",
-          "description": "GL account number on which the debit\r\nside of the Tax3 transaction has been\r\nposted.",
+          "description": "GL account number on which the debit side of the Tax3 transaction has been posted.",
           "appliedTraits": null
         },
         {
@@ -199,7 +199,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmount",
-          "description": "Transaction monetary amount recorded in\r\nthe functional or group currency. No\r\n multicurrency translation should need to be \r\nperformed on this amount because all\r\n transactions should be recorded in a single \r\ncurrency.",
+          "description": "Transaction monetary amount recorded in the functional or group currency. No  multicurrency translation should need to be  performed on this amount because all  transactions should be recorded in a single  currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -219,7 +219,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmountCurrency",
-          "description": "The functional or group currency related to\r\n the invoice amount. See ISO 4217 coding.",
+          "description": "The functional or group currency related to  the invoice amount. See ISO 4217 coding.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -239,7 +239,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmountLocal",
-          "description": "Transaction monetary amount in local\r\n currency.\r\nUsually the amount seen on the original \r\ninvoice document.",
+          "description": "Transaction monetary amount in local  currency. Usually the amount seen on the original  invoice document.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -259,7 +259,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmountReporting",
-          "description": "Transaction monetary amount recorded in\r\nthe reporting currency.",
+          "description": "Transaction monetary amount recorded in the reporting currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -279,7 +279,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "invoiceDate",
-          "description": "The date of the invoice, regardless of the \r\ndate the invoice is entered. This is the date\r\nfrom which the due date is calculated based \r\non the invoice terms.",
+          "description": "The date of the invoice, regardless of the  date the invoice is entered. This is the date from which the due date is calculated based  on the invoice terms.",
           "appliedTraits": null
         },
         {
@@ -295,7 +295,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "invoiceDueDate",
-          "description": "The date payment is due from the customer.\r\nAging of a receivable is usually calculated\r\n based on this date.",
+          "description": "The date payment is due from the customer. Aging of a receivable is usually calculated  based on this date.",
           "appliedTraits": null
         },
         {
@@ -311,7 +311,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceLineAmount",
-          "description": "Transaction monetary amount recorded\r\nin the functional or group currency. No\r\n multicurrency translation should need to\r\nbe performed on this amount because all \r\ntransactions should be recorded in a \r\nsingle currency.",
+          "description": "Transaction monetary amount recorded in the functional or group currency. No  multicurrency translation should need to be performed on this amount because all  transactions should be recorded in a  single currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -331,7 +331,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceLineAmountCurrencyAmount",
-          "description": "Transaction monetary amount in local\r\n currency.",
+          "description": "Transaction monetary amount in local  currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -351,7 +351,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceLineAmountCurrencyCode",
-          "description": "The functional or group currency related\r\n to the invoice amount. See ISO 4217\r\ncoding.",
+          "description": "The functional or group currency related  to the invoice amount. See ISO 4217 coding.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -391,7 +391,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceLineAmountReporting",
-          "description": "Transaction monetary amount recorded\r\nin the reporting currency.",
+          "description": "Transaction monetary amount recorded in the reporting currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -411,7 +411,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceLocalCurrency",
-          "description": "The currency for local reporting \r\nrequirements. See ISO 4217 coding.",
+          "description": "The currency for local reporting  requirements. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -427,7 +427,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceReportingCurrency",
-          "description": "The reporting currency related to the invoice\r\nreporting amount for nonconsolidated\r\nreporting. See ISO 4217 coding.",
+          "description": "The reporting currency related to the invoice reporting amount for nonconsolidated reporting. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -467,7 +467,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineApprovedBy",
-          "description": "User ID (from User_Listing file) for person\r\n who approved the entry.",
+          "description": "User ID (from User_Listing file) for person  who approved the entry.",
           "appliedTraits": null
         },
         {
@@ -539,7 +539,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineInvoiceDueDate",
-          "description": "The date payment is due to the supplier. Not\r\nall transactions will have a due date (for\r\nexample, credit memos). Aging of a payable\r\nis usually calculated based on this date.",
+          "description": "The date payment is due to the supplier. Not all transactions will have a due date (for example, credit memos). Aging of a payable is usually calculated based on this date.",
           "appliedTraits": null
         },
         {
@@ -547,7 +547,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineInvoiceLocalCurrency",
-          "description": "The currency for local reporting \r\nrequirements. See ISO 4217 coding.",
+          "description": "The currency for local reporting  requirements. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -615,7 +615,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineProductDescription",
-          "description": "Product (plain English) description to \r\nindicate the name or other identifying\r\n characteristics of the product.",
+          "description": "Product (plain English) description to  indicate the name or other identifying  characteristics of the product.",
           "appliedTraits": null
         },
         {
@@ -623,7 +623,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineProductGroup01",
-          "description": "Product descriptor #1, for example, tires\r\nor accessories.",
+          "description": "Product descriptor #1, for example, tires or accessories.",
           "appliedTraits": null
         },
         {
@@ -631,7 +631,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineProductGroup02",
-          "description": "Product descriptor #2, for example,\r\nbrand.",
+          "description": "Product descriptor #2, for example, brand.",
           "appliedTraits": null
         },
         {
@@ -647,7 +647,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderLineId",
-          "description": "Identifier for purchase order line number.\r\nMust match Purchase_Order_Line_ID\r\nused in\r\nPurchase_Orders_Lines_YYYYMMDD_\r\nYYYYMMDD file. If no purchase order,\r\nleave blank.",
+          "description": "Identifier for purchase order line number. Must match Purchase_Order_Line_ID used in Purchase_Orders_Lines_YYYYMMDD_ YYYYMMDD file. If no purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -663,7 +663,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReportingCurrency",
-          "description": "The reporting currency related to the\r\ninvoice reporting amount for\r\nnonconsolidated reporting. See ISO\r\n4217 coding.",
+          "description": "The reporting currency related to the invoice reporting amount for nonconsolidated reporting. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -963,7 +963,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineSystemEntryDateTime",
-          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself.",
+          "description": "The date the transaction was entered into the system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
           "appliedTraits": null
         },
         {
@@ -971,7 +971,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSystemEntryUser",
-          "description": "User_ID (from User_Listing file) for person\r\n who created the record.",
+          "description": "User_ID (from User_Listing file) for person  who created the record.",
           "appliedTraits": null
         },
         {
@@ -987,7 +987,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSystemModifiedUser",
-          "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry.",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
           "appliedTraits": null
         },
         {
@@ -1195,7 +1195,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "periodYear",
-          "description": "Fiscal year in which the\r\nPurchase_Order_Date occurs\u2014YYYY for\r\ndelimited, CCYY-MM-DD fiscal year end\r\n(ISO 8601) for extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL).",
+          "description": "Fiscal year in which the Purchase_Order_Date occurs\u2014YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).",
           "appliedTraits": null
         },
         {
@@ -1203,7 +1203,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
-          "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\").",
+          "description": "Status of the transaction's posting to the GL (for example, \"Posted,\" \"Not Posted\").",
           "appliedTraits": null
         },
         {
@@ -1235,7 +1235,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderId",
-          "description": "Unique identifier for each purchase order.\r\nMust match Purchase_Order_ID in the\r\nPurchase_Orders_YYYYMMDD_YYYYMMD\r\nD file. If no purchase order, leave blank.",
+          "description": "Unique identifier for each purchase order. Must match Purchase_Order_ID in the Purchase_Orders_YYYYMMDD_YYYYMMD D file. If no purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -1251,7 +1251,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -1259,7 +1259,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -1267,7 +1267,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -1275,7 +1275,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -1283,7 +1283,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -1635,7 +1635,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",
-          "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file.",
+          "description": "Identifier of the supplier to whom payment is due or from whom unused credits have been applied. Must match the Supplier_Account_ID in the Supplier_Listing_YYYYMMDD file.",
           "appliedTraits": null
         },
         {
@@ -1651,7 +1651,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemEntryDateTime",
-          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself.",
+          "description": "The date the transaction was entered into the system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
           "appliedTraits": null
         },
         {
@@ -1659,7 +1659,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemEntryUser",
-          "description": "User_ID (from User_Listing file) for person\r\nwho created the record.",
+          "description": "User_ID (from User_Listing file) for person who created the record.",
           "appliedTraits": null
         },
         {
@@ -1683,7 +1683,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemModifiedUser",
-          "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry.",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
           "appliedTraits": null
         },
         {
@@ -1691,7 +1691,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax1Local",
-          "description": "The amount of Tax1_Type included in\r\nthe transaction. Recorded in local\r\ncurrency.",
+          "description": "The amount of Tax1_Type included in the transaction. Recorded in local currency.",
           "appliedTraits": null
         },
         {
@@ -1699,7 +1699,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax1Type",
-          "description": "Code for Tax1 type (for example, Sales,\r\nVAT).\r\nThis field should agree with the\r\nRegulator_Code field in the\r\nTax_Table_YYYYMMDD",
+          "description": "Code for Tax1 type (for example, Sales, VAT). This field should agree with the Regulator_Code field in the Tax_Table_YYYYMMDD",
           "appliedTraits": null
         },
         {
@@ -1707,7 +1707,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax1TypeDescription",
-          "description": "Description of Tax1 type (for example,\r\nauthority tax is paid to and other\r\ninformation to identify tax).",
+          "description": "Description of Tax1 type (for example, authority tax is paid to and other information to identify tax).",
           "appliedTraits": null
         },
         {
@@ -1715,7 +1715,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax2Local",
-          "description": "The amount of Tax2_Type included in\r\nthe transaction. Recorded in local\r\ncurrency.",
+          "description": "The amount of Tax2_Type included in the transaction. Recorded in local currency.",
           "appliedTraits": null
         },
         {
@@ -1723,7 +1723,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax2Type",
-          "description": "Code for Tax2 type (for example, Sales,\r\nVAT).\r\nThis field should agree with the\r\nRegulator_Code field in the\r\nTax_Table_YYYYMMDD",
+          "description": "Code for Tax2 type (for example, Sales, VAT). This field should agree with the Regulator_Code field in the Tax_Table_YYYYMMDD",
           "appliedTraits": null
         },
         {
@@ -1731,7 +1731,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax2TypeDescription",
-          "description": "Description of Tax2 type (for example,\r\nauthority tax is paid to and other\r\ninformation to identify tax).",
+          "description": "Description of Tax2 type (for example, authority tax is paid to and other information to identify tax).",
           "appliedTraits": null
         },
         {
@@ -1739,7 +1739,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax3Local",
-          "description": "The amount of Tax3_Type included in\r\nthe transaction. Recorded in local\r\ncurrency.",
+          "description": "The amount of Tax3_Type included in the transaction. Recorded in local currency.",
           "appliedTraits": null
         },
         {
@@ -1747,7 +1747,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax3Type",
-          "description": "Code for Tax3 type (for example, Sales,\r\nVAT).\r\nThis field should agree with the\r\nRegulator_Code field in the\r\nTax_Table_YYYYMMDD",
+          "description": "Code for Tax3 type (for example, Sales, VAT). This field should agree with the Regulator_Code field in the Tax_Table_YYYYMMDD",
           "appliedTraits": null
         },
         {
@@ -1755,7 +1755,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax3TypeDescription",
-          "description": "Description of Tax3 type (for example,\r\nauthority tax is paid to and other\r\ninformation to identify tax).",
+          "description": "Description of Tax3 type (for example, authority tax is paid to and other information to identify tax).",
           "appliedTraits": null
         },
         {
@@ -1763,7 +1763,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "termsDiscountDays",
-          "description": "The number of days from the invoice date\r\nthe supplier allows to take advantage of\r\ndiscounted terms. Terms are represented as\r\ndigits with no decimal places (for example,\r\nnnn).",
+          "description": "The number of days from the invoice date the supplier allows to take advantage of discounted terms. Terms are represented as digits with no decimal places (for example, nnn).",
           "appliedTraits": null
         },
         {
@@ -1771,7 +1771,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "termsDiscountPercentage",
-          "description": "The discount percentage the supplier may\r\nprovide if an invoice is paid before a certain\r\nnumber of days. In the flat file, terms are\r\nrepresented as digits to one decimal place\r\n(for example, 10% would be represented as\r\n10.0). In extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL), the three fields\r\nTerms_Discount_Percentage,\r\nTerms_Discount_Days and\r\nTerms_Due_Days would be entered in the\r\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\r\n30 for 2% discount if paid within 10 days,\r\nwith the net due in 30 days.",
+          "description": "The discount percentage the supplier may provide if an invoice is paid before a certain number of days. In the flat file, terms are represented as digits to one decimal place (for example, 10% would be represented as 10.0). In extensible business reporting language global ledger taxonomy framework (XBRL GL), the three fields Terms_Discount_Percentage, Terms_Discount_Days and Terms_Due_Days would be entered in the form \"xx.x% dd Net dd,\" such as 2% 10 Net 30 for 2% discount if paid within 10 days, with the net due in 30 days.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -1791,7 +1791,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "termsDueDays",
-          "description": "The number of days allowed to meet the\r\nobligation before an invoice becomes\r\noverdue.",
+          "description": "The number of days allowed to meet the obligation before an invoice becomes overdue.",
           "appliedTraits": null
         },
         {

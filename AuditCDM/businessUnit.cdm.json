@@ -55,7 +55,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitHierarchy4",
-          "description": "If a hierarchy exists in the business unit\r\nstructure, use the field to capture the next\r\nlower level of the hierarchy.",
+          "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy.",
           "appliedTraits": null
         },
         {
@@ -63,7 +63,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitHierarchy5",
-          "description": "If a hierarchy exists in the business unit\r\nstructure, use the field to capture the next\r\nlower level of the hierarchy.",
+          "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy.",
           "appliedTraits": null
         },
         {

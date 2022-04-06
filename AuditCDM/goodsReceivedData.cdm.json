@@ -15,7 +15,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "adjustmentAmount",
-          "description": "Reference number on shipping document\r\n(company reference or logistics company\r\nidentifier).",
+          "description": "Reference number on shipping document (company reference or logistics company identifier).",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -35,7 +35,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentDescription",
-          "description": "If an adjustment to the receipt, a description\r\nof the reason for the adjustment.",
+          "description": "If an adjustment to the receipt, a description of the reason for the adjustment.",
           "appliedTraits": null
         },
         {
@@ -43,7 +43,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentIndicator",
-          "description": "\"0\" if the transaction is the original shipment\r\ntransaction, \"1\" if the transaction is a\r\nshipment adjustment.",
+          "description": "\"0\" if the transaction is the original shipment transaction, \"1\" if the transaction is a shipment adjustment.",
           "appliedTraits": null
         },
         {
@@ -83,7 +83,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDateTime",
-          "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself.",
+          "description": "The date the transaction was entered into the  system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered  date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
           "appliedTraits": null
         },
         {
@@ -99,7 +99,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedAmount",
-          "description": "Customer purchasing the product. Must \r\nmatch a Customer_Account_ID in the\r\n Customer_Master_Listing_YYYYMMDD file.",
+          "description": "Customer purchasing the product. Must  match a Customer_Account_ID in the  Customer_Master_Listing_YYYYMMDD file.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -231,7 +231,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineCurrencyAmount",
-          "description": "Monetary amount for the line item in the\r\n receipt document related to the purchase \r\norder in local currency.",
+          "description": "Monetary amount for the line item in the  receipt document related to the purchase  order in local currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -251,7 +251,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineCurrencyCode",
-          "description": "The currency for local reporting\r\n requirements. See ISO 4217 coding.",
+          "description": "The currency for local reporting  requirements. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -299,7 +299,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePurchaseOrderCurrencyAmount",
-          "description": "Monetary amount for the line item in the\r\npurchase order related to the receipt\r\nshipping document in local currency. If no\r\npurchase order, leave blank.",
+          "description": "Monetary amount for the line item in the purchase order related to the receipt shipping document in local currency. If no purchase order, leave blank.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -319,7 +319,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderCurrencyCode",
-          "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding. If no\r\npurchase order, leave blank.",
+          "description": "The currency for local reporting requirements. See ISO 4217 coding. If no purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -347,7 +347,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderLineId",
-          "description": "Identifier for purchase order line number.\r\nMust match Purchase_Order_Line_ID\r\nused in\r\nPurchase_Orders_Lines_YYYYMMDD_\r\nYYYYMMDD file. If no purchase order,\r\nleave blank.",
+          "description": "Identifier for purchase order line number. Must match Purchase_Order_Line_ID used in Purchase_Orders_Lines_YYYYMMDD_ YYYYMMDD file. If no purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -355,7 +355,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderQuantity",
-          "description": "Purchase order line quantity. If no purchase \r\norder, leave blank.",
+          "description": "Purchase order line quantity. If no purchase  order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -363,7 +363,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderUnitofMeasure",
-          "description": "Purchase order line base unit of measure. If\r\n no purchase order, leave blank.",
+          "description": "Purchase order line base unit of measure. If  no purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -371,7 +371,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderUnitPrice",
-          "description": "Purchase order line price per unit. If no \r\npurchase order, leave blank.",
+          "description": "Purchase order line price per unit. If no  purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -459,7 +459,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
-          "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\").",
+          "description": "Status of the transaction's posting to the GL (for example, \"Posted,\" \"Not Posted\").",
           "appliedTraits": null
         },
         {
@@ -487,7 +487,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "purchaseOrderCurrencyAmount",
-          "description": "Transaction monetary amount in local\r\ncurrency. If no purchase order, leave blank.",
+          "description": "Transaction monetary amount in local currency. If no purchase order, leave blank.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -507,7 +507,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderCurrencyCode",
-          "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding. If no\r\npurchase order, leave blank.",
+          "description": "The currency for local reporting requirements. See ISO 4217 coding. If no purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -543,7 +543,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderId",
-          "description": "Unique identifier for each purchase order.\r\nMust match Purchase_Order_ID in the\r\nPurchase_Orders_YYYYMMDD_YYYYMMD\r\nD file. If no purchase order, leave blank.",
+          "description": "Unique identifier for each purchase order. Must match Purchase_Order_ID in the Purchase_Orders_YYYYMMDD_YYYYMMD D file. If no purchase order, leave blank.",
           "appliedTraits": null
         },
         {
@@ -559,7 +559,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptDocumentId",
-          "description": "Reference number on receipt shipping\r\ndocument (company reference or logistics\r\ncompany identifier).",
+          "description": "Reference number on receipt shipping document (company reference or logistics company identifier).",
           "appliedTraits": null
         },
         {
@@ -591,7 +591,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -599,7 +599,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -607,7 +607,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -615,7 +615,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -623,7 +623,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -631,7 +631,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",
-          "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file.",
+          "description": "Identifier of the supplier to whom payment is due or from whom unused credits have been applied. Must match the Supplier_Account_ID in the Supplier_Listing_YYYYMMDD file.",
           "appliedTraits": null
         }
       ]

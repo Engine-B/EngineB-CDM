@@ -39,7 +39,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressCountry",
-          "description": "The country code where the supplier is\r\nphysically located. Recommend ISO 3166-1\r\nAlpha 2 or ISO 3166-1 Alpha 3 format (XX or\r\nXXX).",
+          "description": "The country code where the supplier is physically located. Recommend ISO 3166-1 Alpha 2 or ISO 3166-1 Alpha 3 format (XX or XXX).",
           "appliedTraits": null
         },
         {
@@ -119,7 +119,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "customerCreditLimit",
-          "description": "The credit limit for this customer\ufffd\ufffd\ufffds total\r\noutstanding balance.",
+          "description": "The credit limit for this customer\ufffd\ufffd\ufffds total outstanding balance.",
           "appliedTraits": null
         },
         {
@@ -135,7 +135,7 @@
           "dataType": "string",
           "isNullable": false,
           "displayName": "customerId",
-          "description": "Unique code for the customer \r\n",
+          "description": "Unique code for the customer  ",
           "appliedTraits": null
         },
         {
@@ -223,7 +223,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentDiscountDays",
-          "description": "The number of days from the invoice date\r\nthe supplier allows to take advantage of\r\ndiscounted terms. Terms are represented as\r\ndigits with no decimal places (for example,\r\nnnn).",
+          "description": "The number of days from the invoice date the supplier allows to take advantage of discounted terms. Terms are represented as digits with no decimal places (for example, nnn).",
           "appliedTraits": null
         },
         {
@@ -231,7 +231,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "paymentDiscountPercentage",
-          "description": "The discount percentage the supplier may\r\nprovide if an invoice is paid before a certain\r\nnumber of days. In the flat file, terms are\r\nrepresented as digits to one decimal place\r\n(for example, 10% would be represented as\r\n10.0). In extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL), the three fields\r\nTerms_Discount_Percentage,\r\nTerms_Discount_Days and\r\nTerms_Due_Days would be entered in the\r\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\r\n30 for 2% discount if paid within 10 days,\r\nwith the net due in 30 days.",
+          "description": "The discount percentage the supplier may provide if an invoice is paid before a certain number of days. In the flat file, terms are represented as digits to one decimal place (for example, 10% would be represented as 10.0). In extensible business reporting language global ledger taxonomy framework (XBRL GL), the three fields Terms_Discount_Percentage, Terms_Discount_Days and Terms_Due_Days would be entered in the form \"xx.x% dd Net dd,\" such as 2% 10 Net 30 for 2% discount if paid within 10 days, with the net due in 30 days.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -251,7 +251,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentDueDays",
-          "description": "The number of days allowed to meet the\r\nobligation before an invoice becomes\r\noverdue.",
+          "description": "The number of days allowed to meet the obligation before an invoice becomes overdue.",
           "appliedTraits": null
         },
         {
@@ -291,7 +291,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemApprovedUser",
-          "description": "User ID (from User_Listing file) for person\r\nwho approved the entry.",
+          "description": "User ID (from User_Listing file) for person who approved the entry.",
           "appliedTraits": null
         },
         {
@@ -299,7 +299,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemEntryDateTime",
-          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself.",
+          "description": "The date the transaction was entered into the system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
           "appliedTraits": null
         },
         {
@@ -307,7 +307,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemEntryUser",
-          "description": "User_ID (from User_Listing file) for person\r\nwho created the record.",
+          "description": "User_ID (from User_Listing file) for person who created the record.",
           "appliedTraits": null
         },
         {
@@ -323,7 +323,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemModifiedUser",
-          "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry.",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
           "appliedTraits": null
         },
         {
@@ -371,7 +371,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "telephone",
-          "description": "Phone number of the primary contact at the\r\nsupplier.",
+          "description": "Phone number of the primary contact at the supplier.",
           "appliedTraits": null
         },
         {
@@ -387,7 +387,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "transactionCreditLimit",
-          "description": "The per invoice credit limit established with\r\nthis supplier.",
+          "description": "The per invoice credit limit established with this supplier.",
           "appliedTraits": null
         },
         {

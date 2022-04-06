@@ -39,7 +39,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "fsCaption",
-          "description": "Financial statement caption. Grouping\r\nfor the caption the GL account rolls up\r\nto on the financial statements (for\r\nexample, cash and cash equivalents,\r\naccounts payable, cost of sales, and so\r\non). Sometimes may prefer to be at the\r\ntrial balance level.",
+          "description": "Financial statement caption. Grouping for the caption the GL account rolls up to on the financial statements (for example, cash and cash equivalents, accounts payable, cost of sales, and so on). Sometimes may prefer to be at the trial balance level.",
           "appliedTraits": null
         },
         {
@@ -47,7 +47,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "glAccountDescription",
-          "description": "Label or description associated with\r\nGL_Account_Number.",
+          "description": "Label or description associated with GL_Account_Number.",
           "appliedTraits": null
         },
         {
@@ -71,7 +71,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "parentglAccountNumber",
-          "description": "A reference to the\r\nGL_Account_Number that is the parent\r\nin an account hierarchy. Provided to\r\nallow more than the predefined levels of\r\nhierarchy in the chart of accounts table.",
+          "description": "A reference to the GL_Account_Number that is the parent in an account hierarchy. Provided to allow more than the predefined levels of hierarchy in the chart of accounts table.",
           "appliedTraits": null
         },
         {
@@ -79,7 +79,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -87,7 +87,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -95,7 +95,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -103,7 +103,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -111,7 +111,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         }
       ]

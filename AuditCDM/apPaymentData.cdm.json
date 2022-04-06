@@ -87,7 +87,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAmountCurrencyAmount",
-          "description": "Transaction monetary amount in loca l\r\ncurrency.",
+          "description": "Transaction monetary amount in loca l currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -107,7 +107,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisAmount",
-          "description": "The functional or group currency related to\r\nthe receipt amount. See ISO 4217 coding.",
+          "description": "The functional or group currency related to the receipt amount. See ISO 4217 coding.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -127,7 +127,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisAmountCurrencyCode",
-          "description": "Transaction monetary amount recorded in \r\nthe reporting currency.",
+          "description": "Transaction monetary amount recorded in  the reporting currency.",
           "appliedTraits": null
         },
         {
@@ -187,7 +187,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineApprovedBy",
-          "description": "User ID (from User_Listing file) for person\r\n who approved the entry.",
+          "description": "User ID (from User_Listing file) for person  who approved the entry.",
           "appliedTraits": null
         },
         {
@@ -243,7 +243,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry.",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
           "appliedTraits": null
         },
         {
@@ -251,7 +251,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePaymentAmountLocalCurrencyCode",
-          "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding.",
+          "description": "The currency for local reporting requirements. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -259,7 +259,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentAmountReporting",
-          "description": "Transaction monetary amount recorded in\r\nthe reporting currency.",
+          "description": "Transaction monetary amount recorded in the reporting currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -279,7 +279,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentAmountReportingCurrency",
-          "description": "The reporting currency related to the\r\npayment amount for nonconsolidated\r\nreporting. See ISO 4217 coding.",
+          "description": "The reporting currency related to the payment amount for nonconsolidated reporting. See ISO 4217 coding.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -299,7 +299,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentLineAmount",
-          "description": "Transaction monetary amount recorded in\r\nthe functional or group currency. No \r\nmulticurrency translation should need to be\r\nperformed on this amount because all \r\ntransactions should be recorded in a single\r\n currency.",
+          "description": "Transaction monetary amount recorded in the functional or group currency. No  multicurrency translation should need to be performed on this amount because all  transactions should be recorded in a single  currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -319,7 +319,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentLineAmountCurrencyAmount",
-          "description": "Transaction monetary amount in local\r\n currency.",
+          "description": "Transaction monetary amount in local  currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -479,7 +479,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSupplierId",
-          "description": "Identifier of the supplier to whom payment\r\nis due or from whom unused credits have\r\nbeen applied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file.",
+          "description": "Identifier of the supplier to whom payment is due or from whom unused credits have been applied. Must match the Supplier_Account_ID in the Supplier_Listing_YYYYMMDD file.",
           "appliedTraits": null
         },
         {
@@ -487,7 +487,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineSystemEntryDateTime",
-          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself.",
+          "description": "The date the transaction was entered into the system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
           "appliedTraits": null
         },
         {
@@ -495,7 +495,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSystemEntryUser",
-          "description": "User_ID (from User_Listing file) for person\r\n who created the record.",
+          "description": "User_ID (from User_Listing file) for person  who created the record.",
           "appliedTraits": null
         },
         {
@@ -655,7 +655,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentMethod",
-          "description": "The code value or indicator of the method by\r\nwhich the transaction debit or credit amount\r\nwas extinguished or apportioned to the debt\r\nby the supplier (for example, check, wire\r\ntransfer, cash, and so on). Must match the\r\nPayment_Type in the\r\nPayment_Type_Listing_YYYYMMDD file.",
+          "description": "The code value or indicator of the method by which the transaction debit or credit amount was extinguished or apportioned to the debt by the supplier (for example, check, wire transfer, cash, and so on). Must match the Payment_Type in the Payment_Type_Listing_YYYYMMDD file.",
           "appliedTraits": null
         },
         {
@@ -679,7 +679,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "periodYear",
-          "description": "Fiscal year in which the\r\nPurchase_Order_Date occurs\u2014YYYY for\r\ndelimited, CCYY-MM-DD fiscal year end\r\n(ISO 8601) for extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL).",
+          "description": "Fiscal year in which the Purchase_Order_Date occurs\u2014YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).",
           "appliedTraits": null
         },
         {
@@ -687,7 +687,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
-          "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\").",
+          "description": "Status of the transaction's posting to the GL (for example, \"Posted,\" \"Not Posted\").",
           "appliedTraits": null
         },
         {
@@ -695,7 +695,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "referenceDate",
-          "description": "Date on an externally generated transaction\r\n(for example, check date or wire transfer\r\ndate).",
+          "description": "Date on an externally generated transaction (for example, check date or wire transfer date).",
           "appliedTraits": null
         },
         {
@@ -703,7 +703,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "referenceNumber",
-          "description": "Identification number for an internally or\r\nexternally generated transaction (for\r\nexample, check number, wire transfer\r\nnumber, or original document ID).",
+          "description": "Identification number for an internally or externally generated transaction (for example, check number, wire transfer number, or original document ID).",
           "appliedTraits": null
         },
         {
@@ -711,7 +711,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -719,7 +719,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -727,7 +727,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -735,7 +735,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -743,7 +743,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -759,7 +759,7 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemEntryDateTime",
-          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself.",
+          "description": "The date the transaction was entered into the system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
           "appliedTraits": null
         },
         {
@@ -767,7 +767,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemEntryUser",
-          "description": "User_ID (from User_Listing file) for person\r\nwho created the record.",
+          "description": "User_ID (from User_Listing file) for person who created the record.",
           "appliedTraits": null
         },
         {

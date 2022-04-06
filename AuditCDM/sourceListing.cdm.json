@@ -15,7 +15,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessProcessMajor",
-          "description": "The major class of transaction associated\r\nwith a business process (for example,\r\nsales).",
+          "description": "The major class of transaction associated with a business process (for example, sales).",
           "appliedTraits": null
         },
         {
@@ -23,7 +23,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessProcessMinor",
-          "description": "A subprocess of the major business\r\nprocess (for example\ufffd\ufffd\ufffdorders, returns,\r\ndiscounts, and so on).",
+          "description": "A subprocess of the major business process (for example\ufffd\ufffd\ufffdorders, returns, discounts, and so on).",
           "appliedTraits": null
         },
         {

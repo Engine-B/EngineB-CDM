@@ -15,7 +15,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountBeginning",
-          "description": "Period beginning balance amount (that is,\r\nthe ending balance from the prior period)\r\nrecorded in the functional or group currency.\r\nNo multicurrency translation should need to\r\nbe performed on this amount because all\r\nare recorded in a single currency.",
+          "description": "Period beginning balance amount (that is, the ending balance from the prior period) recorded in the functional or group currency. No multicurrency translation should need to be performed on this amount because all are recorded in a single currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -35,7 +35,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountBeginningLocal",
-          "description": "Period beginning balance amount in the\r\nlocal country currency for multicurrency\r\ntracking.",
+          "description": "Period beginning balance amount in the local country currency for multicurrency tracking.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -55,7 +55,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountBeginningReporting",
-          "description": "Period beginning balance amount in\r\nreporting currency used for statutory\r\nreporting.",
+          "description": "Period beginning balance amount in reporting currency used for statutory reporting.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -75,7 +75,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountCurrency",
-          "description": "The functional or group currency related to\r\nthe balance. See ISO 4217 coding.",
+          "description": "The functional or group currency related to the balance. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -83,7 +83,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountEnding",
-          "description": "Period ending balance amount recorded in\r\nthe functional or group currency. No\r\nmulticurrency translation should need to be\r\nperformed on this amount because all are\r\nrecorded in a single currency.",
+          "description": "Period ending balance amount recorded in the functional or group currency. No multicurrency translation should need to be performed on this amount because all are recorded in a single currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -103,7 +103,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountEndingLocal",
-          "description": "Period ending balance amount in the local\r\ncountry currency for multicurrency tracking.",
+          "description": "Period ending balance amount in the local country currency for multicurrency tracking.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -123,7 +123,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountEndingReporting",
-          "description": "Period ending balance amount in reporting\r\ncurrency used for statutory reporting.",
+          "description": "Period ending balance amount in reporting currency used for statutory reporting.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -143,7 +143,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountLocalCurrency",
-          "description": "The currency used for local country\r\nreporting requirements. See ISO 4217\r\ncoding.",
+          "description": "The currency used for local country reporting requirements. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -151,7 +151,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountReportingCurrency",
-          "description": "The currency used for nonconsolidated\r\nreporting as opposed to functional or\r\nconsolidated reporting or local or actual\r\namounts. See ISO 4217 coding.",
+          "description": "The currency used for nonconsolidated reporting as opposed to functional or consolidated reporting or local or actual amounts. See ISO 4217 coding.",
           "appliedTraits": null
         },
         {
@@ -199,7 +199,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -207,7 +207,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -215,7 +215,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -223,7 +223,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         },
         {
@@ -231,7 +231,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
           "appliedTraits": null
         }
       ]

@@ -23,7 +23,7 @@
           "dataType": "string",
           "isNullable": false,
           "displayName": "regulatorCode",
-          "description": "A code used to refer to this regulator or\r\njurisdiction; used as key or cross-reference\r\nin files.",
+          "description": "A code used to refer to this regulator or jurisdiction; used as key or cross-reference in files.",
           "appliedTraits": null
         },
         {
@@ -31,7 +31,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorCountry",
-          "description": "Recommend ISO 3166-1 Alpha 2 or Alpha 3\r\nformat",
+          "description": "Recommend ISO 3166-1 Alpha 2 or Alpha 3 format",
           "appliedTraits": null
         },
         {
@@ -39,7 +39,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorDefaultAccrualglAccountNumber",
-          "description": "GL account used to reflect accruals due to\r\nregulator",
+          "description": "GL account used to reflect accruals due to regulator",
           "appliedTraits": null
         },
         {
@@ -47,7 +47,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorDefaultExpenseglAccountNumber",
-          "description": "GL account used to reflect accruals due to\r\nregulator",
+          "description": "GL account used to reflect accruals due to regulator",
           "appliedTraits": null
         },
         {
@@ -55,7 +55,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorDefaultPayableglAccountNumber",
-          "description": "GL account used to reflect accruals due to\r\nregulator",
+          "description": "GL account used to reflect accruals due to regulator",
           "appliedTraits": null
         },
         {
@@ -63,7 +63,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorIdentifier",
-          "description": "Tax or other code assigned by Regulator for\r\nreporting organization to Regulator",
+          "description": "Tax or other code assigned by Regulator for reporting organization to Regulator",
           "appliedTraits": null
         },
         {
@@ -71,7 +71,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorName",
-          "description": "Name of regulator for whom tax is withheld\r\nor accrued",
+          "description": "Name of regulator for whom tax is withheld or accrued",
           "appliedTraits": null
         },
         {
@@ -79,7 +79,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorRegion",
-          "description": "Sub-region within country; in the U.S., this\r\nwould be state; in Canada it would be\r\nprovince.",
+          "description": "Sub-region within country; in the U.S., this would be state; in Canada it would be province.",
           "appliedTraits": null
         },
         {
@@ -87,7 +87,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorReportingOrganization",
-          "description": "Cross-reference to\r\nOrganization_Location_File_YYYYMMDD",
+          "description": "Cross-reference to Organization_Location_File_YYYYMMDD",
           "appliedTraits": null
         },
         {
