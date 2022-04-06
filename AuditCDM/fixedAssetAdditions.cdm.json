@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "acquisitionDetails",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "acquisitionDetails",
@@ -21,7 +20,6 @@
         },
         {
           "name": "additionType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "additionType",
@@ -30,7 +28,6 @@
         },
         {
           "name": "approvedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
@@ -39,7 +36,6 @@
         },
         {
           "name": "approvedByDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedByDate",
@@ -48,7 +44,6 @@
         },
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -57,7 +52,6 @@
         },
         {
           "name": "enteredBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "enteredBy",
@@ -66,7 +60,6 @@
         },
         {
           "name": "enteredDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDate",
@@ -75,7 +68,6 @@
         },
         {
           "name": "fixedAssetAdditionDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "fixedAssetAdditionDate",
@@ -84,7 +76,6 @@
         },
         {
           "name": "fixedAssetAdditionId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "fixedAssetAdditionId",
@@ -93,7 +84,6 @@
         },
         {
           "name": "fixedAssetCost",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetCost",
@@ -114,7 +104,6 @@
         },
         {
           "name": "fixedAssetId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetId",
@@ -123,7 +112,6 @@
         },
         {
           "name": "fixedAssetUniqueId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetUniqueId",
@@ -132,7 +120,6 @@
         },
         {
           "name": "glAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glAccount",
@@ -141,7 +128,6 @@
         },
         {
           "name": "glTransactionId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTransactionId",
@@ -150,7 +136,6 @@
         },
         {
           "name": "lastModifiedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
@@ -159,7 +144,6 @@
         },
         {
           "name": "lastModifiedByDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lastModifiedByDate",
@@ -168,7 +152,6 @@
         },
         {
           "name": "lotNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lotNumber",
@@ -177,7 +160,6 @@
         },
         {
           "name": "placedInService",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "placedInService",
@@ -186,7 +168,6 @@
         },
         {
           "name": "purchaseOrderDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "purchaseOrderDate",
@@ -195,7 +176,6 @@
         },
         {
           "name": "purchaseOrderId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderId",
@@ -204,7 +184,6 @@
         },
         {
           "name": "purchaseOrderRaisedDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "purchaseOrderRaisedDate",
@@ -213,7 +192,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -222,7 +200,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -231,7 +208,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -240,7 +216,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -249,7 +224,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -258,7 +232,6 @@
         },
         {
           "name": "serialNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "serialNumber",
@@ -267,7 +240,6 @@
         },
         {
           "name": "supplierId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",
@@ -276,7 +248,6 @@
         },
         {
           "name": "supplierName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierName",
@@ -285,7 +256,6 @@
         },
         {
           "name": "vatCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "vatCode",

@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "regulatorActiveFlag",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorActiveFlag",
@@ -21,7 +20,6 @@
         },
         {
           "name": "regulatorCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "regulatorCode",
@@ -30,7 +28,6 @@
         },
         {
           "name": "regulatorCountry",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorCountry",
@@ -39,7 +36,6 @@
         },
         {
           "name": "regulatorDefaultAccrualglAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorDefaultAccrualglAccountNumber",
@@ -48,7 +44,6 @@
         },
         {
           "name": "regulatorDefaultExpenseglAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorDefaultExpenseglAccountNumber",
@@ -57,7 +52,6 @@
         },
         {
           "name": "regulatorDefaultPayableglAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorDefaultPayableglAccountNumber",
@@ -66,7 +60,6 @@
         },
         {
           "name": "regulatorIdentifier",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorIdentifier",
@@ -75,7 +68,6 @@
         },
         {
           "name": "regulatorName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorName",
@@ -84,7 +76,6 @@
         },
         {
           "name": "regulatorRegion",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorRegion",
@@ -93,7 +84,6 @@
         },
         {
           "name": "regulatorReportingOrganization",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorReportingOrganization",
@@ -102,7 +92,6 @@
         },
         {
           "name": "regulatorRole",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "regulatorRole",

@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -21,7 +20,6 @@
         },
         {
           "name": "currencyId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "currencyId",
@@ -30,7 +28,6 @@
         },
         {
           "name": "depreciationRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "depreciationRate",
@@ -51,7 +48,6 @@
         },
         {
           "name": "fixedAssetAccumulatedDepreciation",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetAccumulatedDepreciation",
@@ -72,7 +68,6 @@
         },
         {
           "name": "fixedAssetAccumulatedDepreciationAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetAccumulatedDepreciationAccount",
@@ -81,7 +76,6 @@
         },
         {
           "name": "fixedAssetAcquisitionDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "fixedAssetAcquisitionDate",
@@ -90,7 +84,6 @@
         },
         {
           "name": "fixedAssetAssetAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetAssetAccount",
@@ -99,7 +92,6 @@
         },
         {
           "name": "fixedAssetAvailableforSaleDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "fixedAssetAvailableforSaleDate",
@@ -108,7 +100,6 @@
         },
         {
           "name": "fixedAssetBarCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetBarCode",
@@ -117,7 +108,6 @@
         },
         {
           "name": "fixedAssetCIPAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetCIPAccount",
@@ -126,7 +116,6 @@
         },
         {
           "name": "fixedAssetCIPFlag",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetCIPFlag",
@@ -135,7 +124,6 @@
         },
         {
           "name": "fixedAssetClass",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetClass",
@@ -144,7 +132,6 @@
         },
         {
           "name": "fixedAssetCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetCode",
@@ -153,7 +140,6 @@
         },
         {
           "name": "fixedAssetDepreciableBasis",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetDepreciableBasis",
@@ -162,7 +148,6 @@
         },
         {
           "name": "fixedAssetDepreciationAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetDepreciationAccount",
@@ -171,7 +156,6 @@
         },
         {
           "name": "fixedAssetDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetDescription",
@@ -180,7 +164,6 @@
         },
         {
           "name": "fixedAssetDisposalDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "fixedAssetDisposalDate",
@@ -189,7 +172,6 @@
         },
         {
           "name": "fixedAssetFairValue",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetFairValue",
@@ -210,7 +192,6 @@
         },
         {
           "name": "fixedAssetGroup01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetGroup01",
@@ -219,7 +200,6 @@
         },
         {
           "name": "fixedAssetGroup02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetGroup02",
@@ -228,7 +208,6 @@
         },
         {
           "name": "fixedAssetId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "fixedAssetId",
@@ -237,7 +216,6 @@
         },
         {
           "name": "fixedAssetInactiveFlag",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetInactiveFlag",
@@ -246,7 +224,6 @@
         },
         {
           "name": "fixedAssetInServiceDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "fixedAssetInServiceDate",
@@ -255,7 +232,6 @@
         },
         {
           "name": "fixedAssetNetBookValue",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetNetBookValue",
@@ -276,7 +252,6 @@
         },
         {
           "name": "fixedAssetOriginalCost",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetOriginalCost",
@@ -297,7 +272,6 @@
         },
         {
           "name": "fixedAssetQuantityOnHand",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetQuantityOnHand",
@@ -306,7 +280,6 @@
         },
         {
           "name": "fixedAssetRealisedGainLossAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetRealisedGainLossAccount",
@@ -315,7 +288,6 @@
         },
         {
           "name": "fixedAssetReplacementCost",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetReplacementCost",
@@ -336,7 +308,6 @@
         },
         {
           "name": "fixedAssetRetirementDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "fixedAssetRetirementDate",
@@ -345,7 +316,6 @@
         },
         {
           "name": "fixedAssetSalvageValue",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetSalvageValue",
@@ -366,7 +336,6 @@
         },
         {
           "name": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
@@ -375,7 +344,6 @@
         },
         {
           "name": "fixedAssetType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetType",
@@ -384,7 +352,6 @@
         },
         {
           "name": "fixedAssetUnrealizedGainLossAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetUnrealizedGainLossAccount",
@@ -393,7 +360,6 @@
         },
         {
           "name": "fixedAssetUsefulLife",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetUsefulLife",
@@ -402,7 +368,6 @@
         },
         {
           "name": "fixedAssetUsefulLifeRemaining",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetUsefulLifeRemaining",
@@ -411,7 +376,6 @@
         },
         {
           "name": "locationCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "locationCode",
@@ -420,7 +384,6 @@
         },
         {
           "name": "locationDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "locationDescription",
@@ -429,7 +392,6 @@
         },
         {
           "name": "locationId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "locationId",
@@ -438,7 +400,6 @@
         },
         {
           "name": "lotNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lotNumber",
@@ -447,7 +408,6 @@
         },
         {
           "name": "manufacturerId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "manufacturerId",
@@ -456,7 +416,6 @@
         },
         {
           "name": "projectId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "projectId",
@@ -465,7 +424,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -474,7 +432,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -483,7 +440,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -492,7 +448,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -501,7 +456,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -510,7 +464,6 @@
         },
         {
           "name": "serialNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "serialNumber",
@@ -519,7 +472,6 @@
         },
         {
           "name": "supplierId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",
@@ -528,7 +480,6 @@
         },
         {
           "name": "supplierName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierName",

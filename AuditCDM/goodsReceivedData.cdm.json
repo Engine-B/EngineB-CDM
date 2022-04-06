@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "adjustmentAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "adjustmentAmount",
@@ -33,7 +32,6 @@
         },
         {
           "name": "adjustmentDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentDescription",
@@ -42,7 +40,6 @@
         },
         {
           "name": "adjustmentIndicator",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentIndicator",
@@ -51,7 +48,6 @@
         },
         {
           "name": "approvedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
@@ -60,7 +56,6 @@
         },
         {
           "name": "approvedByDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedByDateTime",
@@ -69,7 +64,6 @@
         },
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -78,7 +72,6 @@
         },
         {
           "name": "enteredBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "enteredBy",
@@ -87,7 +80,6 @@
         },
         {
           "name": "enteredDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDateTime",
@@ -96,7 +88,6 @@
         },
         {
           "name": "goodsReceiptUniqueId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "goodsReceiptUniqueId",
@@ -105,7 +96,6 @@
         },
         {
           "name": "goodsReceivedAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedAmount",
@@ -126,7 +116,6 @@
         },
         {
           "name": "goodsReceivedCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedCurrencyAmount",
@@ -147,7 +136,6 @@
         },
         {
           "name": "goodsReceivedCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "goodsReceivedCurrencyCode",
@@ -156,7 +144,6 @@
         },
         {
           "name": "goodsReceivedExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedExchangeRate",
@@ -177,7 +164,6 @@
         },
         {
           "name": "lastModifiedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
@@ -186,7 +172,6 @@
         },
         {
           "name": "lastModifiedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lastModifiedDateTime",
@@ -195,7 +180,6 @@
         },
         {
           "name": "lineAdjustmentAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAdjustmentAmount",
@@ -216,7 +200,6 @@
         },
         {
           "name": "lineAdjustmentDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAdjustmentDescription",
@@ -225,7 +208,6 @@
         },
         {
           "name": "lineAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAmount",
@@ -246,7 +228,6 @@
         },
         {
           "name": "lineCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineCurrencyAmount",
@@ -267,7 +248,6 @@
         },
         {
           "name": "lineCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineCurrencyCode",
@@ -276,7 +256,6 @@
         },
         {
           "name": "lineExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineExchangeRate",
@@ -297,7 +276,6 @@
         },
         {
           "name": "linePurchaseOrderAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePurchaseOrderAmount",
@@ -318,7 +296,6 @@
         },
         {
           "name": "linePurchaseOrderCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePurchaseOrderCurrencyAmount",
@@ -339,7 +316,6 @@
         },
         {
           "name": "linePurchaseOrderCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderCurrencyCode",
@@ -348,7 +324,6 @@
         },
         {
           "name": "linePurchaseOrderExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePurchaseOrderExchangeRate",
@@ -369,7 +344,6 @@
         },
         {
           "name": "linePurchaseOrderLineId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderLineId",
@@ -378,7 +352,6 @@
         },
         {
           "name": "linePurchaseOrderQuantity",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderQuantity",
@@ -387,7 +360,6 @@
         },
         {
           "name": "linePurchaseOrderUnitofMeasure",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderUnitofMeasure",
@@ -396,7 +368,6 @@
         },
         {
           "name": "linePurchaseOrderUnitPrice",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderUnitPrice",
@@ -405,7 +376,6 @@
         },
         {
           "name": "lineReceiptDocumentLineId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptDocumentLineId",
@@ -414,7 +384,6 @@
         },
         {
           "name": "lineReceiptId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptId",
@@ -423,7 +392,6 @@
         },
         {
           "name": "lineReceiptProductBarCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductBarCode",
@@ -432,7 +400,6 @@
         },
         {
           "name": "lineReceiptProductDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductDescription",
@@ -441,7 +408,6 @@
         },
         {
           "name": "lineReceiptProductGroup01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductGroup01",
@@ -450,7 +416,6 @@
         },
         {
           "name": "lineReceiptProductGroup02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductGroup02",
@@ -459,7 +424,6 @@
         },
         {
           "name": "lineReceiptProductId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductId",
@@ -468,7 +432,6 @@
         },
         {
           "name": "lineReceiptQuantity",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptQuantity",
@@ -477,7 +440,6 @@
         },
         {
           "name": "lineReceiptUnitOfMeasure",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptUnitOfMeasure",
@@ -486,7 +448,6 @@
         },
         {
           "name": "lineReceiptUnitPrice",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptUnitPrice",
@@ -495,7 +456,6 @@
         },
         {
           "name": "postingStatus",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
@@ -504,7 +464,6 @@
         },
         {
           "name": "purchaseOrderAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "purchaseOrderAmount",
@@ -525,7 +484,6 @@
         },
         {
           "name": "purchaseOrderCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "purchaseOrderCurrencyAmount",
@@ -546,7 +504,6 @@
         },
         {
           "name": "purchaseOrderCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderCurrencyCode",
@@ -555,7 +512,6 @@
         },
         {
           "name": "purchaseOrderDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "purchaseOrderDate",
@@ -564,7 +520,6 @@
         },
         {
           "name": "purchaseOrderExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "purchaseOrderExchangeRate",
@@ -585,7 +540,6 @@
         },
         {
           "name": "purchaseOrderId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderId",
@@ -594,7 +548,6 @@
         },
         {
           "name": "receiptDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "receiptDate",
@@ -603,7 +556,6 @@
         },
         {
           "name": "receiptDocumentId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptDocumentId",
@@ -612,7 +564,6 @@
         },
         {
           "name": "receiptFiscalYear",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptFiscalYear",
@@ -621,7 +572,6 @@
         },
         {
           "name": "receiptId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptId",
@@ -630,7 +580,6 @@
         },
         {
           "name": "receiptPeriod",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptPeriod",
@@ -639,7 +588,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -648,7 +596,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -657,7 +604,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -666,7 +612,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -675,7 +620,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -684,7 +628,6 @@
         },
         {
           "name": "supplierId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",

@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -21,7 +20,6 @@
         },
         {
           "name": "costingType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "costingType",
@@ -30,7 +28,6 @@
         },
         {
           "name": "inventoryProductId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "inventoryProductId",
@@ -39,7 +36,6 @@
         },
         {
           "name": "locationId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "locationId",
@@ -48,7 +44,6 @@
         },
         {
           "name": "materialId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "materialId",
@@ -57,7 +52,6 @@
         },
         {
           "name": "otherCost1",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "otherCost1",
@@ -66,7 +60,6 @@
         },
         {
           "name": "otherCost2",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "otherCost2",
@@ -75,7 +68,6 @@
         },
         {
           "name": "otherCost3",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "otherCost3",
@@ -84,7 +76,6 @@
         },
         {
           "name": "otherCost4",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "otherCost4",
@@ -93,7 +84,6 @@
         },
         {
           "name": "otherCost5",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "otherCost5",
@@ -102,7 +92,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -111,7 +100,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -120,7 +108,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -129,7 +116,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -138,7 +124,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -147,7 +132,6 @@
         },
         {
           "name": "stockingUnitOfMeasure",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "stockingUnitOfMeasure",
@@ -156,7 +140,6 @@
         },
         {
           "name": "totalCost",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "totalCost",
@@ -165,7 +148,6 @@
         },
         {
           "name": "validFromDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "validFromDate",
@@ -174,7 +156,6 @@
         },
         {
           "name": "validToDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "validToDate",
@@ -183,7 +164,6 @@
         },
         {
           "name": "valuationDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "valuationDate",

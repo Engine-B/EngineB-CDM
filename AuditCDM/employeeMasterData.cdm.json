@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "departmentCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "departmentCode",
@@ -21,7 +20,6 @@
         },
         {
           "name": "employeeDateOfBirth",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "employeeDateOfBirth",
@@ -30,7 +28,6 @@
         },
         {
           "name": "employeeFirstName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "employeeFirstName",
@@ -39,7 +36,6 @@
         },
         {
           "name": "employeeId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "employeeId",
@@ -48,7 +44,6 @@
         },
         {
           "name": "employeeJobTitle",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "employeeJobTitle",
@@ -57,7 +52,6 @@
         },
         {
           "name": "employeeLastName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "employeeLastName",
@@ -66,7 +60,6 @@
         },
         {
           "name": "employeeMiddleName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "employeeMiddleName",
@@ -75,7 +68,6 @@
         },
         {
           "name": "employeeRefCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "employeeRefCode",
@@ -84,7 +76,6 @@
         },
         {
           "name": "employmentStartDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "employmentStartDate",
@@ -93,7 +84,6 @@
         },
         {
           "name": "employmentTerminationDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "employmentTerminationDate",
@@ -102,7 +92,6 @@
         },
         {
           "name": "employmentTypeCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "employmentTypeCode",
@@ -111,7 +100,6 @@
         },
         {
           "name": "employmentTypeName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "employmentTypeName",
@@ -120,7 +108,6 @@
         },
         {
           "name": "isActiveFlag",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "isActiveFlag",
@@ -129,7 +116,6 @@
         },
         {
           "name": "userId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "userId",

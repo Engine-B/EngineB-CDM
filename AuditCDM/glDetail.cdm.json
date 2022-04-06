@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "amount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amount",
@@ -33,7 +32,6 @@
         },
         {
           "name": "amountCreditDebitIndicator",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountCreditDebitIndicator",
@@ -42,7 +40,6 @@
         },
         {
           "name": "amountCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountCurrency",
@@ -51,7 +48,6 @@
         },
         {
           "name": "approvedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
@@ -60,7 +56,6 @@
         },
         {
           "name": "approvedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedDateTime",
@@ -69,7 +64,6 @@
         },
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -78,7 +72,6 @@
         },
         {
           "name": "effectiveDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "effectiveDate",
@@ -87,7 +80,6 @@
         },
         {
           "name": "enteredBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "enteredBy",
@@ -96,7 +88,6 @@
         },
         {
           "name": "enteredDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDateTime",
@@ -105,7 +96,6 @@
         },
         {
           "name": "fiscalYear",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fiscalYear",
@@ -114,7 +104,6 @@
         },
         {
           "name": "glAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glAccountNumber",
@@ -123,7 +112,6 @@
         },
         {
           "name": "jeHeaderDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "jeHeaderDescription",
@@ -132,7 +120,6 @@
         },
         {
           "name": "jeLineDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "jeLineDescription",
@@ -141,7 +128,6 @@
         },
         {
           "name": "journalEntryType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "journalEntryType",
@@ -150,7 +136,6 @@
         },
         {
           "name": "journalId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "journalId",
@@ -159,7 +144,6 @@
         },
         {
           "name": "journalIdLineNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "journalIdLineNumber",
@@ -168,7 +152,6 @@
         },
         {
           "name": "lastModifiedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
@@ -177,7 +160,6 @@
         },
         {
           "name": "lastModifiedDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lastModifiedDate",
@@ -186,7 +168,6 @@
         },
         {
           "name": "localAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "localAmount",
@@ -207,7 +188,6 @@
         },
         {
           "name": "localAmountCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "localAmountCurrency",
@@ -216,7 +196,6 @@
         },
         {
           "name": "period",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "period",
@@ -225,7 +204,6 @@
         },
         {
           "name": "reportingAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "reportingAmount",
@@ -246,7 +224,6 @@
         },
         {
           "name": "reportingAmountCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "reportingAmountCurrency",
@@ -255,7 +232,6 @@
         },
         {
           "name": "reversalIndicator",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "reversalIndicator",
@@ -264,7 +240,6 @@
         },
         {
           "name": "reversalJournalId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "reversalJournalId",
@@ -273,7 +248,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -282,7 +256,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -291,7 +264,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -300,7 +272,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -309,7 +280,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -318,7 +288,6 @@
         },
         {
           "name": "sourceId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "sourceId",
@@ -327,7 +296,6 @@
         },
         {
           "name": "tags",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tags",
@@ -336,7 +304,6 @@
         },
         {
           "name": "taxCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "taxCode",
@@ -345,7 +312,6 @@
         },
         {
           "name": "transactionId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "transactionId",
@@ -354,7 +320,6 @@
         },
         {
           "name": "userDefined1",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "userDefined1",
@@ -363,7 +328,6 @@
         },
         {
           "name": "userDefined2",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "userDefined2",

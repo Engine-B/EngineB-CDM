@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "adjustmentAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "adjustmentAmount",
@@ -33,7 +32,6 @@
         },
         {
           "name": "adjustmentDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentDescription",
@@ -42,7 +40,6 @@
         },
         {
           "name": "adjustmentIndicator",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentIndicator",
@@ -51,7 +48,6 @@
         },
         {
           "name": "approvedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
@@ -60,7 +56,6 @@
         },
         {
           "name": "approvedDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedDate",
@@ -69,7 +64,6 @@
         },
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -78,7 +72,6 @@
         },
         {
           "name": "customerAccountId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "customerAccountId",
@@ -87,7 +80,6 @@
         },
         {
           "name": "enteredBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "enteredBy",
@@ -96,7 +88,6 @@
         },
         {
           "name": "enteredDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDate",
@@ -105,7 +96,6 @@
         },
         {
           "name": "goodsReceivedAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedAmount",
@@ -126,7 +116,6 @@
         },
         {
           "name": "goodsReceivedExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedExchangeRate",
@@ -147,7 +136,6 @@
         },
         {
           "name": "goodsShippedId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "goodsShippedId",
@@ -156,7 +144,6 @@
         },
         {
           "name": "lastModifiedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
@@ -165,7 +152,6 @@
         },
         {
           "name": "lastModifiedDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lastModifiedDate",
@@ -174,7 +160,6 @@
         },
         {
           "name": "lineAdjustmentAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAdjustmentAmount",
@@ -195,7 +180,6 @@
         },
         {
           "name": "lineAdjustmentDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAdjustmentDescription",
@@ -204,7 +188,6 @@
         },
         {
           "name": "lineAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAmount",
@@ -225,7 +208,6 @@
         },
         {
           "name": "lineExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineExchangeRate",
@@ -246,7 +228,6 @@
         },
         {
           "name": "lineSalesOrderAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSalesOrderAmount",
@@ -267,7 +248,6 @@
         },
         {
           "name": "lineSalesOrderExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSalesOrderExchangeRate",
@@ -288,7 +268,6 @@
         },
         {
           "name": "lineSalesOrderLineAmountLocal",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSalesOrderLineAmountLocal",
@@ -297,7 +276,6 @@
         },
         {
           "name": "lineSalesOrderLineId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSalesOrderLineId",
@@ -306,7 +284,6 @@
         },
         {
           "name": "lineSalesOrderLocalCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSalesOrderLocalCurrency",
@@ -315,7 +292,6 @@
         },
         {
           "name": "lineSalesOrderQuantity",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSalesOrderQuantity",
@@ -324,7 +300,6 @@
         },
         {
           "name": "lineSalesOrderUnitOfMeasure",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSalesOrderUnitOfMeasure",
@@ -345,7 +320,6 @@
         },
         {
           "name": "lineSalesOrderUnitPrice",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSalesOrderUnitPrice",
@@ -366,7 +340,6 @@
         },
         {
           "name": "lineShipmentId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipmentId",
@@ -375,7 +348,6 @@
         },
         {
           "name": "lineShippingDocumentLineId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingDocumentLineId",
@@ -384,7 +356,6 @@
         },
         {
           "name": "lineShippingLineAmountLocal",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineShippingLineAmountLocal",
@@ -405,7 +376,6 @@
         },
         {
           "name": "lineShippingLineAmountLocalCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingLineAmountLocalCurrency",
@@ -414,7 +384,6 @@
         },
         {
           "name": "lineShippingProductBarCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingProductBarCode",
@@ -423,7 +392,6 @@
         },
         {
           "name": "lineShippingProductCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingProductCode",
@@ -432,7 +400,6 @@
         },
         {
           "name": "lineShippingProductDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingProductDescription",
@@ -441,7 +408,6 @@
         },
         {
           "name": "lineShippingProductGroup01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingProductGroup01",
@@ -450,7 +416,6 @@
         },
         {
           "name": "lineShippingProductGroup02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingProductGroup02",
@@ -459,7 +424,6 @@
         },
         {
           "name": "lineShippingProductId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingProductId",
@@ -468,7 +432,6 @@
         },
         {
           "name": "lineShippingQuantity",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingQuantity",
@@ -477,7 +440,6 @@
         },
         {
           "name": "lineShippingUnitOfMeasure",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineShippingUnitOfMeasure",
@@ -498,7 +460,6 @@
         },
         {
           "name": "lineShippingUnitPrice",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineShippingUnitPrice",
@@ -519,7 +480,6 @@
         },
         {
           "name": "postingStatus",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
@@ -528,7 +488,6 @@
         },
         {
           "name": "salesOrderAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "salesOrderAmount",
@@ -549,7 +508,6 @@
         },
         {
           "name": "salesOrderAmountLocal",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "salesOrderAmountLocal",
@@ -570,7 +528,6 @@
         },
         {
           "name": "salesOrderDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "salesOrderDate",
@@ -579,7 +536,6 @@
         },
         {
           "name": "salesOrderExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "salesOrderExchangeRate",
@@ -600,7 +556,6 @@
         },
         {
           "name": "salesOrderId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "salesOrderId",
@@ -609,7 +564,6 @@
         },
         {
           "name": "salesOrderLocalCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "salesOrderLocalCurrency",
@@ -618,7 +572,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -627,7 +580,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -636,7 +588,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -645,7 +596,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -654,7 +604,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -663,7 +612,6 @@
         },
         {
           "name": "shipmentDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "shipmentDate",
@@ -672,7 +620,6 @@
         },
         {
           "name": "shipmentFiscalYear",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipmentFiscalYear",
@@ -681,7 +628,6 @@
         },
         {
           "name": "shipmentId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipmentId",
@@ -690,7 +636,6 @@
         },
         {
           "name": "shipmentPeriod",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipmentPeriod",
@@ -699,7 +644,6 @@
         },
         {
           "name": "shippingAmountLocal",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "shippingAmountLocal",
@@ -720,7 +664,6 @@
         },
         {
           "name": "shippingAmountLocalCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shippingAmountLocalCurrency",
@@ -729,7 +672,6 @@
         },
         {
           "name": "shippingDocumentId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shippingDocumentId",

@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "amountBeginning",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountBeginning",
@@ -33,7 +32,6 @@
         },
         {
           "name": "amountBeginningLocal",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountBeginningLocal",
@@ -54,7 +52,6 @@
         },
         {
           "name": "amountBeginningReporting",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountBeginningReporting",
@@ -75,7 +72,6 @@
         },
         {
           "name": "amountCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountCurrency",
@@ -84,7 +80,6 @@
         },
         {
           "name": "amountEnding",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountEnding",
@@ -105,7 +100,6 @@
         },
         {
           "name": "amountEndingLocal",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountEndingLocal",
@@ -126,7 +120,6 @@
         },
         {
           "name": "amountEndingReporting",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "amountEndingReporting",
@@ -147,7 +140,6 @@
         },
         {
           "name": "amountLocalCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountLocalCurrency",
@@ -156,7 +148,6 @@
         },
         {
           "name": "amountReportingCurrency",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "amountReportingCurrency",
@@ -165,7 +156,6 @@
         },
         {
           "name": "balanceAsOfDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "balanceAsOfDate",
@@ -174,7 +164,6 @@
         },
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -183,7 +172,6 @@
         },
         {
           "name": "fiscalYear",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fiscalYear",
@@ -192,7 +180,6 @@
         },
         {
           "name": "glAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "glAccountNumber",
@@ -201,7 +188,6 @@
         },
         {
           "name": "period",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "period",
@@ -210,7 +196,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -219,7 +204,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -228,7 +212,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -237,7 +220,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -246,7 +228,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",

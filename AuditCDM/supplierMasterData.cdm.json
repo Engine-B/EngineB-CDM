@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "accountId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "accountId",
@@ -21,7 +20,6 @@
         },
         {
           "name": "additionalAddressDetail",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "additionalAddressDetail",
@@ -30,7 +28,6 @@
         },
         {
           "name": "addressAddressType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressAddressType",
@@ -39,7 +36,6 @@
         },
         {
           "name": "addressBuilding",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressBuilding",
@@ -48,7 +44,6 @@
         },
         {
           "name": "addressCity",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressCity",
@@ -57,7 +52,6 @@
         },
         {
           "name": "addressCountry",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressCountry",
@@ -66,7 +60,6 @@
         },
         {
           "name": "addressNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressNumber",
@@ -75,7 +68,6 @@
         },
         {
           "name": "addressPostalCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressPostalCode",
@@ -84,7 +76,6 @@
         },
         {
           "name": "addressRegion",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressRegion",
@@ -93,7 +84,6 @@
         },
         {
           "name": "addressStreetName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "addressStreetName",
@@ -102,7 +92,6 @@
         },
         {
           "name": "bankAccountId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "bankAccountId",
@@ -111,7 +100,6 @@
         },
         {
           "name": "bankAccountName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "bankAccountName",
@@ -120,7 +108,6 @@
         },
         {
           "name": "bankAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "bankAccountNumber",
@@ -129,7 +116,6 @@
         },
         {
           "name": "companyType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "companyType",
@@ -138,7 +124,6 @@
         },
         {
           "name": "effectiveDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "effectiveDate",
@@ -147,7 +132,6 @@
         },
         {
           "name": "email",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "email",
@@ -156,7 +140,6 @@
         },
         {
           "name": "expirationDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "expirationDate",
@@ -165,7 +148,6 @@
         },
         {
           "name": "fax",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fax",
@@ -174,7 +156,6 @@
         },
         {
           "name": "firstName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "firstName",
@@ -183,7 +164,6 @@
         },
         {
           "name": "IBANNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "IBANNumber",
@@ -192,7 +172,6 @@
         },
         {
           "name": "lastName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastName",
@@ -201,7 +180,6 @@
         },
         {
           "name": "legalEntityIdentifier",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "legalEntityIdentifier",
@@ -210,7 +188,6 @@
         },
         {
           "name": "name",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "name",
@@ -219,7 +196,6 @@
         },
         {
           "name": "paymentDiscountDays",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentDiscountDays",
@@ -228,7 +204,6 @@
         },
         {
           "name": "paymentDiscountPercentage",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "paymentDiscountPercentage",
@@ -249,7 +224,6 @@
         },
         {
           "name": "paymentDueDays",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentDueDays",
@@ -258,7 +232,6 @@
         },
         {
           "name": "registrationNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "registrationNumber",
@@ -267,7 +240,6 @@
         },
         {
           "name": "selfBillingIndicator",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "selfBillingIndicator",
@@ -276,7 +248,6 @@
         },
         {
           "name": "sortCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "sortCode",
@@ -285,7 +256,6 @@
         },
         {
           "name": "supplierCreditLimit",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierCreditLimit",
@@ -294,7 +264,6 @@
         },
         {
           "name": "supplierGroup",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierGroup",
@@ -303,7 +272,6 @@
         },
         {
           "name": "supplierId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "supplierId",
@@ -312,7 +280,6 @@
         },
         {
           "name": "supplierType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierType",
@@ -321,7 +288,6 @@
         },
         {
           "name": "systemApprovedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemApprovedDateTime",
@@ -330,7 +296,6 @@
         },
         {
           "name": "systemApprovedUser",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemApprovedUser",
@@ -339,7 +304,6 @@
         },
         {
           "name": "systemEntryDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemEntryDateTime",
@@ -348,7 +312,6 @@
         },
         {
           "name": "systemEntryUser",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemEntryUser",
@@ -357,7 +320,6 @@
         },
         {
           "name": "systemModifiedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemModifiedDateTime",
@@ -366,7 +328,6 @@
         },
         {
           "name": "systemModifiedUser",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemModifiedUser",
@@ -375,7 +336,6 @@
         },
         {
           "name": "taxAuthority",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "taxAuthority",
@@ -384,7 +344,6 @@
         },
         {
           "name": "taxNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "taxNumber",
@@ -393,7 +352,6 @@
         },
         {
           "name": "taxRegistrationNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "taxRegistrationNumber",
@@ -402,7 +360,6 @@
         },
         {
           "name": "taxType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "taxType",
@@ -411,7 +368,6 @@
         },
         {
           "name": "taxVerificationDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "taxVerificationDate",
@@ -420,7 +376,6 @@
         },
         {
           "name": "telephone",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "telephone",
@@ -429,7 +384,6 @@
         },
         {
           "name": "title",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "title",
@@ -438,7 +392,6 @@
         },
         {
           "name": "transactionCreditLimit",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "transactionCreditLimit",
@@ -447,7 +400,6 @@
         },
         {
           "name": "website",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "website",

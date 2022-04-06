@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "businessUnitCode",
@@ -21,7 +20,6 @@
         },
         {
           "name": "businessUnitDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitDescription",
@@ -30,7 +28,6 @@
         },
         {
           "name": "businessUnitHierarchy1",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitHierarchy1",
@@ -39,7 +36,6 @@
         },
         {
           "name": "businessUnitHierarchy2",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitHierarchy2",
@@ -48,7 +44,6 @@
         },
         {
           "name": "businessUnitHierarchy3",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitHierarchy3",
@@ -57,7 +52,6 @@
         },
         {
           "name": "businessUnitHierarchy4",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitHierarchy4",
@@ -66,7 +60,6 @@
         },
         {
           "name": "businessUnitHierarchy5",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitHierarchy5",
@@ -75,7 +68,6 @@
         },
         {
           "name": "legalEntityIdentifier",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "legalEntityIdentifier",

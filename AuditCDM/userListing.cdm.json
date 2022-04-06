@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "department",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "department",
@@ -21,7 +20,6 @@
         },
         {
           "name": "firstName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "firstName",
@@ -30,7 +28,6 @@
         },
         {
           "name": "lastName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastName",
@@ -39,7 +36,6 @@
         },
         {
           "name": "roleResponsibility",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "roleResponsibility",
@@ -48,7 +44,6 @@
         },
         {
           "name": "title",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "title",
@@ -57,7 +52,6 @@
         },
         {
           "name": "userActiveModifiedDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "userActiveModifiedDate",
@@ -66,7 +60,6 @@
         },
         {
           "name": "userActiveStatus",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "userActiveStatus",
@@ -75,7 +68,6 @@
         },
         {
           "name": "userId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "userId",

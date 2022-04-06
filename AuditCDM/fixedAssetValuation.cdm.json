@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "approvedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
@@ -21,7 +20,6 @@
         },
         {
           "name": "approvedByDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedByDate",
@@ -30,7 +28,6 @@
         },
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -39,7 +36,6 @@
         },
         {
           "name": "enteredBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "enteredBy",
@@ -48,7 +44,6 @@
         },
         {
           "name": "enteredDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDateTime",
@@ -57,7 +52,6 @@
         },
         {
           "name": "fixedAssetId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetId",
@@ -66,7 +60,6 @@
         },
         {
           "name": "fixedAssetRealizedGainLossAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetRealizedGainLossAccount",
@@ -75,7 +68,6 @@
         },
         {
           "name": "fixedAssetRealizedGainLossAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetRealizedGainLossAmount",
@@ -96,7 +88,6 @@
         },
         {
           "name": "fixedAssetUnrealizedGainLossAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "fixedAssetUnrealizedGainLossAccount",
@@ -105,7 +96,6 @@
         },
         {
           "name": "fixedAssetUnrealizedGainLossAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetUnrealizedGainLossAmount",
@@ -126,7 +116,6 @@
         },
         {
           "name": "glAccount",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glAccount",
@@ -135,7 +124,6 @@
         },
         {
           "name": "glTransactionId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTransactionId",
@@ -144,7 +132,6 @@
         },
         {
           "name": "lastModifiedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
@@ -153,7 +140,6 @@
         },
         {
           "name": "lastModifiedByDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lastModifiedByDate",
@@ -162,7 +148,6 @@
         },
         {
           "name": "lotNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lotNumber",
@@ -171,7 +156,6 @@
         },
         {
           "name": "revaluationAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "revaluationAmount",
@@ -192,7 +176,6 @@
         },
         {
           "name": "revaluationDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "revaluationDate",
@@ -201,7 +184,6 @@
         },
         {
           "name": "revaluationDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "revaluationDescription",
@@ -210,7 +192,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -219,7 +200,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -228,7 +208,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -237,7 +216,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -246,7 +224,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -255,7 +232,6 @@
         },
         {
           "name": "serialNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "serialNumber",
@@ -264,7 +240,6 @@
         },
         {
           "name": "uniqueId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "uniqueId",
@@ -273,7 +248,6 @@
         },
         {
           "name": "valuerDocumnetReference",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "valuerDocumnetReference",
@@ -282,7 +256,6 @@
         },
         {
           "name": "valuerId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "valuerId",
@@ -291,7 +264,6 @@
         },
         {
           "name": "valuerName",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "valuerName",

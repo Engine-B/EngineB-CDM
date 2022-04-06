@@ -12,7 +12,6 @@
       "hasAttributes": [
         {
           "name": "approvedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
@@ -21,7 +20,6 @@
         },
         {
           "name": "approvedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedDateTime",
@@ -30,7 +28,6 @@
         },
         {
           "name": "batchId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "batchId",
@@ -39,7 +36,6 @@
         },
         {
           "name": "businessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
@@ -48,7 +44,6 @@
         },
         {
           "name": "description",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "description",
@@ -57,7 +52,6 @@
         },
         {
           "name": "glCreditAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glCreditAccountNumber",
@@ -66,7 +60,6 @@
         },
         {
           "name": "glDebitAccountNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glDebitAccountNumber",
@@ -75,7 +68,6 @@
         },
         {
           "name": "lastModifiedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
@@ -84,7 +76,6 @@
         },
         {
           "name": "lastModifiedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lastModifiedDateTime",
@@ -93,7 +84,6 @@
         },
         {
           "name": "lineAccountId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAccountId",
@@ -102,7 +92,6 @@
         },
         {
           "name": "lineAnalysisAmountCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAmountCurrencyAmount",
@@ -123,7 +112,6 @@
         },
         {
           "name": "lineAnalysisAnalysisAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisAmount",
@@ -144,7 +132,6 @@
         },
         {
           "name": "lineAnalysisAnalysisAmountCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisAmountCurrencyCode",
@@ -153,7 +140,6 @@
         },
         {
           "name": "lineAnalysisAnalysisAmountExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisAmountExchangeRate",
@@ -174,7 +160,6 @@
         },
         {
           "name": "lineAnalysisAnalysisAmountLocalCurrency",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisAmountLocalCurrency",
@@ -195,7 +180,6 @@
         },
         {
           "name": "lineAnalysisAnalysisId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisId",
@@ -204,7 +188,6 @@
         },
         {
           "name": "lineAnalysisAnalysisIdDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisIdDescription",
@@ -213,7 +196,6 @@
         },
         {
           "name": "lineAnalysisAnalysisType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisAnalysisType",
@@ -222,7 +204,6 @@
         },
         {
           "name": "lineAnlaysisTypeDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnlaysisTypeDescription",
@@ -231,7 +212,6 @@
         },
         {
           "name": "lineApprovedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineApprovedBy",
@@ -240,7 +220,6 @@
         },
         {
           "name": "lineApprovedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineApprovedDateTime",
@@ -249,7 +228,6 @@
         },
         {
           "name": "lineBusinessUnitCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineBusinessUnitCode",
@@ -258,7 +236,6 @@
         },
         {
           "name": "lineCustomerId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineCustomerId",
@@ -267,7 +244,6 @@
         },
         {
           "name": "lineDebitCreditIndicator",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineDebitCreditIndicator",
@@ -276,7 +252,6 @@
         },
         {
           "name": "lineDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineDescription",
@@ -285,7 +260,6 @@
         },
         {
           "name": "lineLastModifiedBy",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineLastModifiedBy",
@@ -294,7 +268,6 @@
         },
         {
           "name": "lineLastModifiedDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineLastModifiedDateTime",
@@ -303,7 +276,6 @@
         },
         {
           "name": "lineLineNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineLineNumber",
@@ -312,7 +284,6 @@
         },
         {
           "name": "linePaymentAmountLocalCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePaymentAmountLocalCurrencyCode",
@@ -321,7 +292,6 @@
         },
         {
           "name": "linePaymentAmountReporting",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentAmountReporting",
@@ -342,7 +312,6 @@
         },
         {
           "name": "linePaymentAmountReportingCurrency",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentAmountReportingCurrency",
@@ -363,7 +332,6 @@
         },
         {
           "name": "linePaymentLineAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentLineAmount",
@@ -384,7 +352,6 @@
         },
         {
           "name": "linePaymentLineAmountCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentLineAmountCurrencyAmount",
@@ -405,7 +372,6 @@
         },
         {
           "name": "linePaymentLineAmountCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePaymentLineAmountCurrencyCode",
@@ -414,7 +380,6 @@
         },
         {
           "name": "linePaymentLineAmountExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePaymentLineAmountExchangeRate",
@@ -435,7 +400,6 @@
         },
         {
           "name": "lineSettlementCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSettlementCurrencyAmount",
@@ -456,7 +420,6 @@
         },
         {
           "name": "lineSettlementCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSettlementCurrencyCode",
@@ -465,7 +428,6 @@
         },
         {
           "name": "lineSettlementPaymentMechanism",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSettlementPaymentMechanism",
@@ -474,7 +436,6 @@
         },
         {
           "name": "lineSettlementSettlementAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSettlementSettlementAmount",
@@ -495,7 +456,6 @@
         },
         {
           "name": "lineSettlementSettlementAmountExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSettlementSettlementAmountExchangeRate",
@@ -516,7 +476,6 @@
         },
         {
           "name": "lineSettlementSettlementDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineSettlementSettlementDate",
@@ -525,7 +484,6 @@
         },
         {
           "name": "lineSettlementSettlementDiscount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineSettlementSettlementDiscount",
@@ -546,7 +504,6 @@
         },
         {
           "name": "lineSourceDocumentId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSourceDocumentId",
@@ -555,7 +512,6 @@
         },
         {
           "name": "lineSupplierId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSupplierId",
@@ -564,7 +520,6 @@
         },
         {
           "name": "lineSystemEntryDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineSystemEntryDateTime",
@@ -573,7 +528,6 @@
         },
         {
           "name": "lineSystemEntryUser",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSystemEntryUser",
@@ -582,7 +536,6 @@
         },
         {
           "name": "lineTaxInformationTaxAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxAmount",
@@ -603,7 +556,6 @@
         },
         {
           "name": "lineTaxInformationTaxAmountCurrencyAmount",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxAmountCurrencyAmount",
@@ -624,7 +576,6 @@
         },
         {
           "name": "lineTaxInformationTaxAmountCurrencyCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxAmountCurrencyCode",
@@ -633,7 +584,6 @@
         },
         {
           "name": "lineTaxInformationTaxAmountExchangeRate",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxAmountExchangeRate",
@@ -654,7 +604,6 @@
         },
         {
           "name": "lineTaxInformationTaxBase",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxBase",
@@ -663,7 +612,6 @@
         },
         {
           "name": "lineTaxInformationTaxBaseDescription",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxBaseDescription",
@@ -672,7 +620,6 @@
         },
         {
           "name": "lineTaxInformationTaxCode",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxCode",
@@ -681,7 +628,6 @@
         },
         {
           "name": "lineTaxInformationTaxDeclarationPeriod",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxDeclarationPeriod",
@@ -690,7 +636,6 @@
         },
         {
           "name": "lineTaxInformationTaxExemptionReason",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxExemptionReason",
@@ -699,7 +644,6 @@
         },
         {
           "name": "lineTaxInformationTaxPercentage",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxPercentage",
@@ -720,7 +664,6 @@
         },
         {
           "name": "lineTaxInformationTaxType",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxType",
@@ -729,7 +672,6 @@
         },
         {
           "name": "lineTaxPointDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineTaxPointDate",
@@ -738,7 +680,6 @@
         },
         {
           "name": "paymentId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": false,
           "displayName": "paymentId",
@@ -747,7 +688,6 @@
         },
         {
           "name": "paymentMethod",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentMethod",
@@ -756,7 +696,6 @@
         },
         {
           "name": "paymentRefDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "paymentRefDate",
@@ -765,7 +704,6 @@
         },
         {
           "name": "paymentRefNo",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentRefNo",
@@ -774,7 +712,6 @@
         },
         {
           "name": "period",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "period",
@@ -783,7 +720,6 @@
         },
         {
           "name": "periodYear",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "periodYear",
@@ -792,7 +728,6 @@
         },
         {
           "name": "postingStatus",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
@@ -801,7 +736,6 @@
         },
         {
           "name": "receiptAmountReporting",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "receiptAmountReporting",
@@ -822,7 +756,6 @@
         },
         {
           "name": "receiptAmountReportingCurrency",
-          "purpose": "hasA",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "receiptAmountReportingCurrency",
@@ -843,7 +776,6 @@
         },
         {
           "name": "receiptId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptId",
@@ -852,7 +784,6 @@
         },
         {
           "name": "referenceDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "referenceDate",
@@ -861,7 +792,6 @@
         },
         {
           "name": "referenceNumber",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "referenceNumber",
@@ -870,7 +800,6 @@
         },
         {
           "name": "segment01",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
@@ -879,7 +808,6 @@
         },
         {
           "name": "segment02",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
@@ -888,7 +816,6 @@
         },
         {
           "name": "segment03",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
@@ -897,7 +824,6 @@
         },
         {
           "name": "segment04",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
@@ -906,7 +832,6 @@
         },
         {
           "name": "segment05",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
@@ -915,7 +840,6 @@
         },
         {
           "name": "sourceId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "sourceId",
@@ -924,7 +848,6 @@
         },
         {
           "name": "systemEntryDateTime",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemEntryDateTime",
@@ -933,7 +856,6 @@
         },
         {
           "name": "systemEntryUser",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemEntryUser",
@@ -942,7 +864,6 @@
         },
         {
           "name": "systemId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemId",
@@ -951,7 +872,6 @@
         },
         {
           "name": "transactionDate",
-          "purpose": "hasA",
           "dataType": "date",
           "isNullable": true,
           "displayName": "transactionDate",
@@ -960,7 +880,6 @@
         },
         {
           "name": "transactionId",
-          "purpose": "hasA",
           "dataType": "string",
           "isNullable": true,
           "displayName": "transactionId",
