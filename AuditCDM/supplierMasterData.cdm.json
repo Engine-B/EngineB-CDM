@@ -1,462 +1,462 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "supplierMasterData",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
         {
-            "corpusPath": "cdm:/foundations.cdm.json"
-        }
-    ],
-    "definitions": [
+          "name": "accountId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "accountId",
+          "description": "General Ledger Account code for this supplier. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department.",
+          "appliedTraits": null
+        },
         {
-            "entityName": "supplierMasterData",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                {
-                    "name": "accountId",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "accountId",
-                    "description": "General Ledger Account code for this supplier. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "additionalAddressDetail",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "additionalAddressDetail",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressAddressType",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressAddressType",
-                    "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressBuilding",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressBuilding",
-                    "description": "The physical street address line 2 of the supplier.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressCity",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressCity",
-                    "description": "The physical city where the customer is located.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressCountry",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressCountry",
-                    "description": "The country code where the supplier is\r\nphysically located. Recommend ISO 3166-1\r\nAlpha 2 or ISO 3166-1 Alpha 3 format (XX or\r\nXXX).",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressNumber",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressNumber",
-                    "description": "The physical street address line 1 of the supplier.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressPostalCode",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressPostalCode",
-                    "description": "The zip code of the city where the customer is physically located.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressRegion",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressRegion",
-                    "description": "The physical state or province where the customer is located. Recommend ISO 3166-2.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "addressStreetName",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "addressStreetName",
-                    "description": "The physical Street where the customer is located.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "bankAccountId",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "bankAccountId",
-                    "description": "Unambiguous identification of the account to which credit and debit entries are made.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "bankAccountName",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "bankAccountName",
-                    "description": "The name of the individual or company holding the bank account.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "bankAccountNumber",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "bankAccountNumber",
-                    "description": "The number allocated to the account by the individual\ufffds or company\ufffds own bank.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "companyType",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "companyType",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "effectiveDate",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "effectiveDate",
-                    "description": "Date the customer declared active.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "email",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "email",
-                    "description": "Email address of the primary contact.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "expirationDate",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "expirationDate",
-                    "description": "Date the customer was declared inactive.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "fax",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "fax",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "firstName",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "firstName",
-                    "description": "The first (given) name of the person.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "IBANNumber",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "IBANNumber",
-                    "description": "International Bank Account Number, ISO 13616",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "lastName",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "lastName",
-                    "description": "The last (family) name of the person.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "legalEntityIdentifier",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "legalEntityIdentifier",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "name",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "name",
-                    "description": "The name of the supplier.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "paymentDiscountDays",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "paymentDiscountDays",
-                    "description": "The number of days from the invoice date\r\nthe supplier allows to take advantage of\r\ndiscounted terms. Terms are represented as\r\ndigits with no decimal places (for example,\r\nnnn).",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "paymentDiscountPercentage",
-                    "purpose": "hasA",
-                    "dataType": "decimal",
-                    "isNullable": true,
-                    "displayName": "paymentDiscountPercentage",
-                    "description": "The discount percentage the supplier may\r\nprovide if an invoice is paid before a certain\r\nnumber of days. In the flat file, terms are\r\nrepresented as digits to one decimal place\r\n(for example, 10% would be represented as\r\n10.0). In extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL), the three fields\r\nTerms_Discount_Percentage,\r\nTerms_Discount_Days and\r\nTerms_Due_Days would be entered in the\r\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\r\n30 for 2% discount if paid within 10 days,\r\nwith the net due in 30 days.",
-                    "appliedTraits": {
-                        "traitReference": "is.dataFormat.numeric.shaped",
-                        "arguments": [
-                            {
-                                "name": "precision",
-                                "value": "19"
-                            },
-                            {
-                                "name": "scale",
-                                "value": "5"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name": "paymentDueDays",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "paymentDueDays",
-                    "description": "The number of days allowed to meet the\r\nobligation before an invoice becomes\r\noverdue.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "registrationNumber",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "registrationNumber",
-                    "description": "Date on an externally generated transaction\r\n(for example, check date or wire transfer\r\ndate).",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "selfBillingIndicator",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "selfBillingIndicator",
-                    "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "sortCode",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "sortCode",
-                    "description": "Identifier for the bank branch at which the account is held. May be needed to uniquely identify the account.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "supplierCreditLimit",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "supplierCreditLimit",
-                    "description": "The credit limit for the total outstanding\r\nbalance approved for the supplier.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "supplierGroup",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "supplierGroup",
-                    "description": "If the organization segments suppliers into groups, the group to which this supplier is assigned.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "supplierId",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": false,
-                    "displayName": "supplierId",
-                    "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "supplierType",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "supplierType",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "systemApprovedDateTime",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "systemApprovedDateTime",
-                    "description": "The date  and time the entry was approved.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "systemApprovedUser",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "systemApprovedUser",
-                    "description": "User ID (from User_Listing file) for person\r\nwho approved the entry.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "systemEntryDateTime",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "systemEntryDateTime",
-                    "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "systemEntryUser",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "systemEntryUser",
-                    "description": "User_ID (from User_Listing file) for person\r\nwho created the record.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "systemModifiedDateTime",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "systemModifiedDateTime",
-                    "description": "The date and time the entry was last modified.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "systemModifiedUser",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "systemModifiedUser",
-                    "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "taxAuthority",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "taxAuthority",
-                    "description": "Identification of the Revenue Body to which this TaxType refers.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "taxNumber",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "taxNumber",
-                    "description": "The supplier's tax identification number.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "taxRegistrationNumber",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "taxRegistrationNumber",
-                    "description": "Unique number issued by a Revenue Body for use by the company.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "taxType",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "taxType",
-                    "description": "Tax type for look-up in tables",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "taxVerificationDate",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "taxVerificationDate",
-                    "description": "The date that the tax registration details referred to above were last checked.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "telephone",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "telephone",
-                    "description": "Phone number of the primary contact at the\r\nsupplier.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "title",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "title",
-                    "description": "The title of the person (for example, accounting manager).",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "transactionCreditLimit",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "transactionCreditLimit",
-                    "description": "The per invoice credit limit established with\r\nthis supplier.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "website",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "website",
-                    "description": null,
-                    "appliedTraits": null
-                }
+          "name": "additionalAddressDetail",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "additionalAddressDetail",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "addressAddressType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressAddressType",
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)",
+          "appliedTraits": null
+        },
+        {
+          "name": "addressBuilding",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressBuilding",
+          "description": "The physical street address line 2 of the supplier.",
+          "appliedTraits": null
+        },
+        {
+          "name": "addressCity",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressCity",
+          "description": "The physical city where the customer is located.",
+          "appliedTraits": null
+        },
+        {
+          "name": "addressCountry",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressCountry",
+          "description": "The country code where the supplier is\r\nphysically located. Recommend ISO 3166-1\r\nAlpha 2 or ISO 3166-1 Alpha 3 format (XX or\r\nXXX).",
+          "appliedTraits": null
+        },
+        {
+          "name": "addressNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressNumber",
+          "description": "The physical street address line 1 of the supplier.",
+          "appliedTraits": null
+        },
+        {
+          "name": "addressPostalCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressPostalCode",
+          "description": "The zip code of the city where the customer is physically located.",
+          "appliedTraits": null
+        },
+        {
+          "name": "addressRegion",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressRegion",
+          "description": "The physical state or province where the customer is located. Recommend ISO 3166-2.",
+          "appliedTraits": null
+        },
+        {
+          "name": "addressStreetName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "addressStreetName",
+          "description": "The physical Street where the customer is located.",
+          "appliedTraits": null
+        },
+        {
+          "name": "bankAccountId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "bankAccountId",
+          "description": "Unambiguous identification of the account to which credit and debit entries are made.",
+          "appliedTraits": null
+        },
+        {
+          "name": "bankAccountName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "bankAccountName",
+          "description": "The name of the individual or company holding the bank account.",
+          "appliedTraits": null
+        },
+        {
+          "name": "bankAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "bankAccountNumber",
+          "description": "The number allocated to the account by the individual\ufffds or company\ufffds own bank.",
+          "appliedTraits": null
+        },
+        {
+          "name": "companyType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "companyType",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "effectiveDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "effectiveDate",
+          "description": "Date the customer declared active.",
+          "appliedTraits": null
+        },
+        {
+          "name": "email",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "email",
+          "description": "Email address of the primary contact.",
+          "appliedTraits": null
+        },
+        {
+          "name": "expirationDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "expirationDate",
+          "description": "Date the customer was declared inactive.",
+          "appliedTraits": null
+        },
+        {
+          "name": "fax",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fax",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "firstName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "firstName",
+          "description": "The first (given) name of the person.",
+          "appliedTraits": null
+        },
+        {
+          "name": "IBANNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "IBANNumber",
+          "description": "International Bank Account Number, ISO 13616",
+          "appliedTraits": null
+        },
+        {
+          "name": "lastName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "lastName",
+          "description": "The last (family) name of the person.",
+          "appliedTraits": null
+        },
+        {
+          "name": "legalEntityIdentifier",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "legalEntityIdentifier",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "name",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "name",
+          "description": "The name of the supplier.",
+          "appliedTraits": null
+        },
+        {
+          "name": "paymentDiscountDays",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "paymentDiscountDays",
+          "description": "The number of days from the invoice date\r\nthe supplier allows to take advantage of\r\ndiscounted terms. Terms are represented as\r\ndigits with no decimal places (for example,\r\nnnn).",
+          "appliedTraits": null
+        },
+        {
+          "name": "paymentDiscountPercentage",
+          "purpose": "hasA",
+          "dataType": "decimal",
+          "isNullable": true,
+          "displayName": "paymentDiscountPercentage",
+          "description": "The discount percentage the supplier may\r\nprovide if an invoice is paid before a certain\r\nnumber of days. In the flat file, terms are\r\nrepresented as digits to one decimal place\r\n(for example, 10% would be represented as\r\n10.0). In extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL), the three fields\r\nTerms_Discount_Percentage,\r\nTerms_Discount_Days and\r\nTerms_Due_Days would be entered in the\r\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\r\n30 for 2% discount if paid within 10 days,\r\nwith the net due in 30 days.",
+          "appliedTraits": {
+            "traitReference": "is.dataFormat.numeric.shaped",
+            "arguments": [
+              {
+                "name": "precision",
+                "value": "19"
+              },
+              {
+                "name": "scale",
+                "value": "5"
+              }
             ]
+          }
+        },
+        {
+          "name": "paymentDueDays",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "paymentDueDays",
+          "description": "The number of days allowed to meet the\r\nobligation before an invoice becomes\r\noverdue.",
+          "appliedTraits": null
+        },
+        {
+          "name": "registrationNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "registrationNumber",
+          "description": "Date on an externally generated transaction\r\n(for example, check date or wire transfer\r\ndate).",
+          "appliedTraits": null
+        },
+        {
+          "name": "selfBillingIndicator",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "selfBillingIndicator",
+          "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier",
+          "appliedTraits": null
+        },
+        {
+          "name": "sortCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "sortCode",
+          "description": "Identifier for the bank branch at which the account is held. May be needed to uniquely identify the account.",
+          "appliedTraits": null
+        },
+        {
+          "name": "supplierCreditLimit",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "supplierCreditLimit",
+          "description": "The credit limit for the total outstanding\r\nbalance approved for the supplier.",
+          "appliedTraits": null
+        },
+        {
+          "name": "supplierGroup",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "supplierGroup",
+          "description": "If the organization segments suppliers into groups, the group to which this supplier is assigned.",
+          "appliedTraits": null
+        },
+        {
+          "name": "supplierId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": false,
+          "displayName": "supplierId",
+          "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file.",
+          "appliedTraits": null
+        },
+        {
+          "name": "supplierType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "supplierType",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "systemApprovedDateTime",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "systemApprovedDateTime",
+          "description": "The date  and time the entry was approved.",
+          "appliedTraits": null
+        },
+        {
+          "name": "systemApprovedUser",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "systemApprovedUser",
+          "description": "User ID (from User_Listing file) for person\r\nwho approved the entry.",
+          "appliedTraits": null
+        },
+        {
+          "name": "systemEntryDateTime",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "systemEntryDateTime",
+          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself.",
+          "appliedTraits": null
+        },
+        {
+          "name": "systemEntryUser",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "systemEntryUser",
+          "description": "User_ID (from User_Listing file) for person\r\nwho created the record.",
+          "appliedTraits": null
+        },
+        {
+          "name": "systemModifiedDateTime",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "systemModifiedDateTime",
+          "description": "The date and time the entry was last modified.",
+          "appliedTraits": null
+        },
+        {
+          "name": "systemModifiedUser",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "systemModifiedUser",
+          "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry.",
+          "appliedTraits": null
+        },
+        {
+          "name": "taxAuthority",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "taxAuthority",
+          "description": "Identification of the Revenue Body to which this TaxType refers.",
+          "appliedTraits": null
+        },
+        {
+          "name": "taxNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "taxNumber",
+          "description": "The supplier's tax identification number.",
+          "appliedTraits": null
+        },
+        {
+          "name": "taxRegistrationNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "taxRegistrationNumber",
+          "description": "Unique number issued by a Revenue Body for use by the company.",
+          "appliedTraits": null
+        },
+        {
+          "name": "taxType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "taxType",
+          "description": "Tax type for look-up in tables",
+          "appliedTraits": null
+        },
+        {
+          "name": "taxVerificationDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "taxVerificationDate",
+          "description": "The date that the tax registration details referred to above were last checked.",
+          "appliedTraits": null
+        },
+        {
+          "name": "telephone",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "telephone",
+          "description": "Phone number of the primary contact at the\r\nsupplier.",
+          "appliedTraits": null
+        },
+        {
+          "name": "title",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "title",
+          "description": "The title of the person (for example, accounting manager).",
+          "appliedTraits": null
+        },
+        {
+          "name": "transactionCreditLimit",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "transactionCreditLimit",
+          "description": "The per invoice credit limit established with\r\nthis supplier.",
+          "appliedTraits": null
+        },
+        {
+          "name": "website",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "website",
+          "description": null,
+          "appliedTraits": null
         }
-    ],
-    "displayName": "supplierMasterData",
-    "description": ""
+      ]
+    }
+  ],
+  "displayName": "supplierMasterData",
+  "description": ""
 }

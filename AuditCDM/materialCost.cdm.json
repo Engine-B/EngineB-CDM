@@ -1,198 +1,198 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "materialCost",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
         {
-            "corpusPath": "cdm:/foundations.cdm.json"
-        }
-    ],
-    "definitions": [
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
+          "appliedTraits": null
+        },
         {
-            "entityName": "materialCost",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                {
-                    "name": "businessUnitCode",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "businessUnitCode",
-                    "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "costingType",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "costingType",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "inventoryProductId",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "inventoryProductId",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "locationId",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "locationId",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "materialId",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": false,
-                    "displayName": "materialId",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "otherCost1",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "otherCost1",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "otherCost2",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "otherCost2",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "otherCost3",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "otherCost3",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "otherCost4",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "otherCost4",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "otherCost5",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "otherCost5",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "segment01",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "segment01",
-                    "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "segment02",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "segment02",
-                    "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "segment03",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "segment03",
-                    "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "segment04",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "segment04",
-                    "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "segment05",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "segment05",
-                    "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "stockingUnitOfMeasure",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "stockingUnitOfMeasure",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "totalCost",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "totalCost",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "validFromDate",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "validFromDate",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "validToDate",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "validToDate",
-                    "description": null,
-                    "appliedTraits": null
-                },
-                {
-                    "name": "valuationDate",
-                    "purpose": "hasA",
-                    "dataType": "date",
-                    "isNullable": true,
-                    "displayName": "valuationDate",
-                    "description": null,
-                    "appliedTraits": null
-                }
-            ]
+          "name": "costingType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "costingType",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "inventoryProductId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "inventoryProductId",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "locationId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "locationId",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "materialId",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": false,
+          "displayName": "materialId",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "otherCost1",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "otherCost1",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "otherCost2",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "otherCost2",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "otherCost3",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "otherCost3",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "otherCost4",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "otherCost4",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "otherCost5",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "otherCost5",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment01",
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "appliedTraits": null
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment02",
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "appliedTraits": null
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment03",
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "appliedTraits": null
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment04",
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "appliedTraits": null
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment05",
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on.",
+          "appliedTraits": null
+        },
+        {
+          "name": "stockingUnitOfMeasure",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "stockingUnitOfMeasure",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "totalCost",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "totalCost",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "validFromDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "validFromDate",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "validToDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "validToDate",
+          "description": null,
+          "appliedTraits": null
+        },
+        {
+          "name": "valuationDate",
+          "purpose": "hasA",
+          "dataType": "date",
+          "isNullable": true,
+          "displayName": "valuationDate",
+          "description": null,
+          "appliedTraits": null
         }
-    ],
-    "displayName": "materialCost",
-    "description": ""
+      ]
+    }
+  ],
+  "displayName": "materialCost",
+  "description": ""
 }

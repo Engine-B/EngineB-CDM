@@ -1,36 +1,36 @@
 {
-    "jsonSchemaSemanticVersion": "1.0.0",
-    "imports": [
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "segmentListing",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
         {
-            "corpusPath": "cdm:/foundations.cdm.json"
-        }
-    ],
-    "definitions": [
+          "name": "segment0XDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment0XDescription",
+          "description": "Segment description to indicate the name or",
+          "appliedTraits": null
+        },
         {
-            "entityName": "segmentListing",
-            "extendsEntity": "CdmEntity",
-            "hasAttributes": [
-                {
-                    "name": "segment0XDescription",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": true,
-                    "displayName": "segment0XDescription",
-                    "description": "Segment description to indicate the name or",
-                    "appliedTraits": null
-                },
-                {
-                    "name": "segment0XValue",
-                    "purpose": "hasA",
-                    "dataType": "string",
-                    "isNullable": false,
-                    "displayName": "segment0XValue",
-                    "description": "Value of Segment0X (X may equal 1 to 5).",
-                    "appliedTraits": null
-                }
-            ]
+          "name": "segment0XValue",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": false,
+          "displayName": "segment0XValue",
+          "description": "Value of Segment0X (X may equal 1 to 5).",
+          "appliedTraits": null
         }
-    ],
-    "displayName": "segmentListing",
-    "description": ""
+      ]
+    }
+  ],
+  "displayName": "segmentListing",
+  "description": ""
 }
