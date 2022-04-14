@@ -2,475 +2,141 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/materialCost.cdm.json",
-      "moniker": "resolvedFrom"
+      "corpusPath": "_allImports.cdm.json"
     }
   ],
   "definitions": [
     {
       "entityName": "materialCost",
-      "attributeContext": {
-        "type": "entity",
-        "name": "materialCost",
-        "definition": "resolvedFrom/materialCost",
-        "contents": [
-          {
-            "type": "entityReferenceExtends",
-            "name": "extends",
-            "parent": "materialCost/attributeContext/materialCost",
-            "contents": [
-              {
-                "type": "entity",
-                "name": "CdmEntity",
-                "parent": "materialCost/attributeContext/materialCost/extends",
-                "definition": "resolvedFrom/CdmEntity"
-              }
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "businessUnitCode",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/businessUnitCode",
-            "contents": [
-              "materialCost/hasAttributes/businessUnitCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "costingType",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/costingType",
-            "contents": [
-              "materialCost/hasAttributes/costingType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "inventoryProductId",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/inventoryProductId",
-            "contents": [
-              "materialCost/hasAttributes/inventoryProductId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "locationId",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/locationId",
-            "contents": [
-              "materialCost/hasAttributes/locationId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "materialId",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/materialId",
-            "contents": [
-              "materialCost/hasAttributes/materialId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "otherCost1",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost1",
-            "contents": [
-              "materialCost/hasAttributes/otherCost1"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "otherCost2",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost2",
-            "contents": [
-              "materialCost/hasAttributes/otherCost2"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "otherCost3",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost3",
-            "contents": [
-              "materialCost/hasAttributes/otherCost3"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "otherCost4",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost4",
-            "contents": [
-              "materialCost/hasAttributes/otherCost4"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "otherCost5",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/otherCost5",
-            "contents": [
-              "materialCost/hasAttributes/otherCost5"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment01",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/segment01",
-            "contents": [
-              "materialCost/hasAttributes/segment01"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment02",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/segment02",
-            "contents": [
-              "materialCost/hasAttributes/segment02"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment03",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/segment03",
-            "contents": [
-              "materialCost/hasAttributes/segment03"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment04",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/segment04",
-            "contents": [
-              "materialCost/hasAttributes/segment04"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment05",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/segment05",
-            "contents": [
-              "materialCost/hasAttributes/segment05"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "stockingUnitOfMeasure",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/stockingUnitOfMeasure",
-            "contents": [
-              "materialCost/hasAttributes/stockingUnitOfMeasure"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "totalCost",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/totalCost",
-            "contents": [
-              "materialCost/hasAttributes/totalCost"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "validFromDate",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/validFromDate",
-            "contents": [
-              "materialCost/hasAttributes/validFromDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "validToDate",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/validToDate",
-            "contents": [
-              "materialCost/hasAttributes/validToDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "valuationDate",
-            "parent": "materialCost/attributeContext/materialCost",
-            "definition": "resolvedFrom/materialCost/hasAttributes/valuationDate",
-            "contents": [
-              "materialCost/hasAttributes/valuationDate"
-            ]
-          }
-        ]
-      },
+      "extendsEntity": "CdmEntity",
       "hasAttributes": [
         {
           "name": "businessUnitCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/businessUnitCode",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "costingType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/costingType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "costingType",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "costingType"
         },
         {
           "name": "inventoryProductId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/inventoryProductId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "inventoryProductId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "inventoryProductId"
         },
         {
           "name": "locationId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/locationId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "locationId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "locationId"
         },
         {
           "name": "materialId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/materialId",
-          "isPrimaryKey": true,
-          "dataFormat": "String",
-          "displayName": "materialId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "false",
+          "displayName": "materialId"
         },
         {
           "name": "otherCost1",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/otherCost1",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "otherCost1",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "otherCost1"
         },
         {
           "name": "otherCost2",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/otherCost2",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "otherCost2",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "otherCost2"
         },
         {
           "name": "otherCost3",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/otherCost3",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "otherCost3",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "otherCost3"
         },
         {
           "name": "otherCost4",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/otherCost4",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "otherCost4",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "otherCost4"
         },
         {
           "name": "otherCost5",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/otherCost5",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "otherCost5",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "otherCost5"
         },
         {
           "name": "segment01",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/segment01",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment01",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/segment02",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment02",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/segment03",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment03",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/segment04",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment04",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/segment05",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment05",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "stockingUnitOfMeasure",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/stockingUnitOfMeasure",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "stockingUnitOfMeasure",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "stockingUnitOfMeasure"
         },
         {
           "name": "totalCost",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/totalCost",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "totalCost",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "totalCost"
         },
         {
           "name": "validFromDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/validFromDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "validFromDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "validFromDate"
         },
         {
           "name": "validToDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/validToDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "validToDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "validToDate"
         },
         {
           "name": "valuationDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "materialCost/attributeContext/materialCost/valuationDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "valuationDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "valuationDate"
         }
-      ],
-      "displayName": "materialCost",
-      "description": "",
-      "version": "1.0"
+      ]
     }
   ]
 }

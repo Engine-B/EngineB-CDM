@@ -2,672 +2,275 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/fixedAssetDepreciation.cdm.json",
-      "moniker": "resolvedFrom"
+      "corpusPath": "_allImports.cdm.json"
     }
   ],
   "definitions": [
     {
       "entityName": "fixedAssetDepreciation",
-      "attributeContext": {
-        "type": "entity",
-        "name": "fixedAssetDepreciation",
-        "definition": "resolvedFrom/fixedAssetDepreciation",
-        "contents": [
-          {
-            "type": "entityReferenceExtends",
-            "name": "extends",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "contents": [
-              {
-                "type": "entity",
-                "name": "CdmEntity",
-                "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/extends",
-                "definition": "resolvedFrom/CdmEntity"
-              }
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "approvedBy",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/approvedBy",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/approvedBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "approvedByDate",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/approvedByDate",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/approvedByDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "businessUnitCode",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/businessUnitCode",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/businessUnitCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "depreciationEffectiveDate",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/depreciationEffectiveDate",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/depreciationEffectiveDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "depreciationForPeriod",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/depreciationForPeriod",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/depreciationForPeriod"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "depreciationRate",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/depreciationRate",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/depreciationRate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "enteredBy",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/enteredBy",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/enteredBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "enteredDate",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/enteredDate",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/enteredDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetDepreciableBasis",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetDepreciableBasis",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetDepreciableBasis"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetDepreciationAmount",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetDepreciationAmount",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetDepreciationAmount"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetDepreciationId",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetDepreciationId",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetDepreciationId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetDepreciationMethod",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetDepreciationMethod",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetDepreciationMethod"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetFairValue",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetFairValue",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetFairValue"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetId",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetId",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetReplacementCost",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetReplacementCost",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetReplacementCost"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetSalvageValue",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetSalvageValue",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetSalvageValue"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetUsefulLife",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/fixedAssetUsefulLife",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/fixedAssetUsefulLife"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "glAccount",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/glAccount",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/glAccount"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "glTransactionId",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/glTransactionId",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/glTransactionId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lastModifiedBy",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/lastModifiedBy",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/lastModifiedBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lastModifiedByDate",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/lastModifiedByDate",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/lastModifiedByDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lotNumber",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/lotNumber",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/lotNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment01",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/segment01",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/segment01"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment02",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/segment02",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/segment02"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment03",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/segment03",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/segment03"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment04",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/segment04",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/segment04"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment05",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/segment05",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/segment05"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "serialNumber",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/serialNumber",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/serialNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "uniqueId",
-            "parent": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation",
-            "definition": "resolvedFrom/fixedAssetDepreciation/hasAttributes/uniqueId",
-            "contents": [
-              "fixedAssetDepreciation/hasAttributes/uniqueId"
-            ]
-          }
-        ]
-      },
+      "extendsEntity": "CdmEntity",
       "hasAttributes": [
         {
           "name": "approvedBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/approvedBy",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
+          "description": "User ID (from User_Listing file) for person who approved the entry."
         },
         {
           "name": "approvedByDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/approvedByDate",
-          "isNullable": true,
-          "dataFormat": "Date",
+          "dataType": "date",
+          "isNullable": "true",
           "displayName": "approvedByDate",
-          "description": "Date the entry was approved.\n"
+          "description": "Date the entry was approved."
         },
         {
           "name": "businessUnitCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/businessUnitCode",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "depreciationEffectiveDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/depreciationEffectiveDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "depreciationEffectiveDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "depreciationEffectiveDate"
         },
         {
           "name": "depreciationForPeriod",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/depreciationForPeriod",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "depreciationForPeriod",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "depreciationForPeriod"
         },
         {
           "name": "depreciationRate",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "depreciationRate",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/depreciationRate",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "depreciationRate",
-          "description": ""
+          ]
         },
         {
           "name": "enteredBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/enteredBy",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "enteredBy",
-          "description": "User_ID (from User_Listing file) for person who created the record.\n"
+          "description": "User_ID (from User_Listing file) for person who created the record."
         },
         {
           "name": "enteredDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/enteredDate",
-          "isNullable": true,
-          "dataFormat": "Date",
+          "dataType": "date",
+          "isNullable": "true",
           "displayName": "enteredDate",
-          "description": "\"Date the order was entered into the system.\nThis is sometimes referred to as the creation\ndate. This should be a system-generated\ndate (rather than user-entered date), when\npossible. This date does not necessarily\ncorrespond with the date of the transaction\nitself.\"\n"
+          "description": "Date the order was entered into the system.\r\nThis is sometimes referred to as the creation\r\ndate. This should be a system-generated\r\ndate (rather than user-entered date), when\r\npossible. This date does not necessarily\r\ncorrespond with the date of the transaction\r\nitself."
         },
         {
           "name": "fixedAssetDepreciableBasis",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciableBasis",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetDepreciableBasis",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "fixedAssetDepreciableBasis"
         },
         {
           "name": "fixedAssetDepreciationAmount",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "fixedAssetDepreciationAmount",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciationAmount",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "fixedAssetDepreciationAmount",
-          "description": ""
+          ]
         },
         {
           "name": "fixedAssetDepreciationId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciationId",
-          "isPrimaryKey": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetDepreciationId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "false",
+          "displayName": "fixedAssetDepreciationId"
         },
         {
           "name": "fixedAssetDepreciationMethod",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetDepreciationMethod",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetDepreciationMethod",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "fixedAssetDepreciationMethod"
         },
         {
           "name": "fixedAssetFairValue",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "fixedAssetFairValue",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetFairValue",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "fixedAssetFairValue",
-          "description": ""
+          ]
         },
         {
           "name": "fixedAssetId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "fixedAssetId"
         },
         {
           "name": "fixedAssetReplacementCost",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "fixedAssetReplacementCost",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetReplacementCost",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "fixedAssetReplacementCost",
-          "description": ""
+          ]
         },
         {
           "name": "fixedAssetSalvageValue",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "fixedAssetSalvageValue",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetSalvageValue",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "fixedAssetSalvageValue",
-          "description": ""
+          ]
         },
         {
           "name": "fixedAssetUsefulLife",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/fixedAssetUsefulLife",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetUsefulLife",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "fixedAssetUsefulLife"
         },
         {
           "name": "glAccount",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/glAccount",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "glAccount",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "glAccount"
         },
         {
           "name": "glTransactionId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/glTransactionId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "glTransactionId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "glTransactionId"
         },
         {
           "name": "lastModifiedBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/lastModifiedBy",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "lastModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
         },
         {
           "name": "lastModifiedByDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/lastModifiedByDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "lastModifiedByDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "lastModifiedByDate"
         },
         {
           "name": "lotNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/lotNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "lotNumber",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "lotNumber"
         },
         {
           "name": "segment01",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment01",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment01",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment02",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment02",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment03",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment03",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment04",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment04",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/segment05",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment05",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "serialNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/serialNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "serialNumber",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "serialNumber"
         },
         {
           "name": "uniqueId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetDepreciation/attributeContext/fixedAssetDepreciation/uniqueId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "uniqueId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "uniqueId"
         }
-      ],
-      "displayName": "fixedAssetDepreciation",
-      "description": "",
-      "version": "1.0"
+      ]
     }
   ]
 }

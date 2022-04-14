@@ -2,692 +2,224 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/fixedAssetAdditions.cdm.json",
-      "moniker": "resolvedFrom"
+      "corpusPath": "_allImports.cdm.json"
     }
   ],
   "definitions": [
     {
       "entityName": "fixedAssetAdditions",
-      "attributeContext": {
-        "type": "entity",
-        "name": "fixedAssetAdditions",
-        "definition": "resolvedFrom/fixedAssetAdditions",
-        "contents": [
-          {
-            "type": "entityReferenceExtends",
-            "name": "extends",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "contents": [
-              {
-                "type": "entity",
-                "name": "CdmEntity",
-                "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/extends",
-                "definition": "resolvedFrom/CdmEntity"
-              }
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "acquisitionDetails",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/acquisitionDetails",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/acquisitionDetails"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "additionType",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/additionType",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/additionType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "approvedBy",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/approvedBy",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/approvedBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "approvedByDate",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/approvedByDate",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/approvedByDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "businessUnitCode",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/businessUnitCode",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/businessUnitCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "enteredBy",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/enteredBy",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/enteredBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "enteredDate",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/enteredDate",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/enteredDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetAdditionDate",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/fixedAssetAdditionDate",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/fixedAssetAdditionDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetAdditionId",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/fixedAssetAdditionId",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/fixedAssetAdditionId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetCost",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/fixedAssetCost",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/fixedAssetCost"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetId",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/fixedAssetId",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/fixedAssetId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fixedAssetUniqueId",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/fixedAssetUniqueId",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/fixedAssetUniqueId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "glAccount",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/glAccount",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/glAccount"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "glTransactionId",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/glTransactionId",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/glTransactionId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lastModifiedBy",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/lastModifiedBy",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/lastModifiedBy"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lastModifiedByDate",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/lastModifiedByDate",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/lastModifiedByDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "lotNumber",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/lotNumber",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/lotNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "placedInService",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/placedInService",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/placedInService"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "purchaseOrderDate",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/purchaseOrderDate",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/purchaseOrderDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "purchaseOrderId",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/purchaseOrderId",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/purchaseOrderId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "purchaseOrderRaisedDate",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/purchaseOrderRaisedDate",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/purchaseOrderRaisedDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment01",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/segment01",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/segment01"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment02",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/segment02",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/segment02"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment03",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/segment03",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/segment03"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment04",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/segment04",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/segment04"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment05",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/segment05",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/segment05"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "serialNumber",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/serialNumber",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/serialNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "supplierId",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/supplierId",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/supplierId"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "supplierName",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/supplierName",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/supplierName"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "vatCode",
-            "parent": "fixedAssetAdditions/attributeContext/fixedAssetAdditions",
-            "definition": "resolvedFrom/fixedAssetAdditions/hasAttributes/vatCode",
-            "contents": [
-              "fixedAssetAdditions/hasAttributes/vatCode"
-            ]
-          }
-        ]
-      },
+      "extendsEntity": "CdmEntity",
       "hasAttributes": [
         {
           "name": "acquisitionDetails",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/acquisitionDetails",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "acquisitionDetails",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "acquisitionDetails"
         },
         {
           "name": "additionType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/additionType",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "additionType",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "additionType"
         },
         {
           "name": "approvedBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/approvedBy",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry.\n"
+          "description": "User ID (from User_Listing file) for person who approved the entry."
         },
         {
           "name": "approvedByDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/approvedByDate",
-          "isNullable": true,
-          "dataFormat": "Date",
+          "dataType": "date",
+          "isNullable": "true",
           "displayName": "approvedByDate",
-          "description": "Date the entry was approved.\n"
+          "description": "Date the entry was approved."
         },
         {
           "name": "businessUnitCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/businessUnitCode",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "enteredBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/enteredBy",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "enteredBy",
-          "description": "User_ID (from User_Listing file) for person who created the record.\n"
+          "description": "User_ID (from User_Listing file) for person who created the record."
         },
         {
           "name": "enteredDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/enteredDate",
-          "isNullable": true,
-          "dataFormat": "Date",
+          "dataType": "date",
+          "isNullable": "true",
           "displayName": "enteredDate",
-          "description": "\"Date the order was entered into the system.\nThis is sometimes referred to as the creation\ndate. This should be a system-generated\ndate (rather than user-entered date), when\npossible. This date does not necessarily\ncorrespond with the date of the transaction\nitself.\"\n"
+          "description": "Date the order was entered into the system.\r\nThis is sometimes referred to as the creation\r\ndate. This should be a system-generated\r\ndate (rather than user-entered date), when\r\npossible. This date does not necessarily\r\ncorrespond with the date of the transaction\r\nitself."
         },
         {
           "name": "fixedAssetAdditionDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetAdditionDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "fixedAssetAdditionDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "fixedAssetAdditionDate"
         },
         {
           "name": "fixedAssetAdditionId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetAdditionId",
-          "isPrimaryKey": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetAdditionId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "false",
+          "displayName": "fixedAssetAdditionId"
         },
         {
           "name": "fixedAssetCost",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "fixedAssetCost",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetCost",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "fixedAssetCost",
-          "description": ""
+          ]
         },
         {
           "name": "fixedAssetId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "fixedAssetId"
         },
         {
           "name": "fixedAssetUniqueId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/fixedAssetUniqueId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "fixedAssetUniqueId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "fixedAssetUniqueId"
         },
         {
           "name": "glAccount",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/glAccount",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "glAccount",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "glAccount"
         },
         {
           "name": "glTransactionId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/glTransactionId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "glTransactionId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "glTransactionId"
         },
         {
           "name": "lastModifiedBy",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/lastModifiedBy",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "lastModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.\n"
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
         },
         {
           "name": "lastModifiedByDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/lastModifiedByDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "lastModifiedByDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "lastModifiedByDate"
         },
         {
           "name": "lotNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/lotNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "lotNumber",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "lotNumber"
         },
         {
           "name": "placedInService",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/placedInService",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "placedInService",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "placedInService"
         },
         {
           "name": "purchaseOrderDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/purchaseOrderDate",
-          "isNullable": true,
-          "dataFormat": "Date",
+          "dataType": "date",
+          "isNullable": "true",
           "displayName": "purchaseOrderDate",
-          "description": "\"The date of the purchase order, regardless of\nthe date the order is entered. If no purchase\norder leave blank.\"\n"
+          "description": "The date of the purchase order, regardless of\r\nthe date the order is entered. If no purchase\r\norder leave blank."
         },
         {
           "name": "purchaseOrderId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/purchaseOrderId",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "purchaseOrderId",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "purchaseOrderId"
         },
         {
           "name": "purchaseOrderRaisedDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/purchaseOrderRaisedDate",
-          "isNullable": true,
-          "dataFormat": "Date",
-          "displayName": "purchaseOrderRaisedDate",
-          "description": ""
+          "dataType": "date",
+          "isNullable": "true",
+          "displayName": "purchaseOrderRaisedDate"
         },
         {
           "name": "segment01",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment01",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment01",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment02",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment02",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment03",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment03",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment04",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment04",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/segment05",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment05",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "serialNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/serialNumber",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "serialNumber",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "serialNumber"
         },
         {
           "name": "supplierId",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/supplierId",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "supplierId",
-          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
+          "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
         },
         {
           "name": "supplierName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/supplierName",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "supplierName",
-          "description": "Name of the supplier\n"
+          "description": "Name of the supplier"
         },
         {
           "name": "vatCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "fixedAssetAdditions/attributeContext/fixedAssetAdditions/vatCode",
-          "isNullable": true,
-          "dataFormat": "String",
-          "displayName": "vatCode",
-          "description": ""
+          "dataType": "string",
+          "isNullable": "true",
+          "displayName": "vatCode"
         }
-      ],
-      "displayName": "fixedAssetAdditions",
-      "description": "",
-      "version": "1.0"
+      ]
     }
   ]
 }

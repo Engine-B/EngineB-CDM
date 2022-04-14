@@ -2,455 +2,238 @@
   "jsonSchemaSemanticVersion": "1.0.0",
   "imports": [
     {
-      "corpusPath": "/trialBalance.cdm.json",
-      "moniker": "resolvedFrom"
+      "corpusPath": "_allImports.cdm.json"
     }
   ],
   "definitions": [
     {
       "entityName": "trialBalance",
-      "attributeContext": {
-        "type": "entity",
-        "name": "trialBalance",
-        "definition": "resolvedFrom/trialBalance",
-        "contents": [
-          {
-            "type": "entityReferenceExtends",
-            "name": "extends",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "contents": [
-              {
-                "type": "entity",
-                "name": "CdmEntity",
-                "parent": "trialBalance/attributeContext/trialBalance/extends",
-                "definition": "resolvedFrom/CdmEntity"
-              }
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountBeginning",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountBeginning",
-            "contents": [
-              "trialBalance/hasAttributes/amountBeginning"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountBeginningLocal",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountBeginningLocal",
-            "contents": [
-              "trialBalance/hasAttributes/amountBeginningLocal"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountBeginningReporting",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountBeginningReporting",
-            "contents": [
-              "trialBalance/hasAttributes/amountBeginningReporting"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountCurrency",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountCurrency",
-            "contents": [
-              "trialBalance/hasAttributes/amountCurrency"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountEnding",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountEnding",
-            "contents": [
-              "trialBalance/hasAttributes/amountEnding"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountEndingLocal",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountEndingLocal",
-            "contents": [
-              "trialBalance/hasAttributes/amountEndingLocal"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountEndingReporting",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountEndingReporting",
-            "contents": [
-              "trialBalance/hasAttributes/amountEndingReporting"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountLocalCurrency",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountLocalCurrency",
-            "contents": [
-              "trialBalance/hasAttributes/amountLocalCurrency"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "amountReportingCurrency",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/amountReportingCurrency",
-            "contents": [
-              "trialBalance/hasAttributes/amountReportingCurrency"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "balanceAsOfDate",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/balanceAsOfDate",
-            "contents": [
-              "trialBalance/hasAttributes/balanceAsOfDate"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "businessUnitCode",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/businessUnitCode",
-            "contents": [
-              "trialBalance/hasAttributes/businessUnitCode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "fiscalYear",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/fiscalYear",
-            "contents": [
-              "trialBalance/hasAttributes/fiscalYear"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "glAccountNumber",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/glAccountNumber",
-            "contents": [
-              "trialBalance/hasAttributes/glAccountNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "period",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/period",
-            "contents": [
-              "trialBalance/hasAttributes/period"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment01",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/segment01",
-            "contents": [
-              "trialBalance/hasAttributes/segment01"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment02",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/segment02",
-            "contents": [
-              "trialBalance/hasAttributes/segment02"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment03",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/segment03",
-            "contents": [
-              "trialBalance/hasAttributes/segment03"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment04",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/segment04",
-            "contents": [
-              "trialBalance/hasAttributes/segment04"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "segment05",
-            "parent": "trialBalance/attributeContext/trialBalance",
-            "definition": "resolvedFrom/trialBalance/hasAttributes/segment05",
-            "contents": [
-              "trialBalance/hasAttributes/segment05"
-            ]
-          }
-        ]
-      },
+      "extendsEntity": "CdmEntity",
       "hasAttributes": [
         {
           "name": "amountBeginning",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "amountBeginning",
+          "description": "Period beginning balance amount (that is,\r\nthe ending balance from the prior period)\r\nrecorded in the functional or group currency.\r\nNo multicurrency translation should need to\r\nbe performed on this amount because all\r\nare recorded in a single currency.",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountBeginning",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "amountBeginning",
-          "description": "\"Period beginning balance amount (that is,\nthe ending balance from the prior period)\nrecorded in the functional or group currency.\nNo multicurrency translation should need to\nbe performed on this amount because all\nare recorded in a single currency.\"\n"
+          ]
         },
         {
           "name": "amountBeginningLocal",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "amountBeginningLocal",
+          "description": "Period beginning balance amount in the\r\nlocal country currency for multicurrency\r\ntracking.",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountBeginningLocal",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "amountBeginningLocal",
-          "description": "\"Period beginning balance amount in the\nlocal country currency for multicurrency\ntracking.\"\n"
+          ]
         },
         {
           "name": "amountBeginningReporting",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "amountBeginningReporting",
+          "description": "Period beginning balance amount in\r\nreporting currency used for statutory\r\nreporting.",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountBeginningReporting",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "amountBeginningReporting",
-          "description": "\"Period beginning balance amount in\nreporting currency used for statutory\nreporting.\"\n"
+          ]
         },
         {
           "name": "amountCurrency",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountCurrency",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "amountCurrency",
-          "description": "\"The functional or group currency related to\nthe balance. See ISO 4217 coding.\"\n"
+          "description": "The functional or group currency related to\r\nthe balance. See ISO 4217 coding."
         },
         {
           "name": "amountEnding",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "amountEnding",
+          "description": "Period ending balance amount recorded in\r\nthe functional or group currency. No\r\nmulticurrency translation should need to be\r\nperformed on this amount because all are\r\nrecorded in a single currency.",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountEnding",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "amountEnding",
-          "description": "\"Period ending balance amount recorded in\nthe functional or group currency. No\nmulticurrency translation should need to be\nperformed on this amount because all are\nrecorded in a single currency.\"\n"
+          ]
         },
         {
           "name": "amountEndingLocal",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "amountEndingLocal",
+          "description": "Period ending balance amount in the local\r\ncountry currency for multicurrency tracking.",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountEndingLocal",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "amountEndingLocal",
-          "description": "\"Period ending balance amount in the local\ncountry currency for multicurrency tracking.\"\n"
+          ]
         },
         {
           "name": "amountEndingReporting",
+          "dataType": "decimal",
+          "isNullable": "true",
+          "displayName": "amountEndingReporting",
+          "description": "Period ending balance amount in reporting\r\ncurrency used for statutory reporting.",
           "appliedTraits": [
             {
-              "traitReference": "is.dataFormat.numeric.shaped"
+              "traitReference": "is.dataFormat.numeric.shaped",
+              "arguments": [
+                {
+                  "name": "precision",
+                  "value": "19"
+                },
+                {
+                  "name": "scale",
+                  "value": "5"
+                }
+              ]
             }
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountEndingReporting",
-          "isNullable": true,
-          "dataFormat": "Decimal",
-          "displayName": "amountEndingReporting",
-          "description": "\"Period ending balance amount in reporting\ncurrency used for statutory reporting.\"\n"
+          ]
         },
         {
           "name": "amountLocalCurrency",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountLocalCurrency",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "amountLocalCurrency",
-          "description": "\"The currency used for local country\nreporting requirements. See ISO 4217\ncoding.\"\n"
+          "description": "The currency used for local country\r\nreporting requirements. See ISO 4217\r\ncoding."
         },
         {
           "name": "amountReportingCurrency",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/amountReportingCurrency",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "amountReportingCurrency",
-          "description": "\"The currency used for nonconsolidated\nreporting as opposed to functional or\nconsolidated reporting or local or actual\namounts. See ISO 4217 coding.\"\n"
+          "description": "The currency used for nonconsolidated\r\nreporting as opposed to functional or\r\nconsolidated reporting or local or actual\r\namounts. See ISO 4217 coding."
         },
         {
           "name": "balanceAsOfDate",
-          "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/balanceAsOfDate",
-          "isNullable": true,
-          "dataFormat": "Date",
+          "dataType": "date",
+          "isNullable": "true",
           "displayName": "balanceAsOfDate",
-          "description": "Date of the provided balance, not when the Trial_Balance file was created (for example, 20141231 if year-end balance, even if the report was run on 20150122).\n"
+          "description": "Date of the provided balance, not when the Trial_Balance file was created (for example, 20141231 if year-end balance, even if the report was run on 20150122)."
         },
         {
           "name": "businessUnitCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/businessUnitCode",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "fiscalYear",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/fiscalYear",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "fiscalYear",
-          "description": "Fiscal year in which Effective_Date occurs—YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL).\n"
+          "description": "Fiscal year in which Effective_Date occurs\ufffdYYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for Extensible Business Reporting Language Global Ledger taxonomy framework (XBRL GL)."
         },
         {
           "name": "glAccountNumber",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/glAccountNumber",
-          "isPrimaryKey": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "false",
           "displayName": "glAccountNumber",
-          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files.\n"
+          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
         },
         {
           "name": "period",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/period",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "period",
-          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1‚ÄìW53 for weekly periods, M1‚ÄìM12 for monthly periods, and Q1‚ÄìQ4 for quarterly periods.\n"
+          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods."
         },
         {
           "name": "segment01",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/segment01",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment01",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/segment02",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment02",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/segment03",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment03",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/segment04",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment04",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "trialBalance/attributeContext/trialBalance/segment05",
-          "isNullable": true,
-          "dataFormat": "String",
+          "dataType": "string",
+          "isNullable": "true",
           "displayName": "segment05",
-          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         }
-      ],
-      "displayName": "trialBalance",
-      "description": "",
-      "version": "1.0"
+      ]
     }
   ]
 }
