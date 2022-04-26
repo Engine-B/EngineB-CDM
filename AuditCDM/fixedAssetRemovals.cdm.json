@@ -14,72 +14,60 @@
           "name": "acquirerId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "acquirerId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "acquirerId"
         },
         {
           "name": "approvedBy",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry.",
-          "appliedTraits": null
+          "description": "User ID (from User_Listing file) for person who approved the entry."
         },
         {
           "name": "approvedByDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedByDate",
-          "description": "Date the entry was approved.",
-          "appliedTraits": null
+          "description": "Date the entry was approved."
         },
         {
           "name": "businessUnitCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-          "appliedTraits": null
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "enteredBy",
           "dataType": "string",
           "isNullable": true,
           "displayName": "enteredBy",
-          "description": "User_ID (from User_Listing file) for person who created the record.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for person who created the record."
         },
         {
           "name": "enteredDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDate",
-          "description": "Date the order was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself.",
-          "appliedTraits": null
+          "description": "Date the order was entered into the system.\r\nThis is sometimes referred to as the creation\r\ndate. This should be a system-generated\r\ndate (rather than user-entered date), when\r\npossible. This date does not necessarily\r\ncorrespond with the date of the transaction\r\nitself."
         },
         {
           "name": "fixedAssetId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "fixedAssetId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "fixedAssetId"
         },
         {
           "name": "fixedAssetRealizedGainLossAccount",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "fixedAssetRealizedGainLossAccount",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "fixedAssetRealizedGainLossAccount"
         },
         {
           "name": "fixedAssetRealizedGainLossAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetRealizedGainLossAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -99,7 +87,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetRemovalCashProceedsAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -118,16 +105,13 @@
           "name": "fixedAssetRemovalDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "fixedAssetRemovalDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "fixedAssetRemovalDate"
         },
         {
           "name": "fixedAssetRemovalNonCashProceedsAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetRemovalNonCashProceedsAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -146,24 +130,19 @@
           "name": "fixedAssetRemovalsId",
           "dataType": "string",
           "isNullable": false,
-          "displayName": "fixedAssetRemovalsId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "fixedAssetRemovalsId"
         },
         {
           "name": "fixedAssetUnrealizedGainLossAccount",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "fixedAssetUnrealizedGainLossAccount",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "fixedAssetUnrealizedGainLossAccount"
         },
         {
           "name": "fixedAssetUnrealizedGainLossAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "fixedAssetUnrealizedGainLossAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -182,121 +161,97 @@
           "name": "glAccount",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "glAccount",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "glAccount"
         },
         {
           "name": "glTransactionId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "glTransactionId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "glTransactionId"
         },
         {
           "name": "lastModifiedBy",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
         },
         {
           "name": "lastModifiedByDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "lastModifiedByDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lastModifiedByDate"
         },
         {
           "name": "lotNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lotNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lotNumber"
         },
         {
           "name": "removalType",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "removalType",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "removalType"
         },
         {
           "name": "segment01",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "serialNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "serialNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "serialNumber"
         },
         {
           "name": "taxCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "taxCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "taxCode"
         },
         {
           "name": "transactionFees",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionFees",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionFees"
         },
         {
           "name": "uniqueId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "uniqueId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "uniqueId"
         }
       ]
     }

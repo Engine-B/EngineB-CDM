@@ -15,16 +15,14 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment0XDescription",
-          "description": "Segment description to indicate the name or",
-          "appliedTraits": null
+          "description": "Segment description to indicate the name or"
         },
         {
           "name": "segment0XValue",
           "dataType": "string",
           "isNullable": false,
           "displayName": "segment0XValue",
-          "description": "Value of Segment0X (X may equal 1 to 5).",
-          "appliedTraits": null
+          "description": "Value of Segment0X (X may equal 1 to 5)."
         }
       ]
     }

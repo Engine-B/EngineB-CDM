@@ -15,7 +15,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "averageCost",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -34,32 +33,26 @@
           "name": "binId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "binId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "binId"
         },
         {
           "name": "binLocation",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "binLocation",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "binLocation"
         },
         {
           "name": "businessUnitCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-          "appliedTraits": null
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "closingStockQuantity",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "closingStockQuantity",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -79,7 +72,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "closingStockValue",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -98,16 +90,13 @@
           "name": "countedBy",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "countedBy",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "countedBy"
         },
         {
           "name": "currentValuation",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "currentValuation",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -126,16 +115,13 @@
           "name": "defaultInventoryMethod",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "defaultInventoryMethod",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "defaultInventoryMethod"
         },
         {
           "name": "defaultStockingUnitOfMeasure",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "defaultStockingUnitOfMeasure",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -154,48 +140,37 @@
           "name": "glAssetAccount",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "glAssetAccount",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "glAssetAccount"
         },
         {
           "name": "glCostAccount",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "glCostAccount",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "glCostAccount"
         },
         {
           "name": "inventoryABCCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryABCCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryABCCode"
         },
         {
           "name": "inventoryBarCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryBarCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryBarCode"
         },
         {
           "name": "inventoryClass",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryClass",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryClass"
         },
         {
           "name": "inventoryCost",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "inventoryCost",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -214,56 +189,43 @@
           "name": "inventoryCostMethod",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryCostMethod",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryCostMethod"
         },
         {
           "name": "inventoryDescription",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryDescription",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryDescription"
         },
         {
           "name": "inventoryHeldForCustomers",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryHeldForCustomers",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryHeldForCustomers"
         },
         {
           "name": "inventoryHeldForOthers",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryHeldForOthers",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryHeldForOthers"
         },
         {
           "name": "inventoryHeldForSuppliers",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryHeldForSuppliers",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryHeldForSuppliers"
         },
         {
           "name": "inventoryItemCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryItemCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryItemCode"
         },
         {
           "name": "inventoryListPrice",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "inventoryListPrice",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -282,216 +244,163 @@
           "name": "inventoryProductId",
           "dataType": "string",
           "isNullable": false,
-          "displayName": "inventoryProductId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryProductId"
         },
         {
           "name": "inventoryProductType",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryProductType",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryProductType"
         },
         {
           "name": "inventoryPurchaseYearToDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "inventoryPurchaseYearToDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryPurchaseYearToDate"
         },
         {
           "name": "inventoryPurchasingUOM",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryPurchasingUOM",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryPurchasingUOM"
         },
         {
           "name": "inventorySellingUOM",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventorySellingUOM",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventorySellingUOM"
         },
         {
           "name": "inventorySoldYearToDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "inventorySoldYearToDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventorySoldYearToDate"
         },
         {
           "name": "inventoryStockingUOM",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryStockingUOM",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryStockingUOM"
         },
         {
           "name": "lastCountDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "lastCountDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lastCountDate"
         },
         {
           "name": "lastDespatchedDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "lastDespatchedDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lastDespatchedDate"
         },
         {
           "name": "lastReceivedDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "lastReceivedDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lastReceivedDate"
         },
         {
           "name": "locationActiveFlag",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationActiveFlag",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationActiveFlag"
         },
         {
           "name": "locationCity",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationCity",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationCity"
         },
         {
           "name": "locationCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationCode"
         },
         {
           "name": "locationCountry",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationCountry",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationCountry"
         },
         {
           "name": "locationCurrency",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationCurrency",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationCurrency"
         },
         {
           "name": "locationDescription",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationDescription",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationDescription"
         },
         {
           "name": "locationId",
           "dataType": "string",
           "isNullable": false,
-          "displayName": "locationId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationId"
         },
         {
           "name": "locationLatitude",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationLatitude",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationLatitude"
         },
         {
           "name": "locationLongitude",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationLongitude",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationLongitude"
         },
         {
           "name": "locationParent",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationParent",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationParent"
         },
         {
           "name": "locationStateProvince",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationStateProvince",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationStateProvince"
         },
         {
           "name": "locationStreet",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationStreet",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationStreet"
         },
         {
           "name": "locationType",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationType",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationType"
         },
         {
           "name": "locationZipPostalCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationZipPostalCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationZipPostalCode"
         },
         {
           "name": "lotNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lotNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lotNumber"
         },
         {
           "name": "obsoleteorDamagedInventory",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "obsoleteorDamagedInventory",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "obsoleteorDamagedInventory"
         },
         {
           "name": "openingStockQuantity",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "openingStockQuantity",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -511,7 +420,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "openingStockValue",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -530,144 +438,114 @@
           "name": "ownerId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "ownerId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "ownerId"
         },
         {
           "name": "preferredSupplier",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "preferredSupplier",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "preferredSupplier"
         },
         {
           "name": "primaryManufacturer",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "primaryManufacturer",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "primaryManufacturer"
         },
         {
           "name": "primaryManufacturerProductCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "primaryManufacturerProductCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "primaryManufacturerProductCode"
         },
         {
           "name": "primarySupplier",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "primarySupplier",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "primarySupplier"
         },
         {
           "name": "primarySupplierProductCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "primarySupplierProductCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "primarySupplierProductCode"
         },
         {
           "name": "productGroup01",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "productGroup01",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "productGroup01"
         },
         {
           "name": "productGroup02",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "productGroup02",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "productGroup02"
         },
         {
           "name": "quantity",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "quantity",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "quantity"
         },
         {
           "name": "quantityOnHandPhysicalCount",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "quantityOnHandPhysicalCount",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "quantityOnHandPhysicalCount"
         },
         {
           "name": "quantityOnHandSystem",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "quantityOnHandSystem",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "quantityOnHandSystem"
         },
         {
           "name": "segment01",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "serialNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "serialNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "serialNumber"
         },
         {
           "name": "specificCost",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "specificCost",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -687,7 +565,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "standardCost",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -706,24 +583,19 @@
           "name": "stockAccountCommodityCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "stockAccountCommodityCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "stockAccountCommodityCode"
         },
         {
           "name": "stockCharacteristic",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "stockCharacteristic",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "stockCharacteristic"
         },
         {
           "name": "stockCharacteristicValue",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "stockCharacteristicValue",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -743,23 +615,19 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",
-          "description": "Identifier of the supplier to whom payment is due or from whom unused credits have been applied. Must match the Supplier_Account_ID in the Supplier_Listing_YYYYMMDD file.",
-          "appliedTraits": null
+          "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
         },
         {
           "name": "thirdPartyFacility",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "thirdPartyFacility",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "thirdPartyFacility"
         },
         {
           "name": "unitPrice",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "unitPrice",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -778,25 +646,19 @@
           "name": "uomToUOMbaseConversionFactor",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "uomToUOMbaseConversionFactor",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "uomToUOMbaseConversionFactor"
         },
         {
           "name": "writeDownDescription",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "writeDownDescription",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "writeDownDescription"
         },
         {
           "name": "writeDownFactor",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "writeDownFactor",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "writeDownFactor"
         }
       ]
     }

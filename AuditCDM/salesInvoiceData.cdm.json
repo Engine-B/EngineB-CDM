@@ -15,215 +15,183 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry.",
-          "appliedTraits": null
+          "description": "User ID (from User_Listing file) for person who approved the entry."
         },
         {
           "name": "approvedDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedDateTime",
-          "description": "The DateTime the entry was approved.",
-          "appliedTraits": null
+          "description": "The DateTime the entry was approved."
         },
         {
           "name": "batchId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "batchId",
-          "description": "Systems generated ID for batch",
-          "appliedTraits": null
+          "description": "Systems generated ID for batch"
         },
         {
           "name": "billingAddressAdditionalAddressDetail",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "billingAddressAdditionalAddressDetail",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "billingAddressAdditionalAddressDetail"
         },
         {
           "name": "billingAddressAddressType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "billingAddressAddressType",
-          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)",
-          "appliedTraits": null
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
         },
         {
           "name": "billingAddressBuilding",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "billingAddressBuilding",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "billingAddressBuilding"
         },
         {
           "name": "billingAddressCity",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "billingAddressCity",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "billingAddressCity"
         },
         {
           "name": "billingAddressCountry",
           "dataType": "string",
           "isNullable": true,
           "displayName": "billingAddressCountry",
-          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.",
-          "appliedTraits": null
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands."
         },
         {
           "name": "billingAddressNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "billingAddressNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "billingAddressNumber"
         },
         {
           "name": "billingAddressPostalCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "billingAddressPostalCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "billingAddressPostalCode"
         },
         {
           "name": "billingAddressRegion",
           "dataType": "string",
           "isNullable": true,
           "displayName": "billingAddressRegion",
-          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. ",
-          "appliedTraits": null
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. "
         },
         {
           "name": "billingAddressStreetName",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "billingAddressStreetName",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "billingAddressStreetName"
         },
         {
           "name": "branchStoreNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "branchStoreNumber",
-          "description": "Branch or Storenumber, additional segregation of customer/supplier, used if not included as part of the customer/supplier id",
-          "appliedTraits": null
+          "description": "Branch or Storenumber, additional segregation of customer/supplier, used if not included as part of the customer/supplier id"
         },
         {
           "name": "businessUnitCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-          "appliedTraits": null
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "customerInfoCustomerId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "customerInfoCustomerId",
-          "description": "Identifier of the customer from whom payment is expected or to whom unused credits have been applied.  Must match a Customer_Account_ID in the Customer_Master_Listing_YYYYMMDD file.",
-          "appliedTraits": null
+          "description": "Identifier of the customer from whom\r\npayment is expected or to whom unused\r\ncredits have been applied.  Must match a\r\nCustomer_Account_ID in the\r\nCustomer_Master_Listing_YYYYMMDD file."
         },
         {
           "name": "customerInfoName",
           "dataType": "string",
           "isNullable": true,
           "displayName": "customerInfoName",
-          "description": "Name of the customer",
-          "appliedTraits": null
+          "description": "Name of the customer"
         },
         {
           "name": "glLineCreditAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glLineCreditAccountNumber",
-          "description": "GL account number on which the credit  side of the transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the credit\r\n side of the transaction has been posted."
         },
         {
           "name": "glLineDebitAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glLineDebitAccountNumber",
-          "description": "GL account number on which the debit  side of the transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the debit \r\nside of the transaction has been posted."
         },
         {
           "name": "glPostingDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "glPostingDate",
-          "description": "Date posting to GL",
-          "appliedTraits": null
+          "description": "Date posting to GL"
         },
         {
           "name": "glTax1CreditAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax1CreditAccountNumber",
-          "description": "GL account number on which the credit side of the Tax1 transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the credit\r\nside of the Tax1 transaction has been\r\nposted."
         },
         {
           "name": "glTax1DebitAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax1DebitAccountNumber",
-          "description": "GL account number on which the debit side of the Tax1 transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the debit\r\nside of the Tax1 transaction has been\r\nposted."
         },
         {
           "name": "glTax2CreditAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax2CreditAccountNumber",
-          "description": "GL account number on which the credit side of the Tax2 transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the credit\r\nside of the Tax2 transaction has been\r\nposted."
         },
         {
           "name": "glTax2DebitAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax2DebitAccountNumber",
-          "description": "GL account number on which the debit side of the Tax2 transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the debit\r\nside of the Tax2 transaction has been\r\nposted."
         },
         {
           "name": "glTax3CreditAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax3CreditAccountNumber",
-          "description": "GL account number on which the credit side of the Tax3 transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the credit\r\nside of the Tax3 transaction has been\r\nposted."
         },
         {
           "name": "glTax3DebitAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "glTax3DebitAccountNumber",
-          "description": "GL account number on which the debit side of the Tax3 transaction has been posted.",
-          "appliedTraits": null
+          "description": "GL account number on which the debit\r\nside of the Tax3 transaction has been\r\nposted."
         },
         {
           "name": "groupingCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "groupingCode",
-          "description": "Grouping mechanism for related items in a batch or grouping of invoices, such as the invoice grouping found in certain ERP systems",
-          "appliedTraits": null
+          "description": "Grouping mechanism for related items in a\r\nbatch or grouping of invoices, such as the\r\ninvoice grouping found in certain ERP\r\nsystems"
         },
         {
           "name": "invoiceAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmount",
-          "description": "Transaction monetary amount recorded in the functional or group currency. No  multicurrency translation should need to be  performed on this amount because all  transactions should be recorded in a single  currency.",
+          "description": "Transaction monetary amount recorded in\r\nthe functional or group currency. No\r\n multicurrency translation should need to be \r\nperformed on this amount because all\r\n transactions should be recorded in a single \r\ncurrency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -243,7 +211,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmountCurrency",
-          "description": "The functional or group currency related to  the invoice amount. See ISO 4217 coding.",
+          "description": "The functional or group currency related to\r\n the invoice amount. See ISO 4217 coding.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -263,7 +231,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmountLocal",
-          "description": "Transaction monetary amount in local  currency. Usually the amount seen on the original  invoice document.",
+          "description": "Transaction monetary amount in local\r\n currency.\r\nUsually the amount seen on the original \r\ninvoice document.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -283,7 +251,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "invoiceAmountReporting",
-          "description": "Transaction monetary amount recorded in the reporting currency.",
+          "description": "Transaction monetary amount recorded in\r\nthe reporting currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -303,32 +271,27 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "invoiceDate",
-          "description": "The date of the invoice, regardless of the  date the invoice is entered. This is the date from which the due date is calculated based  on the invoice terms.",
-          "appliedTraits": null
+          "description": "The date of the invoice, regardless of the \r\ndate the invoice is entered. This is the date\r\nfrom which the due date is calculated based \r\non the invoice terms."
         },
         {
           "name": "invoiceDocumentReference",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "invoiceDocumentReference",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "invoiceDocumentReference"
         },
         {
           "name": "invoiceDueDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "invoiceDueDate",
-          "description": "The date payment is due from the customer. Aging of a receivable is usually calculated  based on this date.",
-          "appliedTraits": null
+          "description": "The date payment is due from the customer.\r\nAging of a receivable is usually calculated\r\n based on this date."
         },
         {
           "name": "invoiceId",
           "dataType": "string",
           "isNullable": false,
           "displayName": "invoiceId",
-          "description": "Unique identifier for each invoice. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each transaction. The same ID must be used for all tables with invoice data (Invoices_Received_YYYYMMDD_YYYYMM DD, Open_Accounts_Payables_YYYYMMDD, AP_Cash_Application_YYYYMMDD_YYYYM MDD, and AP_Adjustments_YYYYMMDD_YYYYMMDD).",
-          "appliedTraits": null
+          "description": "Unique identifier for each invoice. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each transaction. The same ID must be used for all tables with invoice data (Invoices_Received_YYYYMMDD_YYYYMM DD, Open_Accounts_Payables_YYYYMMDD, AP_Cash_Application_YYYYMMDD_YYYYM MDD, and AP_Adjustments_YYYYMMDD_YYYYMMDD)."
         },
         {
           "name": "invoiceLineAmountReporting",
@@ -355,63 +318,56 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceLineLocalCurrency",
-          "description": "The currency for local reporting  requirements. See ISO 4217 coding.",
-          "appliedTraits": null
+          "description": "The currency for local reporting\r\n requirements. See ISO 4217 coding."
         },
         {
           "name": "invoiceLineReportingCurrency",
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceLineReportingCurrency",
-          "description": "The reporting currency related to the invoice reporting amount for non consolidated reporting. See ISO4217 coding.",
-          "appliedTraits": null
+          "description": "The reporting currency related to the invoice reporting amount for non consolidated reporting. See ISO4217 coding."
         },
         {
           "name": "invoiceLocalCurrency",
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceLocalCurrency",
-          "description": "The currency for local reporting requirements. See ISO 4217 coding.",
-          "appliedTraits": null
+          "description": "The currency for local reporting requirements. See ISO 4217 coding."
         },
         {
           "name": "invoiceNo",
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceNo",
-          "description": "Identification number for an externally generated invoice.",
-          "appliedTraits": null
+          "description": "Identification number for an externally generated invoice."
         },
         {
           "name": "invoiceReportingCurrency",
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceReportingCurrency",
-          "description": "The reporting currency related to the invoice reporting amount for nonconsolidated reporting. See ISO 4217 coding.",
-          "appliedTraits": null
+          "description": "The reporting currency related to the invoice\r\nreporting amount for nonconsolidated\r\nreporting. See ISO 4217 coding."
         },
         {
           "name": "invoiceType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "invoiceType",
-          "description": "Type of invoice: Debit invoice, Credit invoice, Cash, Ticket, etc",
-          "appliedTraits": null
+          "description": "Type of invoice: Debit invoice, Credit invoice, Cash, Ticket, etc"
         },
         {
           "name": "lineAccountId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAccountId",
-          "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department.",
-          "appliedTraits": null
+          "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department."
         },
         {
           "name": "lineAnalysisAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAmount",
-          "description": "Transaction monetary amount recorded  in the functional or group currency. No  multicurrency translation should need to be performed on this amount because  all transactions should be recorded in a  single currency.",
+          "description": "Transaction monetary amount recorded \r\nin the functional or group currency. No \r\nmulticurrency translation should need to\r\nbe performed on this amount because \r\nall transactions should be recorded in a\r\n single currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -431,7 +387,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAnalysisAmountCurrencyAmount",
-          "description": "Transaction monetary amount in loca l currency.",
+          "description": "Transaction monetary amount in loca l\r\ncurrency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -451,8 +407,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisAmountCurrencyCode",
-          "description": "The functional or group currency related to the invoice amount. See ISO 4217 coding.",
-          "appliedTraits": null
+          "description": "The functional or group currency related\r\nto the invoice amount. See ISO 4217\r\ncoding."
         },
         {
           "name": "lineAnalysisAmountExchangeRate",
@@ -479,104 +434,91 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisId",
-          "description": "Value of the analysisID: f.i. which cost center applies",
-          "appliedTraits": null
+          "description": "Value of the analysisID: f.i. which cost center applies"
         },
         {
           "name": "lineAnalysisType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineAnalysisType",
-          "description": "Analysis code identifier: cost center, cost unit, cost type, project, etc. Refers to the MasterFile AnalysisTypeTable",
-          "appliedTraits": null
+          "description": "Analysis code identifier: cost center, cost unit, cost type, project, etc. Refers to the MasterFile AnalysisTypeTable"
         },
         {
           "name": "lineApprovedBy",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineApprovedBy",
-          "description": "User ID (from User_Listing file) for person  who approved the entry.",
-          "appliedTraits": null
+          "description": "User ID (from User_Listing file) for person\r\n who approved the entry."
         },
         {
           "name": "lineApprovedDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineApprovedDateTime",
-          "description": "The date and time the entry was approved.",
-          "appliedTraits": null
+          "description": "The date and time the entry was approved."
         },
         {
           "name": "lineCreditNoteReason",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineCreditNoteReason",
-          "description": "Credit note reason or rationale ",
-          "appliedTraits": null
+          "description": "Credit note reason or rationale "
         },
         {
           "name": "lineCreditNoteReference",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineCreditNoteReference",
-          "description": "Credit note reference (where applicable) to original invoice ",
-          "appliedTraits": null
+          "description": "Credit note reference (where applicable) to original invoice "
         },
         {
           "name": "lineDebitCreditIndicator",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineDebitCreditIndicator",
-          "description": "Indicates whether the amounts on line-level are debit or credit amounts. Entry must correspond to entry reflected in General Ledger Entry. Signing of line amounts is relative to this indicator. E.g. a return can lead to a negative amount",
-          "appliedTraits": null
+          "description": "Indicates whether the amounts on line-level are debit or credit amounts. Entry must correspond to entry reflected in General Ledger Entry. Signing of line amounts is relative to this indicator. E.g. a return can lead to a negative amount"
         },
         {
           "name": "lineDeliveryDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineDeliveryDate",
-          "description": "The date of the delivery",
-          "appliedTraits": null
+          "description": "The date of the delivery"
         },
         {
           "name": "lineDescription",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineDescription",
-          "description": "Description of Invoice Line.",
-          "appliedTraits": null
+          "description": "Description of Invoice Line."
         },
         {
           "name": "lineFromDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineFromDate",
-          "description": "Startdate of the deliveries",
-          "appliedTraits": null
+          "description": "Startdate of the deliveries"
         },
         {
           "name": "lineGoodsServicesId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineGoodsServicesId",
-          "description": "Indicator showing if goods or service",
-          "appliedTraits": null
+          "description": "Indicator showing if goods or service"
         },
         {
           "name": "lineGroupingCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineGroupingCode",
-          "description": "Grouping mechanism for related items in a batch or grouping of invoices, such as the invoice grouping found in certain ERP systems",
-          "appliedTraits": null
+          "description": "Grouping mechanism for related items\r\nin a batch or grouping of invoices, such\r\nas the invoice grouping found in certain\r\nERP systems"
         },
         {
           "name": "lineInvoiceDueDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineInvoiceDueDate",
-          "description": "The date payment is due to the supplier. Not all transactions will have a due date (for example, credit memos). Aging of a payable is usually calculated based on this date.",
-          "appliedTraits": null
+          "description": "The date payment is due to the supplier. Not\r\nall transactions will have a due date (for\r\nexample, credit memos). Aging of a payable\r\nis usually calculated based on this date."
         },
         {
           "name": "lineInvoiceLineAmount",
@@ -623,8 +565,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineInvoiceLineAmountCurrencyCode",
-          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.",
-          "appliedTraits": null
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
         },
         {
           "name": "lineInvoiceLineAmountExchangeRate",
@@ -651,16 +592,14 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineInvoiceProductGroup01",
-          "description": "Product descriptor #1, for example, tires or accessories.",
-          "appliedTraits": null
+          "description": "Product descriptor #1, for example, tires\r\nor accessories."
         },
         {
           "name": "lineInvoiceProductGroup02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineInvoiceProductGroup02",
-          "description": "Product descriptor #1, for example, tires or accessories.",
-          "appliedTraits": null
+          "description": "Product descriptor #1, for example, tires\r\nor accessories."
         },
         {
           "name": "lineInvoiceUOM",
@@ -687,184 +626,156 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineLineNumber",
-          "description": "Line item number of the invoice.",
-          "appliedTraits": null
+          "description": "Line item number of the invoice."
         },
         {
           "name": "lineMovementReference",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineMovementReference",
-          "description": "Unique reference to the movement.",
-          "appliedTraits": null
+          "description": "Unique reference to the movement."
         },
         {
           "name": "lineOrderDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineOrderDate",
-          "description": "Date of order",
-          "appliedTraits": null
+          "description": "Date of order"
         },
         {
           "name": "lineOriginatingON",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineOriginatingON",
-          "description": "Origination Order Number",
-          "appliedTraits": null
+          "description": "Origination Order Number"
         },
         {
           "name": "lineProductCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineProductCode",
-          "description": "Unique identifier for each purchased product. This ID may need to be created by concatenating fields (for example, business unit, product number, year, and so on) to uniquely identify each product.",
-          "appliedTraits": null
+          "description": "Unique identifier for each purchased product. This ID may need to be created by concatenating fields (for example, business unit, product number, year, and so on) to uniquely identify each product."
         },
         {
           "name": "lineProductDescription",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineProductDescription",
-          "description": "Product (plain English) description to  indicate the name or other identifying  characteristics of the product.",
-          "appliedTraits": null
+          "description": "Product (plain English) description to \r\nindicate the name or other identifying\r\n characteristics of the product."
         },
         {
           "name": "lineQuantity",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineQuantity",
-          "description": "Quantity of goods and services supplied.",
-          "appliedTraits": null
+          "description": "Quantity of goods and services supplied."
         },
         {
           "name": "lineSalesOrderId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSalesOrderId",
-          "description": "Sales order ID for invoiced items.  Must match Sales_Order_ID in the Sales_Orders_YYYYMMDD_YYYYMM DD file. If no sales order, leave blank.",
-          "appliedTraits": null
+          "description": "Sales order ID for invoiced items.  Must match Sales_Order_ID in the Sales_Orders_YYYYMMDD_YYYYMM DD file. If no sales order, leave blank."
         },
         {
           "name": "lineSalesOrderLineId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSalesOrderLineId",
-          "description": "Identifier for sales order line number. Must match Sales_Order_Line_ID used in Sales_Orders_Lines_YYYYMMDD_YY YYMMDD file. If no sales order, leave blank.",
-          "appliedTraits": null
+          "description": "Identifier for sales order line number.\r\nMust match Sales_Order_Line_ID used\r\nin\r\nSales_Orders_Lines_YYYYMMDD_YY\r\nYYMMDD file. If no sales order, leave\r\nblank."
         },
         {
           "name": "lineShipFromAdditionalAddressDetail",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipFromAdditionalAddressDetail",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipFromAdditionalAddressDetail"
         },
         {
           "name": "lineShipFromAddressType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromAddressType",
-          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)",
-          "appliedTraits": null
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
         },
         {
           "name": "lineShipFromBuilding",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipFromBuilding",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipFromBuilding"
         },
         {
           "name": "lineShipFromCity",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipFromCity",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipFromCity"
         },
         {
           "name": "lineShipFromCountry",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromCountry",
-          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.",
-          "appliedTraits": null
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands."
         },
         {
           "name": "lineShipFromDeliveryDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineShipFromDeliveryDate",
-          "description": "Date goods are delivered",
-          "appliedTraits": null
+          "description": "Date goods are delivered"
         },
         {
           "name": "lineShipFromDeliveryId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromDeliveryId",
-          "description": "Identification of the delivery",
-          "appliedTraits": null
+          "description": "Identification of the delivery"
         },
         {
           "name": "lineShipFromLocationId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromLocationId",
-          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit",
-          "appliedTraits": null
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit"
         },
         {
           "name": "lineShipFromNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipFromNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipFromNumber"
         },
         {
           "name": "lineShipFromPostalCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipFromPostalCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipFromPostalCode"
         },
         {
           "name": "lineShipFromRegion",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromRegion",
-          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. ",
-          "appliedTraits": null
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. "
         },
         {
           "name": "lineShipFromStreetName",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromStreetName",
-          "description": "Unique consignment reference number",
-          "appliedTraits": null
+          "description": "Unique consignment reference number"
         },
         {
           "name": "lineShipFromUCR",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromUCR",
-          "description": "Location of goods in warehouse",
-          "appliedTraits": null
+          "description": "Location of goods in warehouse"
         },
         {
           "name": "lineShipFromWarehouseId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipFromWarehouseId",
-          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit",
-          "appliedTraits": null
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit"
         },
         {
           "name": "lineShippingCostsAmount",
@@ -911,8 +822,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShippingCostsAmountCurrencyCode",
-          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.",
-          "appliedTraits": null
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
         },
         {
           "name": "lineShippingCostsAmountExchangeRate",
@@ -938,145 +848,121 @@
           "name": "lineShipToAdditionalAddressDetail",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipToAdditionalAddressDetail",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipToAdditionalAddressDetail"
         },
         {
           "name": "lineShipToAddressType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipToAddressType",
-          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)",
-          "appliedTraits": null
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
         },
         {
           "name": "lineShipToBuilding",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipToBuilding",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipToBuilding"
         },
         {
           "name": "lineShipToCity",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipToCity",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipToCity"
         },
         {
           "name": "lineShipToCountry",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipToCountry",
-          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.",
-          "appliedTraits": null
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands."
         },
         {
           "name": "lineShipToDeliveryDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineShipToDeliveryDate",
-          "description": "Date goods are delivered",
-          "appliedTraits": null
+          "description": "Date goods are delivered"
         },
         {
           "name": "lineShipToDeliveryId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipToDeliveryId",
-          "description": "Identification of the delivery",
-          "appliedTraits": null
+          "description": "Identification of the delivery"
         },
         {
           "name": "lineShipToLocationId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipToLocationId",
-          "description": "Location of goods in warehouse",
-          "appliedTraits": null
+          "description": "Location of goods in warehouse"
         },
         {
           "name": "lineShipToNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipToNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipToNumber"
         },
         {
           "name": "lineShipToPostalCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipToPostalCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipToPostalCode"
         },
         {
           "name": "lineShipToRegion",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipToRegion",
-          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. ",
-          "appliedTraits": null
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. "
         },
         {
           "name": "lineShipToStreetName",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineShipToStreetName",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineShipToStreetName"
         },
         {
           "name": "lineShipToUCR",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipToUCR",
-          "description": "Unique consignment reference number",
-          "appliedTraits": null
+          "description": "Unique consignment reference number"
         },
         {
           "name": "lineShipToWarehouseId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineShipToWarehouseId",
-          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit",
-          "appliedTraits": null
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit"
         },
         {
           "name": "lineSystemEntryDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineSystemEntryDateTime",
-          "description": "The date the transaction was entered into the system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
-          "appliedTraits": null
+          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself."
         },
         {
           "name": "lineSystemEntryUser",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSystemEntryUser",
-          "description": "User_ID (from User_Listing file) for person  who created the record.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for person\r\n who created the record."
         },
         {
           "name": "lineSystemModifiedDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineSystemModifiedDateTime",
-          "description": "The date and time the entry was last modified.",
-          "appliedTraits": null
+          "description": "The date and time the entry was last modified."
         },
         {
           "name": "lineSystemModifiedUser",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineSystemModifiedUser",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry."
         },
         {
           "name": "lineTaxInformationTaxAmount",
@@ -1123,8 +1009,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxAmountCurrencyCode",
-          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.",
-          "appliedTraits": null
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
         },
         {
           "name": "lineTaxInformationTaxAmountExchangeRate",
@@ -1151,40 +1036,35 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxBase",
-          "description": "The base on which the tax is calculated. This can be an amount, or a quantity, eg. Litres.",
-          "appliedTraits": null
+          "description": "The base on which the tax is calculated. This can be an amount, or a quantity, eg. Litres."
         },
         {
           "name": "lineTaxInformationTaxBaseDescription",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxBaseDescription",
-          "description": "Description of the value in the TaxBase. Eg. Litres for excises on alcoholic bevarages.",
-          "appliedTraits": null
+          "description": "Description of the value in the TaxBase. Eg. Litres for excises on alcoholic bevarages."
         },
         {
           "name": "lineTaxInformationTaxCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxCode",
-          "description": "Tax Code for lookup in tables",
-          "appliedTraits": null
+          "description": "Tax Code for lookup in tables"
         },
         {
           "name": "lineTaxInformationTaxDeclarationPeriod",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxDeclarationPeriod",
-          "description": "The identification of the declaration/return in which the taxamount is reported to the Revenue body",
-          "appliedTraits": null
+          "description": "The identification of the declaration/return in which the taxamount is reported to the Revenue body"
         },
         {
           "name": "lineTaxInformationTaxExemptionReason",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineTaxInformationTaxExemptionReason",
-          "description": "Tax exemption or reduction reason or rationale ",
-          "appliedTraits": null
+          "description": "Tax exemption or reduction reason or rationale "
         },
         {
           "name": "lineTaxInformationTaxPercentage",
@@ -1211,16 +1091,14 @@
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineTaxPointDate",
-          "description": "Tax Point date where recorded or if not recorded then the Invoice date ",
-          "appliedTraits": null
+          "description": "Tax Point date where recorded or if not recorded then the Invoice date "
         },
         {
           "name": "lineToDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lineToDate",
-          "description": "Enddate of the deliveries",
-          "appliedTraits": null
+          "description": "Enddate of the deliveries"
         },
         {
           "name": "lineUnitPrice",
@@ -1267,96 +1145,84 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "paymentTerms",
-          "description": "Payments terms for this invoice",
-          "appliedTraits": null
+          "description": "Payments terms for this invoice"
         },
         {
           "name": "period",
           "dataType": "string",
           "isNullable": true,
           "displayName": "period",
-          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods.",
-          "appliedTraits": null
+          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1\ufffd\ufffd\ufffdW53 for weekly periods, M1\ufffd\ufffd\ufffdM12 for monthly periods, and Q1\ufffd\ufffd\ufffdQ4 for quarterly periods."
         },
         {
           "name": "periodYear",
           "dataType": "string",
           "isNullable": true,
           "displayName": "periodYear",
-          "description": "Fiscal year in which the Purchase_Order_Date occurs\u2014YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).",
-          "appliedTraits": null
+          "description": "Fiscal year in which the\r\nPurchase_Order_Date occurs\u2014YYYY for\r\ndelimited, CCYY-MM-DD fiscal year end\r\n(ISO 8601) for extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL)."
         },
         {
           "name": "postingStatus",
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
-          "description": "Status of the transaction's posting to the GL (for example, \"Posted,\" \"Not Posted\").",
-          "appliedTraits": null
+          "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\")."
         },
         {
           "name": "receiptNumbers",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptNumbers",
-          "description": "The number(s) of the receipt(s) on this \"consolidated invoicerecord\". Can be a single number, a range or a list.",
-          "appliedTraits": null
+          "description": "The number(s) of the receipt(s) on this \"consolidated invoicerecord\". Can be a single number, a range or a list."
         },
         {
           "name": "salesOrderId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "salesOrderId",
-          "description": "Sales order ID for invoiced items.  Must match Sales_Order_ID in the Sales_Orders_YYYYMMDD_YYYYMMDD file. If no sales order, leave blank.",
-          "appliedTraits": null
+          "description": "Sales order ID for invoiced items.  Must\r\nmatch Sales_Order_ID in the\r\nSales_Orders_YYYYMMDD_YYYYMMDD\r\nfile. If no sales order, leave blank."
         },
         {
           "name": "segment01",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "selfBillingIndicator",
           "dataType": "string",
           "isNullable": true,
           "displayName": "selfBillingIndicator",
-          "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier",
-          "appliedTraits": null
+          "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier"
         },
         {
           "name": "settlementAmount",
@@ -1403,8 +1269,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "settlementCurrencyCode",
-          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars.",
-          "appliedTraits": null
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
         },
         {
           "name": "settlementExchangeRate",
@@ -1431,16 +1296,14 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "settlementPaymentMechanism",
-          "description": "Payment mechanism ",
-          "appliedTraits": null
+          "description": "Payment mechanism "
         },
         {
           "name": "settlementSettlementDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "settlementSettlementDate",
-          "description": "Date settled",
-          "appliedTraits": null
+          "description": "Date settled"
         },
         {
           "name": "settlementSettlementDiscount",
@@ -1466,352 +1329,297 @@
           "name": "shipFromAdditionalAddressDetail",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipFromAdditionalAddressDetail",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipFromAdditionalAddressDetail"
         },
         {
           "name": "shipFromAddressType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipFromAddressType",
-          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)",
-          "appliedTraits": null
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
         },
         {
           "name": "shipFromBuilding",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipFromBuilding",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipFromBuilding"
         },
         {
           "name": "shipFromCity",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipFromCity",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipFromCity"
         },
         {
           "name": "shipFromCountry",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipFromCountry",
-          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.",
-          "appliedTraits": null
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands."
         },
         {
           "name": "shipFromDeliveryDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "shipFromDeliveryDate",
-          "description": "Date goods are delivered",
-          "appliedTraits": null
+          "description": "Date goods are delivered"
         },
         {
           "name": "shipFromDeliveryId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipFromDeliveryId",
-          "description": "Identification of the delivery",
-          "appliedTraits": null
+          "description": "Identification of the delivery"
         },
         {
           "name": "shipFromLocationId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipFromLocationId",
-          "description": "Location of goods in warehouse",
-          "appliedTraits": null
+          "description": "Location of goods in warehouse"
         },
         {
           "name": "shipFromNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipFromNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipFromNumber"
         },
         {
           "name": "shipFromPostalCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipFromPostalCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipFromPostalCode"
         },
         {
           "name": "shipFromRegion",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipFromRegion",
-          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. ",
-          "appliedTraits": null
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. "
         },
         {
           "name": "shipFromStreetName",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipFromStreetName",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipFromStreetName"
         },
         {
           "name": "shipFromUCR",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipFromUCR",
-          "description": "Unique consignment reference number",
-          "appliedTraits": null
+          "description": "Unique consignment reference number"
         },
         {
           "name": "shipFromWarehouseId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipFromWarehouseId",
-          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit",
-          "appliedTraits": null
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit"
         },
         {
           "name": "shipToAdditionalAddressDetail",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipToAdditionalAddressDetail",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipToAdditionalAddressDetail"
         },
         {
           "name": "shipToAddressType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipToAddressType",
-          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)",
-          "appliedTraits": null
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
         },
         {
           "name": "shipToBuilding",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipToBuilding",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipToBuilding"
         },
         {
           "name": "shipToCity",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipToCity",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipToCity"
         },
         {
           "name": "shipToCountry",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipToCountry",
-          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands.",
-          "appliedTraits": null
+          "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard. Example NL for the Netherlands."
         },
         {
           "name": "shipToDeliveryDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "shipToDeliveryDate",
-          "description": "Date goods are delivered",
-          "appliedTraits": null
+          "description": "Date goods are delivered"
         },
         {
           "name": "shipToDeliveryId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipToDeliveryId",
-          "description": "Identification of the delivery",
-          "appliedTraits": null
+          "description": "Identification of the delivery"
         },
         {
           "name": "shipToLocationId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipToLocationId",
-          "description": "Location of goods in warehouse",
-          "appliedTraits": null
+          "description": "Location of goods in warehouse"
         },
         {
           "name": "shipToNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipToNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipToNumber"
         },
         {
           "name": "shipToPostalCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipToPostalCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipToPostalCode"
         },
         {
           "name": "shipToRegion",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipToRegion",
-          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. ",
-          "appliedTraits": null
+          "description": "Country specific code to indicate regions / provinces within the tax authority. Preferably described according to ISO 3166-2. Example: GB-KEN for Kent county in the United Kingdom. "
         },
         {
           "name": "shipToStreetName",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "shipToStreetName",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "shipToStreetName"
         },
         {
           "name": "shipToUCR",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipToUCR",
-          "description": "Unique consignment reference number",
-          "appliedTraits": null
+          "description": "Unique consignment reference number"
         },
         {
           "name": "shipToWarehouseId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "shipToWarehouseId",
-          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit",
-          "appliedTraits": null
+          "description": "Warehouse where goods held - also to identify work-in-progress, or stock-in-transit"
         },
         {
           "name": "sourceId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "sourceId",
-          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on).",
-          "appliedTraits": null
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
         },
         {
           "name": "systemEntryDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemEntryDateTime",
-          "description": "The date the transaction was entered into the system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
-          "appliedTraits": null
+          "description": "The date the transaction was entered into the\r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\ndate), when possible. This date does not\r\n necessarily correspond with the date of the \r\ntransaction itself."
         },
         {
           "name": "systemEntryUser",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemEntryUser",
-          "description": "User_ID (from User_Listing file) for person who created the record.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for person\r\nwho created the record."
         },
         {
           "name": "systemId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemId",
-          "description": "Unique number created by the system for the document",
-          "appliedTraits": null
+          "description": "Unique number created by the system for the document"
         },
         {
           "name": "systemModifiedDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "systemModifiedDateTime",
-          "description": "The date and time the entry was last modified.",
-          "appliedTraits": null
+          "description": "The date and time the entry was last modified."
         },
         {
           "name": "systemModifiedUser",
           "dataType": "string",
           "isNullable": true,
           "displayName": "systemModifiedUser",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for the last\r\nperson modifying this entry."
         },
         {
           "name": "tax1Local",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax1Local",
-          "description": "The amount of Tax1_Type included in the transaction. Recorded in local currency.",
-          "appliedTraits": null
+          "description": "The amount of Tax1_Type included in\r\nthe transaction. Recorded in local\r\ncurrency."
         },
         {
           "name": "tax1Type",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax1Type",
-          "description": "Code for Tax1 type (for example, Sales, VAT). This field should agree with the Regulator_Code field in the Tax_Table_YYYYMMDD",
-          "appliedTraits": null
+          "description": "Code for Tax1 type (for example, Sales,\r\nVAT).\r\nThis field should agree with the\r\nRegulator_Code field in the\r\nTax_Table_YYYYMMDD"
         },
         {
           "name": "tax1TypeDescription",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax1TypeDescription",
-          "description": "Description of Tax1 type (for example, authority tax is paid to and other information to identify tax).",
-          "appliedTraits": null
+          "description": "Description of Tax1 type (for example,\r\nauthority tax is paid to and other\r\ninformation to identify tax)."
         },
         {
           "name": "tax2Local",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax2Local",
-          "description": "The amount of Tax2_Type included in the transaction. Recorded in local currency.",
-          "appliedTraits": null
+          "description": "The amount of Tax2_Type included in\r\nthe transaction. Recorded in local\r\ncurrency."
         },
         {
           "name": "tax2TypeDescription",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax2TypeDescription",
-          "description": "Description of Tax2 type (for example, authority tax is paid to and other information to identify tax).",
-          "appliedTraits": null
+          "description": "Description of Tax2 type (for example,\r\nauthority tax is paid to and other\r\ninformation to identify tax)."
         },
         {
           "name": "tax3Local",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax3Local",
-          "description": "The amount of Tax3_Type included in the transaction. Recorded in local currency.",
-          "appliedTraits": null
+          "description": "The amount of Tax3_Type included in\r\nthe transaction. Recorded in local\r\ncurrency."
         },
         {
           "name": "tax3Type",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax3Type",
-          "description": "Code for Tax3 type (for example, Sales, VAT). This field should agree with the Regulator_Code field in the Tax_Table_YYYYMMDD",
-          "appliedTraits": null
+          "description": "Code for Tax3 type (for example, Sales,\r\nVAT).\r\nThis field should agree with the\r\nRegulator_Code field in the\r\nTax_Table_YYYYMMDD"
         },
         {
           "name": "tax3TypeDescription",
           "dataType": "string",
           "isNullable": true,
           "displayName": "tax3TypeDescription",
-          "description": "Description of Tax3 type (for example, authority tax is paid to and other information to identify tax).",
-          "appliedTraits": null
+          "description": "Description of Tax3 type (for example,\r\nauthority tax is paid to and other\r\ninformation to identify tax)."
         },
         {
           "name": "termsDiscountDays",
           "dataType": "string",
           "isNullable": true,
           "displayName": "termsDiscountDays",
-          "description": "The number of days from the invoice date the supplier allows to take advantage of discounted terms. Terms are represented as digits with no decimal places (for example, nnn).",
-          "appliedTraits": null
+          "description": "The number of days from the invoice date\r\nthe supplier allows to take advantage of\r\ndiscounted terms. Terms are represented as\r\ndigits with no decimal places (for example,\r\nnnn)."
         },
         {
           "name": "termsDiscountPercentage",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "termsDiscountPercentage",
-          "description": "The discount percentage the supplier may provide if an invoice is paid before a certain number of days. In the flat file, terms are represented as digits to one decimal place (for example, 10% would be represented as 10.0). In extensible business reporting language global ledger taxonomy framework (XBRL GL), the three fields Terms_Discount_Percentage, Terms_Discount_Days and Terms_Due_Days would be entered in the form \"xx.x% dd Net dd,\" such as 2% 10 Net 30 for 2% discount if paid within 10 days, with the net due in 30 days.",
+          "description": "The discount percentage the supplier may\r\nprovide if an invoice is paid before a certain\r\nnumber of days. In the flat file, terms are\r\nrepresented as digits to one decimal place\r\n(for example, 10% would be represented as\r\n10.0). In extensible business reporting\r\nlanguage global ledger taxonomy framework\r\n(XBRL GL), the three fields\r\nTerms_Discount_Percentage,\r\nTerms_Discount_Days and\r\nTerms_Due_Days would be entered in the\r\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\r\n30 for 2% discount if paid within 10 days,\r\nwith the net due in 30 days.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -1831,16 +1639,14 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "termsDueDays",
-          "description": "The number of days allowed to meet the obligation before an invoice becomes overdue.",
-          "appliedTraits": null
+          "description": "The number of days allowed to meet the\r\nobligation before an invoice becomes\r\noverdue."
         },
         {
           "name": "transactionId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "transactionId",
-          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department",
-          "appliedTraits": null
+          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
         }
       ]
     }

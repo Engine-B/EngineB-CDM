@@ -15,7 +15,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "bookValue",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -35,239 +34,188 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-          "appliedTraits": null
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "customerId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "customerId",
-          "description": "Unique code for the customer  ",
-          "appliedTraits": null
+          "description": "Unique code for the customer \r\n"
         },
         {
           "name": "inventoryFromLocation",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryFromLocation",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryFromLocation"
         },
         {
           "name": "inventoryglLineCreditAccountNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryglLineCreditAccountNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryglLineCreditAccountNumber"
         },
         {
           "name": "inventoryglLineDebitAccountNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryglLineDebitAccountNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryglLineDebitAccountNumber"
         },
         {
           "name": "inventoryId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryId"
         },
         {
           "name": "inventoryProductId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryProductId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryProductId"
         },
         {
           "name": "inventorySystemOrExternalSource",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventorySystemOrExternalSource",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventorySystemOrExternalSource"
         },
         {
           "name": "inventoryToLocation",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryToLocation",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryToLocation"
         },
         {
           "name": "inventoryTransactionApprovedBy",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryTransactionApprovedBy",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryTransactionApprovedBy"
         },
         {
           "name": "inventoryTransactionApprovedByDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "inventoryTransactionApprovedByDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryTransactionApprovedByDate"
         },
         {
           "name": "inventoryTransactionEnteredBy",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryTransactionEnteredBy",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryTransactionEnteredBy"
         },
         {
           "name": "inventoryTransactionEnteredDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "inventoryTransactionEnteredDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryTransactionEnteredDate"
         },
         {
           "name": "inventoryTransactionId",
           "dataType": "string",
           "isNullable": false,
-          "displayName": "inventoryTransactionId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryTransactionId"
         },
         {
           "name": "inventoryTransactionLastModifiedBy",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryTransactionLastModifiedBy",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryTransactionLastModifiedBy"
         },
         {
           "name": "inventoryTransactionLastModifiedDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "inventoryTransactionLastModifiedDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryTransactionLastModifiedDate"
         },
         {
           "name": "lotNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lotNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lotNumber"
         },
         {
           "name": "movementDocumentType",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "movementDocumentType",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "movementDocumentType"
         },
         {
           "name": "movementLineNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "movementLineNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "movementLineNumber"
         },
         {
           "name": "movementReference",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "movementReference",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "movementReference"
         },
         {
           "name": "movementTaxPointDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "movementTaxPointDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "movementTaxPointDate"
         },
         {
           "name": "segment01",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "serialNumber",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "serialNumber",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "serialNumber"
         },
         {
           "name": "sourceLedgerTransactionAssociatedOrderId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "sourceLedgerTransactionAssociatedOrderId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "sourceLedgerTransactionAssociatedOrderId"
         },
         {
           "name": "supplierId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",
-          "description": "Identifier of the supplier to whom payment is due or from whom unused credits have been applied. Must match the Supplier_Account_ID in the Supplier_Listing_YYYYMMDD file.",
-          "appliedTraits": null
+          "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
         },
         {
           "name": "taxAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "taxAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -287,7 +235,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "taxAmountCurrencyAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -306,16 +253,13 @@
           "name": "taxAmountCurrencyCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "taxAmountCurrencyCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "taxAmountCurrencyCode"
         },
         {
           "name": "taxAmountExchangeRate",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "taxAmountExchangeRate",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -334,48 +278,37 @@
           "name": "taxBase",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "taxBase",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "taxBase"
         },
         {
           "name": "taxBaseDescription",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "taxBaseDescription",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "taxBaseDescription"
         },
         {
           "name": "taxCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "taxCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "taxCode"
         },
         {
           "name": "taxDeclarationPeriod",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "taxDeclarationPeriod",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "taxDeclarationPeriod"
         },
         {
           "name": "taxExemptionReason",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "taxExemptionReason",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "taxExemptionReason"
         },
         {
           "name": "taxPercentage",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "taxPercentage",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -395,71 +328,56 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "taxType",
-          "description": "Tax type for look-up in tables",
-          "appliedTraits": null
+          "description": "Tax type for look-up in tables"
         },
         {
           "name": "transactionAssociatedDocumentId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionAssociatedDocumentId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionAssociatedDocumentId"
         },
         {
           "name": "transactionAssociatedDocumentLineId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionAssociatedDocumentLineId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionAssociatedDocumentLineId"
         },
         {
           "name": "transactionAssociatedOrderId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionAssociatedOrderId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionAssociatedOrderId"
         },
         {
           "name": "transactionAssociatedOrderLineId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionAssociatedOrderLineId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionAssociatedOrderLineId"
         },
         {
           "name": "transactionCostAdjust",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionCostAdjust",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionCostAdjust"
         },
         {
           "name": "transactionDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "transactionDateTime",
-          "description": "The date and time the payment was made or credit was applied.",
-          "appliedTraits": null
+          "description": "The date and time the payment was made or credit was applied."
         },
         {
           "name": "transactionDescription",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionDescription",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionDescription"
         },
         {
           "name": "transactionQuantityIssued",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "transactionQuantityIssued",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -479,7 +397,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "transactionQuantityReceived",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -498,32 +415,25 @@
           "name": "transactionType",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionType",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionType"
         },
         {
           "name": "transactionTypeSystem",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "transactionTypeSystem",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "transactionTypeSystem"
         },
         {
           "name": "unitOfMeasure",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "unitOfMeasure",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "unitOfMeasure"
         },
         {
           "name": "unitPrice",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "unitPrice",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -542,9 +452,7 @@
           "name": "uomToUOMPhysicalStockConversionFactor",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "uomToUOMPhysicalStockConversionFactor",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "uomToUOMPhysicalStockConversionFactor"
         }
       ]
     }

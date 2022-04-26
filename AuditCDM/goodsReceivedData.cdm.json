@@ -15,7 +15,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "adjustmentAmount",
-          "description": "Reference number on shipping document (company reference or logistics company identifier).",
+          "description": "Reference number on shipping document\r\n(company reference or logistics company\r\nidentifier).",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -35,71 +35,62 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentDescription",
-          "description": "If an adjustment to the receipt, a description of the reason for the adjustment.",
-          "appliedTraits": null
+          "description": "If an adjustment to the receipt, a description\r\nof the reason for the adjustment."
         },
         {
           "name": "adjustmentIndicator",
           "dataType": "string",
           "isNullable": true,
           "displayName": "adjustmentIndicator",
-          "description": "\"0\" if the transaction is the original shipment transaction, \"1\" if the transaction is a shipment adjustment.",
-          "appliedTraits": null
+          "description": "\"0\" if the transaction is the original shipment\r\ntransaction, \"1\" if the transaction is a\r\nshipment adjustment."
         },
         {
           "name": "approvedBy",
           "dataType": "string",
           "isNullable": true,
           "displayName": "approvedBy",
-          "description": "User ID (from User_Listing file) for person who approved the entry.",
-          "appliedTraits": null
+          "description": "User ID (from User_Listing file) for person who approved the entry."
         },
         {
           "name": "approvedByDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "approvedByDateTime",
-          "description": "The DateTime the entry was approved.",
-          "appliedTraits": null
+          "description": "The DateTime the entry was approved."
         },
         {
           "name": "businessUnitCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-          "appliedTraits": null
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "enteredBy",
           "dataType": "string",
           "isNullable": true,
           "displayName": "enteredBy",
-          "description": "User_ID (from User_Listing file) for person who created the record.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for person who created the record."
         },
         {
           "name": "enteredDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "enteredDateTime",
-          "description": "The date the transaction was entered into the  system. This is sometimes referred to as the  creation date. This should be a system- generated date (rather than user-entered  date), when possible. This date does not  necessarily correspond with the date of the  transaction itself.",
-          "appliedTraits": null
+          "description": "The date the transaction was entered into the \r\nsystem. This is sometimes referred to as the \r\ncreation date. This should be a system-\r\ngenerated date (rather than user-entered\r\n date), when possible. This date does not \r\nnecessarily correspond with the date of the\r\n transaction itself."
         },
         {
           "name": "goodsReceiptUniqueId",
           "dataType": "string",
           "isNullable": false,
-          "displayName": "goodsReceiptUniqueId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "goodsReceiptUniqueId"
         },
         {
           "name": "goodsReceivedAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedAmount",
-          "description": "Customer purchasing the product. Must  match a Customer_Account_ID in the  Customer_Master_Listing_YYYYMMDD file.",
+          "description": "Customer purchasing the product. Must \r\nmatch a Customer_Account_ID in the\r\n Customer_Master_Listing_YYYYMMDD file.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -119,7 +110,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "goodsReceivedCurrencyAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -138,9 +128,7 @@
           "name": "goodsReceivedCurrencyCode",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "goodsReceivedCurrencyCode",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "goodsReceivedCurrencyCode"
         },
         {
           "name": "goodsReceivedExchangeRate",
@@ -167,23 +155,20 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lastModifiedBy",
-          "description": "User_ID (from User_Listing file) for the last person modifying this entry.",
-          "appliedTraits": null
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
         },
         {
           "name": "lastModifiedDateTime",
           "dataType": "date",
           "isNullable": true,
           "displayName": "lastModifiedDateTime",
-          "description": "The date and time the entry was last modified before posting.",
-          "appliedTraits": null
+          "description": "The date and time the entry was last modified before posting."
         },
         {
           "name": "lineAdjustmentAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineAdjustmentAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -202,9 +187,7 @@
           "name": "lineAdjustmentDescription",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "lineAdjustmentDescription",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "lineAdjustmentDescription"
         },
         {
           "name": "lineAmount",
@@ -231,7 +214,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "lineCurrencyAmount",
-          "description": "Monetary amount for the line item in the  receipt document related to the purchase  order in local currency.",
+          "description": "Monetary amount for the line item in the\r\n receipt document related to the purchase \r\norder in local currency.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -251,8 +234,7 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineCurrencyCode",
-          "description": "The currency for local reporting  requirements. See ISO 4217 coding.",
-          "appliedTraits": null
+          "description": "The currency for local reporting\r\n requirements. See ISO 4217 coding."
         },
         {
           "name": "lineExchangeRate",
@@ -279,7 +261,6 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePurchaseOrderAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -299,7 +280,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePurchaseOrderCurrencyAmount",
-          "description": "Monetary amount for the line item in the purchase order related to the receipt shipping document in local currency. If no purchase order, leave blank.",
+          "description": "Monetary amount for the line item in the\r\npurchase order related to the receipt\r\nshipping document in local currency. If no\r\npurchase order, leave blank.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -319,15 +300,13 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderCurrencyCode",
-          "description": "The currency for local reporting requirements. See ISO 4217 coding. If no purchase order, leave blank.",
-          "appliedTraits": null
+          "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding. If no\r\npurchase order, leave blank."
         },
         {
           "name": "linePurchaseOrderExchangeRate",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "linePurchaseOrderExchangeRate",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -347,127 +326,111 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderLineId",
-          "description": "Identifier for purchase order line number. Must match Purchase_Order_Line_ID used in Purchase_Orders_Lines_YYYYMMDD_ YYYYMMDD file. If no purchase order, leave blank.",
-          "appliedTraits": null
+          "description": "Identifier for purchase order line number.\r\nMust match Purchase_Order_Line_ID\r\nused in\r\nPurchase_Orders_Lines_YYYYMMDD_\r\nYYYYMMDD file. If no purchase order,\r\nleave blank."
         },
         {
           "name": "linePurchaseOrderQuantity",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderQuantity",
-          "description": "Purchase order line quantity. If no purchase  order, leave blank.",
-          "appliedTraits": null
+          "description": "Purchase order line quantity. If no purchase \r\norder, leave blank."
         },
         {
           "name": "linePurchaseOrderUnitofMeasure",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderUnitofMeasure",
-          "description": "Purchase order line base unit of measure. If  no purchase order, leave blank.",
-          "appliedTraits": null
+          "description": "Purchase order line base unit of measure. If\r\n no purchase order, leave blank."
         },
         {
           "name": "linePurchaseOrderUnitPrice",
           "dataType": "string",
           "isNullable": true,
           "displayName": "linePurchaseOrderUnitPrice",
-          "description": "Purchase order line price per unit. If no  purchase order, leave blank.",
-          "appliedTraits": null
+          "description": "Purchase order line price per unit. If no \r\npurchase order, leave blank."
         },
         {
           "name": "lineReceiptDocumentLineId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptDocumentLineId",
-          "description": "Reference line number on receipt document.",
-          "appliedTraits": null
+          "description": "Reference line number on receipt document."
         },
         {
           "name": "lineReceiptId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptId",
-          "description": "Unique identifier for each shipment received. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment.",
-          "appliedTraits": null
+          "description": "Unique identifier for each shipment received. This ID may need to be created by concatenating fields (for example, document number, document type, and year) to uniquely identify each shipment."
         },
         {
           "name": "lineReceiptProductBarCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductBarCode",
-          "description": "UPC or other general identifier.",
-          "appliedTraits": null
+          "description": "UPC or other general identifier."
         },
         {
           "name": "lineReceiptProductDescription",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductDescription",
-          "description": "Product description (plain English) to indicate the name or other identifying characteristics of the product.",
-          "appliedTraits": null
+          "description": "Product description (plain English) to indicate the name or other identifying characteristics of the product."
         },
         {
           "name": "lineReceiptProductGroup01",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductGroup01",
-          "description": "Product descriptor #1, for example, tires or accessories.",
-          "appliedTraits": null
+          "description": "Product descriptor #1, for example, tires or accessories."
         },
         {
           "name": "lineReceiptProductGroup02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductGroup02",
-          "description": "Product descriptor #2, for example, brand.",
-          "appliedTraits": null
+          "description": "Product descriptor #2, for example, brand."
         },
         {
           "name": "lineReceiptProductId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptProductId",
-          "description": "Identifier that is unique for each product.",
-          "appliedTraits": null
+          "description": "Identifier that is unique for each product."
         },
         {
           "name": "lineReceiptQuantity",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptQuantity",
-          "description": "Item quantity received.",
-          "appliedTraits": null
+          "description": "Item quantity received."
         },
         {
           "name": "lineReceiptUnitOfMeasure",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptUnitOfMeasure",
-          "description": "Base unit of measure.",
-          "appliedTraits": null
+          "description": "Base unit of measure."
         },
         {
           "name": "lineReceiptUnitPrice",
           "dataType": "string",
           "isNullable": true,
           "displayName": "lineReceiptUnitPrice",
-          "description": "Price per unit for item received.",
-          "appliedTraits": null
+          "description": "Price per unit for item received."
         },
         {
           "name": "postingStatus",
           "dataType": "string",
           "isNullable": true,
           "displayName": "postingStatus",
-          "description": "Status of the transaction's posting to the GL (for example, \"Posted,\" \"Not Posted\").",
-          "appliedTraits": null
+          "description": "Status of the transaction's posting to the GL\r\n(for example, \"Posted,\" \"Not Posted\")."
         },
         {
           "name": "purchaseOrderAmount",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "purchaseOrderAmount",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -487,7 +450,7 @@
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "purchaseOrderCurrencyAmount",
-          "description": "Transaction monetary amount in local currency. If no purchase order, leave blank.",
+          "description": "Transaction monetary amount in local\r\ncurrency. If no purchase order, leave blank.",
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -507,23 +470,19 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderCurrencyCode",
-          "description": "The currency for local reporting requirements. See ISO 4217 coding. If no purchase order, leave blank.",
-          "appliedTraits": null
+          "description": "The currency for local reporting\r\nrequirements. See ISO 4217 coding. If no\r\npurchase order, leave blank."
         },
         {
           "name": "purchaseOrderDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "purchaseOrderDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "purchaseOrderDate"
         },
         {
           "name": "purchaseOrderExchangeRate",
           "dataType": "decimal",
           "isNullable": true,
           "displayName": "purchaseOrderExchangeRate",
-          "description": null,
           "appliedTraits": {
             "traitReference": "is.dataFormat.numeric.shaped",
             "arguments": [
@@ -543,96 +502,84 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "purchaseOrderId",
-          "description": "Unique identifier for each purchase order. Must match Purchase_Order_ID in the Purchase_Orders_YYYYMMDD_YYYYMMD D file. If no purchase order, leave blank.",
-          "appliedTraits": null
+          "description": "Unique identifier for each purchase order.\r\nMust match Purchase_Order_ID in the\r\nPurchase_Orders_YYYYMMDD_YYYYMMD\r\nD file. If no purchase order, leave blank."
         },
         {
           "name": "receiptDate",
           "dataType": "date",
           "isNullable": true,
           "displayName": "receiptDate",
-          "description": "Date of receipt (date received)",
-          "appliedTraits": null
+          "description": "Date of receipt (date received)"
         },
         {
           "name": "receiptDocumentId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptDocumentId",
-          "description": "Reference number on receipt shipping document (company reference or logistics company identifier).",
-          "appliedTraits": null
+          "description": "Reference number on receipt shipping\r\ndocument (company reference or logistics\r\ncompany identifier)."
         },
         {
           "name": "receiptFiscalYear",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptFiscalYear",
-          "description": "Fiscal year in which the Receipt_Date occurs\u2014YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL).",
-          "appliedTraits": null
+          "description": "Fiscal year in which the Receipt_Date occurs\u2014YYYY for delimited, CCYY-MM-DD fiscal year end (ISO 8601) for extensible business reporting language global ledger taxonomy framework (XBRL GL)."
         },
         {
           "name": "receiptId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptId",
-          "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction.",
-          "appliedTraits": null
+          "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction."
         },
         {
           "name": "receiptPeriod",
           "dataType": "string",
           "isNullable": true,
           "displayName": "receiptPeriod",
-          "description": "Fiscal period in which the Receipt_Date occurs. Examples include W1\u2013W53 for weekly periods, M1\u2013M12 for monthly periods, and Q1\u2013Q4 for quarterly periods.",
-          "appliedTraits": null
+          "description": "Fiscal period in which the Receipt_Date occurs. Examples include W1\u2013W53 for weekly periods, M1\u2013M12 for monthly periods, and Q1\u2013Q4 for quarterly periods."
         },
         {
           "name": "segment01",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "supplierId",
           "dataType": "string",
           "isNullable": true,
           "displayName": "supplierId",
-          "description": "Identifier of the supplier to whom payment is due or from whom unused credits have been applied. Must match the Supplier_Account_ID in the Supplier_Listing_YYYYMMDD file.",
-          "appliedTraits": null
+          "description": "Identifier of the supplier to whom payment is\r\ndue or from whom unused credits have been\r\napplied. Must match the\r\nSupplier_Account_ID in the\r\nSupplier_Listing_YYYYMMDD file."
         }
       ]
     }

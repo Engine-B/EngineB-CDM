@@ -15,160 +15,126 @@
           "dataType": "string",
           "isNullable": true,
           "displayName": "businessUnitCode",
-          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.",
-          "appliedTraits": null
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
         },
         {
           "name": "costingType",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "costingType",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "costingType"
         },
         {
           "name": "inventoryProductId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "inventoryProductId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "inventoryProductId"
         },
         {
           "name": "locationId",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "locationId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "locationId"
         },
         {
           "name": "materialId",
           "dataType": "string",
           "isNullable": false,
-          "displayName": "materialId",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "materialId"
         },
         {
           "name": "otherCost1",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "otherCost1",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "otherCost1"
         },
         {
           "name": "otherCost2",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "otherCost2",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "otherCost2"
         },
         {
           "name": "otherCost3",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "otherCost3",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "otherCost3"
         },
         {
           "name": "otherCost4",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "otherCost4",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "otherCost4"
         },
         {
           "name": "otherCost5",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "otherCost5",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "otherCost5"
         },
         {
           "name": "segment01",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment01",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment02",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment02",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment03",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment03",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment04",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment04",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "segment05",
           "dataType": "string",
           "isNullable": true,
           "displayName": "segment05",
-          "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on.",
-          "appliedTraits": null
+          "description": "Reserved segment field that can be used for \r\nprofit center, division, fund, program,\r\nbranch, project, and so on."
         },
         {
           "name": "stockingUnitOfMeasure",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "stockingUnitOfMeasure",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "stockingUnitOfMeasure"
         },
         {
           "name": "totalCost",
           "dataType": "string",
           "isNullable": true,
-          "displayName": "totalCost",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "totalCost"
         },
         {
           "name": "validFromDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "validFromDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "validFromDate"
         },
         {
           "name": "validToDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "validToDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "validToDate"
         },
         {
           "name": "valuationDate",
           "dataType": "date",
           "isNullable": true,
-          "displayName": "valuationDate",
-          "description": null,
-          "appliedTraits": null
+          "displayName": "valuationDate"
         }
       ]
     }

@@ -15,48 +15,42 @@
           "dataType": "string",
           "isNullable": false,
           "displayName": "bankAccountId",
-          "description": "Unambiguous identification of the account to which credit and debit entries are made.",
-          "appliedTraits": null
+          "description": "Unambiguous identification of the account to which credit and debit entries are made."
         },
         {
           "name": "bankAccountNumber",
           "dataType": "string",
           "isNullable": true,
           "displayName": "bankAccountNumber",
-          "description": "The number allocated to the account by the individual\ufffds or company\ufffds own bank.",
-          "appliedTraits": null
+          "description": "The number allocated to the account by the individual\ufffds or company\ufffds own bank."
         },
         {
           "name": "bankAccountSubType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "bankAccountSubType",
-          "description": "Specifies the sub type of account (product family group).",
-          "appliedTraits": null
+          "description": "Specifies the sub type of account (product family group)."
         },
         {
           "name": "bankAccountType",
           "dataType": "string",
           "isNullable": true,
           "displayName": "bankAccountType",
-          "description": "Specifies the type of account (personal or business).",
-          "appliedTraits": null
+          "description": "Specifies the type of account (personal or business)."
         },
         {
           "name": "bankSortCode",
           "dataType": "string",
           "isNullable": true,
           "displayName": "bankSortCode",
-          "description": "The bank sort code",
-          "appliedTraits": null
+          "description": "The bank sort code"
         },
         {
           "name": "IBAN",
           "dataType": "string",
           "isNullable": true,
           "displayName": "IBAN",
-          "description": "The International Bank Account Number",
-          "appliedTraits": null
+          "description": "The International Bank Account Number"
         }
       ]
     }
