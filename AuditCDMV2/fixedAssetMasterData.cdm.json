@@ -1,0 +1,412 @@
+{
+    "jsonSchemaSemanticVersion": "2.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "fixedAssetMasterData",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "businessUnitCode",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "businessUnitCode",
+                        "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                    },
+                    {
+                        "name": "currencyId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "currencyId",
+                        "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
+                    },
+                    {
+                        "name": "depreciationRate",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "depreciationRate",
+                        "description": "Rate at which depreciation will be charged on the carrying amount of fixed assets"
+                    },
+                    {
+                        "name": "fixedAssetAccumulatedDepreciation",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetAccumulatedDepreciation",
+                        "description": "Value of depreciation to date on the asset"
+                    },
+                    {
+                        "name": "fixedAssetAccumulatedDepreciationAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetAccumulatedDepreciationAccount",
+                        "description": "Account to which accumulated depreciation or depreciation is posted in the GL"
+                    },
+                    {
+                        "name": "fixedAssetAcquisitionDate",
+                        "purpose": "hasA",
+                        "dataType": "datetime",
+                        "isNullable": true,
+                        "displayName": "fixedAssetAcquisitionDate",
+                        "description": "Date when the fixed asset was acquired"
+                    },
+                    {
+                        "name": "fixedAssetAssetAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetAssetAccount",
+                        "description": "Asset account to which this asset is consigned, may be used to categorise assets or associate them with specific cost or project centres or geographic locations"
+                    },
+                    {
+                        "name": "fixedAssetAvailableForSaleDate",
+                        "purpose": "hasA",
+                        "dataType": "datetime",
+                        "isNullable": true,
+                        "displayName": "fixedAssetAvailableForSaleDate",
+                        "description": "The date at which the asset is classified as available for sale"
+                    },
+                    {
+                        "name": "fixedAssetBarcode",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetBarcode",
+                        "description": "Universal Product Code or other general identifier."
+                    },
+                    {
+                        "name": "fixedAssetCIPAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetCIPAccount",
+                        "description": "Construction in Progress account to which the asset is allocated"
+                    },
+                    {
+                        "name": "fixedAssetCIPFlag",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetCIPFlag",
+                        "description": "Flag to identify fixed assets which are Construction in Progress (CIP) "
+                    },
+                    {
+                        "name": "fixedAssetClass",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetClass",
+                        "description": "Class of Fixed Assets to which the asset is assigned, for example Equipment, Vehicles, Land etc."
+                    },
+                    {
+                        "name": "fixedAssetCode",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetCode",
+                        "description": "Code used to identify the fixed asset type"
+                    },
+                    {
+                        "name": "fixedAssetDepreciableBasis",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetDepreciableBasis",
+                        "description": "Value of the asset against which depreciation is calculated"
+                    },
+                    {
+                        "name": "fixedAssetDepreciationAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetDepreciationAccount",
+                        "description": "Account to which depreciation is charged for this fixed asset"
+                    },
+                    {
+                        "name": "fixedAssetDescription",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetDescription",
+                        "description": "Description of the fixed asset"
+                    },
+                    {
+                        "name": "fixedAssetDisposalDate",
+                        "purpose": "hasA",
+                        "dataType": "datetime",
+                        "isNullable": true,
+                        "displayName": "fixedAssetDisposalDate",
+                        "description": "date on which the asset is sold or discarded"
+                    },
+                    {
+                        "name": "fixedAssetFairValue",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetFairValue",
+                        "description": "Estimated amount of the fair value of the asset on the open market, used for valuation"
+                    },
+                    {
+                        "name": "fixedAssetGroup01",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetGroup01",
+                        "description": "Internal group to which the fixed asset is assigned"
+                    },
+                    {
+                        "name": "fixedAssetGroup02",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetGroup02",
+                        "description": "Internal group to which the fixed asset is assigned"
+                    },
+                    {
+                        "name": "fixedAssetId",
+                        "purpose": "identifiedBy",
+                        "dataType": "string",
+                        "isNullable": false,
+                        "displayName": "fixedAssetId",
+                        "description": "ID associated with fixed asset"
+                    },
+                    {
+                        "name": "fixedAssetInactiveFlag",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetInactiveFlag",
+                        "description": "flag to identify assets inactive or not in use"
+                    },
+                    {
+                        "name": "fixedAssetInServiceDate",
+                        "purpose": "hasA",
+                        "dataType": "datetime",
+                        "isNullable": true,
+                        "displayName": "fixedAssetInServiceDate",
+                        "description": "Identify the service date when the asset was first placed"
+                    },
+                    {
+                        "name": "fixedAssetNetBookValue",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetNetBookValue",
+                        "description": "The value of fixed assets after deducting the accumulated depreciation and accumulated impairment expenses from the original cost of fixed assets"
+                    },
+                    {
+                        "name": "fixedAssetOriginalCost",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetOriginalCost",
+                        "description": "Purchased cost of the asset"
+                    },
+                    {
+                        "name": "fixedAssetQuantityOnHand",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetQuantityOnHand",
+                        "description": "The fixed asset quantity that are available for use"
+                    },
+                    {
+                        "name": "fixedAssetRealisedGainLossAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetRealisedGainLossAccount",
+                        "description": "Account to which realised gains or losses on Assets is posted in the GL"
+                    },
+                    {
+                        "name": "fixedAssetReplacementCost",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetReplacementCost",
+                        "description": "Estimated cost to replace Fixed Asset, used for valuation purposes"
+                    },
+                    {
+                        "name": "fixedAssetRetirementDate",
+                        "purpose": "hasA",
+                        "dataType": "datetime",
+                        "isNullable": true,
+                        "displayName": "fixedAssetRetirementDate",
+                        "description": "The date of fixed asset retirement"
+                    },
+                    {
+                        "name": "fixedAssetSalvageValue",
+                        "purpose": "hasA",
+                        "dataType": "decimal",
+                        "isNullable": true,
+                        "displayName": "fixedAssetSalvageValue",
+                        "description": "Estimated amount of consideration the entity would expect to receive on scrapping the asset for salvage at the end of its useful life"
+                    },
+                    {
+                        "name": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
+                        "purpose": "hasA",
+                        "dataType": "datetime",
+                        "isNullable": true,
+                        "displayName": "fixedAssetToBeAbandonedOrDisposedOfOtherThanByForSaleDate",
+                        "description": "Date on which the asset is to be abandoned ordisposed of other than by for sale"
+                    },
+                    {
+                        "name": "fixedAssetType",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetType",
+                        "description": "Identify the type of Fixed Asset Eg: buildings, computer equipment, software, furniture, land, machinery, and vehicles."
+                    },
+                    {
+                        "name": "fixedAssetUnrealizedGainLossAccount",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetUnrealizedGainLossAccount",
+                        "description": "Account to which unrealised gains or losses is posted in the GL"
+                    },
+                    {
+                        "name": "fixedAssetUsefulLife",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetUsefulLife",
+                        "description": "the period/ time an asset is expected to be functional and fit-for-Use"
+                    },
+                    {
+                        "name": "fixedAssetUsefulLifeRemaining",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "fixedAssetUsefulLifeRemaining",
+                        "description": "the period/ time an asset is expected to be functional and fit-for-Use from the current date"
+                    },
+                    {
+                        "name": "locationCode",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "locationCode",
+                        "description": "A code used for identifying the location of fixed assets."
+                    },
+                    {
+                        "name": "locationDescription",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "locationDescription",
+                        "description": "Text description of the location where the fixed asset can be found"
+                    },
+                    {
+                        "name": "locationId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "locationId",
+                        "description": "ID of the location of the fixed asset"
+                    },
+                    {
+                        "name": "lotNumber",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "lotNumber",
+                        "description": "identification number assigned to a particular quantity or lot of material or depending on the asset classified"
+                    },
+                    {
+                        "name": "manufacturerId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "manufacturerId",
+                        "description": "fixed asset manufacturer ID"
+                    },
+                    {
+                        "name": "projectId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "projectId",
+                        "description": "project ID to which the fixed asset relates to"
+                    },
+                    {
+                        "name": "segment01",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment01",
+                        "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on."
+                    },
+                    {
+                        "name": "segment02",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment02",
+                        "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on."
+                    },
+                    {
+                        "name": "segment03",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment03",
+                        "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on."
+                    },
+                    {
+                        "name": "segment04",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment04",
+                        "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on."
+                    },
+                    {
+                        "name": "segment05",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "segment05",
+                        "description": "Reserved segment field that can be used for  profit center, division, fund, program, branch, project, and so on."
+                    },
+                    {
+                        "name": "serialNumber",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "serialNumber",
+                        "description": "serial number for asset, used by manufacturer for identification"
+                    },
+                    {
+                        "name": "supplierId",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "supplierId",
+                        "description": "Identifier of the supplier from whom the Asset was purchased and  to whom payment is due.applied. Must match the supplier_Account_ID in the Supplier_Listing_YYYYMMDD file."
+                    },
+                    {
+                        "name": "supplierName",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "supplierName",
+                        "description": "Name of the supplier"
+                    }
+                ]
+            ],
+            "displayName": "fixedAssetMasterData",
+            "description": ""
+        }
+    ]
+}
