@@ -1,0 +1,108 @@
+{
+    "jsonSchemaSemanticVersion": "2.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "taxTable",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "regulatorActiveFlag",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorActiveFlag",
+                        "description": "True (Active) or False (Inactive)"
+                    },
+                    {
+                        "name": "regulatorCode",
+                        "purpose": "identifiedBy",
+                        "dataType": "string",
+                        "isNullable": false,
+                        "displayName": "regulatorCode",
+                        "description": "A code used to refer to this regulator or jurisdiction; used as key or cross-reference in files."
+                    },
+                    {
+                        "name": "regulatorCountry",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorCountry",
+                        "description": "Recommend ISO 3166-1 Alpha 2 or Alpha 3 format"
+                    },
+                    {
+                        "name": "regulatorDefaultAccrualGlAccountNumber",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorDefaultAccrualGlAccountNumber",
+                        "description": "GL account used to reflect accruals due to regulator"
+                    },
+                    {
+                        "name": "regulatorDefaultExpenseGlAccountNumber",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorDefaultExpenseGlAccountNumber",
+                        "description": "GL account used to reflect the tax expenses incurred."
+                    },
+                    {
+                        "name": "regulatorDefaultPayableGlAccountNumber",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorDefaultPayableGlAccountNumber",
+                        "description": "GL account used to reflect taxes due to regulator"
+                    },
+                    {
+                        "name": "regulatorIdentifier",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorIdentifier",
+                        "description": "Tax or other code assigned by Regulator for reporting organization to Regulator"
+                    },
+                    {
+                        "name": "regulatorName",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorName",
+                        "description": "Name of regulator for whom tax is withheld or accrued"
+                    },
+                    {
+                        "name": "regulatorRegion",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorRegion",
+                        "description": "Sub-region within country; in the U.S., this would be state; in Canada it would be province."
+                    },
+                    {
+                        "name": "regulatorReportingOrganization",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorReportingOrganization",
+                        "description": "Cross-reference to Organization_Location_File_YYYYMMDD"
+                    },
+                    {
+                        "name": "regulatorRole",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "regulatorRole",
+                        "description": "From: Federal, Regional, Local"
+                    }
+                ]
+            ],
+            "displayName": "taxTable",
+            "description": ""
+        }
+    ]
+}
