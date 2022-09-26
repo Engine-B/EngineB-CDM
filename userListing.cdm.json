@@ -1,0 +1,84 @@
+{
+    "jsonSchemaSemanticVersion": "2.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "userListing",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                [
+                    {
+                        "name": "department",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "department",
+                        "description": "The department the person is part of (for example, accounting)."
+                    },
+                    {
+                        "name": "firstName",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "firstName",
+                        "description": "The first (given) name of the person."
+                    },
+                    {
+                        "name": "lastName",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "lastName",
+                        "description": "The last (family) name of the person."
+                    },
+                    {
+                        "name": "roleResponsibility",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "roleResponsibility",
+                        "description": "The person's functional role or primary responsibility (for example, accounts payable)."
+                    },
+                    {
+                        "name": "title",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "title",
+                        "description": "The title of the person (for example, accounting manager)."
+                    },
+                    {
+                        "name": "userActiveModifiedDate",
+                        "purpose": "hasA",
+                        "dataType": "datetime",
+                        "isNullable": true,
+                        "displayName": "userActiveModifiedDate",
+                        "description": "The date of user activation or termination."
+                    },
+                    {
+                        "name": "userActiveStatus",
+                        "purpose": "hasA",
+                        "dataType": "string",
+                        "isNullable": true,
+                        "displayName": "userActiveStatus",
+                        "description": "The status of users (for identification of transactions by inactive users). The value of this field should be either 'Active' or 'Inactive' for flat file data; for XBRL GL, this is a Boolean, in which active is 'true' and inactive is 'false.'"
+                    },
+                    {
+                        "name": "userId",
+                        "purpose": "identifiedBy",
+                        "dataType": "string",
+                        "isNullable": false,
+                        "displayName": "userId",
+                        "description": "A unique identifier of individuals entering transactions into the ERP system. This field is used to join information in this table to other tables based on the fields Entered_By, Last_Modified_By, and Approved_By."
+                    }
+                ]
+            ],
+            "displayName": "userListing",
+            "description": ""
+        }
+    ]
+}
