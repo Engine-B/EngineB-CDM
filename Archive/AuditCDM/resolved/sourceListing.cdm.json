@@ -1,0 +1,171 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/sourceListing.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "sourceListing",
+      "attributeContext": {
+        "type": "entity",
+        "name": "sourceListing",
+        "definition": "resolvedFrom/sourceListing",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "sourceListing/attributeContext/sourceListing/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessProcessMajor",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "definition": "resolvedFrom/sourceListing/hasAttributes/businessProcessMajor",
+            "contents": [
+              "sourceListing/hasAttributes/businessProcessMajor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessProcessMinor",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "definition": "resolvedFrom/sourceListing/hasAttributes/businessProcessMinor",
+            "contents": [
+              "sourceListing/hasAttributes/businessProcessMinor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "erpSubledgerModule",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "definition": "resolvedFrom/sourceListing/hasAttributes/erpSubledgerModule",
+            "contents": [
+              "sourceListing/hasAttributes/erpSubledgerModule"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sourceDescription",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "definition": "resolvedFrom/sourceListing/hasAttributes/sourceDescription",
+            "contents": [
+              "sourceListing/hasAttributes/sourceDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sourceId",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "definition": "resolvedFrom/sourceListing/hasAttributes/sourceId",
+            "contents": [
+              "sourceListing/hasAttributes/sourceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemManualIdentifier",
+            "parent": "sourceListing/attributeContext/sourceListing",
+            "definition": "resolvedFrom/sourceListing/hasAttributes/systemManualIdentifier",
+            "contents": [
+              "sourceListing/hasAttributes/systemManualIdentifier"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "businessProcessMajor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "sourceListing/attributeContext/sourceListing/businessProcessMajor",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessProcessMajor",
+          "description": "The major class of transaction associated\nwith a business process (for example,\nsales)."
+        },
+        {
+          "name": "businessProcessMinor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "sourceListing/attributeContext/sourceListing/businessProcessMinor",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessProcessMinor",
+          "description": "A subprocess of the major business\nprocess (for example‚Äîorders, returns,\ndiscounts, and so on)."
+        },
+        {
+          "name": "erpSubledgerModule",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "sourceListing/attributeContext/sourceListing/erpSubledgerModule",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "erpSubledgerModule",
+          "description": "Description of the subledger or ERP module the journal entry originated from. Should tie back to a system or significant accounting process. In some instances, may be represented by source."
+        },
+        {
+          "name": "sourceDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "sourceListing/attributeContext/sourceListing/sourceDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sourceDescription",
+          "description": "A plain English description of the source. Some of the more common journals are purchases, sales, cash receipts, cash disbursements, and general journal."
+        },
+        {
+          "name": "sourceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "sourceListing/attributeContext/sourceListing/sourceId",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "sourceId",
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
+        },
+        {
+          "name": "systemManualIdentifier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "sourceListing/attributeContext/sourceListing/systemManualIdentifier",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemManualIdentifier",
+          "description": "Define if the source creates system-generated or manually entered journal entries"
+        }
+      ],
+      "displayName": "sourceListing",
+      "description": "",
+      "version": "1.0"
+    }
+  ]
+}

@@ -1,0 +1,1658 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/apPaymentData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "apPaymentData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "apPaymentData",
+        "definition": "resolvedFrom/apPaymentData",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "apPaymentData/attributeContext/apPaymentData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedBy",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/approvedBy",
+            "contents": [
+              "apPaymentData/hasAttributes/approvedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "approvedDateTime",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/approvedDateTime",
+            "contents": [
+              "apPaymentData/hasAttributes/approvedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "batchId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/batchId",
+            "contents": [
+              "apPaymentData/hasAttributes/batchId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "description",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/description",
+            "contents": [
+              "apPaymentData/hasAttributes/description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glCreditAccountNumber",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/glCreditAccountNumber",
+            "contents": [
+              "apPaymentData/hasAttributes/glCreditAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "glDebitAccountNumber",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/glDebitAccountNumber",
+            "contents": [
+              "apPaymentData/hasAttributes/glDebitAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedBy",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lastModifiedBy",
+            "contents": [
+              "apPaymentData/hasAttributes/lastModifiedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastModifiedDateTime",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lastModifiedDateTime",
+            "contents": [
+              "apPaymentData/hasAttributes/lastModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAccountId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAccountId",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAmountCurrencyAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAmountCurrencyAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAnalysisAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAnalysisAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAnalysisAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAnalysisAmountCurrencyCode",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAnalysisAmountCurrencyCode",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAnalysisAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAnalysisAmountExchangeRate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAnalysisAmountExchangeRate",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAnalysisAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAnalysisId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAnalysisId",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAnalysisId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAnalysisIdDescription",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAnalysisIdDescription",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAnalysisIdDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAnalysisType",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAnalysisType",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAnalysisType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineAnalysisAnalysisTypeDescription",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineAnalysisAnalysisTypeDescription",
+            "contents": [
+              "apPaymentData/hasAttributes/lineAnalysisAnalysisTypeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineApprovedBy",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineApprovedBy",
+            "contents": [
+              "apPaymentData/hasAttributes/lineApprovedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineApprovedDateTime",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineApprovedDateTime",
+            "contents": [
+              "apPaymentData/hasAttributes/lineApprovedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineBusinessUnitCode",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineBusinessUnitCode",
+            "contents": [
+              "apPaymentData/hasAttributes/lineBusinessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDebitCreditIndicator",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineDebitCreditIndicator",
+            "contents": [
+              "apPaymentData/hasAttributes/lineDebitCreditIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineDescription",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineDescription",
+            "contents": [
+              "apPaymentData/hasAttributes/lineDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineLastModifiedDate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineLastModifiedDate",
+            "contents": [
+              "apPaymentData/hasAttributes/lineLastModifiedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineLineNumber",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineLineNumber",
+            "contents": [
+              "apPaymentData/hasAttributes/lineLineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineModifiedBy",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineModifiedBy",
+            "contents": [
+              "apPaymentData/hasAttributes/lineModifiedBy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePaymentAmountLocalCurrencyCode",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/linePaymentAmountLocalCurrencyCode",
+            "contents": [
+              "apPaymentData/hasAttributes/linePaymentAmountLocalCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePaymentAmountReporting",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/linePaymentAmountReporting",
+            "contents": [
+              "apPaymentData/hasAttributes/linePaymentAmountReporting"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePaymentAmountReportingCurrency",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/linePaymentAmountReportingCurrency",
+            "contents": [
+              "apPaymentData/hasAttributes/linePaymentAmountReportingCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePaymentLineAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/linePaymentLineAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/linePaymentLineAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePaymentLineAmountCurrencyAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/linePaymentLineAmountCurrencyAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/linePaymentLineAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePaymentLineAmountCurrencyCode",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/linePaymentLineAmountCurrencyCode",
+            "contents": [
+              "apPaymentData/hasAttributes/linePaymentLineAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "linePaymentLineAmountExchangeRate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/linePaymentLineAmountExchangeRate",
+            "contents": [
+              "apPaymentData/hasAttributes/linePaymentLineAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSettlementCurrencyAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSettlementCurrencyAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSettlementCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSettlementCurrencyCode",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSettlementCurrencyCode",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSettlementCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSettlementPaymentMechanism",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSettlementPaymentMechanism",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSettlementPaymentMechanism"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSettlementSettlementAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSettlementSettlementAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSettlementSettlementAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSettlementSettlementAmountExchangeRate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSettlementSettlementAmountExchangeRate",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSettlementSettlementAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSettlementSettlementDate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSettlementSettlementDate",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSettlementSettlementDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSettlementSettlementDiscount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSettlementSettlementDiscount",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSettlementSettlementDiscount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSourceDocumentId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSourceDocumentId",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSourceDocumentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSupplierId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSupplierId",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSupplierId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemEntryDateTime",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSystemEntryDateTime",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSystemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineSystemEntryUser",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineSystemEntryUser",
+            "contents": [
+              "apPaymentData/hasAttributes/lineSystemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmountCurrencyAmount",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxAmountCurrencyAmount",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxAmountCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmountCurrencyCode",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxAmountCurrencyCode",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxAmountCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxAmountExchangeRate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxAmountExchangeRate",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxAmountExchangeRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxBase",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxBase",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxBase"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxBaseDescription",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxBaseDescription",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxBaseDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxCode",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxCode",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxDeclarationPeriod",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxDeclarationPeriod",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxDeclarationPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxExemptionReason",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxExemptionReason",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxExemptionReason"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxPercentage",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxPercentage",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxInformationTaxType",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxInformationTaxType",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxInformationTaxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lineTaxPointDate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/lineTaxPointDate",
+            "contents": [
+              "apPaymentData/hasAttributes/lineTaxPointDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/paymentId",
+            "contents": [
+              "apPaymentData/hasAttributes/paymentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentMethod",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/paymentMethod",
+            "contents": [
+              "apPaymentData/hasAttributes/paymentMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentRefNo",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/paymentRefNo",
+            "contents": [
+              "apPaymentData/hasAttributes/paymentRefNo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "period",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/period",
+            "contents": [
+              "apPaymentData/hasAttributes/period"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "periodYear",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/periodYear",
+            "contents": [
+              "apPaymentData/hasAttributes/periodYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "postingStatus",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/postingStatus",
+            "contents": [
+              "apPaymentData/hasAttributes/postingStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "referenceDate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/referenceDate",
+            "contents": [
+              "apPaymentData/hasAttributes/referenceDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "referenceNumber",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/referenceNumber",
+            "contents": [
+              "apPaymentData/hasAttributes/referenceNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/segment01",
+            "contents": [
+              "apPaymentData/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/segment02",
+            "contents": [
+              "apPaymentData/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/segment03",
+            "contents": [
+              "apPaymentData/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/segment04",
+            "contents": [
+              "apPaymentData/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/segment05",
+            "contents": [
+              "apPaymentData/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sourceId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/sourceId",
+            "contents": [
+              "apPaymentData/hasAttributes/sourceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryDateTime",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/systemEntryDateTime",
+            "contents": [
+              "apPaymentData/hasAttributes/systemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryUser",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/systemEntryUser",
+            "contents": [
+              "apPaymentData/hasAttributes/systemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/systemId",
+            "contents": [
+              "apPaymentData/hasAttributes/systemId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionDate",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/transactionDate",
+            "contents": [
+              "apPaymentData/hasAttributes/transactionDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionId",
+            "parent": "apPaymentData/attributeContext/apPaymentData",
+            "definition": "resolvedFrom/apPaymentData/hasAttributes/transactionId",
+            "contents": [
+              "apPaymentData/hasAttributes/transactionId"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "approvedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/approvedBy",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "approvedBy",
+          "description": "User ID (from User_Listing file) for person who approved the entry."
+        },
+        {
+          "name": "approvedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/approvedDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "approvedDateTime",
+          "description": "The DateTime the entry was approved."
+        },
+        {
+          "name": "batchId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/batchId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "batchId",
+          "description": "Systems generated ID for batch"
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "description",
+          "description": "Description of the payment."
+        },
+        {
+          "name": "glCreditAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/glCreditAccountNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glCreditAccountNumber",
+          "description": "GL account number on which the credit side of the transaction has been posted."
+        },
+        {
+          "name": "glDebitAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/glDebitAccountNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "glDebitAccountNumber",
+          "description": "GL account number on which the debit side of the transaction has been posted."
+        },
+        {
+          "name": "lastModifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lastModifiedBy",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last person modifying this entry."
+        },
+        {
+          "name": "lastModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lastModifiedDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lastModifiedDateTime",
+          "description": "The date and time the entry was last modified before posting."
+        },
+        {
+          "name": "lineAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAccountId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAccountId",
+          "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account id. It can contain many different levels to identify the Account. It could include cost centres such as company, division, region, group and branch/department."
+        },
+        {
+          "name": "lineAnalysisAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAmountCurrencyAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAnalysisAmountCurrencyAmount",
+          "description": "Transaction monetary amount in local currency."
+        },
+        {
+          "name": "lineAnalysisAnalysisAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAnalysisAnalysisAmount",
+          "description": "The functional or group currency related to\nthe receipt amount. See ISO 4217 coding."
+        },
+        {
+          "name": "lineAnalysisAnalysisAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisAmountCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisAmountCurrencyCode",
+          "description": "Transaction monetary amount recorded in \nthe reporting currency."
+        },
+        {
+          "name": "lineAnalysisAnalysisAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisAmountExchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineAnalysisAnalysisAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+        },
+        {
+          "name": "lineAnalysisAnalysisId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisId",
+          "description": "Analysis ID: e.g. 1200-HDOF-TR (for cost center treasury in the headoffice), P-4800-123 (for project 123 in branch 4800)"
+        },
+        {
+          "name": "lineAnalysisAnalysisIdDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisIdDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisIdDescription",
+          "description": "Description of the AnalysisID: e.g. \"Headoffice-Treasury\"."
+        },
+        {
+          "name": "lineAnalysisAnalysisType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisType",
+          "description": "Analysis type identifier: e.g. CC (for Cost Center), DEP (for department), etc"
+        },
+        {
+          "name": "lineAnalysisAnalysisTypeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineAnalysisAnalysisTypeDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineAnalysisAnalysisTypeDescription",
+          "description": "Description of the AnalysisType, e.g. \"Cost Center\""
+        },
+        {
+          "name": "lineApprovedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineApprovedBy",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineApprovedBy",
+          "description": "User ID (from User_Listing file) for person\n who approved the entry."
+        },
+        {
+          "name": "lineApprovedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineApprovedDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineApprovedDateTime",
+          "description": "The date and time the entry was approved."
+        },
+        {
+          "name": "lineBusinessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineBusinessUnitCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineBusinessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited. Must match the Business_Unit_Code in the Business_Unit_Listing file."
+        },
+        {
+          "name": "lineDebitCreditIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineDebitCreditIndicator",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineDebitCreditIndicator",
+          "description": "Indicates whether the amounts on line-level are debit or credit amounts. Entry must correspond to entry reflected in General Ledger Entry. Signing of line amounts is relative to this indicator. E.g. a return can lead to a negative amount"
+        },
+        {
+          "name": "lineDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineDescription",
+          "description": "Description of Invoice Line."
+        },
+        {
+          "name": "lineLastModifiedDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineLastModifiedDate",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineLastModifiedDate",
+          "description": "The date the entry was last modified."
+        },
+        {
+          "name": "lineLineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineLineNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineLineNumber",
+          "description": "Line item number of the invoice."
+        },
+        {
+          "name": "lineModifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineModifiedBy",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineModifiedBy",
+          "description": "User_ID (from User_Listing file) for the last\nperson modifying this entry."
+        },
+        {
+          "name": "linePaymentAmountLocalCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentAmountLocalCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "linePaymentAmountLocalCurrencyCode",
+          "description": "The currency for local reporting\nrequirements. See ISO 4217 coding."
+        },
+        {
+          "name": "linePaymentAmountReporting",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentAmountReporting",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentAmountReporting",
+          "description": "Transaction monetary amount recorded in\nthe reporting currency."
+        },
+        {
+          "name": "linePaymentAmountReportingCurrency",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentAmountReportingCurrency",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentAmountReportingCurrency",
+          "description": "The reporting currency related to the\npayment amount for nonconsolidated\nreporting. See ISO 4217 coding."
+        },
+        {
+          "name": "linePaymentLineAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentLineAmount",
+          "description": "Transaction monetary amount recorded in\nthe functional or group currency. No \nmulticurrency translation should need to be\nperformed on this amount because all \ntransactions should be recorded in a single\n currency."
+        },
+        {
+          "name": "linePaymentLineAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmountCurrencyAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentLineAmountCurrencyAmount",
+          "description": "Transaction monetary amount in local\n currency."
+        },
+        {
+          "name": "linePaymentLineAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmountCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "linePaymentLineAmountCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
+        },
+        {
+          "name": "linePaymentLineAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/linePaymentLineAmountExchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "linePaymentLineAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+        },
+        {
+          "name": "lineSettlementCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementCurrencyAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementCurrencyAmount",
+          "description": "Amount in foreign currency"
+        },
+        {
+          "name": "lineSettlementCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSettlementCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
+        },
+        {
+          "name": "lineSettlementPaymentMechanism",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementPaymentMechanism",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSettlementPaymentMechanism",
+          "description": "Payment mechanism "
+        },
+        {
+          "name": "lineSettlementSettlementAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementSettlementAmount",
+          "description": "In the header's default currency."
+        },
+        {
+          "name": "lineSettlementSettlementAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementAmountExchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementSettlementAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+        },
+        {
+          "name": "lineSettlementSettlementDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineSettlementSettlementDate",
+          "description": "Date settled"
+        },
+        {
+          "name": "lineSettlementSettlementDiscount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSettlementSettlementDiscount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineSettlementSettlementDiscount",
+          "description": "Description Settlement / Other Discount "
+        },
+        {
+          "name": "lineSourceDocumentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSourceDocumentId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSourceDocumentId",
+          "description": "The source document to which the line relates"
+        },
+        {
+          "name": "lineSupplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSupplierId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSupplierId",
+          "description": "Identifier of the supplier to whom payment\nis due or from whom unused credits have\nbeen applied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file."
+        },
+        {
+          "name": "lineSystemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSystemEntryDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineSystemEntryDateTime",
+          "description": "The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not \nnecessarily correspond with the date of the\n transaction itself."
+        },
+        {
+          "name": "lineSystemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineSystemEntryUser",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineSystemEntryUser",
+          "description": "User_ID (from User_Listing file) for person\n who created the record."
+        },
+        {
+          "name": "lineTaxInformationTaxAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxAmount",
+          "description": "In the header's default currency."
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyAmount",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmountCurrencyAmount",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxAmountCurrencyAmount",
+          "description": "Amount in foreign currency"
+        },
+        {
+          "name": "lineTaxInformationTaxAmountCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmountCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxAmountCurrencyCode",
+          "description": "Three-letter currency code according to ISO 4217 standard. Example: EUR for the Euros or USD for American Dollars."
+        },
+        {
+          "name": "lineTaxInformationTaxAmountExchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxAmountExchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxAmountExchangeRate",
+          "description": "The exchange rate used. CurrencyAmount x ExchangeRate = Amount "
+        },
+        {
+          "name": "lineTaxInformationTaxBase",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxBase",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxBase",
+          "description": "The base on which the tax is calculated. This can be an amount, or a quantity, eg. Litres."
+        },
+        {
+          "name": "lineTaxInformationTaxBaseDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxBaseDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxBaseDescription",
+          "description": "Description of the value in the TaxBase. Eg. Litres for excises on alcoholic bevarages."
+        },
+        {
+          "name": "lineTaxInformationTaxCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxCode",
+          "description": "Tax Code for lookup in tables"
+        },
+        {
+          "name": "lineTaxInformationTaxDeclarationPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxDeclarationPeriod",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxDeclarationPeriod",
+          "description": "The identification of the declaration/return in which the tax amount is reported to the Revenue body"
+        },
+        {
+          "name": "lineTaxInformationTaxExemptionReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxExemptionReason",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxExemptionReason",
+          "description": "Tax exemption or reduction reason or rationale "
+        },
+        {
+          "name": "lineTaxInformationTaxPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxPercentage",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "lineTaxInformationTaxPercentage",
+          "description": "Tax percentage."
+        },
+        {
+          "name": "lineTaxInformationTaxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxInformationTaxType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lineTaxInformationTaxType",
+          "description": "Tax type for look-up in tables"
+        },
+        {
+          "name": "lineTaxPointDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/lineTaxPointDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "lineTaxPointDate",
+          "description": "Tax Point date where recorded or if not recorded then the Invoice date "
+        },
+        {
+          "name": "paymentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/paymentId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "paymentId",
+          "description": "Unique identifier for each payment received. This ID may need to be created by concatenating fields (for example, customer and payment number) to uniquely identify each transaction."
+        },
+        {
+          "name": "paymentMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/paymentMethod",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "paymentMethod",
+          "description": "The code value or indicator of the method by\nwhich the transaction debit or credit amount\nwas extinguished or apportioned to the debt\nby the supplier (for example, check, wire\ntransfer, cash, and so on). Must match the\nPayment_Type in the\nPayment_Type_Listing_YYYYMMDD file."
+        },
+        {
+          "name": "paymentRefNo",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/paymentRefNo",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "paymentRefNo",
+          "description": "Unique identifier for each payment made. This ID may need to be created by concatenating fields (for example, supplier and payment number) to uniquely identify each transaction."
+        },
+        {
+          "name": "period",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/period",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "period",
+          "description": "Fiscal period in which the Effective_Date occurs.Examples include W1ÇƒÏW53 for weekly periods, M1ÇƒÏM12 for monthly periods, and Q1ÇƒÏQ4 for quarterly periods."
+        },
+        {
+          "name": "periodYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/periodYear",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "periodYear",
+          "description": "Fiscal year in which the\nPurchase_Order_Date occurs‚ÄîYYYY for\ndelimited, CCYY-MM-DD fiscal year end\n(ISO 8601) for extensible business reporting\nlanguage global ledger taxonomy framework\n(XBRL GL)."
+        },
+        {
+          "name": "postingStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/postingStatus",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "postingStatus",
+          "description": "Status of the transaction's posting to the GL\n(for example, \"Posted,\" \"Not Posted\")."
+        },
+        {
+          "name": "referenceDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/referenceDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "referenceDate",
+          "description": "Date on an externally generated transaction\n(for example, check date or wire transfer\ndate)."
+        },
+        {
+          "name": "referenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/referenceNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "referenceNumber",
+          "description": "Identification number for an internally or\nexternally generated transaction (for\nexample, check number, wire transfer\nnumber, or original document ID)."
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment01",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment02",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment03",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment04",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/segment05",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "sourceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/sourceId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sourceId",
+          "description": "Posting source (code for source from which the journal entry originated, such as sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, and so on)."
+        },
+        {
+          "name": "systemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/systemEntryDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "systemEntryDateTime",
+          "description": "The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not\n necessarily correspond with the date of the \ntransaction itself."
+        },
+        {
+          "name": "systemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/systemEntryUser",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemEntryUser",
+          "description": "User_ID (from User_Listing file) for person\nwho created the record."
+        },
+        {
+          "name": "systemId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/systemId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemId",
+          "description": "Unique number created by the system for the document"
+        },
+        {
+          "name": "transactionDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/transactionDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "transactionDate",
+          "description": "The date the payment was made or credit was applied."
+        },
+        {
+          "name": "transactionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "apPaymentData/attributeContext/apPaymentData/transactionId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionId",
+          "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group and branch/department"
+        }
+      ],
+      "displayName": "apPaymentData",
+      "description": "lineCustomerId is missing",
+      "version": "1.0"
+    }
+  ]
+}

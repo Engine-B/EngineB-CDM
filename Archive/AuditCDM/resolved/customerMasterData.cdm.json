@@ -1,0 +1,1067 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/CustomerMasterData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustomerMasterData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustomerMasterData",
+        "definition": "resolvedFrom/CustomerMasterData",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "CustomerMasterData/attributeContext/CustomerMasterData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressAddressType",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressAddressType",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressAddressType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressBuilding",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressBuilding",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressBuilding"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressCity",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressCity",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressCountry",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressCountry",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressCountry"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressNumber",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressNumber",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressPostalCode",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressPostalCode",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressPostalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressRegion",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressRegion",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "addressStreetName",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/addressStreetName",
+            "contents": [
+              "CustomerMasterData/hasAttributes/addressStreetName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountName",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/bankAccountName",
+            "contents": [
+              "CustomerMasterData/hasAttributes/bankAccountName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountNumber",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/bankAccountNumber",
+            "contents": [
+              "CustomerMasterData/hasAttributes/bankAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "bankAccountId",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/bankAccountId",
+            "contents": [
+              "CustomerMasterData/hasAttributes/bankAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "companyType",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/companyType",
+            "contents": [
+              "CustomerMasterData/hasAttributes/companyType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerAccountId",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/customerAccountId",
+            "contents": [
+              "CustomerMasterData/hasAttributes/customerAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerCreditLimit",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/customerCreditLimit",
+            "contents": [
+              "CustomerMasterData/hasAttributes/customerCreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerGroup",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/customerGroup",
+            "contents": [
+              "CustomerMasterData/hasAttributes/customerGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerId",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/customerId",
+            "contents": [
+              "CustomerMasterData/hasAttributes/customerId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "customerType",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/customerType",
+            "contents": [
+              "CustomerMasterData/hasAttributes/customerType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "effectiveDate",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/effectiveDate",
+            "contents": [
+              "CustomerMasterData/hasAttributes/effectiveDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "email",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/email",
+            "contents": [
+              "CustomerMasterData/hasAttributes/email"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "expirationDate",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/expirationDate",
+            "contents": [
+              "CustomerMasterData/hasAttributes/expirationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fax",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/fax",
+            "contents": [
+              "CustomerMasterData/hasAttributes/fax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "firstName",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/firstName",
+            "contents": [
+              "CustomerMasterData/hasAttributes/firstName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IBANNumber",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/IBANNumber",
+            "contents": [
+              "CustomerMasterData/hasAttributes/IBANNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lastName",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/lastName",
+            "contents": [
+              "CustomerMasterData/hasAttributes/lastName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "legalEntityIdentifier",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/legalEntityIdentifier",
+            "contents": [
+              "CustomerMasterData/hasAttributes/legalEntityIdentifier"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "name",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/name",
+            "contents": [
+              "CustomerMasterData/hasAttributes/name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDiscountDays",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/paymentDiscountDays",
+            "contents": [
+              "CustomerMasterData/hasAttributes/paymentDiscountDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDiscountPercentage",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/paymentDiscountPercentage",
+            "contents": [
+              "CustomerMasterData/hasAttributes/paymentDiscountPercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "paymentDueDays",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/paymentDueDays",
+            "contents": [
+              "CustomerMasterData/hasAttributes/paymentDueDays"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "registrationNumber",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/registrationNumber",
+            "contents": [
+              "CustomerMasterData/hasAttributes/registrationNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "selfBillingIndicator",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/selfBillingIndicator",
+            "contents": [
+              "CustomerMasterData/hasAttributes/selfBillingIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "sortCode",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/sortCode",
+            "contents": [
+              "CustomerMasterData/hasAttributes/sortCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemApprovedDateTime",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/systemApprovedDateTime",
+            "contents": [
+              "CustomerMasterData/hasAttributes/systemApprovedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemApprovedUser",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/systemApprovedUser",
+            "contents": [
+              "CustomerMasterData/hasAttributes/systemApprovedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryDateTime",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/systemEntryDateTime",
+            "contents": [
+              "CustomerMasterData/hasAttributes/systemEntryDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemEntryUser",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/systemEntryUser",
+            "contents": [
+              "CustomerMasterData/hasAttributes/systemEntryUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedDateTime",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/systemModifiedDateTime",
+            "contents": [
+              "CustomerMasterData/hasAttributes/systemModifiedDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "systemModifiedUser",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/systemModifiedUser",
+            "contents": [
+              "CustomerMasterData/hasAttributes/systemModifiedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxAuthority",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/taxAuthority",
+            "contents": [
+              "CustomerMasterData/hasAttributes/taxAuthority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxNumber",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/taxNumber",
+            "contents": [
+              "CustomerMasterData/hasAttributes/taxNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxRegistrationNumber",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/taxRegistrationNumber",
+            "contents": [
+              "CustomerMasterData/hasAttributes/taxRegistrationNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxType",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/taxType",
+            "contents": [
+              "CustomerMasterData/hasAttributes/taxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "taxVerificationDate",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/taxVerificationDate",
+            "contents": [
+              "CustomerMasterData/hasAttributes/taxVerificationDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "telephone",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/telephone",
+            "contents": [
+              "CustomerMasterData/hasAttributes/telephone"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "title",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/title",
+            "contents": [
+              "CustomerMasterData/hasAttributes/title"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "transactionCreditLimit",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/transactionCreditLimit",
+            "contents": [
+              "CustomerMasterData/hasAttributes/transactionCreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "website",
+            "parent": "CustomerMasterData/attributeContext/CustomerMasterData",
+            "definition": "resolvedFrom/CustomerMasterData/hasAttributes/website",
+            "contents": [
+              "CustomerMasterData/hasAttributes/website"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "addressAddressType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressAddressType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressAddressType",
+          "description": "Field to differentiate between multiple addresses. To indicate the type of address. Choose from the predefined enumeration. (examples: StreetAddress PostalAddress, BillingAddress)"
+        },
+        {
+          "name": "addressBuilding",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressBuilding",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressBuilding",
+          "description": "The physical street address line 2 of the supplier."
+        },
+        {
+          "name": "addressCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressCity",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressCity",
+          "description": "The physical city where the customer is located."
+        },
+        {
+          "name": "addressCountry",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressCountry",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressCountry",
+          "description": "The country code where the supplier is\nphysically located. Recommend ISO 3166-1\nAlpha 2 or ISO 3166-1 Alpha 3 format (XX or\nXXX)."
+        },
+        {
+          "name": "addressNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressNumber",
+          "description": "The physical street address line 1 of the supplier."
+        },
+        {
+          "name": "addressPostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressPostalCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressPostalCode",
+          "description": "The zip code of the city where the customer is physically located."
+        },
+        {
+          "name": "addressRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressRegion",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressRegion",
+          "description": "The physical state or province where the customer is located. Recommend ISO 3166-2."
+        },
+        {
+          "name": "addressStreetName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/addressStreetName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "addressStreetName",
+          "description": "The physical Street where the customer is located."
+        },
+        {
+          "name": "bankAccountName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/bankAccountName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "bankAccountName",
+          "description": "The name of the individual or company holding the bank account."
+        },
+        {
+          "name": "bankAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/bankAccountNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "bankAccountNumber",
+          "description": "The number allocated to the account by the individual’s or company’s own bank."
+        },
+        {
+          "name": "bankAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/bankAccountId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "bankAccountId",
+          "description": "Unambiguous identification of the account to which credit and debit entries are made."
+        },
+        {
+          "name": "companyType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/companyType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "companyType",
+          "description": ""
+        },
+        {
+          "name": "customerAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/customerAccountId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "customerAccountId",
+          "description": "Identifier of the customer from whom payment is expected or to whom unused credits have been applied."
+        },
+        {
+          "name": "customerCreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/customerCreditLimit",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "customerCreditLimit",
+          "description": "The credit limit for this customer"
+        },
+        {
+          "name": "customerGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/customerGroup",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "customerGroup",
+          "description": "The physical street address line 1 of the customer."
+        },
+        {
+          "name": "customerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/customerId",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "customerId",
+          "description": "Unique code for the customer \n"
+        },
+        {
+          "name": "customerType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/customerType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "customerType",
+          "description": "The type of customer"
+        },
+        {
+          "name": "effectiveDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/effectiveDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "effectiveDate",
+          "description": "Date the customer declared active."
+        },
+        {
+          "name": "email",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/email",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "email",
+          "description": "Email address of the primary contact."
+        },
+        {
+          "name": "expirationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/expirationDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "expirationDate",
+          "description": "Date the customer was declared inactive."
+        },
+        {
+          "name": "fax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/fax",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fax",
+          "description": ""
+        },
+        {
+          "name": "firstName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/firstName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "firstName",
+          "description": "The first (given) name of the person."
+        },
+        {
+          "name": "IBANNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/IBANNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "IBANNumber",
+          "description": "International Bank Account Number, ISO 13616"
+        },
+        {
+          "name": "lastName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/lastName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lastName",
+          "description": "The last (family) name of the person."
+        },
+        {
+          "name": "legalEntityIdentifier",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/legalEntityIdentifier",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "legalEntityIdentifier",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/name",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "name",
+          "description": "The name of the supplier."
+        },
+        {
+          "name": "paymentDiscountDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/paymentDiscountDays",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "paymentDiscountDays",
+          "description": "The number of days from the invoice date\nthe supplier allows to take advantage of\ndiscounted terms. Terms are represented as\ndigits with no decimal places (for example,\nnnn)."
+        },
+        {
+          "name": "paymentDiscountPercentage",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/paymentDiscountPercentage",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "paymentDiscountPercentage",
+          "description": "The discount percentage the supplier may\nprovide if an invoice is paid before a certain\nnumber of days. In the flat file, terms are\nrepresented as digits to one decimal place\n(for example, 10% would be represented as\n10.0). In extensible business reporting\nlanguage global ledger taxonomy framework\n(XBRL GL), the three fields\nTerms_Discount_Percentage,\nTerms_Discount_Days and\nTerms_Due_Days would be entered in the\nform \"xx.x% dd Net dd,\" such as 2% 10 Net\n30 for 2% discount if paid within 10 days,\nwith the net due in 30 days."
+        },
+        {
+          "name": "paymentDueDays",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/paymentDueDays",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "paymentDueDays",
+          "description": "The number of days allowed to meet the\nobligation before an invoice becomes\noverdue."
+        },
+        {
+          "name": "registrationNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/registrationNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "registrationNumber",
+          "description": "Unique number to identify the company in the accounting records, issued by a government authority or created by the company for internal purposes to identify different entities within their corporate group."
+        },
+        {
+          "name": "selfBillingIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/selfBillingIndicator",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "selfBillingIndicator",
+          "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier"
+        },
+        {
+          "name": "sortCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/sortCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "sortCode",
+          "description": "Identifier for the bank branch at which the account is held. May be needed to uniquely identify the account."
+        },
+        {
+          "name": "systemApprovedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/systemApprovedDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "systemApprovedDateTime",
+          "description": "The date  and time the entry was approved."
+        },
+        {
+          "name": "systemApprovedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/systemApprovedUser",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemApprovedUser",
+          "description": "User ID (from User_Listing file) for person\nwho approved the entry."
+        },
+        {
+          "name": "systemEntryDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/systemEntryDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "systemEntryDateTime",
+          "description": "The date the transaction was entered into the\nsystem. This is sometimes referred to as the \ncreation date. This should be a system-\ngenerated date (rather than user-entered\ndate), when possible. This date does not\n necessarily correspond with the date of the \ntransaction itself."
+        },
+        {
+          "name": "systemEntryUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/systemEntryUser",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemEntryUser",
+          "description": "User_ID (from User_Listing file) for person\nwho created the record."
+        },
+        {
+          "name": "systemModifiedDateTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/systemModifiedDateTime",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "systemModifiedDateTime",
+          "description": "The date and time the entry was last modified."
+        },
+        {
+          "name": "systemModifiedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/systemModifiedUser",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "systemModifiedUser",
+          "description": "User_ID (from User_Listing file) for the last\nperson modifying this entry."
+        },
+        {
+          "name": "taxAuthority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/taxAuthority",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxAuthority",
+          "description": "Identification of the Revenue Body to which this TaxType refers."
+        },
+        {
+          "name": "taxNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/taxNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxNumber",
+          "description": "The supplier's tax identification number."
+        },
+        {
+          "name": "taxRegistrationNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/taxRegistrationNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxRegistrationNumber",
+          "description": "Unique number issued by a Revenue Body for use by the company."
+        },
+        {
+          "name": "taxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/taxType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "taxType",
+          "description": "Tax type for look-up in tables"
+        },
+        {
+          "name": "taxVerificationDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/taxVerificationDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "taxVerificationDate",
+          "description": "The date that the tax registration details referred to above were last checked."
+        },
+        {
+          "name": "telephone",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/telephone",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "telephone",
+          "description": "Phone number of the primary contact at the\nsupplier."
+        },
+        {
+          "name": "title",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/title",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "title",
+          "description": "The title of the person (for example, accounting manager)."
+        },
+        {
+          "name": "transactionCreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/transactionCreditLimit",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "transactionCreditLimit",
+          "description": "The per invoice credit limit established with\nthis supplier."
+        },
+        {
+          "name": "website",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerMasterData/attributeContext/CustomerMasterData/website",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "website",
+          "description": ""
+        }
+      ],
+      "displayName": "CustomerMasterData",
+      "description": "",
+      "version": "1.0"
+    }
+  ]
+}

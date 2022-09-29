@@ -1,0 +1,65 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "bankAccountMasterData",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "bankAccountId",
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "bankAccountId",
+          "description": "Unambiguous identification of the account to which credit and debit entries are made."
+        },
+        {
+          "name": "bankAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "bankAccountNumber",
+          "description": "The number allocated to the account by the individual’s or company’s own bank."
+        },
+        {
+          "name": "bankAccountSubType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "bankAccountSubType",
+          "description": "Specifies the sub type of account (product family group)."
+        },
+        {
+          "name": "bankAccountType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "bankAccountType",
+          "description": "Specifies the type of account (personal or business)."
+        },
+        {
+          "name": "bankSortCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "bankSortCode",
+          "description": "The bank sort code"
+        },
+        {
+          "name": "IBAN",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "IBAN",
+          "description": "The International Bank Account Number"
+        }
+      ],
+      "displayName": "bankAccountMasterData",
+      "description": ""
+    }
+  ]
+}

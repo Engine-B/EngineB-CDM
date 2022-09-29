@@ -1,0 +1,1111 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/fixedAssetMasterData.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "fixedAssetMasterData",
+      "attributeContext": {
+        "type": "entity",
+        "name": "fixedAssetMasterData",
+        "definition": "resolvedFrom/fixedAssetMasterData",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "businessUnitCode",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/businessUnitCode",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/businessUnitCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "currencyId",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/currencyId",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/currencyId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "depreciationRate",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/depreciationRate",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/depreciationRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetAccumulatedDepreciation",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetAccumulatedDepreciation",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetAccumulatedDepreciation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetAccumulatedDepreciationAccount",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetAccumulatedDepreciationAccount",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetAccumulatedDepreciationAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetAcquisitionDate",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetAcquisitionDate",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetAcquisitionDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetAssetAccount",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetAssetAccount",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetAssetAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetAvailableforSaleDate",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetAvailableforSaleDate",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetAvailableforSaleDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetBarCode",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetBarCode",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetBarCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetCIPAccount",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetCIPAccount",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetCIPAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetCIPFlag",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetCIPFlag",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetCIPFlag"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetClass",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetClass",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetClass"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetCode",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetCode",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetDepreciableBasis",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetDepreciableBasis",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetDepreciableBasis"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetDepreciationAccount",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetDepreciationAccount",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetDepreciationAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetDescription",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetDescription",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetDisposalDate",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetDisposalDate",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetDisposalDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetFairValue",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetFairValue",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetFairValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetGroup01",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetGroup01",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetGroup01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetGroup02",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetGroup02",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetGroup02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetId",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetId",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetInactiveFlag",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetInactiveFlag",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetInactiveFlag"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetInServiceDate",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetInServiceDate",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetInServiceDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetNetBookValue",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetNetBookValue",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetNetBookValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetOriginalCost",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetOriginalCost",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetOriginalCost"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetQuantityOnHand",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetQuantityOnHand",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetQuantityOnHand"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetRealisedGainLossAccount",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetRealisedGainLossAccount",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetRealisedGainLossAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetReplacementCost",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetReplacementCost",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetReplacementCost"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetRetirementDate",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetRetirementDate",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetRetirementDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetSalvageValue",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetSalvageValue",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetSalvageValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetType",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetType",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetUnrealizedGainLossAccount",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetUnrealizedGainLossAccount",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetUnrealizedGainLossAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetUsefulLife",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetUsefulLife",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetUsefulLife"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "fixedAssetUsefulLifeRemaining",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/fixedAssetUsefulLifeRemaining",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/fixedAssetUsefulLifeRemaining"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationCode",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/locationCode",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/locationCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationDescription",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/locationDescription",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/locationDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "locationId",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/locationId",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/locationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "lotNumber",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/lotNumber",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/lotNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "manufacturerId",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/manufacturerId",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/manufacturerId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "projectId",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/projectId",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/projectId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment01",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/segment01",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/segment01"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment02",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/segment02",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/segment02"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment03",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/segment03",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/segment03"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment04",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/segment04",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/segment04"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "segment05",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/segment05",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/segment05"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "serialNumber",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/serialNumber",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/serialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierId",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/supplierId",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/supplierId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "supplierName",
+            "parent": "fixedAssetMasterData/attributeContext/fixedAssetMasterData",
+            "definition": "resolvedFrom/fixedAssetMasterData/hasAttributes/supplierName",
+            "contents": [
+              "fixedAssetMasterData/hasAttributes/supplierName"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "businessUnitCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/businessUnitCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting.\n"
+        },
+        {
+          "name": "currencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/currencyId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "currencyId",
+          "description": ""
+        },
+        {
+          "name": "depreciationRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/depreciationRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "depreciationRate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAccumulatedDepreciation",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAccumulatedDepreciation",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetAccumulatedDepreciation",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAccumulatedDepreciationAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAccumulatedDepreciationAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetAccumulatedDepreciationAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAcquisitionDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAcquisitionDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetAcquisitionDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAssetAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAssetAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetAssetAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetAvailableforSaleDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetAvailableforSaleDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetAvailableforSaleDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetBarCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetBarCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetBarCode",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetCIPAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetCIPAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetCIPAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetCIPFlag",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetCIPFlag",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetCIPFlag",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetClass",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetClass",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetClass",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetCode",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDepreciableBasis",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDepreciableBasis",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDepreciableBasis",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDepreciationAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDepreciationAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDepreciationAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetDescription",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetDisposalDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetDisposalDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetDisposalDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetFairValue",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetFairValue",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetFairValue",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetGroup01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetGroup01",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetGroup01",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetGroup02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetGroup02",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetGroup02",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetId",
+          "isPrimaryKey": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetId",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetInactiveFlag",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetInactiveFlag",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetInactiveFlag",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetInServiceDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetInServiceDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetInServiceDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetNetBookValue",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetNetBookValue",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetNetBookValue",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetOriginalCost",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetOriginalCost",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetOriginalCost",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetQuantityOnHand",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetQuantityOnHand",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetQuantityOnHand",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetRealisedGainLossAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetRealisedGainLossAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetRealisedGainLossAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetReplacementCost",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetReplacementCost",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetReplacementCost",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetRetirementDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetRetirementDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssetRetirementDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetSalvageValue",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            }
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetSalvageValue",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "displayName": "fixedAssetSalvageValue",
+          "description": ""
+        },
+        {
+          "name": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+          "isNullable": true,
+          "dataFormat": "Date",
+          "displayName": "fixedAssettobeAbandonedorDisposedofOtherthanbyforSaleDate",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetType",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUnrealizedGainLossAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetUnrealizedGainLossAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUnrealizedGainLossAccount",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUsefulLife",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetUsefulLife",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUsefulLife",
+          "description": ""
+        },
+        {
+          "name": "fixedAssetUsefulLifeRemaining",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/fixedAssetUsefulLifeRemaining",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "fixedAssetUsefulLifeRemaining",
+          "description": ""
+        },
+        {
+          "name": "locationCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/locationCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationCode",
+          "description": ""
+        },
+        {
+          "name": "locationDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/locationDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationDescription",
+          "description": ""
+        },
+        {
+          "name": "locationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/locationId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "locationId",
+          "description": ""
+        },
+        {
+          "name": "lotNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/lotNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "lotNumber",
+          "description": ""
+        },
+        {
+          "name": "manufacturerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/manufacturerId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "manufacturerId",
+          "description": ""
+        },
+        {
+          "name": "projectId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/projectId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "projectId",
+          "description": ""
+        },
+        {
+          "name": "segment01",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment01",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment01",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment02",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment02",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment02",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment03",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment03",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment03",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment04",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment04",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment04",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "segment05",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/segment05",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "segment05",
+          "description": "\"Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on.\"\n"
+        },
+        {
+          "name": "serialNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/serialNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "serialNumber",
+          "description": ""
+        },
+        {
+          "name": "supplierId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/supplierId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierId",
+          "description": "\"Identifier of the supplier to whom payment is\ndue or from whom unused credits have been\napplied. Must match the\nSupplier_Account_ID in the\nSupplier_Listing_YYYYMMDD file.\"\n"
+        },
+        {
+          "name": "supplierName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "fixedAssetMasterData/attributeContext/fixedAssetMasterData/supplierName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "supplierName",
+          "description": "Name of the supplier\n"
+        }
+      ],
+      "displayName": "fixedAssetMasterData",
+      "description": "",
+      "version": "1.0"
+    }
+  ]
+}

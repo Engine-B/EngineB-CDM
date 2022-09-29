@@ -1,0 +1,121 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ChartOfAccounts",
+      "extendsEntity": "CdmEntity",
+      "hasAttributes": [
+        {
+          "name": "accountSubtype",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "accountSubtype",
+          "description": "Grouping for lower-level categories on the financial statements. Examples include reserve account, suspense account, intercompany account, and so on."
+        },
+        {
+          "name": "accountType",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "accountType",
+          "description": "Grouping for high-level category on the financial statements. Values should be assets, liabilities, equity, revenue, expenses, and so on."
+        },
+        {
+          "name": "businessUnitCode",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "businessUnitCode",
+          "description": "Used to identify the business unit, region, branch, and so on at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+        },
+        {
+          "name": "fsCaption",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "fsCaption",
+          "description": "Financial statement caption. Grouping\nfor the caption the GL account rolls up\nto on the financial statements (for\nexample, cash and cash equivalents,\naccounts payable, cost of sales, and so\non). Sometimes may prefer to be at the\ntrial balance level."
+        },
+        {
+          "name": "glAccountDescription",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "glAccountDescription",
+          "description": "Label or description associated with\nGL_Account_Number."
+        },
+        {
+          "name": "glAccountName",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "glAccountName",
+          "description": "Name for the GL account."
+        },
+        {
+          "name": "glAccountNumber",
+          "purpose": "identifiedBy",
+          "dataType": "string",
+          "displayName": "glAccountNumber",
+          "description": "Identifier for the GL financial quarterly periods. GL_Account_Number in this file must match the GL_Account_Number used in the Trial_Balance and Chart_Of_Accounts files."
+        },
+        {
+          "name": "parentglAccountNumber",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "parentglAccountNumber",
+          "description": "A reference to the\nGL_Account_Number that is the parent\nin an account hierarchy. Provided to\nallow more than the predefined levels of\nhierarchy in the chart of accounts table."
+        },
+        {
+          "name": "segment01",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment01",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment02",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment02",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment03",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment03",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment04",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment04",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        },
+        {
+          "name": "segment05",
+          "purpose": "hasA",
+          "dataType": "string",
+          "isNullable": true,
+          "displayName": "segment05",
+          "description": "Reserved segment field that can be used for \nprofit center, division, fund, program,\nbranch, project, and so on."
+        }
+      ],
+      "displayName": "ChartOfAccounts",
+      "description": ""
+    }
+  ]
+}
