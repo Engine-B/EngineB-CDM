@@ -8,6 +8,17 @@ A Common Data Model provides shared data language for business and analytical ap
 
 These Common Data Models are dynamic and we will continue to update them as new use cases are developed, with further versions of each added to this site as released. 
 
+**Audit CDM v2.0**
+The Audit CDM provides the ability to integrate and share data across various accounting and audit platforms – providing a transparency of information and key concepts.
+
+Release notes for v2.0:
+
+1. All dates updated to DateTime format
+2. Blank descriptions filled
+3. Descriptions edited for accuracy
+4. Fields added to retain consistency with AICPA model
+5. New entities added to incorporate accounts payables and receivables listings and customer/supplier balances
+
 **Audit CDM v1.2**
 
 The Audit CDM provides the ability to integrate and share data across various accounting and audit platforms – providing a transparency of information and key concepts. Engine B has successfully mapped accounting and audit entities of structured and unstructured data from multiple platforms providing the basis for key analysis to help determine inconsistencies and for visual representation - examples include anomaly detection and knowledge graphs respectively.
