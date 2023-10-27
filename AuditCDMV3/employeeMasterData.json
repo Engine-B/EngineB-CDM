@@ -1,0 +1,352 @@
+{
+    "jsonSchemaSemanticVersion": "2.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "employeeMasterData",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                {
+                    "name": "absenceValuation",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "displayName": "absenceValuation",
+                    "description": "An absence can be paid 100% or can be partially paid or unpaid."
+                },
+                {
+                    "name": "assignPayScaleCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "assignPayScaleCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the functional currency of the entity, e.g. EUR for Euros or USD for American Dollars."
+                },
+                {
+                    "name": "attendanceAndAbsenceTexts",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "attendanceAndAbsenceTexts",
+                    "description": "Description/explanation given for attendance and absence types."
+                },
+                {
+                    "name": "attendanceAndAbsenceTypes",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "attendanceAndAbsenceTypes",
+                    "description": "Category of each type of attendance available to employees, e.g. Sick, Vacation, or Personal."
+                },
+                {
+                    "name": "benefitInsurancePlan",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "benefitInsurancePlan",
+                    "description": "Employee can choose between single or family medical care coverage, life, short-term leave, long-term leave, travel, etc."
+                },
+                {
+                    "name": "benefitsInsuranceCoverageRule",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "benefitsInsuranceCoverageRule",
+                    "description": "Whether all employees are covered (permanent and temporary), age grouping details, etc."
+                },
+                {
+                    "name": "businessArea",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "businessArea",
+                    "description": "An organizational unit that can be classified geographically or product-wise as per the requirements of an organization."
+                },
+                {
+                    "name": "dailyWorkSchedule",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "dailyWorkSchedule",
+                    "description": "Specifies the number of working hours with clock in and clock out on a particular day."
+                },
+                {
+                    "name": "dailyWorkScheduleTexts",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "dailyWorkScheduleTexts",
+                    "description": "Description/explanation given for the particular dailyWorkSchedule."
+                },
+                {
+                    "name": "departmentCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "departmentCode",
+                    "description": "Code for department rosters, e.g. the department name is IT department, the code is 0018."
+                },
+                {
+                    "name": "employeeDateOfBirth",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "displayName": "employeeDateOfBirth",
+                    "description": "The date of birth of the employee."
+                },
+                {
+                    "name": "employeeFirstName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "employeeFirstName",
+                    "description": "The first (given) name of the employee."
+                },
+                {
+                    "name": "employeeGroupSubgroup",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "employeeGroupSubgroup",
+                    "description": "Used to distinguish between active employed, contractor, pensioner, Resigned, Early retirees etc."
+                },
+                {
+                    "name": "employeeId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "employeeId",
+                    "description": "Unique identifier for an employee. Typically auto-generated by the system."
+                },
+                {
+                    "name": "employeeJobTitle",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "employeeJobTitle",
+                    "description": "Job title of a person in a business unit, e.g. Accounting manager, Finance Controller, Operations manager."
+                },
+                {
+                    "name": "employeeLastName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "employeeLastName",
+                    "description": "The last (family) name of the employee."
+                },
+                {
+                    "name": "employeeMiddleName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "employeeMiddleName",
+                    "description": "The middle (family) name of the employee."
+                },
+                {
+                    "name": "employeeRefCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "employeeRefCode",
+                    "description": "Code for employee. Each employee has only one code. If someone has part-time jobs in multiple departments, there will be more than one record with different employeeId in this table. The part-time status will be reflected in employmentTypeCode."
+                },
+                {
+                    "name": "employeeSubgroupNames",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "employeeSubgroupNames",
+                    "description": "Allows further distinguish of employee group into subgroup, e.g. Active Employees subdivided into Salaried Employee, Hourly Paid, Trainee, Volunteer, etc."
+                },
+                {
+                    "name": "employmentStartDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": true,
+                    "displayName": "employmentStartDate",
+                    "description": "Employment start date of the employee."
+                },
+                {
+                    "name": "employmentStatus",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "employmentStatus",
+                    "description": "Employees being Active, Inactive, Retiree, Withdrawn, etc."
+                },
+                {
+                    "name": "employmentTerminationDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": true,
+                    "displayName": "employmentTerminationDate",
+                    "description": "Employment termination date of the employee from when the labour contract was no longer valid, or from when the employee no longer works in this department."
+                },
+                {
+                    "name": "employmentTypeCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "employmentTypeCode",
+                    "description": "Code for the employee type, e.g. 004 is an on-the-job employee, 005 is a retired employee and 006 is a deceased employee."
+                },
+                {
+                    "name": "employmentTypeName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "employmentTypeName",
+                    "description": "Name of the employee type, e.g. employed, retired, probation, part time."
+                },
+                {
+                    "name": "isActiveFlag",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "isActiveFlag",
+                    "description": "Indicates whether one employee is active or inactive. An employee can become inactive due to various reasons, e.g. sabbatical leave."
+                },
+                {
+                    "name": "monthlyWorkSchedule",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "monthlyWorkSchedule",
+                    "description": "Specifies the number of working days and holidays in a particular month."
+                },
+                {
+                    "name": "organizationalUnits",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "organizationalUnits",
+                    "description": "Functional units in an enterprise, e.g. departments, division, groups, project teams, etc."
+                },
+                {
+                    "name": "payScaleGroups",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "payScaleGroups",
+                    "description": "Compensation structure as per grouping, payroll processing procedure, and the value of compensation for an employee."
+                },
+                {
+                    "name": "payScalePeriodParameterAssignment",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "payScalePeriodParameterAssignment",
+                    "description": "Determines whether payroll is run monthly, quarterly, weekly or for several weeks."
+                },
+                {
+                    "name": "payScaleTypes",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "payScaleTypes",
+                    "description": "Net Salary, Gross Salary, CTC, etc."
+                },
+                {
+                    "name": "payrollAccountingAreas",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "payrollAccountingAreas",
+                    "description": "Recording of its employees' compensation into gross wages, salaries, bonuses, commissions, withholding of payroll taxes."
+                },
+                {
+                    "name": "payrollPeriods",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "payrollPeriods",
+                    "description": "Should identify payroll periods, e.g. monthly, bi-weekly or weekly."
+                },
+                {
+                    "name": "personnelCountryGrouping",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "personnelCountryGrouping",
+                    "description": "Provision variant used for grouping the wage types as per the statutory regulations of the country and also for travel management."
+                },
+                {
+                    "name": "specialPaymentStatus",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "specialPaymentStatus",
+                    "description": "Special payments are usually non-recurring payments that the employee receives in addition to their wage or salary, e.g. a holiday bonus."
+                },
+                {
+                    "name": "supervisorArea",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "supervisorArea",
+                    "description": "Gives the position level and the superior info based on the work flow."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "userId",
+                    "description": "A unique identifier of individuals entering transactions into the ERP system. This field is used to join information in this table to other tables based on the fields EnteredBy, LastModifiedBy, and ApprovedBy."
+                },
+                {
+                    "name": "wageTypeTexts",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "wageTypeTexts",
+                    "description": "Description given for the particular wage type."
+                },
+                {
+                    "name": "wageTypeValuation",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "wageTypeValuation",
+                    "description": "Valuation based on hourly rate, basic pay or from previous payroll periods."
+                },
+                {
+                    "name": "wageTypes",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "wageTypes",
+                    "description": "Evaluated with a monetary amount that should be paid out to the employee or that they should withhold, e.g. salary, allowances, bonus, etc."
+                },
+                {
+                    "name": "workScheduleRules",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "workScheduleRules",
+                    "description": "Company's time table and contains information on working and break time for groups of employees."
+                }
+            ]
+        }
+    ]
+}

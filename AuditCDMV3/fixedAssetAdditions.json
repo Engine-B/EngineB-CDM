@@ -1,0 +1,368 @@
+{
+    "jsonSchemaSemanticVersion": "2.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "fixedAssetAdditions",
+            "extendsEntity": "CdmEntity",
+            "hasAttributes": [
+                {
+                    "name": "acquisitionDetails",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "acquisitionDetails",
+                    "description": "Details of acquisition of the asset, e.g. acquirer, asset type, asset class, etc."
+                },
+                {
+                    "name": "additionType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "additionType",
+                    "description": "Category or type of asset, e.g. Plant and Machinery, PPE or similar."
+                },
+                {
+                    "name": "approvedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "approvedBy",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "approvedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "displayName": "approvedByDate",
+                    "description": "The date the entry was approved."
+                },
+                {
+                    "name": "assetCategoryId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "assetCategoryId",
+                    "description": "Identifier of the asset category."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "enteredBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "enteredBy",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "enteredDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "displayName": "enteredDate",
+                    "description": "The date the addition was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "fixedAssetAdditionDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": true,
+                    "displayName": "fixedAssetAdditionDate",
+                    "description": "The date on which the addition was included on the system."
+                },
+                {
+                    "name": "fixedAssetAdditionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "fixedAssetAdditionId",
+                    "description": "ID of the addition record relating to this asset."
+                },
+                {
+                    "name": "fixedAssetCost",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": true,
+                    "displayName": "fixedAssetCost",
+                    "description": "In the header's default currency the cost at which the fixed asset was acquired from the vendor or built."
+                },
+                {
+                    "name": "fixedAssetId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "fixedAssetId",
+                    "description": "ID associated with fixed asset."
+                },
+                {
+                    "name": "fixedAssetUniqueId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "fixedAssetUniqueId",
+                    "description": "Unique identifier for the fixed asset. May need to be created by combining multiple fields e.g. BusinessUnitCode, fixedAssetId."
+                },
+                {
+                    "name": "glAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "glAccount",
+                    "description": "Identifier for the GL account code associated with the asset. glAccountNumber in this file must match the glAccountNumber used in the glDetail, trialBalance and chartOfAccounts"
+                },
+                {
+                    "name": "glTransactionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "glTransactionId",
+                    "description": "Transaction ID in the GL for the transaction recognising asset addition."
+                },
+                {
+                    "name": "inUseFlag",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "inUseFlag",
+                    "description": "Indicator used to determine whether the asset is in use."
+                },
+                {
+                    "name": "intangibleAssetFlag",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "intangibleAssetFlag",
+                    "description": "Indicates whether the asset is an intangible asset."
+                },
+                {
+                    "name": "inventorial",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "inventorial",
+                    "description": "Indicates whether the asset should be included in physical inventory."
+                },
+                {
+                    "name": "lastModifiedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "lastModifiedBy",
+                    "description": "userId (from userListing) for the last person modifying this entry."
+                },
+                {
+                    "name": "lastModifiedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "displayName": "lastModifiedByDate",
+                    "description": "The modifying date for the last person modifying the fixed asset addition entry."
+                },
+                {
+                    "name": "leaseId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "leaseId",
+                    "description": "Identifier of the capital or operating lease."
+                },
+                {
+                    "name": "leaseIndicator",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "leaseIndicator",
+                    "description": "Indicates whether asset is owned or leased."
+                },
+                {
+                    "name": "lotNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "lotNumber",
+                    "description": "Identification number assigned to a particular quantity or lot of material or depending on the asset classified."
+                },
+                {
+                    "name": "modelNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "modelNumber",
+                    "description": "Model number assigned to the asset by the manufacturer."
+                },
+                {
+                    "name": "newUsed",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "newUsed",
+                    "description": "Option indicating whether asset is new or used."
+                },
+                {
+                    "name": "parentAssetId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "parentAssetId",
+                    "description": "Identifier of the parent asset for the child or component asset."
+                },
+                {
+                    "name": "placedInService",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": true,
+                    "displayName": "placedInService",
+                    "description": "Point in time when the asset is first placed in use for the purpose of accounting, primarily to calculate depreciation or grant a tax credit."
+                },
+                {
+                    "name": "propertyTypeCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "propertyTypeCode",
+                    "description": "Option indicating whether the asset is considered personal, real, or residential property."
+                },
+                {
+                    "name": "purchaseOrderDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "displayName": "purchaseOrderDate",
+                    "description": "The date of the purchase order, regardless of the date the order is entered. If no purchase order, leave blank."
+                },
+                {
+                    "name": "purchaseOrderId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "purchaseOrderId",
+                    "description": "Purchase order ID associated with the purchase of the fixed asset."
+                },
+                {
+                    "name": "purchaseOrderRaisedDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "displayName": "purchaseOrderRaisedDate",
+                    "description": "The date of raising the purchase order for the fixed asset acquisition."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "serialNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "serialNumber",
+                    "description": "Serial number for asset, used by manufacturer for identification."
+                },
+                {
+                    "name": "supplierId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "supplierId",
+                    "description": "Identifier of the supplier from whom the asset was purchased and to whom payment is due. Must match the supplierId in supplierMasterData."
+                },
+                {
+                    "name": "supplierName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": true,
+                    "displayName": "supplierName",
+                    "description": "Name of the supplier."
+                },
+                {
+                    "name": "tagNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "tagNumber",
+                    "description": "Unique user-defined tracking number for an asset."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "vatCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "vatCode",
+                    "description": "Code confirming which VAT category the asset falls into."
+                },
+                {
+                    "name": "warrantyId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "displayName": "warrantyId",
+                    "description": "Identifier of the warranty defined for the asset."
+                }
+            ]
+        }
+    ]
+}
