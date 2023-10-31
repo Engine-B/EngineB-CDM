@@ -1,23 +1,12 @@
 # EngineB-CDM
 
-EngineB Audit, Tax and Property Common Data Models
+EngineB Audit, Tax and Property Common Data Models 
 
 **Common Data Model**
 
 A Common Data Model provides shared data language for business and analytical applications to use. The Common Data Model allows apps to integrate and share data with each other without the need for sizable, custom integration - providing a centralised point where systems can come together and connect, thus sharing information which was once divided by a digital language barrier.
 
-These Common Data Models are dynamic and we will continue to update them as new use cases are developed, with further versions of each added to this site as released.
-
-**Audit CDM v3.0**
-The Audit CDM provides the ability to integrate and share data across various accounting and audit platforms – providing a transparency of information and key concepts.
-
-Release notes for v3.0:
-
-1. Addition of glAccountName as mandatory field in TrialBalance
-2. Change of mandatory fields in tables outside GL standard
-3. Remove records (see removed items list - duplicative or incorrect)
-4. Addition of records (almost all name changes to make naming conventions consistent)
-5. Correcting data types (mostly currency code to string)
+These Common Data Models are dynamic and we will continue to update them as new use cases are developed, with further versions of each added to this site as released. 
 
 **Audit CDM v2.0**
 The Audit CDM provides the ability to integrate and share data across various accounting and audit platforms – providing a transparency of information and key concepts.
@@ -37,11 +26,11 @@ Updated the Audit CDM to include the Data Dictionary for the entities.
 
 **Tax CDM v1.0**
 
-The Tax CDM is similar to the Audit CDM but has been created for usage across tax based platforms. Engine B worked with tax experts to map the entities relevant for further analytical work on tax use cases.
+The Tax CDM is similar to the Audit CDM but has been created for usage across tax based platforms. Engine B worked with tax experts to map the entities relevant for further analytical work on tax use cases. 
 
 **Property/Real Estate CDM v1.0**
 
-This Common Data Model is for use cases that involve the concept of a property or real estate. Engine B worked alongside the University of Birmingham Law School, OSCRE and SALI in the development of this data model. We aim to further develop this CDM over the coming months to take account for entities relevant to use cases beyond the predominantly legal-property based ones to date.
+This Common Data Model is for use cases that involve the concept of a property or real estate. Engine B worked alongside the University of Birmingham Law School, OSCRE and SALI in the development of this data model. We aim to further develop this CDM over the coming months to take account for entities relevant to use cases beyond the predominantly legal-property based ones to date. 
 
 **CDM Schema Visualiser**
 
