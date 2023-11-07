@@ -1,0 +1,528 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "inventoryTransactions",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "bookValue",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "bookValue",
+                    "description": "The cost at which the inventory is recorded in books of accounts."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "customerId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerId",
+                    "description": "Unique code for the customer. Must match customerId per the customerMasterData."
+                },
+                {
+                    "name": "idealStockLevel",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "idealStockLevel",
+                    "description": "The ideal or defaulted quantity that can be ordered at a given point of time."
+                },
+                {
+                    "name": "inventoryFromLocation",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryFromLocation",
+                    "description": "Location of goods in warehouse from where it will be moved."
+                },
+                {
+                    "name": "inventoryGlLineCreditAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryGlLineCreditAccountNumber",
+                    "description": "The line credit account number for the inventory transaction."
+                },
+                {
+                    "name": "inventoryGlLineDebitAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryGlLineDebitAccountNumber",
+                    "description": "The line debit account number for the inventory transaction."
+                },
+                {
+                    "name": "inventoryId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryId",
+                    "description": "ID of the inventory item to which the transaction refers."
+                },
+                {
+                    "name": "inventoryInStock",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "inventoryInStock",
+                    "description": "Provides a figure on the count of inventory SKU's in stock, total products and value of those."
+                },
+                {
+                    "name": "inventoryProductId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryProductId",
+                    "description": "The inventory product identifier in the inventory transactions."
+                },
+                {
+                    "name": "inventorySystemOrExternalSource",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventorySystemOrExternalSource",
+                    "description": "Flag to indicate whether inventory transaction is generated from inventory system, from another external system or manual posting."
+                },
+                {
+                    "name": "inventoryToLocation",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryToLocation",
+                    "description": "Location of goods in warehouse to where it will be moved."
+                },
+                {
+                    "name": "inventoryTransactionApprovedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryTransactionApprovedBy",
+                    "description": "userId (from userListing) for person who approved the inventory transaction."
+                },
+                {
+                    "name": "inventoryTransactionApprovedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "inventoryTransactionApprovedByDate",
+                    "description": "The date the entry was approved."
+                },
+                {
+                    "name": "inventoryTransactionEnteredBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryTransactionEnteredBy",
+                    "description": "userId (from userListing) for person who entered the inventory transaction."
+                },
+                {
+                    "name": "inventoryTransactionEnteredDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "inventoryTransactionEnteredDate",
+                    "description": "The date when the inventory transaction was entered."
+                },
+                {
+                    "name": "inventoryTransactionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryTransactionId",
+                    "description": "The identifier for the inventory transaction."
+                },
+                {
+                    "name": "inventoryTransactionLastModifiedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryTransactionLastModifiedBy",
+                    "description": "userId (from userListing) for the last person modifying the inventory transaction."
+                },
+                {
+                    "name": "inventoryTransactionLastModifiedDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "inventoryTransactionLastModifiedDate",
+                    "description": "The date when the inventory transaction was modified."
+                },
+                {
+                    "name": "lotNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lotNumber",
+                    "description": "Identification number assigned to a particular quantity or lot of material or depending on the asset classified."
+                },
+                {
+                    "name": "movementDocumentType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "movementDocumentType",
+                    "description": " Type descriptor of the movement document, e.g. sale, internal requisition, disposal or similar."
+                },
+                {
+                    "name": "movementLineNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "movementLineNumber",
+                    "description": "The line number for the inventory transaction movement."
+                },
+                {
+                    "name": "movementReference",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "movementReference",
+                    "description": "Unique reference to the movement."
+                },
+                {
+                    "name": "movementTaxPointDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "movementTaxPointDate",
+                    "description": "The date of the transaction at which there is a tax impact."
+                },
+                {
+                    "name": "qtyAvailable",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "qtyAvailable",
+                    "description": "The quantity of the inventory available in the warehouse which can be sold."
+                },
+                {
+                    "name": "qtyInWarehouse",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "qtyInWarehouse",
+                    "description": "The quantity of the inventory available in the warehouse."
+                },
+                {
+                    "name": "qtyToShip",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "qtyToShip",
+                    "description": "The quantity of the inventory available which is yet to be shipped."
+                },
+                {
+                    "name": "reorderingLevel",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "reorderingLevel",
+                    "description": "The point at which the new manufacturing run or placing a new order with the supplier to procure materials is initiated."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "serialNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "serialNumber",
+                    "description": "Serial number for inventory, used by manufacturer for identification."
+                },
+                {
+                    "name": "sourceLedgerTransactionAssociatedOrderId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "sourceLedgerTransactionAssociatedOrderId",
+                    "description": "Purchase Order ID associated with the transaction in the source ledger for the inventory posting."
+                },
+                {
+                    "name": "supplierId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "supplierId",
+                    "description": "Identifier of the supplier from whom the inventory is purchased and to whom payment is due or from whom unused credits have been applied for. Must match the supplierId in SupplierMasterData."
+                },
+                {
+                    "name": "taxAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxAmount",
+                    "description": "The tax amount relating to the inventory transaction."
+                },
+                {
+                    "name": "taxAmountExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxAmountExchangeRate",
+                    "description": "The exchange rate used. Currency Amount x Exchange Rate = Amount."
+                },
+                {
+                    "name": "taxAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxAmountLocal",
+                    "description": "Amount of the transaction in the local (foreign) currency."
+                },
+                {
+                    "name": "taxAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "taxBase",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxBase",
+                    "description": "The amount on which the tax is calculated."
+                },
+                {
+                    "name": "taxBaseDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxBaseDescription",
+                    "description": "Description of the value in the tax base, e.g. litres for excises on alcoholic beverages."
+                },
+                {
+                    "name": "taxCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxCode",
+                    "description": "Code used to identify taxes relevant to the transaction."
+                },
+                {
+                    "name": "taxDeclarationPeriod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxDeclarationPeriod",
+                    "description": "The identification of the period of the declaration/return in which the tax amount is reported to the revenue body."
+                },
+                {
+                    "name": "taxExemptionReason",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxExemptionReason",
+                    "description": "Tax exemption or reduction reason or rationale."
+                },
+                {
+                    "name": "taxPercentage",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxPercentage",
+                    "description": "The % value on the base at which the tax is calculated."
+                },
+                {
+                    "name": "taxType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxType",
+                    "description": "Tax type for look-up in tables."
+                },
+                {
+                    "name": "transactionAssociatedDocumentId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionAssociatedDocumentId",
+                    "description": "Document ID related to inventory transactions, e.g. bill of supply, delivery receipt, etc."
+                },
+                {
+                    "name": "transactionAssociatedDocumentLineId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionAssociatedDocumentLineId",
+                    "description": "Line ID or number of the document (e.g. purchase invoice) associated with the inventory transaction."
+                },
+                {
+                    "name": "transactionAssociatedOrderId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionAssociatedOrderId",
+                    "description": "Order Document ID related to inventory transactions, e.g. sale order, purchase order."
+                },
+                {
+                    "name": "transactionAssociatedOrderLineId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionAssociatedOrderLineId",
+                    "description": "Line number of the line item of the glDetail transaction to which the inventory transaction relates."
+                },
+                {
+                    "name": "transactionCostAdjust",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "transactionCostAdjust",
+                    "description": "Value of the adjustment made to the inventory."
+                },
+                {
+                    "name": "transactionDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "transactionDateTime",
+                    "description": "The date and time the inventory movement/purchase occurred."
+                },
+                {
+                    "name": "transactionDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionDescription",
+                    "description": "The description of the inventory transactions."
+                },
+                {
+                    "name": "transactionQuantityIssued",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "transactionQuantityIssued",
+                    "description": "The inventory transaction quantity issued."
+                },
+                {
+                    "name": "transactionQuantityReceived",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "transactionQuantityReceived",
+                    "description": "The inventory transaction quantity received."
+                },
+                {
+                    "name": "transactionType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionType",
+                    "description": "The type of inventory transaction, e.g. good receipt, issue, stock transfer."
+                },
+                {
+                    "name": "transactionTypeSystem",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionTypeSystem",
+                    "description": "Flag to identify if the transaction type is system-generated or other, including manual."
+                },
+                {
+                    "name": "unitOfMeasure",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "unitOfMeasure",
+                    "description": "A measurement unit used to express a physical quantity, e.g. litre, kg, etc."
+                },
+                {
+                    "name": "unitPrice",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "unitPrice",
+                    "description": "Cost or price of one unit."
+                },
+                {
+                    "name": "uomToUOMPhysicalStockConversionFactor",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "uomToUOMPhysicalStockConversionFactor",
+                    "description": "Factor on stock conversion factor with UOM with similar characteristic, e.g. for UOM of \"dozen, box, each\", the base UOM is \"each\"."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "warningStockLevel",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "warningStockLevel",
+                    "description": "The level of stock at which the stock quantity has reached a threshold to generate a warning."
+                }
+            ]
+        }
+    ]
+}

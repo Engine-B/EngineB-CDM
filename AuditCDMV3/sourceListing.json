@@ -1,0 +1,80 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "sourceListing",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "businessProcessMajor",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessProcessMajor",
+                    "description": "The major class of transaction associated with a business process, e.g. sales."
+                },
+                {
+                    "name": "businessProcessMinor",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessProcessMinor",
+                    "description": "A subprocess of the major business process, e.g. orders, returns, discounts, etc."
+                },
+                {
+                    "name": "erpSubledgerModule",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "erpSubledgerModule",
+                    "description": "Description of the subledger or ERP module the journal entry originated from. Should tie back to a system or significant accounting process. In some instances, may be represented by source."
+                },
+                {
+                    "name": "sourceDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "sourceDescription",
+                    "description": "A plain language description of the source. Some of the more common journals are purchases, sales, cash receipts, cash disbursements, and general journal."
+                },
+                {
+                    "name": "sourceId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "sourceId",
+                    "description": "Posting source: code for source from which the journal entry originated, e.g. sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, etc."
+                },
+                {
+                    "name": "systemManualIdentifier",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "systemManualIdentifier",
+                    "description": "Define if the source creates system-generated or manually entered journal entries. Provide an \"S\" or \"M\" for the value."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}

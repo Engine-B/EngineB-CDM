@@ -1,0 +1,696 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "inventoryList",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "BOM",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "BOM",
+                    "description": "Bill of materials for the items relating to a specific project, building, product development, etc."
+                },
+                {
+                    "name": "averageCost",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "averageCost",
+                    "description": "The average cost of the inventory item."
+                },
+                {
+                    "name": "binId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "binId",
+                    "description": "ID associated with Bin for recording inventory."
+                },
+                {
+                    "name": "binLocation",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "binLocation",
+                    "description": "The location of the smallest addressable unit of space in a warehouse where the inventory gets stored."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "closingStockQuantity",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "closingStockQuantity",
+                    "description": "The quantity of the closing stock at the end of a reporting period."
+                },
+                {
+                    "name": "closingStockValue",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "closingStockValue",
+                    "description": "The value of the closing stock at the end of a reporting period."
+                },
+                {
+                    "name": "countedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "countedBy",
+                    "description": "userId (from userListing) for the person carrying out the counting of inventory."
+                },
+                {
+                    "name": "currentValuation",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "currentValuation",
+                    "description": "Current valuation of the inventory."
+                },
+                {
+                    "name": "defaultInventoryMethod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "defaultInventoryMethod",
+                    "description": "Default method used for calculating value of inventory."
+                },
+                {
+                    "name": "defaultStockingUnitOfMeasure",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "defaultStockingUnitOfMeasure",
+                    "description": "Default number of units of measure ordered for this inventory product."
+                },
+                {
+                    "name": "displayOnFront",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "displayOnFront",
+                    "description": "The identifier or mark to identify the inventory displayed on the item or product."
+                },
+                {
+                    "name": "glAssetAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAssetAccount",
+                    "description": "Name of GL Account on which inventory asset value has been posted."
+                },
+                {
+                    "name": "glCostAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glCostAccount",
+                    "description": "GL account to which the inventory list cost is posted."
+                },
+                {
+                    "name": "inventoryABCCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryABCCode",
+                    "description": "Grouping of the inventory into three categories \"A\" - most important, \"B\" - less important and \"C\" - least important."
+                },
+                {
+                    "name": "inventoryBarcode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryBarcode",
+                    "description": "ID/code associated with identifying Inventory."
+                },
+                {
+                    "name": "inventoryClass",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryClass",
+                    "description": "Class of inventory to which the asset is assigned, e.g. raw materials, work-in-progress or finished goods."
+                },
+                {
+                    "name": "inventoryCost",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "inventoryCost",
+                    "description": "Cost of inventory at purchase in functional or header currency."
+                },
+                {
+                    "name": "inventoryCostMethod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryCostMethod",
+                    "description": "Identified cost procedure for booking or recording the inventory."
+                },
+                {
+                    "name": "inventoryDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryDescription",
+                    "description": "The description of the inventory item."
+                },
+                {
+                    "name": "inventoryHeldForCustomers",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryHeldForCustomers",
+                    "description": "Flag to identify if the item is held for a customer."
+                },
+                {
+                    "name": "inventoryHeldForOthers",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryHeldForOthers",
+                    "description": "Flag to identify if the item is held for someone other than a customer."
+                },
+                {
+                    "name": "inventoryHeldForSuppliers",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryHeldForSuppliers",
+                    "description": "Flag to identify if the item is held for a supplier."
+                },
+                {
+                    "name": "inventoryItemCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryItemCode",
+                    "description": "Code used to identify inventory items."
+                },
+                {
+                    "name": "inventoryListPrice",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "inventoryListPrice",
+                    "description": "Usual or standard price of inventory item."
+                },
+                {
+                    "name": "inventoryProductId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryProductId",
+                    "description": "The inventory product identifier in the inventory transactions."
+                },
+                {
+                    "name": "inventoryProductName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryProductName",
+                    "description": "Defining the inventory or the product brand acquired."
+                },
+                {
+                    "name": "inventoryProductType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryProductType",
+                    "description": "The type of inventory products e.g. raw material, semi-finished and finished goods."
+                },
+                {
+                    "name": "inventoryProductVariants",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryProductVariants",
+                    "description": "Product or item specifications, e.g. colour, size, etc."
+                },
+                {
+                    "name": "inventoryPurchaseYearToDate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "inventoryPurchaseYearToDate",
+                    "description": "The value of the inventory purchased up to the reporting period or year to date."
+                },
+                {
+                    "name": "inventoryPurchasingUOM",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryPurchasingUOM",
+                    "description": "Quantity unit of measure, e.g. pack of 12 for inventory purchases."
+                },
+                {
+                    "name": "inventorySellingUOM",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventorySellingUOM",
+                    "description": "Quantity unit of measure, e.g. pack of 12 for inventory sales."
+                },
+                {
+                    "name": "inventorySoldYearToDate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "inventorySoldYearToDate",
+                    "description": "The value of the inventory sold up to the reporting period or year to date."
+                },
+                {
+                    "name": "inventoryStockingUOM",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryStockingUOM",
+                    "description": "Quantity unit of measure, e.g. pack of 12 for inventory stocking."
+                },
+                {
+                    "name": "lastCountDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastCountDate",
+                    "description": "The last count date of the inventory list."
+                },
+                {
+                    "name": "lastDespatchedDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastDespatchedDate",
+                    "description": "The date inventory last despatched."
+                },
+                {
+                    "name": "lastReceivedDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastReceivedDate",
+                    "description": "The date inventory last received."
+                },
+                {
+                    "name": "locationActiveFlag",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationActiveFlag",
+                    "description": "Flag to identify whether a specific location for holding inventory is active or inactive."
+                },
+                {
+                    "name": "locationCity",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationCity",
+                    "description": "The physical city where the inventory item is located."
+                },
+                {
+                    "name": "locationCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationCode",
+                    "description": "A code by which inventory item location can be known as a shorthand."
+                },
+                {
+                    "name": "locationCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationCountry",
+                    "description": "The country where the inventory item is located."
+                },
+                {
+                    "name": "locationCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the functional currency of the entity, e.g. EUR for Euros or USD for American Dollars."
+                },
+                {
+                    "name": "locationDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationDescription",
+                    "description": "Description of the location where the inventory item is located."
+                },
+                {
+                    "name": "locationId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationId",
+                    "description": "ID of the location of the Inventory."
+                },
+                {
+                    "name": "locationLatitude",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationLatitude",
+                    "description": "The latitude in degrees of the location of the inventory item."
+                },
+                {
+                    "name": "locationLongitude",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationLongitude",
+                    "description": "The longitude in degrees of the location of the inventory item."
+                },
+                {
+                    "name": "locationParent",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationParent",
+                    "description": "Parent or owner of the inventory location."
+                },
+                {
+                    "name": "locationPostalCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationPostalCode",
+                    "description": "The postcode of the building where the inventory item is located."
+                },
+                {
+                    "name": "locationStateProvince",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationStateProvince",
+                    "description": "The state or province in which the inventory item is located."
+                },
+                {
+                    "name": "locationStreet",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationStreet",
+                    "description": "The street of the address where the inventory item is located."
+                },
+                {
+                    "name": "locationType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationType",
+                    "description": "Type of the inventory location, e.g. warehouse, shop, storage, etc."
+                },
+                {
+                    "name": "lotNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lotNumber",
+                    "description": "Identification number assigned to a particular quantity or lot of material or depending on the asset classified."
+                },
+                {
+                    "name": "obsoleteOrDamagedInventory",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "obsoleteOrDamagedInventory",
+                    "description": "Flag to identify if inventory is obsolete or damaged."
+                },
+                {
+                    "name": "openingStockQuantity",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "openingStockQuantity",
+                    "description": "The opening stock quantity of the inventory appearing at the beginning of the reporting period."
+                },
+                {
+                    "name": "openingStockValue",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "openingStockValue",
+                    "description": "The opening stock value of the inventory appearing at the beginning of the reporting period."
+                },
+                {
+                    "name": "ownerId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "ownerId",
+                    "description": "userId (from userListing) for person who owns the item."
+                },
+                {
+                    "name": "preferredSupplier",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "preferredSupplier",
+                    "description": "The supplier that is preferred or considered in comparison to other vendors depending on price, functionality, performance, etc."
+                },
+                {
+                    "name": "primaryManufacturer",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "primaryManufacturer",
+                    "description": "Primary manufacturer of the item in inventory."
+                },
+                {
+                    "name": "primaryManufacturerProductCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "primaryManufacturerProductCode",
+                    "description": "Product code by which the primary manufacturer refers to the product."
+                },
+                {
+                    "name": "primarySupplier",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "primarySupplier",
+                    "description": "Primary supplier of the product."
+                },
+                {
+                    "name": "primarySupplierProductCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "primarySupplierProductCode",
+                    "description": "Product code by which the primary supplier refers to the product."
+                },
+                {
+                    "name": "productGroup01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "productGroup01",
+                    "description": "Product classified depending on the nature of business or operations, e.g. Rm, Non RM, etc."
+                },
+                {
+                    "name": "productGroup02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "productGroup02",
+                    "description": "Product classified depending on the nature of business or operations, e.g. Rm, Non RM, etc."
+                },
+                {
+                    "name": "quantity",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "quantity",
+                    "description": "Quantity on inventory list."
+                },
+                {
+                    "name": "quantityOnHandPhysicalCount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "quantityOnHandPhysicalCount",
+                    "description": "Count of the inventory physical quantity available for use."
+                },
+                {
+                    "name": "quantityOnHandSystem",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "quantityOnHandSystem",
+                    "description": "The inventory quantity on hand reflected in the system."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "serialNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "serialNumber",
+                    "description": "Serial number for Inventory, used by manufacturer for identification."
+                },
+                {
+                    "name": "specificCost",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "specificCost",
+                    "description": "Actual specific cost of this individual item at time of purchase."
+                },
+                {
+                    "name": "standardCost",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "standardCost",
+                    "description": "Usual or standard cost of this item at purchase."
+                },
+                {
+                    "name": "stockAccountCommodityCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "stockAccountCommodityCode",
+                    "description": "Code used to identify commodity held in inventory."
+                },
+                {
+                    "name": "stockCharacteristic",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "stockCharacteristic",
+                    "description": "The key features or nature of the stock in the inventory list."
+                },
+                {
+                    "name": "stockCharacteristicValue",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "stockCharacteristicValue",
+                    "description": "Value associated with specific stock characteristic."
+                },
+                {
+                    "name": "supplierId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "supplierId",
+                    "description": "Identifier of the supplier from whom the inventory is purchased and to whom payment is due or from whom unused credits have been applied for. Must match the supplierId in SupplierMasterData."
+                },
+                {
+                    "name": "thirdPartyFacility",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "thirdPartyFacility",
+                    "description": "ID or name of the third party facility used by the entity to host or utilise this item."
+                },
+                {
+                    "name": "unitPrice",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "unitPrice",
+                    "description": "Cost or price of one unit."
+                },
+                {
+                    "name": "uomToUOMBaseConversionFactor",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "uomToUOMBaseConversionFactor",
+                    "description": "Factor conversion of UOM with similar characteristic, e.g. for UOM of \"hour, minute, second\", the base UOM is \"second\"."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "writeDownDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "writeDownDescription",
+                    "description": "Description of the inventory reduced value / write down description due to damage, theft, shrinking of market trends, etc."
+                },
+                {
+                    "name": "writeDownFactor",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "writeDownFactor",
+                    "description": "Factor or identifier considered for the inventory reduction / written down value."
+                }
+            ]
+        }
+    ]
+}

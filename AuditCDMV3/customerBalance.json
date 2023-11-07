@@ -1,0 +1,208 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "customerBalance",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "accountId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "accountId",
+                    "description": "accountId associated with customer company/customer books of accounts used to identify the entity. The entity's supplier number in the customer's records."
+                },
+                {
+                    "name": "amountBeginning",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountBeginning",
+                    "description": "Period beginning balance amount (that is, the ending balance from the prior period) recorded in the functional or group currency. No multicurrency translation should need to be performed on this amount because all are recorded in a single currency."
+                },
+                {
+                    "name": "amountBeginningLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountBeginningLocal",
+                    "description": "Period beginning balance amount in the local country currency for multicurrency tracking."
+                },
+                {
+                    "name": "amountBeginningReporting",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountBeginningReporting",
+                    "description": "Period beginning balance amount in reporting currency used for statutory reporting."
+                },
+                {
+                    "name": "amountEnding",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountEnding",
+                    "description": "Period ending balance amount recorded in the functional or group currency. No multicurrency translation should need to be performed on this amount because all are recorded in a single currency."
+                },
+                {
+                    "name": "amountEndingLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountEndingLocal",
+                    "description": "Period ending balance amount in the local country currency for multicurrency tracking."
+                },
+                {
+                    "name": "amountEndingReporting",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountEndingReporting",
+                    "description": "Period ending balance amount in reporting currency used for statutory reporting."
+                },
+                {
+                    "name": "amountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "amountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "amountReportingCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "amountReportingCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 for the currency in which a reporting entity prepares its financial statements, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "balanceAsOfDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "balanceAsOfDate",
+                    "description": "The date of the provided balance."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "companyType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "companyType",
+                    "description": "Type of company of the customer, e.g. B2B, B2C, manufacturing, limited company or similar."
+                },
+                {
+                    "name": "customerAccountId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerAccountId",
+                    "description": "Identifier of the customer from whom payment is expected or to whom unused credits have been applied."
+                },
+                {
+                    "name": "customerCreditLimit",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerCreditLimit",
+                    "description": "The credit limit for this customer."
+                },
+                {
+                    "name": "customerGroup",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerGroup",
+                    "description": "The name of the group to which this customer has been assigned by the entity."
+                },
+                {
+                    "name": "customerId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerId",
+                    "description": "Unique code for the customer. Must match customerId per the customerMasterData."
+                },
+                {
+                    "name": "customerName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerName",
+                    "description": "The name of the customer."
+                },
+                {
+                    "name": "customerType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerType",
+                    "description": "The type of customer."
+                },
+                {
+                    "name": "fiscalPeriod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fiscalPeriod",
+                    "description": "Fiscal period in which the BalanceAsOfDate occurs, e.g. W1-W53 for weekly periods, M1-M12 for monthly periods, and Q1-Q4 for quarterly periods."
+                },
+                {
+                    "name": "fiscalYear",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fiscalYear",
+                    "description": "Fiscal year in which BalanceAsOfDate occurs"
+                },
+                {
+                    "name": "glCreditAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glCreditAccountNumber",
+                    "description": "GL account number on which the credit side of the transaction has been posted."
+                },
+                {
+                    "name": "glDebitAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glDebitAccountNumber",
+                    "description": "GL account number on which the debit side of the transaction has been posted."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}

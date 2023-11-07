@@ -1,0 +1,568 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "customerMasterData",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "IBANNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "IBANNumber",
+                    "description": "International Bank Account Number, ISO 13616."
+                },
+                {
+                    "name": "accountGroup",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "accountGroup",
+                    "description": "Number range in which the customer account number is assigned which can be either user or system."
+                },
+                {
+                    "name": "addressAddressType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressAddressType",
+                    "description": "Field to differentiate between multiple addresses. To indicate the type of address, choose from the predefined enumeration, e.g. StreetAddress PostalAddress, BillingAddress."
+                },
+                {
+                    "name": "addressBuilding",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressBuilding",
+                    "description": "The physical building address of the customer."
+                },
+                {
+                    "name": "addressCity",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressCity",
+                    "description": "The physical city where the customer is located."
+                },
+                {
+                    "name": "addressCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressCountry",
+                    "description": "The country code where the customer is physically located. Recommend ISO 3166-1 Alpha 2 or ISO 3166-1 Alpha 3 format (XX or XXX)."
+                },
+                {
+                    "name": "addressNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressNumber",
+                    "description": "The building or other number of the address of the customer."
+                },
+                {
+                    "name": "addressPostalCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressPostalCode",
+                    "description": "The postcode of the city where the customer is physically located."
+                },
+                {
+                    "name": "addressRegion",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressRegion",
+                    "description": "The physical state or province where the customer is located. Recommend ISO 3166-2."
+                },
+                {
+                    "name": "addressStreetName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "addressStreetName",
+                    "description": "The street where the customer is located."
+                },
+                {
+                    "name": "bankAccountId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountId",
+                    "description": "Unambiguous identification of the account to which credit and debit entries are made."
+                },
+                {
+                    "name": "bankAccountName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountName",
+                    "description": "The name of the individual or company holding the bank account."
+                },
+                {
+                    "name": "bankAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountNumber",
+                    "description": "The number allocated to the account by the individual's or company's own bank."
+                },
+                {
+                    "name": "companyType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "companyType",
+                    "description": "Type of company of the customer, e.g. B2B, B2C, manufacturing, limited company or similar."
+                },
+                {
+                    "name": "contactPersonPhoneNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "contactPersonPhoneNumber",
+                    "description": "Contact person phone number for any communication with the customer."
+                },
+                {
+                    "name": "creditAnalyst",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "creditAnalyst",
+                    "description": "The person or service employed to assess the credit rating of the customer."
+                },
+                {
+                    "name": "creditClassification",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "creditClassification",
+                    "description": "The customer credit assessment as moderate/high/low."
+                },
+                {
+                    "name": "creditCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "creditCurrency",
+                    "description": "The currency in which the credit limit is offered to the customer."
+                },
+                {
+                    "name": "creditRating",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "creditRating",
+                    "description": "Evaluating the credit risk of the customer."
+                },
+                {
+                    "name": "creditReviewCycle",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "creditReviewCycle",
+                    "description": "Periodicity of assessing the customer credit risk in days."
+                },
+                {
+                    "name": "customerAccountId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerAccountId",
+                    "description": "Identifier of the customer from whom payment is expected or to whom unused credits have been applied."
+                },
+                {
+                    "name": "customerClassOrGroup",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerClassOrGroup",
+                    "description": "Group or class to which customer belong, e.g. wholesaler, retailer, consumer, B2B, B2C."
+                },
+                {
+                    "name": "customerCreditLimit",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "customerCreditLimit",
+                    "description": "The credit limit for this customer's total outstanding balance."
+                },
+                {
+                    "name": "customerGroup",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerGroup",
+                    "description": "If the organization segments customers into groups, the group to which this customer is assigned/belongs to."
+                },
+                {
+                    "name": "customerId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerId",
+                    "description": "Unique code for the customer."
+                },
+                {
+                    "name": "customerType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerType",
+                    "description": "The type of customer."
+                },
+                {
+                    "name": "customerZone",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerZone",
+                    "description": "Area or geographical location to which the customer belong."
+                },
+                {
+                    "name": "effectiveDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "effectiveDate",
+                    "description": "The date the customer declared active."
+                },
+                {
+                    "name": "expirationDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "expirationDate",
+                    "description": "The date the customer was declared inactive."
+                },
+                {
+                    "name": "fax",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fax",
+                    "description": "Fax number for the supplier."
+                },
+                {
+                    "name": "firstName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "firstName",
+                    "description": "The first (given) name of the person."
+                },
+                {
+                    "name": "lastName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lastName",
+                    "description": "The last (family) name of the person."
+                },
+                {
+                    "name": "legalEntityIdentifier",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "legalEntityIdentifier",
+                    "description": "Third party registration number given by local authorities / local regulators, e.g. company registration number."
+                },
+                {
+                    "name": "name",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "name",
+                    "description": "The name of the customer."
+                },
+                {
+                    "name": "orderAmountLimit",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "orderAmountLimit",
+                    "description": "The maximum order limit predefined as per the credit rating of the customer."
+                },
+                {
+                    "name": "paymentDiscountDays",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentDiscountDays",
+                    "description": "The number of days from the invoice date the customer is allowed to take advantage of discounted terms. Terms are represented as digits with no decimal places, e.g. nnn."
+                },
+                {
+                    "name": "paymentDiscountPercentage",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentDiscountPercentage",
+                    "description": "The discount percentage the organisation may provide to the customer if an invoice is paid before a certain number of days."
+                },
+                {
+                    "name": "paymentDueDays",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentDueDays",
+                    "description": "The number of days allowed to meet the obligation before an invoice becomes overdue."
+                },
+                {
+                    "name": "primaryContactEmail",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "primaryContactEmail",
+                    "description": "Email address of the primary contact."
+                },
+                {
+                    "name": "registrationCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "registrationCountry",
+                    "description": "Supplier country of registration, e.g. USA, UK, India, etc."
+                },
+                {
+                    "name": "registrationNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "registrationNumber",
+                    "description": "Unique number to identify the company in the accounting records, issued by a government authority or created by the company for internal purposes to identify different entities within their corporate group."
+                },
+                {
+                    "name": "registrationPlace",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "registrationPlace",
+                    "description": "Supplier place of registration, could be district e.g. Houston, Raleigh, Durham, etc."
+                },
+                {
+                    "name": "registrationState",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "registrationState",
+                    "description": "Supplier state of Registration, e.g. Texas, NC, SC, Ontario, etc."
+                },
+                {
+                    "name": "reviewDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "reviewDate",
+                    "description": "The date when the customer credit risk is reviewed."
+                },
+                {
+                    "name": "secondaryAddress",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "secondaryAddress",
+                    "description": "Secondary address for contact."
+                },
+                {
+                    "name": "secondaryContactPersonEmail",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "secondaryContactPersonEmail",
+                    "description": "Contact person email address for any communication with the customer."
+                },
+                {
+                    "name": "secondaryContactPersonName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "secondaryContactPersonName",
+                    "description": "Contact person name for any communication with the customer."
+                },
+                {
+                    "name": "selfBillingIndicator",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "selfBillingIndicator",
+                    "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier."
+                },
+                {
+                    "name": "sortCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "sortCode",
+                    "description": "Identifier for the bank branch at which the account is held. May be needed to uniquely identify the account."
+                },
+                {
+                    "name": "systemApprovedDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "systemApprovedDateTime",
+                    "description": "The date and time the entry was approved."
+                },
+                {
+                    "name": "systemApprovedUser",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "systemApprovedUser",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "systemEntryDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "systemEntryDateTime",
+                    "description": "The date the transaction was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "systemEntryUser",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "systemEntryUser",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "systemModifiedDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "systemModifiedDateTime",
+                    "description": "The date and time the entry was last modified."
+                },
+                {
+                    "name": "systemModifiedUser",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "systemModifiedUser",
+                    "description": "userId (from userListing) for the last person modifying this entry."
+                },
+                {
+                    "name": "taxAuthority",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxAuthority",
+                    "description": "Identification of the revenue body to which this taxType refers."
+                },
+                {
+                    "name": "taxNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxNumber",
+                    "description": "The supplier's tax identification number."
+                },
+                {
+                    "name": "taxRegistrationNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxRegistrationNumber",
+                    "description": "Unique number issued by a revenue body for use by the company."
+                },
+                {
+                    "name": "taxReportingCodes",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxReportingCodes",
+                    "description": "Field number that is required for reporting and compliance purpose."
+                },
+                {
+                    "name": "taxType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxType",
+                    "description": "Tax type for look-up in tables."
+                },
+                {
+                    "name": "taxVerificationDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "taxVerificationDate",
+                    "description": "The date that the tax registration details referred to above were last checked."
+                },
+                {
+                    "name": "telephone",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "telephone",
+                    "description": "Phone number of the primary contact at the customer."
+                },
+                {
+                    "name": "termsOfPayment",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "termsOfPayment",
+                    "description": "Terms of payment agreed with the customer, e.g. 30 days from invoice or delivery."
+                },
+                {
+                    "name": "title",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "title",
+                    "description": "The title of the person, e.g. accounting manager."
+                },
+                {
+                    "name": "tolerenceLevel",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "tolerenceLevel",
+                    "description": "An allowable amount or percentage of variation over and above the credit limit offered for the customer."
+                },
+                {
+                    "name": "transactionCreditLimit",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "transactionCreditLimit",
+                    "description": "The per invoice credit limit established with this customer."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "website",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "website",
+                    "description": "URL of supplier website."
+                }
+            ]
+        }
+    ]
+}

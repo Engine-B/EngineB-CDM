@@ -1,0 +1,1368 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "salesOrderData",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "approvedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "approvedBy",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "approvedDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "approvedDateTime",
+                    "description": "The date and time the entry was approved."
+                },
+                {
+                    "name": "batchId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "batchId",
+                    "description": "System-generated ID for batch."
+                },
+                {
+                    "name": "billingAddressAdditionalAddressDetail",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressAdditionalAddressDetail",
+                    "description": "Additional detail required for the billing address."
+                },
+                {
+                    "name": "billingAddressAddressType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressAddressType",
+                    "description": "Field to differentiate between multiple addresses. To indicate the type of address, choose from the predefined enumeration, e.g. StreetAddress PostalAddress, BillingAddress."
+                },
+                {
+                    "name": "billingAddressBuilding",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressBuilding",
+                    "description": "The physical building billing address of the supplier."
+                },
+                {
+                    "name": "billingAddressCity",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressCity",
+                    "description": "The physical city in the billing address of the supplier."
+                },
+                {
+                    "name": "billingAddressCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressCountry",
+                    "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard, e.g. NL for the Netherlands."
+                },
+                {
+                    "name": "billingAddressNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressNumber",
+                    "description": "The building or other number of the billing address of the supplier."
+                },
+                {
+                    "name": "billingAddressPostalCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressPostalCode",
+                    "description": "The postcode of the building where the billing address is located."
+                },
+                {
+                    "name": "billingAddressRegion",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressRegion",
+                    "description": "Country specific code to indicate regions/provinces within the tax authority. Preferably described according to ISO 3166-2, e.g. GB-KEN for Kent county in the United Kingdom."
+                },
+                {
+                    "name": "billingAddressStreetName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingAddressStreetName",
+                    "description": "The street listed in the billing address of the supplier."
+                },
+                {
+                    "name": "billingBlock",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingBlock",
+                    "description": "Check applied to\u00a0block the sales order from being billed and to prevent invoice creation, especially in the case of debit memos and sales returns."
+                },
+                {
+                    "name": "billingState",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "billingState",
+                    "description": "The billing state of the customer to identify on the serviceability."
+                },
+                {
+                    "name": "blanketNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "blanketNumber",
+                    "description": "Blanket sale order number used as approval for multiple invoices under an agreed total sales price. May be active for a long period of time."
+                },
+                {
+                    "name": "branchStoreNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "branchStoreNumber",
+                    "description": "Branch or store number, additional segregation of customer/supplier, used if not included as part of the customer/supplier ID."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "customerId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerId",
+                    "description": "Unique code for the customer. Must match customerId per the customerMasterData."
+                },
+                {
+                    "name": "customerInfoName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "customerInfoName",
+                    "description": "Name of the customer."
+                },
+                {
+                    "name": "deliveryBlock",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "deliveryBlock",
+                    "description": "Block reference of the sales order for delivery depending on the quantity, value or others."
+                },
+                {
+                    "name": "distributionChannel",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "distributionChannel",
+                    "description": "The channel by which the customer order is delivered, e.g. online, store, outlet, etc."
+                },
+                {
+                    "name": "estimatedOrderAvailabilityDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "estimatedOrderAvailabilityDate",
+                    "description": "The estimated date when the customer order will be delivered."
+                },
+                {
+                    "name": "glPostingDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "glPostingDate",
+                    "description": "The date of posting to GL."
+                },
+                {
+                    "name": "inStock",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inStock",
+                    "description": "Verifying the stock before the sale order of the customer is confirmed."
+                },
+                {
+                    "name": "incoLocation1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "incoLocation1",
+                    "description": "Common commercial terms used in contracts for the sale of goods depending the location to where it is to be shipped to the customer."
+                },
+                {
+                    "name": "incoTerms",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "incoTerms",
+                    "description": "Common commercial terms used in contracts for the sale of goods."
+                },
+                {
+                    "name": "lastModifiedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lastModifiedBy",
+                    "description": "userId (from userListing) for the last person modifying this entry."
+                },
+                {
+                    "name": "lastModifiedDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastModifiedDate",
+                    "description": "The date the entry was last modified before posting."
+                },
+                {
+                    "name": "lineAccountId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineAccountId",
+                    "description": "General Ledger Account code of the GL-revenue-account. Can be including sub-account ID. It can contain many different levels to identify the account. It could include cost centres such as company, division, region, group, branch, department, etc."
+                },
+                {
+                    "name": "lineApprovedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineApprovedBy",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "lineApprovedDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineApprovedDateTime",
+                    "description": "The date and time the entry was approved."
+                },
+                {
+                    "name": "lineCreditNoteReason",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineCreditNoteReason",
+                    "description": "Credit note reason or rationale."
+                },
+                {
+                    "name": "lineCreditNoteReference",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineCreditNoteReference",
+                    "description": "Credit note reference (where applicable) to original invoice."
+                },
+                {
+                    "name": "lineDebitCreditIndicator",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineDebitCreditIndicator",
+                    "description": "Indicates whether the amount is a credit or debit. 'C'=credit; 'D'=debit."
+                },
+                {
+                    "name": "lineDeliveryDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineDeliveryDate",
+                    "description": "The date of the delivery."
+                },
+                {
+                    "name": "lineDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineDescription",
+                    "description": "Description of the line item under a particular sales order."
+                },
+                {
+                    "name": "lineFromDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineFromDate",
+                    "description": "Start date of the deliveries."
+                },
+                {
+                    "name": "lineGoodsServicesId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineGoodsServicesId",
+                    "description": "Indicator showing if goods or service."
+                },
+                {
+                    "name": "lineLineNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineLineNumber",
+                    "description": "Line number of the line item under a particular sales order."
+                },
+                {
+                    "name": "lineMovementReference",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineMovementReference",
+                    "description": "Unique reference to the movement."
+                },
+                {
+                    "name": "lineOrderLineAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineOrderLineAmount",
+                    "description": "Amount value of the line item in the order."
+                },
+                {
+                    "name": "lineOrderLineAmountExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineOrderLineAmountExchangeRate",
+                    "description": "Exchange rate applying to the value of the line item in the order."
+                },
+                {
+                    "name": "lineOrderLineAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineOrderLineAmountLocal",
+                    "description": "Order amount in the local (foreign) currency."
+                },
+                {
+                    "name": "lineOrderLineAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineOrderLineAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "lineOrderUOM",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineOrderUOM",
+                    "description": "Purchase order line base unit of measure."
+                },
+                {
+                    "name": "linePIDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "linePIDate",
+                    "description": "The date of Purchase Invoice associated with line item. May relate to purchase by entity billed to customers as costs."
+                },
+                {
+                    "name": "lineProductCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineProductCode",
+                    "description": "Code identifying the product within the line."
+                },
+                {
+                    "name": "lineProductDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineProductDescription",
+                    "description": "Product (plain language) description to indicate the name or other identifying characteristics of the product."
+                },
+                {
+                    "name": "lineProductGroup01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineProductGroup01",
+                    "description": "Product descriptor #1, e.g. tyres or accessories."
+                },
+                {
+                    "name": "lineProductGroup02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineProductGroup02",
+                    "description": "Product descriptor #2, e.g. brand."
+                },
+                {
+                    "name": "lineProductId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineProductId",
+                    "description": "Unique identifier for each sales product. This ID may need to be created by concatenating fields (e.g. business unit, product number, year, etc.) to uniquely identify each product."
+                },
+                {
+                    "name": "lineQuantity",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineQuantity",
+                    "description": "Quantity of goods and services supplied."
+                },
+                {
+                    "name": "lineShipFromAdditionalAddressDetail",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromAdditionalAddressDetail",
+                    "description": "Additional detail required for the shipping address."
+                },
+                {
+                    "name": "lineShipFromAddressType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromAddressType",
+                    "description": "Field to differentiate between multiple addresses. To indicate the type of address, choose from the predefined enumeration, e.g. StreetAddress PostalAddress, BillingAddress."
+                },
+                {
+                    "name": "lineShipFromBuilding",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromBuilding",
+                    "description": "The physical building shipping address the goods will be despatched from."
+                },
+                {
+                    "name": "lineShipFromCity",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromCity",
+                    "description": "The physical city the goods will be despatched from."
+                },
+                {
+                    "name": "lineShipFromCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromCountry",
+                    "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard, e.g. NL for the Netherlands."
+                },
+                {
+                    "name": "lineShipFromDeliveryDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineShipFromDeliveryDate",
+                    "description": "The date goods are dispatched."
+                },
+                {
+                    "name": "lineShipFromDeliveryId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromDeliveryId",
+                    "description": "Identification of the delivery."
+                },
+                {
+                    "name": "lineShipFromLocationId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromLocationId",
+                    "description": "Location of the warehouse from where the goods are shipped to customer."
+                },
+                {
+                    "name": "lineShipFromNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromNumber",
+                    "description": "The building or other number of the address from where the goods will be despatched."
+                },
+                {
+                    "name": "lineShipFromPostalCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromPostalCode",
+                    "description": "The postcode of the shipping address."
+                },
+                {
+                    "name": "lineShipFromRegion",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromRegion",
+                    "description": "Country specific code to indicate regions/provinces within the tax authority. Preferably described according to ISO 3166-2, e.g. GB-KEN for Kent county in the United Kingdom."
+                },
+                {
+                    "name": "lineShipFromStreetName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromStreetName",
+                    "description": "The street from which goods will be shipped."
+                },
+                {
+                    "name": "lineShipFromUCR",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromUCR",
+                    "description": "Unique consignment reference number."
+                },
+                {
+                    "name": "lineShipFromWarehouseId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipFromWarehouseId",
+                    "description": "Warehouse where goods held - also to identify work-in-progress or stock-in-transit."
+                },
+                {
+                    "name": "lineShipToAdditionalAddressDetail",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToAdditionalAddressDetail",
+                    "description": "Additional detail required for the address to which items will be shipped."
+                },
+                {
+                    "name": "lineShipToAddressType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToAddressType",
+                    "description": "Field to differentiate between multiple addresses. To indicate the type of address, choose from the predefined enumeration, e.g. StreetAddress PostalAddress, BillingAddress."
+                },
+                {
+                    "name": "lineShipToBuilding",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToBuilding",
+                    "description": "The physical building shipping to address."
+                },
+                {
+                    "name": "lineShipToCity",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToCity",
+                    "description": "The physical city to which the goods will be shipped."
+                },
+                {
+                    "name": "lineShipToCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToCountry",
+                    "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard, e.g. NL for the Netherlands."
+                },
+                {
+                    "name": "lineShipToDeliveryDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineShipToDeliveryDate",
+                    "description": "The date goods are delivered."
+                },
+                {
+                    "name": "lineShipToDeliveryId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToDeliveryId",
+                    "description": "Identification of the delivery."
+                },
+                {
+                    "name": "lineShipToLocationId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToLocationId",
+                    "description": "The addresses to which customers want organisation to send the goods they ordered."
+                },
+                {
+                    "name": "lineShipToNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToNumber",
+                    "description": "The building or other number to which the goods will be shipped."
+                },
+                {
+                    "name": "lineShipToPostalCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToPostalCode",
+                    "description": "The postcode of the shipping to address."
+                },
+                {
+                    "name": "lineShipToRegion",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToRegion",
+                    "description": "Country specific code to indicate regions/provinces within the tax authority. Preferably described according to ISO 3166-2, e.g. GB-KEN for Kent county in the United Kingdom."
+                },
+                {
+                    "name": "lineShipToStreetName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToStreetName",
+                    "description": "The street to which goods will be delivered."
+                },
+                {
+                    "name": "lineShipToUCR",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToUCR",
+                    "description": "Unique consignment reference number."
+                },
+                {
+                    "name": "lineShipToWarehouseId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShipToWarehouseId",
+                    "description": "Warehouse where goods held - also to identify work-in-progress or stock-in-transit."
+                },
+                {
+                    "name": "lineShippingCostsAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineShippingCostsAmount",
+                    "description": "Transaction monetary amount recorded in the functional currency. No multicurrency translation should need to be performed on this amount because all transactions should be recorded in a single currency. Must be absolute."
+                },
+                {
+                    "name": "lineShippingCostsAmountExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineShippingCostsAmountExchangeRate",
+                    "description": "The exchange rate used. Currency Amount x Exchange Rate = Amount."
+                },
+                {
+                    "name": "lineShippingCostsAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineShippingCostsAmountLocal",
+                    "description": "Shipping amount in the local (foreign) currency."
+                },
+                {
+                    "name": "lineShippingCostsAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineShippingCostsAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "lineSubsequentPI",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineSubsequentPI",
+                    "description": "ID of Purchase Invoice associated with line item subsequent to initial recognition. May relate to purchase by entity billed to customers as costs."
+                },
+                {
+                    "name": "lineSystemEntryDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineSystemEntryDateTime",
+                    "description": "The date the transaction was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "lineSystemEntryUser",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineSystemEntryUser",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "lineTaxInformationTaxAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxAmount",
+                    "description": "Transaction monetary amount recorded in the functional currency. No multicurrency translation should need to be performed on this amount because all transactions should be recorded in a single currency. Must be absolute."
+                },
+                {
+                    "name": "lineTaxInformationTaxBase",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxBase",
+                    "description": "The base on which the tax is calculated. This can be an amount or a quantity, e.g. litres."
+                },
+                {
+                    "name": "lineTaxInformationTaxBaseDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxBaseDescription",
+                    "description": "Description of the value in the tax base, e.g. litres for excises on alcoholic beverages."
+                },
+                {
+                    "name": "lineTaxInformationTaxCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxCode",
+                    "description": "Tax code for lookup in tables."
+                },
+                {
+                    "name": "lineTaxInformationTaxDeclarationPeriod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxDeclarationPeriod",
+                    "description": "The identification of the period of the declaration/return in which the tax amount is reported to the revenue body."
+                },
+                {
+                    "name": "lineTaxInformationTaxExemptionReason",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxExemptionReason",
+                    "description": "Tax exemption or reduction reason or rationale."
+                },
+                {
+                    "name": "lineTaxInformationTaxPercentage",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxPercentage",
+                    "description": "Tax percentage."
+                },
+                {
+                    "name": "lineTaxInformationTaxType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineTaxInformationTaxType",
+                    "description": "Tax type for look-up in tables."
+                },
+                {
+                    "name": "lineTaxPointDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineTaxPointDate",
+                    "description": "Tax point date where recorded or, if not recorded, then the invoice date."
+                },
+                {
+                    "name": "lineToDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lineToDate",
+                    "description": "End date of the deliveries."
+                },
+                {
+                    "name": "lineUOMToUOMBaseConversionFactor",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineUOMToUOMBaseConversionFactor",
+                    "description": "Conversion factor of the to UOM Base. Only needed when is reported and is different from the UOM Base."
+                },
+                {
+                    "name": "lineUnitPrice",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineUnitPrice",
+                    "description": "Unit price for the unit/group of units per UOM in the header's default currency."
+                },
+                {
+                    "name": "orderDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "orderDate",
+                    "description": "The date of the purchase order, regardless of the date the order is entered."
+                },
+                {
+                    "name": "orderDocumentReference",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "orderDocumentReference",
+                    "description": "Identification number or code on the purchase order."
+                },
+                {
+                    "name": "orderNo",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "orderNo",
+                    "description": "Internal sales order number."
+                },
+                {
+                    "name": "orderType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "orderType",
+                    "description": "Sales order type for invoiced items."
+                },
+                {
+                    "name": "paymentTermSelection",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentTermSelection",
+                    "description": "Selection of payment term from the drop down, e.g. 45 days, 30 days, etc."
+                },
+                {
+                    "name": "paymentTerms",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "paymentTerms",
+                    "description": "Payments terms for this invoice."
+                },
+                {
+                    "name": "period",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "period",
+                    "description": "Fiscal period in which the OrderDate occurs, e.g. W1-W53 for weekly periods, M1-M12 for monthly periods, and Q1-Q4 for quarterly periods."
+                },
+                {
+                    "name": "periodYear",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "periodYear",
+                    "description": "Fiscal year in which the orderDate occurs."
+                },
+                {
+                    "name": "postingStatus",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "postingStatus",
+                    "description": "Status of the transaction's posting to the GL, e.g. \"Posted\" or \"Not Posted\"."
+                },
+                {
+                    "name": "pricingDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "pricingDate",
+                    "description": "The effective date when the price list shall apply."
+                },
+                {
+                    "name": "pricingStrategy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "pricingStrategy",
+                    "description": "The strategy defined on the prices to be charged depending the class or group of customer."
+                },
+                {
+                    "name": "receiptNumbers",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "receiptNumbers",
+                    "description": "The number(s) of the receipt(s) on this \"consolidated invoice record\". Can be a single number, a range or a list."
+                },
+                {
+                    "name": "requestedDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "requestedDate",
+                    "description": "The date when the customer have requested to provide on the deliverables."
+                },
+                {
+                    "name": "salesOrderAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "salesOrderAmountLocal",
+                    "description": "Order amount in the local (foreign) currency."
+                },
+                {
+                    "name": "salesOrderId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "salesOrderId",
+                    "description": "Sales order ID for invoiced items. Must match OrderNo in SalesOrderData. If no sales order, leave blank."
+                },
+                {
+                    "name": "salesOrderLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "salesOrderLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "salesOrganisation",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "salesOrganisation",
+                    "description": "The sales organisation or group who have negotiated the terms and conditions with the customer."
+                },
+                {
+                    "name": "salesPerson",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "salesPerson",
+                    "description": "The sales representative for the sale order."
+                },
+                {
+                    "name": "salesQuotation",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "salesQuotation",
+                    "description": "Sales quotation reference at the time of sale order generation."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "selfBillingIndicator",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "selfBillingIndicator",
+                    "description": "Indicator showing if a self-billing agreement exists between the customer and the supplier."
+                },
+                {
+                    "name": "settlementAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "settlementAmount",
+                    "description": "Transaction monetary amount recorded in the functional currency. No multicurrency translation should need to be performed on this amount because all transactions should be recorded in a single currency. Must be absolute."
+                },
+                {
+                    "name": "settlementAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "settlementAmountLocal",
+                    "description": "Transaction amount in the local (foreign) currency."
+                },
+                {
+                    "name": "settlementAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "settlementAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "settlementExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "settlementExchangeRate",
+                    "description": "The exchange rate used. Currency Amount x Exchange Rate = Amount."
+                },
+                {
+                    "name": "settlementPaymentMechanism",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "settlementPaymentMechanism",
+                    "description": "Payment mechanism."
+                },
+                {
+                    "name": "settlementSettlementDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "settlementSettlementDate",
+                    "description": "The date of settlement of sales order."
+                },
+                {
+                    "name": "settlementSettlementDiscount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "settlementSettlementDiscount",
+                    "description": "Amount of discount provided on sales made."
+                },
+                {
+                    "name": "shipFromAdditionalAddressDetail",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromAdditionalAddressDetail",
+                    "description": "Additional detail required for the shipping address."
+                },
+                {
+                    "name": "shipFromAddressType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromAddressType",
+                    "description": "Field to differentiate between multiple addresses. To indicate the type of address, choose from the predefined enumeration, e.g. StreetAddress PostalAddress, BillingAddress."
+                },
+                {
+                    "name": "shipFromBuilding",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromBuilding",
+                    "description": "The physical building shipping address the goods will be despatched from."
+                },
+                {
+                    "name": "shipFromCity",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromCity",
+                    "description": "The physical city the goods will be despatched from."
+                },
+                {
+                    "name": "shipFromCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromCountry",
+                    "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard, e.g. NL for the Netherlands."
+                },
+                {
+                    "name": "shipFromDeliveryDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "shipFromDeliveryDate",
+                    "description": "The date goods are dispatched."
+                },
+                {
+                    "name": "shipFromDeliveryId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromDeliveryId",
+                    "description": "Identification of the delivery."
+                },
+                {
+                    "name": "shipFromLocationId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromLocationId",
+                    "description": "Location of the warehouse from where the goods are shipped to customer."
+                },
+                {
+                    "name": "shipFromNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromNumber",
+                    "description": "The building or other number of the address from where the goods will be despatched."
+                },
+                {
+                    "name": "shipFromPostalCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromPostalCode",
+                    "description": "The postcode of the building where the shipping address is located."
+                },
+                {
+                    "name": "shipFromRegion",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromRegion",
+                    "description": "Country specific code to indicate regions/provinces within the tax authority. Preferably described according to ISO 3166-2, e.g. GB-KEN for Kent county in the United Kingdom."
+                },
+                {
+                    "name": "shipFromStreetName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromStreetName",
+                    "description": "The street from which goods will be shipped."
+                },
+                {
+                    "name": "shipFromUCR",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromUCR",
+                    "description": "Unique consignment reference number."
+                },
+                {
+                    "name": "shipFromWarehouseId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipFromWarehouseId",
+                    "description": "Warehouse where goods held - also to identify work-in-progress or stock-in-transit."
+                },
+                {
+                    "name": "shipToAdditionalAddressDetail",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToAdditionalAddressDetail",
+                    "description": "Additional detail required for the address to which items will be shipped."
+                },
+                {
+                    "name": "shipToAddressType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToAddressType",
+                    "description": "Field to differentiate between multiple addresses. To indicate the type of address, choose from the predefined enumeration, e.g. StreetAddress PostalAddress, BillingAddress."
+                },
+                {
+                    "name": "shipToBuilding",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToBuilding",
+                    "description": "The physical building shipping to address."
+                },
+                {
+                    "name": "shipToCity",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToCity",
+                    "description": "The physical city to which the goods will be shipped."
+                },
+                {
+                    "name": "shipToCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToCountry",
+                    "description": "Two-letter country code according to ISO 3166-1 alpha 2 standard, e.g. NL for the Netherlands."
+                },
+                {
+                    "name": "shipToDeliveryDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "shipToDeliveryDate",
+                    "description": "The date goods are delivered."
+                },
+                {
+                    "name": "shipToDeliveryId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToDeliveryId",
+                    "description": "Identification of the delivery."
+                },
+                {
+                    "name": "shipToLocationId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToLocationId",
+                    "description": "The addresses to which customers want organisation to send the goods they ordered."
+                },
+                {
+                    "name": "shipToNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToNumber",
+                    "description": "The building or other number to which the goods will be shipped."
+                },
+                {
+                    "name": "shipToPostalCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToPostalCode",
+                    "description": "The postcode of the building where the shipping to address is located."
+                },
+                {
+                    "name": "shipToRegion",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToRegion",
+                    "description": "Country specific code to indicate regions/provinces within the tax authority. Preferably described according to ISO 3166-2, e.g. GB-KEN for Kent county in the United Kingdom."
+                },
+                {
+                    "name": "shipToStreetName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToStreetName",
+                    "description": "The street to which goods will be delivered."
+                },
+                {
+                    "name": "shipToUCR",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToUCR",
+                    "description": "Unique consignment reference number."
+                },
+                {
+                    "name": "shipToWarehouseId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shipToWarehouseId",
+                    "description": "Warehouse where goods held - also to identify work-in-progress or stock-in-transit."
+                },
+                {
+                    "name": "shippingMethod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shippingMethod",
+                    "description": "The method of shipping, e.g. rail, road, air, etc."
+                },
+                {
+                    "name": "shippingState",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "shippingState",
+                    "description": "The shipping state of the customer to identify on the serviceability."
+                },
+                {
+                    "name": "sourceId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "sourceId",
+                    "description": "Posting source: code for source from which the journal entry originated, e.g. sales journal, cash receipts journal, general journal, payroll journal, accountant manual entry, spreadsheet, etc."
+                },
+                {
+                    "name": "supplierId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "supplierId",
+                    "description": "Identifier of the supplier to whom payment is due. Must match the supplierId in the supplierMasterData."
+                },
+                {
+                    "name": "systemEntryDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "systemEntryDateTime",
+                    "description": "The date the transaction was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "systemEntryUser",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "systemEntryUser",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "systemId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "systemId",
+                    "description": "Unique number created by the system for the document."
+                },
+                {
+                    "name": "transactionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionId",
+                    "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group, branch, department, etc."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}
