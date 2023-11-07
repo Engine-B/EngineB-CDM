@@ -1,0 +1,88 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "bankAccountMasterData",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "IBAN",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "IBAN",
+                    "description": "The International Bank Account Number."
+                },
+                {
+                    "name": "bankAccountId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountId",
+                    "description": "Unambiguous identification of the account to which credit and debit entries are made."
+                },
+                {
+                    "name": "bankAccountName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountName",
+                    "description": "Name of the bank account, e.g. 'NatWest Checking Account'."
+                },
+                {
+                    "name": "bankAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountNumber",
+                    "description": "The number allocated to the account by the individual's or company's own bank."
+                },
+                {
+                    "name": "bankAccountSubType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountSubType",
+                    "description": "Specifies the sub type of account (product family group)."
+                },
+                {
+                    "name": "bankAccountType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankAccountType",
+                    "description": "Specifies the type of account (personal or business)."
+                },
+                {
+                    "name": "bankSortCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "bankSortCode",
+                    "description": "The bank sort code."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}

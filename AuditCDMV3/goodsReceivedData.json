@@ -1,0 +1,512 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "goodsReceivedData",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "adjustmentAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "adjustmentAmount",
+                    "description": "Adjustment amount for the goods received due to quality or quantity issues."
+                },
+                {
+                    "name": "adjustmentDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "adjustmentDescription",
+                    "description": "If an adjustment to the receipt, a description of the reason for the adjustment."
+                },
+                {
+                    "name": "adjustmentIndicator",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "adjustmentIndicator",
+                    "description": "\"0\" if the transaction is the original shipment transaction, \"1\" if the transaction is a shipment adjustment."
+                },
+                {
+                    "name": "approvedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "approvedBy",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "approvedByDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "approvedByDateTime",
+                    "description": "The date and time the entry was approved."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "enteredBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "enteredBy",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "enteredDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "enteredDateTime",
+                    "description": "The date the transaction was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "goodsReceiptUniqueId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "goodsReceiptUniqueId",
+                    "description": "The system-generated unique ID when the goods are received."
+                },
+                {
+                    "name": "goodsReceivedAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "goodsReceivedAmount",
+                    "description": "Total value of the goods received in the functional currency."
+                },
+                {
+                    "name": "goodsReceivedCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "goodsReceivedCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the functional currency of the entity, e.g. EUR for Euros or USD for American Dollars."
+                },
+                {
+                    "name": "goodsReceivedExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "goodsReceivedExchangeRate",
+                    "description": "The exchange rate used. Currency Amount x Exchange Rate = Amount."
+                },
+                {
+                    "name": "goodsReceivedLocalAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "goodsReceivedLocalAmount",
+                    "description": "The goods received amount recorded in the local (foreign) currency."
+                },
+                {
+                    "name": "goodsReceivedLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "goodsReceivedLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "lastModifiedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lastModifiedBy",
+                    "description": "userId (from userListing) for the last person modifying this entry."
+                },
+                {
+                    "name": "lastModifiedDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastModifiedDateTime",
+                    "description": "The date and time the entry was last modified before posting."
+                },
+                {
+                    "name": "lineAdjustmentAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineAdjustmentAmount",
+                    "description": "The adjustment amount for the corresponding line item."
+                },
+                {
+                    "name": "lineAdjustmentDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineAdjustmentDescription",
+                    "description": "The adjustment description for the corresponding line item."
+                },
+                {
+                    "name": "lineAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineAmount",
+                    "description": "Transaction monetary amount recorded in the functional currency. No multicurrency translation should need to be performed on this amount because all transactions should be recorded in a single currency. Must be absolute."
+                },
+                {
+                    "name": "lineAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineAmountLocal",
+                    "description": "Amount of the transaction in the local (foreign) currency."
+                },
+                {
+                    "name": "lineAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "lineExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineExchangeRate",
+                    "description": "The exchange rate used. Currency Amount x Exchange Rate = Amount."
+                },
+                {
+                    "name": "linePurchaseOrderAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderAmount",
+                    "description": "The amount for this line item as recorded in the corresponding Purchase Order."
+                },
+                {
+                    "name": "linePurchaseOrderAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderAmountLocal",
+                    "description": "Order amount in the local (foreign) currency."
+                },
+                {
+                    "name": "linePurchaseOrderAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "linePurchaseOrderExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderExchangeRate",
+                    "description": "The Exchange rate for this line item as recorded in the corresponding Purchase Order."
+                },
+                {
+                    "name": "linePurchaseOrderLineId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderLineId",
+                    "description": "Identifier for purchase order line number. Must match lineLineNumber used in purchaseOrderData. If no purchase order, leave blank."
+                },
+                {
+                    "name": "linePurchaseOrderQuantity",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderQuantity",
+                    "description": "Purchase order line quantity. If no purchase order, leave blank."
+                },
+                {
+                    "name": "linePurchaseOrderUnitOfMeasure",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderUnitOfMeasure",
+                    "description": "Purchase order line base unit of measure. If no purchase order, leave blank."
+                },
+                {
+                    "name": "linePurchaseOrderUnitPrice",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "linePurchaseOrderUnitPrice",
+                    "description": "Purchase order line price per unit. If no purchase order, leave blank."
+                },
+                {
+                    "name": "lineReceiptDocumentLineId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptDocumentLineId",
+                    "description": "Reference line number on receipt document."
+                },
+                {
+                    "name": "lineReceiptId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptId",
+                    "description": "Unique identifier for each shipment received. This ID may need to be created by concatenating fields (e.g. document number, document type, and year) to uniquely identify each shipment."
+                },
+                {
+                    "name": "lineReceiptProductBarcode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptProductBarcode",
+                    "description": "UPC or other general identifier."
+                },
+                {
+                    "name": "lineReceiptProductDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptProductDescription",
+                    "description": "Product description (plain language) to indicate the name or other identifying characteristics of the product."
+                },
+                {
+                    "name": "lineReceiptProductGroup01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptProductGroup01",
+                    "description": "Product descriptor #1, e.g. tyres or accessories."
+                },
+                {
+                    "name": "lineReceiptProductGroup02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptProductGroup02",
+                    "description": "Product descriptor #2, e.g. brand."
+                },
+                {
+                    "name": "lineReceiptProductId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptProductId",
+                    "description": "Identifier that is unique for each product."
+                },
+                {
+                    "name": "lineReceiptQuantity",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineReceiptQuantity",
+                    "description": "Item quantity received."
+                },
+                {
+                    "name": "lineReceiptStandardUnitPrices",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineReceiptStandardUnitPrices",
+                    "description": "Standard price per unit of the goods received."
+                },
+                {
+                    "name": "lineReceiptUnitOfMeasure",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lineReceiptUnitOfMeasure",
+                    "description": "Base unit of measure."
+                },
+                {
+                    "name": "lineReceiptUnitPrice",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lineReceiptUnitPrice",
+                    "description": "Price per unit for item received."
+                },
+                {
+                    "name": "movementType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "movementType",
+                    "description": "Specifies the type of goods movement. This will default to the correct code according to selections made in the header, e.g. goods receipt for purchase order onto UoL premises, reversal of the goods receipt for purchase order, Return the delivery to the sender, especially useful if you need to accurately track and document the specific nature of each goods transaction in  inventory management system ."
+                },
+                {
+                    "name": "postingStatus",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "postingStatus",
+                    "description": "Status of the transaction's posting to the GL, e.g. \"Posted\" or \"Not Posted\"."
+                },
+                {
+                    "name": "purchaseOrderAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderAmount",
+                    "description": "The Amount for this receipt as recorded in the corresponding Purchase Order."
+                },
+                {
+                    "name": "purchaseOrderAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderAmountLocal",
+                    "description": "Order amount in the local (foreign) currency."
+                },
+                {
+                    "name": "purchaseOrderAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "purchaseOrderDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderDate",
+                    "description": "The date of the purchase order relating to the goods received."
+                },
+                {
+                    "name": "purchaseOrderExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderExchangeRate",
+                    "description": "Exchange rate listed on the purchase order relating to the goods received."
+                },
+                {
+                    "name": "purchaseOrderId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderId",
+                    "description": "Unique identifier for each purchase order. Must match purchaseOrderUniqueID in the purchaseOrderData file. If no purchase order, leave blank."
+                },
+                {
+                    "name": "receiptDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "receiptDate",
+                    "description": "The date of receipt (date received)."
+                },
+                {
+                    "name": "receiptDocumentId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "receiptDocumentId",
+                    "description": "Reference number on receipt shipping document (company reference or logistics company identifier)."
+                },
+                {
+                    "name": "receiptFiscalYear",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "receiptFiscalYear",
+                    "description": "Fiscal year in which the receiptDate occurs."
+                },
+                {
+                    "name": "receiptId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "receiptId",
+                    "description": "Unique identifier for goods or services received. This ID may need to be created by concatenating fields (e.g. customer and payment number) to uniquely identify each transaction."
+                },
+                {
+                    "name": "receiptPeriod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "receiptPeriod",
+                    "description": "Fiscal period in which the receiptDate occurs, e.g. W1-W53 for weekly periods, M1-M12 for monthly periods, and Q1-Q4 for quarterly periods."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "supplierId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "supplierId",
+                    "description": "Identifier of the supplier to whom payment is due. Must match the supplierId in the supplierMasterData."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}

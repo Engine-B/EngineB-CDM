@@ -1,0 +1,96 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "userListing",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "department",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "department",
+                    "description": "The department the person is part of, e.g. accounting."
+                },
+                {
+                    "name": "firstName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "firstName",
+                    "description": "The first (given) name of the person."
+                },
+                {
+                    "name": "lastName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lastName",
+                    "description": "The last (family) name of the person."
+                },
+                {
+                    "name": "roleResponsibility",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "roleResponsibility",
+                    "description": "The person's functional role or primary responsibility, e.g. accounts payable."
+                },
+                {
+                    "name": "title",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "title",
+                    "description": "The title of the person, e.g. accounting manager."
+                },
+                {
+                    "name": "userActiveModifiedDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "userActiveModifiedDate",
+                    "description": "The date of user activation or termination."
+                },
+                {
+                    "name": "userActiveStatus",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userActiveStatus",
+                    "description": "The status of users (for identification of transactions by inactive users). Can be a Boolean flag or text to indicate 'active' or 'inactive' or similar"
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userId",
+                    "description": "A unique identifier of individuals entering transactions into the ERP system. This field is used to join information in this table to other tables based on the fields EnteredBy, LastModifiedBy, and ApprovedBy."
+                }
+            ]
+        }
+    ]
+}

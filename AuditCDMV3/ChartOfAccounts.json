@@ -1,0 +1,160 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "ChartOfAccounts",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "accountSubType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "accountSubType",
+                    "description": "Grouping for lower-level categories on the financial statements, e.g. Current Asset, Current Liabilities, Cost of Sales, etc."
+                },
+                {
+                    "name": "accountType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "accountType",
+                    "description": "Grouping for high-level category on the financial statements. Values should be assets, liabilities, equity, revenue, expenses, etc."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "chartOfAccountType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "chartOfAccountType",
+                    "description": "Type of COA which can be either operational(standard), country or group(specific)."
+                },
+                {
+                    "name": "consolidationGroupChartOfAccounts",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "consolidationGroupChartOfAccounts",
+                    "description": "Whether the GL to be assigned to group chart of accounts."
+                },
+                {
+                    "name": "controllingIntegration",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "controllingIntegration",
+                    "description": "How postings can be made to account code, e.g. manual or automatic entries."
+                },
+                {
+                    "name": "fsCaption",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fsCaption",
+                    "description": "Financial statement caption. Grouping for the caption the GL account rolls up to on the financial statements, e.g. cash and cash equivalents, accounts payable, cost of sales, etc. Sometimes may prefer to be at the trial balance level."
+                },
+                {
+                    "name": "glAccountDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccountDescription",
+                    "description": "Label or description associated with glAccountNumber."
+                },
+                {
+                    "name": "glAccountName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccountName",
+                    "description": "Name for the GL account."
+                },
+                {
+                    "name": "glAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccountNumber",
+                    "description": "Identifier for the GL account. glAccountNumber in this file must match the glAccountNumber used in the glDetails and trialBalance."
+                },
+                {
+                    "name": "parentGlAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "parentGlAccountNumber",
+                    "description": "A reference to the glAccountNumber that is the parent in an account hierarchy. Provided to allow more than the predefined levels of hierarchy in the chart of accounts table."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}

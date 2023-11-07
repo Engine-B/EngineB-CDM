@@ -1,0 +1,288 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "fixedAssetValuation",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "approvedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "approvedBy",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "approvedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "approvedByDate",
+                    "description": "The date the entry was approved."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "enteredBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "enteredBy",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "enteredDateTime",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "enteredDateTime",
+                    "description": "The date the transaction was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "fixedAssetId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetId",
+                    "description": "ID associated with fixed asset."
+                },
+                {
+                    "name": "fixedAssetRealizedGainLossAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRealizedGainLossAccount",
+                    "description": "Account to which realised gains or losses on assets is posted in the GL."
+                },
+                {
+                    "name": "fixedAssetRealizedGainLossAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRealizedGainLossAmount",
+                    "description": "Amount of realised gain or loss on the fixed asset disposal."
+                },
+                {
+                    "name": "fixedAssetUnrealizedGainLossAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetUnrealizedGainLossAccount",
+                    "description": "Account to which unrealised gains or losses on assets is posted in the GL."
+                },
+                {
+                    "name": "fixedAssetUnrealizedGainLossAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetUnrealizedGainLossAmount",
+                    "description": "Amount of change in value of asset not yet realised."
+                },
+                {
+                    "name": "glAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccount",
+                    "description": "Identifier of GL Account on which value change of asset has been posted. glAccountNumber in this file must match the glAccountNumber used in the glDetail, trialBalance and chartOfAccounts"
+                },
+                {
+                    "name": "glTransactionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glTransactionId",
+                    "description": "Transaction ID in the GL for recognising revaluation on asset."
+                },
+                {
+                    "name": "lastModifiedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lastModifiedBy",
+                    "description": "userId (from userListing) for the last person modifying this entry."
+                },
+                {
+                    "name": "lastModifiedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastModifiedByDate",
+                    "description": "The modifying date of the last person modifying the fixed asset valuation entry."
+                },
+                {
+                    "name": "lifeInMonths",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "lifeInMonths",
+                    "description": "Life of an asset in months after revaluation."
+                },
+                {
+                    "name": "lotNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lotNumber",
+                    "description": "Identification number assigned to a particular quantity or lot of material or depending on the asset classified."
+                },
+                {
+                    "name": "maxFullyRevdEvals",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "maxFullyRevdEvals",
+                    "description": "Default value of the maximum number of revaluations allowed on a fully reserved asset."
+                },
+                {
+                    "name": "priorLifeInMonths",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "priorLifeInMonths",
+                    "description": "Life of an asset in months before revaluation."
+                },
+                {
+                    "name": "revalAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "revalAmount",
+                    "description": "Change in the value of asset."
+                },
+                {
+                    "name": "revalDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "revalDate",
+                    "description": "The date on which the revaluation took place or became effective."
+                },
+                {
+                    "name": "revalDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "revalDescription",
+                    "description": "Description of reason for or approach to revaluation."
+                },
+                {
+                    "name": "revalMethod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "revalMethod",
+                    "description": "Code or name for method used for revaluation."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "serialNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "serialNumber",
+                    "description": "Serial number for asset, used by manufacturer for identification."
+                },
+                {
+                    "name": "uniqueId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "uniqueId",
+                    "description": "ID associated with valuation made to the fixed asset."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "valuerDocumentReference",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "valuerDocumentReference",
+                    "description": "Reference of the documentary evidence for revaluation, e.g. valuation report reference number or similar."
+                },
+                {
+                    "name": "valuerId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "valuerId",
+                    "description": "ID of the individual or organisation performing the revaluation."
+                },
+                {
+                    "name": "valuerName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "valuerName",
+                    "description": "Name of the individual or organisation performing the revaluation."
+                }
+            ]
+        }
+    ]
+}

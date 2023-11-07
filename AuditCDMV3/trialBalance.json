@@ -1,0 +1,192 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "trialBalance",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "amountBeginning",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountBeginning",
+                    "description": "Period beginning balance amount (that is, the ending balance from the prior period) recorded in the functional or group currency. No multicurrency translation should need to be performed on this amount because all are recorded in a single currency."
+                },
+                {
+                    "name": "amountBeginningLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountBeginningLocal",
+                    "description": "Period beginning balance amount in the local country currency for multicurrency tracking."
+                },
+                {
+                    "name": "amountBeginningReporting",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountBeginningReporting",
+                    "description": "Period beginning balance amount in reporting currency used for statutory reporting."
+                },
+                {
+                    "name": "amountCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "amountCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the functional currency of the entity, e.g. EUR for Euros or USD for American Dollars."
+                },
+                {
+                    "name": "amountEnding",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountEnding",
+                    "description": "Period ending balance amount recorded in the functional or group currency. No multicurrency translation should need to be performed on this amount because all are recorded in a single currency."
+                },
+                {
+                    "name": "amountEndingLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountEndingLocal",
+                    "description": "Period ending balance amount in the local country currency for multicurrency tracking."
+                },
+                {
+                    "name": "amountEndingReporting",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "amountEndingReporting",
+                    "description": "Period ending balance amount in reporting currency used for statutory reporting."
+                },
+                {
+                    "name": "amountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "amountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "amountReportingCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "amountReportingCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 for the currency in which a reporting entity prepares its financial statements, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "balanceAsOfDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "balanceAsOfDate",
+                    "description": "The date of the provided balance, not when the trialBalance file was created, e.g. 20141231 if year-end balance, even if the report was run on 20150122."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "fiscalYear",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fiscalYear",
+                    "description": "Fiscal year for the BalanceAsOfDate"
+                },
+                {
+                    "name": "glAccountName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccountName",
+                    "description": "Name for the GL account."
+                },
+                {
+                    "name": "glAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccountNumber",
+                    "description": "Identifier for the GL account. glAccountNumber in this file must match the glAccountNumber used in the glDetails and chartOfAccounts"
+                },
+                {
+                    "name": "period",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "period",
+                    "description": "Fiscal period of the BalanceAsOfDate, e.g. W1-W53 for weekly periods, M1-M12 for monthly periods, and Q1-Q4 for quarterly periods."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}

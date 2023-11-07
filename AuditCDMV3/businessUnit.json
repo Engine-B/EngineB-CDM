@@ -1,0 +1,96 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "businessUnit",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "businessUnitDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitDescription",
+                    "description": "Business unit (plain language) description to indicate the name or other identifying characteristics of the business unit."
+                },
+                {
+                    "name": "businessUnitHierarchy1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitHierarchy1",
+                    "description": "If a hierarchy exists in the business unit structure, use the field to capture the highest level of the hierarchy, e.g. global area with values such as North America, South America, Europe, the Middle East, Africa, the Far East, etc."
+                },
+                {
+                    "name": "businessUnitHierarchy2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitHierarchy2",
+                    "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy, e.g. regions with values such as East Coast, West Coast, Central-Western Europe, etc."
+                },
+                {
+                    "name": "businessUnitHierarchy3",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitHierarchy3",
+                    "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy, e.g. cities with values such as Los Angeles, Boston, Frankfurt, etc."
+                },
+                {
+                    "name": "businessUnitHierarchy4",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitHierarchy4",
+                    "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy."
+                },
+                {
+                    "name": "businessUnitHierarchy5",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitHierarchy5",
+                    "description": "If a hierarchy exists in the business unit structure, use the field to capture the next lower level of the hierarchy."
+                },
+                {
+                    "name": "legalEntityIdentifier",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "legalEntityIdentifier",
+                    "description": "Third party registration number given by local authorities / local regulators, e.g. company registration number."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}

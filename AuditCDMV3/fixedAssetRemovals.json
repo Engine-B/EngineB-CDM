@@ -1,0 +1,320 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "fixedAssetRemovals",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "acquirerId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "acquirerId",
+                    "description": "ID of the acquirer of the fixed asset on disposal."
+                },
+                {
+                    "name": "approvedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "approvedBy",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "approvedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "approvedByDate",
+                    "description": "The date the entry was approved."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "costRetired",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "costRetired",
+                    "description": "Amount of cost retired from the asset."
+                },
+                {
+                    "name": "enteredBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "enteredBy",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "enteredDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "enteredDate",
+                    "description": "The date on which the fixed asset removal was entered onto the system. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "fixedAssetId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetId",
+                    "description": "ID associated with fixed asset."
+                },
+                {
+                    "name": "fixedAssetRealizedGainLossAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRealizedGainLossAccount",
+                    "description": "Account to which realised gains or losses on assets is posted in the GL."
+                },
+                {
+                    "name": "fixedAssetRealizedGainLossAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRealizedGainLossAmount",
+                    "description": "Amount of realised gain or loss on the fixed asset disposal."
+                },
+                {
+                    "name": "fixedAssetRemovalCashProceedsAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRemovalCashProceedsAmount",
+                    "description": "Cash proceeds received on removal of the fixed assets."
+                },
+                {
+                    "name": "fixedAssetRemovalDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRemovalDate",
+                    "description": "The date when the fixed asset is removed for sale or discarding."
+                },
+                {
+                    "name": "fixedAssetRemovalNonCashProceedsAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRemovalNonCashProceedsAmount",
+                    "description": "Fixed asset removal proceeds value other than cash proceeds which can include exchange with other fixed assets, debt securities or other rights to payment."
+                },
+                {
+                    "name": "fixedAssetRemovalsId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetRemovalsId",
+                    "description": "ID associated with removals of the asset."
+                },
+                {
+                    "name": "fixedAssetUnrealizedGainLossAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetUnrealizedGainLossAccount",
+                    "description": "Account to which unrealised gains or losses on assets is posted in the GL."
+                },
+                {
+                    "name": "fixedAssetUnrealizedGainLossAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetUnrealizedGainLossAmount",
+                    "description": "Amount of change in value of asset not yet realised."
+                },
+                {
+                    "name": "glAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccount",
+                    "description": "Identifier of GL Account on which removal transaction is posted. glAccountNumber in this file must match the glAccountNumber used in the glDetail, trialBalance and chartOfAccounts"
+                },
+                {
+                    "name": "glTransactionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glTransactionId",
+                    "description": "Transaction ID in the GL for the transaction recognising asset removals."
+                },
+                {
+                    "name": "lastModifiedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lastModifiedBy",
+                    "description": "userId (from userListing) for the last person modifying this entry."
+                },
+                {
+                    "name": "lastModifiedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastModifiedByDate",
+                    "description": "The modifying date of the last person modifying the fixed asset removal entry."
+                },
+                {
+                    "name": "lotNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lotNumber",
+                    "description": "Identification number assigned to a particular quantity or lot of material or depending on the asset classified."
+                },
+                {
+                    "name": "reductionRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "reductionRate",
+                    "description": "Depreciation reduction percentage for the group and its member assets."
+                },
+                {
+                    "name": "removalType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "removalType",
+                    "description": "Type of fixed asset removal."
+                },
+                {
+                    "name": "saleAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "saleAmount",
+                    "description": "Amount received from the sale of an asset."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "serialNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "serialNumber",
+                    "description": "Serial number for asset, used by manufacturer for identification."
+                },
+                {
+                    "name": "soldTo",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "soldTo",
+                    "description": "Name of the party to whom the asset was sold as part of retirement."
+                },
+                {
+                    "name": "taxCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxCode",
+                    "description": "Code used to identify taxes relevant to the transaction."
+                },
+                {
+                    "name": "terminalGainLoss",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "terminalGainLoss",
+                    "description": "Option indicating how terminal gain or loss should be recognized for member asset retirement."
+                },
+                {
+                    "name": "tradeInAssetId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "tradeInAssetId",
+                    "description": "Asset identification number of the new asset for which the retired asset was traded in."
+                },
+                {
+                    "name": "transactionFees",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "transactionFees",
+                    "description": "The transaction fees to be incurred for the fixed asset removal."
+                },
+                {
+                    "name": "uniqueId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "uniqueId",
+                    "description": "ID associated with removals made to the fixed asset."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                }
+            ]
+        }
+    ]
+}
