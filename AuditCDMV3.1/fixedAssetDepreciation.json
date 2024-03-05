@@ -1,0 +1,328 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "fixedAssetDepreciation",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "approvedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "approvedBy",
+                    "description": "userId (from userListing) for person who approved the entry."
+                },
+                {
+                    "name": "approvedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "approvedByDate",
+                    "description": "The date the entry was approved."
+                },
+                {
+                    "name": "bonusRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "bonusRate",
+                    "description": "Bonus rate used to calculate bonus depreciation."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "capitalAdjustment",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "capitalAdjustment",
+                    "description": "Value of capital adjustment after considering impairment transaction."
+                },
+                {
+                    "name": "depreciationEffectiveDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "depreciationEffectiveDate",
+                    "description": "The date upon which fixed asset depreciation will take into effect."
+                },
+                {
+                    "name": "depreciationForPeriod",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "depreciationForPeriod",
+                    "description": "Depreciation on the fixed asset for the relevant period to be charged in the books."
+                },
+                {
+                    "name": "depreciationRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "depreciationRate",
+                    "description": "Rate at which depreciation will be charged on the carrying amount of fixed assets."
+                },
+                {
+                    "name": "depreciationReserve",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "depreciationReserve",
+                    "description": "Total depreciation expense including the bonus depreciation recognized for the asset."
+                },
+                {
+                    "name": "enteredBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "enteredBy",
+                    "description": "userId (from userListing) for person who created the record."
+                },
+                {
+                    "name": "enteredDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "enteredDate",
+                    "description": "The date the order was entered into the system. This is sometimes referred to as the creation date. This should be a system-generated date (rather than user-entered date), when possible. This date does not necessarily correspond with the date of the transaction itself."
+                },
+                {
+                    "name": "fixedAssetDepreciableBasis",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetDepreciableBasis",
+                    "description": "Value of the asset against which depreciation is calculated."
+                },
+                {
+                    "name": "fixedAssetDepreciationAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetDepreciationAmount",
+                    "description": "Depreciation amount charged to the profit and loss account depending on the method of depreciation."
+                },
+                {
+                    "name": "fixedAssetDepreciationId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetDepreciationId",
+                    "description": "ID associated with depreciation charged on the asset."
+                },
+                {
+                    "name": "fixedAssetDepreciationMethod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetDepreciationMethod",
+                    "description": "Method used for calculation depreciation, e.g. reducing balance, straight line."
+                },
+                {
+                    "name": "fixedAssetFairValue",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetFairValue",
+                    "description": "Estimated amount of the fair value of the asset on the open market, used for valuation."
+                },
+                {
+                    "name": "fixedAssetId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetId",
+                    "description": "ID associated with fixed asset."
+                },
+                {
+                    "name": "fixedAssetReplacementCost",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetReplacementCost",
+                    "description": "Estimated cost to replace fixed asset, used for valuation purposes."
+                },
+                {
+                    "name": "fixedAssetSalvageValue",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "fixedAssetSalvageValue",
+                    "description": "Estimated amount of consideration the entity would expect to receive on scrapping the asset for salvage at the end of its useful life."
+                },
+                {
+                    "name": "fixedAssetUsefulLife",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fixedAssetUsefulLife",
+                    "description": "The period/time an asset is expected to be functional and fit-for-use."
+                },
+                {
+                    "name": "generalFund",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "generalFund",
+                    "description": "Value of general fund after considering impairment effect."
+                },
+                {
+                    "name": "glAccount",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccount",
+                    "description": "Identifier of GL Account on which depreciation on value asset has been posted. glAccountNumber in this file must match the glAccountNumber used in the glDetail, trialBalance and chartOfAccounts"
+                },
+                {
+                    "name": "glTransactionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glTransactionId",
+                    "description": "Transaction ID in the GL for recognising depreciation on an asset."
+                },
+                {
+                    "name": "impairmentAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "impairmentAmount",
+                    "description": "Impairment loss amount of the asset."
+                },
+                {
+                    "name": "lastModifiedBy",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lastModifiedBy",
+                    "description": "userId (from userListing) for the last person modifying this entry."
+                },
+                {
+                    "name": "lastModifiedByDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "lastModifiedByDate",
+                    "description": "The modifying date of the last person modifying the fixed asset depreciation entry."
+                },
+                {
+                    "name": "lotNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "lotNumber",
+                    "description": "Identification number assigned to a particular quantity or lot of material or depending on the asset classified."
+                },
+                {
+                    "name": "ltdProduction",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "ltdProduction",
+                    "description": "Life-to-date production for a units of production asset."
+                },
+                {
+                    "name": "revalAmortisation",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "revalAmortisation",
+                    "description": "Amount of revaluation reserve amortised during the current period."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "serialNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "serialNumber",
+                    "description": "Serial number for asset, used by manufacturer for identification."
+                },
+                {
+                    "name": "uniqueId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "uniqueId",
+                    "description": "ID associated with depreciation made to the fixed asset."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "ytdImpairment",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "ytdImpairment",
+                    "description": "Year-to-date impairment amount."
+                }
+            ]
+        }
+    ]
+}

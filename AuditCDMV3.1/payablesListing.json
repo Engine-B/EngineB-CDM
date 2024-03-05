@@ -1,0 +1,544 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "payablesListing",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "accountId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "accountId",
+                    "description": "accountId associated with supplier company/supplier books of accounts used to identify the entity. The entity's customer number in the supplier's records."
+                },
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "companyType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "companyType",
+                    "description": "Type of company of the vendor/supplier, e.g. B2B, B2C, manufacturing, limited company or similar."
+                },
+                {
+                    "name": "creditNoteAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "creditNoteAmount",
+                    "description": "Credit note Amount reference (where applicable) to original invoice."
+                },
+                {
+                    "name": "creditNoteReason",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "creditNoteReason",
+                    "description": "Credit note reason or rationale."
+                },
+                {
+                    "name": "creditNoteReference",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "creditNoteReference",
+                    "description": "Credit note reference (where applicable) to original invoice."
+                },
+                {
+                    "name": "description",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "description",
+                    "description": "Description of the Invoice."
+                },
+                {
+                    "name": "discountAmountAvailable",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "discountAmountAvailable",
+                    "description": "Discount amount available on the invoice."
+                },
+                {
+                    "name": "discountBase",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "discountBase",
+                    "description": "The base on which the discount is calculated. This can be an amount or a quantity, e.g. litres."
+                },
+                {
+                    "name": "discountTaken",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "discountTaken",
+                    "description": "Discount amount taken during payment of invoice."
+                },
+                {
+                    "name": "documentType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "documentType",
+                    "description": "Type of document which forms the basis of the record, e.g. supply invoice, credit note, etc."
+                },
+                {
+                    "name": "excessPayment",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "excessPayment",
+                    "description": "Any excess payment beyond the total amount due will be displayed."
+                },
+                {
+                    "name": "fiscalYear",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fiscalYear",
+                    "description": "Fiscal year in which invoiceDate occurs."
+                },
+                {
+                    "name": "fiscalperiod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fiscalperiod",
+                    "description": "Fiscal period in which the invoiceDate occurs, e.g. W1-W53 for weekly periods, M1-M12 for monthly periods, and Q1-Q4 for quarterly periods."
+                },
+                {
+                    "name": "glAccountNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccountNumber",
+                    "description": "Identifier for the GL account code associated with the payable. glAccountNumber in this file must match the glAccountNumber used in the glDetail, trialBalance and chartOfAccounts"
+                },
+                {
+                    "name": "invoiceAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "invoiceAmount",
+                    "description": "Transaction monetary amount recorded in the functional currency. No multicurrency translation should need to be performed on this amount because all transactions should be recorded in a single currency. Must be absolute."
+                },
+                {
+                    "name": "invoiceAmountCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "invoiceAmountCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the functional currency of the entity, e.g. EUR for Euros or USD for American Dollars."
+                },
+                {
+                    "name": "invoiceAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "invoiceAmountLocal",
+                    "description": "Invoice amount in the local (foreign) currency."
+                },
+                {
+                    "name": "invoiceAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "invoiceAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "invoiceAmountReporting",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "invoiceAmountReporting",
+                    "description": "Transaction monetary amount recorded in the reporting currency."
+                },
+                {
+                    "name": "invoiceAmountReportingCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "invoiceAmountReportingCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 for the currency in which a reporting entity prepares its financial statements, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "invoiceDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "invoiceDate",
+                    "description": "The date of the invoice, regardless of the date the invoice is entered. This is the date from which the due date is calculated based on the invoice terms."
+                },
+                {
+                    "name": "invoiceDocumentReference",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "invoiceDocumentReference",
+                    "description": "The reference number (invoice number) on the purchase invoice, the reference number provided by the supplier."
+                },
+                {
+                    "name": "invoiceDueDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "invoiceDueDate",
+                    "description": "The date payment is due from the Supplier. Aging of a payable is usually calculated based on this date."
+                },
+                {
+                    "name": "invoiceId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "invoiceId",
+                    "description": "Unique identifier for each invoice. This ID may need to be created by concatenating fields (e.g. document number, document type, and year) to uniquely identify each transaction. The same ID must be used for all tables with invoice data."
+                },
+                {
+                    "name": "invoiceNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "invoiceNumber",
+                    "description": "Identification number for an externally generated invoice."
+                },
+                {
+                    "name": "invoicePrepaymentAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "invoicePrepaymentAmount",
+                    "description": "Prepayment amount on the invoice."
+                },
+                {
+                    "name": "invoiceType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "invoiceType",
+                    "description": "Type of invoice, e.g. debit invoice, credit invoice, cash, ticket, etc."
+                },
+                {
+                    "name": "paymentAmountExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentAmountExchangeRate",
+                    "description": "The exchange rate used. Currency Amount x Exchange Rate = Amount."
+                },
+                {
+                    "name": "paymentAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentAmountLocal",
+                    "description": "Transaction amount in the local (foreign) currency."
+                },
+                {
+                    "name": "paymentAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "paymentAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "paymentAmountReporting",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentAmountReporting",
+                    "description": "Transaction monetary amount recorded in the reporting currency."
+                },
+                {
+                    "name": "paymentAmountReportingCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "paymentAmountReportingCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 for the currency in which a reporting entity prepares its financial statements, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "paymentDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "paymentDate",
+                    "description": "The date on the which the payment is made to the supplier."
+                },
+                {
+                    "name": "paymentDiscountDays",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentDiscountDays",
+                    "description": "The number of days from the invoice date the vendor allows to take advantage of discounted terms. Terms are represented as digits with no decimal places, e.g. nnn."
+                },
+                {
+                    "name": "paymentDiscountPercentage",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentDiscountPercentage",
+                    "description": "The discount percentage the supplier may provide if an invoice is paid before a certain number of days."
+                },
+                {
+                    "name": "paymentDueDays",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "paymentDueDays",
+                    "description": "The number of days allowed to meet the obligation before an invoice becomes overdue."
+                },
+                {
+                    "name": "paymentId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "paymentId",
+                    "description": "Unique identifier for each payment made. This ID may need to be created by concatenating fields (e.g. customer and payment number) to uniquely identify each transaction."
+                },
+                {
+                    "name": "paymentMethod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "paymentMethod",
+                    "description": "The code value or indicator of the method by which the transaction debit or credit amount was extinguished or apportioned to the debt by the supplier, e.g. check, wire transfer, cash, etc. Must match the paymentMethod in apPaymentData."
+                },
+                {
+                    "name": "paymentRefNo",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "paymentRefNo",
+                    "description": "External reference number for each payment made, e.g. payment reference at bank or with the supplier."
+                },
+                {
+                    "name": "postingDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "postingDate",
+                    "description": "The date on which the invoice is posted in the system/ERP."
+                },
+                {
+                    "name": "purchaseOrderDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderDate",
+                    "description": "The date on which purchase order is created."
+                },
+                {
+                    "name": "purchaseOrderId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "purchaseOrderId",
+                    "description": "Unique identifier for each purchase order. Must match orderNo in purchaseOrderData. If no purchase order, leave blank."
+                },
+                {
+                    "name": "registrationNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "registrationNumber",
+                    "description": "Unique number to identify the company in the accounting records, issued by a government authority or created by the company for internal purposes to identify different entities within their corporate group."
+                },
+                {
+                    "name": "supplierCreditLimit",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "supplierCreditLimit",
+                    "description": "The credit limit for the total outstanding balance approved for the supplier."
+                },
+                {
+                    "name": "supplierId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "supplierId",
+                    "description": "Identifier of the supplier to whom payment is due. Must match the supplierId in the supplierMasterData."
+                },
+                {
+                    "name": "supplierName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "supplierName",
+                    "description": "The name of the vendor/supplier."
+                },
+                {
+                    "name": "taxInformationTaxAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxAmount",
+                    "description": "Transaction monetary amount recorded in the functional currency. No multicurrency translation should need to be performed on this amount because all transactions should be recorded in a single currency. Must be absolute."
+                },
+                {
+                    "name": "taxInformationTaxAmountExchangeRate",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxAmountExchangeRate",
+                    "description": "The exchange rate used. Currency Amount x Exchange Rate = Amount."
+                },
+                {
+                    "name": "taxInformationTaxAmountLocal",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxAmountLocal",
+                    "description": "Transaction amount in the local (foreign) currency."
+                },
+                {
+                    "name": "taxInformationTaxAmountLocalCurrency",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxAmountLocalCurrency",
+                    "description": "Three-letter currency code according to ISO 4217 standard for the local (foreign) currency, e.g. EUR for the Euros or USD for American Dollars."
+                },
+                {
+                    "name": "taxInformationTaxBase",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxBase",
+                    "description": "Description of the value in the tax base, e.g. litres for excises on alcoholic beverages."
+                },
+                {
+                    "name": "taxInformationTaxBaseDescription",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxBaseDescription",
+                    "description": "Description of the value in the tax base, e.g. litres for excises on alcoholic beverages."
+                },
+                {
+                    "name": "taxInformationTaxCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxCode",
+                    "description": "Tax code for lookup in tables."
+                },
+                {
+                    "name": "taxInformationTaxExemptionReason",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxExemptionReason",
+                    "description": "Tax exemption or reduction reason or rationale."
+                },
+                {
+                    "name": "taxInformationTaxPercentage",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "taxInformationTaxPercentage",
+                    "description": "Tax percentage."
+                },
+                {
+                    "name": "taxRegistrationNumber",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "taxRegistrationNumber",
+                    "description": "The supplier's tax identification number."
+                },
+                {
+                    "name": "transactionId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "transactionId",
+                    "description": "Cross-reference to GL posting. It can contain many different levels to identify the transaction. It could include cost centres such as company, division, region, group, branch, department, etc."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "withholdingTaxAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "withholdingTaxAmount",
+                    "description": "Amount of Tax withheld as per the law."
+                },
+                {
+                    "name": "withholdingTaxBaseAmount",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "withholdingTaxBaseAmount",
+                    "description": "The base on which the withholding tax is calculated."
+                },
+                {
+                    "name": "withholdingTaxCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "withholdingTaxCode",
+                    "description": "Withholding tax code only controls the percentage rate of the withholding tax. "
+                },
+                {
+                    "name": "withholdingTaxCountry",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "withholdingTaxCountry",
+                    "description": "The withholding tax country of the individual or company to which payment is made."
+                },
+                {
+                    "name": "withholdingTaxExempt",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "withholdingTaxExempt",
+                    "description": "Withholding tax exemption or reduction reason or rationale."
+                },
+                {
+                    "name": "withholdingTaxType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "withholdingTaxType",
+                    "description": "The withholding tax type on the nature of payment for services availed, like payment to contractor, profession services, etc."
+                }
+            ]
+        }
+    ]
+}

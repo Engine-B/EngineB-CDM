@@ -1,0 +1,216 @@
+{
+    "jsonSchemaSemanticVersion": "3.0.0",
+    "imports": [
+        {
+            "corpusPath": "cdm:/foundations.cdm.json"
+        }
+    ],
+    "definitions": [
+        {
+            "entityName": "materialCost",
+            "extendsEntity": "CdmEntity",
+            "attributes": [
+                {
+                    "name": "businessUnitCode",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "businessUnitCode",
+                    "description": "Used to identify the business unit, region, branch, etc. at the level that financial statements are being audited and for which the trial balance is generated. For example, you may use a code aligned with the concept of a reportable segment as defined in FASB Accounting Standards Codification (ASC) 280, Segment Reporting."
+                },
+                {
+                    "name": "costingType",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "costingType",
+                    "description": "Type of method used to record the material cost."
+                },
+                {
+                    "name": "fulfilmentMethod",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "fulfilmentMethod",
+                    "description": "Methods of fulfilment, e.g. shipping, dropship, packing, etc."
+                },
+                {
+                    "name": "inventoryProductId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "inventoryProductId",
+                    "description": "The inventory product identifier in the inventory transactions."
+                },
+                {
+                    "name": "locationId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "locationId",
+                    "description": "ID of the location of the Inventory for material costing."
+                },
+                {
+                    "name": "logisticsReponsibility",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "logisticsReponsibility",
+                    "description": "The personnel/department who is responsible for inwarding and outwarding."
+                },
+                {
+                    "name": "materialId",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "materialId",
+                    "description": "ID associated with material cost."
+                },
+                {
+                    "name": "otherCost1",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "otherCost1",
+                    "description": "The other cost related to material which includes ordering cost, carrying or holding cost, etc."
+                },
+                {
+                    "name": "otherCost2",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "otherCost2",
+                    "description": "The other cost related to material which includes ordering cost, carrying or holding cost, etc."
+                },
+                {
+                    "name": "otherCost3",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "otherCost3",
+                    "description": "The other cost related to material which includes ordering cost, carrying or holding cost, etc."
+                },
+                {
+                    "name": "otherCost4",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "otherCost4",
+                    "description": "The other cost related to material which includes ordering cost, carrying or holding cost, etc."
+                },
+                {
+                    "name": "otherCost5",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "otherCost5",
+                    "description": "The other cost related to material which includes ordering cost, carrying or holding cost, etc."
+                },
+                {
+                    "name": "segment01",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment01",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment02",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment02",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment03",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment03",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment04",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment04",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "segment05",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "segment05",
+                    "description": "Reserved segment field that can be used for profit centre, division, fund, program, branch, project, etc."
+                },
+                {
+                    "name": "shelfLifeDays",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "shelfLifeDays",
+                    "description": "Number of days the item will remain useable."
+                },
+                {
+                    "name": "stockingUnitOfMeasure",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "stockingUnitOfMeasure",
+                    "description": "Units of measure used for stocking the item."
+                },
+                {
+                    "name": "totalCost",
+                    "purpose": "hasA",
+                    "dataType": "decimal",
+                    "isNullable": false,
+                    "display_name": "totalCost",
+                    "description": "The overall total cost of the material."
+                },
+                {
+                    "name": "userDefined1",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined1",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "userDefined2",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "userDefined2",
+                    "description": "Having a function or role that is defined and gets varied from user to user."
+                },
+                {
+                    "name": "validFromDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "validFromDate",
+                    "description": "The date from which material cost is valid."
+                },
+                {
+                    "name": "validToDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "validToDate",
+                    "description": "The date to which material cost is valid."
+                },
+                {
+                    "name": "valuationDate",
+                    "purpose": "hasA",
+                    "dataType": "datetime",
+                    "isNullable": false,
+                    "display_name": "valuationDate",
+                    "description": "Refers to valuation date of the material."
+                }
+            ]
+        }
+    ]
+}
