@@ -139,6 +139,14 @@
                     "description": "Fiscal year in which effectiveDate occurs"
                 },
                 {
+                    "name": "glAccountName",
+                    "purpose": "hasA",
+                    "dataType": "string",
+                    "isNullable": false,
+                    "display_name": "glAccountName",
+                    "description": "Name for the GL account."
+                },
+                {
                     "name": "glAccountNumber",
                     "purpose": "hasA",
                     "dataType": "string",
