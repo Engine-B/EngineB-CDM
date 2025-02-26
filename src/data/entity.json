@@ -1,0 +1,132 @@
+{
+    "entities": [
+        {
+            "display_name": "AP Payment Data",
+            "name": "apPaymentData"
+        },
+        {
+            "display_name": "Goods Received Data",
+            "name": "goodsReceivedData"
+        },
+        {
+            "display_name": "Payables Listing",
+            "name": "payablesListing"
+        },
+        {
+            "display_name": "Purchase Invoice Data",
+            "name": "purchaseInvoiceData"
+        },
+        {
+            "display_name": "Purchase Order Data",
+            "name": "purchaseOrderData"
+        },
+        {
+            "display_name": "Supplier Balances",
+            "name": "supplierBalances"
+        },
+        {
+            "display_name": "Supplier Master Data",
+            "name": "supplierMasterData"
+        },
+        {
+            "display_name": "AR Payment Data",
+            "name": "arPaymentData"
+        },
+        {
+            "display_name": "Customer Balance",
+            "name": "customerBalance"
+        },
+        {
+            "display_name": "Customer Master Data",
+            "name": "customerMasterData"
+        },
+        {
+            "display_name": "Goods Shipped Data",
+            "name": "goodsShippedData"
+        },
+        {
+            "display_name": "Receivables Listing",
+            "name": "receivablesListing"
+        },
+        {
+            "display_name": "Sales Invoice Data",
+            "name": "salesInvoiceData"
+        },
+        {
+            "display_name": "Sales Order Data",
+            "name": "salesOrderData"
+        },
+        {
+            "display_name": "Fixed Asset Additions",
+            "name": "fixedAssetAdditions"
+        },
+        {
+            "display_name": "Fixed Asset Depreciation",
+            "name": "fixedAssetDepreciation"
+        },
+        {
+            "display_name": "Fixed Asset Master Data",
+            "name": "fixedAssetMasterData"
+        },
+        {
+            "display_name": "Fixed Asset Removals",
+            "name": "fixedAssetRemovals"
+        },
+        {
+            "display_name": "Fixed Asset Valuation",
+            "name": "fixedAssetValuation"
+        },
+        {
+            "display_name": "Bank Account Master Data",
+            "name": "bankAccountMasterData"
+        },
+        {
+            "display_name": "Business Unit",
+            "name": "businessUnit"
+        },
+        {
+            "display_name": "Chart of Accounts",
+            "name": "ChartOfAccounts"
+        },
+        {
+            "display_name": "GL Detail",
+            "name": "glDetail"
+        },
+        {
+            "display_name": "Segment Listing",
+            "name": "segmentListing"
+        },
+        {
+            "display_name": "Source Listing",
+            "name": "sourceListing"
+        },
+        {
+            "display_name": "Tax Table",
+            "name": "taxTable"
+        },
+        {
+            "display_name": "Trial Balance",
+            "name": "trialBalance"
+        },
+        {
+            "display_name": "User Listing",
+            "name": "userListing"
+        },
+        {
+            "display_name": "Employee Master Data",
+            "name": "employeeMasterData"
+        },
+        {
+            "display_name": "Inventory List",
+            "name": "inventoryList"
+        },
+        {
+            "display_name": "Inventory Transactions",
+            "name": "inventoryTransactions"
+        },
+        {
+            "display_name": "Material Cost",
+            "name": "materialCost"
+        }
+    ]
+}
