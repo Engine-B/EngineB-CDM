@@ -1,0 +1,28 @@
+{
+    "standards": [
+        {
+            "name": "Accounts Payable",
+            "abbreviation": "AP"
+        },
+        {
+            "name": "Accounts Receivable",
+            "abbreviation": "AR"
+        },
+        {
+            "name": "Fixed Assets",
+            "abbreviation": "FA"
+        },
+        {
+            "name": "General Ledger",
+            "abbreviation": "GL"
+        },
+        {
+            "name": "Human Resources",
+            "abbreviation": "HR"
+        },
+        {
+            "name": "Inventory",
+            "abbreviation": "IV"
+        }
+    ]
+}
